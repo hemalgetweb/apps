@@ -2,11 +2,11 @@
 
 namespace Elementor;
 
-use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
-use ELementor\Repeater;
+use Elementor\Widget_Base;
 
-if (!defined('ABSPATH') && !class_exists('WooCommerce')) exit; // Exit if accessed directly or not have woocommerece
+if (!defined('ABSPATH') && !class_exists('WooCommerce'))
+	exit; // Exit if accessed directly or not have woocommerece
 
 /**
  * CB Core Demo
@@ -132,7 +132,144 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Hero Content', 'cb-core'),
 			]
 		);
-		
+
+		$this->add_control(
+			'subtitle_image',
+			[
+				'label' => esc_html__('Subtitle image', 'apps'),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+		$this->add_control(
+			'subtitle',
+			[
+				'label' => esc_html__('Subtitle', 'apps'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__('WADI AL BADA', 'apps'),
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your subtitle here', 'apps'),
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+
+		$this->add_control(
+			'bannerTitle',
+			[
+				'label' => esc_html__('bannerTitle', 'apps'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__('WADI AL BADA', 'apps'),
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your bannerTitle here', 'apps'),
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+
+		$this->add_control(
+			'bannerIntro',
+			[
+				'label' => esc_html__('bannerIntro', 'apps'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__('WADI AL BADA', 'apps'),
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your bannerIntro here', 'apps'),
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+
+		$this->add_control(
+			'banner_image',
+			[
+				'label' => esc_html__('banner image', 'apps'),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+				'placeholder' => esc_html__('Type your banner image here', 'apps'),
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+
+		$this->add_control(
+			'btn_text',
+			[
+				'label' => esc_html__('Button text', 'apps'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__('Contact Us', 'apps'),
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your button text here', 'apps'),
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+		$this->add_control(
+			'btn_link',
+			[
+				'label' => esc_html__('Button Link', 'textdomain'),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => esc_html__('https://your-link.com', 'apps'),
+				'options' => ['url', 'is_external', 'nofollow'],
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
+				'label_block' => true,
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+
+
+		$this->add_control(
+			'btn_text2',
+			[
+				'label' => esc_html__('Button text', 'apps'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__('Case Studies', 'apps'),
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your button text here', 'apps'),
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+		$this->add_control(
+			'btn_link2',
+			[
+				'label' => esc_html__('Button Link', 'textdomain'),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => esc_html__('https://your-link.com', 'apps'),
+				'options' => ['url', 'is_external', 'nofollow'],
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
+				'label_block' => true,
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+
 
 		$this->end_controls_section();
 		$this->start_controls_section(
@@ -163,7 +300,7 @@ class CB_Core_Hero extends Widget_Base
 					'{{WRAPPER}} .ayaa-fz-slider-content-6 .title' => 'color: {{VALUE}}',
 				],
 				'condition' => [
-					'layout' => ['layout-1','layout-2']
+					'layout' => ['layout-1', 'layout-2']
 				]
 			]
 		);
@@ -251,8 +388,8 @@ class CB_Core_Hero extends Widget_Base
 
 		$settings = $this->get_settings();
 		global $product;
-?>
-        <?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
+		?>
+		<?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
 	}
 }
 

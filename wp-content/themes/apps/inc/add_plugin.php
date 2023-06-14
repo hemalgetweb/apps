@@ -26,82 +26,8 @@ function apps_register_required_plugins()
      */
     $plugins = [
         [
-            'name'     => esc_html__('Elementor Page Builder', 'apps'),
-            'slug'     => 'elementor',
-            'required' => true,
-        ],
-        array(
-            'name'               => esc_html__('WooCommerce', 'apps'),
-            'slug'               => 'woocommerce',
-            'required'           => false,
-        ),
-        array(
-            'name'         => 'CB Toolkit', // The plugin name.
-            'slug'         => 'cb-toolkit', // The plugin slug (typically the folder name).
-            'source'       => 'https://farzaawp.codebasket.net/wp-content/plugins/cb-toolkit.zip', // The plugin source.
-            'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-            'external_url' => 'https://farzaawp.codebasket.net/wp-content/plugins/cb-toolkit.zip', // If set, overrides default API URL and points to an external URL.
-        ),
-        array(
-            'name'         => 'CB Core', // The plugin name.
-            'slug'         => 'cb-core', // The plugin slug (typically the folder name).
-            'source'       => 'https://farzaawp.codebasket.net/wp-content/plugins/cb-core.zip', // The plugin source.
-            'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-            'external_url' => 'https://farzaawp.codebasket.net/wp-content/plugins/cb-core.zip', // If set, overrides default API URL and points to an external URL.
-        ),
-        [
-            'name'     => esc_html__('Contact Form 7', 'apps'),
-            'slug'     => 'contact-form-7',
-            'required' => false,
-        ],
-        [
-            'name'     => esc_html__('Breadcrumb NavXT', 'apps'),
-            'slug'     => 'breadcrumb-navxt',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('CURCY – Multi Currency for WooCommerce', 'apps'),
-            'slug'     => 'woo-multi-currency',
-            'required' => true
-        ],
-        [
-            'name'     => esc_html__('Gtranslate', 'apps'),
-            'slug'     => 'gtranslate',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('Mailchimp For WP', 'apps'),
-            'slug'     => 'mailchimp-for-wp',
-            'required' => true,
-        ],
-        [
-            'name'         => esc_html__('Advanced Custom Fields', 'apps'),
-            'slug'         => 'advanced-custom-fields',
-            'required'     => true,
-        ],
-        array(
-            'name'     =>  esc_html__('Kirki Customizer Framework', 'apps'),
-            'slug'     => 'kirki',
-            'required' => false,
-        ),
-        array(
-            'name'     =>  esc_html__('Mailchimp for WooCommerce', 'apps'),
-            'slug'     => 'mailchimp-for-woocommerce',
-            'required' => false
-        ),
-        array(
-            'name'     =>  esc_html__('Woo Smart Wishlist', 'apps'),
-            'slug'     => 'woo-smart-wishlist',
-            'required' => false
-        ),
-        array(
-            'name'     =>  esc_html__('WPC Smart Quick View for WooCommerce', 'apps'),
-            'slug'     => 'woo-smart-quick-view',
-            'required' => false
-        ),
-        [
-            'name'     => esc_html__('One Click Demo Import', 'apps'),
-            'slug'     => 'one-click-demo-import',
+            'name'     => esc_html__('Classic Editor', 'apps'),
+            'slug'     => 'classic-editor',
             'required' => false,
         ],
         [
@@ -109,26 +35,31 @@ function apps_register_required_plugins()
             'slug'     => 'navz-photo-gallery',
             'required' => false,
         ],
-        [
-            'name'     => esc_html__('Woo Smart Compare', 'apps'),
-            'slug'     => 'woo-smart-compare',
-            'required' => false
-        ],
-        [
-            'name'     => esc_html__('WPZOOM Social Feed Widget & Block', 'apps'),
-            'slug'     => 'instagram-widget-by-wpzoom',
+        array(
+            'name'     =>  esc_html__('Kirki Customizer Framework', 'apps'),
+            'slug'     => 'kirki',
             'required' => false,
-        ],
+        ),
         [
-            'name'     => esc_html__('MC4WP: Mailchimp for WordPress', 'apps'),
+            'name'     => esc_html__('Mailchimp For WP', 'apps'),
             'slug'     => 'mailchimp-for-wp',
-            'required' => false,
+            'required' => true,
         ],
         [
-            'name'     => esc_html__('Classic Editor', 'apps'),
-            'slug'     => 'classic-editor',
-            'required' => false,
+            'name'     => esc_html__('Menu Image, Icons made easy', 'apps'),
+            'slug'     => 'menu-image',
+            'required' => true,
         ],
+        [
+            'name'     => esc_html__('Social Sharing Plugin – Sassy Social Share', 'apps'),
+            'slug'     => 'sassy-social-share',
+            'required' => true,
+        ],
+        [
+            'name'     => esc_html__('Yoast Duplicate Post', 'apps'),
+            'slug'     => 'duplicate-post',
+            'required' => true,
+        ]
     ];
     $config = [
         'id'           => 'apps', // Unique ID for hashing notices for multiple instances of TGMPA.

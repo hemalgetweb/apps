@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<!--[if gte IE 9] <style type="text/css"> .gradient {filter: none;}</style><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+<html lang="zxx" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Required meta tags for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon.svg">
+    <meta name="misapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="@twitter_username">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="R">
+    <meta property="fb:admins" content="Facebook numeric ID">
+    <!-- gmail verification -->
+    <meta name="google-site-verification" content="">
+    <!-- Website title -->
+    <title>UI/UX</title>
+    <link rel="stylesheet" href="assets/css/nioicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Local server Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+
+    <!-- CDN Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jQuery (necessary for jQuery plugins) -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Coding Start Here -->
+
+    <!-- mobile menu -->
+    <div class="mobileMenu d-block d-xl-none" id="mobileHeader">
+        <nav class="navbar p-0">
+            <div class="mobileMenu-container">
+                <div class="mobileMenu-header d-flex align-items-center gap-4 justify-content-between">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/mobile-logo.svg" alt="logo" class="img-fluid">
+                    </a>
+                    <div class="navbarToggler  border-0 text-decoration-none">
+                        <div class="menuAction">
+                            <a href="#" class="navbar-toggler-icons openMenu">
+                                <img src="assets/img/menu.svg" alt="bar icon" class="img-fluid">
+                            </a>
+                            <a href="#" class="navbar-toggler-icons closeMenu">
+                                <img src="assets/img/close.svg" alt="bar icon" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobileMenu-wrapper d-flex align-items-center justify-content-between flex-column">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3 py-xl-0">
+                        <li class="nav-item ms-xl-4 ms-0">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2 active"
+                                aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0 custom-dropdown">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2 dropdown-toggle position-relative"
+                                href="#">
+                                <span>
+                                    Services
+                                </span>
+                                <div class="dropArrow position-absolute text-center">
+                                    <img src="assets/img/drop-up-arrow.svg" alt="drop arrow" class="img-fluid">
+                                </div>
+                            </a>
+                            <ul class="custom-dropdown-menu mega-menu1 border-0">
+                                <div class="row gx-0">
+                                    <div class="col-xl-6 col-lg-6 col-sm-6">
+                                        <div class="m-menu-widget">
+                                            <ul class="widget-menu-list list-unstyled mb-0">
+                                                <li class="mb-3">
+                                                    <a href="social-media-marketing.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo1.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Social
+                                                            Media Marketing</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="search-engine-optimization.html"
+                                                        class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo2.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Search
+                                                            Engine Optimization</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="advertisement.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo3.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Pay
+                                                            Per
+                                                            Click Advertisement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="uiux-design.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo4.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Ui
+                                                            Ux
+                                                            Design</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="web-development.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo5.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Web
+                                                            Development</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-sm-6">
+                                        <div class="m-menu-widget">
+
+                                            <ul class="widget-menu-list list-unstyled mb-0">
+                                                <li class="mb-3">
+                                                    <a href="website-maintenance.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo6.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Website
+                                                            Maintenance</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="hosting-packages.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo7.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Website
+                                                            Hosting Packages</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="mobile-app-development.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo8.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Mobile
+                                                            app Development</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="eCommerce-development.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo9.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">ecommerce
+                                                            website development</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0 custom-dropdown">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2 dropdown-toggle position-relative"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Company
+                                <div class="dropArrow position-absolute end-0 start-0 text-center">
+                                    <img src="assets/img/drop-up-arrow.svg" alt="drop arrow" class="img-fluid">
+                                </div>
+                            </a>
+                            <ul class="custom-dropdown-menu mega-menu1 mega-menu2 border-0">
+
+                                <div class="m-menu-widget p-4">
+                                    <ul class="widget-menu-list list-unstyled mb-0">
+                                        <li class="mb-3">
+                                            <a href="about.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo10.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">About</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="#" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo11.svg" class="img-fluid me-2" alt="">
+                                                <span class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Meet Our
+                                                    team</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="career.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo12.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Careers</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="faq.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo13.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Faq</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="client.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo14.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Clients</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2"
+                                href="case-studies.html">Case
+                                Studies</a>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div
+                        class="navbar-right btn-wrap d-flex flex-wrap justify-content-between align-content-center w-100 gap-3 gap-lg-4">
+                        <a class="link-text text-decoration-none pe-4 fs-18 text-white fw-semi-bold d-flex gap-2 align-items-center"
+                            href="mailto:619-3312">
+                            <img src="assets/img/phone.svg" alt="icon" class="img-fluid">
+                            (347) 619-3312
+                        </a>
+                        <a class="btn position-relative rounded bg-btn text-uppercase py-2 ps-4 border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
+                            href="contact-us.html">
+                            Contact Us
+                            <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z"
+                                    fill="#003C4F" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- / Mobile menu -->
+
+    <!-- header -->
+    <header id="header" class="m-auto position-fixed top-0 start-0 end-0 d-xl-block d-none">
+        <nav class="navbar navbar-expand-xl py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icons">
+                        <img src="assets/img/menu-bar.png" alt="bar icon" class="img-fluid">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3 py-xl-0">
+                        <li class="nav-item ms-xl-4 ms-0">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2 active"
+                                aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0 custom-dropdown">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2 dropdown-toggle position-relative"
+                                href="#">
+                                <span>
+                                    Services
+                                </span>
+                                <div class="dropArrow position-absolute text-center">
+                                    <img src="assets/img/drop-up-arrow.svg" alt="drop arrow" class="img-fluid">
+                                </div>
+                            </a>
+                            <ul class="custom-dropdown-menu mega-menu1 border-0">
+                                <div class="row gx-0">
+                                    <div class="col-xl-6 col-lg-6 col-sm-6">
+                                        <div class="m-menu-widget">
+                                            <ul class="widget-menu-list list-unstyled mb-0">
+                                                <li class="mb-3">
+                                                    <a href="social-media-marketing.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo1.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Social
+                                                            Media Marketing</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="search-engine-optimization.html"
+                                                        class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo2.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Search
+                                                            Engine Optimization</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="advertisement.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo3.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Pay
+                                                            Per Click Advertisement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="uiux-design.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo4.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Ui
+                                                            Ux Design</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="web-development.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo5.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Web
+                                                            Development</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-sm-6">
+                                        <div class="m-menu-widget">
+
+                                            <ul class="widget-menu-list list-unstyled mb-0">
+                                                <li class="mb-3">
+                                                    <a href="website-maintenance.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo6.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Website
+                                                            Maintenance</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="hosting-packages.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo7.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Website
+                                                            Hosting Packages</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="mobile-app-development.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo8.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Mobile
+                                                            app Development</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <a href="eCommerce-development.html" class="text-decoration-none ">
+                                                        <img src="assets/img/menu-logo9.svg" class="img-fluid me-2"
+                                                            alt="">
+                                                        <span
+                                                            class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">ecommerce
+                                                            website development</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0 custom-dropdown">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2 dropdown-toggle position-relative"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Company
+                                <div class="dropArrow position-absolute end-0 start-0 text-center">
+                                    <img src="assets/img/drop-up-arrow.svg" alt="drop arrow" class="img-fluid">
+                                </div>
+                            </a>
+                            <ul class="custom-dropdown-menu mega-menu1 mega-menu2 border-0">
+
+                                <div class="m-menu-widget p-4">
+                                    <ul class="widget-menu-list list-unstyled mb-0">
+                                        <li class="mb-3">
+                                            <a href="about.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo10.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">About</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="#" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo11.svg" class="img-fluid me-2" alt="">
+                                                <span class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Meet Our
+                                                    team</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="career.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo12.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Careers</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="faq.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo13.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Faq</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="client.html" class="text-decoration-none ">
+                                                <img src="assets/img/menu-logo14.svg" class="img-fluid me-2" alt="">
+                                                <span
+                                                    class="fs-14 fw-semi-bold text-clr-dark1 text-uppercase">Clients</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2"
+                                href="case-studies.html">Case
+                                Studies</a>
+                        </li>
+                        <li class="nav-item ms-xl-4 ms-0">
+                            <a class="nav-link fs-14 fw-bold text-uppercase text-clr-primary2" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4">
+                        <a class="link-text ms-4 text-decoration-none pe-4 fs-18 text-white fw-semi-bold d-flex gap-2 align-items-center"
+                            href="tel:+3476193312">
+                            <img src="assets/img/phone.svg" alt="icon" class="img-fluid">
+                            (347) 619-3312
+                        </a>
+                        <a class="btn position-relative rounded bg-btn text-uppercase py-2 ps-4 border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
+                            href="contact-us.html">
+                            Contact Us
+                            <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z"
+                                    fill="#003C4F" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/ header -->
+
+
+
+    <!-- sub-page-banner -->
+    <div class="sub-page-banner bg-clr-deepDark pt-5 pt-lg-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner-info text-start text-sm-center text-lg-start my-5 my-lg-0 pt-5 pt-lg-0">
+                        <span
+                            class="section-tag fs-12 fw-bold text-uppercase text-clr-primary2 d-inline-flex gap-2 align-items-center mb-2 "
+                            >
+                            <img src="assets/img/tag-icon.svg" alt="icon" class="img-fluid">
+                            UI/UX Design
+                        </span>
+                        <h1 class="fs-48 fw-semi-bold text-white mb-4 " >
+                            Intuitive & User-Centric <br class="d-none d-md-inline">
+                            UI/UX Design to <br class="d-none d-md-inline">
+                            Drive Engagement
+                        </h1>
+                        <div class="section-intro fs-18 fw-normal text-clr-primary2 mb-5 " >
+                            <p>
+                                Help the end-users connect with your brand effortlessly
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-img text-center text-lg-end pb-5 pb-lg-0 " data-wow-duration="0.200s"
+                        data-wow-delay="300ms">
+                        <img src="assets/img/ui-ux.svg" alt="banner img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ sub-page-banner -->
+
+
+
+    <!-- overview -->
+    <section class="overview section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <div class="title-hints d-flex align-items-center justify-content-center gap-2  mb-3"
+                    >
+                    <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                    <h6 class="fs-12 fw-bold ls-1 text-clr-extraLight text-uppercase m-0">
+                        Proven Track Record
+                    </h6>
+                </div>
+                <h2 class="text-clr-dark1 fw-semi-bold fs-36 ">
+                    Let Our Data-Driven & <br> Conversion-Focused Design Thinking
+                </h2>
+            </div>
+            <div class="our-strategy row">
+                <div class="col-xl-4 col-sm-6 mb-4 mb-xl-0">
+                    <div class="strategy-item d-flex gap-4 align-items-center bg-white">
+                        <div class="icon text-center rounded-pill bg-white">
+                            <img src="assets/img/user.svg" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="">
+                            <h4 class="number"> <span class="counter">65</span>+</h4>
+                            <p class="fs-18 fw-normal text-clr-dark2 mb-0">UI/UX design experts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 mb-4 mb-xl-0">
+                    <div class="strategy-item d-flex gap-4 align-items-center bg-white">
+                        <div class="icon text-center rounded-pill bg-white">
+                            <img src="assets/img/project.svg" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="">
+                            <h4 class="number"> <span class="counter">450</span>+</h4>
+                            <p class="fs-18 fw-normal text-cl2-dark1 mb-0">Redesign projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 mb-4 mb-xl-0">
+                    <div class="strategy-item d-flex gap-4 align-items-center bg-white">
+                        <div class="icon text-center rounded-pill bg-white">
+                            <img src="assets/img/awards.svg" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="">
+                            <h4 class="number"> <span class="counter">20</span></h4>
+                            <p class="fs-18 fw-normal text-clr-dark2 mb-0">Increase in ad speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- overview -->
+
+
+
+    <!-- about -->
+    <section class="about section-padding bg-clr-dark7"
+        style="background-image: url(assets/img/w-shape.svg); background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="section-img mb-5 mb-lg-0 " >
+                        <img src="assets/img/uiux-img.png" alt="images" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5">
+                    <div class="section-header">
+                        <div class="title-hints d-flex align-items-center gap-2 " >
+                            <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                            <h6 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-0">
+                                Our Services
+                            </h6>
+                        </div>
+                        <h2 class="text-clr-dark1 fw-semi-bold fs-36 " >
+                            State-of-the-Art UI/UX Solutions for Mobile & Web Design
+                        </h2>
+                        <div class="" >
+                            <p class="fs-6 text-clr-dark2">
+                                Take your digital presence to the next level with our state-of-the-art UI/UX solutions
+                                for mobile and web applications.
+                                Help your website/mobile app stand out from the competition and deliver an exceptional
+                                user experience that keeps your
+                                customers coming back for more.
+                            </p>
+                            <p class="fs-6 text-clr-dark2">
+                                If you're looking for a reliable UI/UX partner here in Dubai to help you enhance your
+                                digital presence, Wadi Al Bada is
+                                here to help. Our services include:
+                            </p>
+                        </div>
+                        <div class="list-unstyled mb-0 ">
+                            <div class="row">
+                                <div class="col-xl-6 mb-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="assets/img/ui-ux1.svg" alt="icon" class="img-fluid flex-shrink-0">
+                                        <h4 class="fs-6 fw-medium text-clr-dark1 m-0">
+                                            User Interface (UI) Design
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 mb-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="assets/img/ui-ux1.svg" alt="icon" class="img-fluid flex-shrink-0">
+                                        <h4 class="fs-6 fw-medium text-clr-dark1 m-0">
+                                            User Experience (UI) Design
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 mb-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="assets/img/ui-ux2.svg" alt="icon" class="img-fluid flex-shrink-0">
+                                        <h4 class="fs-6 fw-medium text-clr-dark1 m-0">
+                                            Interaction Design (IxD)
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 mb-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="assets/img/ui-ux2.svg" alt="icon" class="img-fluid flex-shrink-0">
+                                        <h4 class="fs-6 fw-medium text-clr-dark1 m-0">
+                                            Wireframing & Prototyping
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ about -->
+
+
+
+
+    <!-- Our working process -->
+    <section class="working-process section-padding">
+        <div class="container">
+            <div class="process-wrapper">
+                <div class="section-header text-center mb-5">
+                    <div class="title-hints d-flex align-items-center justify-content-center gap-2  mb-3"
+                        >
+                        <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                        <h4 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-0">
+                            Work Process
+                        </h4>
+                    </div>
+                    <h2 class="text-clr-dark1 fw-semi-bold fs-36 " >
+                        Explore Our Agile Methodology in UI/UX Design
+                    </h2>
+                    <p class="fs-6 text-clr-dark2 " >
+                        This is how we help you secure a competitive edge
+                    </p>
+                </div>
+                <div class="design-process mb-5">
+                    <div class="design-title d-flex align-items-center gap-4">
+                        <h5 class="fs-12 fw-bold ls-1 text-uppercase text-nowrap m-0">UX Design Process</h5>
+                        <img src="assets/img/design-process.svg" class="img-fluid" alt="design-process">
+                    </div>
+                    <div class="design-process-item-wrapper d-flex align-items-center gap-4 gap-xl-5 mt-4 ">
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/count-img1.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">01</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Analysis</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                Our designers conduct in-depth analysis to gain insight into user behavior, needs, and
+                                pain points. We also collect
+                                insight from competitor analysis and your business needs
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process-2.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">02</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Ideation</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                It’s time to brainstorm ideas and identify the best possible course-of-action that can
+                                help you achieve your business
+                                goals
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process-3.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">03</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Wireframing</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                At this stage, we create low-fidelity designs to help visualize the structure and layout
+                                of the product. That way, we
+                                can identify issues and improve the design upon your feedback
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process4.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">04</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Dynamic Prototyping</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                Once you are happy with the wireframing, we move onto creating interactive,
+                                high-fidelity prototypes to simulate the
+                                product's behavior and flow, creating room for development
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process5.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">05</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Testing & Implementation</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                We test your product with real users to gather feedback and evaluate usability before
+                                deployment. We also keep the
+                                product under constant monitoring until it reaches perfection
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-process mb-5">
+                    <div class="design-title d-flex align-items-center gap-4">
+                        <h5 class="fs-12 fw-bold ls-1 text-uppercase text-nowrap m-0">
+                            UI Design Process
+                        </h5>
+                        <img src="assets/img/design-process.svg" class="img-fluid" alt="design-process">
+                    </div>
+                    <div class="design-process-item-wrapper d-flex align-items-center gap-4 gap-xl-5 mt-4 ">
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process6.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">01</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Research</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                We conduct research to identify user goals, behaviors, preferences, and pain points. We
+                                also collect insight on your
+                                business goals, competitors, and limitations to incorporate into the design
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process7.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">02</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Wireframing</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                Our designers utilize all the insight to create wireframes that illustrate the layout
+                                and structure of the user
+                                interface
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process8.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">03</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Visual Design</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                The next step is to develop the visual design. We utilize the perfect color, typography,
+                                and images, to create a more
+                                polished and engaging interface
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process9.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">04</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Prototyping</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                At this point, we create interactive prototypes that allow users to experience the
+                                interface and provide feedback. This
+                                helps us find usability issues or design flaws before we launch the product
+                            </p>
+                        </div>
+                        <div class="design-process-item">
+                            <div class="process-count-design position-relative d-inline-block mb-2">
+                                <div class="count-img position-absolute">
+                                    <img src="assets/img/process10.svg" class="img-fluid" alt="count">
+                                </div>
+                                <span class="count">05</span>
+                            </div>
+                            <h3 class="fs-5 fw-semi-bold text-clr-dark1">Testing & Iteration</h3>
+                            <p class="fs-18 fw-semi-bold text-clr-dark2">
+                                We rigorously test the prototype with users and gather feedback. After making necessary
+                                adjustments and making sure the
+                                product meets user needs, we launch the product online
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Our working process -->
+
+
+
+    <!-- seo-feature -->
+    <section class="seo-feature section-padding bg-clr-deepDark">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <div class="title-hints d-flex align-items-center justify-content-center gap-2 "
+                    >
+                    <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                    <h6 class="fs-12 fw-bold ls-1 text-clr-extraLight text-uppercase m-0">
+                        Our Services
+                    </h6>
+                </div>
+                <h2 class="text-white fw-semi-bold fs-36 " >
+                    UI/UX Design & Consulting Services
+                </h2>
+                <p class="fs-6 text-clr-dark9 " >
+                    We are ready to uplift your brand like many others in the past!
+                </p>
+            </div>
+
+            <div class="row pb-4">
+                <div class="col-xl-6 col-sm-6 ps-xl-0 mb-4">
+                    <div class="seo-feature-item p-30 h-100">
+                        <div class="d-flex flex-column gap-3 align-items-start pb-4">
+                            <img src="assets/img/expect.svg" alt="icon" class="img-fluid mb-3">
+                            <h5 class="fs-4 fw-semi-bold text-white mb-0">UI Design Services</h5>
+                            <p class="text-clr-gray2 fs-6 mb-1">Praesent nec sapien at lectus a liquam t n
+                                Follow a result-oriented, customer-first approach in your products and services. Wadi Al
+                                Bada is here to help you
+                                achieve a steady business growth
+                            </p>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    In-Depth User Research
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Responsive Design
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Wireframing & Prototyping
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Website & Application Design
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Usability & Accessibility Testing
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Interaction Design
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Branding and Identity Design
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/right-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    System Development Design
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-6 mb-4">
+                    <div class="seo-feature-item p-30 h-100">
+                        <div class="d-flex flex-column gap-3 align-items-start pb-4">
+                            <img src="assets/img/dont-expectsvg.svg" alt="icon" class="img-fluid mb-3">
+                            <h5 class="fs-4 fw-semi-bold text-white mb-0">UX Design Services</h5>
+                            <p class="text-clr-gray2 fs-6 mb-1">
+                                Alongside attention-grabbing visuals, Wadi Al Bada also provides a seamless user
+                                experience through a range of UX design
+                                services tailored to your business needs
+                            </p>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Information Architecture Design
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Persona Development
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Conversion Rate Optimization
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    User Journey Mapping
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    UX Strategy and Planning
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Product Strategy Consultation
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    Content Audit and Optimization
+                                </p>
+                            </div>
+                            <div class="expect-point mb-1 d-flex align-items-center gap-2">
+                                <img src="assets/img/expect-point.svg" class="img-fluid " alt="">
+                                <p class="text-clr-gray2 fs-6 mb-0">
+                                    UX Audit and A/B Testing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--/ seo-feature -->
+
+
+
+
+    <!-- Pricing start -->
+    <section class="pricing bg-white section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="title-hints d-flex align-items-center justify-content-center gap-2  mb-3"
+                    >
+                    <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                    <h4 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-0">Pricing</h4>
+                </div>
+                <h2 class="text-clr-dark1 fw-semi-bold fs-36 " >
+                    Choose the Package That Best Fits Your Needs
+                </h2>
+                <p class="fs-6 text-clr-dark2 " >
+                    Contact us today for getting started on your project.
+                </p>
+            </div>
+            <div class="pricing-wrapper mt-5 pt-3">
+                <div class="single-price">
+                    <div class="pricing-item radius-6 h-100">
+                        <div class="pricing-heading">
+                            <img src="assets/img/pricing1.svg" class="img-fluid mb-4" alt="">
+                            <h4 class="fs-4 text-clr-primary">Basic</h4>
+                            <p class="fs-6 text-clr-dark2">Natoque leo faucibus quam cursus enim tincidunt.</p>
+                        </div>
+
+                        <div class="pricing-count">
+                            <h5 class="fs-2 fw-semi-bold text-clr-dark1 mb-3">$397 <span
+                                    class="fs-6 text-clr-dark4">/month</span></h5>
+                            <button class="price-btn d-block w-100 fs-14 fw-bold text-clr-dark1 text-uppercase"
+                                type="button">Get
+                                Started <span class="ps-2"><svg class="mb-1" width="11" height="10" viewBox="0 0 11 10"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.5 10L4.615 9.115L8.10417 5.625H0.5V4.375H8.10417L4.615 0.885L5.5 0L10.5 5L5.5 10Z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="pricing-feature">
+                            <h5 class="fs-6 text-clr-dark1 price-feature-title">Feature Included: </h5>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Up to 5 pages</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Premium builder</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Custom Design</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Contact forms</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Mobile responsive Design</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Domain registration/renewal</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/not-include.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Web hosting included</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/not-include.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Web maintenance/updates
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-price">
+                    <div class="pricing-item radius-6 h-100">
+                        <div class="pricing-heading">
+                            <img src="assets/img/pricing2.svg" class="img-fluid mb-4" alt="">
+                            <h4 class="fs-4 text-clr-primary">Standard</h4>
+                            <p class="fs-6 text-clr-dark2">Natoque leo faucibus quam cursus enim tincidunt.</p>
+                        </div>
+                        <div class="pricing-count">
+                            <h5 class="fs-2 fw-semi-bold text-clr-dark1 mb-3">$597 <span
+                                    class="fs-6 text-clr-dark4">/month</span></h5>
+                            <button class="price-btn d-block w-100 fs-14 fw-bold text-clr-dark1 text-uppercase"
+                                type="button">Get
+                                Started <span class="ps-2"><svg class="mb-1" width="11" height="10" viewBox="0 0 11 10"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.5 10L4.615 9.115L8.10417 5.625H0.5V4.375H8.10417L4.615 0.885L5.5 0L10.5 5L5.5 10Z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="pricing-feature">
+                            <h5 class="fs-6 text-clr-dark1 price-feature-title">Feature Included: </h5>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Up to 10 pages</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Premium builder</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Custom Design</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Contact forms</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Mobile responsive Design </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Domain registration/renewal</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Web hosting included</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Web maintenance/updates
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-price">
+                    <div class="pricing-item radius-6 h-100">
+                        <div class="pricing-heading">
+                            <img src="assets/img/pricing3.svg" class="img-fluid mb-4" alt="">
+                            <h4 class="fs-4 text-clr-primary">Premium</h4>
+                            <p class="fs-6 text-clr-dark2">Natoque leo faucibus quam cursus enim tincidunt.</p>
+                        </div>
+                        <div class="pricing-count">
+                            <h5 class="fs-2 fw-semi-bold text-clr-dark1 mb-3">$997 <span
+                                    class="fs-6 text-clr-dark4">/month</span></h5>
+                            <button class="price-btn d-block w-100 fs-14 fw-bold text-clr-dark1 text-uppercase"
+                                type="button">
+                                Get Started <span class="ps-2"><svg class="mb-1" width="11" height="10"
+                                        viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.5 10L4.615 9.115L8.10417 5.625H0.5V4.375H8.10417L4.615 0.885L5.5 0L10.5 5L5.5 10Z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="pricing-feature">
+                            <h5 class="fs-6 text-clr-dark1 price-feature-title">Feature Included: </h5>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Up to 10 pages</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Premium builder</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Custom Design</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Contact forms</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Mobile responsive Design </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Domain registration/renewal</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Web hosting included</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-3">
+                                    <img src="assets/img/feature-inclue.svg" class="img-fluid" alt="feature">
+                                    <p class="fs-6 text-clr-dark3 fw-normal mb-0">Web maintenance/updates
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Pricing end -->
+
+
+
+    <!-- about -->
+    <section class="about section-padding bg-clr-dark7">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="section-img mb-5 mb-lg-0 " >
+                        <img src="assets/img/ui-ux-feature.png" alt="images" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="section-header">
+                        <div class="title-hints d-flex align-items-center gap-2  mb-3" >
+                            <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                            <h6 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-0">
+                                Deliverables
+                            </h6>
+                        </div>
+                        <h2 class="text-clr-dark1 fw-semi-bold fs-36 " >
+                            What to Expect from Wadi Al Bada
+                        </h2>
+                        <div class="" >
+                            <p class="fs-6 text-clr-dark2">
+                                We are determined to bridge the gap between your business and your end-users. With Wadi
+                                Al Bada, you can expect an
+                                increase in your efficiency, conversion, System Usability Scale (SUS), Net Promoter
+                                Score (NPS), and ultimately Customer
+                                Satisfaction (CSAT).
+                            </p>
+                            <p class="fs-6 text-clr-dark2">
+                                That’s not all. We’ll also help lower your task time, churn, drop-off, and abandonment
+                                rates so you can do more with
+                                less resources. Contact us today to know more.
+                            </p>
+                        </div>
+                        <div class="btn-wrap d-flex flex-wrap gap-3 gap-lg-4  mt-4"
+                            style="visibility: visible; animation-duration: 0.2s; animation-delay: 400ms; animation-name: fadeInDown;">
+                            <a class="btn position-relative rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
+                                href="contact.html">
+                                Know More
+                                <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z"
+                                        fill="#003C4F"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ about -->
+
+
+
+
+
+    <!-- commonSlider - caseStudies start -->
+    <section class="commonSlider section-padding  bg-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <div class="title-hints d-flex align-items-center justify-content-center gap-2 "
+                    >
+                    <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                    <h4 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-0">Featured Case Studies</h4>
+                </div>
+                <h2 class="text-clr-dark1 fw-semi-bold fs-36 " >
+                    Our Most-Impressive Projects <br class="d-none d-xl-inline"> Loved by Our Clients
+                </h2>
+                <p class="fs-6 text-clr-dark2 " >
+                    We take pride in our work. Explore why
+                </p>
+            </div>
+
+            <div class="swiper_wrap">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper pb-5">
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio1.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio2.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio3.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio1.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio2.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio3.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio1.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio radius-6 bg-white">
+                                <img src="assets/img/portfolio2.png" class="img-fluid w-100" alt="portfolio">
+                                <a href="#" class="portfolio-content text-decoration-none d-block">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <h4 class="fs-18 fw-medium text-clr-dark1">Dui vivamus arcu felis bibendum
+                                            </h4>
+                                            <p class="fs-14 text-clr-dark2 mb-0">Fermentum Venenatis Tortor</p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/img/arrow-right2.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- swiper-control -->
+                <div class="swiper-control">
+                    <div class="swiper-pagination"></div>
+                    <button type="button" class="swiper-prev swiper-arrow border-0 ni ni-arrow-left"></button>
+                    <button type="button" class="swiper-next swiper-arrow border-0 ni ni-arrow-right"></button>
+                </div>
+                <!--/ swiper-control -->
+            </div>
+        </div>
+    </section>
+    <!--/ commonSlider - caseStudies end -->
+
+
+
+
+    <!-- faq -->
+    <section class="faq section-padding common-gd-bg">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <div class="title-hints d-flex align-items-center justify-content-center gap-2 "
+                    >
+                    <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                    <h6 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-0">FAQs</h6>
+                </div>
+                <h2 class="text-clr-dark1 fw-semi-bold fs-36 " >
+                    Ask Your Questions & Get Factual Responses
+                </h2>
+                <p class="fs-6 text-clr-dark2 " >
+                    Here are the most common questions we get asked by business owners in the UAE and abroad. If you
+                    cannot find the answer
+                    to your question below, feel free to contact us.
+                </p>
+            </div>
+
+            <div class="faq-wrapper">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="accordion-list list-unstyled mb-0">
+                            <li class="accordion-list-item py-2 open border-top border-bottom">
+                                <h5
+                                    class="accordion-title d-flex justify-content-between align-items-start align-items-lg-center fs-18 fw-medium text-clr-dark1 pt-2">
+                                    <span class="d-flex gap-3 align-items-start">
+                                        <img src="assets/img/q-icon.svg" alt="icon" class="img-fluid mt-1">
+                                        What makes you the best UI UX design services company in the UAE?
+                                    </span>
+                                    <span class="ni ni-minus text-clr-dark4"></span>
+                                </h5>
+                                <div class="accordion-desc">
+                                    <span class="flex-shrink-0">
+                                        <img src="assets/img/a-icon.svg" alt="icon" class="img-fluid">
+                                    </span>
+                                    <div class="">
+                                        <p class="pe-5 fs-18 fw-normal text-clr-dark2">
+                                            There are so many UI/UX designers in the UAE that it’s difficult to stay on
+                                            top
+                                            of the competition for a long time. But
+                                            we achieved that and managed to hold a respectable position in the industry
+                                            because of our passion for and dedication to
+                                            our services.
+                                        </p>
+
+                                        <p class="pe-5 fs-18 fw-normal text-clr-dark2">
+                                            We believe the quality of our services along with an innovative and skilled
+                                            designer and developer team, cutting-edge
+                                            tech stack, and agile methodology have enabled Wadi Al Bada to stay on top
+                                            of the game for all of these years.
+                                        </p>
+                                        <p class="pe-5 fs-18 fw-normal text-clr-dark2">
+                                            Once you get in touch with us and sign up for our design and development
+                                            services, you will soon recognize our level of
+                                            professionalism and skill. We are confident that our expertise and
+                                            experience will exceed your expectations, and we look
+                                            forward to working with you.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item py-2 border-bottom">
+                                <h5
+                                    class="accordion-title d-flex justify-content-between align-items-start fs-18 fw-medium text-clr-dark1 pt-2">
+                                    <span class="d-flex gap-3 align-items-start">
+                                        <img src="assets/img/q-icon.svg" alt="icon" class="img-fluid mt-1">
+                                        Do you provide both app and web design services?
+                                    </span>
+                                    <span class="ni ni-plus mt-2 text-clr-dark4"></span>
+                                </h5>
+                                <div class="accordion-desc fs-18 fw-normal text-clr-dark2" style="display: none;">
+                                    <span class="flex-shrink-0">
+                                        <img src="assets/img/a-icon.svg" alt="icon" class="img-fluid">
+                                    </span>
+                                    <p class="pe-4">
+                                        Yes, our full-fletched UI/UX design services are for custom websites and mobile
+                                        applications, web applications, and
+                                        software applications.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item py-2 border-bottom">
+                                <h5
+                                    class="accordion-title d-flex justify-content-between align-items-start fs-18 fw-medium text-clr-dark1 pt-2">
+                                    <span class="d-flex gap-3 align-items-start">
+                                        <img src="assets/img/q-icon.svg" alt="icon" class="img-fluid mt-1">
+                                        What info do you need from me to get started with your services?
+                                    </span>
+                                    <span class="ni ni-plus mt-2 text-clr-dark4"></span>
+                                </h5>
+                                <div class="accordion-desc fs-18 fw-normal text-clr-dark2" style="display: none;">
+                                    <span class="flex-shrink-0">
+                                        <img src="assets/img/a-icon.svg" alt="icon" class="img-fluid">
+                                    </span>
+                                    <div class="">
+                                        <p class="pe-4">
+                                            We start with a brainstorming session so we can understand your requirements
+                                            and plan the project according to those.
+                                        </p>
+                                        <p>
+                                            We usually ask for the following info although that varies from project to
+                                            project -
+                                        </p>
+                                        <ul class="faq-inner-list ps-0 pe-4">
+                                            <li>
+                                                Business goals
+                                            </li>
+                                            <li>
+                                                Your UI UX solution’s (web/app) goals
+                                            </li>
+                                            <li>
+                                                Target audience details
+                                            </li>
+                                            <li>
+                                                Technical specs
+                                            </li>
+                                            <li>
+                                                KPIs & expected outcomes
+                                            </li>
+                                            <li>
+                                                Business reports
+                                            </li>
+                                            <li>
+                                                User analytics data (if any)
+                                            </li>
+                                            <li>
+                                                Market research data (if any)
+                                            </li>
+                                            <li>
+                                                MPrevious UX audit reports (if any)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="accordion-list list-unstyled">
+                            <li class="accordion-list-item py-2 mb-2 open border-top border-bottom">
+                                <h5
+                                    class="accordion-title d-flex justify-content-between align-items-start align-items-lg-center fs-18 fw-medium text-clr-dark1 pt-2">
+                                    <span class="d-flex gap-3 align-items-start">
+                                        <img src="assets/img/q-icon.svg" alt="icon" class="img-fluid mt-1">
+                                        How will you manage the project?
+                                    </span>
+                                    <span class="ni ni-plus mt-2 text-clr-dark4"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none;">
+                                    <span class="flex-shrink-0">
+                                        <img src="assets/img/a-icon.svg" alt="icon" class="img-fluid">
+                                    </span>
+                                    <div class="">
+                                        <p class="pe-5 fs-18 fw-normal text-clr-dark2">
+                                            Once you share your design requirements, we will break the project down into
+                                            several deliverable milestones. You will be
+                                            assigned a dedicated project manager who will assemble a team with different
+                                            expertise (e.g. designers and developers)
+                                            and oversee their progress regularly.
+                                        </p>
+                                        <p class="pe-5 fs-18 fw-normal text-clr-dark2">
+                                            You will be provided with regular updates and have the opportunity to
+                                            provide your feedback immediately during the
+                                            design and development cycles so the project stays on track and is completed
+                                            on time and within budget.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item py-2 mb-2 border-bottom">
+                                <h5
+                                    class="accordion-title d-flex justify-content-between align-items-start fs-18 fw-medium text-clr-dark1">
+                                    <span class="d-flex gap-3 align-items-start">
+                                        <img src="assets/img/q-icon.svg" alt="icon" class="img-fluid mt-1">
+                                        What are some UI UX terminologies?
+                                    </span>
+                                    <span class="ni ni-plus mt-2 text-clr-dark4"></span>
+                                </h5>
+                                <div class="accordion-desc fs-18 fw-normal text-clr-dark2" style="display: none;">
+                                    <span class="flex-shrink-0">
+                                        <img src="assets/img/a-icon.svg" alt="icon" class="img-fluid">
+                                    </span>
+                                    <div class="">
+                                        <p class="pe-4">
+                                            It’s true that there is no lack of web development companies UAE. But not
+                                            every
+                                            agency has the expertise, experience,
+                                            creative team composition, design and development tools, and other
+                                            facilities to
+                                            serve the different types and sizes of
+                                            business enterprises in this gulf state.
+                                        </p>
+                                        <p class="pe-4">
+                                            You can check our portfolio, our existing clients, and reviews, and you will
+                                            realize what separates us from our
+                                            competition. But we recommend that you contact us and share your ideas and
+                                            other
+                                            business needs so you can understand
+                                            how professional and effective we are.
+                                        </p>
+
+                                        <div class="faq-inner-list ps-0 pe-4">
+                                            <p>
+                                                <b>User Interface (UI):</b> The visual and interactive elements of a
+                                                digital
+                                                product, such as buttons, menus, forms, and icons.
+                                            </p>
+                                            <p>
+                                                <b>User Experience (UX):</b> The overall experience a user has while
+                                                interacting with a digital product, including usability,
+                                                accessibility, and emotions.
+                                            </p>
+                                            <p>
+                                                <b>Wireframe:</b> A visual representation of a web page or app that
+                                                outlines
+                                                the structure and layout of content, features, and
+                                                functionality.
+                                            </p>
+                                            <p>
+                                                <b>Prototype:</b> A preliminary version of a digital product that allows
+                                                designers and developers to test and refine the user
+                                                experience before finalizing the design.
+                                            </p>
+                                            <p>
+                                                <b>Information Architecture (IA):</b> The process of organizing and
+                                                structuring
+                                                content and functionality within a digital
+                                                product to improve usability and findability.
+                                            </p>
+                                            <p>
+                                                <b>Interaction Design:</b> The method of designing the behavior and
+                                                feedback of
+                                                interactive elements in a tech product, such as
+                                                buttons, forms, and animations.
+                                            </p>
+                                            <p>
+                                                <b>Usability:</b> The ease with which a user can accomplish their goals
+                                                while
+                                                using a digital product.
+                                            </p>
+                                            <p>
+                                                <b>Accessibility:</b> The design of a digital product to ensure that it
+                                                can be
+                                                used by people with disabilities or impairments.
+                                            </p>
+                                            <p>
+                                                <b>Responsive Design:</b> The design of a digital product to adapt to
+                                                different
+                                                screen sizes and devices, ensuring a consistent
+                                                user experience across platforms.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ faq -->
+
+
+
+    <!-- contact -->
+    <section class="contact bg-clr-dark7 pt-100">
+        <div id="contact">
+            <div class="contact-wrapper bg-white radius-6 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div class="contact-img text-center text-lg-start " >
+                                <img class="img-fluid" src="assets/img/contact-img.png" alt="contact-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact-header mb-4">
+                                <h3 class="fw-semi-bold fs-36 text-clr-dark1 " >
+                                    Contact Us
+                                </h3>
+                                <p class="fs-6 text-clr-dark2 " >
+                                    RWe are excited to get to know more about you, your business, and your needs!
+                                </p>
+                            </div>
+                            <div class="contact-form">
+                                <form class="form-wrapper pb-5 pb-lg-0">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="name w-100">
+                                                <label for="inputName"
+                                                    class="form-label fw-bolder fs-14 text-clr-dark1">
+                                                    Name
+                                                </label>
+                                                <input type="text" placeholder="Name"
+                                                    class="form-control text-clr-dark1" id="inputName">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="email w-100">
+                                                <label for="inputEmail"
+                                                    class="form-label fw-bolder fs-14 text-clr-dark1">
+                                                    Email address
+                                                </label>
+                                                <input type="email" placeholder="Email Address"
+                                                    class="form-control text-clr-dark1" id="inputEmail">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="name w-100">
+                                                <label for="inputPhone"
+                                                    class="form-label fw-bolder fs-14 text-clr-dark1">
+                                                    Phone
+                                                </label>
+                                                <input type="text" placeholder="Phone"
+                                                    class="form-control text-clr-dark1" id="inputPhone">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="email w-100">
+                                                <label for="selectServices"
+                                                    class="form-label fw-bolder fs-14 text-clr-dark1">
+                                                    Services
+                                                </label>
+                                                <select class="select-menu form-control text-clr-dark4"
+                                                    id="selectServices">
+                                                    <option selected>Choose services</option>
+                                                    <option value="1">Services A</option>
+                                                    <option value="2">Services B</option>
+                                                    <option value="3">Services C</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-area mb-4 w-100 mb-3">
+                                        <label for="inputMessage" class="form-label fw-bolder fs-14 text-clr-dark1">
+                                            Message
+                                        </label>
+                                        <textarea class="form-control text-clr-dark1" placeholder="Leave a comment here"
+                                            id="inputMessage"></textarea>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <button type="button"
+                                            class="btn position-relative rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center">
+                                            Send message
+                                            <svg class="btn-icon position-absolute" width="10" height="10"
+                                                viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z"
+                                                    fill="#003C4F"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ contact -->
+
+
+
+
+    <!-- footer -->
+    <footer class="footer bg-clr-deepDark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-xl-3 mb-3 footer-widget">
+                    <h5 class="fw-bold fs-5 text-white pb-4">
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.71094 9.51172C2.71094 7.94922 1.14062 6.44141 0 4.98828C1.23438 3.39453 2.80469 1.89453 4.71094 0.488281C6.41406 1.75391 7.96094 3.25391 9.35156 4.98828C8.74219 5.73828 8 6.53516 7.125 7.37891C6.25 8.22266 5.44531 8.93359 4.71094 9.51172Z"
+                                    fill="#26B5B5" />
+                            </svg>
+                        </span>
+                        <span class="px-2">
+                            Company
+                        </span>
+                    </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">
+                            <a href="about.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="team.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Meet our team
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="career.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Careers
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="faq.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="client.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Clients
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="case-studies.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Case Studies
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="blog.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="privacy-policy.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="terms-conditions.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Terms and Conditions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-4 mb-3 footer-widget">
+                    <h5 class="fw-bold fs-5 text-white pb-4">
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.71094 9.51172C2.71094 7.94922 1.14062 6.44141 0 4.98828C1.23438 3.39453 2.80469 1.89453 4.71094 0.488281C6.41406 1.75391 7.96094 3.25391 9.35156 4.98828C8.74219 5.73828 8 6.53516 7.125 7.37891C6.25 8.22266 5.44531 8.93359 4.71094 9.51172Z"
+                                    fill="#26B5B5" />
+                            </svg>
+                        </span>
+                        <span class="px-2">
+                            Services
+                        </span>
+                    </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">
+                            <a href="social-media-marketing.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Social Media Marketing
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="search-engine-optimization.html"
+                                class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Search Engine Optimization
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="advertisement.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Pay Per Click Advertisement
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="uiux-design.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Ui/Ux Design
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="web-development.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Web Development
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="website-maintenance.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Website Maintenance
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="hosting-packages.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Website Hosting Packages
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="eCommerce-development.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                eCommerce Web Development
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="eCommerce-development.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                eCommerce Solutions
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="mobile-app-development.html" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 14.709L7.229 13.939L11.167 10.001L7.229 6.06297L8 5.29297L12.708 10.001L8 14.709Z"
+                                        fill="#8ECFE3" />
+                                </svg>
+                                Mobile App Development
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 mb-3 footer-widget">
+                    <h5 class="fw-bold fs-5 text-white pb-4">
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.71094 9.51172C2.71094 7.94922 1.14062 6.44141 0 4.98828C1.23438 3.39453 2.80469 1.89453 4.71094 0.488281C6.41406 1.75391 7.96094 3.25391 9.35156 4.98828C8.74219 5.73828 8 6.53516 7.125 7.37891C6.25 8.22266 5.44531 8.93359 4.71094 9.51172Z"
+                                    fill="#26B5B5" />
+                            </svg>
+                        </span>
+                        <span class="px-2">
+                            Social
+                        </span>
+                    </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg class="mt-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_4153_5738)">
+                                            <path
+                                                d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z"
+                                                fill="#8ECFE3" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4153_5738">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span class="px-2">
+                                    Facebook
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg class="mt-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.03344 14.5005C11.0697 14.5005 14.3722 9.49829 14.3722 5.16173C14.3722 5.0211 14.3691 4.87735 14.3628 4.73673C15.0052 4.27213 15.5597 3.69666 16 3.03735C15.4017 3.30355 14.7664 3.47741 14.1159 3.55298C14.8009 3.14243 15.3137 2.49747 15.5594 1.73767C14.915 2.11953 14.2104 2.3889 13.4756 2.53423C12.9806 2.0082 12.326 1.6599 11.6131 1.54319C10.9003 1.42648 10.1688 1.54786 9.53183 1.88855C8.89486 2.22925 8.38787 2.77029 8.08923 3.42803C7.7906 4.08577 7.71695 4.82356 7.87969 5.52735C6.575 5.46188 5.29862 5.12296 4.13332 4.53255C2.96802 3.94215 1.9398 3.11345 1.11531 2.10017C0.696266 2.82265 0.568038 3.67758 0.756687 4.49122C0.945337 5.30485 1.43671 6.01612 2.13094 6.48048C1.60975 6.46393 1.09998 6.32361 0.64375 6.0711V6.11173C0.643283 6.86992 0.905399 7.60488 1.38554 8.19167C1.86568 8.77846 2.53422 9.18086 3.2775 9.33048C2.7947 9.46257 2.28799 9.48182 1.79656 9.38673C2.0063 10.0388 2.41438 10.6091 2.96385 11.018C3.51331 11.427 4.17675 11.6542 4.86156 11.668C3.69895 12.5812 2.26278 13.0766 0.784375 13.0742C0.522191 13.0738 0.260266 13.0578 0 13.0261C1.5019 13.9897 3.24902 14.5014 5.03344 14.5005Z"
+                                            fill="#8ECFE3" />
+                                    </svg>
+                                </span>
+                                <span class="px-2">
+                                    Twitter
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg class="mt-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_4153_5740)">
+                                            <path
+                                                d="M8 1.44062C10.1375 1.44062 10.3906 1.45 11.2313 1.4875C12.0125 1.52187 12.4344 1.65313 12.7156 1.7625C13.0875 1.90625 13.3563 2.08125 13.6344 2.35938C13.9156 2.64062 14.0875 2.90625 14.2313 3.27813C14.3406 3.55938 14.4719 3.98438 14.5063 4.7625C14.5438 5.60625 14.5531 5.85938 14.5531 7.99375C14.5531 10.1313 14.5438 10.3844 14.5063 11.225C14.4719 12.0063 14.3406 12.4281 14.2313 12.7094C14.0875 13.0813 13.9125 13.35 13.6344 13.6281C13.3531 13.9094 13.0875 14.0813 12.7156 14.225C12.4344 14.3344 12.0094 14.4656 11.2313 14.5C10.3875 14.5375 10.1344 14.5469 8 14.5469C5.8625 14.5469 5.60938 14.5375 4.76875 14.5C3.9875 14.4656 3.56563 14.3344 3.28438 14.225C2.9125 14.0813 2.64375 13.9063 2.36563 13.6281C2.08438 13.3469 1.9125 13.0813 1.76875 12.7094C1.65938 12.4281 1.52813 12.0031 1.49375 11.225C1.45625 10.3813 1.44688 10.1281 1.44688 7.99375C1.44688 5.85625 1.45625 5.60313 1.49375 4.7625C1.52813 3.98125 1.65938 3.55938 1.76875 3.27813C1.9125 2.90625 2.0875 2.6375 2.36563 2.35938C2.64688 2.07812 2.9125 1.90625 3.28438 1.7625C3.56563 1.65313 3.99063 1.52187 4.76875 1.4875C5.60938 1.45 5.8625 1.44062 8 1.44062ZM8 0C5.82813 0 5.55625 0.009375 4.70313 0.046875C3.85313 0.084375 3.26875 0.221875 2.7625 0.41875C2.23438 0.625 1.7875 0.896875 1.34375 1.34375C0.896875 1.7875 0.625 2.23438 0.41875 2.75938C0.221875 3.26875 0.084375 3.85 0.046875 4.7C0.009375 5.55625 0 5.82812 0 8C0 10.1719 0.009375 10.4438 0.046875 11.2969C0.084375 12.1469 0.221875 12.7313 0.41875 13.2375C0.625 13.7656 0.896875 14.2125 1.34375 14.6562C1.7875 15.1 2.23438 15.375 2.75938 15.5781C3.26875 15.775 3.85 15.9125 4.7 15.95C5.55313 15.9875 5.825 15.9969 7.99688 15.9969C10.1688 15.9969 10.4406 15.9875 11.2938 15.95C12.1438 15.9125 12.7281 15.775 13.2344 15.5781C13.7594 15.375 14.2063 15.1 14.65 14.6562C15.0938 14.2125 15.3688 13.7656 15.5719 13.2406C15.7688 12.7313 15.9063 12.15 15.9438 11.3C15.9813 10.4469 15.9906 10.175 15.9906 8.00313C15.9906 5.83125 15.9813 5.55938 15.9438 4.70625C15.9063 3.85625 15.7688 3.27188 15.5719 2.76562C15.375 2.23438 15.1031 1.7875 14.6563 1.34375C14.2125 0.9 13.7656 0.625 13.2406 0.421875C12.7313 0.225 12.15 0.0875 11.3 0.05C10.4438 0.009375 10.1719 0 8 0Z"
+                                                fill="#8ECFE3" />
+                                            <path
+                                                d="M8 3.89062C5.73125 3.89062 3.89062 5.73125 3.89062 8C3.89062 10.2688 5.73125 12.1094 8 12.1094C10.2688 12.1094 12.1094 10.2688 12.1094 8C12.1094 5.73125 10.2688 3.89062 8 3.89062ZM8 10.6656C6.52813 10.6656 5.33437 9.47188 5.33437 8C5.33437 6.52813 6.52813 5.33437 8 5.33437C9.47188 5.33437 10.6656 6.52813 10.6656 8C10.6656 9.47188 9.47188 10.6656 8 10.6656Z"
+                                                fill="#8ECFE3" />
+                                            <path
+                                                d="M13.2312 3.72891C13.2312 4.26016 12.8 4.68828 12.2719 4.68828C11.7406 4.68828 11.3125 4.25703 11.3125 3.72891C11.3125 3.19766 11.7438 2.76953 12.2719 2.76953C12.8 2.76953 13.2312 3.20078 13.2312 3.72891Z"
+                                                fill="#8ECFE3" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4153_5740">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                                <span class="px-2">
+                                    Instagram
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg class="mt-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.8406 4.79922C15.8406 4.79922 15.6844 3.69609 15.2031 3.21172C14.5938 2.57422 13.9125 2.57109 13.6 2.53359C11.3625 2.37109 8.00313 2.37109 8.00313 2.37109H7.99687C7.99687 2.37109 4.6375 2.37109 2.4 2.53359C2.0875 2.57109 1.40625 2.57422 0.796875 3.21172C0.315625 3.69609 0.1625 4.79922 0.1625 4.79922C0.1625 4.79922 0 6.09609 0 7.38984V8.60234C0 9.89609 0.159375 11.193 0.159375 11.193C0.159375 11.193 0.315625 12.2961 0.79375 12.7805C1.40313 13.418 2.20313 13.3961 2.55938 13.4648C3.84063 13.5867 8 13.6242 8 13.6242C8 13.6242 11.3625 13.618 13.6 13.4586C13.9125 13.4211 14.5938 13.418 15.2031 12.7805C15.6844 12.2961 15.8406 11.193 15.8406 11.193C15.8406 11.193 16 9.89922 16 8.60234V7.38984C16 6.09609 15.8406 4.79922 15.8406 4.79922ZM6.34688 10.0742V5.57734L10.6687 7.83359L6.34688 10.0742Z"
+                                            fill="#8ECFE3" />
+                                    </svg>
+                                </span>
+                                <span class="px-2">
+                                    Youtube
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg class="mt-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_4153_5742)">
+                                            <path
+                                                d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z"
+                                                fill="#8ECFE3" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4153_5742">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                                <span class="px-2">
+                                    Linkedin
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg class="mt-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_4153_5743)">
+                                            <path
+                                                d="M8 0C3.58125 0 0 3.58125 0 8C0 11.3906 2.10938 14.2844 5.08437 15.45C5.01562 14.8156 4.95 13.8469 5.1125 13.1562C5.25938 12.5312 6.05 9.18125 6.05 9.18125C6.05 9.18125 5.80937 8.70313 5.80937 7.99375C5.80937 6.88125 6.45312 6.05 7.25625 6.05C7.9375 6.05 8.26875 6.5625 8.26875 7.17812C8.26875 7.86562 7.83125 8.89062 7.60625 9.84062C7.41875 10.6375 8.00625 11.2875 8.79062 11.2875C10.2125 11.2875 11.3062 9.7875 11.3062 7.625C11.3062 5.70938 9.93125 4.36875 7.96562 4.36875C5.69062 4.36875 4.35313 6.075 4.35313 7.84062C4.35313 8.52812 4.61875 9.26562 4.95 9.66562C5.01562 9.74375 5.025 9.81563 5.00625 9.89375C4.94688 10.1469 4.80938 10.6906 4.78438 10.8C4.75 10.9469 4.66875 10.9781 4.51562 10.9062C3.51562 10.4406 2.89062 8.98125 2.89062 7.80625C2.89062 5.28125 4.725 2.96563 8.175 2.96563C10.95 2.96563 13.1062 4.94375 13.1062 7.5875C13.1062 10.3438 11.3688 12.5625 8.95625 12.5625C8.14688 12.5625 7.38437 12.1406 7.12187 11.6438C7.12187 11.6438 6.72188 13.1719 6.625 13.5469C6.44375 14.2406 5.95625 15.1125 5.63125 15.6438C6.38125 15.875 7.175 16 8 16C12.4187 16 16 12.4187 16 8C16 3.58125 12.4187 0 8 0Z"
+                                                fill="#8ECFE3" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4153_5743">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span class="px-2">
+                                    Pinterest
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-3 mb-3 footer-widget">
+                    <h5 class="fw-bold fs-5 text-white pb-4">
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.71094 9.51172C2.71094 7.94922 1.14062 6.44141 0 4.98828C1.23438 3.39453 2.80469 1.89453 4.71094 0.488281C6.41406 1.75391 7.96094 3.25391 9.35156 4.98828C8.74219 5.73828 8 6.53516 7.125 7.37891C6.25 8.22266 5.44531 8.93359 4.71094 9.51172Z"
+                                    fill="#26B5B5" />
+                            </svg>
+                        </span>
+                        <span class="px-2">
+                            Contact Info
+                        </span>
+                    </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">
+                            <div class="p-0 fw-normal fs-6 text-clr-dark9">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.6524 23.1591C6.70544 19.2943 2.82131 15.5648 0 11.9705C3.0532 8.02838 6.93733 4.31817 11.6524 0.839844C15.865 3.97034 19.6912 7.68055 23.1309 11.9705C21.6236 13.8256 19.7878 15.7966 17.6235 17.8836C15.4592 19.9706 13.4688 21.7291 11.6524 23.1591Z"
+                                                fill="#44D2FF" />
+                                            <path
+                                                d="M8.0356 16.1602L10.1236 7.96416H13.0156L15.0916 16.1602H13.4356L12.9796 14.5042H10.1116L9.6796 16.1602H8.0356ZM10.3756 13.1722H12.7396L11.8156 9.30816H11.3116L10.3756 13.1722Z"
+                                                fill="#003C4F" />
+                                        </svg>
+                                    </div>
+                                    <div class="px-2">
+                                        2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a href="mailto:walialbada@gmail.com" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.6524 23.1591C6.70544 19.2943 2.82131 15.5648 0 11.9705C3.0532 8.02838 6.93733 4.31817 11.6524 0.839844C15.865 3.97034 19.6912 7.68055 23.1309 11.9705C21.6236 13.8256 19.7878 15.7966 17.6235 17.8836C15.4592 19.9706 13.4688 21.7291 11.6524 23.1591Z"
+                                            fill="#C7FF50" />
+                                        <path
+                                            d="M9.51674 16.1602V7.96416H14.9647V9.34416H11.1727V11.3362H14.2447V12.6922H11.1727V14.7802H14.9647V16.1602H9.51674Z"
+                                            fill="#003C4F" />
+                                    </svg>
+                                </span>
+                                <span class="px-2">
+                                    walialbada@gmail.com
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a href="tel:+3075550133" class="nav-link p-0 fw-normal fs-6 text-clr-dark9">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.6524 23.1591C6.70544 19.2943 2.82131 15.5648 0 11.9705C3.0532 8.02838 6.93733 4.31817 11.6524 0.839844C15.865 3.97034 19.6912 7.68055 23.1309 11.9705C21.6236 13.8256 19.7878 15.7966 17.6235 17.8836C15.4592 19.9706 13.4688 21.7291 11.6524 23.1591Z"
+                                            fill="#1AE3E3" />
+                                        <path
+                                            d="M8.72377 16.1582V7.9622H11.8078C12.4878 7.9622 13.0518 8.0582 13.4998 8.2502C13.9478 8.4342 14.2838 8.7342 14.5078 9.1502C14.7398 9.5662 14.8558 10.1222 14.8558 10.8182C14.8558 11.5142 14.7398 12.0822 14.5078 12.5222C14.2838 12.9542 13.9478 13.2742 13.4998 13.4822C13.0518 13.6822 12.4878 13.7822 11.8078 13.7822H10.3798V16.1582H8.72377ZM10.3798 12.4262H11.7598C12.2638 12.4262 12.6238 12.2942 12.8398 12.0302C13.0558 11.7582 13.1638 11.3582 13.1638 10.8302C13.1638 10.2862 13.0558 9.8982 12.8398 9.6662C12.6238 9.4342 12.2638 9.3182 11.7598 9.3182H10.3798V12.4262Z"
+                                            fill="#003C4F" />
+                                    </svg>
+                                </span>
+                                <span class="px-2">
+                                    (307) 555-0133
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-center footer-border py-2 mt-3">
+                <p class="m-0 text-clr-dark10 fw-normal fs-6">Copyright © 2023 I Wadi Al Bada I All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / footer -->
+
+
+
+    <!-- Main Coding End -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- CDN Bootstrap bundle js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="assets/js/jquery-petty-accordion.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

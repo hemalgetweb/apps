@@ -1,7 +1,8 @@
-.our-strategy{
-  z-index: 100;
-}
+
 .strategy-wrapper{
   background-color: #003959;
   border: 1px solid #004770;
+}
+.our-strategy{
+  z-index: 100;
 }

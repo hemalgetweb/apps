@@ -2,11 +2,12 @@
 
 namespace Elementor;
 
-use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use ELementor\Repeater;
+use Elementor\Widget_Base;
 
-if (!defined('ABSPATH')) exit; // Exit if accessed directly
+if (!defined('ABSPATH'))
+	exit; // Exit if accessed directly
 
 /**
  * CB Core Demo
@@ -119,6 +120,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'layout-1' => __('Layout 1', 'cb-core'),
+					'layout-2' => __('Layout 2', 'cb-core'),
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -139,7 +141,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'solid',
 				'options' => [
-					'style-1'  => __('Style 1', 'cb-core'),
+					'style-1' => __('Style 1', 'cb-core'),
 				],
 				'default' => 'style-1'
 			]
@@ -232,6 +234,34 @@ class CB_Core_Feature_List extends Widget_Base
 			]
 		);
 
+		$repeater->add_control(
+			'strategy_icon',
+			[
+				'label' => esc_html__('strategy icon', 'apps'),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+				'placeholder' => esc_html__('Type your strategy icon here', 'apps'),
+				'condition' => [
+					'field_condition' => ['style-2']
+				]
+			]
+		);
+		$repeater->add_control(
+			'strategy_title',
+			[
+				'label' => __('Strategy Title', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __('Strategy Title', 'cb-core'),
+				'label_block' => true,
+				'condition' => [
+					'field_condition' => ['style-2']
+				],
+				'placeholder' => __('Type strategy title here', 'cb-core'),
+			]
+		);
+
 		$this->end_controls_section();
 	}
 
@@ -249,7 +279,7 @@ class CB_Core_Feature_List extends Widget_Base
 
 		$settings = $this->get_settings(); ?>
 
-        <?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
+		<?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
 	}
 }
 

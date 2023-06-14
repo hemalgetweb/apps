@@ -77,55 +77,6 @@
         </div>
     </div>
 
-    <div class="strategy-wrapper py-4">
-        <div class="container">
-            <div class="our-strategy position-relative d-flex gap-sm-4 gap-3 align-items-center justify-content-lg-between justify-content-center mt-5 mt-lg-0 wow fadeInUp"
-                data-wow-duration="0.200s" data-wow-delay="600ms">
-                <div class="strategy-item d-flex align-items-center flex-wrap flex-lg-nowrap gap-3">
-                    <div class="icon">
-                        <img src="assets/img/global.svg" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="strategy-info">
-                        <h5 class="text-clr-primary2 fs-6 mb-0 lh-base">
-                            <b>Full-Cycle</b> Web <br class="d-none d-lg-inline"> Design and Development
-                        </h5>
-                    </div>
-                </div>
-                <div class="strategy-item d-flex align-items-center flex-wrap flex-lg-nowrap gap-3">
-                    <div class="icon">
-                        <img src="assets/img/growth.svg" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="strategy-info">
-                        <h5 class="text-clr-primary2 fs-6 mb-0 lh-base">
-                            <b>Fast Growth </b> with Lead <br class="d-none d-lg-inline"> Generation Campaign
-                        </h5>
-                    </div>
-                </div>
-                <div class="strategy-item d-flex align-items-center flex-wrap flex-lg-nowrap gap-3">
-                    <div class="icon">
-                        <img src="assets/img/search.svg" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="strategy-info">
-                        <h5 class="text-clr-primary2 fs-6 mb-0 lh-base">
-                            <b>Improved Local Rankings </b> <br class="d-none d-lg-inline"> on Google
-                        </h5>
-                    </div>
-                </div>
-                <div class="strategy-item d-flex align-items-center flex-wrap flex-lg-nowrap gap-3">
-                    <div class="icon">
-                        <img src="assets/img/marketinglogo.svg" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="strategy-info">
-                        <h5 class="text-clr-primary2 fs-6 mb-0 lh-base">
-                            <b> Branding, Customer Loyalty,
-                            </b> <br class="d-none d-lg-inline">
-                            Social Media Engagement
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="banner-img text-center text-lg-end position-absolute end-0 bottom-0" data-wow-duration="0.200s"
         data-wow-delay="400ms">

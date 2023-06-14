@@ -40,11 +40,8 @@ a, img {
     transition: all .3s;
 }
 .navbar-nav .menu-item > ul.dropdown-menus li a {font-size: 14px;color: rgb(0, 60, 79);text-transform: uppercase;font-weight: 500;}
-.navbar-nav .menu-item > ul.dropdown-menus li:hover a {
-    transform: translateX(5px);
-}
 .navbar-nav .menu-item.has-mega-menu > .dropdown-menus {
-    min-width: 608px;
+    min-width: 756px;
 }
 
 
@@ -165,17 +162,80 @@ span.authure-name a {
 .sidebar-widget .widget-title {
     color: rgb(33, 37, 41);
 }
-ul.dropdown-menus li.menu-item a {
+ul.dropdown-menus li.menu-item a:hover {
     background: #E3F5FF;
 }
 
 ul.dropdown-menus li.menu-item a img {
-    background: #fff;
+    background: #E3F5FF;
     border-radius: 4px;
     padding: 12px 10px;
+    transition: all .3s;
 }
-
+ul.dropdown-menus li.menu-item a:hover img {
+    background-color: #fff;
+}
 ul.dropdown-menus li.menu-item a {
     padding: 10px;
     border-radius: 6px;
+}
+.navbar-nav .menu-item > ul.dropdown-menus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 30px;
+}
+
+/**
+* ecommerce page
+*/
+
+.apps-service-section-subtitle-114 {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #316785;
+    line-height: 22px;
+    margin-bottom: 5px;
+    display: block;
+}
+.apps-service-section-title-114 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    color: #003959;
+    margin-bottom: 10px;
+}
+.apps-service-section-wrapper-114 p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+    color: #1F516D;
+}
+.apps-service-box-114 {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 57, 89, 0.1);
+    border-radius: 6px;
+    padding: 30px;
+}
+.apps-service-box-114 .apps-service-box-icon-114 {
+    margin-bottom: 20px;
+}
+
+.apps-service-box-content-wrap-114 .apps-service-box-title-114 a {
+    font-size: 24px;
+    line-height: 34px;
+    color: #003959;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.apps-service-box-content-wrap-114 p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #1F516D;
+}
+.mb-50 {
+    margin-bottom: 50px;
 }

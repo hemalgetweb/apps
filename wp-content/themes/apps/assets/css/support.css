@@ -1,4 +1,7 @@
 .our-strategy{
-  position: relative;
   z-index: 100;
+}
+.strategy-wrapper{
+  background-color: #003959;
+  border: 1px solid #004770;
 }

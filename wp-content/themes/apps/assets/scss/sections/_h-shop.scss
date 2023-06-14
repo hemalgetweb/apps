@@ -1,0 +1,104 @@
+.apps-fz-woo-product-box-422 {
+    & .apps-woo-product-box-content-1 {
+        padding: 0;
+        padding-top: 25px;
+    }
+    & .apps-title {
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+    & .apps-woo-product-box-action-wrap-1.has-pos {
+        bottom: 40px;
+    }
+    & .apps-woo-product-box-image-1 {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+}
+
+.apps-fz-shop-top-heading-422 {
+    margin-bottom: 0;
+}
+.apps-fz-shop {
+    &-filter-grid-btn-wrap-422 {
+        & >  nav {
+            display: inline-block;
+            @media #{$xs} {
+                margin-bottom: 10px;
+            }
+        }
+        & button {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #EAEAEA;
+            border-radius: 3px;
+            color: #999999;
+            &:hover, &.active {
+                color: var(--clr-theme-primary);
+            }
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+        & .nice-select {
+            float: none;
+            display: inline-block;
+            width: 200px;
+            padding: 0px 12px;
+            border: 1px solid #EAEAEA;
+            height: 40px;
+            font-size: 14px;
+            margin-left: 7px;
+            @media #{$lg, $md} {
+                width: 200px;
+            }
+            @media #{$xs} {
+                width: 200px;
+            }
+            @media #{$sm} {
+                width: 200px;
+            }
+            & .list {
+                @media #{$xs} {
+                    width: 100%;
+                }
+            }
+            &::after {
+                right: 16px;
+                color: #777777;
+            }
+        }
+    }
+}
+.apps-fz-shop-filter-grid-btn-wrap-422 {
+    @media #{$xs} {
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+}
+.apps-fz-shop-details-nav-443 {
+    border-bottom: 1px solid #EAEAEA;
+    & .nav-link {
+        font-size: 16px;
+        height: 50px;
+        border-radius: 3px 3px 0 0;
+        padding: 0 34px;
+        font-family: $roboto;
+        font-weight: 700;
+        background-color: transparent;
+        color: #999999;
+        &:not(.active):hover {
+            color: var(--clr-theme-primary);
+        }
+        &.active {
+            color: var(--clr-common-white);
+            background: var(--clr-theme-primary);
+        }
+    }
+}
+.related-product-slider .apps-woo-product-box-content-1 {
+    padding-top: 15px;
+}

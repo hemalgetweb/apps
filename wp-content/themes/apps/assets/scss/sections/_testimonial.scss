@@ -1,0 +1,70 @@
+.testimonial {
+    overflow: hidden;
+    .review-slider {
+        .slick-list {
+            padding: 20px 10px;
+            margin: -20px;
+        }
+        .review-card {
+            outline: 1px solid #ddd;
+            padding: 30px 15px;
+            margin: 0 10px;
+            transition: 0.3s;
+            outline-offset: -2px;
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 13px;
+                .part-img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                .txt {
+                    width: calc(100% - 75px);
+                    h4 {
+                        font-size: 18px;
+                        line-height: 100%;
+                        font-weight: 600;
+                        color: $black-3;
+                        margin-top: -1px;
+                        margin-bottom: 11px;
+                    }
+                    span {
+                        display: block;
+                        font-size: 14px;
+                        line-height: 100%;
+                        font-weight: 400;
+                        color: $black-2;
+                    }
+                }
+            }
+            .main-txt {
+                p {
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: $black-2;
+                    margin-bottom: 13px;
+                }
+            }
+            .star-wrap {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .star {
+                    display: flex;
+                    gap: 7px;
+                    font-size: 14px;
+                    color: $gold;
+                }
+                span {
+                    font-size: 14px;
+                    line-height: 100%;
+                    color: $black;
+                }
+            }
+        }
+    }
+}

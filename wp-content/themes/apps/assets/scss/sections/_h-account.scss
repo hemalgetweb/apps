@@ -1,0 +1,45 @@
+.woocommerce form.login {
+    border-radius: 3px;
+    border: 1px solid #E4E4E4;
+}
+div#customer_login h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+form.login.woocommerce-form-login input[type="text"], form.login.woocommerce-form-login input[type="email"] {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #999999;
+}
+form.login.woocommerce-form-login label {
+    color: #777;
+}
+.woocommerce form.login.woocommerce-form-login .form-row {
+    padding: 3px;
+    margin: 0 0 12px;
+}
+label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme > span {
+    color: #999999;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 10px;
+}
+label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 17px;
+}
+p.woocommerce-LostPassword.lost_password {
+    font-size: 14px;
+    color: var(--clr-theme-primary);
+    margin-bottom: 0;
+}
+form.woocommerce-form.woocommerce-form-register.register {
+    border-radius: 3px;
+    border: 1px solid #E4E4E4;
+}
+.woocommerce-form-register p.woocommerce-form-row label {
+    color: #777;
+}

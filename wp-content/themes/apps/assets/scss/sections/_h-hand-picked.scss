@@ -1,0 +1,33 @@
+.apps-rv {
+    &-hand-picked-product-arrow {
+        display: flex;
+        justify-content: flex-end;
+        grid-gap: 0 20px;
+        @media #{$xs} {
+            justify-content: center;
+        }
+        @at-root {
+            .apps-rv-arrow {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #e5e5e5;
+                border-radius: 50%;
+                background-color: var(--clr-common-white);
+                font-size: 14px;
+                color: var(--clr-common-black);
+                @include hover-animated-icon;
+                &:hover {
+                    background-color: var(--clr-theme-primary);
+                    color: var(--clr-common-white);
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+.has-apps-hand-picked-space-top {
+    @media #{$xs} {
+        padding-bottom: 30px;
+    }
+}

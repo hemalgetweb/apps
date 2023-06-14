@@ -1,0 +1,181 @@
+.admin-bar .apps-header-style-1 {
+    top: 32px !important;
+}
+.navbar-nav .menu-item > ul.dropdown-menus {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.navbar-nav .menu-item > ul.dropdown-menus::after {
+    width: 30px;
+    height: 12px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    right: 40px;
+    top: -7px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%, 0 100% );
+    border-radius: 25px;
+}
+.navbar-nav .menu-item:hover > ul.dropdown-menus {
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+
+.navbar-nav .menu-item > ul.dropdown-menus li {
+    margin-left: 0 !important;
+    margin-bottom: 1rem;
+}
+.navbar-nav .menu-item > ul.dropdown-menus li:last-child {
+    margin-bottom: 0;
+}
+a, img {
+    transition: all .3s;
+}
+.navbar-nav .menu-item > ul.dropdown-menus li a {font-size: 14px;color: rgb(0, 60, 79);text-transform: uppercase;font-weight: 500;}
+.navbar-nav .menu-item > ul.dropdown-menus li:hover a {
+    transform: translateX(5px);
+}
+.navbar-nav .menu-item.has-mega-menu > .dropdown-menus {
+    min-width: 608px;
+}
+
+
+.navbar-nav .menu-item.has-mega-menu > .dropdown-menus::after {
+    right: auto;
+    left: 30px !important;
+}
+.apps-has-mobile-menu-custom ul.dropdown-menus {
+    position: static !important;
+    display: none;
+}
+.mobileMenu .navbar-nav .menu-item > ul.dropdown-menus {
+    min-width: 100% !important;
+    z-index: 9;
+}
+.mobileMenu .navbar-nav .menu-item > ul.dropdown-menus li {
+    list-style: none;
+}
+@media (max-width: 767px) {
+    .mobileMenu .navbar-nav .menu-item > ul.dropdown-menus li {
+        width: 100%;
+        float: none;
+    }
+}
+@media (max-width: 1199px) {
+    .navbar-right.btn-wrap {
+        margin-bottom: 60px;
+    }
+}
+.footer-widget ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-widget ul li a {
+    text-decoration: none;
+    color: #8ecfe3;
+    font-size: 1rem;
+}
+
+.apps-rv-footer-widget-title {
+    color: #fff;
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+    position: relative;
+}
+
+.apps-rv-footer-widget-title::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: rgb(38, 181, 181);
+    transform: rotate(45deg);
+    display: inline-block;
+    margin-top: -5px;
+}
+.footer-widget ul li a:hover {
+    color: #fff;
+}
+.footer-widget ul li a:hover {
+    color: #fff;
+}
+.footer-widget ul li a::before {
+    content: ">";
+    margin-right: 9px;
+}
+.menu-footer-social-container ul li a::before {
+    display: none;
+}
+
+.menu-footer-social-container ul li a img {
+    padding-right: 0px !important;
+}
+.custom-fott-cls li a::before {
+    display: none !important;
+}
+.pt-300 {
+    padding-top: 300px;
+}
+.blog-pagination > .page-numbers {
+    border: 1px solid #AECBD3;
+    border-radius: 8px;
+    height: 36px;
+    width: 36px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    line-height: 36px;
+    background: #fff;
+    color: #222;
+}
+
+.blog-pagination > .page-numbers:hover {
+    background: #26B5B5;
+    color: #fff;
+    border-color: transparent;
+}
+.authors.text-decoration-none > img {
+    border-radius: 50%;
+}
+span.authure-name a {
+    text-decoration: none;
+    color: var(--dark1);
+}
+.wp-block-search .wp-block-search__button::after {
+    content: "\f002";
+    font-size: 15px;
+    font-family: "Font awesome 6 pro";
+}
+.sidebar-widget .recent-post li.recent-post-list .img-fluid {
+    width: 67px;
+}
+.sidebar-widget .widget-title {
+    color: rgb(33, 37, 41);
+}
+ul.dropdown-menus li.menu-item a {
+    background: #E3F5FF;
+}
+
+ul.dropdown-menus li.menu-item a img {
+    background: #fff;
+    border-radius: 4px;
+    padding: 12px 10px;
+}
+
+ul.dropdown-menus li.menu-item a {
+    padding: 10px;
+    border-radius: 6px;
+}

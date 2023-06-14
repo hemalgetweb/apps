@@ -1,0 +1,110 @@
+.apps-fz {
+    &-featured {
+        &-product {
+            &-top-wrapper-main-2 {
+                border-bottom: 1px solid #eaeaea;
+                padding-bottom: 20px;
+                @media #{$md, $xs} {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+    &-featured-tab {
+        &-wrapper-2 {
+            & button {
+                padding: 0;
+                color: $black;
+                font-size: 14px;
+                font-weight: 700;
+                margin: 0 18px;
+                position: relative;
+                @media #{$xs} {
+                    margin: 0 10px;
+                }
+                &::after {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 1px;
+                    transition: all .3s;
+                    background-color: $black;
+                    content: "";
+                }
+                &:hover, &.active {
+                    color: $black;
+                    &::after {
+                        width: 100%;
+                        right: auto;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.apps-fz-black-banner-2.pl-100.pr-100 {
+    @media #{$md} {
+        padding: 60px 50px;
+        padding-bottom: 0;    
+    }
+}
+/*
+* featured product 6
+*/
+.apps-fz-featured-product-tab-nav-6 .nav-tabs .nav-link.active {
+    border: 0;
+    background: transparent;
+    color: var(--clr-theme-6);
+}
+
+.apps-fz-featured-product-tab-nav-6 .nav-tabs .nav-link {
+    font-size: 16px;
+    font-family: 'Dubai';
+    border: 0;
+    color: #8A8A8A;
+    padding: 0 0;
+    margin: 0 16px;
+}
+
+.apps-fz-featured-product-tab-nav-6 .nav-tabs .nav-link .count {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    line-height: 1;
+}
+
+
+.apps-fz-featured-product-tab-nav-6 {
+	.nav-tabs {
+        justify-content: center;
+        border: 0;
+		.nav-link.active {
+			border: 0;
+			background: transparent;
+			color: var(--clr-theme-6);
+            position: relative;
+            & span.text {
+                text-decoration: underline;
+            }
+		}
+		.nav-link {
+			font-size: 16px;
+			font-family: $dubai;
+			border: 0;
+			color: #8A8A8A;
+			padding: 0 0;
+			margin: 0 16px;
+            @media #{$xs} {
+                margin-bottom: 10px;
+            }
+			.count {
+				display: block;
+				font-size: 12px;
+				text-align: right;
+				line-height: 1;
+			}
+		}
+	}
+}

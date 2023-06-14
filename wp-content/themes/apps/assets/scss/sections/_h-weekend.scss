@@ -1,0 +1,105 @@
+.apps-fz {
+    &-banner-video-image-box-4 {
+        position: relative;
+        & > img {
+            @media #{$xs} {
+                width: 100%;
+            }
+        }
+        & input[type="checkbox"] {
+            display: none;
+        }
+        & .apps-fz-video-play-btn-4 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+        }
+    }
+    &-weekend-offer {
+        &-inner {
+            &-form-4 {
+                max-width: 350px;
+                position: relative;
+                & input[type="email"] {
+                    height: 50px;
+                    background: #f9f9f9;
+                    line-height: 50px;
+                    padding: 0 15px;
+                    padding-right: 150px;
+                    width: 100%;
+                    &.fz-responsive {
+                        @media #{$lg} {
+                            padding-right: 120px;
+                        }
+                    }
+                }
+                & button[type="submit"] {
+                    font-weight: 700;
+                    color: var(--clr-common-white);
+                    background-color: #060606;
+                    height: 50px;
+                    padding: 0 35px;
+                    right: 0;
+                    top: 0;
+                    font-family: $adobeclean;
+                    @include hoverBtnTextAnimated;
+                    position: absolute;
+                    &.fz-responsive {
+                        @media #{$lg} {
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+            &-left-4 {
+                & .subtitle {
+                    font-family: $adobeclean;
+                    color: var(--clr-body-dark-3);
+                    display: block;
+                    margin-bottom: 0;
+                }
+                & .title {
+                    font-family: $adobeclean;
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: var(--clr-body-dark-3);
+                    margin-bottom: 17px;
+                    & a {
+                        &:hover {
+                            color: var(--clr-theme-4);
+                        }
+                    }
+                }
+                & .content {
+                    font-family: $adobeclean;
+                    margin-bottom: 47px;
+                }
+            }
+        }
+    }
+}
+.apps-fz-video-play-btn-4 {
+    width: 55px;
+    height: 55px;
+    background-color: var(--clr-body-dark-3);
+    text-align: center;
+    display: flex;
+    transition: all .3s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--clr-common-white);
+    &:hover {
+        background-color: var(--clr-theme-4);
+        color: var(--clr-common-white);
+    }
+}
+
+
+.apps-fz-weekend-offer-inner-left-4.pr-135 {
+    @media #{$lg, $xs} {
+        padding-right: 0;
+    }
+}

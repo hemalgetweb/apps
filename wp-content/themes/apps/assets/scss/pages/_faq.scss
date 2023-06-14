@@ -1,0 +1,140 @@
+.faq {
+    .accordion-item:first-of-type {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .accordion-item:last-of-type {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .accordion-item:first-of-type .accordion-button {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .accordion-item:last-of-type .accordion-button.collapsed {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .accordion {
+        margin-bottom: -30px;
+        .accordion-item {
+            border: 0;
+            box-shadow: 0px 0px 30px 0px rgba($black-0, .1);
+            margin-bottom: 30px;
+            .accordion-button {
+                height: 70px;
+                padding: 0 30px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #222;
+                display: flex;
+                justify-content: space-between;
+                &:not(.collapsed) {
+                    background: transparent;
+                    box-shadow: 0 0;
+                }
+                &::after {
+                    display: none;
+                }
+                .icon {
+                    text-align: center;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    background: $black;
+                    color: $white;
+                }
+                &:focus {
+                    box-shadow: 0 0;
+                }
+            }
+            .accordion-body {
+                padding: 30px;
+                padding-top: 0;
+                p {
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: $black-2;
+                    margin-top: -6px;
+                    margin-bottom: -8px;
+                }
+            }
+        }
+    }
+}
+.apps-fz-faq-box-inner-2 {
+    & .accordion-header {
+        margin-bottom: 10px;
+    }
+    & .accordion-button {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #282828;
+        font-weight: 600;
+        background: transparent;
+        padding: 0 0;
+        box-shadow: none;
+        display: flex;
+        align-items: baseline;
+        &::after {
+            display: none;
+        }
+        & i {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    }
+    & .accordion-body {
+        padding: 0 0;
+        padding-left: 26px;
+        & p {
+            margin-bottom: 0;
+            color: #777777;
+        }
+    }
+    & .accordion-item {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 30px;
+        padding-bottom: 28px;
+        &:last-child {
+            margin: 0;
+            border: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+.apps-fz-faq-title-inner-2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 33px;
+    @media #{$xs} {
+        font-size: 26px;
+    }
+}
+.apps-fz-faq-contact-box-inner-2 {
+    text-align: center;
+    padding: 50px 30px;
+    background: #f9f9f9;
+}
+.apps-fz-faq-contact-box-inner-2 .icon i {
+    font-size: 35px;
+    display: block;
+    margin-bottom: 30px;
+    color: #282828;
+}
+
+.apps-fz-faq-contact-box-inner-2  .title {margin-bottom: 18px;}
+.apps-fz-faq-contact-box-inner-2 .content {
+    margin-bottom: 0;
+}
+.apps-fz-find-sidebar-inner-2.ml-50 {
+    @media #{$xl} {
+        margin-left: 30px;
+    }
+    @media #{$lg, $md, $xs} {
+        margin-left: 0;
+    }
+}

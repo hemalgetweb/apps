@@ -1,0 +1,246 @@
+.apps-fz-slider {
+    &-shape-wrap-6 {
+        & .image-1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        & .image-2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        & .image-3 {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            @media #{$xxl} {
+                max-width: 500px;
+            }
+            @media #{$xl} {
+                max-width: 440px;
+            }
+            @media #{$lg, $md, $xs} {
+                display: none;
+            }
+        }
+    }
+    &-wine-rounded-animate-pos-6 {
+        position: absolute;
+        bottom: 20px;
+        left: -100px;
+        @media #{$lg, $md} {
+            top: -10px;
+            left: 380px;
+            bottom: auto;
+        }
+        @media #{$xs} {
+            bottom: -190px;
+            left: auto;
+            right: 0px;
+        }
+    }
+    &-wine-rounded-text-animate-shape-6 {
+        position: relative;
+        display: inline-block;
+        & .text {
+            & img {
+                max-width: 141.26px;
+                animation-name: rotate_shape;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                @media #{$xs} {
+                    max-width: 111.26px;
+                }
+            }
+        }
+        & .wine {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            & img {
+                max-height: 65.78px;
+                @media #{$xs} {
+                    max-height: 50.78px;
+                }
+            }
+        }
+    }
+    &-search-6 {
+        height: 50px;
+        position: relative;
+        &.has-pos {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            @media #{$lg, $md} {
+                bottom: 0px;
+                left: 40px;
+            }
+            @media #{$xs} {
+                bottom: 50px;
+                left: 15px;
+            }
+        }
+        & button[type="submit"] {
+            width: 50px;
+            height: 50px;
+            font-size: 14px;
+            & i {
+                font-weight: 400;
+                transition: all .3s;
+                color: var(--clr-theme-6);
+            }
+        }
+        & input {
+            height: 50px;
+            width: 170px;
+            font-size: 16px;
+            padding-left: 0;
+            padding-right: 20px;
+            color: var(--clr-theme-6);
+            font-family: $dubai;
+            @media #{$xs} {
+                width: 120px;
+            }
+            &::placeholder {
+                font-size: 16px;
+                color: var(--clr-theme-6);
+                font-family: $dubai;
+            }
+        }
+        &::after {
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid var(--clr-theme-6);
+            border-radius: 50px;
+            content: "";
+            width: 50px;
+            height: 50px;
+            transition: all .3s;
+        }
+        &:hover::after, &:focus::after, &:focus-visible::after {
+            width: 100%;
+        }
+    }
+    &-right-img-6 {
+        & img {
+            max-height: 655px;
+            @media #{$xl} {
+                max-height: 525px;
+            }
+        }
+    }
+    &-content-6 {
+        position: relative;
+        & blockquote {
+            background: transparent;
+            padding: 0;
+            font-size: 18px;
+            font-family: $dubai;
+            max-width: 414px;
+            color: var(--clr-theme-6);
+            padding-left: 30px;
+            border-left: 1px solid #CAD5C8;
+            margin: 0;
+            position: absolute;
+            bottom: 58px;
+            right: 13px;
+            @media #{$lg} {
+                right: 132px;
+            }
+            @media #{$md} {
+                padding-left: 20px;
+            }
+            @media #{$xs} {
+                position: static;
+                margin-top: 35px;
+            }
+        }
+        & .subtitle {
+            font-size: 18px;
+            font-family: $playfair;
+            color: #122E00;
+            display: block;
+            margin-bottom: 7px;
+            &::before {
+                width: 60px;
+                height: 1px;
+                background-color: #122E00;
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 17px;
+            }
+        }
+        & .title {
+            font-family: $playfair;
+            font-size: 140px;
+            font-weight: 400;
+            line-height: 1;
+            color: #122E00;
+            margin-bottom: 60px;
+            @media #{$xxl} {
+                font-size: 115px;
+            }
+            @media #{$xl} {
+                font-size: 85px;
+            }
+            @media #{$lg} {
+                font-size: 110px;
+            }
+            @media #{$md} {
+                font-size: 75px;
+            }
+            @media #{$xs} {
+                font-size: 50px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+.apps-fz-slider-item-6 {
+    min-height: 885px;
+    @media #{$xl} {
+        min-height: 750px;
+    }
+    @media #{$lg, $md, $xs} {
+        padding: 100px 0;
+    }
+    @media #{$md, $lg} {
+        margin-bottom: 40px
+    }
+    @media #{$xs} {
+        padding-bottom: 200px;
+    }
+}
+.apps-fz-social-share-6 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Dubai';
+    transform: rotate(-90deg);
+    color: var(--clr-theme-6);
+    position: absolute;
+    left: -16px;
+    bottom: 300px;
+    @media #{$xxxl, $xxl} {
+        left: -50px;
+    }
+    @media #{$xl} {
+        left: -63px;
+    }
+    & a {
+        &:hover {
+            color: var(--clr-theme-6);
+        }
+    }
+}

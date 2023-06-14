@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
  *
  * @since 1.0.0
  */
-class CB_Core_Service extends Widget_Base
+class CB_Core_Heading extends Widget_Base
 {
 
     /**
@@ -29,7 +29,7 @@ class CB_Core_Service extends Widget_Base
      */
     public function get_name()
     {
-        return 'cb-service';
+        return 'cb-heading';
     }
 
     /**
@@ -43,7 +43,7 @@ class CB_Core_Service extends Widget_Base
      */
     public function get_title()
     {
-        return __('CB Service', 'cb-core');
+        return __('CB Heading', 'cb-core');
     }
 
     /**
@@ -126,93 +126,76 @@ class CB_Core_Service extends Widget_Base
         );
         $this->end_controls_section();
         $this->start_controls_section(
-            '_section_service_content',
+            '_section_heading_content',
             [
-                'label' => __('service Content', 'cb-core'),
+                'label' => __('Heading Content', 'cb-core'),
             ]
         );
-        
-        $repeater = new \Elementor\Repeater();
-        
-        $repeater->add_control(
-			'field_condition',
-			[
-				'label' => __('Field Condition', 'cb-core'),
-				'type' => Controls_Manager::SELECT,
-				'default' => 'style-1',
-				'options' => [
-					'style-1' => __('Style 1', 'cb-core')
-				],
-			]
-		);
-        $repeater->add_control(
-			'service_image',
-			[
-				'label' => esc_html__( 'Service Image', 'cb-core' ),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-                'label_block' => true,
-                'condition' => [
-                    'field_condition' => ['style-1']
-                ]
-			]
-		);
-        $repeater->add_control(
-        'service_title',
+        $this->add_control(
+        'heading_subtitle',
          [
-            'label'       => esc_html__( 'Service Title', 'cb-core' ),
+            'label'       => esc_html__( 'Heading Subtitle', 'cb-core' ),
             'type'        => \Elementor\Controls_Manager::TEXT,
-            'default'     => esc_html__( 'Service Title', 'cb-core' ),
-            'placeholder' => esc_html__( 'Service Title', 'cb-core' ),
-            'condition' => [
-                'field_condition' => ['style-1']
-            ],
+            'default'     => esc_html__( 'Heading Subtitle', 'cb-core' ),
+            'placeholder' => esc_html__( '', 'cb-core' ),
             'label_block' => true,
-         ]
-        );
-        $repeater->add_control(
-            'service_title_link',
-            [
-            'label'   => esc_html__( 'Service Title Link', 'cb-core' ),
-            'type'        => \Elementor\Controls_Manager::URL,
             'condition' => [
-                'field_condition' => ['style-1']
-            ],
-            'label_block' => true,
-            'default'     => [
-                'url'               => '#',
-                'is_external'       => true,
-                'nofollow'          => true,
-                'custom_attributes' => '',
-                ],
-                'placeholder' => esc_html__( 'Service Title Link', 'cb-core' ),
-                'label_block' => true
+                'layout' => ['layout-1']
             ]
-         );
-        $repeater->add_control(
-        'service_content',
-         [
-            'label'       => esc_html__( 'Service Content', 'cb-core' ),
-            'type'        => \Elementor\Controls_Manager::TEXTAREA,
-            'default'     => esc_html__( 'Service Content', 'cb-core' ),
-            'placeholder' => esc_html__( 'Service Content', 'cb-core' ),
-            'condition' => [
-                'field_condition' => ['style-1']
-            ],
-            'label_block' => true,
          ]
         );
-         $this->add_control(
-           'slides',
-           [
-             'label'       => esc_html__( 'Service Repeater', 'cb-core' ),
-             'type'        => \Elementor\Controls_Manager::REPEATER,
-             'fields'      => $repeater->get_controls(),
-             'title_field' => '{{{ service_title }}}',
-           ]
-         );
+        $this->add_control(
+        'heading_title',
+         [
+            'label'       => esc_html__( 'Heading Title', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => esc_html__( 'Heading Title', 'cb-core' ),
+            'placeholder' => esc_html__( '', 'cb-core' ),
+            'label_block' => true,
+            'condition' => [
+                'layout' => ['layout-1']
+            ]
+         ]
+        );
+        $this->add_control(
+        'description',
+         [
+            'label'       => esc_html__( 'Description', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXTAREA,
+            'default'     => esc_html__( 'Description', 'cb-core' ),
+            'placeholder' => esc_html__( 'Description', 'cb-core' ),
+            'label_block' => true,
+            'condition' => [
+                'layout' => ['layout-1']
+            ]
+         ]
+        );
+        $this->add_control(
+			'text_align',
+			[
+				'label' => esc_html__( 'Alignment', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'textdomain' ),
+						'icon' => 'eicon-text-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'textdomain' ),
+						'icon' => 'eicon-text-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'textdomain' ),
+						'icon' => 'eicon-text-align-right',
+					],
+				],
+				'default' => 'center',
+				'toggle' => true,
+				'selectors' => [
+					'{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',
+				],
+			]
+		);
         $this->end_controls_section();
         $this->start_controls_section(
             'section_style',
@@ -258,4 +241,4 @@ class CB_Core_Service extends Widget_Base
     }
 }
 
-Plugin::instance()->widgets_manager->register(new CB_Core_Service());
+Plugin::instance()->widgets_manager->register(new CB_Core_Heading());

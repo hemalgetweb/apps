@@ -27,8 +27,7 @@ wp-config.php
 !/wp-content/themes/apps/
 
 # Example plugin
-!/wp-content/plugins/cb-toolkit
-!/wp-content/plugins/cb-core
+!/wp-content/plugins/cb-toolkit/
 
 # Uploads
 # /wp-content/uploads/

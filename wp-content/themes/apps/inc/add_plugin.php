@@ -59,6 +59,11 @@ function apps_register_required_plugins()
             'name'     => esc_html__('Yoast Duplicate Post', 'apps'),
             'slug'     => 'duplicate-post',
             'required' => true,
+        ],
+        [
+            'name'     => esc_html__('Elementor Website Builder – More than Just a Page Builder', 'apps'),
+            'slug'     => 'elementor',
+            'required' => true,
         ]
     ];
     $config = [

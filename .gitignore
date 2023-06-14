@@ -24,7 +24,7 @@ wp-content/plugins/**
 !wp-content/plugins/cb-toolkit/**
 !wp-content/plugins/cb-core/
 !wp-content/plugins/cb-core/**
-
+wp-config.php
 
 # Stop editing!
 ############################################

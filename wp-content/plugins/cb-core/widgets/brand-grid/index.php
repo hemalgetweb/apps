@@ -153,13 +153,7 @@ class CB_Core_Brand_Grid extends Widget_Base
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'solid',
 				'options' => [
-					'style-1'  => __('Style 1', 'cb-core'),
-					'style-2'  => __('Style 2', 'cb-core'),
-					'style-3'  => __('Style 3', 'cb-core'),
-					'style-4'  => __('Style 4', 'cb-core'),
-					'style-5'  => __('Style 5', 'cb-core'),
-					'style-6'  => __('Style 6', 'cb-core'),
-					'style-7'  => __('Style 7', 'cb-core'),
+					'style-1'  => __('Style 1', 'cb-core')
 				],
 				'default' => 'style-1',
 			]
@@ -173,9 +167,22 @@ class CB_Core_Brand_Grid extends Widget_Base
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
 				],
 				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5', 'style-6', 'style-7']
+					'field_condition' => ['style-1']
 				]
 			]
+		);
+		$repeater->add_control(
+		'brand_label',
+		 [
+			'label'       => esc_html__( 'Brand Label', 'cb-core' ),
+			'type'        => \Elementor\Controls_Manager::TEXT,
+			'label_block' => true,
+			'default'     => esc_html__( 'Brand Label', 'cb-core' ),
+			'placeholder' => esc_html__( 'Brand Label', 'cb-core' ),
+			'condition' => [
+				'field_condition' => ['style-1']
+			]
+		 ]
 		);
 		$this->add_control(
 			'slides',
@@ -183,42 +190,7 @@ class CB_Core_Brand_Grid extends Widget_Base
 				'label' => __('Slides', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
-				'title_field' => '{{{ product_brand_image.url }}}',
-			]
-		);
-		$repeater = new Repeater();
-		$repeater->add_control(
-			'field_condition_2',
-			[
-				'label' => __('Field Condition', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::SELECT,
-				'default' => 'solid',
-				'options' => [
-					'style-1'  => __('Style 1', 'cb-core')
-				],
-				'default' => 'style-2',
-			]
-		);
-		$repeater->add_control(
-			'product_brand_image_2',
-			[
-				'label' => __('Brand Image', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-				'condition' => [
-					'field_condition_2' => ['style-2', 'style-4', 'style-6']
-				]
-			]
-		);
-		$this->add_control(
-			'slides_2',
-			[
-				'label' => __('Slides 2', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::REPEATER,
-				'fields' => $repeater->get_controls(),
-				'title_field' => '{{{ product_brand_image_2.url }}}',
+				'title_field' => '{{{ brand_label }}}',
 			]
 		);
 		$this->end_controls_section();

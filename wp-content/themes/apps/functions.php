@@ -193,7 +193,6 @@ define('AYAA_THEME_CLASS', AYAA_THEME_INC . 'classes/');
 function apps_admin_custom_scripts()
 {
 	wp_enqueue_media();
-	wp_enqueue_style('support-style', get_template_directory_uri() . '/assets/css/support.css', array());
 	wp_enqueue_style('customizer-style', get_template_directory_uri() . '/inc/style/css/customizer-style.css', array());
 	wp_register_script('apps-admin-custom', get_template_directory_uri() . '/inc/js/admin_custom.js', ['jquery'], '', true);
 	wp_enqueue_script('apps-admin-custom');
@@ -221,6 +220,7 @@ function apps_scripts()
 	wp_enqueue_style('swiper', apps_THEME_CSS_DIR . 'swiper.min.css');
 	wp_enqueue_style('nioicon', apps_THEME_CSS_DIR . 'nioicon.css');
 	wp_enqueue_style('apps-core', apps_THEME_CSS_DIR . 'apps-core.css', null, time());
+	wp_enqueue_style('support', apps_THEME_CSS_DIR . 'support.css', null, time());
 	wp_enqueue_style('apps-custom', apps_THEME_CSS_DIR . 'apps-custom.css', null, time());
 	wp_enqueue_style('apps-unit', apps_THEME_CSS_DIR . 'apps-unit.css', null, time());
 
@@ -240,9 +240,9 @@ function apps_fonts_url()
 {
 	$font_url = '';
 	/*
-			 Translators: If there are characters in your language that are not supported
-			 by chosen font(s), translate this to 'off'. Do not translate into your own language.
-				*/
+								Translators: If there are characters in your language that are not supported
+								by chosen font(s), translate this to 'off'. Do not translate into your own language.
+								 */
 	if ('off' !== _x('on', 'Google font: on or off', 'apps')) {
 		$font_url = 'https://fonts.googleapis.com/css2?' . urlencode('family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 	}

@@ -118,13 +118,7 @@ class CB_Core_Brand_Grid extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core'),
-					'layout-2' => __('Layout 2', 'cb-core'),
-					'layout-3' => __('Layout 3', 'cb-core'),
-					'layout-4' => __('Layout 4', 'cb-core'),
-					'layout-5' => __('Layout 5', 'cb-core'),
-					'layout-6' => __('Layout 6', 'cb-core'),
-					'layout-7' => __('Layout 7', 'cb-core'),
+					'layout-1' => __('Layout 1', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -200,12 +194,7 @@ class CB_Core_Brand_Grid extends Widget_Base
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'solid',
 				'options' => [
-					'style-1'  => __('Style 1', 'cb-core'),
-					'style-2'  => __('Style 2', 'cb-core'),
-					'style-3'  => __('Style 3', 'cb-core'),
-					'style-4'  => __('Style 4', 'cb-core'),
-					'style-5'  => __('Style 5', 'cb-core'),
-					'style-6'  => __('Style 6', 'cb-core'),
+					'style-1'  => __('Style 1', 'cb-core')
 				],
 				'default' => 'style-2',
 			]

@@ -239,3 +239,28 @@ ul.dropdown-menus li.menu-item a {
 .mb-50 {
     margin-bottom: 50px;
 }
+.apps-feature-list-box-count-114 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: #00C7C7;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.apps-feature-list-box-title-114 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #003959;
+    line-height: 34px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.apps-feature-list-box-114 p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1F516D;
+    line-height: 26px;
+    margin-bottom: 0;
+}

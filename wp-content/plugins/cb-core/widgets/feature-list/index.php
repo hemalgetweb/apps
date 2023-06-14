@@ -119,11 +119,6 @@ class CB_Core_Feature_List extends Widget_Base
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'layout-1' => __('Layout 1', 'cb-core'),
-					'layout-2' => __('Layout 2', 'cb-core'),
-					'layout-3' => __('Layout 3', 'cb-core'),
-					'layout-4' => __('Layout 4', 'cb-core'),
-					'layout-5' => __('Layout 5', 'cb-core'),
-					'layout-6' => __('Layout 6', 'cb-core'),
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -145,13 +140,21 @@ class CB_Core_Feature_List extends Widget_Base
 				'default' => 'solid',
 				'options' => [
 					'style-1'  => __('Style 1', 'cb-core'),
-					'style-2'  => __('Style 2', 'cb-core'),
-					'style-3'  => __('Style 3', 'cb-core'),
-					'style-4'  => __('Style 4', 'cb-core'),
-					'style-5'  => __('Style 5', 'cb-core'),
-					'style-6'  => __('Style 6', 'cb-core'),
 				],
 				'default' => 'style-1'
+			]
+		);
+		$repeater->add_control(
+			'feature_count',
+			[
+				'label' => __('Feature Count', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __('01', 'cb-core'),
+				'label_block' => true,
+				'condition' => [
+					'field_condition' => ['style-1']
+				],
+				'placeholder' => __('Type feature count here', 'cb-core'),
 			]
 		);
 		$repeater->add_control(
@@ -162,7 +165,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'default' => __('Free Delivery', 'cb-core'),
 				'label_block' => true,
 				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5', 'style-6']
+					'field_condition' => ['style-1']
 				],
 				'placeholder' => __('Type your title here', 'cb-core'),
 			]
@@ -171,39 +174,13 @@ class CB_Core_Feature_List extends Widget_Base
 			'feature_content',
 			[
 				'label' => __('Feature Content', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'default' => __('Free Delivery', 'cb-core'),
 				'label_block' => true,
 				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5', 'style-6']
+					'field_condition' => ['style-1']
 				],
 				'placeholder' => __('Type your Content here', 'cb-core'),
-			]
-		);
-		$repeater->add_control(
-			'feature_icon',
-			[
-				'label' => __('Feature Icon', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::ICONS,
-				'default' => [
-					'value' => 'flaticon-money-saving',
-				],
-				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-6']
-				],
-			]
-		);
-		$repeater->add_control(
-			'feature_image',
-			[
-				'label' => __('Featured Image', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-				'condition' => [
-					'field_condition' => ['style-4', 'style-5']
-				],
 			]
 		);
 		$this->add_control(

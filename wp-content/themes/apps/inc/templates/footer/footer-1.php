@@ -12,7 +12,7 @@ $footer_class_2[4] = 'col-sm-6 col-md-4 col-xl-3 mb-3';
 
 
 <!-- footer -->
-<footer class="footer pt-100 bg-clr-deepDark">
+<footer class="footer bg-clr-deepDark">
         <div class="container">
             <?php if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4')) : ?>
             <div class="row">

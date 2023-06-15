@@ -118,14 +118,7 @@ class CB_Core_CF7_Form extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core'),
-					'layout-2' => __('Layout 2', 'cb-core'),
-					'layout-3' => __('Layout 3', 'cb-core'),
-					'layout-4' => __('Layout 4', 'cb-core'),
-					'layout-5' => __('Layout 5', 'cb-core'),
-					'layout-6' => __('Layout 6', 'cb-core'),
-					'layout-7' => __('Layout 7', 'cb-core'),
-					'layout-8' => __('Layout 8', 'cb-core'),
+					'layout-1' => __('Layout 1', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -148,100 +141,35 @@ class CB_Core_CF7_Form extends Widget_Base
 				'default' => __('Get Weeky & Offer Daily News', 'cb-core'),
 				'placeholder' => __('Type your title here', 'cb-core'),
 				'condition' => [
-					'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7', 'layout-8']
+					'layout' => ['layout-1']
 				]
 			]
 		);
 		$this->add_control(
 			'section_subtitle',
 			[
-				'label' => __('Section Subtitle', 'cb-core'),
+				'label' => __('Section Sub Title', 'cb-core'),
 				'label_block' => true,
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('Ecommerce websites are built to connect shoppers to products or services
-				for trading online service.', 'cb-core'),
+				'default' => __('We are excited to get to know more about you, your business, and your needs! ', 'cb-core'),
 				'placeholder' => __('Type your subtitle here', 'cb-core'),
 				'condition' => [
-					'layout' => ['layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7']
+					'layout' => ['layout-1']
 				]
 			]
 		);
 		$this->add_control(
-			'section_description',
+			'cf7_image',
 			[
-				'label' => __('Section Description', 'cb-core'),
-				'label_block' => true,
-				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'placeholder' => __('Type your description here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-7']
-				]
-			]
-		);
-		$this->add_control(
-			'section_product_select',
-			[
-				'label' => __('Select Product', 'cb-core'),
-				'type' => Controls_Manager::SELECT2,
-				'options' => apps_drop_posts('product'),
-				'multiple' => false,
-				'label_block' => true,
-				'condition' => [
-					'layout' => 'layout-7',
-				],
-			]
-		);
-		$this->add_control(
-			'cta_icon',
-			[
-				'label' => __('Icon', 'cb-core'),
-				'label' => __('Please select an icon', 'cb-core'),
-				'type' => Controls_Manager::ICONS,
-				'label_block' => true,
-				'condition' => [
-					'layout' => ['layout-3', 'layout-4']
-				]
-			]
-		);
-		$this->add_control(
-			'cf7_bg_image',
-			[
-				'label' => __('Background Image', 'cb-core'),
+				'label' => __('Image', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'label_block' => true,
 				'condition' => [
-					'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-5', 'layout-6']
+					'layout' => ['layout-1']
 				],
 				'default' => [
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
 				],
-			]
-		);
-		$this->add_control(
-			'cf7_font_image',
-			[
-				'label' => __('Front Image', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'label_block' => true,
-				'condition' => [
-					'layout' => ['layout-3', 'layout-7']
-				],
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-			]
-		);
-		$this->add_control(
-			'cta_video_id',
-			[
-				'label' => __('Video ID ( youtube )', 'cb-core'),
-				'label_block' => true,
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('SwZynNzqBys', 'cb-core'),
-				'placeholder' => __('Type your subtitle here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7']
-				]
 			]
 		);
 		if (!cb_core_is_cf7_activated()) {
@@ -286,191 +214,6 @@ class CB_Core_CF7_Form extends Widget_Base
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'description' => __('Add CSS custom class to the form.', 'cb-core'),
-			]
-		);
-		$this->end_controls_section();
-		$this->start_controls_section(
-			'_section_contact_touch_widget',
-			[
-				'label' => __('Touch Widget', 'cb-core'),
-				'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
-		);
-		$this->add_control(
-			'_touch_title',
-			[
-				'label'       => __('Title', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::TEXT,
-				'default'     => __('Get in Touch', 'cb-core'),
-				'placeholder' => __('Title here', 'cb-core'),
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'_touch_address',
-			[
-				'label'       => __('Address', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::TEXT,
-				'default'     => __('989 Bel Meadow Drive Los Angeles, CA 90017, USA', 'cb-core'),
-				'placeholder' => __('Title here', 'cb-core'),
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'_touch_number_text_1',
-			[
-				'label'       => __('Number', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::TEXT,
-				'default'     => __('(+1) 909-407-2988', 'cb-core'),
-				'placeholder' => __('Number here', 'cb-core'),
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'_touch_number_link',
-			[
-				'label'   => __('Number Link', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::URL,
-				'default'     => [
-					'url'               => '#',
-					'is_external'       => true,
-					'nofollow'          => true,
-					'custom_attributes' => '',
-				],
-				'placeholder' => __('Number Link', 'cb-core'),
-				'label_block' => true,
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'_touch_number_text_2',
-			[
-				'label'       => __('Number 2', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::TEXT,
-				'default'     => __('(+1) 909-407-2988', 'cb-core'),
-				'placeholder' => __('Number here', 'cb-core'),
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'_touch_number_link_2',
-			[
-				'label'   => __('Number Link 2', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::URL,
-				'default'     => [
-					'url'               => '#',
-					'is_external'       => true,
-					'nofollow'          => true,
-					'custom_attributes' => '',
-				],
-				'placeholder' => __('Number Link', 'cb-core'),
-				'label_block' => true,
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'_office_hourse_label',
-			[
-				'label'       => __('Office Hours Label', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::TEXT,
-				'default'     => __('Stor Hours:', 'cb-core'),
-				'placeholder' => __('Office Hours Label', 'cb-core'),
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'_office_hourse_value',
-			[
-				'value'       => __('Office Hours Value', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::TEXT,
-				'default'     => __('Mon - Sat : 8:00am - 5:00pm', 'cb-core'),
-				'placeholder' => __('Office Hourse Value', 'cb-core'),
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'fb_link',
-			[
-				'label'   => __('Facebook Link', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::URL,
-				'default'     => [
-					'url'               => '#',
-					'is_external'       => true,
-					'nofollow'          => true,
-					'custom_attributes' => '',
-				],
-				'placeholder' => __('Facebook Link', 'cb-core'),
-				'label_block' => true,
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'twitter_link',
-			[
-				'label'   => __('Twitter Link', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::URL,
-				'default'     => [
-					'url'               => '#',
-					'is_external'       => true,
-					'nofollow'          => true,
-					'custom_attributes' => '',
-				],
-				'placeholder' => __('Twitter Link', 'cb-core'),
-				'label_block' => true,
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'instagram_link',
-			[
-				'label'   => __('Instagram Link', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::URL,
-				'default'     => [
-					'url'               => '#',
-					'is_external'       => true,
-					'nofollow'          => true,
-					'custom_attributes' => '',
-				],
-				'placeholder' => __('Instagram Link', 'cb-core'),
-				'label_block' => true,
-				'condition'   => [
-					'layout' => ['layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'youtube_link',
-			[
-				'label'   => __('Youtube Link', 'cb-core'),
-				'type'        => \Elementor\Controls_Manager::URL,
-				'default'     => [
-					'url'               => '#',
-					'is_external'       => true,
-					'nofollow'          => true,
-					'custom_attributes' => '',
-				],
-				'placeholder' => __('Youtube Link', 'cb-core'),
-				'label_block' => true,
 			]
 		);
 		$this->end_controls_section();

@@ -1,60 +1,33 @@
-<!-- apps-fz-faq-area-start -->
-<div class="apps-fz-faq-area pt-100 pb-70">
+<!-- faq area start -->
+<div class="faq-area">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <?php if(!empty($settings['slides'])) : ?>
-                <div class="apps-fz-faq-wrapper mb-30 pr-25">
-                    <div class="apps-fz-accordion-wrapper" id="fz-faz-example">
-                        <?php foreach($settings['slides'] as $index => $slide) : 
-                            $collapse_class = $index == 0 ? esc_attr__('show'): ''; 
-                            $collapse_boolean = $index == 0 ? esc_attr__('true'): '';   
-                        ?>
-                        <div class="apps-fz-accordion-item">
-                            <?php if(!empty($slide['question_label'])) : ?>
-                                <h2 class="apps-fz-accordion-header mb-0" id="fzone_<?php echo esc_attr($index); ?>">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fzcollapse_<?php echo esc_attr($index); ?>" aria-expanded="<?php echo esc_attr($collapse_boolean); ?>" aria-controls="fzcollapse_<?php echo esc_attr($index); ?>">
-                                        <?php echo cb_core_kses_basic($slide['question_label']); ?>
-                                    </button>
-                                </h2>
-                            <?php endif; ?>
-                            <div id="fzcollapse_<?php echo esc_attr($index); ?>" class="accordion-collapse collapse <?php echo esc_attr($collapse_class); ?>" aria-labelledby="fzone_<?php echo esc_attr($index); ?>" data-bs-parent="#fz-faz-example">
-                                <?php if(!empty($slide['question'])) : ?>
-                                    <div class="accordion-body"><?php echo cb_core_kses_basic($slide['question']); ?></div>
-                                <?php endif; ?>
+        <?php if(!empty($settings['slides'])) : ?>
+        <div class="apps-accordion-wrapper-main-114">
+            <div class="accordion accordion-flush" id="questionAccordion">
+                <?php foreach($settings['slides'] as $index => $slide) : ?>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_<?php echo esc_attr($index); ?>">
+                    <?php if(!empty($slide['faq_title'])) : ?>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_<?php echo esc_attr($index); ?>" aria-expanded="false" aria-controls="collapse_<?php echo esc_attr($index); ?>">
+                            <span class="apps-question-q-114">Q</span> <?php echo wp_kses_post($slide['faq_title']); ?>
+                        </button>
+                    <?php endif; ?>
+                    </h2>
+                    <div id="collapse_<?php echo esc_attr($index); ?>" class="accordion-collapse collapse" aria-labelledby="heading_<?php echo esc_attr($index); ?>" data-bs-parent="#questionAccordion">`
+                        <?php if(!empty($slide['faq_content'])) : ?>
+                        <div class="accordion-body">
+                            <span class="apps-answere-a-114">A</span>
+                            <div class="apps-content">
+                                <?php echo wp_kses_post($slide['faq_content']); ?>
                             </div>
                         </div>
-                        <?php endforeach; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
-                <?php endif; ?>
-            </div>
-            <div class="col-lg-6">
-                <?php if(!empty($settings['slides_2'])) : ?>
-                <div class="apps-fz-faq-wrapper mb-30 pl-25">
-                    <div class="apps-fz-accordion-wrapper" id="fz-faz-example-2">
-                        <?php foreach($settings['slides_2'] as $index => $slide) : 
-                            $collapse_class = $index == 0 ? esc_attr__('show'): '';    
-                            $collapse_boolean = $index == 0 ? esc_attr__('true'): '';
-                        ?>
-                        <div class="apps-fz-accordion-item">
-                            <?php if(!empty($slide['question_label_2'])) : ?>
-                                <h2 class="apps-fz-accordion-header mb-0" id="fzone2_<?php echo esc_attr($index); ?>">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fzcollapseone-<?php echo esc_attr($index); ?>" aria-expanded="<?php echo esc_attr($collapse_boolean); ?>" aria-controls="fzcollapseone-<?php echo esc_attr($index); ?>"><?php echo cb_core_kses_basic($slide['question_label_2']); ?></button>
-                                </h2>
-                            <?php endif; ?>
-                            <div id="fzcollapseone-<?php echo esc_attr($index); ?>" class="accordion-collapse collapse <?php echo esc_attr($collapse_class); ?>" aria-labelledby="fzone2_<?php echo esc_attr($index); ?>" data-bs-parent="#fz-faz-example-2">
-                                <?php if(!empty($slide['question_2'])) : ?>
-                                    <div class="accordion-body"><?php echo cb_core_kses_basic($slide['question_2']); ?></div>
-                                <?php endif;?>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-                <?php endif; ?>
+                <?php endforeach; ?>
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </div>
-<!-- apps-fz-faq-area-end -->
+<!-- faq area end -->

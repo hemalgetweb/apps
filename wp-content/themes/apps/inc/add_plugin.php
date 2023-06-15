@@ -69,6 +69,11 @@ function apps_register_required_plugins()
             'name'     => esc_html__('SVG Support', 'apps'),
             'slug'     => 'svg-support',
             'required' => true,
+        ],
+        [
+            'name'     => esc_html__('Contact Form 7', 'apps'),
+            'slug'     => 'contact-form-7',
+            'required' => true,
         ]
     ];
     $config = [

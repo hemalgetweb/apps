@@ -59,7 +59,7 @@ $this->add_render_attribute( 'banner_image', 'class', 'my-custom-class' );
                 </div>
             </div>
             <div class="col-xl-5 col-lg-12 col-md-12">
-                <div class="new-arrival new-arrival-2 ayaa-new-arrival-wrapper-box-2">
+                <div class="new-arrival new-arrival-2 apps-new-arrival-wrapper-box-2">
                     <div class="part-txt">
                         <div class="countdown-wrap">
                             <?php if(!empty($settings['banner_subtitle'])) : ?>
@@ -69,7 +69,7 @@ $this->add_render_attribute( 'banner_image', 'class', 'my-custom-class' );
                                 <h3><?php echo cb_core_kses_basic($settings['banner_title']); ?></h3>
                             <?php endif; ?>
                             <?php if(!empty($settings['banner_btn_text'])) : ?>
-                                <a <?php echo $this->get_render_attribute_string( 'banner_btn_link' ); ?> class="def-btn ayaa-def-btn-2"><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></a>
+                                <a <?php echo $this->get_render_attribute_string( 'banner_btn_link' ); ?> class="def-btn apps-def-btn-2"><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></a>
                             <?php endif; ?>
                         </div>
                     </div>

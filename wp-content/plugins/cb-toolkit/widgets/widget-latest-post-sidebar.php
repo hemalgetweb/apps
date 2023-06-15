@@ -3,7 +3,7 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 
     public function __construct() {
         parent::__construct( 'cb-latest-posts', __('CB Toolkit Sidebar Posts Image', 'cb-toolkit'), [
-            'description' => __('Latest Post Widget by ayaa', 'cb-toolkit'),
+            'description' => __('Latest Post Widget by apps', 'cb-toolkit'),
         ] );
     }
 
@@ -60,14 +60,14 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 
 
 				
-				<div class="ayaa-sidebar-recent-post mb-20 d-none">
-					<div class="ayaa-sidebar-recent-post-img">
+				<div class="apps-sidebar-recent-post mb-20 d-none">
+					<div class="apps-sidebar-recent-post-img">
 						<a href="<?php echo esc_url(get_the_permalink());?>">
 							<img src="<?php print esc_url( get_the_post_thumbnail_url( get_the_ID(), 'full' ) );?>" alt="<?php echo esc_attr($image_alt); ?>">
 						</a>
 					</div>
-					<div class="ayaa-fz-recent-post-content-447-448">
-					<div class="ayaa-fz-blog-meta-wrap-447">
+					<div class="apps-fz-recent-post-content-447-448">
+					<div class="apps-fz-blog-meta-wrap-447">
 						<a href="<?php print esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );?>"><i class="fal fa-user"></i><?php print esc_html(get_the_author());?></a>
 						<span><i class="fal fa-calendar"></i><?php echo esc_html(get_the_date()); ?></span>
 					</div>

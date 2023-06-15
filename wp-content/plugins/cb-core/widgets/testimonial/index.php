@@ -282,7 +282,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'label' => __('Section Title Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-section-title-6' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-section-title-6' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-5']
@@ -295,7 +295,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'label' => __('Quote Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-testimonial-single-6 .arrow i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-testimonial-single-6 .arrow i' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-5']
@@ -308,7 +308,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'label' => __('Content Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-testimonial-single-6 .desc' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-testimonial-single-6 .desc' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-5']
@@ -321,7 +321,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'label' => __('Rating Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-testimonial-author-rating-6 i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-testimonial-author-rating-6 i' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-5']
@@ -334,7 +334,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'label' => __('Author Name Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-testimonial-author-box-6 .name' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-testimonial-author-box-6 .name' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-5']
@@ -347,7 +347,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'label' => __('Author Designation Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-testimonial-author-box-6 .designation' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-testimonial-author-box-6 .designation' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-5']

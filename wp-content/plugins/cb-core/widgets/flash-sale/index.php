@@ -162,7 +162,7 @@ class CB_Core_Flash_Sale extends Widget_Base
 			[
 				'label' => __('Category', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_cat('product_cat'),
+				'options' => apps_drop_cat('product_cat'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => [
@@ -175,7 +175,7 @@ class CB_Core_Flash_Sale extends Widget_Base
 			[
 				'label' => __('Posts', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_posts('product'),
+				'options' => apps_drop_posts('product'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => [
@@ -303,7 +303,7 @@ class CB_Core_Flash_Sale extends Widget_Base
 				'label' => __('Box Theme Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .single-product-card .part-txt .product-name a:hover, {{WRAPPER}} .single-product-card .cart-option.cart-option-bottom  ul li a:hover, {{WRAPPER}} button.woosw-btn:hover, {{WRAPPER}} .single-product-card .cart-option.cart-option-bottom .ayaa-action-compare-btn .woosc-btn:hover::after, {{WRAPPER}} .single-product-card .cart-option.cart-option-bottom .ayaa-action-compare-btn .woosc-btn:hover::after,{{WRAPPER}} .single-product-card .cart-option.cart-option-bottom button.woosq-btn:hover::after, {{WRAPPER}} .cart-option.cart-option-bottom .ayaa-action-wishlist-btn button.woosw-btn:hover::after' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .single-product-card .part-txt .product-name a:hover, {{WRAPPER}} .single-product-card .cart-option.cart-option-bottom  ul li a:hover, {{WRAPPER}} button.woosw-btn:hover, {{WRAPPER}} .single-product-card .cart-option.cart-option-bottom .apps-action-compare-btn .woosc-btn:hover::after, {{WRAPPER}} .single-product-card .cart-option.cart-option-bottom .apps-action-compare-btn .woosc-btn:hover::after,{{WRAPPER}} .single-product-card .cart-option.cart-option-bottom button.woosq-btn:hover::after, {{WRAPPER}} .cart-option.cart-option-bottom .apps-action-wishlist-btn button.woosw-btn:hover::after' => 'color: {{VALUE}}',
 				],
 			]
 		);

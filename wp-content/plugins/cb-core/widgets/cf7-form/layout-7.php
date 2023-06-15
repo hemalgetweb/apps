@@ -15,16 +15,16 @@
 <!-- weekend offer area start -->
 <div class="weekend-offer-area fix">
     <div class="container">
-        <div class="ayaa-fz-weekend-offer-inner-wrapper-4">
+        <div class="apps-fz-weekend-offer-inner-wrapper-4">
             <div class="row">
                 <div class="col-xxl-5 col-xl-5 col-lg-4 mb-30 mb-lg-0">
-                    <div class="ayaa-fz-weekend-offer-inner-left-4 pr-135">
-                        <div class="ayaa-fz-section-title-wrapper-4 mb-17">
+                    <div class="apps-fz-weekend-offer-inner-left-4 pr-135">
+                        <div class="apps-fz-section-title-wrapper-4 mb-17">
                             <?php if(!empty($settings['section_subtitle'])) : ?>
-                                <span class="ayaa-fz-subtitle-4"><?php echo cb_core_kses_basic($settings['section_subtitle']); ?></span>
+                                <span class="apps-fz-subtitle-4"><?php echo cb_core_kses_basic($settings['section_subtitle']); ?></span>
                             <?php endif; ?>
                             <?php if(!empty($settings['section_title'])) : ?>
-                                <h4 class="ayaa-fz-title-4 fz-responsive"><?php echo cb_core_kses_basic($settings['section_title']); ?></h4>
+                                <h4 class="apps-fz-title-4 fz-responsive"><?php echo cb_core_kses_basic($settings['section_title']); ?></h4>
                             <?php endif; ?>
                         </div>
                         <?php if(!empty($settings['section_description'])) : ?>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 mb-30 mb-md-0">
                     <?php if(!empty($product_id)) : ?>
-                    <div class="ayaa-fz-offer-product-box-4 pt-30">
+                    <div class="apps-fz-offer-product-box-4 pt-30">
                         <?php if(has_post_thumbnail($product_id)) : ?>
                         <div class="image">
                             <a href="<?php echo esc_url(get_the_permalink($product_id)); ?>"><img src="<?php echo get_the_post_thumbnail_url($product_id, 'full'); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_the_post_thumbnail_url($product_id)), '_wp_attachment_image_alt', true); ?>"></a>   
@@ -55,7 +55,7 @@
                             <?php endif;?>
                         </div>
                         <?php if(!empty($percentage)) : ?>
-                        <div class="ayaa-fz-offer-badge-4 has-pos">
+                        <div class="apps-fz-offer-badge-4 has-pos">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/update/banner/offer-badge.png" alt="<?php echo esc_attr__('badge image', 'cb-core'); ?>">
                             <span class="count"><?php echo esc_html($percentage); ?><?php echo esc_html__('%', 'cb-core'); ?></span>
                         </div>
@@ -64,12 +64,12 @@
                     <?php endif;?>
                 </div>
                 <div class="col-xxl-3 col-xl-4 offset-xxl-1 col-lg-4 col-md-6">
-                    <div class="ayaa-fz-banner-video-image-box-4">
+                    <div class="apps-fz-banner-video-image-box-4">
                         <?php echo wp_get_attachment_image( $settings['cf7_font_image']['id'], 'full' ); ?>
                         <?php if(!empty($settings['cta_video_id'])) : ?>
                         <div class="video-intro">
                             <div class="video-wrapper">
-                                    <a href="#" class="js-modal-btn ayaa-fz-video-play-btn-4" data-video-id="<?php echo esc_attr($settings['cta_video_id']); ?>"><i class="fa-solid fa-play"></i></a>
+                                    <a href="#" class="js-modal-btn apps-fz-video-play-btn-4" data-video-id="<?php echo esc_attr($settings['cta_video_id']); ?>"><i class="fa-solid fa-play"></i></a>
                             </div>
                         </div>
                         <?php endif;?>

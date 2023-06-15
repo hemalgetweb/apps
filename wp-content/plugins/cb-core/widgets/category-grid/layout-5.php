@@ -23,12 +23,12 @@
         ?>
             <?php if($index == 0) : ?>
                 <div class="col-xxl-7 col-xl-7 col-lg-7 order-md-1 order-lg-0 order-sm-1 mb-xs-0 mb-sm-3 mb-md-0">
-                    <div class="ayaa-fz-shop-category-box-4 pt-43">
+                    <div class="apps-fz-shop-category-box-4 pt-43">
                         <div class="row">
                             <?php if(!empty($cat_image_url)) : ?>
                             <div class="col-xxl-7 col-xl-6 col-lg-6 col-sm-6 order-md-1 order-lg-0 order-sm-1">
                                 <div class="image">
-                                    <div class="fz-filter-image-box ayaa-fz-shop-cat-filter-image-box-item-1-4">
+                                    <div class="fz-filter-image-box apps-fz-shop-cat-filter-image-box-item-1-4">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                     </div>
@@ -36,13 +36,13 @@
                             </div>
                             <?php endif;?>
                             <div class="col-xxl-5 col-xl-6 col-lg-6 col-sm-6 align-self-end order-md-0 order-lg-1 order-sm-0">
-                                <div class="ayaa-fz-shop-category-box-content-4 pb-40">
+                                <div class="apps-fz-shop-category-box-content-4 pb-40">
                                     <h5 class="title fz-responsive"><a href="<?php echo esc_url($cat_link); ?>" class="title-anim"><?php echo cb_core_kses_basic($category_name); ?></a></h5>
                                     <?php if(!empty($cat_desc)) : ?>
                                         <p class="title-anim"><?php echo esc_html($cat_desc); ?></p>
                                     <?php endif;?>
                                     <div class="fz_btn_wrapper">
-                                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
+                                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -52,12 +52,12 @@
             <?php endif;?>
             <?php if($index == 1) : ?>
                 <div class="col-xxl-5 col-xl-5 col-lg-5 order-md-0 order-lg-1 order-sm-0 mb-xs-0 mb-sm-3 mb-md-0">
-                    <div class="ayaa-fz-shop-category-box-4">
+                    <div class="apps-fz-shop-category-box-4">
                         <div class="row">
                             <?php if(!empty($cat_image_url)) : ?>
                             <div class="col-xxl-7 col-xl-6 col-lg-6 col-sm-6">
                                 <div class="image">
-                                    <div class="fz-filter-image-box ayaa-fz-shop-cat-filter-image-box-item-2-4">
+                                    <div class="fz-filter-image-box apps-fz-shop-cat-filter-image-box-item-2-4">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                     </div>
@@ -65,13 +65,13 @@
                             </div>
                             <?php endif;?>
                             <div class="col-xxl-5 col-xl-6 col-lg-6 col-sm-6 align-self-start">
-                                <div class="ayaa-fz-shop-category-box-content-4 pt-40">
+                                <div class="apps-fz-shop-category-box-content-4 pt-40">
                                     <h5 class="title fz-responsive"><a href="<?php echo esc_url($cat_link); ?>" class="title-anim"><?php echo cb_core_kses_basic($category_name); ?></a></h5>
                                     <?php if(!empty($cat_desc)) : ?>
                                         <p class="title-anim"><?php echo cb_core_kses_basic($cat_desc); ?></p>
                                     <?php endif;?>
                                     <div class="fz_btn_wrapper">
-                                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
+                                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -81,12 +81,12 @@
             <?php endif;?>
             <?php if($index == 2) : ?>
                 <div class="col-xxl-5 col-xl-6 col-lg-6 mb-xs-0 mb-sm-3 mb-md-0 order-lg-2">
-                    <div class="ayaa-fz-shop-category-box-4 pt-80">
+                    <div class="apps-fz-shop-category-box-4 pt-80">
                         <div class="row">
                             <?php if(!empty($cat_image_url)) : ?>
                             <div class="col-xxl-7 col-xl-6 col-lg-6 col-sm-6 order-md-1 order-lg-0 order-sm-1">
                                 <div class="image">
-                                    <div class="fz-filter-image-box ayaa-fz-shop-cat-item-4-1">
+                                    <div class="fz-filter-image-box apps-fz-shop-cat-item-4-1">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                     </div>
@@ -94,13 +94,13 @@
                             </div>
                             <?php endif;?>
                             <div class="col-xxl-5 col-xl-6 col-lg-6 col-sm-6 align-self-end order-md-0 order-lg-1 order-sm-0">
-                                <div class="ayaa-fz-shop-category-box-content-4 pb-45">
+                                <div class="apps-fz-shop-category-box-content-4 pb-45">
                                     <h5 class="title fz-responsive"><a href="<?php echo esc_url($cat_link); ?>" class="title-anim"><?php echo cb_core_kses_basic($category_name); ?></a></h5>
                                     <?php if(!empty($cat_desc)) : ?>
                                         <p class="title-anim"><?php echo cb_core_kses_basic($cat_desc); ?></p>
                                     <?php endif;?>
                                     <div class="fz_btn_wrapper">
-                                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
+                                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -110,12 +110,12 @@
             <?php endif;?>
             <?php if($index == 3) : ?>
                 <div class="col-xxl-7 col-xl-6 col-lg-6 order-lg-3">
-                    <div class="ayaa-fz-shop-category-box-4 pt-120">
+                    <div class="apps-fz-shop-category-box-4 pt-120">
                         <div class="row">
                             <?php if(!empty($cat_image_url)) : ?>
                             <div class="col-xxl-6 col-xl-5 col-lg-6 col-sm-6">
                                 <div class="image">
-                                    <div class="fz-filter-image-box ayaa-fz-shop-cat-item-4-2">
+                                    <div class="fz-filter-image-box apps-fz-shop-cat-item-4-2">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                         <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>">
                                     </div>
@@ -123,13 +123,13 @@
                             </div>
                             <?php endif;?>
                             <div class="col-xxl-6 col-xl-7 col-lg-6 col-sm-6 align-self-start">
-                                <div class="ayaa-fz-shop-category-box-content-4 pt-40">
+                                <div class="apps-fz-shop-category-box-content-4 pt-40">
                                     <h5 class="title fz-responsive"><a href="<?php echo esc_url($cat_link); ?>" class="title-anim"><?php echo cb_core_kses_basic($category_name); ?></a></h5>
                                     <?php if(!empty($cat_desc)) : ?>
                                         <p class="title-anim"><?php echo cb_core_kses_basic($cat_desc); ?></p>
                                     <?php endif;?>
                                     <div class="fz_btn_wrapper">
-                                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
+                                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-black-border-btn-4 fz-responsive"><span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span> <span><?php echo esc_html__('Shop Category', 'cb-core'); ?></span></a>
                                     </div>
                                 </div>
                             </div>

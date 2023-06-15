@@ -209,7 +209,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'label' => __('Icon Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-featured-box-6 .icon i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-featured-box-6 .icon i' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -219,7 +219,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'label' => __('Title Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-featured-box-6 .title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-featured-box-6 .title' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -229,7 +229,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'label' => __('Subtitle Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-featured-box-6 .label' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-featured-box-6 .label' => 'color: {{VALUE}}',
 				],
 			]
 		);

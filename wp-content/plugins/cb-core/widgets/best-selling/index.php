@@ -162,7 +162,7 @@ class CB_Core_Best_Selling extends Widget_Base
 			[
 				'label' => __('Category', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_cat('product_cat'),
+				'options' => apps_drop_cat('product_cat'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => [
@@ -175,7 +175,7 @@ class CB_Core_Best_Selling extends Widget_Base
 			[
 				'label' => __('Posts', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_posts('product'),
+				'options' => apps_drop_posts('product'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => [
@@ -365,7 +365,7 @@ class CB_Core_Best_Selling extends Widget_Base
 				'label' => __('Product title Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-section-title-6' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-section-title-6' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-2', 'layout-3']
@@ -378,7 +378,7 @@ class CB_Core_Best_Selling extends Widget_Base
 				'label' => __('Nav Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-swiper-arrow-6 button i' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-swiper-arrow-6 button i' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-2', 'layout-3']
@@ -391,7 +391,7 @@ class CB_Core_Best_Selling extends Widget_Base
 				'label' => __('Nav Border Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-swiper-arrow-6 button' => 'border-color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-swiper-arrow-6 button' => 'border-color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-2', 'layout-3']
@@ -404,7 +404,7 @@ class CB_Core_Best_Selling extends Widget_Base
 				'label' => __('Product title Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-product-box-content-6 .ayaa-fz-product-title-6, {{WRAPPER}} .ayaa-fz-product-box-content-6 .ayaa-fz-product-title-6 a:hover' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-product-box-content-6 .apps-fz-product-title-6, {{WRAPPER}} .apps-fz-product-box-content-6 .apps-fz-product-title-6 a:hover' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-2', 'layout-3']
@@ -417,7 +417,7 @@ class CB_Core_Best_Selling extends Widget_Base
 				'label' => __('Rating Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-product-rating-6 i' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-product-rating-6 i' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-2', 'layout-3']
@@ -430,7 +430,7 @@ class CB_Core_Best_Selling extends Widget_Base
 				'label' => __('Price & Cart Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-product-cart-btn-6, {{WRAPPER}} .ayaa-fz-product-price-regular-6' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-product-cart-btn-6, {{WRAPPER}} .apps-fz-product-price-regular-6' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-2', 'layout-3']

@@ -332,7 +332,7 @@ function cb_core_get_allowed_html_tags($level = 'basic')
 
     return $allowed_html;
 }
-function ayaa_drop_cat($tax)
+function apps_drop_cat($tax, $post='post')
 {
     $args = [
         'taxonomy' => $tax,
@@ -340,6 +340,7 @@ function ayaa_drop_cat($tax)
         'hierarchical' => true,
         'orderby'       => 'name',
         'order'         => 'DESC',
+        'post_type' => $post
     ];
     $categories_obj = get_categories($args);
     $categories = array();
@@ -349,7 +350,7 @@ function ayaa_drop_cat($tax)
     }
     return $categories;
 }
-function ayaa_drop_posts($post_type)
+function apps_drop_posts($post_type)
 {
     $args = array(
         'numberposts' => -1,
@@ -365,7 +366,7 @@ function ayaa_drop_posts($post_type)
 }
 function cb_core_elementor_review_star_rating_3($star_count) {
     $html = '';
-    $html .= '<div class="ayaa-fz-rating-wrap-4">';
+    $html .= '<div class="apps-fz-rating-wrap-4">';
     for($i=1;$i<=$star_count; $i++) {
         $html .= '<i class="fa-solid fa-star active"></i>';
     }
@@ -377,7 +378,7 @@ function cb_core_elementor_review_star_rating_3($star_count) {
 }
 function cb_core_elementor_review_star_rating_4($star_count) {
     $html = '';
-    $html .= '<div class="ayaa-fz-testimonial-author-rating-6">';
+    $html .= '<div class="apps-fz-testimonial-author-rating-6">';
     for($i=1;$i<=$star_count; $i++) {
         $html .= '<i class="fa-solid fa-star"></i>';
     }
@@ -387,7 +388,7 @@ function cb_core_elementor_review_star_rating_4($star_count) {
     $html .= '</div>';
     return $html;
 }
-function ayaa_drop_cat_featured($tax)
+function apps_drop_cat_featured($tax)
 {
     $args = [
         'taxonomy' => $tax,
@@ -459,7 +460,7 @@ function cb_core_wc_get_review_woo_product($anchor = false, $class = 'star')
     } else
         return '';
 }
-function cb_core_wc_get_review_2($anchor = false, $class = 'ayaa-woo-product-rating pb-10')
+function cb_core_wc_get_review_2($anchor = false, $class = 'apps-woo-product-rating pb-10')
 {
     global $product;
     $count = $product->get_average_rating();
@@ -482,7 +483,7 @@ function cb_core_wc_get_review_2($anchor = false, $class = 'ayaa-woo-product-rat
         return '';
 }
 
-function cb_core_wc_get_review_layout($anchor = false, $class = 'ayaa-fz-rating-2 mb-4-px')
+function cb_core_wc_get_review_layout($anchor = false, $class = 'apps-fz-rating-2 mb-4-px')
 {
     global $product;
     $count = $product->get_average_rating();
@@ -504,7 +505,7 @@ function cb_core_wc_get_review_layout($anchor = false, $class = 'ayaa-fz-rating-
     } else
         return '';
 }
-function cb_core_wc_get_trending_banner_review($anchor = false, $class = 'ayaa-fz-trending-product-rating')
+function cb_core_wc_get_trending_banner_review($anchor = false, $class = 'apps-fz-trending-product-rating')
 {
     global $product;
     $count = $product->get_average_rating();
@@ -557,14 +558,14 @@ function cb_core_product_wraps_active()
     <div class="cart-option cart-option-bottom">
         <ul>
             <li>
-                <div class="ayaa-action-cart-btn">
+                <div class="apps-action-cart-btn">
                     <?php
                     woocommerce_template_loop_add_to_cart();
                     ?>
                 </div>
             </li>
             <li>
-                <div class="ayaa-action-wishlist-btn">
+                <div class="apps-action-wishlist-btn">
                     <?php
                     if (function_exists('woosw_plugin_activate')) {
                         echo do_shortcode('[woosw id="' . get_the_ID() . '"]');
@@ -573,7 +574,7 @@ function cb_core_product_wraps_active()
                 </div>
             </li>
             <li>
-                <div class="ayaa-action-compare-btn">
+                <div class="apps-action-compare-btn">
                     <?php
                     if (function_exists('woosc_init')) {
                         echo do_shortcode('[woosc id="' . get_the_ID() . '"]');
@@ -595,9 +596,9 @@ function cb_core_product_wraps_active_3($_product_id)
 {
     $sku = get_post_meta($_product_id, '_sku', true);
 ?>
-    <div class="ayaa-fz-product-action-list-2 has-pos">
+    <div class="apps-fz-product-action-list-2 has-pos">
         <?php if (function_exists('woosw_plugin_activate')) : ?>
-            <?php echo do_shortcode('[woosw class="ayaa-fz-wishlist-btn-2342" id="' . $_product_id . '"]'); ?>
+            <?php echo do_shortcode('[woosw class="apps-fz-wishlist-btn-2342" id="' . $_product_id . '"]'); ?>
         <?php endif; ?>
 
         <?php woocommerce_template_loop_add_to_cart_2(); ?>
@@ -615,7 +616,7 @@ function cb_core_product_wraps_active_3($_product_id)
 <?php }
 function cb_core_product_wraps_active_2()
 { ?>
-    <div class="ayaa-woo-product-box-action-wrap-1 has-pos">
+    <div class="apps-woo-product-box-action-wrap-1 has-pos">
         <?php
         if (function_exists('woosw_plugin_activate')) {
             echo do_shortcode('[woosw id="' . get_the_ID() . '"]');
@@ -632,7 +633,7 @@ function cb_core_product_wraps_active_2()
 
 function cb_core_product_wraps_active_layout()
 { ?>
-    <div class="ayaa-fz-product-action-wrapper-2 has-pos fz-action-layout">
+    <div class="apps-fz-product-action-wrapper-2 has-pos fz-action-layout">
         <?php
         if (function_exists('woosw_plugin_activate')) {
             echo do_shortcode('[woosw id="' . get_the_ID() . '"]');
@@ -653,7 +654,7 @@ function cb_core_product_wraps_active_layout()
 <?php }
 function cb_core_product_wraps_active_layout_2()
 { ?>
-    <div class="ayaa-fz-product-box-action-6 has-pos">
+    <div class="apps-fz-product-box-action-6 has-pos">
         <?php
         if (function_exists('woosw_plugin_activate')) {
             echo do_shortcode('[woosw id="' . get_the_ID() . '"]');
@@ -695,7 +696,7 @@ function cb_core_product_wraps_active_layout_3()
 
 function cb_core_product_wraps_active_layout_5()
 { ?>
-    <div class="ayaa-fz-product-action-wrapper-5 has-pos">
+    <div class="apps-fz-product-action-wrapper-5 has-pos">
         <?php woocommerce_template_loop_add_to_cart_layout(); ?>
         <?php
         if (function_exists('woosq_init')) {
@@ -717,7 +718,7 @@ function cb_core_product_wraps_active_layout_5()
 
 function cb_core_product_wraps_active_layout_6()
 { ?>
-    <div class="ayaa-fz-product-box-4-actions">
+    <div class="apps-fz-product-box-4-actions">
         <a href="#"><i class="fa-light fa-plus"></i><i class="fa-light fa-plus"></i></a>
         <?php
         if (function_exists('woosc_init')) {
@@ -750,7 +751,7 @@ function cb_core_elementor_vendor_star_rating($star_count)
 function cb_core_elementor_vendor_star_rating_3($star_count)
 {
     $html = '';
-    $html .= '<div class="ayaa-fz-rating-2 mb-4-px wow fadeInUp">';
+    $html .= '<div class="apps-fz-rating-2 mb-4-px wow fadeInUp">';
     for ($i = 1; $i <= $star_count; $i++) {
         $html .= '<i class="fa-light fa-star active"></i>';
     }
@@ -763,7 +764,7 @@ function cb_core_elementor_vendor_star_rating_3($star_count)
 function cb_core_elementor_vendor_star_rating_6($star_count=0)
 {
     $html = '';
-    $html .= '<div class="ayaa-fz-product-rating-6">';
+    $html .= '<div class="apps-fz-product-rating-6">';
     for ($i = 1; $i <= $star_count; $i++) {
         $html .= '<i class="fa-solid fa-star"></i>';
     }
@@ -789,7 +790,7 @@ function cb_core_elementor_review_star_rating($star_count)
 function cb_core_elementor_review_star_rating_2($star_count)
 {
     $html = '';
-    $html .= '<div class="rating"><div class="ayaa-woo-product-rating">';
+    $html .= '<div class="rating"><div class="apps-woo-product-rating">';
     for ($i = 1; $i <= $star_count; $i++) {
         $html .= '<i class="fa-solid fa-star active"></i>';
     }

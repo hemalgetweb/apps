@@ -22,14 +22,14 @@
 			}
 		?>
 		<?php if(!empty($instance['info'])) : ?>
-		<span class="ayaa-fz-footer-widget-subscribe-subtitle-4"><?php echo  $instance['info']; ?></span>
+		<span class="apps-fz-footer-widget-subscribe-subtitle-4"><?php echo  $instance['info']; ?></span>
 		<?php endif; ?>
-			<div class="ayaa-fz-footer-widget-subscribe-form-4 mb-25">
+			<div class="apps-fz-footer-widget-subscribe-form-4 mb-25">
 				<?php if( !empty($mailchimp_shortcode) ): ?>
 					<?php print do_shortcode($mailchimp_shortcode); ?>
 				<?php endif; ?>
 			</div>
-			<div class="ayaa-fz-footer-widget-app-wrapper-4">
+			<div class="apps-fz-footer-widget-app-wrapper-4">
 				<div class="item-1">
 					<a href="<?php echo esc_url($play_store_link); ?>" target="_blank"><img src="https://farzaawp.codebasket.net/fashion/wp-content/uploads/sites/4/2023/02/google-play.png" alt="Play store"></a>
 				</div>

@@ -13433,20 +13433,20 @@ As the year winds down and comes to an end; many take some time to reflect on wh
 		<description></description>
 		<content:encoded><![CDATA[<div class="row">
     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-        <div class="ayaa-rv-subscribe-input input-name">
+        <div class="apps-rv-subscribe-input input-name">
             <i class="fa-solid fa-user"></i> [text* username placeholder "Your name"]
         </div>
     </div>
     <div class="col-xxl-5 col-xl-5 col-lg-4 col-md-4">
-        <div class="pl-10 has-ayaa-subscribe-space-left-10">
-            <div class="ayaa-rv-subscribe-input input-email">
+        <div class="pl-10 has-apps-subscribe-space-left-10">
+            <div class="apps-rv-subscribe-input input-email">
                 <i class="fa-solid fa-envelope-open"></i> [email* email placeholder "Email address"]
             </div>
         </div>
     </div>
     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4">
         <div class="text-md-end">
-            <button class="ayaa-rv-subscribe-submit-btn" type="submit">Subscribe <i class="fa-solid fa-long-arrow-right"></i></button>
+            <button class="apps-rv-subscribe-submit-btn" type="submit">Subscribe <i class="fa-solid fa-long-arrow-right"></i></button>
         </div>
     </div>
 </div>
@@ -13520,20 +13520,20 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
 		<wp:meta_value><![CDATA[<div class="row">
     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-        <div class="ayaa-rv-subscribe-input input-name">
+        <div class="apps-rv-subscribe-input input-name">
             <i class="fa-solid fa-user"></i> [text* username placeholder "Your name"]
         </div>
     </div>
     <div class="col-xxl-5 col-xl-5 col-lg-4 col-md-4">
-        <div class="pl-10 has-ayaa-subscribe-space-left-10">
-            <div class="ayaa-rv-subscribe-input input-email">
+        <div class="pl-10 has-apps-subscribe-space-left-10">
+            <div class="apps-rv-subscribe-input input-email">
                 <i class="fa-solid fa-envelope-open"></i> [email* email placeholder "Email address"]
             </div>
         </div>
     </div>
     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4">
         <div class="text-md-end">
-            <button class="ayaa-rv-subscribe-submit-btn" type="submit">Subscribe <i class="fa-solid fa-long-arrow-right"></i></button>
+            <button class="apps-rv-subscribe-submit-btn" type="submit">Subscribe <i class="fa-solid fa-long-arrow-right"></i></button>
         </div>
     </div>
 </div>]]></wp:meta_value>
@@ -13581,7 +13581,7 @@ This e-mail was sent from a contact form on [_site_title] ([_site_url])";s:18:"a
 		<dc:creator><![CDATA[farzaa]]></dc:creator>
 		<guid isPermaLink="false">https://farzaawp.codebasket.net/electronics-2/?post_type=wpcf7_contact_form&#038;p=344</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="ayaa-fz-contact-message-input-fields">
+		<content:encoded><![CDATA[<div class="apps-fz-contact-message-input-fields">
     <div class="row">
         <div class="col-md-6">[text text-581 placeholder "Full Name"]</div>
         <div class="col-md-6">[email* email-492 placeholder "Email Address"]</div>
@@ -13589,8 +13589,8 @@ This e-mail was sent from a contact form on [_site_title] ([_site_url])";s:18:"a
         <div class="col-md-6">[text* text-581 placeholder "Your Topic"]</div>
         <div class="col-md-12">[textarea* message placeholder "Enter Message"]</div>
         <div class="col-md-12">
-            <div class="ayaa-fz-contact-button mt-20">
-                <button type="submit" class="ayaa-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
+            <div class="apps-fz-contact-button mt-20">
+                <button type="submit" class="apps-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
             </div>
         </div>
     </div>
@@ -13663,7 +13663,7 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
-		<wp:meta_value><![CDATA[<div class="ayaa-fz-contact-message-input-fields">
+		<wp:meta_value><![CDATA[<div class="apps-fz-contact-message-input-fields">
     <div class="row">
         <div class="col-md-6">[text text-581 placeholder "Full Name"]</div>
         <div class="col-md-6">[email* email-492 placeholder "Email Address"]</div>
@@ -13671,8 +13671,8 @@ Please enter a telephone number.]]></content:encoded>
         <div class="col-md-6">[text* text-581 placeholder "Your Topic"]</div>
         <div class="col-md-12">[textarea* message placeholder "Enter Message"]</div>
         <div class="col-md-12">
-            <div class="ayaa-fz-contact-button mt-20">
-                <button type="submit" class="ayaa-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
+            <div class="apps-fz-contact-button mt-20">
+                <button type="submit" class="apps-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
             </div>
         </div>
     </div>

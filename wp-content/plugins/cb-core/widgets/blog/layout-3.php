@@ -6,19 +6,19 @@ if (!empty($settings['btn_link']['url'])) {
 <!-- news area start -->
 <div class="news-area">
     <div class="container">
-        <div class="ayaa-featured-section-top-wrap">
+        <div class="apps-featured-section-top-wrap">
             <div class="row align-items-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 mb-10 mb-md-0">
                     <?php if (!empty($settings['section_title'])) : ?>
-                        <div class="ayaa-section-title-wrapper-1">
-                            <h3 class="ayaa-section-title-1"><?php echo cb_core_kses_basic($settings['section_title']); ?></h3>
+                        <div class="apps-section-title-wrapper-1">
+                            <h3 class="apps-section-title-1"><?php echo cb_core_kses_basic($settings['section_title']); ?></h3>
                         </div>
                     <?php endif; ?>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <?php if (!empty($settings['btn_text'])) : ?>
                         <div class="text-center text-md-end">
-                            <a <?php echo $this->get_render_attribute_string('btn_link'); ?> class="ayaa-rv-theme-text-btn"><?php echo cb_core_kses_basic($settings['btn_text']); ?> <i class="fa-solid fa-long-arrow-right"></i></a>
+                            <a <?php echo $this->get_render_attribute_string('btn_link'); ?> class="apps-rv-theme-text-btn"><?php echo cb_core_kses_basic($settings['btn_text']); ?> <i class="fa-solid fa-long-arrow-right"></i></a>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -27,7 +27,7 @@ if (!empty($settings['btn_link']['url'])) {
         <?php if ($wp_query->have_posts()) : ?>
             <div class="row pt-50">
                 <div class="col-xxl-7 col-xl-12">
-                    <div class="ayaa-rv-news-wrapper mb-30 mb-xxl-0">
+                    <div class="apps-rv-news-wrapper mb-30 mb-xxl-0">
                         <div class="row">
                             <?php
                             $index = 0;
@@ -38,20 +38,20 @@ if (!empty($settings['btn_link']['url'])) {
                                     $category_url = get_category_link($category_id);
                                 ?>
                                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 mb-30 mb-md-0">
-                                        <div class="ayaa-rv-news-box">
+                                        <div class="apps-rv-news-box">
                                             <?php if (has_post_thumbnail()) : ?>
-                                                <div class="ayaa-rv-news-box-image">
+                                                <div class="apps-rv-news-box-image">
                                                     <a href="<?php echo esc_url(get_the_permalink(get_the_ID())); ?>">
                                                         <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
                                                     </a>
                                                 </div>
                                             <?php endif; ?>
-                                            <div class="ayaa-rv-news-box-content">
-                                                <div class="ayaa-rv-news-box-meta pb-10">
+                                            <div class="apps-rv-news-box-content">
+                                                <div class="apps-rv-news-box-meta pb-10">
                                                     <a href="<?php echo esc_url($category_url); ?>" class="category"><?php echo cb_core_kses_basic(cb_loop_category(get_the_ID())); ?></a>
                                                     <span><?php echo esc_html(get_the_date('', get_the_ID())); ?></span>
                                                 </div>
-                                                <h5 class="ayaa-rv-news-box-title"><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo esc_html(wp_trim_words(get_the_title(), 11)); ?></a></h5>
+                                                <h5 class="apps-rv-news-box-title"><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo esc_html(wp_trim_words(get_the_title(), 11)); ?></a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -62,7 +62,7 @@ if (!empty($settings['btn_link']['url'])) {
                     </div>
                 </div>
                 <div class="col-xxl-5">
-                    <div class="ayaa-rv-list-news-wrapper">
+                    <div class="apps-rv-list-news-wrapper">
                         <div class="row justify-content-center">
                             <?php
                             $index = 0;
@@ -73,18 +73,18 @@ if (!empty($settings['btn_link']['url'])) {
                                     $category_url = get_category_link($category_id);
                                 ?>
                                     <div class="col-xxl-12 col-xl-6 col-lg-6">
-                                        <div class="ayaa-rv-news-box-list mb-30">
+                                        <div class="apps-rv-news-box-list mb-30">
                                             <?php if (has_post_thumbnail()) : ?>
                                                 <div class="image">
                                                     <a href="<?php echo esc_url(get_the_permalink(get_the_ID())); ?>"><?php echo get_the_post_thumbnail(get_the_ID(), 'full'); ?></a>
                                                 </div>
                                             <?php endif; ?>
                                             <div class="content">
-                                                <div class="ayaa-rv-news-box-meta pb-10">
+                                                <div class="apps-rv-news-box-meta pb-10">
                                                     <a href="<?php echo esc_url($category_url); ?>" class="category"><?php echo cb_core_kses_basic(cb_loop_category(get_the_ID())); ?></a>
                                                     <span><?php echo esc_html(get_the_date('', get_the_ID())); ?></span>
                                                 </div>
-                                                <h5 class="ayaa-rv-news-box-title"><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo esc_html(wp_trim_words(get_the_title(), 14)); ?> </a></h5>
+                                                <h5 class="apps-rv-news-box-title"><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo esc_html(wp_trim_words(get_the_title(), 14)); ?> </a></h5>
                                             </div>
                                         </div>
                                     </div>

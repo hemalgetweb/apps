@@ -1,16 +1,16 @@
-<!-- ayaa-fz-subscribe-area-start -->
-<div class="ayaa-fz-subscribe-area pt-120 pb-130" data-background="<?php echo  esc_url($settings['cf7_bg_image']['url']) ? esc_url($settings['cf7_bg_image']['url']): ''; ?>">
+<!-- apps-fz-subscribe-area-start -->
+<div class="apps-fz-subscribe-area pt-120 pb-130" data-background="<?php echo  esc_url($settings['cf7_bg_image']['url']) ? esc_url($settings['cf7_bg_image']['url']): ''; ?>">
     <div class="container">
         <div class="row">
             <div class="col-xl-8">
-                <div class="ayaa-fz-subscribe-3-content">
+                <div class="apps-fz-subscribe-3-content">
                     <?php if(!empty($settings['section_title'])) : ?>
-                        <h4 class="ayaa-fz-subscribe-3-content-title"><?php echo cb_core_kses_basic($settings['section_title']); ?></h4>
+                        <h4 class="apps-fz-subscribe-3-content-title"><?php echo cb_core_kses_basic($settings['section_title']); ?></h4>
                     <?php endif; ?>
                     <?php if(!empty($settings['section_subtitle'])) : ?>
                         <p><?php echo cb_core_kses_basic($settings['section_subtitle']); ?></p>
                     <?php endif; ?>
-                    <div class="ayaa-fz-subscribe-3-input-wrapper mt-40">
+                    <div class="apps-fz-subscribe-3-input-wrapper mt-40">
                         <?php
                             if (!empty($settings['form_id'])) {
                                 echo cb_core_do_shortcode('contact-form-7', [
@@ -25,4 +25,4 @@
         </div>
     </div>
 </div>
-<!-- ayaa-fz-subscribe-area-end -->
+<!-- apps-fz-subscribe-area-end -->

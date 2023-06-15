@@ -11,7 +11,7 @@
                 <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                 <div class="single-blog">
                     <?php if ( has_post_thumbnail()) : ?>
-                    <div class="part-img ayaa-blog-grid-img">
+                    <div class="part-img apps-blog-grid-img">
                         <a href="<?php echo esc_url(get_the_permalink()); ?>">
                             <?php echo get_the_post_thumbnail(get_the_ID(), 'full'); ?>
                         </a>

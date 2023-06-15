@@ -108,13 +108,8 @@ $(window).scroll(function () {
                     slidesPerView: 3,
                 }
             }
-             //  centeredSlides: true,
-            //   mousewheel: true,
-            //   direction: 'horizontal',
-            //   loop: false,
-            //   freeMode: false,
-            //   grabCursor: true,
         });
+        
 
 
 
@@ -149,4 +144,37 @@ $(window).scroll(function () {
             $(this).parents(".menu-item").find('.dropdown-menus').slideToggle();
             $(this).parents(".menu-item").find('.dropdown-menus').toggleClass('d-block');
         })
+        let CB_Project = function($scope, $) {
+            $scope.find('.apps-project-active-114').each(function() {
+            // swiper activations and options initialization
+            let AppsProjectActive = new Swiper('.apps-project-active-114', {
+                        
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".apps-project-paginate",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.apps-project-next-114',
+                    prevEl: '.apps-project-prev-114',
+                },
+                breakpoints: {
+                    320: {
+                    slidesPerView: 1,
+                    },
+                    575: {
+                    slidesPerView: 2,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+            });
+        }
+        $( window ).on( 'elementor/frontend/init', function() {
+            elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-project.default', CB_Project );
+        } );
 })(jQuery)

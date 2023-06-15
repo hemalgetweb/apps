@@ -16,8 +16,8 @@ $this->add_render_attribute('banner_bg_1', 'class', '');
 
 ?>
 
-<div class="ayaa-fz-varient-banner-2 bg-default" data-background="<?php echo esc_url($settings['banner_bg_1']['url']) ? esc_url($settings['banner_bg_1']['url']) : ''; ?>">
-    <div class="ayaa-fz-varient-banner-content-2 pb-30">
+<div class="apps-fz-varient-banner-2 bg-default" data-background="<?php echo esc_url($settings['banner_bg_1']['url']) ? esc_url($settings['banner_bg_1']['url']) : ''; ?>">
+    <div class="apps-fz-varient-banner-content-2 pb-30">
         <?php if (!empty($settings['banner_subtitle_1'])) : ?>
             <span class="subtitle wow fadeInUp"><?php echo cb_core_kses_basic($settings['banner_subtitle_1']); ?></span>
         <?php endif; ?>
@@ -28,7 +28,7 @@ $this->add_render_attribute('banner_bg_1', 'class', '');
             <span class="price wow fadeInUp" data-wow-delay=".2s"><?php echo cb_core_kses_basic($settings['banner_price_text_1']); ?></span>
         <?php endif; ?>
         <?php if (!empty($settings['btn_text_1'])) : ?>
-            <a <?php echo $this->get_render_attribute_string('btn_link_1'); ?> class="ayaa-fz-white-border-btn-2 wow fadeInUp" data-wow-delay=".3s"><?php echo cb_core_kses_basic($settings['btn_text_1']); ?></a>
+            <a <?php echo $this->get_render_attribute_string('btn_link_1'); ?> class="apps-fz-white-border-btn-2 wow fadeInUp" data-wow-delay=".3s"><?php echo cb_core_kses_basic($settings['btn_text_1']); ?></a>
         <?php endif; ?>
     </div>
     <div class="image">

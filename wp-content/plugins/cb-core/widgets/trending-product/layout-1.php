@@ -33,27 +33,27 @@ if (!empty($settings['product_image2']['url'])) {
 
 ?>
 
-<!-- ayaa-fz-trending-product-area-start -->
-<div class="ayaa-fz-trending-product-area pb-80 ">
+<!-- apps-fz-trending-product-area-start -->
+<div class="apps-fz-trending-product-area pb-80 ">
     <div class="container">
         <div class="row">
-            <div class="ayaa-fz-section-5 mb-25 text-center">
+            <div class="apps-fz-section-5 mb-25 text-center">
                 <?php if (!empty($settings['section_title'])) : ?>
-                    <h3 class="ayaa-fz-section-title-5"><?php echo cb_core_kses_basic($settings['section_title']); ?></h3>
+                    <h3 class="apps-fz-section-title-5"><?php echo cb_core_kses_basic($settings['section_title']); ?></h3>
                 <?php endif; ?>
                 <?php if (!empty($settings['section_desc'])) : ?>
-                    <p class="ayaa-fz-section-subtitle-5 "><?php echo cb_core_kses_basic($settings['section_desc']); ?></p>
+                    <p class="apps-fz-section-subtitle-5 "><?php echo cb_core_kses_basic($settings['section_desc']); ?></p>
                 <?php endif; ?>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-8">
-                <div class="ayaa-fz-trending-banner-5-wrapper mb-40" data-bgcolor="#F8F8F8">
+                <div class="apps-fz-trending-banner-5-wrapper mb-40" data-bgcolor="#F8F8F8">
                     <div class="row">
                         <div class="col-12">
-                            <div class="ayaa-fz-trending-banner-5-content">
+                            <div class="apps-fz-trending-banner-5-content">
                                 <?php if (!empty($settings['banner_title'])) : ?>
-                                    <h4 class="ayaa-fz-trending-banner-5-title"><?php echo cb_core_kses_basic($settings['banner_title']); ?></h4>
+                                    <h4 class="apps-fz-trending-banner-5-title"><?php echo cb_core_kses_basic($settings['banner_title']); ?></h4>
                                 <?php endif; ?>
                                 <div class="price-wrap">
                                     <?php if (!empty($settings['active_price'])) : ?>
@@ -64,14 +64,14 @@ if (!empty($settings['product_image2']['url'])) {
                                     <?php endif; ?>
                                 </div>
                                 <?php if (!empty($settings['banner_btn_text'])) : ?>
-                                    <div class="ayaa-fz-trending-banner-5-button mt-30">
-                                        <a <?php echo $this->get_render_attribute_string('banner_btn_link'); ?> class="ayaa-fz-trending-banner-5-btn"><span><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></span><span><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></span></a>
+                                    <div class="apps-fz-trending-banner-5-button mt-30">
+                                        <a <?php echo $this->get_render_attribute_string('banner_btn_link'); ?> class="apps-fz-trending-banner-5-btn"><span><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></span><span><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></span></a>
                                     </div>
                                 <?php endif; ?>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="ayaa-fz-trending-banner-5-img">
+                            <div class="apps-fz-trending-banner-5-img">
                                 <img src="<?php echo esc_url($banner_image); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($banner_image), '_wp_attachment_image_alt', true); ?>">
                             </div>
                         </div>
@@ -80,7 +80,7 @@ if (!empty($settings['product_image2']['url'])) {
             </div>
             <div class="col-xxl-4 col-xl-8 col-lg-8 col-md-7">
                 <?php if ($wp_query->have_posts()) : ?>
-                    <div class="ayaa-fz-trending-product-list-wrapper mb-40" data-bgcolor="#f8f8f8">
+                    <div class="apps-fz-trending-product-list-wrapper mb-40" data-bgcolor="#f8f8f8">
                         <?php while ($wp_query->have_posts()) :
                             $wp_query->the_post();
                             echo get_term_meta(get_the_ID(), 'category_ids', true);
@@ -92,15 +92,15 @@ if (!empty($settings['product_image2']['url'])) {
                                 $product_cats[] = $term->term_id;
                             }
                         ?>
-                            <div class="ayaa-fz-trending-product-list-item">
+                            <div class="apps-fz-trending-product-list-item">
                                 <?php if (!empty(get_the_post_thumbnail(get_the_ID(), 'full'))) : ?>
                                     <a href="<?php echo esc_url(get_the_permalink(get_the_ID())); ?>">
                                         <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
                                     </a>
                                 <?php endif; ?>
-                                <div class="ayaa-fz-trending-product-list-content">
+                                <div class="apps-fz-trending-product-list-content">
                                     <?php if (!empty(get_the_title())) : ?>
-                                        <h4 class="ayaa-fz-trending-product-list-content-title"><a href="<?php echo esc_url(get_the_permalink(get_the_ID())); ?>"><?php echo esc_html(wp_trim_words(get_the_title(), 30)); ?></a></h4>
+                                        <h4 class="apps-fz-trending-product-list-content-title"><a href="<?php echo esc_url(get_the_permalink(get_the_ID())); ?>"><?php echo esc_html(wp_trim_words(get_the_title(), 30)); ?></a></h4>
                                     <?php endif; ?>
                                     <div class="price-wrap">
                                         <?php echo wp_kses_post($price_html); ?>
@@ -117,32 +117,32 @@ if (!empty($settings['product_image2']['url'])) {
                 <?php endif; ?>
             </div>
             <div class="col-xxl-5 col-xl-12">
-                <div class="ayaa-fz-trending-banner-5-display-wrapper text-center mb-40" data-bgcolor="#f8f8f8">
-                    <div class="ayaa-product-offer-counting-img-inner ayaa-fz-trending-banner-5-display-inner">
+                <div class="apps-fz-trending-banner-5-display-wrapper text-center mb-40" data-bgcolor="#f8f8f8">
+                    <div class="apps-product-offer-counting-img-inner apps-fz-trending-banner-5-display-inner">
 
                         <img src="<?php echo esc_url($display_big_image); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($display_big_image), '_wp_attachment_image_alt', true); ?>">
 
-                        <div class="ayaa-product-offer-counting-plustext">
-                            <span class="ayaa-product-offer-counting-plussign"><i class="fa-thin fa-plus"></i></span>
-                            <div class="ayaa-product-offer-counting-text">
+                        <div class="apps-product-offer-counting-plustext">
+                            <span class="apps-product-offer-counting-plussign"><i class="fa-thin fa-plus"></i></span>
+                            <div class="apps-product-offer-counting-text">
                                 <a <?php echo $this->get_render_attribute_string('product_link'); ?>><img src="<?php echo esc_url($product_image1); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($product_image1), '_wp_attachment_image_alt', true); ?>"></a>
                                 <?php if (!empty($settings['product_title'])) : ?>
-                                    <h5 class="ayaa-prouduct-offer-counting-title"><a <?php echo $this->get_render_attribute_string('product_link'); ?>><?php echo cb_core_kses_basic($settings['product_title']); ?></a></h5>
+                                    <h5 class="apps-prouduct-offer-counting-title"><a <?php echo $this->get_render_attribute_string('product_link'); ?>><?php echo cb_core_kses_basic($settings['product_title']); ?></a></h5>
                                 <?php endif; ?>
                                 <?php if (!empty($settings['product_active_price'])) : ?>
-                                    <span class="ayaa-prouduct-offer-counting-price"><?php echo cb_core_kses_basic($settings['product_active_price']); ?></span>
+                                    <span class="apps-prouduct-offer-counting-price"><?php echo cb_core_kses_basic($settings['product_active_price']); ?></span>
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="ayaa-product-offer-counting-plustext-another">
-                            <span class="ayaa-product-offer-counting-plussign"><i class="fa-thin fa-plus"></i></span>
-                            <div class="ayaa-product-offer-counting-text">
+                        <div class="apps-product-offer-counting-plustext-another">
+                            <span class="apps-product-offer-counting-plussign"><i class="fa-thin fa-plus"></i></span>
+                            <div class="apps-product-offer-counting-text">
                                 <a <?php echo $this->get_render_attribute_string('product_link2'); ?>><img src="<?php echo esc_url($product_image2); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($product_image2), '_wp_attachment_image_alt', true); ?>"></a>
                                 <?php if (!empty($settings['product_title2'])) : ?>
-                                    <h5 class="ayaa-prouduct-offer-counting-title"><a <?php echo $this->get_render_attribute_string('product_link2'); ?>><?php echo cb_core_kses_basic($settings['product_title2']); ?></a></h5>
+                                    <h5 class="apps-prouduct-offer-counting-title"><a <?php echo $this->get_render_attribute_string('product_link2'); ?>><?php echo cb_core_kses_basic($settings['product_title2']); ?></a></h5>
                                 <?php endif; ?>
                                 <?php if (!empty($settings['product_active_price2'])) : ?>
-                                    <span class="ayaa-prouduct-offer-counting-price"><?php echo cb_core_kses_basic($settings['product_active_price2']); ?></span>
+                                    <span class="apps-prouduct-offer-counting-price"><?php echo cb_core_kses_basic($settings['product_active_price2']); ?></span>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -152,4 +152,4 @@ if (!empty($settings['product_image2']['url'])) {
         </div>
     </div>
 </div>
-<!-- ayaa-fz-trending-product-area-end -->
+<!-- apps-fz-trending-product-area-end -->

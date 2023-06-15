@@ -298,8 +298,8 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Border Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-slider-content-6 .subtitle::before' => 'background-color: {{VALUE}}',
-					'{{WRAPPER}} .ayaa-fz-slider-content-6 blockquote' => 'border-color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-content-6 .subtitle::before' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-content-6 blockquote' => 'border-color: {{VALUE}}',
 				],
 			]
 		);
@@ -309,7 +309,7 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Title Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-slider-content-6 .title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-content-6 .title' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-1', 'layout-2']
@@ -322,7 +322,7 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Sub Title Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-slider-content-6 .subtitle' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-content-6 .subtitle' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-2']
@@ -335,7 +335,7 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Description Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-slider-content-6 blockquote' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-content-6 blockquote' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-2']
@@ -348,8 +348,8 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Button Theme Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-slider-item-6 .ayaa-fz-rounded-btn-6' => 'border-color: {{VALUE}}; color: {{VALUE}}',
-					'{{WRAPPER}} .ayaa-fz-slider-item-6 .ayaa-fz-rounded-btn-6:hover' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .apps-fz-slider-item-6 .apps-fz-rounded-btn-6' => 'border-color: {{VALUE}}; color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-item-6 .apps-fz-rounded-btn-6:hover' => 'background-color: {{VALUE}};',
 				],
 				'condition' => [
 					'layout' => ['layout-2']
@@ -362,8 +362,8 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Other Component Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-slider-search-6::after' => 'border-color: {{VALUE}}',
-					'{{WRAPPER}} .ayaa-fz-slider-search-6 button[type=submit] i, {{WRAPPER}} .ayaa-fz-social-share-6, {{WRAPPER}} .ayaa-fz-social-share-6 a:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-search-6::after' => 'border-color: {{VALUE}}',
+					'{{WRAPPER}} .apps-fz-slider-search-6 button[type=submit] i, {{WRAPPER}} .apps-fz-social-share-6, {{WRAPPER}} .apps-fz-social-share-6 a:hover' => 'color: {{VALUE}}',
 				],
 				'condition' => [
 					'layout' => ['layout-2']
@@ -376,7 +376,7 @@ class CB_Core_Hero extends Widget_Base
 				'label' => __('Button Hover Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-slider-item-6 .ayaa-fz-rounded-btn-6:hover' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .apps-fz-slider-item-6 .apps-fz-rounded-btn-6:hover' => 'color: {{VALUE}};',
 				],
 				'condition' => [
 					'layout' => ['layout-2']

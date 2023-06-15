@@ -8,8 +8,8 @@
             <div class="col-xl-9 col-lg-12">
                 <div class="banner-slider cb-banner-slider-space">
                     <?php foreach($settings['slides'] as $index => $slide) : ?>
-                    <div class="slide ayaa-slider-height-2 d-flex align-items-center slide-<?php echo esc_attr($index); ?>" data-background="<?php echo esc_url($slide['bg_image']['url']) ? esc_url($slide['bg_image']['url']): ''; ?>">
-                        <div class="ayaa-slider-content-inner-2 w-100">
+                    <div class="slide apps-slider-height-2 d-flex align-items-center slide-<?php echo esc_attr($index); ?>" data-background="<?php echo esc_url($slide['bg_image']['url']) ? esc_url($slide['bg_image']['url']): ''; ?>">
+                        <div class="apps-slider-content-inner-2 w-100">
                             <div class="row">
                                 <div class="col-xxl-6 col-xl-9 col-lg-9">
                                     <div class="part-txt">

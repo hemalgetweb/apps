@@ -64,7 +64,7 @@ final class CBCore {
 
 		// Init Plugin
 		add_action( 'plugins_loaded', array( $this, 'init' ) );
-		add_action( 'plugins_loaded', array( $this, 'ayaa_register_addons' ) );
+		add_action( 'plugins_loaded', array( $this, 'apps_register_addons' ) );
 	}
 
 	/**
@@ -154,7 +154,7 @@ final class CBCore {
 		}
 
 	}
-	public function ayaa_register_addons() {
+	public function apps_register_addons() {
 		return CBCore::instance();
 	}
 	/***

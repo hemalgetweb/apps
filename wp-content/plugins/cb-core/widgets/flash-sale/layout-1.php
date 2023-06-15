@@ -13,7 +13,7 @@ $this->add_render_attribute( 'banner_image', 'class', 'my-custom-class' );
             <div class="panel-body">
                 <div class="row g-4 justify-content-center">
                     <div class="col-xl-5 col-lg-12">
-                        <div class="new-arrival ayaa-new-arrival-1">
+                        <div class="new-arrival apps-new-arrival-1">
                             <div class="part-txt">
                                 <div class="countdown-wrap">
                                     <?php if(!empty($settings['banner_subtitle'])) : ?>
@@ -24,7 +24,7 @@ $this->add_render_attribute( 'banner_image', 'class', 'my-custom-class' );
                                     <?php endif; ?>
                                     <div id="flashDealCountdown" class="countdown"></div>
                                     <?php if(!empty($settings['banner_btn_text'])) : ?>
-                                        <a <?php echo $this->get_render_attribute_string( 'banner_btn_link' ); ?> class="def-btn ayaa-def-btn-2"><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></a>
+                                        <a <?php echo $this->get_render_attribute_string( 'banner_btn_link' ); ?> class="def-btn apps-def-btn-2"><?php echo cb_core_kses_basic($settings['banner_btn_text']); ?></a>
                                     <?php endif; ?>
                                 </div>
                             </div>

@@ -18,7 +18,7 @@ if (!defined('ABSPATH') && !class_exists('WooCommerce')) exit; // Exit if access
 class CB_Core_Woo_Category_Grid extends Widget_Base
 {
 
-	public function ayaa_get_all_product_cat_list()
+	public function apps_get_all_product_cat_list()
 	{
 		$product_cat_lists = get_terms('product_cat', array(
 			'hide_empty' => true,
@@ -246,7 +246,7 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 			[
 				'label' => __('Category', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_cat('product_cat'),
+				'options' => apps_drop_cat('product_cat'),
 				'multiple' => true,
 				'label_block' => true,
 			]
@@ -256,7 +256,7 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 			[
 				'label' => __('Category 2', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_cat('product_cat'),
+				'options' => apps_drop_cat('product_cat'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => ['layout' => 'layout-3']
@@ -301,12 +301,12 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 		if (!empty($cat_lists)) {
 			$cat_lists = $cat_lists;
 		} else {
-			$cat_lists = $this->ayaa_get_all_product_cat_list();
+			$cat_lists = $this->apps_get_all_product_cat_list();
 		}
 		if (!empty($cat_lists_2)) {
 			$cat_lists_2 = $cat_lists_2;
 		} else {
-			$cat_lists_2 = $this->ayaa_get_all_product_cat_list();
+			$cat_lists_2 = $this->apps_get_all_product_cat_list();
 		}
 ?>
 

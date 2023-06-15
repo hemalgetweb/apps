@@ -183,7 +183,7 @@ class CB_Core_CF7_Form extends Widget_Base
 			[
 				'label' => __('Select Product', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_posts('product'),
+				'options' => apps_drop_posts('product'),
 				'multiple' => false,
 				'label_block' => true,
 				'condition' => [

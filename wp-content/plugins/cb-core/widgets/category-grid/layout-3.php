@@ -1,14 +1,14 @@
 <!-- featured category area start -->
 <div class="featured-catgory-area">
     <div class="container">
-        <div class="ayaa-featured-section-top-wrap">
+        <div class="apps-featured-section-top-wrap">
             <div class="row align-items-center">
                 <div class="col-xxl-12">
                     <?php if(!empty($settings['section_title'])) : ?>
-                        <div class="ayaa-section-title-wrapper-1">
-                            <h3 class="ayaa-section-title-1"><?php echo cb_core_kses_basic($settings['section_title']); ?> 
+                        <div class="apps-section-title-wrapper-1">
+                            <h3 class="apps-section-title-1"><?php echo cb_core_kses_basic($settings['section_title']); ?> 
                             <?php if(!empty($settings['section_subtitle'])) : ?>
-                            <span class="ayaa-section-subtitle-1"><?php echo cb_core_kses_basic($settings['section_subtitle']); ?></span></h3>
+                            <span class="apps-section-subtitle-1"><?php echo cb_core_kses_basic($settings['section_subtitle']); ?></span></h3>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>
@@ -16,9 +16,9 @@
                 </div>
             </div>
         </div>
-        <div class="ayaa-featured-category-main-wrap pt-50">
+        <div class="apps-featured-category-main-wrap pt-50">
             <?php if(!empty($cat_lists)) : ?>
-            <div class="ayaa-rv-categories-active-backward swiper-container pb-50">
+            <div class="apps-rv-categories-active-backward swiper-container pb-50">
                 <div class="swiper-wrapper roll__wrapper">
                 <?php foreach($cat_lists as $index => $cat_id) : ?>
                     <?php if( $term = get_term_by( 'id', $cat_id, 'product_cat' ) ) :
@@ -38,16 +38,16 @@
                             }
                         ?>
                     <div class="swiper-slide">
-                        <div class="ayaa-rv-categories-item text-center">
-                            <div class="ayaa-rv-cat-box-1 d-inline-block text-center">
-                                <div class="ayaa-rv-hover-slide-cat-box-1">
-                                    <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-rv-cat-box-img">
+                        <div class="apps-rv-categories-item text-center">
+                            <div class="apps-rv-cat-box-1 d-inline-block text-center">
+                                <div class="apps-rv-hover-slide-cat-box-1">
+                                    <a href="<?php echo esc_url($cat_link); ?>" class="apps-rv-cat-box-img">
                                         <?php if(!empty($cat_image_url)) : ?>
                                             <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>"><img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>" />
                                         <?php endif; ?>
                                     </a>
                                 </div>
-                                <h6 class="ayaa-rv-cat-box-title"><a href="<?php echo esc_url($cat_link); ?>"><?php echo esc_html($category_name); ?></a></h6>
+                                <h6 class="apps-rv-cat-box-title"><a href="<?php echo esc_url($cat_link); ?>"><?php echo esc_html($category_name); ?></a></h6>
                             </div>
                         </div>
                     </div>
@@ -57,8 +57,8 @@
             </div>
             <?php endif; ?>
             <?php if(!empty($cat_lists_2)) : ?>
-            <div class="pl-90 pr-90 ayaa-rv-categories-lr-space">
-                <div class="ayaa-rv-categories-active-forward swiper-container" dir="rtl">
+            <div class="pl-90 pr-90 apps-rv-categories-lr-space">
+                <div class="apps-rv-categories-active-forward swiper-container" dir="rtl">
                     <div class="swiper-wrapper roll__wrapper">
                     <?php foreach($cat_lists_2 as $index => $cat_id) : ?>
                         <?php if( $term = get_term_by( 'id', $cat_id, 'product_cat' ) ) :
@@ -77,16 +77,16 @@
                                 }
                             ?>
                         <div class="swiper-slide">
-                            <div class="ayaa-rv-categories-item text-center">
-                                <div class="ayaa-rv-cat-box-1 d-inline-block text-center">
-                                    <div class="ayaa-rv-hover-slide-cat-box-1">
-                                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-rv-cat-box-img">
+                            <div class="apps-rv-categories-item text-center">
+                                <div class="apps-rv-cat-box-1 d-inline-block text-center">
+                                    <div class="apps-rv-hover-slide-cat-box-1">
+                                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-rv-cat-box-img">
                                         <?php if(!empty($cat_image_url)) : ?>
                                             <img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>"><img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>" />
                                         <?php endif; ?>
                                     </a>
                                     </div>
-                                    <h6 class="ayaa-rv-cat-box-title"><a href="<?php echo esc_url($cat_link); ?>"><?php echo esc_html($category_name); ?></a></h6>
+                                    <h6 class="apps-rv-cat-box-title"><a href="<?php echo esc_url($cat_link); ?>"><?php echo esc_html($category_name); ?></a></h6>
                                 </div>
                             </div>
                         </div>

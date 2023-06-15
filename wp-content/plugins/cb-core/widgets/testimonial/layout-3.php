@@ -1,34 +1,34 @@
 <!-- user feedback area start -->
 <div class="user-feedback-area">
     <div class="container">
-        <div class="ayaa-featured-section-top-wrap ayaa-rv-has-featured-bottom-space">
+        <div class="apps-featured-section-top-wrap apps-rv-has-featured-bottom-space">
             <div class="row align-items-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <?php if(!empty($settings['section_title'])) : ?>
-                    <div class="ayaa-section-title-wrapper-1">
-                        <h3 class="ayaa-section-title-1"><?php echo esc_html($settings['section_title']); ?></h3>
+                    <div class="apps-section-title-wrapper-1">
+                        <h3 class="apps-section-title-1"><?php echo esc_html($settings['section_title']); ?></h3>
                     </div>
                     <?php endif; ?>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <?php if(!empty($settings['show_testimonial_arrow'])) : ?>
-                    <div class="ayaa-rv-hand-picked-product-arrow">
-                        <button class="ayaa-rv-arrow ayaa-rv-arrow-fedback-left"><i class="fa-light fa-long-arrow-left"></i><i class="fa-light fa-long-arrow-left"></i></button>
-                        <button class="ayaa-rv-arrow ayaa-rv-arrow-fedback-right"><i class="fa-light fa-long-arrow-right"></i><i class="fa-light fa-long-arrow-right"></i></button>
+                    <div class="apps-rv-hand-picked-product-arrow">
+                        <button class="apps-rv-arrow apps-rv-arrow-fedback-left"><i class="fa-light fa-long-arrow-left"></i><i class="fa-light fa-long-arrow-left"></i></button>
+                        <button class="apps-rv-arrow apps-rv-arrow-fedback-right"><i class="fa-light fa-long-arrow-right"></i><i class="fa-light fa-long-arrow-right"></i></button>
                     </div>
                     <?php endif; ?>
                 </div>
             </div>
         </div>
-        <div class="ayaa-feedback-testimonial-main-wrap">
+        <div class="apps-feedback-testimonial-main-wrap">
             <?php if(!empty($settings['slides'])) : ?>
-            <div class="ayaa-feedback-testimonial-main-active swiper-container pt-50 pb-50">
+            <div class="apps-feedback-testimonial-main-active swiper-container pt-50 pb-50">
                 <div class="swiper-wrapper">
                     <?php foreach($settings['slides'] as $slide) : 
                         $user_image = $slide['user_image']['url'];    
                     ?>
                     <div class="swiper-slide">
-                        <div class="ayaa-feedback-testimonial-box">
+                        <div class="apps-feedback-testimonial-box">
                             <?php if(!empty($slide['user_rating'])) : ?>
                                 <?php echo  cb_core_elementor_review_star_rating_2($slide['user_rating']); ?>
                             <?php endif; ?>
@@ -38,7 +38,7 @@
                             <div class="quote">
                                 <i class="flaticon flaticon-quotation"></i>
                             </div>
-                            <div class="ayaa-feedback-author-box">
+                            <div class="apps-feedback-author-box">
                                 <?php if(!empty($user_image)) : ?>
                                 <div class="image">
                                     <img src="<?php echo esc_url($user_image); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($slide['user_image']['url']), '_wp_attachment_image_alt', true); ?>">

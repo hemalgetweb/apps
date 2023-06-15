@@ -4,47 +4,31 @@
         <div class="tech-stack-box-wrapper-114">
             <div class="row align-items-center">
                 <div class="col-xxl-4 col-xl-4 col-lg-4">
-                    <h5 class="tech-stack-box-left-label-114">Product Design</h5>
+                    <?php if(!empty($settings['tech_stack_title'])) : ?>
+                        <h5 class="tech-stack-box-left-label-114"><?php echo esc_html($settings['tech_stack_title']); ?></h5>
+                    <?php endif; ?>
                 </div>
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
+                    <?php if(!empty($settings['slides'])) : ?>
                     <div class="tech-stack-box-right-icon-list-114">
+                        <?php foreach($settings['slides'] as $slide) : 
+                            $this->add_render_attribute( 'stack_image', 'src', $slide['stack_image']['url'] );
+                            $this->add_render_attribute( 'stack_image', 'alt', \Elementor\Control_Media::get_image_alt( $slide['stack_image'] ) );
+                            $this->add_render_attribute( 'stack_image', 'title', \Elementor\Control_Media::get_image_title( $slide['stack_image'] ) );    
+                        ?>
                         <div class="tech-stack-box-icon-single-114">
+                            <?php if(!empty($slide['stack_image'])) : ?>
                             <div class="icon">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deletable/stack/xd.png" alt="XD">
+                                <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $slide, 'thumbnail', 'stack_image' ); ?>
                             </div>
-                            <span class="label">XD</span>
+                            <?php endif; ?>
+                            <?php if(!empty($slide['stack_label'])) : ?>
+                            <span class="label"><?php echo esc_html($slide['stack_label']); ?></span>
+                            <?php endif; ?>
                         </div>
-                        <div class="tech-stack-box-icon-single-114">
-                            <div class="icon">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deletable/stack/figma.png" alt="XD">
-                            </div>
-                            <span class="label">Figma</span>
-                        </div>
-                        <div class="tech-stack-box-icon-single-114">
-                            <div class="icon">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deletable/stack/sketch.png" alt="XD">
-                            </div>
-                            <span class="label">Sketch</span>
-                        </div>
-                        <div class="tech-stack-box-icon-single-114">
-                            <div class="icon">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deletable/stack/invision.png" alt="XD">
-                            </div>
-                            <span class="label">Invision</span>
-                        </div>
-                        <div class="tech-stack-box-icon-single-114">
-                            <div class="icon">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deletable/stack/framer.png" alt="XD">
-                            </div>
-                            <span class="label">Framer</span>
-                        </div>
-                        <div class="tech-stack-box-icon-single-114">
-                            <div class="icon">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deletable/stack/adobe_photoshop.png" alt="XD">
-                            </div>
-                            <span class="label">Photoshop</span>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

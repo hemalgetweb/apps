@@ -274,7 +274,7 @@ class CB_Core_Blog extends Widget_Base
 				'label' => __('Blog Wrapper Border Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-news-inner-main-wrapper-6' => 'border-color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-news-inner-main-wrapper-6' => 'border-color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-8']
@@ -287,7 +287,7 @@ class CB_Core_Blog extends Widget_Base
 				'label' => __('Theme Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-section-title-6' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-section-title-6' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-8']
@@ -300,7 +300,7 @@ class CB_Core_Blog extends Widget_Base
 				'label' => __('Meta Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-news-blog-meta-6, {{WRAPPER}}  .ayaa-fz-news-blog-meta-6 a' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-news-blog-meta-6, {{WRAPPER}}  .apps-fz-news-blog-meta-6 a' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-8']
@@ -313,7 +313,7 @@ class CB_Core_Blog extends Widget_Base
 				'label' => __('Meta Hover Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-news-blog-meta-6:hover, {{WRAPPER}}  .ayaa-fz-news-blog-meta-6 a:hover' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-news-blog-meta-6:hover, {{WRAPPER}}  .apps-fz-news-blog-meta-6 a:hover' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-8']
@@ -326,7 +326,7 @@ class CB_Core_Blog extends Widget_Base
 				'label' => __('Blog Title Color', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ayaa-fz-news-blog-content-6 .title' => 'color: {{VALUE}}'
+					'{{WRAPPER}} .apps-fz-news-blog-content-6 .title' => 'color: {{VALUE}}'
 				],
 				'condition' => [
 					'layout' => ['layout-8']

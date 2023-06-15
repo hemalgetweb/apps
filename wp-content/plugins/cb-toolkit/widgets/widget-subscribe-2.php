@@ -22,7 +22,7 @@
         <?php if( !empty($mailchimp_shortcode) ): ?>
             <?php print do_shortcode($mailchimp_shortcode); ?>
         <?php endif; ?>
-        <h4 class="ayaa-fz-gateway-title"><?php echo esc_html__('Payment Gateway', 'cb-toolkit'); ?></h4>
+        <h4 class="apps-fz-gateway-title"><?php echo esc_html__('Payment Gateway', 'cb-toolkit'); ?></h4>
         <img src="https://revelwp.codebasket.net/wp-content/uploads/2023/01/payment-gateway-1.png" alt="<?php echo esc_attr__('img', 'cb-toolkit'); ?>"> 
 		<?php
 		}

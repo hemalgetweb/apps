@@ -15,15 +15,15 @@ Class CB_Toolkit_Banner extends WP_Widget{
 		$btn_text = $instance['btn_text'] ? $instance['btn_text']:'';
 		$btn_link = $instance['btn_link'] ? $instance['btn_link']:'';
 		$image_uri = $instance['image_uri'] ? $instance['image_uri']:'';?>
-		 <div class="ayaa-blog-sidebar ayaa-blog-sidebar-ad text-center" data-background="<?php echo esc_url($image_uri); ?>">
+		 <div class="apps-blog-sidebar apps-blog-sidebar-ad text-center" data-background="<?php echo esc_url($image_uri); ?>">
 			<?php if(!empty($title)) : ?>
-				<h4 class="ayaa-add-title"><?php echo esc_html($title); ?></h4>
+				<h4 class="apps-add-title"><?php echo esc_html($title); ?></h4>
 			<?php endif; ?>
 			<?php if(!empty($content)) : ?>
 				<p><?php echo esc_html($content); ?></p>
 			<?php endif; ?>
 			<?php if(!empty($btn_text)) : ?>
-				<a href="<?php echo esc_url($btn_link); ?>" class="ayaa-add-btn"><?php echo esc_html($btn_text); ?></a>
+				<a href="<?php echo esc_url($btn_link); ?>" class="apps-add-btn"><?php echo esc_html($btn_text); ?></a>
 			<?php endif; ?>
 		</div>
 

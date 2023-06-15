@@ -6,14 +6,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xxl-6 col-xl-8 col-lg-8 col-md-10">
-                <div class="ayaa-fz-subscribe-inner-4 fz-responsive">
+                <div class="apps-fz-subscribe-inner-4 fz-responsive">
                     <?php if(!empty($settings['section_title'])) : ?>
                         <h4 class="title"><?php echo cb_core_kses_basic($settings['section_title']); ?></h4>
                     <?php endif; ?>
                     <?php if(!empty($settings['section_subtitle'])) : ?>
                         <p><?php echo cb_core_kses_basic($settings['section_subtitle']); ?></p>
                     <?php endif; ?>
-                    <div class="ayaa-fz-subscribe-form-4">
+                    <div class="apps-fz-subscribe-form-4">
                         <?php
                             if (!empty($settings['form_id'])) {
                                 echo cb_core_do_shortcode('contact-form-7', [

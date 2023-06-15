@@ -140,7 +140,7 @@ class CB_Core_Slider extends Widget_Base
 			[
 				'label' => __('Select Product', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_posts('product'),
+				'options' => apps_drop_posts('product'),
 				'multiple' => false,
 				'label_block' => true,
 				'condition' => [
@@ -418,7 +418,7 @@ class CB_Core_Slider extends Widget_Base
 			'options'              => \Widget_Utils::get_control_options_text_align(),
 			'default'              => '',
 			'selectors'            => [
-				'{{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-content' => 'text-align: {{VALUE}};',
+				'{{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-content' => 'text-align: {{VALUE}};',
 			],
 			'condition'            => [
 				'custom_style' => 'yes',
@@ -455,7 +455,7 @@ class CB_Core_Slider extends Widget_Base
 				],
 			],
 			'selectors'  => [
-				'{{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-content' => 'width: {{SIZE}}{{UNIT}};',
+				'{{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-content' => 'width: {{SIZE}}{{UNIT}};',
 			],
 			'condition'  => [
 				'custom_style' => 'yes',
@@ -466,8 +466,8 @@ class CB_Core_Slider extends Widget_Base
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => ['px', '%'],
 			'selectors'  => [
-				'body:not(.rtl) {{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-				'body.rtl {{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-content'       => 'padding: {{TOP}}{{UNIT}} {{LEFT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{RIGHT}}{{UNIT}};',
+				'body:not(.rtl) {{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				'body.rtl {{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-content'       => 'padding: {{TOP}}{{UNIT}} {{LEFT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{RIGHT}}{{UNIT}};',
 			],
 			'condition'  => [
 				'custom_style' => 'yes',
@@ -487,8 +487,8 @@ class CB_Core_Slider extends Widget_Base
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => ['px', '%'],
 			'selectors'  => [
-				'body:not(.rtl) {{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-				'body.rtl {{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-title'       => 'margin: {{TOP}}{{UNIT}} {{LEFT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{RIGHT}}{{UNIT}};',
+				'body:not(.rtl) {{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				'body.rtl {{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-title'       => 'margin: {{TOP}}{{UNIT}} {{LEFT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{RIGHT}}{{UNIT}};',
 			],
 			'condition'  => [
 				'custom_style' => 'yes',
@@ -498,7 +498,7 @@ class CB_Core_Slider extends Widget_Base
 		$repeater->add_group_control(Group_Control_Typography::get_type(), [
 			'name'      => 'title_typography',
 			'label'     => __('Typography', 'cb-core'),
-			'selector'  => '{{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-title',
+			'selector'  => '{{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-title',
 			'condition' => [
 				'custom_style' => 'yes',
 			],
@@ -508,7 +508,7 @@ class CB_Core_Slider extends Widget_Base
 			'label'     => __('Color', 'cb-core'),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
-				'{{WRAPPER}} {{CURRENT_ITEM}} .ayaa-rv-slider-title' => 'color: {{VALUE}};',
+				'{{WRAPPER}} {{CURRENT_ITEM}} .apps-rv-slider-title' => 'color: {{VALUE}};',
 			],
 			'condition' => [
 				'custom_style' => 'yes',
@@ -553,7 +553,7 @@ class CB_Core_Slider extends Widget_Base
 			'type'      => Controls_Manager::COLOR,
 			'default'	=> '#FFF9F9',
 			'selectors' => [
-				'{{WRAPPER}} {{CURRENT_ITEM}} .ayaa-fz-hero-product-box-3' => 'background-color: {{VALUE}};',
+				'{{WRAPPER}} {{CURRENT_ITEM}} .apps-fz-hero-product-box-3' => 'background-color: {{VALUE}};',
 			],
 			'condition' => [
 				'field_condition_2' => ['style-4'],

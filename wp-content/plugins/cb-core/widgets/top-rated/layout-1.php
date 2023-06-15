@@ -1,4 +1,4 @@
-<div class="top-rated-n-best-seller py-25 ayaa-top-rated-section-2">
+<div class="top-rated-n-best-seller py-25 apps-top-rated-section-2">
     <div class="container">
         <div class="row g-4">
             <div class="col-xxl-5 col-xl-6 col-lg-12">

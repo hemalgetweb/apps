@@ -1,5 +1,5 @@
-<!-- ayaa-fz-featured-category-area-start -->
-<div id="scroll-featured" class="ayaa-fz-featured-category-area">
+<!-- apps-fz-featured-category-area-start -->
+<div id="scroll-featured" class="apps-fz-featured-category-area">
     <div class="container">
         <?php if(!empty($cat_lists)) : ?>
         <div class="row">
@@ -24,20 +24,20 @@
             ?>
             <?php if($index == 0) : ?>
             <div class="col-xl-4 col-lg-5">
-                <div class="ayaa-fz-featured-category-single featured-cat-drag-5 ayaa-fz-featured-shop-4 mb-40">
-                    <div class="ayaa-fz-featured-category-single-img">
-                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-featured-category-single-img-link"><img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>"></a>
-                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-featured-category-text mlm-30"><?php echo cb_core_kses_basic($category_name); ?> <span class="ayaa-fz-featured-category-count">(<?php echo esc_html($cat_count) ? esc_html($cat_count): '0'; ?>)</span></a>
+                <div class="apps-fz-featured-category-single featured-cat-drag-5 apps-fz-featured-shop-4 mb-40">
+                    <div class="apps-fz-featured-category-single-img">
+                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-featured-category-single-img-link"><img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>"></a>
+                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-featured-category-text mlm-30"><?php echo cb_core_kses_basic($category_name); ?> <span class="apps-fz-featured-category-count">(<?php echo esc_html($cat_count) ? esc_html($cat_count): '0'; ?>)</span></a>
                     </div>
                 </div>
             </div>
             <?php endif;?>
             <?php if($index == 1) : ?>
             <div class="col-xl-8 col-lg-7">
-                <div class="ayaa-fz-featured-category-single featured-cat-drag-5 ayaa-fz-featured-shop-4 mt-50 mb-40">
-                    <div class="ayaa-fz-featured-category-single-img">
-                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-featured-category-single-img-link"><img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>"></a>
-                        <a href="<?php echo esc_url($cat_link); ?>" class="ayaa-fz-featured-category-text mrm-30"><?php echo cb_core_kses_basic($category_name); ?> <span class="ayaa-fz-featured-category-count">(<?php echo esc_html($cat_count) ? esc_html($cat_count): '0'; ?>)</span></a>
+                <div class="apps-fz-featured-category-single featured-cat-drag-5 apps-fz-featured-shop-4 mt-50 mb-40">
+                    <div class="apps-fz-featured-category-single-img">
+                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-featured-category-single-img-link"><img src="<?php echo esc_url($cat_image_url); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($cat_image_url), '_wp_attachment_image_alt', true); ?>"></a>
+                        <a href="<?php echo esc_url($cat_link); ?>" class="apps-fz-featured-category-text mrm-30"><?php echo cb_core_kses_basic($category_name); ?> <span class="apps-fz-featured-category-count">(<?php echo esc_html($cat_count) ? esc_html($cat_count): '0'; ?>)</span></a>
                     </div>
                 </div>
             </div>
@@ -47,4 +47,4 @@
         <?php endif; ?>
     </div>
 </div>
-<!-- ayaa-fz-featured-category-area-end -->
+<!-- apps-fz-featured-category-area-end -->

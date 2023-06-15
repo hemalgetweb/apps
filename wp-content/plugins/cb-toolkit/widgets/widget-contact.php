@@ -28,7 +28,7 @@ class widget_contact extends WP_Widget {
         $website_label = empty($instance['website_label']) ? '' : $instance['website_label'];
     ?>
         <?php echo $before_widget; ?>
-        <div class="ayaa-footer-contact-widget-data">
+        <div class="apps-footer-contact-widget-data">
             <?php
                 if($title) {
                     echo $before_title . $title . $after_title;

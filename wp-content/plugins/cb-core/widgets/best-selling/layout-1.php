@@ -8,7 +8,7 @@
                 <?php if(!empty($settings['slides'])) : ?>
                 <div class="slider-area">
                     <?php foreach($settings['slides'] as $index => $slide ) : ?>
-                    <div class="ayaa-slider-height d-flex align-items-center bg-default"  data-lgbackground="<?php echo esc_url($slide['best_selling_large_large']['url']); ?>" data-smbackground="<?php echo esc_url($slide['best_selling_image_mid']['url']); ?>" data-background="<?php echo esc_url($slide['best_selling_image']['url']); ?>">
+                    <div class="apps-slider-height d-flex align-items-center bg-default"  data-lgbackground="<?php echo esc_url($slide['best_selling_large_large']['url']); ?>" data-smbackground="<?php echo esc_url($slide['best_selling_image_mid']['url']); ?>" data-background="<?php echo esc_url($slide['best_selling_image']['url']); ?>">
                         <div class="slide-<?php echo esc_attr($index); ?>">
                             <div class="banner-txt">
                                 <?php if(!empty($slide['subtitle'])) : ?>

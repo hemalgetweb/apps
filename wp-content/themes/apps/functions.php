@@ -179,13 +179,13 @@ add_action('widgets_init', 'apps_widgets_init');
 
 
 
-define('AYAA_THEME_DIR', get_template_directory());
-define('AYAA_THEME_URI', get_template_directory_uri());
-define('apps_THEME_CSS_DIR', AYAA_THEME_URI . '/assets/css/');
-define('APPS_THEME_JS_DIR', AYAA_THEME_URI . '/assets/js/');
-define('AYAA_THEME_INC', AYAA_THEME_DIR . '/inc/');
-define('AYAA_THEME_HOOK', AYAA_THEME_INC . 'hooks/');
-define('AYAA_THEME_CLASS', AYAA_THEME_INC . 'classes/');
+define('APPS_THEME_DIR', get_template_directory());
+define('APPS_THEME_URI', get_template_directory_uri());
+define('apps_THEME_CSS_DIR', APPS_THEME_URI . '/assets/css/');
+define('APPS_THEME_JS_DIR', APPS_THEME_URI . '/assets/js/');
+define('APPS_THEME_INC', APPS_THEME_DIR . '/inc/');
+define('APPS_THEME_HOOK', APPS_THEME_INC . 'hooks/');
+define('APPS_THEME_CLASS', APPS_THEME_INC . 'classes/');
 
 /*
  * Enqueue Admin scripts and styles.
@@ -250,21 +250,22 @@ function apps_fonts_url()
 	return $font_url;
 }
 
-require AYAA_THEME_INC . 'template-helper.php';
-require AYAA_THEME_INC . 'custom-header.php';
-require AYAA_THEME_INC . 'template-tags.php';
-require AYAA_THEME_INC . 'template-functions.php';
-include_once AYAA_THEME_INC . '/style/php/customizer-style.php';
-include_once AYAA_THEME_INC . 'class-wp-bootstrap-navwalker.php';
-require_once AYAA_THEME_INC . 'class-tgm-plugin-activation.php';
-require_once AYAA_THEME_INC . 'classes/class-apps-comment.php';
+require APPS_THEME_INC . 'template-helper.php';
+require APPS_THEME_INC . 'post-type/register-post-type.php';
+require APPS_THEME_INC . 'custom-header.php';
+require APPS_THEME_INC . 'template-tags.php';
+require APPS_THEME_INC . 'template-functions.php';
+include_once APPS_THEME_INC . '/style/php/customizer-style.php';
+include_once APPS_THEME_INC . 'class-wp-bootstrap-navwalker.php';
+require_once APPS_THEME_INC . 'class-tgm-plugin-activation.php';
+require_once APPS_THEME_INC . 'classes/class-apps-comment.php';
 if (defined('JETPACK__VERSION')) {
-	require AYAA_THEME_INC . 'jetpack.php';
+	require APPS_THEME_INC . 'jetpack.php';
 }
 /***
  * WooCommerce Support
  */
 add_theme_support('woocommerce');
 if (class_exists('TGM_Plugin_Activation')) {
-	require_once AYAA_THEME_INC . 'add_plugin.php';
+	require_once APPS_THEME_INC . 'add_plugin.php';
 }

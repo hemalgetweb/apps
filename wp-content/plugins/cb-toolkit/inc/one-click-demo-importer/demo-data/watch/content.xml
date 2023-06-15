@@ -11520,7 +11520,7 @@ As the year winds down and comes to an end; many take some time to reflect on wh
 		<dc:creator><![CDATA[farzaa]]></dc:creator>
 		<guid isPermaLink="false">https://farzaawp.codebasket.net/watch/?post_type=wpcf7_contact_form&#038;p=228</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="ayaa-fz-contact-message-input-fields">
+		<content:encoded><![CDATA[<div class="apps-fz-contact-message-input-fields">
     <div class="row">
         <div class="col-md-6">[text text-954 placeholder "Full Name"]</div>
         <div class="col-md-6">[email* email-697 placeholder "Email Address"]</div>
@@ -11528,8 +11528,8 @@ As the year winds down and comes to an end; many take some time to reflect on wh
         <div class="col-md-6">[text text-954 placeholder "Your Topic"]</div>
         <div class="col-md-12">[textarea textarea-864 placeholder "Enter Message"]</div>
         <div class="col-md-12">
-            <div class="ayaa-fz-contact-button mt-20">
-                <button type="submit" class="ayaa-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
+            <div class="apps-fz-contact-button mt-20">
+                <button type="submit" class="apps-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
             </div>
         </div>
     </div>
@@ -11602,7 +11602,7 @@ Please enter a telephone number.]]></content:encoded>
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
-		<wp:meta_value><![CDATA[<div class="ayaa-fz-contact-message-input-fields">
+		<wp:meta_value><![CDATA[<div class="apps-fz-contact-message-input-fields">
     <div class="row">
         <div class="col-md-6">[text text-954 placeholder "Full Name"]</div>
         <div class="col-md-6">[email* email-697 placeholder "Email Address"]</div>
@@ -11610,8 +11610,8 @@ Please enter a telephone number.]]></content:encoded>
         <div class="col-md-6">[text text-954 placeholder "Your Topic"]</div>
         <div class="col-md-12">[textarea textarea-864 placeholder "Enter Message"]</div>
         <div class="col-md-12">
-            <div class="ayaa-fz-contact-button mt-20">
-                <button type="submit" class="ayaa-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
+            <div class="apps-fz-contact-button mt-20">
+                <button type="submit" class="apps-fz-contact-btn"><span>Get A Quote</span><span>Get A Quote</span></button>
             </div>
         </div>
     </div>

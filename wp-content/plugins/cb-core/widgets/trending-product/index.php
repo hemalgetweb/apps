@@ -174,7 +174,7 @@ class CB_Core_Trending_Product_Banner extends Widget_Base
 			[
 				'label' => __('Category', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_cat('product_cat'),
+				'options' => apps_drop_cat('product_cat'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => [
@@ -187,7 +187,7 @@ class CB_Core_Trending_Product_Banner extends Widget_Base
 			[
 				'label' => __('Posts', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => ayaa_drop_posts('product'),
+				'options' => apps_drop_posts('product'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => [

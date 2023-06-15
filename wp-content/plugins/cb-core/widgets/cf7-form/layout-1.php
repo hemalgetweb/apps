@@ -1,4 +1,4 @@
-<div class="subscribe ayaa-el-subscribe py-25">
+<div class="subscribe apps-el-subscribe py-25">
     <div class="container">
         <div class="bg" data-background="<?php echo esc_url($settings['cf7_bg_image']['url']) ? esc_url($settings['cf7_bg_image']['url']): ''; ?>">
             <?php if(!empty($settings['section_title'])) : ?>

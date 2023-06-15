@@ -118,8 +118,7 @@ class CB_Core_About extends Widget_Base
                 'label' => __('Layout', 'cb-core'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => [
-                    'layout-1' => __('Layout 1', 'cb-core'),
-                    'layout-2' => __('Layout 2', 'cb-core'),
+                    'layout-1' => __('Layout 1', 'cb-core')
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -133,215 +132,55 @@ class CB_Core_About extends Widget_Base
             ]
         );
         $this->add_control(
-            '_section_about_image_heading',
+            'about_image',
             [
-                'label'       => __('About Images', 'cb-core'),
-                'type'      => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            'image_1',
-            [
-                'label'   => __('Image 1', 'cb-core'),
+                'label'   => __('About Image', 'cb-core'),
                 'type'    => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
                 'condition' => [
-                    'layout' => ['layout-1', 'layout-2']
+                    'layout' => ['layout-1']
                 ]
             ]
         );
         $this->add_control(
-            'image_2',
-            [
-                'label'   => __('Image 2', 'cb-core'),
-                'type'    => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
-                'condition' => [
-                    'layout' => 'layout-1',
-                ],
+        'about_subtitle',
+         [
+            'label'       => esc_html__( 'About Subtitle', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => esc_html__( 'Why Us', 'cb-core' ),
+            'placeholder' => esc_html__( 'About Subtitle', 'cb-core' ),
+            'label_block' => true,
+            'condition' => [
+                'layout' => ['layout-1']
             ]
+         ]
         );
         $this->add_control(
-            'year_box_heading',
-            [
-                'label'       => __('Year Box', 'cb-core'),
-                'type'      => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
+        'about_title',
+         [
+            'label'       => esc_html__( 'About Title', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => esc_html__( 'Dubai’s Top Custom eCommerce Web Development Agency', 'cb-core' ),
+            'placeholder' => esc_html__( 'About Title', 'cb-core' ),
+            'label_block' => true,
+            'condition' => [
+                'layout' => ['layout-1']
             ]
+         ]
         );
         $this->add_control(
-            'year_box_subtitle',
-            [
-                'label'       => __('Box Subtitle', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('Since From', 'cb-core'),
-                'placeholder' => __('Box subtitle', 'cb-core'),
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
+        'about_desc',
+         [
+            'label'       => esc_html__( 'About Description', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXTAREA,
+            'placeholder' => esc_html__( 'About Description', 'cb-core' ),
+            'label_block' => true,
+            'condition' => [
+                'layout' => ['layout-1']
             ]
-        );
-        $this->add_control(
-            'year_box_title',
-            [
-                'label'       => __('Box Title', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('2010', 'cb-core'),
-                'placeholder' => __('Box title', 'cb-core'),
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            'customer_box_heading',
-            [
-                'label'       => __('Customer Box', 'cb-core'),
-                'type'      => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            'customer_box_subtitle',
-            [
-                'label'       => __('Box Subtitle', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('Active Customer', 'cb-core'),
-                'placeholder' => __('Box subtitle', 'cb-core'),
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            'customer_box_title',
-            [
-                'label'       => __('Box Title', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('30K+', 'cb-core'),
-                'placeholder' => __('Box title', 'cb-core'),
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            'image_3',
-            [
-                'label'   => __('Image 3', 'cb-core'),
-                'type'    => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
-                'condition' => [
-                    'layout' => 'layout-1',
-                ],
-            ]
-        );
-        $this->add_control(
-            '_section_about_content_heading',
-            [
-                'label'       => __('About Content', 'cb-core'),
-                'type'      => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'layout' => ['layout-1', 'layout-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'about_content_title',
-            [
-                'label'       => __('About Content Title', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('About Our Story', 'cb-core'),
-                'placeholder' => __('Box subtitle', 'cb-core'),
-                'condition' => [
-                    'layout' => ['layout-1', 'layout-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'about_content_desc',
-            [
-                'label'       => __('About Content Description', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXTAREA,
-                'default'     => __('Established fact that a reader will, taken possession of my entire soul, like these sweet mornings of spring which I enjoy with the theory of ethics. Posuere eat a ante venanatin diapaus posuere aliquot. Staging at the middle of 2010 seem malasada magna moles eulimid. Present commode cursus magna, vela scelerisque Nissl consented et. Integer posuere era a ante venanatin dipygus posuere valet aliquot.', 'cb-core'),
-                'placeholder' => __('Box subtitle', 'cb-core'),
-                'condition' => [
-                    'layout' => ['layout-1', 'layout-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'btn_text',
-            [
-                'label' => __('Button Text', 'cb-core'),
-                'type' => \Elementor\Controls_Manager::TEXT,
-                'label_block' => true,
-                'default' => __('SHOP NOW', 'cb-core'),
-                'placeholder' => __('Type your button text here', 'cb-core'),
-                'condition' => [
-                    'layout' => ['layout-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'btn_link',
-            [
-                'label' => __('Button Link', 'cb-core'),
-                'label_block' => true,
-                'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => __('https://your-link.com', 'cb-core'),
-                'options' => ['url', 'is_external', 'nofollow'],
-                'default' => [
-                    'url' => '',
-                    'is_external' => true,
-                    'nofollow' => true,
-                ],
-                'label_block' => true,
-                'condition' => [
-                    'layout' => ['layout-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'about_content_image',
-            [
-                'label'   => __('About Content Image', 'cb-core'),
-                'type'    => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
-                'condition' => [
-                    'layout' => 'layout-1',
-                ],
-            ]
-        );
-        $this->add_control(
-            '_section_about_list_repeater_heading',
-            [
-                'label'       => __('List Repeater', 'cb-core'),
-                'type'      => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
+         ]
         );
         $repeater = new \Elementor\Repeater();
         $repeater->add_control(
@@ -351,21 +190,33 @@ class CB_Core_About extends Widget_Base
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'solid',
                 'options' => [
-                    'style-1'  => __('Style 1', 'cb-core'),
-                    'style-2'  => __('Style 2', 'cb-core'),
+                    'style-1'  => __('Style 1', 'cb-core')
                 ],
                 'default' => 'style-1'
             ]
         );
         $repeater->add_control(
-            'repeater_list_item',
+            'list_item_image',
+            [
+            'label'   => esc_html__( 'List Item Image', 'cb-core' ),
+            'type'    => \Elementor\Controls_Manager::MEDIA,
+            'default' => [
+                  'url' => \Elementor\Utils::get_placeholder_image_src(),
+              ],
+              'condition' => [
+                    'field_condition' => ['style-1']
+                ]
+            ]
+        );
+        $repeater->add_control(
+            'list_item_text',
             [
                 'label'   => __('List Item Text', 'cb-core'),
                 'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('Orders go right to your restaurant', 'cb-core'),
+                'default'     => __('Custom Design & Development', 'cb-core'),
                 'label_block' => true,
                 'condition' => [
-                    'field_condition' => ['style -2']
+                    'field_condition' => ['style-1']
                 ]
             ]
         );
@@ -389,203 +240,9 @@ class CB_Core_About extends Widget_Base
                 'title_field' => '{{{ repeater_list_item }}}',
             ]
         );
-        $this->add_control(
-            'about_list_content_2',
-            [
-                'label'       => __('Repeater List Content', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXTAREA,
-                'default'     => __('Established fact that a reader will, taken your ssion I enjoy with the theory of ethics.', 'cb-core'),
-                'placeholder' => __('Repeater List Content', 'cb-core'),
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            '_section_about_author_box_heading',
-            [
-                'label'       => __('Author Box', 'cb-core'),
-                'type'      => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            'author_signature',
-            [
-                'label'   => __('Author Signature', 'cb-core'),
-                'type'    => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
-                'condition' => [
-                    'layout' => 'layout-1',
-                ],
-            ]
-        );
-        $this->add_control(
-            'author_img',
-            [
-                'label'   => __('Author Image', 'cb-core'),
-                'type'    => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
-                'condition' => [
-                    'layout' => 'layout-1',
-                ],
-            ]
-        );
-        $this->add_control(
-            'author_name',
-            [
-                'label'       => __('Author Name', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('Arjuna Alisha', 'cb-core'),
-                'placeholder' => __('Author Name', 'cb-core'),
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
-        $this->add_control(
-            'author_designation',
-            [
-                'label'       => __('Author Designation', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('Author', 'cb-core'),
-                'placeholder' => __('Author Designation', 'cb-core'),
-                'condition' => [
-                    'layout' => 'layout-1',
-                ]
-            ]
-        );
+       
         $this->end_controls_section();
-        $this->start_controls_section(
-            '_section_about_content_2',
-            [
-                'label' => __('About Content 2', 'cb_core'),
-            ]
-        );
-        $this->add_control(
-            'about_content_image_2',
-            [
-                'label'   => __('Image', 'cb-core'),
-                'type'    => \Elementor\Controls_Manager::MEDIA,
-                'default' => [
-                    'url' => \Elementor\Utils::get_placeholder_image_src(),
-                ],
-                'condition' => [
-                    'layout' => ['layout-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'about_2_title',
-            [
-                'label'       => __('About Title', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('Our Store (2)', 'cb-core'),
-                'placeholder' => __('Box title', 'cb-core'),
-                'condition' => [
-                    'layout' => ['layout-2'],
-                ]
-            ]
-        );
-        $this->add_control(
-            'about_2_content',
-            [
-                'label'       => __('About Content', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('Established fact that a reader will, taken possession of my entire soul, like these sweet mornings of spring which I enjoy with the theory of ethics. Posuere eat a ante venanatin diapaus posuere aliquot. Staging at the middle of 2016 porta seem malasada.', 'cb-core'),
-                'placeholder' => __('About content', 'cb-core'),
-                'condition' => [
-                    'layout' => ['layout-2'],
-                ]
-            ]
-        );
-
-        $repeater = new \Elementor\Repeater();
-        $repeater->add_control(
-            'field_condition_2',
-            [
-                'label' => __('Field Condition', 'cb-core'),
-                'type' => \Elementor\Controls_Manager::SELECT,
-                'default' => 'solid',
-                'options' => [
-                    'style-1'  => __('Style 1', 'cb-core'),
-                    'style-2'  => __('Style 2', 'cb-core'),
-                ],
-                'default' => 'style-1'
-            ]
-        );
-        $repeater->add_control(
-            'about_2_list_item',
-            [
-                'label'   => __('List Item', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::TEXT,
-                'default'     => __('It can be difficult to know when shopping online', 'cb-core'),
-                'label_block' => true,
-                'condition' => [
-                    'field_condition_2' => ['style-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'slides_2',
-            [
-                'label'       => __('List 2', 'cb-core'),
-                'type'        => \Elementor\Controls_Manager::REPEATER,
-                'fields'      => $repeater->get_controls(),
-                'default'     => [
-                    [
-                        'about_2_list_item'   => __('It can be difficult to know when shopping online', 'cb-core'),
-                    ],
-                    [
-                        'about_2_list_item'   => __('Customer reviews can be fit and quality', 'cb-core'),
-                    ],
-                    [
-                        'about_2_list_item'   => __('Clothes made from natural fibers or wool, tend', 'cb-core'),
-                    ],
-                ],
-                'title_field' => '{{{ about_2_list_item }}}',
-            ]
-        );
-        $this->add_control(
-            'btn_text_2',
-            [
-                'label' => __('Button Text', 'cb-core'),
-                'type' => \Elementor\Controls_Manager::TEXT,
-                'label_block' => true,
-                'default' => __('SHOP NOW', 'cb-core'),
-                'placeholder' => __('Type your button text here', 'cb-core'),
-                'condition' => [
-                    'layout' => ['layout-2']
-                ]
-            ]
-        );
-        $this->add_control(
-            'btn_link_2',
-            [
-                'label' => __('Button Link', 'cb-core'),
-                'label_block' => true,
-                'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => __('https://your-link.com', 'cb-core'),
-                'options' => ['url', 'is_external', 'nofollow'],
-                'default' => [
-                    'url' => '',
-                    'is_external' => true,
-                    'nofollow' => true,
-                ],
-                'label_block' => true,
-                'condition' => [
-                    'layout' => ['layout-2']
-                ]
-            ]
-        );
-        $this->end_controls_section();
+       
         $this->start_controls_section(
             'section_style',
             [

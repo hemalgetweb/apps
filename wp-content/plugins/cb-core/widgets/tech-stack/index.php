@@ -132,7 +132,67 @@ class CB_Core_Tech_Stack extends Widget_Base
 			]
 		);
         // controls here
-
+		$this->add_control(
+			'tech_stack_title',
+			[
+				'label'       => esc_html__( 'Stack Title', 'cb-core' ),
+				'type'        => \Elementor\Controls_Manager::TEXT,
+				'default'     => esc_html__( 'Product Design', 'cb-core' ),
+				'label_block' => true,
+				'placeholder' => esc_html__( 'Stack Title', 'cb-core' ),
+				'condition' => [
+					'layout' => ['layout-1']
+				]
+			]
+		);
+		
+		$repeater = new \Elementor\Repeater();
+		$repeater->add_control(
+		 'field_condition',
+			[
+			'label'   => esc_html__( 'Field Condition', 'cb-core' ),
+			'type' => \Elementor\Controls_Manager::SELECT,
+			'options' => [
+				'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+			],
+			'default' => 'style-1',
+			]
+		);
+		$repeater->add_control(
+		 'stack_image',
+		 [
+		   'label'   => esc_html__( 'Stack Image', 'cb-core' ),
+		   'type'    => \Elementor\Controls_Manager::MEDIA,
+			 'default' => [
+			   'url' => \Elementor\Utils::get_placeholder_image_src(),
+		   ],
+		   'condition' => [
+				'field_condition' => ['style-1']
+			]
+		 ]
+		);
+		 $repeater->add_control(
+		 'stack_label',
+		   [
+			 'label'   => esc_html__( 'Stack Label', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXT,
+			 'default'     => esc_html__( 'XD', 'cb-core' ),
+			 'label_block' => true,
+			 'condition' => [
+				'field_condition' => ['style-1']
+			 ]
+		   ]
+		 );
+		 
+		 $this->add_control(
+		   'slides',
+		   [
+			 'label'       => esc_html__( 'Stack Slides', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::REPEATER,
+			 'fields'      => $repeater->get_controls(),
+			 'title_field' => '{{{ stack_label }}}',
+		   ]
+		 );
 		$this->end_controls_section();
 		$this->start_controls_section(
 			'section_style',
@@ -141,7 +201,16 @@ class CB_Core_Tech_Stack extends Widget_Base
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
-        // style here
+		$this->add_control(
+		 'border_color',
+		 [
+		   'label'       => esc_html__( 'Border Color', 'cb-core' ),
+		   'type'     => \Elementor\Controls_Manager::COLOR,
+		   'selectors' => [
+		   '{{WRAPPER}} .tech-stack-box-wrapper-114' => 'border-color: {{VALUE}}',
+		   ],
+		 ]
+		);
 		$this->end_controls_section();
 	}
 

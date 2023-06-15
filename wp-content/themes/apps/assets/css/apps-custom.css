@@ -552,3 +552,9 @@ ul.dropdown-menus li.menu-item a {
         float: none;
     }
 }
+.pricing .pricing-wrapper .pricing-item .pricing-count .price-btn {
+    text-align: center;
+}
+section.pricing .pricing-wrapper {
+    overflow-x: auto;
+}

@@ -188,11 +188,11 @@ a:hover { color: #1AE3E3; }
 /* mobile header style*/
 .mobileMenu { position: relative; }
 .mobileMenu .mobileMenu-container { max-width: 1840px; width: 100%; margin: auto; }
-.mobileMenu .mobileMenu-wrapper { position: fixed; height: 0vh; opacity: 0; padding: 0px 40px 40px 40px; -webkit-transition: .1s all linear; transition: .1s all linear; background-color: #00516B; width: 100%; }
+.mobileMenu .mobileMenu-wrapper { position: fixed; height: 0vh; opacity: 0; padding: 0px 40px 40px 40px; -webkit-transition: .1s all linear; transition: .1s all linear; background-color: #00516B; width: 100%; visibility: hidden; }
 .mobileMenu .mobileMenu-wrapper .navbar-nav { width: 100%; }
 .mobileMenu .mobileMenu-wrapper .navbar-nav .nav-item .nav-link { border-bottom: 1px solid #187998; display: block; }
 .mobileMenu .mobileMenu-action { height: 93vh; opacity: 1; -webkit-transition: .1s all linear; transition: .1s all linear; }
-.mobileMenu .navbar .mobileMenu-header { height: 70px; width: 100%; background-color: #00516B; padding: 0 40px; }
+.mobileMenu .navbar .mobileMenu-header { height: 70px; width: 100%; background-color: #00516B; padding: 0 40px; visibility: visible;}
 
 /* mobile header style*/
 /* header style*/

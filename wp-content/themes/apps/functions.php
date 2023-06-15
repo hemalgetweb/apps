@@ -227,6 +227,7 @@ function apps_scripts()
 	// all js
 	wp_enqueue_script('bootstrap', APPS_THEME_JS_DIR . 'bootstrap.bundle.min.js', ['jquery'], '', true);
 	wp_enqueue_script('swiper', APPS_THEME_JS_DIR . 'swiper.min.js', ['jquery'], '', true);
+	wp_enqueue_script('lottie', APPS_THEME_JS_DIR . 'lottie-player.js', ['jquery'], '', true);
 	wp_enqueue_script('apps-script', APPS_THEME_JS_DIR . 'script.js', ['jquery'], time(), true);
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

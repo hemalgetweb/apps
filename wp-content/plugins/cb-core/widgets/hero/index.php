@@ -136,7 +136,7 @@ class CB_Core_Hero extends Widget_Base
 		$this->add_control(
 			'subtitle_image',
 			[
-				'label' => esc_html__('Subtitle image', 'apps'),
+				'label' => esc_html__('Subtitle image', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'default' => [
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -149,13 +149,13 @@ class CB_Core_Hero extends Widget_Base
 		$this->add_control(
 			'subtitle',
 			[
-				'label' => esc_html__('Subtitle', 'apps'),
+				'label' => esc_html__('Subtitle', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__('WADI AL BADA', 'apps'),
+				'default' => esc_html__('WADI AL BADA', 'cb-core'),
 				'label_block' => true,
-				'placeholder' => esc_html__('Type your subtitle here', 'apps'),
+				'placeholder' => esc_html__('Type your subtitle here', 'cb-core'),
 				'condition' => [
-					'layout' => ['layout-1']
+					'layout' => ['layout-1', 'layout-2']
 				]
 			]
 		);
@@ -163,13 +163,13 @@ class CB_Core_Hero extends Widget_Base
 		$this->add_control(
 			'bannerTitle',
 			[
-				'label' => esc_html__('bannerTitle', 'apps'),
+				'label' => esc_html__('Banner Title', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__('WADI AL BADA', 'apps'),
+				'default' => esc_html__('WADI AL BADA', 'cb-core'),
 				'label_block' => true,
-				'placeholder' => esc_html__('Type your bannerTitle here', 'apps'),
+				'placeholder' => esc_html__('Type your bannerTitle here', 'cb-core'),
 				'condition' => [
-					'layout' => ['layout-1']
+					'layout' => ['layout-1', 'layout-2']
 				]
 			]
 		);
@@ -177,13 +177,25 @@ class CB_Core_Hero extends Widget_Base
 		$this->add_control(
 			'bannerIntro',
 			[
-				'label' => esc_html__('bannerIntro', 'apps'),
+				'label' => esc_html__('bannerIntro', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__('WADI AL BADA', 'apps'),
+				'default' => esc_html__('WADI AL BADA', 'cb-core'),
 				'label_block' => true,
-				'placeholder' => esc_html__('Type your bannerIntro here', 'apps'),
+				'placeholder' => esc_html__('Type your bannerIntro here', 'cb-core'),
 				'condition' => [
 					'layout' => ['layout-1']
+				]
+			]
+		);
+		$this->add_control(
+			'_description',
+			[
+				'label' => esc_html__('Description', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your description here', 'cb-core'),
+				'condition' => [
+					'layout' => ['layout-2']
 				]
 			]
 		);
@@ -191,14 +203,14 @@ class CB_Core_Hero extends Widget_Base
 		$this->add_control(
 			'banner_image',
 			[
-				'label' => esc_html__('banner image', 'apps'),
+				'label' => esc_html__('banner image', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'default' => [
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
 				],
-				'placeholder' => esc_html__('Type your banner image here', 'apps'),
+				'placeholder' => esc_html__('Type your banner image here', 'cb-core'),
 				'condition' => [
-					'layout' => ['layout-1']
+					'layout' => ['layout-1', 'layout-2']
 				]
 			]
 		);
@@ -206,11 +218,11 @@ class CB_Core_Hero extends Widget_Base
 		$this->add_control(
 			'btn_text',
 			[
-				'label' => esc_html__('Button text', 'apps'),
+				'label' => esc_html__('Button text', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__('Contact Us', 'apps'),
+				'default' => esc_html__('Contact Us', 'cb-core'),
 				'label_block' => true,
-				'placeholder' => esc_html__('Type your button text here', 'apps'),
+				'placeholder' => esc_html__('Type your button text here', 'cb-core'),
 				'condition' => [
 					'layout' => ['layout-1']
 				]
@@ -221,7 +233,7 @@ class CB_Core_Hero extends Widget_Base
 			[
 				'label' => esc_html__('Button Link', 'textdomain'),
 				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => esc_html__('https://your-link.com', 'apps'),
+				'placeholder' => esc_html__('https://your-link.com', 'cb-core'),
 				'options' => ['url', 'is_external', 'nofollow'],
 				'default' => [
 					'url' => '',
@@ -240,11 +252,11 @@ class CB_Core_Hero extends Widget_Base
 		$this->add_control(
 			'btn_text2',
 			[
-				'label' => esc_html__('Button text', 'apps'),
+				'label' => esc_html__('Button text', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__('Case Studies', 'apps'),
+				'default' => esc_html__('Case Studies', 'cb-core'),
 				'label_block' => true,
-				'placeholder' => esc_html__('Type your button text here', 'apps'),
+				'placeholder' => esc_html__('Type your button text here', 'cb-core'),
 				'condition' => [
 					'layout' => ['layout-1']
 				]
@@ -255,7 +267,7 @@ class CB_Core_Hero extends Widget_Base
 			[
 				'label' => esc_html__('Button Link', 'textdomain'),
 				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => esc_html__('https://your-link.com', 'apps'),
+				'placeholder' => esc_html__('https://your-link.com', 'cb-core'),
 				'options' => ['url', 'is_external', 'nofollow'],
 				'default' => [
 					'url' => '',

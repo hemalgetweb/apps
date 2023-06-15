@@ -603,6 +603,7 @@ section.pricing .pricing-wrapper {
     border-radius: 50%;
     text-align: center;
     line-height: 54px;
+    z-index: 99;
 }
 
 .apps-project-next-114 i, .apps-project-prev-114 i {
@@ -637,4 +638,69 @@ section.pricing .pricing-wrapper {
 }
 .swiper-container.apps-project-active-114 {
     padding-bottom: 50px;
+}
+.apps-scrollable-content-sections-nav-114 {
+    position: sticky;
+    top: 130px;
+}
+.apps-scrollable-content-sections-nav-114 ul li {
+    list-style: none;
+}
+
+.apps-scrollable-content-sections-nav-114 {
+    padding-left: 30px;
+    border-left: 1px solid #AECBD3;
+}
+
+.apps-scrollable-content-sections-nav-114 ul li a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #003959;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.apps-scrollable-content-sections-nav-114 ul li.active a {
+    color: #26B5B5;
+}
+
+.apps-panel .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #003959;
+    margin-bottom: 16px;
+}
+
+.apps-panel p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: #1F516D;
+}
+
+.apps-panel p b {
+    font-weight: 600;
+    color: #003959;
+}
+.apps-project-card-image-114 img {
+    width: 100%;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .apps-project-next-114 {
+        right: -15px;
+    }
+    .apps-project-prev-114 {
+        left: -15px;
+    }
+}
+@media (max-width: 1199px) {
+    .apps-project-next-114 {
+        right: 0;
+    }
+    .apps-project-prev-114 {
+        left: 0;
+    }
 }

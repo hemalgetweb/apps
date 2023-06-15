@@ -118,7 +118,8 @@ class CB_Core_About extends Widget_Base
                 'label' => __('Layout', 'cb-core'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => [
-                    'layout-1' => __('Layout 1', 'cb-core')
+                    'layout-1' => __('Layout 1', 'cb-core'),
+                    'layout-2' => __('Layout 2', 'cb-core')
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -140,7 +141,7 @@ class CB_Core_About extends Widget_Base
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
                 'condition' => [
-                    'layout' => ['layout-1']
+                    'layout' => ['layout-1', 'layout-2']
                 ]
             ]
         );
@@ -153,7 +154,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Subtitle', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1']
+                'layout' => ['layout-1', 'layout-2']
             ]
          ]
         );
@@ -166,7 +167,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Title', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1']
+                'layout' => ['layout-1', 'layout-2']
             ]
          ]
         );
@@ -178,7 +179,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Description', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1']
+                'layout' => ['layout-1', 'layout-2']
             ]
          ]
         );

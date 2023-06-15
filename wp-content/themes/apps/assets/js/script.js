@@ -144,6 +144,29 @@ $(window).scroll(function () {
             $(this).parents(".menu-item").find('.dropdown-menus').slideToggle();
             $(this).parents(".menu-item").find('.dropdown-menus').toggleClass('d-block');
         })
+
+        /***
+         * Scroll content
+         */
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelector(`.apps-scrollable-content-sections-nav-114 nav li a[href="#${id}"]`).parentElement.classList.add('active');
+                    } else {
+                        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+                    }
+                });
+            });
+            // Track all sections that have an `id` applied
+            document.querySelectorAll('section[id]').forEach((section) => {
+                observer.observe(section);
+            });
+            
+        });
+
+
         let CB_Project = function($scope, $) {
             $scope.find('.apps-project-active-114').each(function() {
             // swiper activations and options initialization

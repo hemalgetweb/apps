@@ -815,3 +815,45 @@ footer.footer.bg-clr-deepDark {
     position: relative;
     z-index: 9;
 }
+
+/* feature box 3 */
+.apps-feature-list-box-3-114 {
+    background: #fff;
+    box-shadow: 0px 20px 40px rgba(0, 60, 79, 0.1);
+    border-radius: 6px;
+    padding: 40px 33px;
+    padding-bottom: 33px;
+}
+
+.apps-feature-list-box-3-114 ul li {
+    list-style: none;
+}
+
+.apps-feature-list-box-3-title-114 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #003959;
+    margin-bottom: 10px;
+}
+
+.apps-feature-list-box-3-114 p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1F516D;
+    margin-bottom: 20px;
+}
+
+.apps-feature-list-box-3-114 ul li i {
+    font-size: 15px;
+    color: #00C7C7;
+    margin-right: 13px;
+}
+
+.apps-feature-list-box-3-114 ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F516D;
+}

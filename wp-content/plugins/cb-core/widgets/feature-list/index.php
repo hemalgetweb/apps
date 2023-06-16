@@ -121,6 +121,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'options' => [
 					'layout-1' => __('Layout 1', 'cb-core'),
 					'layout-2' => __('Layout 2', 'cb-core'),
+					'layout-3' => __('Layout 3', 'cb-core'),
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -143,6 +144,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'options' => [
 					'style-1' => __('Style 1', 'cb-core'),
 					'style-2' => __('Style 2', 'cb-core'),
+					'style-3' => __('Style 3', 'cb-core'),
 				],
 				'default' => 'style-1'
 			]
@@ -168,7 +170,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'default' => __('Free Delivery', 'cb-core'),
 				'label_block' => true,
 				'condition' => [
-					'field_condition' => ['style-1']
+					'field_condition' => ['style-1', 'style-3']
 				],
 				'placeholder' => __('Type your title here', 'cb-core'),
 			]
@@ -181,10 +183,21 @@ class CB_Core_Feature_List extends Widget_Base
 				'default' => __('Free Delivery', 'cb-core'),
 				'label_block' => true,
 				'condition' => [
-					'field_condition' => ['style-1']
+					'field_condition' => ['style-1', 'style-3']
 				],
 				'placeholder' => __('Type your Content here', 'cb-core'),
 			]
+		);
+		$repeater->add_control(
+		 'feature_lists',
+		 [
+		   'label'       => esc_html__( 'Feature Lists ( enter for seperate )', 'cb-core' ),
+		   'type'        => \Elementor\Controls_Manager::TEXTAREA,
+		   'rows'        => 10,
+		   'default'     => esc_html__( 'Default Text', 'cb-core' ),
+		   'placeholder' => esc_html__( 'Placeholder Text', 'cb-core' ),
+		   'condition' => ['field_condition' => ['style-3']]
+		 ]
 		);
 		$this->add_control(
 			'slides',

@@ -2,11 +2,11 @@
   <div class="container">
     <?php if (!empty($settings['slides'])): ?>
       <div
-        class="our-strategy position-relative d-flex gap-sm-4 gap-3 align-items-center justify-content-lg-between justify-content-center mt-5 mt-lg-0 wow fadeInUp"
+        class="our-strategy position-relative d-flex gap-sm-4 gap-3 align-items-center justify-content-lg-between mt-5 mt-lg-0 wow fadeInUp flex-wrap flex-xl-nowrap"
         data-wow-duration="0.200s" data-wow-delay="600ms">
         <?php foreach ($settings['slides'] as $slide): ?>
-          <div class="strategy-item d-flex align-items-center flex-wrap flex-lg-nowrap gap-3">
-            <div class="icon">
+          <div class="strategy-item d-flex align-items-center gap-3">
+            <div class="icon flex-shrink-0">
               <?php if (!empty($slide['strategy_icon'])): ?>
                 <img src="<?php echo esc_url($slide['strategy_icon']['url']); ?>" alt="icon" class="img-fluid">
               <?php endif; ?>

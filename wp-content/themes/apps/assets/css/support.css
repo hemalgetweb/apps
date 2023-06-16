@@ -1,12 +1,41 @@
-
-.strategy-wrapper{
+.strategy-wrapper {
   background-color: #003959;
   border: 1px solid #004770;
   margin-top: -90px;
 }
-.our-strategy{
+
+.our-strategy {
   z-index: 100;
 }
-.banner-img img{
+
+.banner-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.banner-img img {
   max-width: 850px !important;
+  z-index: 1;
+}
+
+
+@media (max-width: 1200px) {
+  .banner-wrapper {
+    min-height: 500px;
+  }
+
+  .banner-img {
+    position: static !important;
+    text-align: end !important;
+  }
+
+  .banner-img img {
+    max-width: 700px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-img img {
+    max-width: 100% !important;
+  }
 }

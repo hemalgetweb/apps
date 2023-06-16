@@ -25,12 +25,14 @@
                             <div class="contact-form pb-5 pb-lg-0">
                                 <div class="form-wrapper">
                                 <?php
-                                    if (!empty($settings['form_id'])) {
-                                        echo cb_core_do_shortcode('contact-form-7', [
-                                            'id' => $settings['form_id'],
-                                            'html_class' => 'cb-cf7-form ' . cb_core_sanitize_html_class_param($settings['html_class']),
-                                        ]);
-                                    }
+                                    if(class_exists('WPCF7')) :
+                                        if (!empty($settings['form_id'])) {
+                                            echo cb_core_do_shortcode('contact-form-7', [
+                                                'id' => $settings['form_id'],
+                                                'html_class' => 'cb-cf7-form ' . cb_core_sanitize_html_class_param($settings['html_class']),
+                                            ]);
+                                        }
+                                    endif;
                                 ?>
                                 </div>
                             </div>

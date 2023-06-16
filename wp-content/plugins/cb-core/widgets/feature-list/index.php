@@ -199,6 +199,34 @@ class CB_Core_Feature_List extends Widget_Base
 		   'condition' => ['field_condition' => ['style-3']]
 		 ]
 		);
+		
+		$repeater->add_control(
+			'strategy_icon',
+			[
+				'label' => esc_html__('strategy icon', 'apps'),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+				'placeholder' => esc_html__('Type your strategy icon here', 'apps'),
+				'condition' => [
+					'field_condition' => ['style-2']
+				]
+			]
+		);
+		$repeater->add_control(
+			'strategy_title',
+			[
+				'label' => __('Strategy Title', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __('Strategy Title', 'cb-core'),
+				'label_block' => true,
+				'condition' => [
+					'field_condition' => ['style-2']
+				],
+				'placeholder' => __('Type strategy title here', 'cb-core'),
+			]
+		);
 		$this->add_control(
 			'slides',
 			[
@@ -248,33 +276,6 @@ class CB_Core_Feature_List extends Widget_Base
 			]
 		);
 
-		$repeater->add_control(
-			'strategy_icon',
-			[
-				'label' => esc_html__('strategy icon', 'apps'),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-				'placeholder' => esc_html__('Type your strategy icon here', 'apps'),
-				'condition' => [
-					'field_condition' => ['style-2']
-				]
-			]
-		);
-		$repeater->add_control(
-			'strategy_title',
-			[
-				'label' => __('Strategy Title', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('Strategy Title', 'cb-core'),
-				'label_block' => true,
-				'condition' => [
-					'field_condition' => ['style-2']
-				],
-				'placeholder' => __('Type strategy title here', 'cb-core'),
-			]
-		);
 
 		$this->end_controls_section();
 	}

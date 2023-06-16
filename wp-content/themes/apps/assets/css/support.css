@@ -40,6 +40,22 @@
   }
 }
 
-.wa-btn svg {
-  font-size: 10px;
+.wa-btn .elementor-button-link {
+  position: relative;
+}
+
+.wa-btn .elementor-button-link::after {
+  position: absolute;
+  content: "";
+  right: 30px;
+  background-image: url('data:image/svg+xml,<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="%23003959"/></svg>');
+  z-index: 999;
+  width: 10px;
+  height: 10px;
+  top: 41%;
+  transition: all 0.3s ease-in-out;
+}
+
+.wa-btn .elementor-button-link:hover::after {
+  right: 25px;
 }

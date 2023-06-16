@@ -134,6 +134,64 @@ class CB_Core_Steps extends Widget_Base
 		);
         // main controls here
 		
+		$repeater = new \Elementor\Repeater();
+		$repeater->add_control(
+		 'field_condition',
+		 [
+		   'label'   => esc_html__( 'Field Condition', 'cb-core' ),
+		   'type' => \Elementor\Controls_Manager::SELECT,
+		   'options' => [
+			 'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+		   ],
+		   'default' => 'style-1',
+		 ]
+		);
+		$repeater->add_control(
+			'step_count',
+			 [
+				'label'       => esc_html__( 'Step Count', 'cb-core' ),
+				'type'        => \Elementor\Controls_Manager::TEXT,
+				'default'     => esc_html__( '01', 'cb-core' ),
+				'placeholder' => esc_html__( 'Step Count', 'cb-core' ),
+				'condition' => [
+					'field_condition' => ['style-1']
+				]
+			 ]
+		);
+		 $repeater->add_control(
+		 'step_title',
+		   [
+			 'label'   => esc_html__( 'Step Title', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXT,
+			 'default'     => esc_html__( 'Analysis', 'cb-core' ),
+			 'label_block' => true,
+			 'condition' => [
+				'field_condition' => ['style-1']
+			 ]
+		   ]
+		 );
+		 
+		 $repeater->add_control(
+		 'step_desc',
+		   [
+			 'label'   => esc_html__( 'Step Description', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXTAREA,
+			 'label_block' => true,
+			 'condition' => [
+				'field_condition' => ['style-1']
+			 ]
+		   ]
+		 );
+		 
+		 $this->add_control(
+		   'slides',
+		   [
+			 'label'       => esc_html__( 'Steps Repeater', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::REPEATER,
+			 'fields'      => $repeater->get_controls(),
+			 'title_field' => '{{{ step_title }}}',
+		   ]
+		 );
 		$this->end_controls_section();
 		$this->start_controls_section(
 			'section_style',

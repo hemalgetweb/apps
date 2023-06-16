@@ -119,6 +119,7 @@ class CB_Core_Heading extends Widget_Base
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => [
                     'layout-1' => __('Layout 1', 'cb-core'),
+                    'layout-2' => __('Layout 2', 'cb-core'),
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -140,7 +141,7 @@ class CB_Core_Heading extends Widget_Base
             'placeholder' => esc_html__( '', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1']
+                'layout' => ['layout-1', 'layout-2']
             ]
          ]
         );
@@ -191,6 +192,9 @@ class CB_Core_Heading extends Widget_Base
 				],
 				'default' => 'center',
 				'toggle' => true,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ],
 				'selectors' => [
 					'{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',
 				],

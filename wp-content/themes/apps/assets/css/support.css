@@ -39,3 +39,7 @@
     max-width: 100% !important;
   }
 }
+
+.wa-btn svg {
+  font-size: 10px;
+}

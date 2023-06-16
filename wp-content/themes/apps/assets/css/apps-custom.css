@@ -736,7 +736,7 @@ section.pricing .pricing-wrapper {
     background-color: transparent;
     padding: 0;
     box-shadow: none;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding-right: 21px;
     color: #003959;
     position: relative;
@@ -794,6 +794,7 @@ section.pricing .pricing-wrapper {
 .apps-accordion-wrapper-main-114 .accordion-item {
     border-bottom: 1px solid #BADDF0 !important;
     margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 @media (max-width: 575px) {
     .apps-accordion-wrapper-main-114 .accordion-button .apps-question-q-114 {

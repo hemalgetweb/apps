@@ -2,7 +2,11 @@
 .strategy-wrapper{
   background-color: #003959;
   border: 1px solid #004770;
+  margin-top: -90px;
 }
 .our-strategy{
   z-index: 100;
+}
+.banner-img img{
+  max-width: 850px !important;
 }

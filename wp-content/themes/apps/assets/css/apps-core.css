@@ -234,7 +234,7 @@ a:hover { color: #1AE3E3; }
 /* header style - END*/
 /* header style - END*/
 /* banner style */
-.banner-wrapper { padding-top: 180px; min-height: 929px; }
+.banner-wrapper { padding-top: 180px; min-height: 850px; }
 @media (max-width: 550px) { .banner-wrapper { padding-top: 80px; } }
 .banner-wrapper .our-strategy { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
 @media (max-width: 550px) { .banner-wrapper .our-strategy { -ms-flex-wrap: wrap; flex-wrap: wrap; } }

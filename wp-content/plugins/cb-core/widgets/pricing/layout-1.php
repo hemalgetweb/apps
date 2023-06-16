@@ -1,5 +1,5 @@
 <!-- pricing start -->
-<section class="pricing">
+<section class="pricing <?php echo $settings['active_price_box'] ? esc_attr__('active'): ''; ?>">
     <div class="pricing-wrapper">
         <div class="single-price">
             <div class="pricing-item radius-6 h-100">

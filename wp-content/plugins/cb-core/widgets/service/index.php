@@ -131,7 +131,34 @@ class CB_Core_Service extends Widget_Base
                 'label' => __('service Content', 'cb-core'),
             ]
         );
-        
+        $this->add_control(
+			'box_min_height',
+			[
+				'label' => esc_html__( 'Box Min Height', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'min' => 200,
+				'max' => 400,
+				'step' => 40,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+			]
+		);
+        $this->add_control(
+         'enable_box_shadow_effect',
+         [
+           'label'        => esc_html__( 'Enable Shadow Effect?', 'cb-core' ),
+           'type'         => \Elementor\Controls_Manager::SWITCHER,
+           'label_on'     => esc_html__( 'On', 'cb-core' ),
+           'label_off'    => esc_html__( 'Off', 'cb-core' ),
+           'return_value' => 'yes',
+           'default'      => '',
+           'condition' => [
+                'layout' => ['layout-1']
+            ]
+
+         ]
+        );
         $repeater = new \Elementor\Repeater();
         
         $repeater->add_control(

@@ -119,7 +119,9 @@ class CB_Core_About extends Widget_Base
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => [
                     'layout-1' => __('Layout 1', 'cb-core'),
-                    'layout-2' => __('Layout 2', 'cb-core')
+                    'layout-2' => __('Layout 2', 'cb-core'),
+                    'layout-3' => __('Layout 3', 'cb-core'),
+                    'layout-4' => __('Layout 4', 'cb-core')
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -141,7 +143,7 @@ class CB_Core_About extends Widget_Base
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
                 'condition' => [
-                    'layout' => ['layout-1', 'layout-2']
+                    'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
                 ]
             ]
         );
@@ -154,7 +156,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Subtitle', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
             ]
          ]
         );
@@ -167,7 +169,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Title', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
             ]
          ]
         );
@@ -179,7 +181,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Description', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
             ]
          ]
         );
@@ -191,7 +193,10 @@ class CB_Core_About extends Widget_Base
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'solid',
                 'options' => [
-                    'style-1'  => __('Style 1', 'cb-core')
+                    'style-1'  => __('Style 1', 'cb-core'),
+                    'style-2'  => __('Style 2', 'cb-core'),
+                    'style-3'  => __('Style 3', 'cb-core'),
+                    'style-4'  => __('Style 4', 'cb-core'),
                 ],
                 'default' => 'style-1'
             ]
@@ -217,7 +222,7 @@ class CB_Core_About extends Widget_Base
                 'default'     => __('Custom Design & Development', 'cb-core'),
                 'label_block' => true,
                 'condition' => [
-                    'field_condition' => ['style-1']
+                    'field_condition' => ['style-1', 'style-3']
                 ]
             ]
         );
@@ -242,6 +247,48 @@ class CB_Core_About extends Widget_Base
             ]
         );
        
+       $repeater = new \Elementor\Repeater();
+       $repeater->add_control(
+        'field_condition_2',
+        [
+          'label'   => esc_html__( 'Field Condition', 'cb-core' ),
+          'type' => \Elementor\Controls_Manager::SELECT,
+          'options' => [
+            'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+            'style-2'  => esc_html__( 'Style 2', 'cb-core' ),
+            'style-3'  => esc_html__( 'Style 3', 'cb-core' ),
+            'style-4'  => esc_html__( 'Style 4', 'cb-core' )
+          ],
+          'default' => 'style-3',
+        ]
+       );
+        $repeater->add_control(
+        'list_title',
+          [
+            'label'   => esc_html__( 'List Title', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => esc_html__( 'Default-value', 'cb-core' ),
+            'label_block' => true,
+            'condition' => [
+                'field_condition_2' => ['style-3']
+            ]
+          ]
+        );
+        
+        $this->add_control(
+          'slides_2',
+          [
+            'label'       => esc_html__( 'List 2', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::REPEATER,
+            'fields'      => $repeater->get_controls(),
+            'default'     => [
+              [
+                'list_title'   => esc_html__( 'Zero Downtime', 'cb-core' ),
+              ],
+            ],
+            'title_field' => '{{{ list_title }}}',
+          ]
+        );
         $this->end_controls_section();
        
         $this->start_controls_section(

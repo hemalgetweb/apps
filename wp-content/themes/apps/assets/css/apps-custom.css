@@ -558,7 +558,7 @@ ul.dropdown-menus li.menu-item a {
     text-align: center;
 }
 section.pricing .pricing-wrapper {
-    overflow-x: auto;
+    overflow-x: inherit;
 }
 
 
@@ -857,4 +857,92 @@ footer.footer.bg-clr-deepDark {
     font-size: 16px;
     line-height: 26px;
     color: #1F516D;
+}
+.apps-timeline-item-right-content-114 .apps-count {
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 80px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 57, 89, 0.15) 0%, rgba(0, 57, 89, 0.04) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 13px;
+}
+
+.apps-timeline-item-right-content-114  .apps-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 16px;
+    color: #003959;
+}
+
+.apps-timeline-item-right-content-114 p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 30px;
+    color: #1F516D;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.pr-30 {
+    padding-right: 30px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .apps-timeline-item-right-content-114 {
+        padding: 0;
+    }
+    
+    .apps-timeline-item-right-content-114 .apps-title {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    
+    .apps-timeline-item-right-content-114 .apps-count {
+        font-size: 70px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .apps-timeline-item-right-content-114  .apps-title {
+        font-size: 25px;
+        line-height: 1.4;
+        margin-bottom: 16px;
+    }
+    .apps-timeline-item-right-content-114 .apps-count {
+        font-size: 75px;
+        margin-bottom: 10px;
+    }
+    .apps-timeline-item-right-content-114 {
+        padding: 0;
+    }
+}
+.pricing.active .pricing-wrapper .pricing-item, .pricing .pricing-wrapper .pricing-item:hover {
+    border-color: #26b5b5;
+    box-shadow: 0px 20px 30px rgba(0, 60, 79, 0.15);
+}
+
+.pricing.active .pricing-wrapper .pricing-item .pricing-count .price-btn {
+    background: #00C7C7;
+    border-color: transparent;
+}
+.apps-has-shadow-effect-114 .apps-service-box-114 {
+    box-shadow: none;
+    transition: all .3s;
+    border: 1px solid #BADDF0;
+}
+
+.apps-has-shadow-effect-114 .apps-service-box-114:hover {
+    border-color: transparent;
+    box-shadow: 0px 20px 40px rgba(0, 57, 89, 0.1);
+}
+
+.strategy-item .icon img {
+    max-width: 36px;
+    margin-bottom: 8px;
 }

@@ -131,6 +131,20 @@ class CB_Core_Pricing extends Widget_Base
                 'label' => __('Pricing Content', 'cb_core'),
             ]
         );
+        $this->add_control(
+         'active_price_box',
+         [
+           'label'        => esc_html__( 'Active Price Box?', 'cb-core' ),
+           'type'         => \Elementor\Controls_Manager::SWITCHER,
+           'label_on'     => esc_html__( 'Yes', 'cb-core' ),
+           'label_off'    => esc_html__( 'No', 'cb-core' ),
+           'return_value' => 'yes',
+           'default'      => 'yes',
+           'condition' => [
+            'layout' => ['layout-1']
+           ]
+         ]
+        );
         // controls here
        $this->add_control(
         'pricing_image',

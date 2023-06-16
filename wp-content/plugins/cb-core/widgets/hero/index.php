@@ -21,7 +21,7 @@ class CB_Core_Hero extends Widget_Base
 	/**
 	 * Retrieve the widget name.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.0git
 	 *
 	 * @access public
 	 *

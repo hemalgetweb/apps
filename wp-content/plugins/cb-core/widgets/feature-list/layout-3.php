@@ -1,5 +1,10 @@
+<?php
+    $min_box_height = $settings['min_box_height'];
+    $enable_box_hover_shadow = $settings['enable_box_hover_shadow'];
+?>
+
 <!-- feature list 3 area start -->
-<div class="feature-list-area">
+<div class="feature-list-area <?php echo $enable_box_hover_shadow ? esc_attr__('apps-has-box-hover-shadow'): ''; ?>">
     <?php if(!empty($settings['slides'])) : ?>
     <div class="container">
         <div class="row">
@@ -11,7 +16,7 @@
                 }
             ?>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                <div class="apps-feature-list-box-3-114 mb-30">
+                <div class="apps-feature-list-box-3-114 mb-30"  style="min-height: <?php echo $min_box_height ? $min_box_height. 'px' : ''; ?>">
                     <?php if(!empty($slide['feature_title'])) : ?>
                         <h5 class="apps-feature-list-box-3-title-114"><?php echo cb_core_kses_basic($slide['feature_title']); ?></h5>
                     <?php endif; ?>

@@ -857,6 +857,7 @@ footer.footer.bg-clr-deepDark {
     font-size: 16px;
     line-height: 26px;
     color: #1F516D;
+    margin-bottom: 8px;
 }
 .apps-timeline-item-right-content-114 .apps-count {
     font-weight: 600;
@@ -945,4 +946,28 @@ footer.footer.bg-clr-deepDark {
 .strategy-item .icon img {
     max-width: 36px;
     margin-bottom: 8px;
+}
+.apps-has-box-hover-shadow .apps-feature-list-box-3-114 {
+    border: 1px solid #BADDF0;
+    box-shadow: none;
+    transition: all .3s;
+}
+.apps-has-box-hover-shadow .apps-feature-list-box-3-114:hover {
+    border-color: transparent;
+    box-shadow: 0px 20px 40px rgba(0, 60, 79, 0.1);
+}
+.apps-steps-heading-114 .apps-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #003959;
+    margin: 0;
+    margin-top: -22px;
+}
+.apps-steps-heading-114 .apps-title span {
+    background: #fff;
+    padding: 0 23px;
 }

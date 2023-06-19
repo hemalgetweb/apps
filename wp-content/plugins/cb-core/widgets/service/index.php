@@ -119,6 +119,8 @@ class CB_Core_Service extends Widget_Base
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => [
                     'layout-1' => __('Layout 1', 'cb-core'),
+                    'layout-2' => __('Layout 2', 'cb-core'),
+                    'layout-3' => __('Layout 3', 'cb-core'),
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -140,7 +142,7 @@ class CB_Core_Service extends Widget_Base
 				'max' => 400,
 				'step' => 40,
                 'condition' => [
-                    'layout' => ['layout-1']
+                    'layout' => ['layout-1', 'layout-2']
                 ]
 			]
 		);
@@ -168,7 +170,9 @@ class CB_Core_Service extends Widget_Base
 				'type' => Controls_Manager::SELECT,
 				'default' => 'style-1',
 				'options' => [
-					'style-1' => __('Style 1', 'cb-core')
+					'style-1' => __('Style 1', 'cb-core'),
+					'style-2' => __('Style 2', 'cb-core'),
+					'style-3' => __('Style 3', 'cb-core')
 				],
 			]
 		);
@@ -182,7 +186,7 @@ class CB_Core_Service extends Widget_Base
 				],
                 'label_block' => true,
                 'condition' => [
-                    'field_condition' => ['style-1']
+                    'field_condition' => ['style-1', 'style-2', 'style-3']
                 ]
 			]
 		);
@@ -194,7 +198,7 @@ class CB_Core_Service extends Widget_Base
             'default'     => esc_html__( 'Service Title', 'cb-core' ),
             'placeholder' => esc_html__( 'Service Title', 'cb-core' ),
             'condition' => [
-                'field_condition' => ['style-1']
+                'field_condition' => ['style-1', 'style-2', 'style-3']
             ],
             'label_block' => true,
          ]
@@ -205,7 +209,7 @@ class CB_Core_Service extends Widget_Base
             'label'   => esc_html__( 'Service Title Link', 'cb-core' ),
             'type'        => \Elementor\Controls_Manager::URL,
             'condition' => [
-                'field_condition' => ['style-1']
+                'field_condition' => ['style-1', 'style-2', 'style-3']
             ],
             'label_block' => true,
             'default'     => [
@@ -226,7 +230,7 @@ class CB_Core_Service extends Widget_Base
             'default'     => esc_html__( 'Service Content', 'cb-core' ),
             'placeholder' => esc_html__( 'Service Content', 'cb-core' ),
             'condition' => [
-                'field_condition' => ['style-1']
+                'field_condition' => ['style-1', 'style-2', 'style-3']
             ],
             'label_block' => true,
          ]

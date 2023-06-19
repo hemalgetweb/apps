@@ -29,7 +29,7 @@
                     </p>
                 </div>
                 <?php endif; ?>
-                <div class="row ">
+                <div class="row g-0">
                     <?php if(!empty($settings['slides'])) : ?>
                     <div class="col-md-6">
                         <ul class="list-unstyled mb-0 d-flex flex-column gap-3 align-items-start pb-4">

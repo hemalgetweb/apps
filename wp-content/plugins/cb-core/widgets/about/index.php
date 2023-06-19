@@ -121,7 +121,9 @@ class CB_Core_About extends Widget_Base
                     'layout-1' => __('Layout 1', 'cb-core'),
                     'layout-2' => __('Layout 2', 'cb-core'),
                     'layout-3' => __('Layout 3', 'cb-core'),
-                    'layout-4' => __('Layout 4', 'cb-core')
+                    'layout-4' => __('Layout 4', 'cb-core'),
+                    'layout-5' => __('Layout 5', 'cb-core'),
+                    'layout-6' => __('Layout 6', 'cb-core'),
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -143,7 +145,7 @@ class CB_Core_About extends Widget_Base
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
                 'condition' => [
-                    'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
+                    'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
                 ]
             ]
         );
@@ -156,7 +158,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Subtitle', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
             ]
          ]
         );
@@ -169,10 +171,23 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Title', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
             ]
          ]
         );
+        $this->add_control(
+            'about_title_secondary',
+             [
+                'label'       => esc_html__( 'About Title 2', 'cb-core' ),
+                'type'        => \Elementor\Controls_Manager::TEXT,
+                'default'     => esc_html__( 'How do we do it for you?', 'cb-core' ),
+                'placeholder' => esc_html__( 'About Title 2', 'cb-core' ),
+                'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-5']
+                ]
+             ]
+            );
         $this->add_control(
         'about_desc',
          [
@@ -181,7 +196,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Description', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
             ]
          ]
         );
@@ -197,6 +212,8 @@ class CB_Core_About extends Widget_Base
                     'style-2'  => __('Style 2', 'cb-core'),
                     'style-3'  => __('Style 3', 'cb-core'),
                     'style-4'  => __('Style 4', 'cb-core'),
+                    'style-5'  => __('Style 5', 'cb-core'),
+                    'style-6'  => __('Style 6', 'cb-core'),
                 ],
                 'default' => 'style-1'
             ]
@@ -210,7 +227,7 @@ class CB_Core_About extends Widget_Base
                   'url' => \Elementor\Utils::get_placeholder_image_src(),
               ],
               'condition' => [
-                    'field_condition' => ['style-1']
+                    'field_condition' => ['style-1', 'style-6']
                 ]
             ]
         );
@@ -222,9 +239,21 @@ class CB_Core_About extends Widget_Base
                 'default'     => __('Custom Design & Development', 'cb-core'),
                 'label_block' => true,
                 'condition' => [
-                    'field_condition' => ['style-1', 'style-3']
+                    'field_condition' => ['style-1', 'style-3', 'style-5', 'style-6']
                 ]
             ]
+        );
+        $repeater->add_control(
+         'list_item_desc',
+         [
+           'label'       => esc_html__( 'List Item Description', 'cb-core' ),
+           'type'        => \Elementor\Controls_Manager::TEXTAREA,
+           'rows'        => 10,
+           'placeholder' => esc_html__( 'List Item Description', 'cb-core' ),
+           'condition' => [
+                'field_condition' => ['style-6']
+            ]
+         ]
         );
         $this->add_control(
             'slides',
@@ -257,7 +286,9 @@ class CB_Core_About extends Widget_Base
             'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
             'style-2'  => esc_html__( 'Style 2', 'cb-core' ),
             'style-3'  => esc_html__( 'Style 3', 'cb-core' ),
-            'style-4'  => esc_html__( 'Style 4', 'cb-core' )
+            'style-4'  => esc_html__( 'Style 4', 'cb-core' ),
+            'style-5'  => esc_html__( 'Style 5', 'cb-core' ),
+            'style-6'  => esc_html__( 'Style 6', 'cb-core' )
           ],
           'default' => 'style-3',
         ]
@@ -270,7 +301,19 @@ class CB_Core_About extends Widget_Base
             'default'     => esc_html__( 'Default-value', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'field_condition_2' => ['style-3']
+                'field_condition_2' => ['style-3', 'style-6']
+            ]
+          ]
+        );
+        $repeater->add_control(
+        'list_count',
+          [
+            'label'   => esc_html__( 'List Count', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::NUMBER,
+            'label_block' => true,
+            'default' => 30,
+            'condition' => [
+                'field_condition_2' => ['style-6']
             ]
           ]
         );
@@ -281,11 +324,6 @@ class CB_Core_About extends Widget_Base
             'label'       => esc_html__( 'List 2', 'cb-core' ),
             'type'        => \Elementor\Controls_Manager::REPEATER,
             'fields'      => $repeater->get_controls(),
-            'default'     => [
-              [
-                'list_title'   => esc_html__( 'Zero Downtime', 'cb-core' ),
-              ],
-            ],
             'title_field' => '{{{ list_title }}}',
           ]
         );

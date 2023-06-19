@@ -21,14 +21,14 @@
                             <?php endif; ?>
                             <div class="apps-project-card-description-wrapper-114">
                                 <div class="row">
-                                    <div class="col-xxl-10">
+                                    <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                         <h5 class="apps-project-card-title-114"><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo get_the_title(); ?></a></h5>
                                         <?php if(!empty($cat_name)) : ?>
                                             <a href="<?php echo $cat_link ? esc_url($cat_link): ''; ?>" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="col-xxl-2">
-                                        <div class="apps-project-card-action-icon-114 text-end">
+                                    <div class="col-xxl-2 col-xl-2">
+                                        <div class="apps-project-card-action-icon-114 text-xl-end">
                                             <a href="<?php echo esc_url(get_the_permalink()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt=""></a>
                                         </div>
                                     </div>

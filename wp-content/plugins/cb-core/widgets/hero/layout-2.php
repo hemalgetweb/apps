@@ -1,5 +1,5 @@
 <!-- hero area start -->
-<div class="apps-hero-area-114" style="background-color: #003959">
+<div class="apps-hero-area-114">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-6">

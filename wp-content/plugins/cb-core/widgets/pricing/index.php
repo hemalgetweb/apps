@@ -139,7 +139,7 @@ class CB_Core_Pricing extends Widget_Base
            'label_on'     => esc_html__( 'Yes', 'cb-core' ),
            'label_off'    => esc_html__( 'No', 'cb-core' ),
            'return_value' => 'yes',
-           'default'      => 'yes',
+           'default'      => '',
            'condition' => [
             'layout' => ['layout-1']
            ]

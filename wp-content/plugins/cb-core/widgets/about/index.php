@@ -124,6 +124,7 @@ class CB_Core_About extends Widget_Base
                     'layout-4' => __('Layout 4', 'cb-core'),
                     'layout-5' => __('Layout 5', 'cb-core'),
                     'layout-6' => __('Layout 6', 'cb-core'),
+                    'layout-7' => __('Layout 7', 'cb-core'),
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -145,7 +146,7 @@ class CB_Core_About extends Widget_Base
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
                 'condition' => [
-                    'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
+                    'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7']
                 ]
             ]
         );
@@ -158,7 +159,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Subtitle', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7']
             ]
          ]
         );
@@ -171,7 +172,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Title', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7']
             ]
          ]
         );
@@ -196,7 +197,7 @@ class CB_Core_About extends Widget_Base
             'placeholder' => esc_html__( 'About Description', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6']
+                'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7']
             ]
          ]
         );
@@ -214,6 +215,7 @@ class CB_Core_About extends Widget_Base
                     'style-4'  => __('Style 4', 'cb-core'),
                     'style-5'  => __('Style 5', 'cb-core'),
                     'style-6'  => __('Style 6', 'cb-core'),
+                    'style-7'  => __('Style 7', 'cb-core'),
                 ],
                 'default' => 'style-1'
             ]
@@ -227,7 +229,7 @@ class CB_Core_About extends Widget_Base
                   'url' => \Elementor\Utils::get_placeholder_image_src(),
               ],
               'condition' => [
-                    'field_condition' => ['style-1', 'style-6']
+                    'field_condition' => ['style-1', 'style-6', 'style-7']
                 ]
             ]
         );
@@ -239,7 +241,7 @@ class CB_Core_About extends Widget_Base
                 'default'     => __('Custom Design & Development', 'cb-core'),
                 'label_block' => true,
                 'condition' => [
-                    'field_condition' => ['style-1', 'style-3', 'style-5', 'style-6']
+                    'field_condition' => ['style-1', 'style-3', 'style-5', 'style-6', 'style-7']
                 ]
             ]
         );
@@ -251,7 +253,7 @@ class CB_Core_About extends Widget_Base
            'rows'        => 10,
            'placeholder' => esc_html__( 'List Item Description', 'cb-core' ),
            'condition' => [
-                'field_condition' => ['style-6']
+                'field_condition' => ['style-6', 'style-7']
             ]
          ]
         );

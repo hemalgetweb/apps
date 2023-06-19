@@ -156,7 +156,7 @@ class CB_Core_Service extends Widget_Base
            'return_value' => 'yes',
            'default'      => '',
            'condition' => [
-                'layout' => ['layout-1']
+                'layout' => ['layout-1', 'layout-2']
             ]
 
          ]

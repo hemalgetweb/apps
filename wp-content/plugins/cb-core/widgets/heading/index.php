@@ -213,7 +213,7 @@ class CB_Core_Heading extends Widget_Base
             [
                 'label' => esc_html__('Subtitle', 'cb-core'),
                 'type' => \Elementor\Controls_Manager::HEADING,
-                'separator' => 'before',
+                'separator' => 'after',
                 'condition' => [
                     'layout' => ['layout-1']
                 ]
@@ -235,17 +235,27 @@ class CB_Core_Heading extends Widget_Base
         $this->add_group_control(
             \Elementor\Group_Control_Typography::get_type(),
             [
-                'name' => 'subtitle_color',
-                'label' => esc_html__('Typography', 'cb-core'),
+                'name' => 'subtitle_typo',
+                'label' => esc_html__('Subtitle Typography', 'cb-core'),
                 'selector' => '{{WRAPPER}} .apps-service-section-subtitle-114',
                 'condition' => [
                     'layout' => ['layout-1']
                 ]
             ]
         );
-
         $this->add_control(
-            '_heading_title',
+            '_title_heading',
+            [
+                'label' => esc_html__('Title', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::HEADING,
+                'separator' => 'after',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_control(
+            '_heading_title_color',
             [
                 'label' => esc_html__('heading_title Color', 'Text-domain'),
                 'type' => \Elementor\Controls_Manager::COLOR,
@@ -260,17 +270,27 @@ class CB_Core_Heading extends Widget_Base
         $this->add_group_control(
             \Elementor\Group_Control_Typography::get_type(),
             [
-                'name' => 'heading_title',
-                'label' => esc_html__('Typography', 'cb-core'),
+                'name' => 'heading_title_typo',
+                'label' => esc_html__('Title Typography', 'cb-core'),
                 'selector' => '{{WRAPPER}} .apps-service-section-title-114',
                 'condition' => [
                     'layout' => ['layout-1']
                 ]
             ]
         );
-
         $this->add_control(
-            '_description',
+            '_description_heading',
+            [
+                'label' => esc_html__('Description', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::HEADING,
+                'separator' => 'after',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_control(
+            '_description_color',
             [
                 'label' => esc_html__('description Color', 'Text-domain'),
                 'type' => \Elementor\Controls_Manager::COLOR,
@@ -285,8 +305,8 @@ class CB_Core_Heading extends Widget_Base
         $this->add_group_control(
             \Elementor\Group_Control_Typography::get_type(),
             [
-                'name' => 'description',
-                'label' => esc_html__('Typography', 'cb-core'),
+                'name' => 'description_typo',
+                'label' => esc_html__('Description Typography', 'cb-core'),
                 'selector' => '{{WRAPPER}} .intro',
                 'condition' => [
                     'layout' => ['layout-1']

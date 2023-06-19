@@ -31,7 +31,7 @@
                                         <?php if(!empty($slide['list_item_image']['url'])) : ?>
                                             <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $slide, 'thumbnail', 'list_item_image' ); ?>
                                         <?php  endif;?>
-                                         <span><?php echo esc_html($slide['list_item_text']); ?></span></li>
+                                         <span><?php echo wp_kses_post($slide['list_item_text']); ?></span></li>
                                 <?php endif; ?>
                             <?php endforeach; ?>
                         </ul>

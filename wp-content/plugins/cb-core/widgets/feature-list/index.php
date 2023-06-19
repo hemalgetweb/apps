@@ -169,7 +169,7 @@ class CB_Core_Feature_List extends Widget_Base
 				'options' => [
 					'style-1' => __('Style 1', 'cb-core'),
 					'style-2' => __('Style 2', 'cb-core'),
-					'style-3' => __('Style 3', 'cb-core'),
+					'style-3' => __('Style 3', 'cb-core')
 				],
 				'default' => 'style-1'
 			]

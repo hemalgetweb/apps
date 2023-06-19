@@ -2,11 +2,11 @@
 
 namespace Elementor;
 
-use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use ELementor\Repeater;
 
-if (!defined('ABSPATH')) exit; // Exit if accessed directly
+if (!defined('ABSPATH'))
+	exit; // Exit if accessed directly
 
 /**
  * CB Core Demo
@@ -145,6 +145,16 @@ class CB_Core_Brand_Infinity extends Widget_Base
 				]
 			]
 		);
+		$this->add_control(
+			'reverce_direction',
+			[
+				'label' => esc_html__('Reverce Direction', 'Text-domain'),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => esc_html__('On', 'Text-domain'),
+				'label_off' => esc_html__('Off', 'Text-domain'),
+				'return_value' => 'yes',
+			]
+		);
 		$repeater = new Repeater();
 		$repeater->add_control(
 			'field_condition',
@@ -153,7 +163,7 @@ class CB_Core_Brand_Infinity extends Widget_Base
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'solid',
 				'options' => [
-					'style-1'  => __('Style 1', 'cb-core')
+					'style-1' => __('Style 1', 'cb-core')
 				],
 				'default' => 'style-1',
 			]
@@ -172,17 +182,17 @@ class CB_Core_Brand_Infinity extends Widget_Base
 			]
 		);
 		$repeater->add_control(
-		'brand_label',
-		 [
-			'label'       => esc_html__( 'Brand Label', 'cb-core' ),
-			'type'        => \Elementor\Controls_Manager::TEXT,
-			'label_block' => true,
-			'default'     => esc_html__( 'Brand Label', 'cb-core' ),
-			'placeholder' => esc_html__( 'Brand Label', 'cb-core' ),
-			'condition' => [
-				'field_condition' => ['style-1']
+			'brand_label',
+			[
+				'label' => esc_html__('Brand Label', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
+				'default' => esc_html__('Brand Label', 'cb-core'),
+				'placeholder' => esc_html__('Brand Label', 'cb-core'),
+				'condition' => [
+					'field_condition' => ['style-1']
+				]
 			]
-		 ]
 		);
 		$this->add_control(
 			'slides',
@@ -228,7 +238,7 @@ class CB_Core_Brand_Infinity extends Widget_Base
 
 		$settings = $this->get_settings(); ?>
 
-        <?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
+		<?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
 	}
 }
 

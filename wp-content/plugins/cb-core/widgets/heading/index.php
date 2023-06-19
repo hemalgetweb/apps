@@ -2,11 +2,11 @@
 
 namespace Elementor;
 
-use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
-use ELementor\Repeater;
+use Elementor\Widget_Base;
 
-if (!defined('ABSPATH')) exit; // Exit if accessed directly
+if (!defined('ABSPATH'))
+    exit; // Exit if accessed directly
 
 /**
  * CB Core Demo
@@ -133,73 +133,73 @@ class CB_Core_Heading extends Widget_Base
             ]
         );
         $this->add_control(
-        'heading_subtitle',
-         [
-            'label'       => esc_html__( 'Heading Subtitle', 'cb-core' ),
-            'type'        => \Elementor\Controls_Manager::TEXT,
-            'default'     => esc_html__( 'Heading Subtitle', 'cb-core' ),
-            'placeholder' => esc_html__( '', 'cb-core' ),
-            'label_block' => true,
-            'condition' => [
-                'layout' => ['layout-1', 'layout-2']
+            'heading_subtitle',
+            [
+                'label' => esc_html__('Heading Subtitle', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => esc_html__('Heading Subtitle', 'cb-core'),
+                'placeholder' => esc_html__('', 'cb-core'),
+                'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-1', 'layout-2']
+                ]
             ]
-         ]
         );
         $this->add_control(
-        'heading_title',
-         [
-            'label'       => esc_html__( 'Heading Title', 'cb-core' ),
-            'type'        => \Elementor\Controls_Manager::TEXT,
-            'default'     => esc_html__( 'Heading Title', 'cb-core' ),
-            'placeholder' => esc_html__( '', 'cb-core' ),
-            'label_block' => true,
-            'condition' => [
-                'layout' => ['layout-1']
+            'heading_title',
+            [
+                'label' => esc_html__('Heading Title', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => esc_html__('Heading Title', 'cb-core'),
+                'placeholder' => esc_html__('', 'cb-core'),
+                'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
             ]
-         ]
         );
         $this->add_control(
-        'description',
-         [
-            'label'       => esc_html__( 'Description', 'cb-core' ),
-            'type'        => \Elementor\Controls_Manager::TEXTAREA,
-            'default'     => esc_html__( 'Description', 'cb-core' ),
-            'placeholder' => esc_html__( 'Description', 'cb-core' ),
-            'label_block' => true,
-            'condition' => [
-                'layout' => ['layout-1']
+            'description',
+            [
+                'label' => esc_html__('Description', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'default' => esc_html__('Description', 'cb-core'),
+                'placeholder' => esc_html__('Description', 'cb-core'),
+                'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
             ]
-         ]
         );
         $this->add_control(
-			'text_align',
-			[
-				'label' => esc_html__( 'Alignment', 'textdomain' ),
-				'type' => \Elementor\Controls_Manager::CHOOSE,
-				'options' => [
-					'left' => [
-						'title' => esc_html__( 'Left', 'textdomain' ),
-						'icon' => 'eicon-text-align-left',
-					],
-					'center' => [
-						'title' => esc_html__( 'Center', 'textdomain' ),
-						'icon' => 'eicon-text-align-center',
-					],
-					'right' => [
-						'title' => esc_html__( 'Right', 'textdomain' ),
-						'icon' => 'eicon-text-align-right',
-					],
-				],
-				'default' => 'center',
-				'toggle' => true,
+            'text_align',
+            [
+                'label' => esc_html__('Alignment', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::CHOOSE,
+                'options' => [
+                    'left' => [
+                        'title' => esc_html__('Left', 'textdomain'),
+                        'icon' => 'eicon-text-align-left',
+                    ],
+                    'center' => [
+                        'title' => esc_html__('Center', 'textdomain'),
+                        'icon' => 'eicon-text-align-center',
+                    ],
+                    'right' => [
+                        'title' => esc_html__('Right', 'textdomain'),
+                        'icon' => 'eicon-text-align-right',
+                    ],
+                ],
+                'default' => 'center',
+                'toggle' => true,
                 'condition' => [
                     'layout' => ['layout-1']
                 ],
-				'selectors' => [
-					'{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',
-				],
-			]
-		);
+                'selectors' => [
+                    '{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',
+                ],
+            ]
+        );
         $this->end_controls_section();
         $this->start_controls_section(
             'section_style',
@@ -209,22 +209,91 @@ class CB_Core_Heading extends Widget_Base
             ]
         );
         $this->add_control(
-            'text_transform',
+            '_subtitle_heading',
             [
-                'label' => __('Text Transform', 'cb-core'),
-                'type' => Controls_Manager::SELECT,
-                'default' => '',
-                'options' => [
-                    '' => __('None', 'cb-core'),
-                    'uppercase' => __('UPPERCASE', 'cb-core'),
-                    'lowercase' => __('lowercase', 'cb-core'),
-                    'capitalize' => __('Capitalize', 'cb-core'),
-                ],
-                'selectors' => [
-                    '{{WRAPPER}} .title' => 'text-transform: {{VALUE}};',
-                ],
+                'label' => esc_html__('Subtitle', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::HEADING,
+                'separator' => 'before',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
             ]
         );
+        $this->add_control(
+            '_subtitle_color',
+            [
+                'label' => esc_html__('Subtitle Color', 'Text-domain'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .apps-service-section-subtitle-114' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+                'name' => 'subtitle_color',
+                'label' => esc_html__('Typography', 'cb-core'),
+                'selector' => '{{WRAPPER}} .apps-service-section-subtitle-114',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+
+        $this->add_control(
+            '_heading_title',
+            [
+                'label' => esc_html__('heading_title Color', 'Text-domain'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .apps-service-section-title-114' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+                'name' => 'heading_title',
+                'label' => esc_html__('Typography', 'cb-core'),
+                'selector' => '{{WRAPPER}} .apps-service-section-title-114',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+
+        $this->add_control(
+            '_description',
+            [
+                'label' => esc_html__('description Color', 'Text-domain'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .intro' => 'color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+                'name' => 'description',
+                'label' => esc_html__('Typography', 'cb-core'),
+                'selector' => '{{WRAPPER}} .intro',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+
 
         $this->end_controls_section();
     }

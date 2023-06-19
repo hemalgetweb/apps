@@ -9,7 +9,7 @@
                     <h3 class="apps-service-section-title-114"><?php echo wp_kses_post($settings['heading_title']); ?></h3>
                 <?php endif; ?>
                 <?php if(!empty($settings['description'])) : ?>
-                <p><?php echo wp_kses_post($settings['description']); ?></p>
+                <p class="intro"><?php echo wp_kses_post($settings['description']); ?></p>
                 <?php endif; ?>
             </div>
         </div>

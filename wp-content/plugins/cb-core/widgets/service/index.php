@@ -161,6 +161,21 @@ class CB_Core_Service extends Widget_Base
 
          ]
         );
+        $this->add_control(
+         'enable_box_border',
+         [
+           'label'        => esc_html__( 'Enable Border?', 'cb-core' ),
+           'type'         => \Elementor\Controls_Manager::SWITCHER,
+           'label_on'     => esc_html__( 'On', 'cb-core' ),
+           'label_off'    => esc_html__( 'Off', 'cb-core' ),
+           'return_value' => 'yes',
+           'default'      => '',
+           'condition' => [
+                'layout' => ['layout-2']
+            ]
+
+         ]
+        );
         $repeater = new \Elementor\Repeater();
         
         $repeater->add_control(

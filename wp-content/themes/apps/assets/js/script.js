@@ -114,33 +114,6 @@ $(window).scroll(function () {
 
 
 
-    // Client-Testimonials-Slide
-    let swiper125 = new Swiper('.client-testimonial-active', {
-
-        slidesPerView: 2,
-        spaceBetween: 32,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination11",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-next',
-            prevEl: '.swiper-prev',
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-            },
-            575: {
-                slidesPerView: 2,
-            },
-            1200: {
-                slidesPerView: 3,
-            }
-        }
-
-    });
 
 
         
@@ -231,7 +204,83 @@ $(window).scroll(function () {
             });
             });
         }
+        var CB_Dynamic_Service = function($scope, $) {
+            $scope.find('.dynamic-service-active').each(function() {
+                // dynamic slider Slide
+                let dynamicSliderSlide = new Swiper('.dynamic-service-active', {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    loop: false,
+                    pagination: {
+                        el: ".dynamic-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.dynamic-next',
+                        prevEl: '.dynamic-prev',
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        575: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        1200: {
+                        spaceBetween: 30,
+                        slidesPerView: 3,
+                        },
+                        1400: {
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+                        }
+                    }
+                });
+            });
+        }
+        var CB_Testimonial = function($scope, $) {
+            $scope.find('.client-testimonial-active').each(function() {
+            // Client-Testimonials-Slide
+            let swiper125 = new Swiper('.client-testimonial-active', {
+
+                slidesPerView: 2,
+                spaceBetween: 32,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination11",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    575: {
+                        slidesPerView: 2,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                    }
+                }
+
+            });
+            });
+        }
         $( window ).on( 'elementor/frontend/init', function() {
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-project.default', CB_Project );
+            elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-testimonial.default', CB_Testimonial );
+            elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-dynamic-service.default', CB_Dynamic_Service );
         } );
 })(jQuery)

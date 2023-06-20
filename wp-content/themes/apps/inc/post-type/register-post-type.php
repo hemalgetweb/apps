@@ -96,7 +96,7 @@ function apps_custom_post_type_for_service() {
 		'description'           => __( 'Add your service', 'apps' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields', 'page-attributes', 'post-formats', 'excerpt' ),
-		'taxonomies'            => array(),
+		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,

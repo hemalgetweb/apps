@@ -118,11 +118,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core'),
-					'layout-2' => __('Layout 2', 'cb-core'),
-					'layout-3' => __('Layout 3', 'cb-core'),
-					'layout-4' => __('Layout 4', 'cb-core'),
-					'layout-5' => __('Layout 5', 'cb-core'),
+					'layout-1' => __('Layout 1', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -136,32 +132,6 @@ class CB_Core_Testimonial extends Widget_Base
 			]
 		);
 		$this->add_control(
-			'section_title',
-			[
-				'label' => __('Section title', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'label_block' => true,
-				'default' => __('REVIEWS', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5'],
-				],
-				'placeholder' => __('Type your section title here', 'cb-core'),
-			]
-		);
-		$this->add_control(
-			'section_subtitle',
-			[
-				'label' => __('Section Subtitle', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'label_block' => true,
-				'default' => __('Testimonials', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-4'],
-				],
-				'placeholder' => __('Type your section subtitle here', 'cb-core'),
-			]
-		);
-		$this->add_control(
 			'show_testimonial_arrow',
 			[
 				'label' => __('Show Testimonial Arrow', 'cb-core'),
@@ -171,7 +141,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'return_value' => 'yes',
 				'default' => 'yes',
 				'condition' => [
-					'layout' => ['layout-3', 'layout-4', 'layout-5'],
+					'layout' => ['layout-1'],
 
 				],
 			]
@@ -184,12 +154,21 @@ class CB_Core_Testimonial extends Widget_Base
 				'type' => Controls_Manager::SELECT,
 				'default' => 'style-1',
 				'options' => [
-					'style-1' => __('Style 1', 'cb-core'),
-					'style-2' => __('Style 2', 'cb-core'),
-					'style-3' => __('Style 3', 'cb-core'),
-					'style-4' => __('Style 4', 'cb-core'),
-					'style-5' => __('Style 5', 'cb-core'),
+					'style-1' => __('Style 1', 'cb-core')
 				],
+			]
+		);
+		$repeater->add_control(
+			'testimonial_title',
+			[
+				'label' => __('Testimonioal Title', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
+				'default' => __('REVIEWS', 'cb-core'),
+				'condition' => [
+					'field_condition' => ['style-1'],
+				],
+				'placeholder' => __('Type your section title here', 'cb-core'),
 			]
 		);
 		$repeater->add_control(
@@ -202,7 +181,7 @@ class CB_Core_Testimonial extends Widget_Base
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
 				],
 				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5']
+					'field_condition' => ['style-1']
 				],
 			]
 		);
@@ -214,7 +193,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => __('Kvin Smith', 'cb-core'),
 				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5']
+					'field_condition' => ['style-1']
 				],
 				'placeholder' => __('Type your username here', 'cb-core'),
 			]
@@ -227,7 +206,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => __('Customer', 'cb-core'),
 				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5']
+					'field_condition' => ['style-1']
 				],
 				'placeholder' => __('Type your user role here', 'cb-core'),
 			]
@@ -239,24 +218,9 @@ class CB_Core_Testimonial extends Widget_Base
 				'label_block' => true,
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5']
+					'field_condition' => ['style-1']
 				],
 				'placeholder' => __('Type your user review here', 'cb-core'),
-			]
-		);
-		$repeater->add_control(
-			'user_rating',
-			[
-				'label' => __('User Rating', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::NUMBER,
-				'min' => 1,
-				'max' => 5,
-				'label_block' => true,
-				'step' => 1,
-				'default' => 5,
-				'condition' => [
-					'field_condition' => ['style-1', 'style-2', 'style-3', 'style-4', 'style-5']
-				],
 			]
 		);
 		$this->add_control(
@@ -276,84 +240,7 @@ class CB_Core_Testimonial extends Widget_Base
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
-		$this->add_control(
-			'section_title_color',
-			[
-				'label' => __('Section Title Color', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .apps-fz-section-title-6' => 'color: {{VALUE}}',
-				],
-				'condition' => [
-					'layout' => ['layout-5']
-				]
-			]
-		);
-		$this->add_control(
-			'quote_color',
-			[
-				'label' => __('Quote Color', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .apps-fz-testimonial-single-6 .arrow i' => 'color: {{VALUE}}',
-				],
-				'condition' => [
-					'layout' => ['layout-5']
-				]
-			]
-		);
-		$this->add_control(
-			'content_color',
-			[
-				'label' => __('Content Color', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .apps-fz-testimonial-single-6 .desc' => 'color: {{VALUE}}',
-				],
-				'condition' => [
-					'layout' => ['layout-5']
-				]
-			]
-		);
-		$this->add_control(
-			'rating_color',
-			[
-				'label' => __('Rating Color', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .apps-fz-testimonial-author-rating-6 i' => 'color: {{VALUE}}',
-				],
-				'condition' => [
-					'layout' => ['layout-5']
-				]
-			]
-		);
-		$this->add_control(
-			'author_name_color',
-			[
-				'label' => __('Author Name Color', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .apps-fz-testimonial-author-box-6 .name' => 'color: {{VALUE}}',
-				],
-				'condition' => [
-					'layout' => ['layout-5']
-				]
-			]
-		);
-		$this->add_control(
-			'author_designation_color',
-			[
-				'label' => __('Author Designation Color', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .apps-fz-testimonial-author-box-6 .designation' => 'color: {{VALUE}}',
-				],
-				'condition' => [
-					'layout' => ['layout-5']
-				]
-			]
-		);
+		
 
 		$this->end_controls_section();
 	}

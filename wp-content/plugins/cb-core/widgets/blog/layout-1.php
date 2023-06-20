@@ -1,37 +1,35 @@
-<div class="blog pt-25 pb-50">
+<!-- blog area start -->
+<section class="blog-area">
     <div class="container">
-        <div class="panel panel-2">
-            <?php if(!empty($settings['section_title'])) : ?>
-            <div class="heading text-center">
-                <h2><?php echo esc_html($settings['section_title']); ?></h2>
-            </div>
-            <?php endif; ?>
-            <?php if ($wp_query->have_posts()) : ?>
-            <div class="blog-slider">
-                <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-                <div class="single-blog">
-                    <?php if ( has_post_thumbnail()) : ?>
-                    <div class="part-img apps-blog-grid-img">
-                        <a href="<?php echo esc_url(get_the_permalink()); ?>">
-                            <?php echo get_the_post_thumbnail(get_the_ID(), 'full'); ?>
-                        </a>
+        <?php if($wp_query->have_posts()) : ?>
+        <div class="row">
+            <?php while($wp_query->have_posts()) :
+                $wp_query->the_post();
+                $post_id = get_the_ID();  
+                $category_name = wp_get_post_terms(get_the_ID(), 'category')[0]->name;  
+                $category_id = wp_get_post_terms(get_the_ID(), 'category')[0]->term_id;
+                $cat_url = get_category_link($category_id);  
+            ?>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="apps-blog-box-114 mb-30">
+                    <?php if(has_post_thumbnail($post_id)) : ?>
+                    <div class="apps-blog-box-img-114">
+                        <a href="<?php echo get_the_permalink($post_id) ?>"><?php the_post_thumbnail($post_id, 'full'); ?></a>
                     </div>
                     <?php endif; ?>
-                    <div class="part-txt">
-                        <div class="tag-n-date">
-                            <span><?php echo cb_core_kses_basic(cb_loop_category(get_the_ID())); ?></span> 
-                            <span><?php echo esc_html__('/', 'cb-core'); ?></span> 
-                            <span><?php echo esc_html(get_the_date(get_the_ID())); ?></span>
-                        </div>
-                        <h3><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a>
-                        </h3>
-                        <p><?php echo esc_html(wp_trim_words(get_the_excerpt(), 20)); ?></p>
-                        <a href="<?php echo esc_url(get_the_permalink()); ?>" class="continue"><span><i class="fa-light fa-arrow-right"></i></span></a>
+                    <div class="apps-blog-box-content-114">
+                        <?php if(!empty($category_name)) : ?>
+                        <a href="<?php echo $cat_url ? esc_url($cat_url): ''; ?>" class="apps-blog-box-cat-link-114"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="blog 1"> <?php echo esc_html($category_name); ?></a>
+                        <?php endif; ?>
+                        <h5 class="apps-blog-box-title-114"><a href="<?php the_permalink($post_id) ?>"><?php the_title(); ?></a></h5>
+                        <p><?php echo wp_trim_words(get_the_excerpt($post_id), 11); ?></p>
+                        <span class="apps-blog-box-date-114"><?php echo get_the_date(); ?></span>
                     </div>
                 </div>
-                <?php endwhile; wp_reset_postdata(); ?>
             </div>
-            <?php endif; ?>
+            <?php endwhile; ?>
         </div>
+        <?php endif; ?>
     </div>
-</div>
+</section>
+<!-- blog area end -->

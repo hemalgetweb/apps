@@ -131,137 +131,60 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core'),
-					'layout-2' => __('Layout 2', 'cb-core'),
-					'layout-3' => __('Layout 3', 'cb-core'),
-					'layout-4' => __('Layout 4', 'cb-core'),
-					'layout-5' => __('Layout 5', 'cb-core'),
-					'layout-6' => __('Layout 6', 'cb-core'),
+					'layout-1' => __('Layout 1', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
 			]
 		);
-		$this->add_control(
-			'banner_title',
-			[
-				'label' => __('Banner Title', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('Banner Title', 'cb-core'),
-				'placeholder' => __('Type your banner title here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-1']
-				]
-			]
+		// main controls
+		$repeater = new \Elementor\Repeater();
+		$repeater->add_control(
+		 'field_condition',
+		 [
+		   'label'   => esc_html__( 'Field Condition', 'cb-core' ),
+		   'type' => \Elementor\Controls_Manager::SELECT,
+		   'label_block' => true,
+		   'options' => [
+			 'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+		   ],
+		   'default' => 'style-1',
+		 ]
 		);
-		$this->add_control(
-			'banner_subtitle',
-			[
-				'label' => __('Banner Subtitle', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('Banner Subtitle', 'cb-core'),
-				'placeholder' => __('Type your banner subtitle here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-1']
-				]
-			]
-		);
-		$this->end_controls_section();
-		$this->start_controls_section(
-			'section_select_category_grid',
-			[
-				'label' => __('Category Control')
-			]
-		);
-		$this->add_control(
-			'section_title',
-			[
-				'label' => __('Section Title', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('Default title', 'cb-core'),
-				'placeholder' => __('Explore Popular Categories', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
-				]
-			]
-		);
-		$this->add_control(
-			'section_subtitle',
-			[
-				'label' => __('Section Title', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('Default title', 'cb-core'),
-				'placeholder' => __('Explore Popular Categories', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4']
-				]
-			]
-		);
-		$this->add_control(
-			'btn_text',
-			[
-				'label' => __('Button Text', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __('View more', 'cb-core'),
-				'placeholder' => __('Type Button Text Here...', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-1']
-				]
-			]
-		);
-		$this->add_control(
-			'btn_link',
-			[
-				'label' => __('Button Link', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => __('https://your-link.com', 'cb-core'),
-				'options' => ['url', 'is_external', 'nofollow'],
-				'default' => [
-					'url' => '',
-					'is_external' => true,
-					'nofollow' => true,
-					// 'custom_attributes' => '',
-				],
-				'label_block' => true,
-				'condition' => [
-					'layout' => ['layout-1']
-				]
-			]
-		);
-		$this->add_control(
-			'placeholder_image',
-			[
-				'label' => __('Choose Placeholder Image ( optional )', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				],
-				'condition' => [
-					'layout' => ['layout-1']
-				]
-			]
-		);
-		$this->add_control(
-			'cat_query',
-			[
-				'label' => __('Category', 'cb-core'),
-				'type' => Controls_Manager::SELECT2,
-				'options' => apps_drop_cat('product_cat'),
-				'multiple' => true,
-				'label_block' => true,
-			]
-		);
-		$this->add_control(
-			'cat_query_2',
-			[
-				'label' => __('Category 2', 'cb-core'),
-				'type' => Controls_Manager::SELECT2,
-				'options' => apps_drop_cat('product_cat'),
-				'multiple' => true,
-				'label_block' => true,
-				'condition' => ['layout' => 'layout-3']
-			]
-		);
+		 $repeater->add_control(
+		 'category_label',
+		   [
+			 'label'   => esc_html__( 'Category Label', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXT,
+			 'label_block' => true,
+			 'condition' => [
+				'field_condition' => ['style-1']
+			 ]
+		   ]
+		 );
+		 $repeater->add_control(
+		  'category_image',
+		  [
+			'label'   => esc_html__( 'Category Image', 'cb-core' ),
+			'type'    => \Elementor\Controls_Manager::MEDIA,
+			'label_block' => true,
+			  'default' => [
+				'url' => \Elementor\Utils::get_placeholder_image_src(),
+			],
+			'condition' => [
+				'field_condition' => ['style-1']
+			 ]
+		  ]
+		 );
+		 $this->add_control(
+		   'slides',
+		   [
+			 'label'       => esc_html__( 'Category Slider', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::REPEATER,
+			 'fields'      => $repeater->get_controls(),
+			 'title_field' => '{{{ category_label }}}',
+		   ]
+		 );
 		$this->end_controls_section();
 		$this->start_controls_section(
 			'section_style',
@@ -280,7 +203,8 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 				],
 			]
 		);
-
+		
+		
 		$this->end_controls_section();
 	}
 
@@ -296,19 +220,7 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 	protected function render()
 	{
 		$settings = $this->get_settings();
-		$cat_lists = $settings['cat_query'];
-		$cat_lists_2 = $settings['cat_query_2'];
-		if (!empty($cat_lists)) {
-			$cat_lists = $cat_lists;
-		} else {
-			$cat_lists = $this->apps_get_all_product_cat_list();
-		}
-		if (!empty($cat_lists_2)) {
-			$cat_lists_2 = $cat_lists_2;
-		} else {
-			$cat_lists_2 = $this->apps_get_all_product_cat_list();
-		}
-?>
+	?>
 
         <?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
 	}

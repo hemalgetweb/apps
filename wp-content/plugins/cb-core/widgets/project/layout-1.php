@@ -7,9 +7,14 @@
                 <div class="swiper-wrapper">
                     <?php while($wp_query->have_posts()) : $wp_query->the_post();
                     $categories = get_the_category();
-                    $cat_name = $categories[0]->name;
-                    $cat_id = $categories[0]->term_id;
-                    $cat_link = get_category_link( $cat_id );
+                    $cat_name = '';
+                    $cat_id = '';
+                    $cat_link = '';
+                    if(!empty($categories)) {
+                        $cat_name = $categories[0]->name;
+                        $cat_id = $categories[0]->term_id;
+                        $cat_link = get_category_link( $cat_id );
+                    }
                     ?>
                     <div class="swiper-slide">
                         <!-- project card -->

@@ -121,14 +121,7 @@ class CB_Core_Blog extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core'),
-					'layout-2' => __('Layout 2', 'cb-core'),
-					'layout-3' => __('Layout 3', 'cb-core'),
-					'layout-4' => __('Layout 4', 'cb-core'),
-					'layout-5' => __('Layout 5', 'cb-core'),
-					'layout-6' => __('Layout 6', 'cb-core'),
-					'layout-7' => __('Layout 7', 'cb-core'),
-					'layout-8' => __('Layout 8', 'cb-core'),
+					'layout-1' => __('Layout 1', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -139,76 +132,6 @@ class CB_Core_Blog extends Widget_Base
 			'section_blog_control',
 			[
 				'label' => __('Blog Control', 'cb-core'),
-			]
-		);
-		$this->add_control(
-			'section_title',
-			[
-				'label' => __('Section Title', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'label_block' => true,
-				'default' => __('LATEST BLOG', 'cb-core'),
-				'placeholder' => __('Type your blog title here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-1', 'layout-2', 'layout-3', 'layout-4', 'layout-5', 'layout-6', 'layout-7', 'layout-8']
-				]
-			]
-		);
-		$this->add_control(
-			'section_subtitle',
-			[
-				'label' => __('Section Subtitle', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'label_block' => true,
-				'default' => __('Blog', 'cb-core'),
-				'placeholder' => __('Type your blog subtitle here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-6']
-				]
-			]
-		);
-		$this->add_control(
-			'section_description',
-			[
-				'label' => __('Section Description', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'label_block' => true,
-				'placeholder' => __('Type your section description here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-5', 'layout-7']
-				]
-			]
-		);
-		$this->add_control(
-			'btn_text',
-			[
-				'label' => __('Button Text', 'cb-core'),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'label_block' => true,
-				'default' => __('More News', 'cb-core'),
-				'placeholder' => __('Type your button text here', 'cb-core'),
-				'condition' => [
-					'layout' => ['layout-3', 'layout-4', 'layout-5', 'layout-7']
-				]
-			]
-		);
-		$this->add_control(
-			'btn_link',
-			[
-				'label' => __('Button Link', 'cb-core'),
-				'label_block' => true,
-				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => __('https://your-link.com', 'cb-core'),
-				'options' => ['url', 'is_external', 'nofollow'],
-				'default' => [
-					'url' => '',
-					'is_external' => true,
-					'nofollow' => true,
-				],
-				'label_block' => true,
-				'condition' => [
-					'layout' => ['layout-3', 'layout-4', 'layout-5', 'layout-7']
-				]
 			]
 		);
 		$this->add_control(
@@ -256,7 +179,7 @@ class CB_Core_Blog extends Widget_Base
 			[
 				'label' => __('Posts Per Page', 'cb-core'),
 				'type' => Controls_Manager::NUMBER,
-				'default' => 5,
+				'default' => 3,
 			]
 		);
 		$this->end_controls_section();

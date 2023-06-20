@@ -461,6 +461,7 @@ class CB_Core_Best_Selling extends Widget_Base
 			$query_args = array(
 				'post_type' => 'product',
 				'posts_per_page' => $per_page,
+				'hide_empty' => true,
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'product_cat',

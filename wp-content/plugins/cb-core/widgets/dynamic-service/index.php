@@ -133,7 +133,52 @@ class CB_Core_Dynamic_Service extends Widget_Base
 			]
 		);
 		// main controls here
-        
+        $this->add_control(
+			'query_type',
+			[
+				'label' => __('Query type', 'cb-core'),
+				'type' => Controls_Manager::SELECT,
+				'default' => 'individual',
+				'options' => [
+					'category' => __('Category', 'cb-core'),
+					'individual' => __('Individual', 'cb-core'),
+				],
+			]
+		);
+		$this->add_control(
+			'cat_query',
+			[
+				'label' => __('Category', 'cb-core'),
+				'type' => Controls_Manager::SELECT2,
+				'options' => apps_drop_cat('category', 'service'),
+				'multiple' => true,
+				'label_block' => true,
+				'condition' => [
+					'query_type' => 'category',
+				],
+			]
+		);
+		$this->add_control(
+			'id_query',
+			[
+				'label' => __('Posts', 'cb-core'),
+				'type' => Controls_Manager::SELECT2,
+				'options' => apps_drop_posts('service'),
+				'multiple' => true,
+				'label_block' => true,
+				'condition' => [
+					'query_type' => 'individual',
+				],
+			]
+		);
+		$this->add_control(
+			'posts_per_page',
+			[
+				'label' => __('Posts Per Page', 'cb-core'),
+				'type' => Controls_Manager::NUMBER,
+				'default' => 8,
+			]
+		);
 		$this->end_controls_section();
 	}
 
@@ -149,7 +194,34 @@ class CB_Core_Dynamic_Service extends Widget_Base
 	protected function render()
 	{
 
-		$settings = $this->get_settings(); ?>
+		$settings = $this->get_settings();
+		$per_page = $settings['posts_per_page'];
+		$cat = $settings['cat_query'];
+		$id = $settings['id_query'];
+
+		if ($settings['query_type'] == 'category') {
+			$query_args = array(
+				'post_type' => 'service',
+				'posts_per_page' => $per_page,
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'category',
+						'field' => 'term_id',
+						'terms' => $cat,
+					),
+				),
+			);
+		}
+		if ($settings['query_type'] == 'individual') {
+			$query_args = array(
+				'post_type' => 'service',
+				'posts_per_page' => $per_page,
+				'post__in' => $id,
+				'orderby' => 'post__in'
+			);
+		}
+		$wp_query = new \WP_Query($query_args);
+		?>
 
         <?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
 	}

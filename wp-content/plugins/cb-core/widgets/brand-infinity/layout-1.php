@@ -29,20 +29,21 @@
           </div>
         <?php endif; ?>
       </div>
+      <div class="text-center mt-5">
+        <div class="d-inline-block">
+          <a class="btn position-relative rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center "
+            href="client.html">
+            View all Clients
+            <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003C4F" />
+            </svg>
+          </a>
+        </div>
+      </div>
     <?php endif; ?>
   </div>
 
-  <!-- <div class="text-center">
-    <div class="d-inline-block">
-      <a class="btn position-relative rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center "
-        href="client.html">
-        View all Clients
-        <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003C4F" />
-        </svg>
-      </a>
-    </div>
-  </div> -->
+
 </div>
 <!--/ Happy Clients end -->

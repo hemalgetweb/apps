@@ -109,6 +109,40 @@ $(window).scroll(function () {
                 }
             }
         });
+
+
+
+
+
+    // Client-Testimonials-Slide
+    let swiper125 = new Swiper('.client-testimonial-active', {
+
+        slidesPerView: 2,
+        spaceBetween: 32,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination11",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            575: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+        }
+
+    });
+
+
         
 
 

@@ -3341,7 +3341,7 @@ li.apps-about-layout-6-list-114 img {
 .apps-header-nav-menu-114 ul li {
     display: inline-block;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 .apps-header-nav-menu-114 ul li a {
@@ -3462,7 +3462,7 @@ header.header-area {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .apps-header-nav-menu-114 ul li {
-        margin-right: 27px;
+        margin-right: 57px;
     }
     .apps-header-right-phone-114 span {
         display: none;
@@ -3483,7 +3483,7 @@ header.header-area {
         max-width: 370px;
     }
     .apps-header-nav-menu-114 ul li {
-        margin-right: 9px;
+        margin-right: 49px;
     }
     .apps-header-right-phone-114 span {
         display: none;
@@ -3519,7 +3519,9 @@ header.header-area {
     .apps-header-nav-menu-114 ul li a {
         padding: 8px 0;
     }
-    
+    .apps-header-nav-menu-114 {
+        display: none;
+    }
     .apps-header-nav-menu-114 {
         width: 80vw;
         border: 1px solid #ffffff3d;
@@ -3563,4 +3565,10 @@ header.header-area {
     .apps-header-nav-menu-114 {
         margin-top: 40px;
     }
+}
+.apps-header-nav-menu-114 {
+    background: #003959;
+}
+section.apps-mega-menu.mega-menu-only {
+    z-index: 9;
 }

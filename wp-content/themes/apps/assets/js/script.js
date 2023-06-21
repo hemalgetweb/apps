@@ -61,9 +61,6 @@ $(window).scroll(function () {
                 }
             });
 
-
-
-
             $(function () {
                 $(document).on('click', function (e) {
                     var clickover = $(e.target);
@@ -74,11 +71,9 @@ $(window).scroll(function () {
                 });
             })
 
-
-
-
-
-
+            jQuery('.apps-header-bar-btn-114').on('click', function() {
+                $('.apps-header-nav-menu-114').slideToggle();
+            })
     });
 
         

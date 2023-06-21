@@ -15,9 +15,15 @@ if($cbblog_layout == 'right-sidebar') {
 } else if($cbblog_layout == 'left-sidebar') {
 	$sidebar_space = is_active_sidebar( 'blog-sidebar' ) ? 'pr-50' : '';
 }
-$category = get_the_category(get_the_ID());
-$cat_id = $category[0]->term_id;
-$cat_name = $category[0]->name;
+$category = array();
+$cat_id = '';
+$cat_name = '';
+if(!empty($category)) {
+	$category = get_the_category(get_the_ID());
+	$cat_id = $category[0]->term_id;
+	$cat_name = $category[0]->name;
+
+}
  ?>
 <?php get_header(); ?>
 

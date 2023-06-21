@@ -823,3 +823,32 @@ function cb_loop_category($post_id)
         return $output;
     }
 }
+
+function apps_get_elementor_template_page() {
+    $args = array(
+        'post_type'      => 'elementor_library',
+        'posts_per_page' => 30,
+        'tabs_group' => 'library',
+        'elementor_library_type' => 'page',
+      );
+      
+    $elementor_templates = get_posts($args);
+    $template_arr = array();
+    foreach($elementor_templates as $template) {
+        $template_id = $template->ID;
+        $template_title = get_the_title($template_id);
+        $template_arr[$template_id] = $template_title;
+    }
+    return $template_arr;
+}
+
+function apps_get_menu_items() {
+    $menudata = wp_get_nav_menu_items( 'main-menu' );
+    $menu_attributes = array();
+    if(!empty($menudata)) {
+        foreach($menudata as $item) {
+            $menu_attributes[$item->ID] = $item->post_title;
+        }
+    }
+    return $menu_attributes;
+}

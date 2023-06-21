@@ -220,6 +220,212 @@ class CB_Core_About extends Widget_Base
                 'default' => 'style-1'
             ]
         );
+        /**
+         * Repeater title style
+         */
+        $repeater->add_control(
+			'repeater_color_control',
+			[
+				'label' => esc_html__( 'Title Styles', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
+				'label_off' => esc_html__( 'Default', 'cb-core' ),
+				'label_on' => esc_html__( 'Custom', 'cb-core' ),
+				'return_value' => 'yes',
+				'default' => 'yes',
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ]
+			]
+		);
+		$repeater->start_popover();
+        $repeater->add_control(
+         '_repeater_title_color',
+         [
+           'label'       => esc_html__( 'Title Color', 'cb-core' ),
+           'type'     => \Elementor\Controls_Manager::COLOR,
+           'selectors' => [
+            '{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-title' => 'color: {{VALUE}}',
+           ],
+           'condition' => [
+                'field_condition' => ['style-7']
+            ]
+         ]
+        );
+       
+        $repeater->add_responsive_control(
+			'_repeater_title_control_padding',
+			[
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'label' => esc_html__( 'Title Padding', 'cb-core' ),
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ]
+			]
+		);
+        $repeater->add_responsive_control(
+			'_repeater_title_control_margin',
+			[
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'label' => esc_html__( 'Title Margin', 'cb-core' ),
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ]
+			]
+		);
+        $repeater->add_control(
+			'_repeater_title_control_alignment',
+			[
+				'label' => esc_html__( 'Title Alignment', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'cb-core' ),
+						'icon' => 'eicon-text-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'cb-core' ),
+						'icon' => 'eicon-text-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'cb-core' ),
+						'icon' => 'eicon-text-align-right',
+					],
+				],
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ],
+				'default' => 'left',
+				'toggle' => true,
+				'selectors' => [
+					'{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-title' => 'text-align: {{VALUE}};',
+				],
+			]
+		);
+        $repeater->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+              'name' => '_repeater_title_control_typo',
+              'label'   => esc_html__( 'Title Typography', 'cb-core' ),
+              'selector' => '{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-title',
+              'condition' => [
+                    'field_condition' => ['style-7']
+                ],
+            ]
+          );
+		$repeater->end_popover();
+
+
+
+        /**
+         * Repeater content style
+         */
+        $repeater->add_control(
+			'repeater_content_color_control',
+			[
+				'label' => esc_html__( 'Content Styles', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
+				'label_off' => esc_html__( 'Default', 'cb-core' ),
+				'label_on' => esc_html__( 'Custom', 'cb-core' ),
+				'return_value' => 'yes',
+				'default' => 'yes',
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ]
+			]
+		);
+		$repeater->start_popover();
+        $repeater->add_control(
+         '_repeater_content_color',
+         [
+           'label'       => esc_html__( 'Content Color', 'cb-core' ),
+           'type'     => \Elementor\Controls_Manager::COLOR,
+           'selectors' => [
+            '{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-content p' => 'color: {{VALUE}}',
+           ],
+           'condition' => [
+                'field_condition' => ['style-7']
+            ]
+         ]
+        );
+       
+        $repeater->add_responsive_control(
+			'_repeater_content_control_padding',
+			[
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'label' => esc_html__( 'Content Padding', 'cb-core' ),
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-content p' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ]
+			]
+		);
+        $repeater->add_responsive_control(
+			'_repeater_content_control_margin',
+			[
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'label' => esc_html__( 'Content Margin', 'cb-core' ),
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ]
+			]
+		);
+        $repeater->add_control(
+			'_repeater_content_control_alignment',
+			[
+				'label' => esc_html__( 'Content Alignment', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'cb-core' ),
+						'icon' => 'eicon-text-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'cb-core' ),
+						'icon' => 'eicon-text-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'cb-core' ),
+						'icon' => 'eicon-text-align-right',
+					],
+				],
+                'condition' => [
+                    'field_condition' => ['style-7']
+                ],
+				'default' => 'left',
+				'toggle' => true,
+				'selectors' => [
+					'{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-content p' => 'text-align: {{VALUE}};',
+				],
+			]
+		);
+        $repeater->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+              'name' => '_repeater_content_control_typo',
+              'label'   => esc_html__( 'Content Typography', 'cb-core' ),
+              'selector' => '{{WRAPPER}} {{CURRENT_ITEM}} .cb-core-repeater-content p',
+              'condition' => [
+                    'field_condition' => ['style-7']
+                ],
+            ]
+          );
+		$repeater->end_popover();
+        
         $repeater->add_control(
             'list_item_image',
             [
@@ -330,25 +536,434 @@ class CB_Core_About extends Widget_Base
           ]
         );
         $this->end_controls_section();
-       
+       /**
+        * Section Title
+        */
         $this->start_controls_section(
-            'section_style',
+            '_section_title_area',
             [
-                'label' => __('Style', 'cb-core'),
-                'tab' => Controls_Manager::TAB_STYLE,
+                'label' => esc_html__( 'Section Title', 'cb-core' ),
+                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_control(
-            'panel_bg_color',
+			'_title_control_heading',
+			[
+				'label' => esc_html__( 'Title', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'after',
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+			]
+		);
+        $this->add_control(
+         '_title_control_color',
+         [
+           'label'       => esc_html__( 'Title Color', 'cb-core' ),
+           'type'     => \Elementor\Controls_Manager::COLOR,
+           'selectors' => [
+           '{{WRAPPER}} .cb-core-title' => 'color: {{VALUE}}',
+           ],
+           'condition' => [
+                'layout' => ['layout-7']
+            ]
+         ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
             [
-                'label' => __('Panel Background Color', 'cb-core'),
-                'type' => \Elementor\Controls_Manager::COLOR,
+              'name' => '_title_control_typo',
+              'label'   => esc_html__( 'Title Typography', 'cb-core' ),
+              'selector' => '{{WRAPPER}} .cb-core-title',
+              'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_responsive_control(
+			'_title_control_padding',
+			[
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'label' => esc_html__( 'Title Padding', 'cb-core' ),
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} .cb-core-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+			]
+		);
+        $this->add_responsive_control(
+			'_title_control_margin',
+			[
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'label' => esc_html__( 'Title Margin', 'cb-core' ),
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} .cb-core-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+			]
+		);
+        $this->add_control(
+			'_title_control_alignment',
+			[
+				'label' => esc_html__( 'Title Alignment', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'cb-core' ),
+						'icon' => 'eicon-text-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'cb-core' ),
+						'icon' => 'eicon-text-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'cb-core' ),
+						'icon' => 'eicon-text-align-right',
+					],
+				],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ],
+				'default' => 'left',
+				'toggle' => true,
+				'selectors' => [
+					'{{WRAPPER}} .cb-core-title' => 'text-align: {{VALUE}};',
+				],
+			]
+		);
+        $this->add_control(
+            '_section_heading_transform_controls',
+            [
+                'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
+                'label' => esc_html__( 'Title Filter', 'cb-core' ),
+                'label_off' => esc_html__( 'Default', 'cb-core' ),
+                'label_on' => esc_html__( 'Custom', 'cb-core' ),
+                'return_value' => 'yes',
+            ]
+        );
+        $this->start_popover();
+        $this->add_control(
+			'_seection_heading_rotate',
+			[
+				'label' => esc_html__( 'Rotate', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::SLIDER,
+				'size_units' => [ 'deg' ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ],
+				'range' => [
+					'px' => [
+						'min' => 0,
+						'max' => 1000,
+						'step' => 5,
+					],
+					'%' => [
+						'min' => 0,
+						'max' => 100,
+					],
+				],
+				'default' => [
+					'unit' => 'deg',
+				],
+				'selectors' => [
+					'{{WRAPPER}} .cb-core-title' => 'transform: rotate({{SIZE}}{{UNIT}});',
+				],
+			]
+		);
+        $this->end_popover();
+        $this->end_controls_section();
+        /**
+        * Section Sub Title
+        */
+        $this->start_controls_section(
+            '_section_subtitle_area',
+            [
+                'label' => esc_html__( 'Section Subtitle', 'cb-core' ),
+                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+            ]
+        );
+        $this->add_control(
+            '_subtitle_control_heading',
+            [
+                'label' => esc_html__( 'Sub Title', 'cb-core' ),
+                'type' => \Elementor\Controls_Manager::HEADING,
+                'separator' => 'after',
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_control(
+            '_subtitle_control_color',
+            [
+            'label'       => esc_html__( 'SubTitle Color', 'cb-core' ),
+            'type'     => \Elementor\Controls_Manager::COLOR,
+            'selectors' => [
+            '{{WRAPPER}} .cb-core-subtitle' => 'color: {{VALUE}}',
+            ],
+            'condition' => [
+                'layout' => ['layout-7']
+            ]
+            ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+                'name' => '_subtitle_control_typo',
+                'label'   => esc_html__( 'SubTitle Typography', 'cb-core' ),
+                'selector' => '{{WRAPPER}} .cb-core-subtitle',
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_responsive_control(
+            '_subtitle_control_padding',
+            [
+                'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                'label' => esc_html__( 'SubTitle Padding', 'cb-core' ),
+                'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
                 'selectors' => [
-                    '{{WRAPPER}} .season-sale.py-25 .panel' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .cb-core-subtitle' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_responsive_control(
+            '_subtitle_control_margin',
+            [
+                'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                'label' => esc_html__( 'SubTitle Margin', 'cb-core' ),
+                'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+                'selectors' => [
+                    '{{WRAPPER}} .cb-core-subtitle' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_control(
+            '_subtitle_control_alignment',
+            [
+                'label' => esc_html__( 'SubTitle Alignment', 'cb-core' ),
+                'type' => \Elementor\Controls_Manager::CHOOSE,
+                'options' => [
+                    'left' => [
+                        'title' => esc_html__( 'Left', 'cb-core' ),
+                        'icon' => 'eicon-text-align-left',
+                    ],
+                    'center' => [
+                        'title' => esc_html__( 'Center', 'cb-core' ),
+                        'icon' => 'eicon-text-align-center',
+                    ],
+                    'right' => [
+                        'title' => esc_html__( 'Right', 'cb-core' ),
+                        'icon' => 'eicon-text-align-right',
+                    ],
+                ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ],
+                'default' => 'left',
+                'toggle' => true,
+                'selectors' => [
+                    '{{WRAPPER}} .cb-core-subtitle' => 'text-align: {{VALUE}};',
                 ],
             ]
         );
-
+        $this->add_control(
+            '_section_subtitle_transform_controls',
+            [
+                'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
+                'label' => esc_html__( 'SubTitle Filter', 'cb-core' ),
+                'label_off' => esc_html__( 'Default', 'cb-core' ),
+                'label_on' => esc_html__( 'Custom', 'cb-core' ),
+                'return_value' => 'yes',
+            ]
+        );
+        $this->start_popover();
+        $this->add_control(
+            '_seection_subtitle_rotate',
+            [
+                'label' => esc_html__( 'Rotate', 'cb-core' ),
+                'type' => \Elementor\Controls_Manager::SLIDER,
+                'size_units' => [ 'deg' ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ],
+                'range' => [
+                    'px' => [
+                        'min' => 0,
+                        'max' => 1000,
+                        'step' => 5,
+                    ],
+                    '%' => [
+                        'min' => 0,
+                        'max' => 100,
+                    ],
+                ],
+                'default' => [
+                    'unit' => 'deg',
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .cb-core-subtitle' => 'transform: rotate({{SIZE}}{{UNIT}});',
+                ],
+            ]
+        );
+        $this->end_popover();
+        $this->end_controls_section();
+        /**
+        * Section Content
+        */
+        $this->start_controls_section(
+            '_section_content_area',
+            [
+                'label' => esc_html__( 'Section content', 'cb-core' ),
+                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+            ]
+        );
+        $this->add_control(
+            '_content_control_heading',
+            [
+                'label' => esc_html__( 'Content', 'cb-core' ),
+                'type' => \Elementor\Controls_Manager::HEADING,
+                'separator' => 'after',
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_control(
+            '_content_control_color',
+            [
+            'label'       => esc_html__( 'Content Color', 'cb-core' ),
+            'type'     => \Elementor\Controls_Manager::COLOR,
+            'selectors' => [
+            '{{WRAPPER}} .cb-core-content > p' => 'color: {{VALUE}}',
+            ],
+            'condition' => [
+                'layout' => ['layout-7']
+            ]
+            ]
+        );
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+                'name' => '_content_control_typo',
+                'label'   => esc_html__( 'Content Typography', 'cb-core' ),
+                'selector' => '{{WRAPPER}} .cb-core-content > p',
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_responsive_control(
+            '_content_control_padding',
+            [
+                'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                'label' => esc_html__( 'Content Padding', 'cb-core' ),
+                'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+                'selectors' => [
+                    '{{WRAPPER}} .cb-core-content > p' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_responsive_control(
+            '_content_control_margin',
+            [
+                'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                'label' => esc_html__( 'Content Margin', 'cb-core' ),
+                'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+                'selectors' => [
+                    '{{WRAPPER}} .cb-core-content > p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ]
+            ]
+        );
+        $this->add_control(
+            '_content_control_alignment',
+            [
+                'label' => esc_html__( 'Content Alignment', 'cb-core' ),
+                'type' => \Elementor\Controls_Manager::CHOOSE,
+                'options' => [
+                    'left' => [
+                        'title' => esc_html__( 'Left', 'cb-core' ),
+                        'icon' => 'eicon-text-align-left',
+                    ],
+                    'center' => [
+                        'title' => esc_html__( 'Center', 'cb-core' ),
+                        'icon' => 'eicon-text-align-center',
+                    ],
+                    'right' => [
+                        'title' => esc_html__( 'Right', 'cb-core' ),
+                        'icon' => 'eicon-text-align-right',
+                    ],
+                ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ],
+                'default' => 'left',
+                'toggle' => true,
+                'selectors' => [
+                    '{{WRAPPER}} .cb-core-content > p' => 'text-align: {{VALUE}};',
+                ],
+            ]
+        );
+        $this->add_control(
+            '_section_content_transform_controls',
+            [
+                'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
+                'label' => esc_html__( 'Content Filter', 'cb-core' ),
+                'label_off' => esc_html__( 'Default', 'cb-core' ),
+                'label_on' => esc_html__( 'Custom', 'cb-core' ),
+                'return_value' => 'yes',
+            ]
+        );
+        $this->start_popover();
+        $this->add_control(
+            '_seection_content_rotate',
+            [
+                'label' => esc_html__( 'Rotate', 'cb-core' ),
+                'type' => \Elementor\Controls_Manager::SLIDER,
+                'size_units' => [ 'deg' ],
+                'condition' => [
+                    'layout' => ['layout-7']
+                ],
+                'range' => [
+                    'px' => [
+                        'min' => 0,
+                        'max' => 1000,
+                        'step' => 5,
+                    ],
+                    '%' => [
+                        'min' => 0,
+                        'max' => 100,
+                    ],
+                ],
+                'default' => [
+                    'unit' => 'deg',
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .cb-core-content > p' => 'transform: rotate({{SIZE}}{{UNIT}});',
+                ],
+            ]
+        );
+        $this->end_popover();
         $this->end_controls_section();
     }
 

@@ -224,7 +224,7 @@ class CB_Core_About extends Widget_Base
          * Repeater title style
          */
         $repeater->add_control(
-			'repeater_color_control',
+			'_repeater_title_color_control',
 			[
 				'label' => esc_html__( 'Title Styles', 'cb-core' ),
 				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,

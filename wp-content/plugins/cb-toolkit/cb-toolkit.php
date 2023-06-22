@@ -38,6 +38,7 @@ final class CB_toolkit {
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-latest-post-sidebar.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-post-cat-list.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-post-tag-list.php';
+		require_once CB_TOOLKIT_DIR . '/widgets/widget-social.php';
 		if(function_exists( 'Kirki' )) {
 			require_once CB_TOOLKIT_DIR . '/inc/kirki-customizer.php';
 		}

@@ -852,11 +852,3 @@ function apps_get_menu_items() {
     }
     return $menu_attributes;
 }
-
-function cb_core_is_cf7_activated() {
-    if(class_exists('WPCF7')) {
-        return true;
-    } else {
-        return false;
-    }
-}

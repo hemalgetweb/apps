@@ -5,9 +5,9 @@ $cbtoolkit_footer_top_repeater = get_theme_mod('cbtoolkit_footer_top_repeater', 
 /*
 cmt_section_footer_2: start section Footer 1
 */
-$footer_class_2[1] = 'col-sm-6 col-md-6 col-xxl-4 mb-3'; 
-$footer_class_2[2] = 'col-sm-6 col-md-6 col-xxl-6 mb-3';
-$footer_class_2[3] = 'col-sm-6 col-md-6 col-xxl-2 mb-3';
+$footer_class_2[1] = 'col-sm-12 col-md-12 col-xxl-4 mb-3'; 
+$footer_class_2[2] = 'col-sm-12 col-md-12 col-xxl-6 mb-3';
+$footer_class_2[3] = 'col-sm-12 col-md-12 col-xxl-2 mb-3';
 ?>
 
     <!-- footer -->
@@ -83,11 +83,13 @@ $footer_class_2[3] = 'col-sm-6 col-md-6 col-xxl-2 mb-3';
                     ?>
                 </div>
             </div>
+            <?php if(!empty($cbtoolkit_copyright_1)) : ?>
             <div class="copyright d-flex flex-column flex-sm-row justify-content-center py-3">
                 <p class="m-0 text-clr-dark5 fw-normal fs-6">
-                    Copyright © 2023 I Wadi Al Bada I All Rights Reserved
+                    <?php echo esc_html($cbtoolkit_copyright_1); ?>
                 </p>
             </div>
+            <?php endif; ?>
         </div>
     </footer>
     <!-- / footer -->

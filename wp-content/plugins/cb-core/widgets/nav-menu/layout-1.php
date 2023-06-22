@@ -37,7 +37,7 @@
                 <div class="apps-header-right-114  text-end">
                     <a href="#" class="apps-header-right-phone-114"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone2.svg" alt=""> <span>(347) 619-3312</span></a>
                     <a href="#" class="apps-header-right-btn-114 d-none d-lg-inline-block ml-40">Contact Us <i class="fal fa-arrow-right"></i></a>
-                    <button class="apps-header-bar-btn-114">
+                    <button class="apps-header-bar-btn-114 d-md-none">
                         <i class="fal fa-bars"></i>
                     </button>
                 </div>

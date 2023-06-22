@@ -1989,6 +1989,56 @@ function _header_footer_fields($fields)
             ],
         ],
     ];
+    
+    $fields[] = [
+        'type'     => 'repeater',
+        'settings' => 'cbtoolkit_footer_top_repeater',
+        'label'    => __('Footer Top Repeater', 'cb-toolkit'),
+        'section'  => 'footer_setting',
+        'priority' => 10,
+        'fields'   => [
+			'repeater_image'   => [
+				'type'        => 'image',
+				'label'       => esc_html__( 'Repeater Image', 'cb-toolkit' ),
+				'default'     => '',
+			],
+			'repeater_label'   => [
+				'type'        => 'text',
+				'label'       => esc_html__( 'Repeater Label', 'cb-toolkit' ),
+				'description' => esc_html__( 'please insert repeater label', 'cb-toolkit' ),
+				'default'     => '',
+			],
+			'repeater_url'    => [
+				'type'        => 'text',
+				'label'       => esc_html__( 'Repeater URL', 'cb-toolkit' ),
+				'description' => esc_html__( 'Please insert repeater url', 'cb-toolkit' ),
+				'default'     => '',
+			],
+			'repeater_url_target' => [
+				'type'        => 'select',
+				'label'       => esc_html__( 'Repeater URL Target', 'cb-toolkit' ),
+				'description' => esc_html__( 'Repeater URL Target', 'cb-toolkit' ),
+				'default'     => '_self',
+				'choices'     => [
+					'_blank' => esc_html__( 'New Window', 'cb-toolkit' ),
+					'_self'  => esc_html__( 'Same Frame', 'cb-toolkit' ),
+				],
+			],
+		],
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'footer-style-1',
+            ],
+            [
+                'setting'  => 'footer_buttonset_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+        ],
+    ];
+    
     $fields[] = [
         'type'     => 'text',
         'settings' => 'cbtoolkit_copyright_1',

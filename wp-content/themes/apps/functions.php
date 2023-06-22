@@ -149,26 +149,12 @@ function apps_widgets_init()
 		)
 	);
 	// footer default
-	for ($num = 1; $num <= 4; $num++) {
-		$widget_class = '';
-		$parent_class = '';
-		switch ($num) {
-			case 1:
-				$widget_class = 'has-apps-rv-space-right-first';
-				break;
-			case 2:
-				$parent_class = 'pl-30 apps-rv-footer-space-left-30';
-				break;
-			case 3:
-				$parent_class = 'pl-30 apps-rv-footer-space-left-30';
-			case 4:
-				$parent_class = 'custom-fott-cls';
-		}
+	for ($num = 1; $num <= 3; $num++) {
 		register_sidebar([
 			'name' => sprintf(esc_html__('Footer %1$s', 'apps'), $num),
 			'id' => 'footer-' . $num,
 			'description' => sprintf(esc_html__('Footer %1$s', 'apps'), $num),
-			'before_widget' => '<div class="' . esc_attr($parent_class) . '"><div id="%1$s" class="footer-widget mb-40 footer-col-' . esc_attr($num) . ' ' . esc_attr($widget_class) . ' %2$s ">',
+			'before_widget' => '<div><div id="%1$s" class="footer-widget mb-40 footer-col-' . esc_attr($num) . ' %2$s ">',
 			'after_widget' => '</div></div>',
 			'before_title' => '<h6 class="apps-rv-footer-widget-title">',
 			'after_title' => '</h6>',

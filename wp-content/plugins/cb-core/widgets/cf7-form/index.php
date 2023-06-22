@@ -6,7 +6,7 @@ use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use ELementor\Repeater;
 
-if (!defined('ABSPATH') && !function_exists('wpcf7_init')) exit; // Exit if accessed directly and CF7 Not install
+if (!defined('ABSPATH')) exit; // Exit if accessed directly and CF7 Not install
 
 /**
  * CB Core Demo

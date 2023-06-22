@@ -12,7 +12,7 @@
         <div class="section-header text-center">
             <div class="title-hints d-flex align-items-center justify-content-center gap-2 " data-wow-duration="0.200s"
                 data-wow-delay="100ms">
-                <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
                 <h4 class="fs-12 fw-bold ls-1 text-clr-primary text-uppercase m-0">Who We Serve</h4>
             </div>
             <h2 class="text-white fw-semi-bold fs-36 ">
@@ -30,7 +30,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries1.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries1.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Oil & Gas</p>
                         </div>
@@ -38,7 +38,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries2.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries2.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Retail</p>
                         </div>
@@ -46,7 +46,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries3.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries3.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Hospitality</p>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries4.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries4.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Healthcare</p>
                         </div>
@@ -62,7 +62,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries5.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries5.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Manufacturing</p>
                         </div>
@@ -70,7 +70,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries6.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries6.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Transportation</p>
                         </div>
@@ -78,7 +78,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries7.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries7.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Media</p>
                         </div>
@@ -86,7 +86,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries8.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries8.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Finance</p>
                         </div>
@@ -94,7 +94,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries9.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries9.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">eCommerce</p>
                         </div>
@@ -102,7 +102,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries10.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries10.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Banking</p>
                         </div>
@@ -110,7 +110,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries11.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries11.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Lifestyle</p>
                         </div>
@@ -118,7 +118,7 @@
                     <div class="col-4 col-sm-3 col-lg-2 text-end instruction-item">
                         <div class="icon px-3 py-4 text-center">
                             <div class="wrapper-img  d-flex align-items-center justify-content-center">
-                                <img src="assets/img/industries12.svg" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries12.svg" class="img-fluid" alt="">
                             </div>
                             <p class=" fs-14 text-white fw-bold mt-3 mb-0">Education</p>
                         </div>
@@ -139,7 +139,7 @@
             <div class="section-header text-center mb-5">
                 <div class="title-hints d-flex align-items-center justify-content-center gap-2 "
                     data-wow-duration="0.200s" data-wow-delay="100ms">
-                    <img src="assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
                     <h4 class="fs-12 fw-bold ls-1 text-clr-primary text-uppercase m-0">Client Testimonials</h4>
                 </div>
                 <h2 class="text-clr-dark1 fw-semi-bold fs-36 ">
@@ -159,7 +159,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide client-item-wraps radius-16 position-relative">
                                     <span class="client-qoute-icon position-absolute">
-                                        <img src="assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
                                     </span>
                                     <div
                                         class="client-testimonials-card d-flex flex-column justify-content-between bg-white radius-16">
@@ -185,7 +185,7 @@
                                         </div>
                                         <div class="ctc-bottom d-flex align-items-center gap-2">
                                             <div class="client-img">
-                                                <img src="assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
                                             </div>
                                             <div class="client-info">
                                                 <h4 class="client-name fs-18 fw-bold text-clr-dark1 mb-0">
@@ -200,7 +200,7 @@
                                 </div>
                                 <div class="swiper-slide client-item-wraps radius-16 position-relative">
                                     <span class="client-qoute-icon position-absolute">
-                                        <img src="assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
                                     </span>
                                     <div
                                         class="client-testimonials-card d-flex flex-column justify-content-between bg-white radius-16">
@@ -226,7 +226,7 @@
                                         </div>
                                         <div class="ctc-bottom d-flex align-items-center gap-2">
                                             <div class="client-img">
-                                                <img src="assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
                                             </div>
                                             <div class="client-info">
                                                 <h4 class="client-name fs-18 fw-bold text-clr-dark1 mb-0">
@@ -241,7 +241,7 @@
                                 </div>
                                 <div class="swiper-slide client-item-wraps radius-16 position-relative">
                                     <span class="client-qoute-icon position-absolute">
-                                        <img src="assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
                                     </span>
                                     <div
                                         class="client-testimonials-card d-flex flex-column justify-content-between bg-white radius-16">
@@ -267,7 +267,7 @@
                                         </div>
                                         <div class="ctc-bottom d-flex align-items-center gap-2">
                                             <div class="client-img">
-                                                <img src="assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
                                             </div>
                                             <div class="client-info">
                                                 <h4 class="client-name fs-18 fw-bold text-clr-dark1 mb-0">
@@ -282,7 +282,7 @@
                                 </div>
                                 <div class="swiper-slide client-item-wraps radius-16 position-relative">
                                     <span class="client-qoute-icon position-absolute">
-                                        <img src="assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
                                     </span>
                                     <div
                                         class="client-testimonials-card d-flex flex-column justify-content-between bg-white radius-16">
@@ -308,7 +308,7 @@
                                         </div>
                                         <div class="ctc-bottom d-flex align-items-center gap-2">
                                             <div class="client-img">
-                                                <img src="assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cleint-img.png" alt="img" class="img-fluid w-auto">
                                             </div>
                                             <div class="client-info">
                                                 <h4 class="client-name fs-18 fw-bold text-clr-dark1 mb-0">
@@ -341,40 +341,40 @@
 
 
 
-        <!-- footer -->
+    <!-- footer -->
     <footer class="footer bg-clr-deepDark">
         <div class="container">
             <div
                 class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">
                 <div class="footer-logo">
                     <a href="index.html">
-                        <img src="assets/img/logo.svg" alt="" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class="img-fluid">
                     </a>
                 </div>
                 <div
                     class="footer-top-right d-flex justify-content-md-center justify-content-xl-start flex-wrap gap-4 align-items-center">
                     <div class="contact-element d-flex gap-4 align-items-center">
-                        <img src="assets/img/element-sing.svg" alt="icon" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/element-sing.svg" alt="icon" class="img-fluid">
                         <a href="mailto:hello@wadialbada.com"
                             class="fs-14 fw-bold text-clr-dark5 text-decoration-none text-uppercase">
                             hello@wadialbada.com
                         </a>
                     </div>
                     <div class="divider d-none d-lg-block">
-                        <img src="assets/img/divider.svg" alt="divider" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/divider.svg" alt="divider" class="img-fluid">
                     </div>
                     <div class="contact-element d-flex gap-4 align-items-center">
-                        <img src="assets/img/element-sing.svg" alt="icon" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/element-sing.svg" alt="icon" class="img-fluid">
                         <a href="tel:(307) 555-0133"
                             class="fs-14 fw-bold text-clr-dark5 text-decoration-none text-uppercase">
                             (307) 555-0133
                         </a>
                     </div>
                     <div class="divider d-none d-lg-block">
-                        <img src="assets/img/divider.svg" alt="divider" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/divider.svg" alt="divider" class="img-fluid">
                     </div>
                     <div class="contact-element d-flex gap-4 align-items-center">
-                        <img src="assets/img/element-sing.svg" alt="icon" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/element-sing.svg" alt="icon" class="img-fluid">
                         <p class="fs-14 fw-bold text-clr-dark5 text-uppercase mb-0">
                             2118 Thornridge Cir. Syracuse, Connecticut 35624
                         </p>
@@ -387,7 +387,7 @@
                         <div class="footer-widget footer-menu">
                             <h5 class="fw-bold fs-5 text-white pb-4">
                                 <span>
-                                    <img src="assets/img/title-icon.svg" alt="icon" class="img-fluid">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-icon.svg" alt="icon" class="img-fluid">
                                 </span>
                                 <span class="px-2">
                                     Company
@@ -500,7 +500,7 @@
                         <div class="footer-widget footer-menu ps-xl-4">
                             <h5 class="fw-bold fs-5 text-white pb-4">
                                 <span>
-                                    <img src="assets/img/title-icon.svg" alt="icon" class="img-fluid">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-icon.svg" alt="icon" class="img-fluid">
                                 </span>
                                 <span class="px-2">
                                     Services
@@ -624,7 +624,7 @@
                         <div class="footer-widget social ps-xl-4">
                             <h5 class="fw-bold fs-5 text-white pb-4">
                                 <span>
-                                    <img src="assets/img/title-icon.svg" alt="icon" class="img-fluid">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-icon.svg" alt="icon" class="img-fluid">
                                 </span>
                                 <span class="px-2">
                                     Social

@@ -6,7 +6,7 @@ use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use ELementor\Repeater;
 
-if (!defined('ABSPATH') && !function_exists('wpcf7_init')) exit; // Exit if accessed directly and CF7 Not install
+if (!defined('ABSPATH')) exit; 
 
 /**
  * CB Core Demo
@@ -128,7 +128,7 @@ class CB_Core_Faq extends Widget_Base
 		$this->start_controls_section(
 			'_section_faq',
 			[
-				'label' => cb_core_is_cf7_activated() ? __('Faq', 'cb-core') : __('Faq Content', 'cb-core'),
+				'label' => __('Faq', 'cb-core') ,
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);

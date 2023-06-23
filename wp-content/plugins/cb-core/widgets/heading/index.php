@@ -171,33 +171,30 @@ class CB_Core_Heading extends Widget_Base
                 ]
             ]
         );
-        $this->add_control(
-            'text_align',
+        $this->add_responsive_control(
+            '_text_alignment',
             [
-                'label' => esc_html__('Alignment', 'textdomain'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
+                'label' => esc_html__('Alignment', 'cb-core'),
                 'options' => [
                     'left' => [
-                        'title' => esc_html__('Left', 'textdomain'),
+                        'title' => esc_html__('Left', 'cb-core'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'textdomain'),
+                        'title' => esc_html__('Center', 'cb-core'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__('Right', 'textdomain'),
+                        'title' => esc_html__('Right', 'cb-core'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
-                'default' => 'center',
-                'toggle' => true,
+                'devices' => ['desktop', 'tablet', 'mobile'],
+                'prefix_class' => 'content-align-%s',
                 'condition' => [
                     'layout' => ['layout-1']
-                ],
-                'selectors' => [
-                    '{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',
-                ],
+                ]
             ]
         );
         $this->end_controls_section();

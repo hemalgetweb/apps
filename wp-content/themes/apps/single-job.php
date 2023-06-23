@@ -2,6 +2,6 @@
 get_header();
 echo "<br/><br/>";
 the_title();
-the_content();
+echo "asdfasfsda";
 get_footer();
 ?>

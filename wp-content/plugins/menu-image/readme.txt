@@ -3,8 +3,8 @@ Contributors: takanakui, freshlightlab, freemius
 Tags: menu, navigation, image, icons, nav menu
 Donate link: https://www.freshlightlab.com/?utm_source=wprepo-menu-image&utm_medium=wprepo_readme&utm_campaign=Donate+Link
 Requires at least: 4.4.0
-Tested up to: 6.0
-Stable tag: 3.0.8
+Tested up to: 6.2
+Stable tag: 3.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,12 @@ Check this article in the following [link](https://www.freshlightlab.com/documen
 3. Add images to menu item
 
 == Changelog ==
+
+
+
+### 3.0.9 ###
+* Fix - Added Compatibility with latest WordPress
+* Fix - Update Freemius SDK
 
 ### 3.0.8 ###
 * Fix - Added new capability check

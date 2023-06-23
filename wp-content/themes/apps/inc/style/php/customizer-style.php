@@ -10,65 +10,40 @@ function apps_customizer_styling()
 ?>
 	<style type="text/css">
 		/**
-		* header style 1/2
+		* header style 1
 	*/
-		<?php if (get_theme_mod('choose_default_header') == 'header-style-1') : ?><?php if (get_theme_mod('cbtoolkit_header_top_background_color_1')) { ?>.apps-header-inner .apps-header-topbar.apps-bg-primary,
-		.apps-topbar-right-item::before {
-			background-color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_top_background_color_1')); ?>;
+		<?php if (get_theme_mod('choose_default_header') == 'header-style-1') : ?><?php if (get_theme_mod('cbtoolkit_header_right_phone_text_color')) { ?>.apps-header-inner .apps-header-topbar.apps-bg-primary,
+		.apps-header-right-phone-114 {
+			color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_right_phone_text_color')); ?>;
 		}
 
-		<?php } ?><?php if (get_theme_mod('logo_size_1')) { ?>
-			#header .navbar-brand img {
-			max-width: <?php echo esc_attr(get_theme_mod('logo_size_1')); ?>px;
+		<?php } ?><?php if (get_theme_mod('cbtoolkit_header_right_phone_text_hover_color')) { ?>
+			.apps-header-right-phone-114:hover {
+			color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_right_phone_text_hover_color')); ?>;
 		}
-
-		<?php } ?><?php endif; ?>
-
-		/**
-		* header style 3
-	*/
-		<?php if (get_theme_mod('choose_default_header') == 'header-style-3') : ?><?php if (get_theme_mod('cbtoolkit_header_top_background_color_3')) { ?>.apps-header-3 .apps-fz-header-top-3 {
-			background-color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_top_background_color_3')); ?>;
-		}
-
-		<?php } ?><?php if (get_theme_mod('logo_size_3')) { ?>.apps-fz-header-logo-3 img {
-			max-width: <?php echo esc_attr(get_theme_mod('logo_size_3')); ?>px;
-		}
-
-		<?php } ?><?php endif; ?>
-
-		/**
-		* header style 4
-	*/
-		<?php if (get_theme_mod('choose_default_header') == 'header-style-4') : ?><?php if (get_theme_mod('cbtoolkit_header_top_background_color_4')) { ?>.apps-fz-header-topbar-4 {
-			background-color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_top_background_color_4')); ?>;
-		}
-
-		<?php } ?><?php if (get_theme_mod('logo_size_4')) { ?>.apps-fz-header-logo-4 img {
-			max-width: <?php echo esc_attr(get_theme_mod('logo_size_4')); ?>px;
-		}
-
-		<?php } ?><?php endif; ?>
-
-		/**
-		* header style 5
-	*/
-		<?php if (get_theme_mod('choose_default_header') == 'header-style-5') : ?><?php if (get_theme_mod('logo_size_5')) { ?>.apps-fz-header-logo-5 img {
-			max-width: <?php echo esc_attr(get_theme_mod('logo_size_5')); ?>px;
-		}
-
-		<?php } ?><?php endif; ?>
-	/**
-		* header style 7
-	*/
-	<?php if (get_theme_mod('choose_default_header') == 'header-style-7') : ?>
-			<?php if (get_theme_mod('logo_size_7')) { ?>
-				.apps-fz-header-logo-6 img {
-					max-width: <?php echo esc_attr(get_theme_mod('logo_size_7')); ?>px;
-				}
-			<?php } ?>
+		<?php } ?>
+		<?php if (get_theme_mod('cbtoolkit_header_right_button_text_color')) { ?>
+			.apps-header-right-btn-114 {
+				color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_right_button_text_color')); ?>;
+			}
+		<?php } ?>
+		<?php if (get_theme_mod('cbtoolkit_header_right_button_bg_color')) { ?>
+			.apps-header-right-btn-114 {
+				background-color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_right_button_bg_color')); ?>;
+			}
+		<?php } ?>
+		<?php if (get_theme_mod('cbtoolkit_header_right_button_text_hover_color')) { ?>
+			.apps-header-right-btn-114:hover {
+				color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_right_button_text_hover_color')); ?>;
+			}
+		<?php } ?>
+		<?php if (get_theme_mod('cbtoolkit_header_right_button_bg_hover_color')) { ?>
+			.apps-header-right-btn-114:hover {
+				background-color: <?php echo esc_attr(get_theme_mod('cbtoolkit_header_right_button_bg_hover_color')); ?>;
+			}
+		<?php } ?>
+		
 		<?php endif; ?>
-
 		/* Breadcrum Style */
 		<?php if (get_theme_mod('breadcrumb_text_color')) { ?>.banner.banner-inner .breadcrumb-txt,
 		.banner.banner-inner .breadcrumb-txt h1,

@@ -534,7 +534,330 @@ function _header_fields($fields)
             ]
         ],
     ];
+    $fields[] = [
+        'type'     => 'color',
+        'settings' => 'cbtoolkit_header_right_phone_text_color',
+        'label'    => __('Phone Text Color', 'cb-toolkit'),
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
 
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'color',
+        'settings' => 'cbtoolkit_header_right_phone_text_hover_color',
+        'label'    => __('Phone Text Hover Color', 'cb-toolkit'),
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'color',
+        'settings' => 'cbtoolkit_header_right_button_text_color',
+        'label'    => __('Button Text Color', 'cb-toolkit'),
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'color',
+        'settings' => 'cbtoolkit_header_right_button_bg_color',
+        'label'    => __('Button BG Color', 'cb-toolkit'),
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'color',
+        'settings' => 'cbtoolkit_header_right_button_text_hover_color',
+        'label'    => __('Button Text Hover Color', 'cb-toolkit'),
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'color',
+        'settings' => 'cbtoolkit_header_right_button_bg_hover_color',
+        'label'    => __('Button BG Hover Color', 'cb-toolkit'),
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'typography',
+        'settings' => 'cbtoolkit_header_right_button_typography',
+        'label'    => __('Button Typography', 'cb-toolkit'),
+        'transport'   => 'auto',
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'default'     => [
+			'font-family'     => '',
+			'variant'         => '',
+			'font-style'      => '',
+			'color'           => '',
+			'font-size'       => '',
+			'line-height'     => '',
+			'letter-spacing'  => '',
+			'text-transform'  => 'none',
+			'text-decoration' => 'none',
+			'text-align'      => '',
+		],
+        'output'      => [
+			[
+				'element' => '.apps-header-right-btn-114',
+			],
+		],
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'typography',
+        'settings' => 'cbtoolkit_header_right_number_typography',
+        'label'    => __('Number Typography', 'cb-toolkit'),
+        'transport'   => 'auto',
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'default'     => [
+			'font-family'     => '',
+			'variant'         => '',
+			'font-style'      => '',
+			'color'           => '',
+			'font-size'       => '',
+			'line-height'     => '',
+			'letter-spacing'  => '',
+			'text-transform'  => 'none',
+			'text-decoration' => 'none',
+			'text-align'      => '',
+		],
+        'output'      => [
+			[
+				'element' => '.apps-header-right-phone-114',
+			],
+		],
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
+    $fields[] = [
+        'type'     => 'typography',
+        'settings' => 'cbtoolkit_header_menu_item_typography',
+        'label'    => __('Menu Item Typography', 'cb-toolkit'),
+        'transport'   => 'auto',
+        'section'  => 'section_header_settings',
+        'priority' => 10,
+        'default'     => [
+			'font-family'     => '',
+			'variant'         => '',
+			'font-style'      => '',
+			'color'           => '',
+			'font-size'       => '',
+			'line-height'     => '',
+			'letter-spacing'  => '',
+			'text-transform'  => 'none',
+			'text-decoration' => 'none',
+			'text-align'      => '',
+		],
+        'output'      => [
+			[
+				'element' => '.apps-header-nav-menu-114 ul li a',
+			],
+		],
+        'active_callback' => [
+            [
+                'setting'  => 'cbtoolkit_header_main_switch_1',
+                'operator' => '==',
+                'value'    => 'content',
+            ],
+            [
+                'setting'  => 'cbtoolkit_header_main_right_switch_1',
+                'operator' => '==',
+                'value'    => true,
+            ],
+            [
+                'setting'  => 'choose_default_header',
+                'operator' => '==',
+                'value'    => 'header-style-1',
+            ],
+
+            [
+                'setting'  => 'cbtoolkit_header_right_buttonset_1',
+                'operator' => '==',
+                'value'    => 'style',
+            ]
+        ],
+    ];
     return $fields;
 }
 add_filter('kirki/fields', '_header_fields');
@@ -1969,7 +2292,7 @@ function _header_footer_fields($fields)
         'label'       => __('Footer BG Color', 'cb-toolkit'),
         'description' => __('This is a Footer bg color control.', 'cb-toolkit'),
         'section'     => 'footer_setting',
-        'default'     => __('#fff', 'cb-toolkit'),
+        'default'     => __('#003959', 'cb-toolkit'),
         'priority'    => 10,
         'active_callback' => [
             [

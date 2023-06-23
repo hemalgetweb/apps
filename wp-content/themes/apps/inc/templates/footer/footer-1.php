@@ -1,5 +1,10 @@
 <?php
 $apps_footer_logo_2 = get_theme_mod('apps_footer_logo_2');
+$footer_bg_image_1 = get_theme_mod('footer_bg_image_1', '');
+$footer_background_size_1 = get_theme_mod("footer_background_size_1", "cover");
+$cbtoolkit_footer_bg_color_1 = get_theme_mod('cbtoolkit_footer_bg_color_1', '#003959');
+$footer_background_position_select_1 = get_theme_mod('footer_background_position_select_1', 'center center');
+$footer_background_blendmode_select_1 = get_theme_mod('footer_background_blendmode_select_1', 'normal');
 $cbtoolkit_copyright_1 = get_theme_mod('cbtoolkit_copyright_1', __('Copyright © 2023 I Wadi Al Bada I All Rights Reserved', 'apps'));
 $cbtoolkit_footer_top_repeater = get_theme_mod('cbtoolkit_footer_top_repeater', array());
 /*
@@ -8,10 +13,18 @@ cmt_section_footer_2: start section Footer 1
 $footer_class_2[1] = 'col-sm-12 col-md-12 col-xxl-4 mb-3'; 
 $footer_class_2[2] = 'col-sm-12 col-md-12 col-xxl-6 mb-3';
 $footer_class_2[3] = 'col-sm-12 col-md-12 col-xxl-2 mb-3';
+$bg_properties = <<<EOD
+background-size: {$footer_background_size_1};
+background-image: url('{$footer_bg_image_1}');
+background-color: {$cbtoolkit_footer_bg_color_1};
+background-position: {$footer_background_position_select_1};
+background-blend-mode: {$footer_background_blendmode_select_1};
+
+EOD;
 ?>
 
     <!-- footer -->
-    <footer class="footer bg-clr-deepDark">
+    <footer class="footer bg-clr-deepDark" style="<?PHP ECHO $bg_properties; ?>">
         <div class="container">
             <div
                 class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">
@@ -69,6 +82,7 @@ $footer_class_2[3] = 'col-sm-12 col-md-12 col-xxl-2 mb-3';
                     <?php endif; ?>
                 </div>
             </div>
+            <?php if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4')) : ?>
             <div class="footer-widget-area">
                 <div class="row">
                     <?php
@@ -83,55 +97,12 @@ $footer_class_2[3] = 'col-sm-12 col-md-12 col-xxl-2 mb-3';
                     ?>
                 </div>
             </div>
+            <?php endif; ?>
             <?php if(!empty($cbtoolkit_copyright_1)) : ?>
             <div class="copyright d-flex flex-column flex-sm-row justify-content-center py-3">
                 <p class="m-0 text-clr-dark5 fw-normal fs-6">
                     <?php echo esc_html($cbtoolkit_copyright_1); ?>
                 </p>
-            </div>
-            <?php endif; ?>
-        </div>
-    </footer>
-    <!-- / footer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- footer -->
-<footer class="footer bg-clr-deepDark d-none">
-        <div class="container">
-            <?php if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4')) : ?>
-            <div class="row">
-                <?php
-                for ($num = 1; $num <= 3; $num++) {
-                    if (!is_active_sidebar('footer-' . $num)) {
-                        continue;
-                    }
-                    print '<div class="' . esc_attr($footer_class_2[$num]) . '">';
-                    dynamic_sidebar('footer-' . $num);
-                    print '</div>';
-                }
-                ?>
-            </div>
-            <?php endif; ?>
-            <?php if(!empty($cbtoolkit_copyright_1)) : ?>
-            <div class="d-flex flex-column flex-sm-row justify-content-center footer-border py-2 mt-3">
-                <p class="m-0 text-clr-dark10 fw-normal fs-6"><?php echo esc_html($cbtoolkit_copyright_1); ?></p>
             </div>
             <?php endif; ?>
         </div>

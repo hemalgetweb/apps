@@ -255,3 +255,19 @@ add_theme_support('woocommerce');
 if (class_exists('TGM_Plugin_Activation')) {
 	require_once APPS_THEME_INC . 'add_plugin.php';
 }
+/***
+ * Add extra info on menu item
+ */
+function add_extra_menu_item($item_output, $item, $depth, $args) {
+    // Get the custom field value for the current menu item
+    $extra_info = get_field('menu_info', $item->ID);
+
+    // If the custom field value exists, wrap the menu title and extra info in a single <div>
+    if ($extra_info) {
+        $extra_info_markup = '<span class="extra-info">' . $extra_info . '</span>';
+        $item_output = preg_replace('/(<a.*?>)([^<]*)(<\/a>)/', '<div class="menu-item-content">$1$2' . $extra_info_markup . '$3</div>', $item_output);
+    }
+
+    return $item_output;
+}
+add_filter('walker_nav_menu_start_el', 'add_extra_menu_item', 10, 4);

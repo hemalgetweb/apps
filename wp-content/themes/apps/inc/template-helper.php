@@ -1035,7 +1035,7 @@ function apps_breadcrumb_func()
     }
 }
 
-add_action('apps_before_main_content', 'apps_breadcrumb_func');
+// add_action('apps_before_main_content', 'apps_breadcrumb_func');
 
 // apps_search_form
 function apps_search_form()

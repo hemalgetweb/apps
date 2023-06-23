@@ -183,23 +183,17 @@
   padding: 0 15px;
 }
 
-/* client-testimonials-card - End */
 
-/* hhh */
-/* .apps-scrollable-content-sections-nav-114 li.active a {
-  position: relative;
+.job_key {
+  list-style: square;
 }
 
-.apps-scrollable-content-sections-nav-114 li.active a::before {
-  content: "";
-  height: 100%;
-  width: 2px;
-  position: absolute;
-  left: -31px;
-  background: #26B5B5;
-} */
-
-
+.job_summary {
+  box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);
+  position: sticky;
+  top: 100px;
+  left: 0;
+}
 
 /* footer style */
 .footer {

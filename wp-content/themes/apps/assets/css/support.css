@@ -185,8 +185,37 @@
 
 
 .job_key {
-  list-style: square;
+  list-style: none;
+
+  li {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: #1F516D;
+      top: 0;
+      left: 0;
+    }
+  }
 }
+
+.job_key li {
+  position: relative;
+}
+
+.job_key li::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #1F516D;
+  top: 14px;
+  left: -15px;
+}
+
 
 .job_summary {
   box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);

@@ -26,6 +26,7 @@ class Apps_Job_Listing {
     }
     function include_required_files() {
         include_once(AJL_INCLUDE_DIR. 'post-types.php');
+        include_once(AJL_INCLUDE_DIR. 'post-type-application.php');
     }
     function load_admin_assets() {
         wp_enqueue_style('datepicker', AJL_ADMIN_DIR. 'css/datepicker.css', array(), $this->version);

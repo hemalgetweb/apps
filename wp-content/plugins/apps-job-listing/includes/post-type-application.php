@@ -3,16 +3,34 @@ namespace APPS_Application_LISTING\POST_TYPES\POST_TYPE_APPLICATION;
 
 class Post_Type_Application {
     public function __construct() {
+        add_action("manage_application_posts_custom_column", [$this, "display_custom_column_content"], 10, 2);
         add_action("init", [$this, "create_job_post_type"]);
+        add_action("admin_menu", [$this, "add_settings_menu"]);
         add_filter("manage_application_posts_columns", [$this, "add_job_title_on_application"]);
-        add_filter("manage_application_posts_columns", [$this, "add_job_id_on_application"]);
+    }
+    function add_settings_menu() {
+        add_submenu_page(
+            'edit.php?post_type=application',    // Parent menu slug
+            'Settings',    // Page title
+            'Settings',    // Menu title
+            'manage_options',   // Capability
+            'application-settings',    // Menu slug
+            [$this, 'render_settings_page']   // Callback function
+        );
+    }
+    function render_settings_page() {
+        // Settings page code here
+        echo "setting content";
+    }
+    // Display content in custom column
+    function display_custom_column_content($column, $post_id) {
+        if ($column == 'post_title') {
+            $post_title = get_the_title($post_id);
+            echo $post_title;
+        }
     }
     function add_job_title_on_application($columns) {
-        $columns['post_title'] = 'Post Title';
-        return $columns;
-    }
-    function add_job_id_on_application($columns) {
-        $columns['post_id'] = 'Post ID';
+        $columns['post_title'] = 'Job Title';
         return $columns;
     }
     function create_job_post_type() {

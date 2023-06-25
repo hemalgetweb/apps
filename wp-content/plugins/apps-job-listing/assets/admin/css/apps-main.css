@@ -1,0 +1,5 @@
+div#_application_job_holder_image, div#_application_job_country, div#_application_job_email, div#_application_job_title, div#_application_job_firstname, div#_application_job_lastname, div#_application_job_contact_number {
+    width: 45%;
+    margin-right: 10px;
+    display: inline-block;
+}

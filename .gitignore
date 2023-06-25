@@ -24,6 +24,8 @@ wp-content/plugins/**
 !wp-content/plugins/cb-toolkit/**
 !wp-content/plugins/cb-core/
 !wp-content/plugins/cb-core/**
+!wp-content/plugins/apps-job-listing/
+!wp-content/plugins/apps-job-listing/**
 ./wp-config.php
 
 # Stop editing!

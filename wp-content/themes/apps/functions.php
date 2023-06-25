@@ -205,6 +205,7 @@ function apps_scripts()
 	wp_enqueue_style('fontawesome', apps_THEME_CSS_DIR . 'font-awesome.min.css');
 	wp_enqueue_style('swiper', apps_THEME_CSS_DIR . 'swiper.min.css');
 	wp_enqueue_style('nioicon', apps_THEME_CSS_DIR . 'nioicon.css');
+	wp_enqueue_style('select2', apps_THEME_CSS_DIR . 'select2.min.css', null, time());
 	wp_enqueue_style('apps-core', apps_THEME_CSS_DIR . 'apps-core.css', null, time());
 	wp_enqueue_style('support', apps_THEME_CSS_DIR . 'support.css', null, time());
 	wp_enqueue_style('apps-custom', apps_THEME_CSS_DIR . 'apps-custom.css', null, time());
@@ -212,6 +213,7 @@ function apps_scripts()
 
 	// all js
 	wp_enqueue_script('bootstrap', APPS_THEME_JS_DIR . 'bootstrap.bundle.min.js', ['jquery'], '', true);
+	wp_enqueue_script('select2', APPS_THEME_JS_DIR . 'select2.min.js', ['jquery'], '', true);
 	wp_enqueue_script('swiper', APPS_THEME_JS_DIR . 'swiper.min.js', ['jquery'], '', true);
 	wp_enqueue_script('lottie', APPS_THEME_JS_DIR . 'lottie-player.js', ['jquery'], '', true);
 	wp_enqueue_script('apps-script', APPS_THEME_JS_DIR . 'script.js', ['jquery'], time(), true);
@@ -227,9 +229,9 @@ function apps_fonts_url()
 {
 	$font_url = '';
 	/*
-								Translators: If there are characters in your language that are not supported
-								by chosen font(s), translate this to 'off'. Do not translate into your own language.
-								 */
+									 Translators: If there are characters in your language that are not supported
+									 by chosen font(s), translate this to 'off'. Do not translate into your own language.
+										*/
 	if ('off' !== _x('on', 'Google font: on or off', 'apps')) {
 		$font_url = 'https://fonts.googleapis.com/css2?' . urlencode('family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 	}
@@ -258,16 +260,16 @@ if (class_exists('TGM_Plugin_Activation')) {
 /***
  * Add extra info on menu item
  */
-function add_extra_menu_item($item_output, $item, $depth, $args) {
-    // Get the custom field value for the current menu item
-    $extra_info = get_field('menu_info', $item->ID);
+function add_extra_menu_item($item_output, $item, $depth, $args)
+{
+	// Get the custom field value for the current menu item
+	$extra_info = get_field('menu_info', $item->ID);
+	// If the custom field value exists, wrap the menu title and extra info in a single <div>
+	if ($extra_info) {
+		$extra_info_markup = '<span class="extra-info">' . $extra_info . '</span>';
+		$item_output = preg_replace('/(<a.*?>)([^<]*)(<\/a>)/', '<div class="menu-item-content">$1$2' . $extra_info_markup . '$3</div>', $item_output);
+	}
 
-    // If the custom field value exists, wrap the menu title and extra info in a single <div>
-    if ($extra_info) {
-        $extra_info_markup = '<span class="extra-info">' . $extra_info . '</span>';
-        $item_output = preg_replace('/(<a.*?>)([^<]*)(<\/a>)/', '<div class="menu-item-content">$1$2' . $extra_info_markup . '$3</div>', $item_output);
-    }
-
-    return $item_output;
+	return $item_output;
 }
 add_filter('walker_nav_menu_start_el', 'add_extra_menu_item', 10, 4);

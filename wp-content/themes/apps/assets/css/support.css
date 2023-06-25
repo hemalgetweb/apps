@@ -274,6 +274,46 @@
 }
 
 
+.select2-container--default .select2-selection--single {
+  border: 1px solid #ced4da;
+  border-radius: 50px !important;
+}
+
+.select2-container .select2-selection--single {
+  height: 46px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #1F516D;
+  line-height: 42px;
+  padding: 0 25px;
+  font-size: 14px;
+}
+
+.select2-dropdown {
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 20px !important;
+  top: 32px
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #ced4da;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 45px;
+  right: 10px;
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="fi-rs-angle-down" clip-path="url(%23clip0_4003_22382)"><g id="01 align center"><path id="Vector" d="M22.5859 5.92896L12.7069 15.808C12.5167 15.9904 12.2634 16.0923 11.9999 16.0923C11.7363 16.0923 11.483 15.9904 11.2929 15.808L1.41986 5.93396L0.00585938 7.34796L9.87886 17.222C10.4507 17.767 11.2104 18.071 12.0004 18.071C12.7903 18.071 13.55 17.767 14.1219 17.222L23.9999 7.34296L22.5859 5.92896Z" fill="%23374957"/></g></g><defs><clipPath id="clip0_4003_22382"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
 
 /* footer style */
 .footer {

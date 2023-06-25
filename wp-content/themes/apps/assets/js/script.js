@@ -278,4 +278,16 @@ $(window).scroll(function () {
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-testimonial.default', CB_Testimonial );
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-dynamic-service.default', CB_Dynamic_Service );
         } );
+
+
+    // init select2 
+    $(function () {
+        if ($(".select2-init").length) {
+            $(".select2-init").select2({
+                width: 'resolve' // need to override the changed default
+            });
+        }
+    });
+
+
 })(jQuery)

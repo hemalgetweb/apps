@@ -68,13 +68,13 @@
           <div class="col-md-6">
             <div class="mb-4">
               <label for="Email" class="form-label fs-14 fw-bold text-clr-dark2">Email</label>
-              <input type="text" class="form-control form-field" id="Email" placeholder="Enter your first name">
+              <input type="text" class="form-control form-field" id="Email" placeholder="Enter your email">
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-4">
               <label for="Country" class="form-label fs-14 fw-bold text-clr-dark2">Country</label>
-              <select class="form-select fs-14 text-clr-dark2 form-field mb-4" id="Country">
+              <select class="form-select fs-14 text-clr-dark2 form-field mb-4 select2-init" id="Country">
                 <option selected>Bangladesh</option>
                 <option value=" 1">Pakistan</option>
                 <option value="2">India</option>
@@ -87,7 +87,7 @@
           <div class="col-12">
             <div class="file-uploads">
               <label for="upload-file" class="form-label fs-14 fw-bold text-clr-dark2 d-block">
-                File upload
+                CV upload
                 <input type="file" id="upload-file" class="d-none">
                 <span class="attach-file d-block p-3 bg-white rounded-4 mt-2 text-center">
                   <span class="attach-text fw-normal">
@@ -99,13 +99,14 @@
               <p class="fs-12 mb-4 pb-3">
                 Allowed formates are .jpg, .jpeg, .png, .gif, .docx, .doc, .pdf and maximum size 10MB
               </p>
-              <div class="btn-wrap">
+              <div class="btn-wrap text-center">
                 <button type="submit" class="bg-btn btn bg-clr-primary text-clr-dark1 px-4 fw-bold">
                   Submit Application
                 </button>
               </div>
             </div>
           </div>
+        </div>
       </form>
     </div>
   </div>

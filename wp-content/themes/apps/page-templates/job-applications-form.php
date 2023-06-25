@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="country-code mb-5">
+            <div class="country-code mb-4">
               <label for="pNumber" class="form-label fs-14 fw-bold text-clr-dark2">
                 Contact Number
               </label>
@@ -63,6 +63,25 @@
                 <input type="text" class="form-control border-0 rounded-0 border-start px-3 fs-14 text-clr-dark2"
                   id="pNumber" placeholder="Enter your number">
               </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-4">
+              <label for="Email" class="form-label fs-14 fw-bold text-clr-dark2">Email</label>
+              <input type="text" class="form-control form-field" id="Email" placeholder="Enter your first name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-4">
+              <label for="Country" class="form-label fs-14 fw-bold text-clr-dark2">Country</label>
+              <select class="form-select fs-14 text-clr-dark2 form-field mb-4" id="Country">
+                <option selected>Bangladesh</option>
+                <option value=" 1">Pakistan</option>
+                <option value="2">India</option>
+                <option value="3">USA</option>
+                <option value="3">UK</option>
+                <option value="3">Dubai</option>
+              </select>
             </div>
           </div>
           <div class="col-12">
@@ -87,7 +106,6 @@
               </div>
             </div>
           </div>
-        </div>
       </form>
     </div>
   </div>

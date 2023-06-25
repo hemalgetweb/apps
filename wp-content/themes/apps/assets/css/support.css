@@ -262,7 +262,8 @@
 }
 
 .application-form .form-field:focus,
-.application-form .phone-wrap .form-control {
+.application-form .phone-wrap .form-control,
+.application-form .phone-wrap select {
   box-shadow: none;
 }
 

@@ -21,69 +21,7 @@ if(isset( $_GET['_wpnonce'] )) {
     $job_id = $post_id;
   }
 }
-
-if(isset($_POST['submit_application'])) {
-  /**
-   * move submited image into wp-content/uploads/apps-job-listing/
-   */
-  $upload_dir = wp_upload_dir();
-  $plugin_directory = $upload_dir['basedir']. '/apps-job-listing/';
-  // Create the plugin directory if it doesn't exist
-  if (!is_dir($plugin_directory)) {
-    mkdir($plugin_directory, 0755, true);
-  }
-  $fileInputName = 'application_upload_file';
-  $application_upload_file = $_FILES[$fileInputName];
-  $application_upload_file_filtered = filter_input(INPUT_POST, $fileInputName, FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
-  $application_upload_file_name = $application_upload_file['name'];
-  $application_upload_file_tmp_path = $application_upload_file['tmp_name'];
-  $unique_file_name = wp_unique_filename($plugin_directory, $application_upload_file_name);
-  // Move the uploaded file to the plugin directory
-  if (!move_uploaded_file($application_upload_file_tmp_path, $plugin_directory . $unique_file_name)) {
-    echo 'Failed to move the uploaded file.';
-  }
-  $image_saved_path = $plugin_directory. $unique_file_name;
-  $application_job_id = filter_input(INPUT_POST, 'application_job_id', FILTER_SANITIZE_STRING);
-  $application_job_title = get_the_title($application_job_id);
-  $application_user_firstname = filter_input(INPUT_POST, 'application_user_firstname', FILTER_SANITIZE_STRING);
-  $application_user_lastname = filter_input(INPUT_POST, 'application_user_lastname', FILTER_SANITIZE_STRING);
-  $application_user_contact = filter_input(INPUT_POST, 'application_user_contact', FILTER_SANITIZE_STRING);
-  $application_user_email = filter_input(INPUT_POST, 'application_user_email', FILTER_SANITIZE_STRING);
-  $application_user_country = filter_input(INPUT_POST, 'application_user_country', FILTER_SANITIZE_STRING);
-  $application_username = "";
-  if(!empty($application_user_firstname) && !empty($application_user_lastname)) {
-    $application_username = $application_user_firstname.' '.$application_user_lastname;
-  } else if(!empty($application_user_firstname)) {
-    $application_username = $application_user_firstname;
-  } else {
-    echo "Please insert First Name & Last Name";
-    return;
-  }
-  // Prepare post data
-  $post_data = array(
-    'post_title'   => $application_username,
-    'post_content' => '',
-    'post_status'  => 'publish',
-    'post_type'    => 'application'
-  );
-  $post_id = wp_insert_post($post_data);
-  if ($post_id) {
-    // Insert custom meta data
-    if ($post_id) {
-      update_post_meta($post_id, 'apps_application_single_post', $application_job_title);
-      update_post_meta($post_id, 'apps_application_firstname', $application_user_firstname);
-      update_post_meta($post_id, 'apps_application_lastname', $application_user_lastname);
-      update_post_meta($post_id, 'apps_application_contact_number', $application_user_contact);
-      update_post_meta($post_id, 'apps_application_email', $application_user_email);
-      update_post_meta($post_id, 'apps_application_select_country', $application_user_country);
-      update_post_meta($post_id, 'apps_application_job_holder_image', $image_saved_path);
-      // Add more meta keys and values as needed
-    }
-  } else {
-      // Failed to insert the post
-      echo 'Failed to insert the application post.';
-  }
-}
+FORM_HANDLER\updateApplicationFormOptions();
 ?>
 
 
@@ -155,13 +93,13 @@ if(isset($_POST['submit_application'])) {
           <div class="col-md-6">
             <div class="mb-4">
               <label for="application_user_email" class="form-label fs-14 fw-bold text-clr-dark2">Email</label>
-              <input type="text" class="form-control form-field" id="application_user_email" name="application_user_email" placeholder="Enter your first name">
+              <input required type="text" class="form-control form-field" id="application_user_email" name="application_user_email" placeholder="Enter your first name">
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-4">
               <label for="application_user_country" class="form-label fs-14 fw-bold text-clr-dark2">Country</label>
-              <select class="select2-init form-select fs-14 text-clr-dark2 form-field mb-4" name="application_user_country" id="application_user_country">
+              <select required class="select2-init form-select fs-14 text-clr-dark2 form-field mb-4" name="application_user_country" id="application_user_country">
                 <option selected>Bangladesh</option>
                 <option value=" 1">Pakistan</option>
                 <option value="2">India</option>
@@ -175,7 +113,7 @@ if(isset($_POST['submit_application'])) {
             <div class="file-uploads">
               <label for="application_upload_file" class="form-label fs-14 fw-bold text-clr-dark2 d-block">
                 File upload
-                <input type="file" name="application_upload_file" id="application_upload_file" class="d-none">
+                <input required type="file" name="application_upload_file" id="application_upload_file" class="d-none">
                 <span class="attach-file d-block p-3 bg-white rounded-4 mt-2 text-center">
                   <span class="attach-text fw-normal">
                     <span class="ni ni-upload text-clr-dark1"></span>

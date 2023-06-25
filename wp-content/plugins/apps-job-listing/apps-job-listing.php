@@ -72,7 +72,6 @@ class Apps_Job_Listing {
     }
     
     function include_required_files() {
-        include_once(AJL_INCLUDE_DIR. 'get-all-country.php');
         include_once(AJL_INCLUDE_DIR. 'post-types.php');
         include_once(AJL_INCLUDE_DIR. 'post-type-application.php');
         include_once(AJL_INCLUDE_DIR. 'form-handler/application-form-handler.php');

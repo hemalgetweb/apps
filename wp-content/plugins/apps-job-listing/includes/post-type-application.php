@@ -1,6 +1,6 @@
 <?php
-namespace APPS_Application_LISTING\POST_TYPES\POST_TYPE_APPLICATION;
-
+namespace APPS_JOB_LISTING\POST_TYPES\POST_TYPE_APPLICATION;
+use APPS_Application_LISTING\FORM_HANDLER;
 class Post_Type_Application {
     public function __construct() {
         add_action("manage_application_posts_custom_column", [$this, "display_custom_column_content"], 10, 2);
@@ -19,9 +19,32 @@ class Post_Type_Application {
         );
     }
     function render_settings_page() {
-        // Settings page code here
-        echo "setting content";
-    }
+        $application_form_page_id = get_option('application_form_page_id') ? get_option('application_form_page_id'): '';
+        FORM_HANDLER\updateSettingsPageOption();
+        // Get all pages
+        $pages = get_pages();
+        ?>
+        <form action="#" method="POST">
+            <table class="form-table" role="presentation">
+                <tbody>
+                    <th>Select Application Form Page: <p>please use: [application_form/] shortcode in selected page</p></th>
+                    <td>
+                        <?php if(!empty($pages)) : ?>
+                        <select name="select_application_page">
+                            <?php foreach($pages as $page) :
+                                $page_id = $page->ID; // Get the page ID
+                                $page_title = $page->post_title; // Get the page title    
+                            ?>
+                                <option <?php echo $application_form_page_id == $page_id ? 'selected': '';  ?> value="<?php echo esc_attr($page_id); ?>"><?php echo $page_title; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                        <?php endif; ?>
+                    </td>
+                </tbody>
+            </table>
+            <p class="submit_btn"><input type="submit" name="submit_application_settings" id="submit_application_settings" class="button button-primary" value="Save Changes"></p>
+        </form>
+    <?php }
     // Display content in custom column
     function display_custom_column_content($column, $post_id) {
         if ($column == 'post_title') {
@@ -30,7 +53,9 @@ class Post_Type_Application {
         }
     }
     function add_job_title_on_application($columns) {
-        $columns['post_title'] = 'Job Title';
+        $columns['apps_application_job_title'] = 'Job Title';
+        $columns['apps_application_email'] = 'Email';
+        $columns['apps_application_thumbnail'] = 'Image';
         return $columns;
     }
     function create_job_post_type() {
@@ -67,7 +92,7 @@ class Post_Type_Application {
             'label'               => 'Application',
             'description'         => 'Post type for Applications',
             'labels'              => $labels,
-            'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
+            'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields' ),
             'taxonomies'          => array( 'Application-types', 'Application-applications' ),
             'hierarchical'        => false,
             'public'              => true,

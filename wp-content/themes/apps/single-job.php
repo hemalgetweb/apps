@@ -1,121 +1,101 @@
 <?php
 get_header();
+$post_id = get_the_ID();
+$job_duration = get_post_meta($post_id, 'job_duration', true);
+$job_type = get_post_meta($post_id, 'onsite', true);
+$company_tagline = get_post_meta($post_id, 'company_tagline', true);
+$categories = get_the_category();
+$cat_name = '';
+if ( ! empty( $categories ) ) {
+  $cat_name = $categories[0]->name;
+}
+// pass page id to application form
+$nonce = wp_create_nonce('add-application-'. $post_id);
+$url = '';
+$get_selected_page_from_settings = get_option('application_form_page_id');
+if($get_selected_page_from_settings) {
+  $selected_page_url = get_the_permalink($get_selected_page_from_settings);
+  $url = add_query_arg(
+    array(
+      'post' => $post_id,
+      'action' => 'add',
+      '_wpnonce' => $nonce
+    ),
+    $selected_page_url
+  );
+}
 ?>
 
+<!-- job banner area start -->
+<section class="job-banner-area pt-60 pb-100">
+  <div class="container">
+    <span class="apps-job-banner-subtitle-114"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="rect"> Jobs</span>
+    <h2 class="apps-job-banner-title-114"><?php echo get_the_title(); ?></h2>
+    <div class="apps-job-banner-meta-114">
+      <?php if(!empty($job_duration)) : ?>
+      <span><?php echo esc_html($job_duration); ?></span>
+      <?php endif; ?>
+      <?php if(!empty($job_type)) : ?>
+      <span><?php echo esc_html($job_type); ?></span>
+      <?php endif; ?>
+    </div>
+    <p class="apps-job-excerpt-114"><?php echo get_the_excerpt(); ?></p>
+  </div>
+</section>
+<!-- job banner area end -->
 <!-- job_post -->
 <section class="job_post section-padding">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-
-        <div class="job_description mb-5">
-          <h3 class="fs-4 text-clr-dark1 fw-semi-bold mb-4">
-            Key Responsibilities
-          </h3>
-          <ul class="job_key ps-4">
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Liaising with clients to determine their requirements, timescale and budget
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Planning concepts by studying relevant information and materials
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Schedule projects and define budget constraints
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Developing concepts, graphics and layouts, including making decisions about fonts, images, readability and
-              readers’ needs
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Illustrating concepts by designing examples of art arrangement, size, type size and style and submitting
-              them for approval
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Use the appropriate colors and layouts for each graphic
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Creating a wide range of graphics and layouts for product illustrations, company logos, and websites with
-              software such as photoshop
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Keeping clients up to date, listening to and acting on feedback, and explaining the rationale behind
-              graphic design decisions
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Liaising with external printers or production teams to ensure deadlines are met and material is printed or
-              presented to the highest quality
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Amend designs after feedback
-            </li>
-          </ul>
+        <div class="apps-job-post-content-114">
+          <?php echo get_the_content(); ?>
         </div>
-
-        <div class="job_description mb-5">
-          <h3 class="fs-4 text-clr-dark1 fw-semi-bold mb-4">
-            Skills Required
-          </h3>
-          <ul class="job_key ps-4">
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Bachelor’s degree (or equivalent) in graphic design, art, or related discipline
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Three or more years of experience (academic and professional) with design software, including Illustrator,
-              InDesign, Photoshop, Dreamweaver
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Demonstrable graphic design skills with a strong portfolio
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Organizational and time-management skills for meeting deadlines in a fast-paced environment
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Working knowledge of CSS3, HTML5, and JavaScript
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Knowledge of WordPress and content management systems
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              A strong eye for visual composition
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Excellent communication and presentation skills
-            </li>
-            <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Able to give and receive constructive criticism.
-            </li>
-          </ul>
-        </div>
-
       </div>
       <div class="col-lg-4">
         <div class="job_summary p-4 radius-6">
           <h3 class="fs-4 text-clr-dark1 fw-semi-bold mb-4">
-            Job Summary
+            <?php echo esc_html__('Job Summary', 'apps'); ?>
           </h3>
 
           <ul class="job_key ps-4 mb-4">
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Position --- Graphic Designer/Illustrator
+              <?php echo esc_html__('Position --- ', 'apps'); ?>
+              <?php if(!empty($cat_name)) : ?>
+                <?php echo esc_html($cat_name); ?>
+              <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Employment Type --- Full-time
+            <?php echo esc_html__('Employment Type --- ', 'apps'); ?>
+              <?php if(!empty($job_duration)) : ?>
+                <?php echo esc_html($job_duration); ?>
+              <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Industry --- Marketing
+            <?php echo esc_html__('Industry ---  ', 'apps'); ?>
+            <?php if(!empty($company_tagline)) : ?>
+              <?php echo esc_html($company_tagline); ?>
+            <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Experience --- 3+ Years
-
+              <?php echo esc_html__('Experience --- ', 'apps'); ?>
+              <?php if(!empty($company_tagline)) : ?>
+                <?php echo esc_html($company_tagline); ?>
+              <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
-              Remote Friendly --- Yes
+              Remote Friendly --- 
+              <?php if('Remote Friendly' == $job_type) : ?>
+                <?php echo __('Yes', 'apps'); ?>
+                <?php else: ?>
+                <?php echo __('No', 'apps'); ?>
+              <?php endif; ?>
             </li>
           </ul>
 
           <div class="btn-wrap" data-wow-duration="0.200s" data-wow-delay="400ms">
             <a class="btn rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center w-100 text-center d-flex justify-content-center"
-              href="#">
+              href="<?php echo esc_url($url); ?>">
               Apply now
               <svg class="btn-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">

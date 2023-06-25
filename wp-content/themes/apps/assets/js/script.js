@@ -146,7 +146,7 @@ $(window).scroll(function () {
             $(this).parents(".menu-item").find('.dropdown-menus').slideToggle();
             $(this).parents(".menu-item").find('.dropdown-menus').toggleClass('d-block');
         })
-
+        
         /***
          * Scroll content
          */

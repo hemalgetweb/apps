@@ -239,7 +239,11 @@
 				cloneIcon.removeClass('menu-item-icon-selected').removeClass( 'dashicons' );
 				select_icon = cloneIcon.attr('class').trim()
 			} else {
-				select_icon = $( '.menu-item-icon-selected' ).attr( 'data-prefix' ) + ' fa-' + $( '.menu-item-icon-selected' ).attr( 'data-icon' );
+				if ( $( '.menu-item-icon-selected' ).attr( 'data-prefix' ) != undefined ) {
+					select_icon = $( '.menu-item-icon-selected' ).attr( 'data-prefix' ) + ' fa-' + $( '.menu-item-icon-selected' ).attr( 'data-icon' );
+				} else {
+					select_icon = $( '.menu-item-icon-selected' ).attr('class').replace('menu-item-icon-selected', '')
+				}
 			}
 			menuImageData.menu_image_icon = select_icon;
 

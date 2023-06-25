@@ -12,6 +12,7 @@
  * @package apps
  */
 get_header();
+
 $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 8;
 $sidebar_class = is_active_sidebar( 'blog-sidebar' ) ? 'theme-has-blog-sidebar' : 'theme-has-blog-no-sidebar';
 $cbblog_layout = get_theme_mod('cbblog_layout') ? get_theme_mod('cbblog_layout') : 'right-sidebar';

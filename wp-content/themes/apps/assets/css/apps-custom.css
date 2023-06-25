@@ -3792,3 +3792,54 @@ section.apps-mega-menu.mega-menu-only {
         margin-bottom: 10px;
     }
 }
+
+.job-banner-area {
+    background: var(--dark-dark-1, #003959);
+}
+
+.apps-job-banner-subtitle-114 {
+    color: var(--primary-primary, #00C7C7);
+    font-size: 12px;
+    font-family: Cairo;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.apps-job-banner-title-114 {
+    color: var(--white, #FFF);
+    font-size: 48px;
+    font-family: Cairo;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+.apps-job-banner-subtitle-114 img {
+    margin-right: 5px;
+}
+
+.apps-job-banner-meta-114 > span {
+    color: var(--dark-dark-5, #A8E0FF);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.apps-job-banner-meta-114 > span:first-child::after {background: var(--dark-dark-3, #316785);width: 1px;height: 12px;content: "";display: inline-block;margin-left: 8px;margin-right: 8px;transform: translateY(2px);}
+
+.apps-job-excerpt-114 {
+    color: var(--dark-dark-5, #A8E0FF);
+    font-size: 18px;
+    font-family: Cairo;
+    line-height: 30px;
+}
+
+.apps-job-banner-meta-114 {
+    margin-bottom: 20px;
+}

@@ -3843,3 +3843,11 @@ section.apps-mega-menu.mega-menu-only {
 .apps-job-banner-meta-114 {
     margin-bottom: 20px;
 }
+.country-code .select2-container--default .select2-selection--single {
+    border: 0;
+    border-radius: 0 !important;
+}
+
+.select2-container--open .select2-dropdown--above, .select2-container--open .select2-dropdown--below {
+    min-width: 300px !important;
+}

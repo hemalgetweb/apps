@@ -29,10 +29,11 @@ EOD;
             <div
                 class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">
                 <div class="footer-logo">
-                    <a href="index.html">
+                    <a href="<?php echo home_url('/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class="img-fluid">
                     </a>
                 </div>
+                <?php if(!empty($cbtoolkit_footer_top_repeater)) : ?>
                 <div class="footer-top-right d-flex justify-content-md-center justify-content-xl-start flex-wrap gap-4 align-items-center">
                     <?php foreach($cbtoolkit_footer_top_repeater as $index => $repeater) : ?>
                         <?php if($index == 0) : ?>
@@ -81,6 +82,7 @@ EOD;
                     </div>
                     <?php endif; ?>
                 </div>
+                <?php endif; ?>
             </div>
             <?php if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4')) : ?>
             <div class="footer-widget-area">

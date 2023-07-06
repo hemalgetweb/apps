@@ -3989,3 +3989,6 @@ div.apps-contact-form-left-114 hr {
 .mb-15-i {
     margin-bottom: 15px !important;
 }
+section.dynamic-service-area .swiper-wrapper {
+    padding-bottom: 50px;
+}

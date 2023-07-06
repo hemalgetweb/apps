@@ -133,9 +133,19 @@ class CB_Core_Dynamic_Service extends Widget_Base
 			]
 		);
 		$this->add_control(
+		 'card_hide_border',
+		 [
+		   'label'        => esc_html__( 'Hide Card Border?', 'cb-core' ),
+		   'type'         => \Elementor\Controls_Manager::SWITCHER,
+		   'label_on'     => esc_html__( 'Show', 'cb-core' ),
+		   'label_off'    => esc_html__( 'Hide', 'cb-core' ),
+		   'return_value' => 'yes',
+		 ]
+		);
+		$this->add_control(
 		 'card_height',
 		 [
-		   'label'   => esc_html__( 'Card Height', 'Text-domain' ),
+		   'label'   => esc_html__( 'Card Height', 'cb-core' ),
 		   'type'    => \Elementor\Controls_Manager::NUMBER,
 		   'condition' => [
 			'layout' => ['layout-1']

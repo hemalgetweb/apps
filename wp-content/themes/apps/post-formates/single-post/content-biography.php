@@ -1,18 +1,20 @@
 <?php
     $author_firstname = '';
     $author_lastname = '';
+    $author_name = '';
+    $user_role = '';
+    $author_biography = '';
     if(!empty(get_user_meta(get_the_author_meta('ID')))) {
         $author_firstname = esc_html(get_user_meta(get_the_author_meta('ID'), 'first_name')[0]) ? esc_html(get_user_meta(get_the_author_meta('ID'), 'first_name')[0]): '';
         $author_lastname = esc_html(get_user_meta(get_the_author_meta('ID'), 'last_name')[0]) ? esc_html(get_user_meta(get_the_author_meta('ID'), 'last_name')[0]): '';
+        $author_name = empty($author_name) ?  esc_html(get_user_meta(get_the_author_meta('ID'), 'nickname')[0]): $author_name;
+        $author_biography = get_user_meta(get_the_author_meta('ID'), 'description')[0];
+        $user_role = esc_html(get_userdata(get_the_author_meta('ID'))->roles[0]) ? esc_html(get_userdata(get_the_author_meta('ID'))->roles[0]): '';
     }
-    $author_name = '';
     if(!empty($author_firstname)) {
         $author_name = $author_firstname.' '.$author_lastname;
     }
     $author_image = get_avatar(get_the_author_meta('ID'));
-    $author_name = empty($author_name) ?  esc_html(get_user_meta(get_the_author_meta('ID'), 'nickname')[0]): $author_name;
-    $author_biography = get_user_meta(get_the_author_meta('ID'), 'description')[0];
-    $user_role = esc_html(get_userdata(get_the_author_meta('ID'))->roles[0]) ? esc_html(get_userdata(get_the_author_meta('ID'))->roles[0]): '';
     $content_bottom_margin = empty(comments_open(get_the_ID()) && is_single()) ? 'mb-0' : '';
 ?>
 <div class="blog-bottom-box radius-12 p-4 ">

@@ -2074,8 +2074,7 @@ section.pricing .pricing-wrapper {
     position: absolute;
     right: -85px;
     transition: all .3s;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
 }
 .apps-project-prev-114:hover, .apps-project-next-114:hover {
     background: #00C7C7;

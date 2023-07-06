@@ -1,3 +1,9 @@
+<?php
+$card_height = '';
+if($settings['card_height']) {
+    $card_height = $settings['card_height'] . 'px';
+}
+?>
 <!-- dynamic service area start -->
 <section class="dynamic-service-area">
     <div class="container">
@@ -10,7 +16,7 @@
                         $wp_query->the_post();
                     ?>
                     <div class="swiper-slide">
-                        <div class="dynamic-service-box-114">
+                        <div class="dynamic-service-box-114" style="min-height: <?php echo $card_height; ?>">
                             <?php if(has_post_thumbnail(get_the_ID())) : ?>
                             <div class="dynamic-service-box-img-114">
                                 <?php the_post_thumbnail(get_the_ID(), 'full'); ?>

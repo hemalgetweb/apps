@@ -132,6 +132,16 @@ class CB_Core_Dynamic_Service extends Widget_Base
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
+		$this->add_control(
+		 'card_height',
+		 [
+		   'label'   => esc_html__( 'Card Height', 'Text-domain' ),
+		   'type'    => \Elementor\Controls_Manager::NUMBER,
+		   'condition' => [
+			'layout' => ['layout-1']
+		   ]
+		 ]
+		);
 		// main controls here
         $this->add_control(
 			'query_type',

@@ -17,7 +17,7 @@ if($settings['card_height']) {
                         $wp_query->the_post();
                     ?>
                     <div class="swiper-slide">
-                        <div class="dynamic-service-box-114" style="min-height: <?php echo $card_height ? $card_height: ' ;'; ?> <?php echo $card_hide_border ? 'border: 0; box-shadow: 0px 20px 40px 0px rgba(0, 57, 89, 0.10);': ' ;'; ?>">
+                        <div class="dynamic-service-box-114" style="min-height: <?php echo $card_height ? $card_height. ';': ' ;'; ?> <?php echo $card_hide_border ? 'border: 0; box-shadow: 0px 20px 40px 0px rgba(0, 57, 89, 0.10);': ' ;'; ?>">
                             <?php if(has_post_thumbnail(get_the_ID())) : ?>
                             <div class="dynamic-service-box-img-114">
                                 <?php the_post_thumbnail(get_the_ID(), 'full'); ?>

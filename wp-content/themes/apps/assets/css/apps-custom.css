@@ -2067,8 +2067,7 @@ section.pricing .pricing-wrapper {
     position: absolute;
     left: -85px;
     transition: all .3s;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
 }
 .apps-project-next-114 {
     position: absolute;

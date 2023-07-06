@@ -1,6 +1,10 @@
 <?php
-    $author_firstname = esc_html(get_user_meta(get_the_author_meta('ID'), 'first_name')[0]) ? esc_html(get_user_meta(get_the_author_meta('ID'), 'first_name')[0]): '';
-    $author_lastname = esc_html(get_user_meta(get_the_author_meta('ID'), 'last_name')[0]) ? esc_html(get_user_meta(get_the_author_meta('ID'), 'last_name')[0]): '';
+    $author_firstname = '';
+    $author_lastname = '';
+    if(!empty(get_user_meta(get_the_author_meta('ID')))) {
+        $author_firstname = esc_html(get_user_meta(get_the_author_meta('ID'), 'first_name')[0]) ? esc_html(get_user_meta(get_the_author_meta('ID'), 'first_name')[0]): '';
+        $author_lastname = esc_html(get_user_meta(get_the_author_meta('ID'), 'last_name')[0]) ? esc_html(get_user_meta(get_the_author_meta('ID'), 'last_name')[0]): '';
+    }
     $author_name = '';
     if(!empty($author_firstname)) {
         $author_name = $author_firstname.' '.$author_lastname;

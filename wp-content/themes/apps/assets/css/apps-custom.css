@@ -3999,3 +3999,7 @@ section.dynamic-service-area .swiper-wrapper {
 header#header {
     position: fixed;
 }
+
+#header .navbar-nav .nav-item > .nav-link {
+    padding: 31px 30px;
+}

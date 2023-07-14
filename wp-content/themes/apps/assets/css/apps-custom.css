@@ -4019,3 +4019,9 @@ header#header {
 .apps-accordion-wrapper-main-114 .accordion-button {
     margin-bottom: 17px;
 }
+.footer-widget-area > * > *:last-child ul li {
+    width: 100% !important;
+}
+.footer-widget-area > * > *:last-child ul li  span {
+    padding-left: 0;
+}

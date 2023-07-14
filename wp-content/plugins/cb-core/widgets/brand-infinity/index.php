@@ -146,12 +146,22 @@ class CB_Core_Brand_Infinity extends Widget_Base
 			]
 		);
 		$this->add_control(
+			'enable_small_box',
+			[
+				'label' => esc_html__('Enable Small Box ? ', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => esc_html__('On', 'cb-core'),
+				'label_off' => esc_html__('Off', 'cb-core'),
+				'return_value' => 'yes',
+			]
+		);
+		$this->add_control(
 			'reverce_direction',
 			[
-				'label' => esc_html__('Reverce Direction', 'Text-domain'),
+				'label' => esc_html__('Reverce Direction', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__('On', 'Text-domain'),
-				'label_off' => esc_html__('Off', 'Text-domain'),
+				'label_on' => esc_html__('On', 'cb-core'),
+				'label_off' => esc_html__('Off', 'cb-core'),
 				'return_value' => 'yes',
 			]
 		);

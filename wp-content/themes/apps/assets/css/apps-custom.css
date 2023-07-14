@@ -13,20 +13,18 @@
     top: 100%;
 }
 .navbar-nav .menu-item > ul.dropdown-menus::after {
-    width: 30px;
-    height: 12px;
-    background: #fff;
     content: "";
+    background-image: url(http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/Rectangle-2493.png);
+    background-repeat: no-repeat;
     position: absolute;
-    right: 40px;
-    top: -7px;
-    clip-path: polygon(0 100%, 50% 0, 100% 100%, 0 100% );
-    border-radius: 25px;
+    left: 0;
+    top: -14px;
+    width: 50px;
+    height: 30px;
 }
 .navbar-nav .menu-item:hover > ul.dropdown-menus {
     opacity: 1;
     visibility: visible;
-    overflow: hidden;
 }
 
 

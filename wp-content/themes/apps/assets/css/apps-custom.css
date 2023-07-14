@@ -4001,3 +4001,6 @@ header#header {
 #header .navbar-nav .nav-item > .nav-link {
     padding: 31px 30px;
 }
+.navbar-nav .menu-item.has-sub-menu > ul.dropdown-menus::after {
+    left: 30px;
+}

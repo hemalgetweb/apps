@@ -226,13 +226,7 @@
 }
 
 
-.form-wrapper {
-  max-width: 760px;
-  margin: auto;
-  background-color: #f2f3f7;
-  border-radius: 30px;
-  padding: 30px;
-}
+
 
 .application-form .form-field {
   border-radius: 50px;

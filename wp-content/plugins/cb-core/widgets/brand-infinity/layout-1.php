@@ -19,7 +19,7 @@ $enable_small_box_class = $settings['enable_small_box'] ? 'has-enable-small-box-
         <?php endif; ?>
       </div>
     <?php else: ?>
-      <div class="marquee-reverse mt-lg-4 mt-3">
+      <div class="marquee-reverse">
         <?php if (!empty($settings['slides'])): ?>
           <div class="top-slide-wrap d-flex align-items-center">
             <?php foreach ($settings['slides'] as $slide): ?>

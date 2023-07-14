@@ -4004,3 +4004,6 @@ header#header {
 .navbar-nav .menu-item.has-sub-menu > ul.dropdown-menus::after {
     left: 30px;
 }
+.client-testimonials-slide .swiper-arrow {
+    background: transparent;
+}

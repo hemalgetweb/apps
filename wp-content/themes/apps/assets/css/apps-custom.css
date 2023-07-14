@@ -3993,3 +3993,6 @@ section.dynamic-service-area .swiper-wrapper {
 #header .dropdown-menus > li {
     margin: 0 !important;
 }
+.m-auto.apps-header-style-1 {
+    position: fixed;
+}

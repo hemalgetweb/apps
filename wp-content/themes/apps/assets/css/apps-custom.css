@@ -3554,6 +3554,7 @@ section.apps-mega-menu.mega-menu-only {
 .footer .footer-widget-area .footer-widget ul li {
     position: relative;
     padding-left: 20px;
+    padding-right: 0;
 }
 
 .footer .footer-widget-area .footer-widget ul li::before {

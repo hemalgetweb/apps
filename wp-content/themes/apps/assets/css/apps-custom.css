@@ -4011,3 +4011,7 @@ header#header {
     background-color: #00C7C7;
     color: #003959;
 }
+.brand-carousel-area.has-enable-small-box-class .top-slide-wrap .slide-item {
+    width: 198px;
+    height: 177px;
+}

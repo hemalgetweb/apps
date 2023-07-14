@@ -3996,3 +3996,6 @@ section.dynamic-service-area .swiper-wrapper {
 .m-auto.apps-header-style-1 {
     position: fixed;
 }
+header#header {
+    position: fixed;
+}

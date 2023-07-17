@@ -480,7 +480,7 @@ class CB_Core_About extends Widget_Base
                         'repeater_list_item'   => __('Offer in-person diners self serve', 'cb-core'),
                     ],
                 ],
-                'title_field' => '{{{ repeater_list_item }}}',
+                'title_field' => '{{{ list_item_text }}}',
             ]
         );
        

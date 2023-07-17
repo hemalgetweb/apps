@@ -4057,3 +4057,9 @@ header#header {
     float: left;
     margin-right: 8px;
 }
+@media (max-width: 767px) {
+    div.about-content-right-5-114 img {
+        transform: translateX(0);
+        margin-top: 60px;
+    }
+}

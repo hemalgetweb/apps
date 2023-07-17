@@ -4093,6 +4093,9 @@ header#header {
         transform: translateX(0);
         margin-top: 60px;
     }
+    .apps-service-section-wrapper-114 p.intro br {
+        display: none;
+    }
     .apps-service-box-2-114.has-enabled-border {
         min-height: auto !important;
     }
@@ -4140,4 +4143,8 @@ header#header {
     .apps-service-section-wrapper-114  .apps-service-section-title-114 br {
         display: none;
     }
+}
+
+div.apps-about-list-box-wrapper-7-114.cb-core-repeater-content .icon img {
+    max-width: 40px;
 }

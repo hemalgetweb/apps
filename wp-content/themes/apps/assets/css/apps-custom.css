@@ -4025,3 +4025,9 @@ header#header {
 .footer-widget-area > * > *:last-child ul li  span {
     padding-left: 0;
 }
+
+@media (max-width: 575px) {
+  .mobileMenu .navbar-nav .menu-item > ul.dropdown-menus {
+      max-width: 300px;
+  }
+}

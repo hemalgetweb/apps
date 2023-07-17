@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
-                    <div class="about-content-right-5-114 text-end">
+                    <div class="about-content-right-5-114 text-lg-end">
                         <?php echo wp_get_attachment_image( $settings['about_image']['id'], 'full' ); ?>
                     </div>
                 </div>

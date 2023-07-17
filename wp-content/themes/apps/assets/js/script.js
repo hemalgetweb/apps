@@ -270,7 +270,10 @@ $(window).scroll(function () {
                         slidesPerView: 1,
                     },
                     575: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1
                     },
                     1200: {
                         slidesPerView: 3,

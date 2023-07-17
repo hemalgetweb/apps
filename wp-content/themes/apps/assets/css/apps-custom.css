@@ -4064,7 +4064,8 @@ header#header {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     div.about-content-right-5-114 img {
-        transform: translateX(32px);
+        transform: translateX(0);
+        max-width: 100%;
     }
     .client-testimonials-slide .client-item-wraps .client-testimonials-card {
         min-height: 512px;

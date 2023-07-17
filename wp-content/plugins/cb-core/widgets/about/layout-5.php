@@ -3,7 +3,7 @@
     <div class="container">
         <div class="about-content-wrapper-main-5-114">
             <div class="row align-items-center">
-                <div class="col-xxl-6">
+                <div class="col-xxl-6 col-xl-6">
                     <div class="about-content-left-5-114">
                         <div class="about-section-title-5-114 pb-40">
                             <?php if(!empty($settings['about_subtitle'])) : ?>
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-6">
+                <div class="col-xxl-6 col-xl-6">
                     <div class="about-content-right-5-114 text-end">
                         <?php echo wp_get_attachment_image( $settings['about_image']['id'], 'full' ); ?>
                     </div>

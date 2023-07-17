@@ -4057,6 +4057,11 @@ header#header {
     float: left;
     margin-right: 8px;
 }
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .about-content-right-5-114 img {
+        transform: translateX(30px);
+    }
+}
 @media (max-width: 767px) {
     div.about-content-right-5-114 img {
         transform: translateX(0);

@@ -1873,7 +1873,7 @@ ul.dropdown-menus li.menu-item a {
         transform: translateX(0);
     }
     div.apps-hero-svg-114 img {
-        max-width: 200px;
+        max-width: 100%;
     }
     .apps-hero-content-wrapper-114 .title {
         font-size: 29px;

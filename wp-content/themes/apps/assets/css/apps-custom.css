@@ -4043,7 +4043,7 @@ header#header {
         display: none;
     }
 }
-@media (min-width: 1024) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
     .elementor-9 .elementor-element.elementor-element-5ef30fb {
         padding-top: 0;
     }

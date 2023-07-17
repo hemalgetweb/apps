@@ -2471,13 +2471,6 @@ a:hover {
   transition: all 0.2s linear;
   z-index: 10;
 }
-
-@media (max-width: 991px) {
-  .swiper-arrow {
-    display: none;
-  }
-}
-
 .swiper-arrow:hover {
   background-color: var(--main-extra-light);
   border-color: var(--main-extra-light) !important;

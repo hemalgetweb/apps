@@ -4006,7 +4006,7 @@ header#header {
     left: 30px;
 }
 .client-testimonials-slide .swiper-arrow {
-    background: transparent;
+    background: #ffff;
 }
 .client-testimonials-slide .swiper-arrow:hover {
     background-color: #00C7C7;

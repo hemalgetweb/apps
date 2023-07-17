@@ -10,9 +10,9 @@ $cbtoolkit_footer_top_repeater = get_theme_mod('cbtoolkit_footer_top_repeater', 
 /*
 cmt_section_footer_2: start section Footer 1
 */
-$footer_class_2[1] = 'col-sm-12 col-md-12 col-xl-6 col-xxl-4 mb-3'; 
-$footer_class_2[2] = 'col-sm-12 col-md-12 col-xl-6 col-xxl-6 mb-3';
-$footer_class_2[3] = 'col-sm-12 col-md-12 col-xl-6 col-xxl-2 mb-3';
+$footer_class_2[1] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-4 mb-3'; 
+$footer_class_2[2] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-6 mb-3';
+$footer_class_2[3] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-2 mb-3';
 $bg_properties = <<<EOD
 background-size: {$footer_background_size_1};
 background-image: url('{$footer_bg_image_1}');

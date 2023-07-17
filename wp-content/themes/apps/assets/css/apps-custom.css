@@ -4088,6 +4088,16 @@ header#header {
         font-size: 25px;
         line-height: 1.4;
     }
+    .client-testimonials-slide .swiper-arrow {
+        position: static;
+        margin: 0 7px;
+        transform: translate(0);
+        margin-top: 30px;
+    }
+    
+    .client-testimonials-slide .swiper-control {
+        text-align: center;
+    }
 }
 @media (max-width: 991px) {
     section.project-area .apps-project-next-114 {

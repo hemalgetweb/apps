@@ -4067,6 +4067,10 @@ header#header {
         transform: translateX(0);
         max-width: 100%;
     }
+    .apps-project-wrapper-114 .apps-project-prev-114, .apps-project-wrapper-114 .apps-project-next-114 {
+        position: static;
+        transform: translate(0);
+    }
     .apps-project-wrapper-114 .apps-project-pagination-wrapper-114 {
         display: flex;
         flex-direction: row-reverse;

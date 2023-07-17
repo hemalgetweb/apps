@@ -4085,3 +4085,22 @@ header#header {
         min-height: auto !important;
     }
 }
+@media (max-width: 991px) {
+    section.project-area .apps-project-next-114 {
+        position: static;
+        transform: translate(0);
+    }
+    
+    section.project-area .apps-project-prev-114 {
+        position: static;
+        transform: translate(0);
+    }
+    
+    .project-area .apps-project-pagination-wrapper-114 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        grid-gap: 0 10px;
+        padding-bottom: 40px;
+    }
+}

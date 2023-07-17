@@ -4103,4 +4103,7 @@ header#header {
         grid-gap: 0 10px;
         padding-bottom: 40px;
     }
+    .client-testimonials-slide .client-item-wraps .client-testimonials-card {
+        min-height: auto;
+    }
 }

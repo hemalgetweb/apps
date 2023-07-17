@@ -4084,6 +4084,10 @@ header#header {
     .apps-service-box-2-114.has-enabled-border {
         min-height: auto !important;
     }
+    .apps-service-section-title-114 {
+        font-size: 25px;
+        line-height: 1.4;
+    }
 }
 @media (max-width: 991px) {
     section.project-area .apps-project-next-114 {

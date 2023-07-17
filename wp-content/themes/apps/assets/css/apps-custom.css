@@ -4048,3 +4048,12 @@ header#header {
         padding-top: 0;
     }
 }
+.apps-scrollable-content-content-114 .apps-panel .apps-content {
+    overflow: hidden;
+    display: block;
+}
+
+.apps-scrollable-content-content-114 .apps-panel .count {
+    float: left;
+    margin-right: 8px;
+}

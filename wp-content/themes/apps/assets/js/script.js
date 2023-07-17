@@ -72,7 +72,7 @@ $(window).scroll(function () {
                 $('.menuAction').on('click', function() {
                     $('body').addClass('overflow-hidden');
                 });
-                $('.navbar-toggler-icons.closeMenu').on('click', function() {
+                $('.closeMenu').on('click', function() {
                     $('body').removeClass('overflow-hidden');
                 })
             })

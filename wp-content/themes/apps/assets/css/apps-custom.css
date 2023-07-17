@@ -4030,6 +4030,10 @@ header#header {
   .mobileMenu .navbar-nav .menu-item > ul.dropdown-menus {
       max-width: 300px;
   }
+  .footer .footer-widget-area .footer-widget ul li {
+        width: 100%;
+        float: none;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .our-strategy .strategy-item {
@@ -4037,9 +4041,5 @@ header#header {
     }
     .apps-service-section-wrapper-114 p.intro br {
         display: none;
-    }
-    .footer .footer-widget-area .footer-widget ul li {
-        width: 100%;
-        float: none;
     }
 }

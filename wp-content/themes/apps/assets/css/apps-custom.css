@@ -4035,4 +4035,11 @@ header#header {
     .our-strategy .strategy-item {
         flex: 0 0 48%;
     }
+    .apps-service-section-wrapper-114 p.intro br {
+        display: none;
+    }
+    .footer .footer-widget-area .footer-widget ul li {
+        width: 100%;
+        float: none;
+    }
 }

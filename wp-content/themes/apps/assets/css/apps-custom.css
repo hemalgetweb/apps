@@ -4078,4 +4078,7 @@ header#header {
         transform: translateX(0);
         margin-top: 60px;
     }
+    .apps-service-box-2-114.has-enabled-border {
+        min-height: auto !important;
+    }
 }

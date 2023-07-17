@@ -4121,3 +4121,8 @@ header#header {
         min-height: auto;
     }
 }
+@media (max-width: 575px) {
+    .PPC-Results .our-strategy.d-flex.justify-content-between {
+        justify-content: center !important;
+    }
+}

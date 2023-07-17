@@ -4113,7 +4113,7 @@ header#header {
     .project-area .apps-project-pagination-wrapper-114 {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: start;
+        justify-content: center;
         grid-gap: 0 10px;
         padding-bottom: 40px;
     }
@@ -4124,5 +4124,8 @@ header#header {
 @media (max-width: 575px) {
     .PPC-Results .our-strategy.d-flex.justify-content-between {
         justify-content: center !important;
+    }
+    .apps-service-section-wrapper-114  .apps-service-section-title-114 br {
+        display: none;
     }
 }

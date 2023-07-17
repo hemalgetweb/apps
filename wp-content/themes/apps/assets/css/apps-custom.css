@@ -4031,3 +4031,8 @@ header#header {
       max-width: 300px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .our-strategy .strategy-item {
+        flex: 0 0 48%;
+    }
+}

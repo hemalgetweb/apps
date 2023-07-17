@@ -70,11 +70,8 @@ $(window).scroll(function () {
                     }
                 });
                 $('.menuAction').on('click', function() {
-                    $('body').addClass('overflow-hidden');
+                    $('body').toggleClass('overflow-hidden');
                 });
-                $('.closeMenu').on('click', function() {
-                    $('body').removeClass('overflow-hidden');
-                })
             })
 
             jQuery('.apps-header-bar-btn-114').on('click', function() {

@@ -69,8 +69,11 @@ $(window).scroll(function () {
                         $(".navbar-toggler").click();
                     }
                 });
-                $('.menuAction').on('click', function() {
-                    $('body').toggleClass('overflow-hidden');
+                $('.navbar-toggler-icons.openMenu').on('click', function() {
+                    $('body').addClass('overflow-hidden');
+                });
+                $('.navbar-toggler-icons.closeMenu').on('click', function() {
+                    $('body').removeClass('overflow-hidden');
                 });
             })
 

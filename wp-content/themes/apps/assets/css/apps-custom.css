@@ -4148,3 +4148,20 @@ header#header {
 div.apps-about-list-box-wrapper-7-114.cb-core-repeater-content .icon img {
     max-width: 40px;
 }
+.apps-el-btn-114 {
+    height: 54px;
+    display: inline-block;
+    padding: 0 30px;
+    border-radius: 4px;
+    background: var(--primary-primary, #00C7C7);
+    line-height: 54px;
+    color: var(--dark-dark-1, #003959);
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.apps-el-btn-114:hover {
+    color: #003959;
+}

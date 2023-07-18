@@ -188,7 +188,7 @@ class CB_Core_About extends Widget_Base
                     'layout' => ['layout-5']
                 ]
              ]
-            );
+        );
         $this->add_control(
         'about_desc',
          [
@@ -201,6 +201,36 @@ class CB_Core_About extends Widget_Base
             ]
          ]
         );
+        $this->add_control(
+        'btn_text',
+         [
+            'label'       => esc_html__( 'Button Text', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => esc_html__( ' Know More', 'cb-core' ),
+            'placeholder' => esc_html__( 'Button', 'cb-core' ),
+            'condition' => [
+                'layout' => ['layout-2']
+             ]
+         ]
+        );
+        $this->add_control(
+         'btn_link',
+         [
+           'label'   => esc_html__( 'Button Link', 'cb-core' ),
+           'type'        => \Elementor\Controls_Manager::URL,
+           'default'     => [
+               'url'               => '#',
+               'is_external'       => true,
+               'nofollow'          => true,
+               'custom_attributes' => '',
+             ],
+             'placeholder' => esc_html__( 'Button', 'cb-core' ),
+             'label_block' => true,
+             'condition' => [
+                'layout' => ['layout-2']
+             ]
+           ]
+         );
         $repeater = new \Elementor\Repeater();
         $repeater->add_control(
             'field_condition',

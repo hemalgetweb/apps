@@ -7,7 +7,7 @@ if($settings['card_height']) {
 ?>
 <!-- dynamic service area start -->
 <section class="dynamic-service-area">
-    <div class="container">
+    <div class="container"> 
         <div class="dynamic-service-wrapper-114">
             <?php if($wp_query->have_posts()) : ?>
             <div class="dynamic-service-active swiper-container">

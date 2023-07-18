@@ -2325,9 +2325,6 @@ a {
     background-color: var(--dark7);
     transition: all 0.2s linear;
     z-index: 10;
-    @media (max-width: 991px) {
-        display: none;
-    }
     &:hover{
         background-color: var(--main-extra-light);
         border-color: var(--main-extra-light) !important;

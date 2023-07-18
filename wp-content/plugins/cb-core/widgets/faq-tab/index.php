@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) exit;
  *
  * @since 1.0.0
  */
-class CB_Core_Faq extends Widget_Base
+class CB_Core_Faq_Tab extends Widget_Base
 {
 
 	/**
@@ -29,7 +29,7 @@ class CB_Core_Faq extends Widget_Base
 	 */
 	public function get_name()
 	{
-		return 'cb-faq';
+		return 'cb-faq-tab';
 	}
 
 	/**
@@ -43,7 +43,7 @@ class CB_Core_Faq extends Widget_Base
 	 */
 	public function get_title()
 	{
-		return __('CB Faq', 'cb-core');
+		return __('CB Faq Tab', 'cb-core');
 	}
 
 	/**
@@ -132,14 +132,7 @@ class CB_Core_Faq extends Widget_Base
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
-        $this->add_control(
-			'faq_unique_key',
-			[
-				'label' => esc_html__( 'Faq Unique Key', 'cb-core' ),
-				'type' => Controls_Manager::HIDDEN,
-				'default' => rand(500, 5000),
-			]
-		);
+        
         $repeater = new \Elementor\Repeater();
         $repeater->add_control(
          'field_condition',
@@ -165,27 +158,27 @@ class CB_Core_Faq extends Widget_Base
            ]
          );
          $repeater->add_control(
-          'faq_content',
-          [
-            'label'       => esc_html__( 'Section Label', 'cb-core' ),
-            'type'        => \Elementor\Controls_Manager::WYSIWYG,
-            'label_block' => true,
-            'placeholder' => esc_html__( 'Placeholder Text', 'cb-core' ),
-            'condition' => [
-                'field_condition' => ['style-1']
-             ]
-          ]
-         );
-         
-         $this->add_control(
-           'slides',
-           [
-             'label'       => esc_html__( 'Faq Repeater', 'cb-core' ),
-             'type'        => \Elementor\Controls_Manager::REPEATER,
-             'fields'      => $repeater->get_controls(),
-             'title_field' => '{{{ faq_title }}}',
-           ]
-         );
+			'select_el_template_faq',
+			[
+				'label'    => esc_html__( 'Select Faq Template ( page )', 'cb-core' ),
+				'type'     => \Elementor\Controls_Manager::SELECT2,
+				'multiple' => false,
+				'label_block' => true,
+				'options'  => apps_get_elementor_template_page(),
+				'condition' => [
+					'field_condition' => ['style-1']
+				]
+		]);
+		
+		 $this->add_control(
+		   'slides',
+		   [
+			 'label'       => esc_html__( 'Faq Reeater', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::REPEATER,
+			 'fields'      => $repeater->get_controls(),
+			 'title_field' => '{{{ faq_title }}}',
+		   ]
+		 );
 		// controls here
 		$this->end_controls_section();
 	}
@@ -208,4 +201,4 @@ class CB_Core_Faq extends Widget_Base
 	}
 }
 
-Plugin::instance()->widgets_manager->register(new CB_Core_Faq());
+Plugin::instance()->widgets_manager->register(new CB_Core_Faq_Tab());

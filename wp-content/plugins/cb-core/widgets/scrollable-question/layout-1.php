@@ -2,7 +2,7 @@
 <section class="scrollable-question-area">
     <div class="container">
         <div class="row">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4">
                 <?php if(!empty($settings['slides'])) : ?>
                 <div class="apps-scrollable-content-sections-nav-114 mb-50 mb-md-0">
                     <nav>
@@ -17,7 +17,7 @@
                 </div>
                 <?php endif; ?>
             </div>
-            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
+            <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-8">
                 <?php if(!empty($settings['slides'])) : ?>
                 <div class="apps-scrollable-content-content-114">
                     <?php foreach($settings['slides'] as $index=>$slide) : ?>

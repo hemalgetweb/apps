@@ -162,6 +162,7 @@
 
 .client-testimonials-slide .client-item-wraps .client-testimonials-card {
   padding: 30px;
+  min-height: 692px;
 }
 
 .client-testimonials-slide .swiper-pagination11 {
@@ -225,13 +226,7 @@
 }
 
 
-.form-wrapper {
-  max-width: 760px;
-  margin: auto;
-  background-color: #f2f3f7;
-  border-radius: 30px;
-  padding: 30px;
-}
+
 
 .application-form .form-field {
   border-radius: 50px;

@@ -307,7 +307,13 @@ class CB_Core_Pricing extends Widget_Base
             ]
         );
         // styles here
-
+        $this->add_control(
+         'pricing_box_height',
+         [
+           'label'   => esc_html__( 'Pricing Box Height', 'cb-core' ),
+           'type'    => \Elementor\Controls_Manager::NUMBER,
+         ]
+        );
         $this->end_controls_section();
     }
 

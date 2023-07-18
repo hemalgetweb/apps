@@ -52,8 +52,8 @@
                                 }
                                 ?>
                                 <a class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 bg-clr-secondary text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
-                                    href="case-studies.html">
-                                    <?php echo $this->get_render_attribute_string('btn_link2'); ?>
+                                <?php echo $this->get_render_attribute_string('btn_link2'); ?>
+                                >
                                     <?php echo cb_core_kses_basic($settings['btn_text2']); ?>
                                     <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,8 +1,11 @@
+<?php
+$pricing_box_height = $settings['pricing_box_height'] ? $settings['pricing_box_height']: '';
+?>
 <!-- pricing start -->
 <section class="pricing <?php echo $settings['active_price_box'] ? esc_attr__('active'): ''; ?>">
     <div class="pricing-wrapper">
         <div class="single-price">
-            <div class="pricing-item radius-6 h-100">
+            <div class="pricing-item radius-6 h-100" style="min-height: <?php echo $pricing_box_height; ?>px;">
                 <div class="pricing-heading">
                     <?php if(!empty($settings['pricing_image']['url'])) :
                         $this->add_render_attribute( 'pricing_image', 'src', $settings['pricing_image']['url'] );

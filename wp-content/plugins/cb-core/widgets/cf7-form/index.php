@@ -118,7 +118,8 @@ class CB_Core_CF7_Form extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core')
+					'layout-1' => __('Layout 1', 'cb-core'),
+					'layout-2' => __('Layout 2', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -141,7 +142,7 @@ class CB_Core_CF7_Form extends Widget_Base
 				'default' => __('Get Weeky & Offer Daily News', 'cb-core'),
 				'placeholder' => __('Type your title here', 'cb-core'),
 				'condition' => [
-					'layout' => ['layout-1']
+					'layout' => ['layout-1', 'layout-2']
 				]
 			]
 		);
@@ -154,9 +155,115 @@ class CB_Core_CF7_Form extends Widget_Base
 				'default' => __('We are excited to get to know more about you, your business, and your needs! ', 'cb-core'),
 				'placeholder' => __('Type your subtitle here', 'cb-core'),
 				'condition' => [
-					'layout' => ['layout-1']
+					'layout' => ['layout-1', 'layout-2']
 				]
 			]
+		);
+		$this->add_control(
+			'section_content',
+			[
+				'label' => __('Section Content', 'cb-core'),
+				'label_block' => true,
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'placeholder' => __('Type your content here', 'cb-core'),
+				'condition' => [
+					'layout' => ['layout-2']
+				]
+			]
+		);
+		
+		$repeater = new \Elementor\Repeater();
+		$repeater->add_control(
+		 'field_condition',
+		 [
+		   'label'   => esc_html__( 'Field Condition', 'cb-core' ),
+		   'type' => \Elementor\Controls_Manager::SELECT,
+		   'options' => [
+			 'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+			 'style-2'  => esc_html__( 'Style 2', 'cb-core' ),
+		   ],
+		   'default' => 'style-1',
+		 ]
+		);
+		 $repeater->add_control(
+		 'address_repeater_title',
+		   [
+			 'label'   => esc_html__( 'Repeater title', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXT,
+			 'label_block' => true,
+			 'condition' => [
+				'field_condition' => ['style-2']
+			 ]
+		   ]
+		 );
+		 $repeater->add_control(
+		 'address_repeater_content',
+		   [
+			 'label'   => esc_html__( 'Repeater Content', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXTAREA,
+			 'label_block' => true,
+			 'condition' => [
+				'field_condition' => ['style-2']
+			 ]
+		   ]
+		 );
+		 
+		 $this->add_control(
+		   'slides',
+		   [
+			 'label'       => esc_html__( 'Address Repeater', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::REPEATER,
+			 'fields'      => $repeater->get_controls(),
+			 'title_field' => '{{{ address_repeater_title }}}',
+		   ]
+		 );
+		 $this->add_control(
+		 'email_text',
+		  [
+			 'label'       => esc_html__( 'Email Text', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXT,
+			 'default'     => esc_html__( 'hello@wadialbada.com', 'cb-core' ),
+			 'placeholder' => esc_html__( 'Email Text', 'cb-core' ),
+			 'condition' => [
+				'layout' => ['layout-2']
+			 ]
+		  ]
+		 );
+		 $this->add_control(
+		 'email_link',
+		  [
+			 'label'       => esc_html__( 'Email Link', 'cb-core' ),
+			 'type'        => \Elementor\Controls_Manager::TEXT,
+			 'default'     => esc_html__( 'hello@wadialbada.com', 'cb-core' ),
+			 'placeholder' => esc_html__( 'Email Link', 'cb-core' ),
+			 'condition' => [
+				'layout' => ['layout-2']
+			 ]
+		  ]
+		 );
+		 $this->add_control(
+			'number_text',
+			 [
+				'label'       => esc_html__( 'Number Text', 'cb-core' ),
+				'type'        => \Elementor\Controls_Manager::TEXT,
+				'default'     => esc_html__( '(307) 555-0133', 'cb-core' ),
+				'placeholder' => esc_html__( 'Number Text', 'cb-core' ),
+				'condition' => [
+				   'layout' => ['layout-2']
+				]
+			 ]
+		);
+		$this->add_control(
+			'number_link',
+			 [
+				'label'       => esc_html__( 'Number Link', 'cb-core' ),
+				'type'        => \Elementor\Controls_Manager::TEXT,
+				'default'     => esc_html__( '307555-0133', 'cb-core' ),
+				'placeholder' => esc_html__( 'Number Link', 'cb-core' ),
+				'condition' => [
+				   'layout' => ['layout-2']
+				]
+			 ]
 		);
 		$this->add_control(
 			'cf7_image',
@@ -206,6 +313,29 @@ class CB_Core_CF7_Form extends Widget_Base
 				'label_block' => true,
 				'options' => ['' => __('', 'cb-core')] + \cb_core_get_cf7_forms(),
 			]
+		);
+		$this->add_control(
+		'cf7_section_title',
+		 [
+			'label'       => esc_html__( 'Form Title', 'cb-core' ),
+			'type'        => \Elementor\Controls_Manager::TEXT,
+			'placeholder' => esc_html__( 'Form Title', 'cb-core' ),
+			'label_block' => true,
+			'condition' => [
+				'layout' => ['layout-2']
+			]
+		 ]
+		);
+		$this->add_control(
+		'cf7_section_content',
+		 [
+			'label'       => esc_html__( 'Form Content', 'cb-core' ),
+			'type'        => \Elementor\Controls_Manager::TEXTAREA,
+			'placeholder' => esc_html__( 'Form Content', 'cb-core' ),
+			'condition' => [
+				'layout' => ['layout-2']
+			]
+		 ]
 		);
 		$this->add_control(
 			'html_class',

@@ -7,12 +7,15 @@ $footer_background_position_select_1 = get_theme_mod('footer_background_position
 $footer_background_blendmode_select_1 = get_theme_mod('footer_background_blendmode_select_1', 'normal');
 $cbtoolkit_copyright_1 = get_theme_mod('cbtoolkit_copyright_1', __('Copyright © 2023 I Wadi Al Bada I All Rights Reserved', 'apps'));
 $cbtoolkit_footer_top_repeater = get_theme_mod('cbtoolkit_footer_top_repeater', array());
+$contact_page_id = '1802';
+$current_page_id = get_the_ID();
+$contact_space_top = $contact_page_id == $current_page_id ? 'pt-100': 'pt-300';
 /*
 cmt_section_footer_2: start section Footer 1
 */
-$footer_class_2[1] = 'col-sm-12 col-md-12 col-xxl-4 mb-3'; 
-$footer_class_2[2] = 'col-sm-12 col-md-12 col-xxl-6 mb-3';
-$footer_class_2[3] = 'col-sm-12 col-md-12 col-xxl-2 mb-3';
+$footer_class_2[1] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-4 mb-3'; 
+$footer_class_2[2] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-6 mb-3';
+$footer_class_2[3] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-2 mb-3';
 $bg_properties = <<<EOD
 background-size: {$footer_background_size_1};
 background-image: url('{$footer_bg_image_1}');
@@ -24,15 +27,16 @@ EOD;
 ?>
 
     <!-- footer -->
-    <footer class="footer bg-clr-deepDark" style="<?PHP ECHO $bg_properties; ?>">
+    <footer class="footer bg-clr-deepDark <?php echo esc_attr($contact_space_top); ?>" style="<?PHP ECHO $bg_properties; ?>">
         <div class="container">
             <div
                 class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">
                 <div class="footer-logo">
-                    <a href="index.html">
+                    <a href="<?php echo home_url('/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class="img-fluid">
                     </a>
                 </div>
+                <?php if(!empty($cbtoolkit_footer_top_repeater)) : ?>
                 <div class="footer-top-right d-flex justify-content-md-center justify-content-xl-start flex-wrap gap-4 align-items-center">
                     <?php foreach($cbtoolkit_footer_top_repeater as $index => $repeater) : ?>
                         <?php if($index == 0) : ?>
@@ -81,6 +85,7 @@ EOD;
                     </div>
                     <?php endif; ?>
                 </div>
+                <?php endif; ?>
             </div>
             <?php if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4')) : ?>
             <div class="footer-widget-area">

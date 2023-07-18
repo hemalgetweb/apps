@@ -42,7 +42,7 @@
                             <?php endif; ?>
                             <div class="apps-contact-form-contact-list-wap-114">
                                 <?php if(!empty($settings['email_text'])) : ?>
-                                <a href="mailto:<?php echo $settings['email_link'] ?? esc_attr($settings['email_link']); ?>"><img src="http://localhost/wp/apps/wp-content/uploads/2023/07/e.png" alt=""> <?php echo esc_html($settings['email_text']); ?></a>
+                                <a href="mailto:<?php echo $settings['email_link'] ?? esc_attr($settings['email_link']); ?>"><img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/e-1.svg" alt=""> <?php echo esc_html($settings['email_text']); ?></a>
                                 <?php endif; ?>
                                 <?php if(!empty($settings['number_text'])) : ?>
                                 <a href="tel:<?php echo $settings['number_link'] ?? $settings['number_link']; ?>"><img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/p-1.svg" alt=""><?php echo esc_html($settings['number_text']); ?></a>

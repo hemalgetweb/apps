@@ -7,6 +7,9 @@ $footer_background_position_select_1 = get_theme_mod('footer_background_position
 $footer_background_blendmode_select_1 = get_theme_mod('footer_background_blendmode_select_1', 'normal');
 $cbtoolkit_copyright_1 = get_theme_mod('cbtoolkit_copyright_1', __('Copyright © 2023 I Wadi Al Bada I All Rights Reserved', 'apps'));
 $cbtoolkit_footer_top_repeater = get_theme_mod('cbtoolkit_footer_top_repeater', array());
+$contact_page_id = '1802';
+$current_page_id = get_the_ID();
+$contact_space_top = $contact_page_id == $current_page_id ? 'pt-100': 'pt-300';
 /*
 cmt_section_footer_2: start section Footer 1
 */
@@ -24,7 +27,7 @@ EOD;
 ?>
 
     <!-- footer -->
-    <footer class="footer bg-clr-deepDark" style="<?PHP ECHO $bg_properties; ?>">
+    <footer class="footer bg-clr-deepDark <?php echo esc_attr($contact_space_top); ?>" style="<?PHP ECHO $bg_properties; ?>">
         <div class="container">
             <div
                 class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">

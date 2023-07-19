@@ -392,11 +392,9 @@ class CREATE_JOB_POST_TYPE_CLASS {
                     <h3>Experience</h3>
                     <input type="text" name="expected_experience" id="expected_experience" value="<?php echo $expected_experience; ?>" placeholder="Expected Experience" style="width: 100%;border-color; #ddd;">
                 </td>
-            </tr>
-            <tr>
                 <td style="padding: 5px;width: 50%;">
                     <h3>Position</h3>
-                    <input type="text" name="position" id="position" value="<?php echo $position; ?>" placeholder="Expected Experience" style="width: 100%;border-color; #ddd;">
+                    <input type="text" name="position" id="position" value="<?php echo $position; ?>" placeholder="Position" style="width: 100%;border-color; #ddd;">
                 </td>
             </tr>
         </table>

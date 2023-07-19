@@ -7,7 +7,7 @@
         <?php if(!empty($settings['slides'])) : ?>
             <div class="row">
             <?php foreach($settings['slides'] as $index => $slide) : ?>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6">
                     <div class="apps-fz-about-team-single mb-40">
                         <div class="apps-fz-about-team-single-img">
                             <?php if(!empty($slide['member_img']['url'])) : ?>

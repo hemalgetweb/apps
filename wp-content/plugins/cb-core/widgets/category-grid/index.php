@@ -131,13 +131,24 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core')
+					'layout-1' => __('Layout 1', 'cb-core'),
+					'layout-2' => __('Layout 2', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
 			]
 		);
 		// main controls
+		$this->add_control(
+		 'box_height',
+		 [
+		   'label'   => esc_html__( 'Box Height', 'cb-core' ),
+		   'type'    => \Elementor\Controls_Manager::NUMBER,
+		   'condition' => [
+			'layout' => ['layout-2']
+		   ]
+		 ]
+		);
 		$repeater = new \Elementor\Repeater();
 		$repeater->add_control(
 		 'field_condition',
@@ -147,6 +158,7 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 		   'label_block' => true,
 		   'options' => [
 			 'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+			 'style-2'  => esc_html__( 'Style 2', 'cb-core' ),
 		   ],
 		   'default' => 'style-1',
 		 ]
@@ -158,7 +170,7 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 			 'type'        => \Elementor\Controls_Manager::TEXT,
 			 'label_block' => true,
 			 'condition' => [
-				'field_condition' => ['style-1']
+				'field_condition' => ['style-1', 'style-2']
 			 ]
 		   ]
 		 );
@@ -172,7 +184,7 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 				'url' => \Elementor\Utils::get_placeholder_image_src(),
 			],
 			'condition' => [
-				'field_condition' => ['style-1']
+				'field_condition' => ['style-1', 'style-2']
 			 ]
 		  ]
 		 );

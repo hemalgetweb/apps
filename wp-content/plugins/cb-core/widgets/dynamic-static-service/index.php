@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly and CF7 Not install
  *
  * @since 1.0.0
  */
-class CB_Core_Dynamic_Service extends Widget_Base
+class CB_Core_Dynamic_Static_Service extends Widget_Base
 {
 
 	/**
@@ -29,7 +29,7 @@ class CB_Core_Dynamic_Service extends Widget_Base
 	 */
 	public function get_name()
 	{
-		return 'cb-dynamic-service';
+		return 'cb-dynamic-static-service';
 	}
 
 	/**
@@ -43,7 +43,7 @@ class CB_Core_Dynamic_Service extends Widget_Base
 	 */
 	public function get_title()
 	{
-		return __('CB Dynamic Service', 'cb-core');
+		return __('CB Dynamic Static Service', 'cb-core');
 	}
 
 	/**
@@ -126,9 +126,9 @@ class CB_Core_Dynamic_Service extends Widget_Base
 		);
 		$this->end_controls_section();
 		$this->start_controls_section(
-			'_section_dynamic_service',
+			'_section_dynamic_static_service',
 			[
-				'label' => __('Dynamic Service Content', 'cb-core'),
+				'label' => __('Dynamic Static Service Content', 'cb-core'),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -152,53 +152,81 @@ class CB_Core_Dynamic_Service extends Widget_Base
 		   ]
 		 ]
 		);
-		// main controls here
+        
+        $repeater = new \Elementor\Repeater();
+        
+        $repeater->add_control(
+            'field_condition',
+            [
+            'label'   => esc_html__( 'Field Condition', 'cb-core' ),
+            'type' => \Elementor\Controls_Manager::SELECT,
+            'options' => [
+                'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+            ],
+            'default' => 'style-1',
+            ]
+        );
+
+        $repeater->add_control(
+         'service_image',
+         [
+           'label'   => esc_html__( 'Service Image', 'cb-core' ),
+           'type'    => \Elementor\Controls_Manager::MEDIA,
+             'default' => [
+               'url' => \Elementor\Utils::get_placeholder_image_src(),
+           ],
+           'condition' => [
+            'field_condition' => ['style-1']
+           ]
+         ]
+        );
+        $repeater->add_control(
+        'service_title',
+         [
+            'label'       => esc_html__( 'Service Title', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'placeholder' => esc_html__( 'Service Title', 'cb-core' ),
+            'condition' => [
+                'field_condition' => ['style-1']
+            ]
+         ]
+        );
+        $repeater->add_control(
+         'service_title_link',
+         [
+           'label'   => esc_html__( 'Service Title Link', 'cb-core' ),
+           'type'        => \Elementor\Controls_Manager::URL,
+           'default'     => [
+               'url'               => '#',
+               'is_external'       => true,
+               'nofollow'          => true,
+               'custom_attributes' => '',
+             ],
+             'placeholder' => esc_html__( 'Service Title Link', 'cb-core' ),
+             'label_block' => true,
+             'condition' => [
+                'field_condition' => ['style-1']
+            ]
+           ]
+         );
+         $repeater->add_control(
+          'service_excerpt',
+          [
+            'label'       => esc_html__( 'Service Excerpt', 'Text-domain' ),
+            'type'        => \Elementor\Controls_Manager::TEXTAREA,
+            'rows'        => 10,
+            'placeholder' => esc_html__( 'Service Excerpt', 'Text-domain' ),
+          ]
+         );
         $this->add_control(
-			'query_type',
-			[
-				'label' => __('Query type', 'cb-core'),
-				'type' => Controls_Manager::SELECT,
-				'default' => 'individual',
-				'options' => [
-					'category' => __('Category', 'cb-core'),
-					'individual' => __('Individual', 'cb-core'),
-				],
-			]
-		);
-		$this->add_control(
-			'cat_query',
-			[
-				'label' => __('Category', 'cb-core'),
-				'type' => Controls_Manager::SELECT2,
-				'options' => apps_drop_cat('category', 'service'),
-				'multiple' => true,
-				'label_block' => true,
-				'condition' => [
-					'query_type' => 'category',
-				],
-			]
-		);
-		$this->add_control(
-			'id_query',
-			[
-				'label' => __('Posts', 'cb-core'),
-				'type' => Controls_Manager::SELECT2,
-				'options' => apps_drop_posts('service'),
-				'multiple' => true,
-				'label_block' => true,
-				'condition' => [
-					'query_type' => 'individual',
-				],
-			]
-		);
-		$this->add_control(
-			'posts_per_page',
-			[
-				'label' => __('Posts Per Page', 'cb-core'),
-				'type' => Controls_Manager::NUMBER,
-				'default' => 8,
-			]
-		);
+           'slides',
+           [
+             'label'       => esc_html__( 'Section Label', 'cb-core' ),
+             'type'        => \Elementor\Controls_Manager::REPEATER,
+             'fields'      => $repeater->get_controls(),
+             'title_field' => '{{{ service_title }}}',
+           ]
+         );
 		$this->end_controls_section();
 	}
 
@@ -215,36 +243,10 @@ class CB_Core_Dynamic_Service extends Widget_Base
 	{
 
 		$settings = $this->get_settings();
-		$per_page = $settings['posts_per_page'];
-		$cat = $settings['cat_query'];
-		$id = $settings['id_query'];
-
-		if ($settings['query_type'] == 'category') {
-			$query_args = array(
-				'post_type' => 'service',
-				'posts_per_page' => $per_page,
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'category',
-						'field' => 'term_id',
-						'terms' => $cat,
-					),
-				),
-			);
-		}
-		if ($settings['query_type'] == 'individual') {
-			$query_args = array(
-				'post_type' => 'service',
-				'posts_per_page' => $per_page,
-				'post__in' => $id,
-				'orderby' => 'post__in'
-			);
-		}
-		$wp_query = new \WP_Query($query_args);
 		?>
 
         <?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';
 	}
 }
 
-Plugin::instance()->widgets_manager->register(new CB_Core_Dynamic_Service());
+Plugin::instance()->widgets_manager->register(new CB_Core_Dynamic_Static_Service());

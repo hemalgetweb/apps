@@ -13,7 +13,7 @@
             </div>
             <div class="strategy-info">
               <?php if (!empty($slide['strategy_title'])): ?>
-                <h5 class="text-white fs-6 mb-0 lh-base">
+                <h5 class="text-white fs-6 mb-0 lh-base fw-light">
                   <?php echo cb_core_kses_basic($slide['strategy_title']); ?>
                 </h5>
               <?php endif; ?>

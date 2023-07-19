@@ -21,8 +21,22 @@
 //     // code should be execute here
 
 // });
-
+$(window).on('load resize', function() {
+        var windowWidth = $(window).width();
+        // Common actions for both 'load' and 'resize' events
+        if(windowWidth < 1200) {
+            $('ul#menu-main-menu > li > a').on('click', function(e) {
+                e.preventDefault();
+            })
+        }
+      });
 // fixed-header -Js
+    $('.navbar-toggler-icons.openMenu').on('click', function() {
+        $('body').addClass('overflow-hidden');
+    });
+    $('.navbar-toggler-icons.closeMenu').on('click', function() {
+        $('body').removeClass('overflow-hidden');
+    });
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 100) {
         $('header').addClass('fixed-header');
@@ -69,6 +83,7 @@ $(window).scroll(function () {
                         $(".navbar-toggler").click();
                     }
                 });
+               
             })
 
             jQuery('.apps-header-bar-btn-114').on('click', function() {
@@ -223,7 +238,7 @@ $(window).scroll(function () {
                             spaceBetween: 30,
                         },
                         768: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                             spaceBetween: 30,
                         },
                         992: {
@@ -263,7 +278,13 @@ $(window).scroll(function () {
                         slidesPerView: 1,
                     },
                     575: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1
+                    },
+                    992: {
+                        slidesPerView: 2
                     },
                     1200: {
                         slidesPerView: 3,
@@ -273,10 +294,11 @@ $(window).scroll(function () {
             });
             });
         }
+
         $( window ).on( 'elementor/frontend/init', function() {
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-project.default', CB_Project );
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-testimonial.default', CB_Testimonial );
-            elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-dynamic-service.default', CB_Dynamic_Service );
+            elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-dynamic-static-service.default', CB_Dynamic_Service );
         } );
 
 

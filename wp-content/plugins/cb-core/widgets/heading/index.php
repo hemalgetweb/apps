@@ -196,7 +196,7 @@ class CB_Core_Heading extends Widget_Base
                     'layout' => ['layout-1']
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .apps-service-section-title-114, {{WRAPPER}} .apps-service-section-subtitle-114, {{WRAPPER}} .intro' => 'text-align: {{VALUE}};',
+                    '{{WRAPPER}} .apps-service-section-title-114, {{WRAPPER}} .apps-service-section-subtitle-114, {{WRAPPER}} p' => 'text-align: {{VALUE}};',
                 ]
             ]
         );
@@ -207,6 +207,19 @@ class CB_Core_Heading extends Widget_Base
                 'label' => __('Style', 'cb-core'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
+        );
+        $this->add_control(
+         'title_bg_color',
+         [
+           'label'       => esc_html__( 'Title BG Color', 'Text-domain' ),
+           'type'     => \Elementor\Controls_Manager::COLOR,
+           'condition' => [
+            'layout' => ['layout-2']
+           ],
+           'selectors' => [
+           '{{WRAPPER}} .apps-steps-heading-114 .apps-title span' => 'background-color: {{VALUE}}',
+           ],
+         ]
         );
         $this->add_control(
             '_subtitle_heading',

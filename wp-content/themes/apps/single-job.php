@@ -111,21 +111,17 @@ if($get_selected_page_from_settings) {
 </section>
 <!--/ job_post -->
 
-
-<?php
-get_footer();
-?>
-
 <?php
 if (class_exists('Elementor\Plugin') && function_exists('get_post_meta')) {
   $elementor_template_id = get_post_meta($post_id, '_elementor_template_id', true);
 
   if (!empty($elementor_template_id)) {
-      $elementor = \Elementor\Plugin::$instance;
-      $content = $elementor->frontend->get_builder_content( $elementor_template_id );
-
-      echo '<div class="elementor-wrapper">';
-      echo $content; // Render the Elementor content
-      echo '</div>';
+    $elementor = \Elementor\Plugin::$instance;
+    $content = $elementor->frontend->get_builder_content($elementor_template_id);
+    echo '<div class="elementor-wrapper">';
+    echo $content; // Render the Elementor content
+    echo '</div>';
   }
 }
+
+get_footer();

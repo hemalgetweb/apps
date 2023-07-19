@@ -263,7 +263,7 @@ if (class_exists('TGM_Plugin_Activation')) {
 function add_extra_menu_item($item_output, $item, $depth, $args)
 {
 	// Get the custom field value for the current menu item
-	$extra_info = get_field('menu_info', $item->ID);
+	$extra_info = function_exists('get_field') ?? get_field('menu_info', $item->ID);
 	// If the custom field value exists, wrap the menu title and extra info in a single <div>
 	if ($extra_info) {
 		$extra_info_markup = '<span class="extra-info">' . $extra_info . '</span>';

@@ -21,7 +21,15 @@
 //     // code should be execute here
 
 // });
-
+$(window).on('load resize', function() {
+        var windowWidth = $(window).width();
+        // Common actions for both 'load' and 'resize' events
+        if(windowWidth < 1200) {
+            $('ul#menu-main-menu > li > a').on('click', function(e) {
+                e.preventDefault();
+            })
+        }
+      });
 // fixed-header -Js
     $('.navbar-toggler-icons.openMenu').on('click', function() {
         $('body').addClass('overflow-hidden');
@@ -286,6 +294,7 @@ $(window).scroll(function () {
             });
             });
         }
+
         $( window ).on( 'elementor/frontend/init', function() {
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-project.default', CB_Project );
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-testimonial.default', CB_Testimonial );

@@ -5,18 +5,16 @@ $job_duration = get_post_meta($post_id, 'job_duration', true);
 $job_type = get_post_meta($post_id, 'onsite', true);
 $company_tagline = get_post_meta($post_id, 'company_tagline', true);
 // Replace 'job_category' with your actual taxonomy name
-$taxonomy = 'job_category';
-$categories = get_the_terms($post_id, $taxonomy);
+$categories = get_the_category($post_id);
 $cat_name = '';
+var_dump($categories);
+die();
 
 if ($categories && !is_wp_error($categories)) {
     // Get the first term (category)
     $first_category = reset($categories);
     // Extract the category name
     $cat_name = $first_category->name;
-} else {
-  echo "no cat found";
-  die();
 }
 // pass page id to application form
 $nonce = wp_create_nonce('add-application-'. $post_id);

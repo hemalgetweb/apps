@@ -47,7 +47,7 @@ if($get_selected_page_from_settings) {
     <div class="row">
       <div class="col-lg-8">
         <div class="apps-job-post-content-114">
-          <?php the_content(); ?>
+          <?php echo get_the_content(); ?>
         </div>
       </div>
       <div class="col-lg-4">
@@ -108,6 +108,7 @@ if($get_selected_page_from_settings) {
   </div>
 </section>
 <!--/ job_post -->
+<?php elementor_theme_do_location(); ?>
 
 
 <?php

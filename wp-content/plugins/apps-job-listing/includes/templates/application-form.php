@@ -46,7 +46,7 @@ FORM_HANDLER\updateApplicationFormOptions();
       </div>
       <?php if (isset($_SESSION['submit_application']) && $_SESSION['submit_application'] === 'success') : ?>
       <div class="alert alert-success">Your Appliation Submitted Successfully</div>
-      <?php session_destroy(); endif; ?>
+      <?php unset($_SESSION['submit_application']); endif; ?>
       <form enctype="multipart/form-data" action="#" method="post" class="application-form">
         <div class="row">
           <div class="col-12">

@@ -22,18 +22,6 @@ if($get_selected_page_from_settings) {
     $selected_page_url
   );
 }
-
-
-/**elementor */
-// Check if Elementor is active and the current page has an Elementor template assigned
-if (class_exists('Elementor\Plugin') && function_exists('get_post_meta')) {
-  $elementor_template_id = 'elementor-template-id'; // Replace with your Elementor template ID
-
-  if (!empty($elementor_template_id)) {
-      $elementor = \Elementor\Plugin::$instance;
-      $content = $elementor->frontend->get_builder_content($elementor_template_id);
-  }
-}
 ?>
 
 <!-- job banner area start -->
@@ -122,9 +110,5 @@ if (class_exists('Elementor\Plugin') && function_exists('get_post_meta')) {
   </div>
 </section>
 <!--/ job_post -->
-<!-- Elementor section -->
-<div class="elementor-wrapper">
-    <?php echo $content; ?>
-</div>
 
 <?php get_footer();

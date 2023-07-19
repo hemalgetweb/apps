@@ -117,11 +117,15 @@ get_footer();
 ?>
 
 <?php
-// Check if Elementor is active and the current page has an Elementor template assigned
-if (function_exists('elementor_theme_do_location') && function_exists('get_post_meta')) {
+if (class_exists('Elementor\Plugin') && function_exists('get_post_meta')) {
   $elementor_template_id = get_post_meta($post_id, '_elementor_template_id', true);
+
   if (!empty($elementor_template_id)) {
-      // Render the Elementor content for the current page
-      elementor_theme_do_location($elementor_template_id);
+      $elementor = \Elementor\Plugin::$instance;
+      $content = $elementor->frontend->get_builder_content( $elementor_template_id );
+
+      echo '<div class="elementor-wrapper">';
+      echo $content; // Render the Elementor content
+      echo '</div>';
   }
 }

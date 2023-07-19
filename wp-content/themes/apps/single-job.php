@@ -22,6 +22,18 @@ if($get_selected_page_from_settings) {
     $selected_page_url
   );
 }
+
+
+/**elementor */
+// Check if Elementor is active and the current page has an Elementor template assigned
+if (class_exists('Elementor\Plugin') && function_exists('get_post_meta')) {
+  $elementor_template_id = 'elementor-template-id'; // Replace with your Elementor template ID
+
+  if (!empty($elementor_template_id)) {
+      $elementor = \Elementor\Plugin::$instance;
+      $content = $elementor->frontend->get_builder_content($elementor_template_id);
+  }
+}
 ?>
 
 <!-- job banner area start -->
@@ -110,18 +122,9 @@ if($get_selected_page_from_settings) {
   </div>
 </section>
 <!--/ job_post -->
+<!-- Elementor section -->
+<div class="elementor-wrapper">
+    <?php echo $content; ?>
+</div>
 
-<?php
-if (class_exists('Elementor\Plugin') && function_exists('get_post_meta')) {
-  $elementor_template_id = get_post_meta($post_id, '_elementor_template_id', true);
-
-  if (!empty($elementor_template_id)) {
-    $elementor = \Elementor\Plugin::$instance;
-    $content = $elementor->frontend->get_builder_content($elementor_template_id);
-    echo '<div class="elementor-wrapper">';
-    echo $content; // Render the Elementor content
-    echo '</div>';
-  }
-}
-
-get_footer();
+<?php get_footer();

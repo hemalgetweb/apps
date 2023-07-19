@@ -226,7 +226,6 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
                 $atts['aria-expanded'] = 'false';
                 $atts['class']         = '';
                 $atts['role']         = 'button';
-                $atts['id']            = 'menu-item-dropdown-' . $item->ID;
             } else {
                 if ( true === $this->has_schema ) {
                     $atts['itemprop'] = 'url';

@@ -274,19 +274,3 @@ function add_extra_menu_item($item_output, $item, $depth, $args)
 }
 add_filter('walker_nav_menu_start_el', 'add_extra_menu_item', 10, 4);
 
-// Check if Elementor is active and the current page has an Elementor template assigned
-if (function_exists('elementor_theme_do_location') && function_exists('get_post_meta')) {
-    $elementor_template_id = get_post_meta($post_id, '_elementor_template_id', true);
-    if (!empty($elementor_template_id)) {
-        // Render the Elementor content for the current page
-        echo '<div class="elementor-wrapper">';
-        elementor_theme_do_location($elementor_template_id);
-        echo '</div>';
-    } else {
-        // If no Elementor template is assigned, display the default content using the_content()
-        the_content();
-    }
-} else {
-    // If Elementor is not active, display the default content using the_content()
-    the_content();
-}

@@ -4,11 +4,9 @@ $post_id = get_the_ID();
 $job_duration = get_post_meta($post_id, 'job_duration', true);
 $job_type = get_post_meta($post_id, 'onsite', true);
 $company_tagline = get_post_meta($post_id, 'company_tagline', true);
+$expected_experience = get_post_meta($post_id, 'expected_experience', true);
+$position = get_post_meta($post_id, 'position', true);
 $categories = get_the_category();
-$cat_name = '';
-if ( ! empty( $categories ) ) {
-  $cat_name = $categories[0]->name;
-}
 // pass page id to application form
 $nonce = wp_create_nonce('add-application-'. $post_id);
 $url = '';
@@ -27,7 +25,7 @@ if($get_selected_page_from_settings) {
 ?>
 
 <!-- job banner area start -->
-<section class="job-banner-area pt-60 pb-100">
+<section class="job-banner-area pt-175 pb-100">
   <div class="container">
     <span class="apps-job-banner-subtitle-114"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="rect"> Jobs</span>
     <h2 class="apps-job-banner-title-114"><?php echo get_the_title(); ?></h2>
@@ -61,8 +59,8 @@ if($get_selected_page_from_settings) {
           <ul class="job_key ps-4 mb-4">
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
               <?php echo esc_html__('Position --- ', 'apps'); ?>
-              <?php if(!empty($cat_name)) : ?>
-                <?php echo esc_html($cat_name); ?>
+              <?php if(!empty($position)) : ?>
+                <?php echo esc_html($position); ?>
               <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
@@ -79,8 +77,8 @@ if($get_selected_page_from_settings) {
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
               <?php echo esc_html__('Experience --- ', 'apps'); ?>
-              <?php if(!empty($company_tagline)) : ?>
-                <?php echo esc_html($company_tagline); ?>
+              <?php if(!empty($expected_experience)) : ?>
+                <?php echo esc_html($expected_experience); ?>
               <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">

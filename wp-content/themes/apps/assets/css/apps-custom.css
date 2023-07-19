@@ -4219,7 +4219,6 @@ div.apps-about-list-box-wrapper-7-114.cb-core-repeater-content .icon img {
 .apps-category-grid-item-single-114 .title {
     color: var(--dark-dark-2, #1F516D);
     text-align: center;
-/* Headline/H6/Medium */
     font-family: Cairo;
     font-size: 16px;
     font-style: normal;
@@ -4233,4 +4232,12 @@ div.apps-about-list-box-wrapper-7-114.cb-core-repeater-content .icon img {
 }
 div.apps-category-grid-item-single-114 .icon img {
     margin-bottom: 0;
+    max-width: 48px;
+}
+.tech-stack-box-icon-single-114 .icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+.pt-175 {
+    padding-top: 175px;
 }

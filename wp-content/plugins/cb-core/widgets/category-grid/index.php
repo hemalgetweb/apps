@@ -139,6 +139,16 @@ class CB_Core_Woo_Category_Grid extends Widget_Base
 			]
 		);
 		// main controls
+		$this->add_control(
+		 'box_height',
+		 [
+		   'label'   => esc_html__( 'Box Height', 'cb-core' ),
+		   'type'    => \Elementor\Controls_Manager::NUMBER,
+		   'condition' => [
+			'layout' => ['layout-2']
+		   ]
+		 ]
+		);
 		$repeater = new \Elementor\Repeater();
 		$repeater->add_control(
 		 'field_condition',

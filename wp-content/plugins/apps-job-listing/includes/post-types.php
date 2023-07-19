@@ -326,6 +326,7 @@ class CREATE_JOB_POST_TYPE_CLASS {
         $company_tagline = get_post_meta($post->ID, 'company_tagline', true);
         $company_twitter = get_post_meta($post->ID, 'company_twitter', true);
         $company_video = get_post_meta($post->ID, 'company_video', true);
+        $position = get_post_meta($post->ID, 'position', true);
         $listing_expire = get_post_meta($post->ID, 'listing_expire', true);
         $expected_experience = get_post_meta($post->ID, 'expected_experience', true);
         $post_id = $post->ID;
@@ -390,6 +391,10 @@ class CREATE_JOB_POST_TYPE_CLASS {
                 <td style="padding: 5px;width: 50%;">
                     <h3>Experience</h3>
                     <input type="text" name="expected_experience" id="expected_experience" value="<?php echo $expected_experience; ?>" placeholder="Expected Experience" style="width: 100%;border-color; #ddd;">
+                </td>
+                <td style="padding: 5px;width: 50%;">
+                    <h3>Position</h3>
+                    <input type="text" name="position" id="position" value="<?php echo $position; ?>" placeholder="Position" style="width: 100%;border-color; #ddd;">
                 </td>
             </tr>
         </table>
@@ -472,6 +477,10 @@ class CREATE_JOB_POST_TYPE_CLASS {
         // Save the listing expire value
         if (isset($_POST['expected_experience'])) {
             update_post_meta($post_id, 'expected_experience', sanitize_text_field($_POST['expected_experience']));
+        }
+        // Save the listing expire value
+        if (isset($_POST['position'])) {
+            update_post_meta($post_id, 'position', sanitize_text_field($_POST['position']));
         }
     }
     

@@ -123,5 +123,4 @@ if (function_exists('elementor_theme_do_location') && function_exists('get_post_
   if (!empty($elementor_template_id)) {
       // Render the Elementor content for the current page
       elementor_theme_do_location($elementor_template_id);
-  }
-?>
+}

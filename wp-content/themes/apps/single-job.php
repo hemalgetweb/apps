@@ -48,7 +48,7 @@ if($get_selected_page_from_settings) {
       <div class="col-lg-8">
         <div class="apps-job-post-content-114">
           <?php
-          the_content();
+          echo get_the_content();
           ?>
         </div>
       </div>

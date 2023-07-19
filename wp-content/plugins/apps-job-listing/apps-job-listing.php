@@ -19,6 +19,7 @@ define("AJL_DATA_DIR", plugin_dir_path(__FILE__) . "data/");
 define("AJL_AJAX_DIR", plugin_dir_path(__FILE__) . "ajax/");
 define("AJL_ADMIN_DIR", plugin_dir_url(__FILE__) . "assets/admin/");
 
+
 class Apps_Job_Listing {
     private $version;
 
@@ -92,14 +93,6 @@ class Apps_Job_Listing {
         include_once(AJL_INCLUDE_DIR. 'shortcodes/application_form.php');
         include_once(AJL_INCLUDE_DIR. 'meta-box/application-meta-box.php');
         include_once(AJL_AJAX_DIR. 'application-ajax-handler.php');
-
-    function include_required_files()
-    {
-        include_once(AJL_INCLUDE_DIR . 'post-types.php');
-        include_once(AJL_INCLUDE_DIR . 'post-type-application.php');
-        include_once(AJL_INCLUDE_DIR . 'form-handler/application-form-handler.php');
-        include_once(AJL_INCLUDE_DIR . 'shortcodes/application_form.php');
-        include_once(AJL_INCLUDE_DIR . 'meta-box/application-meta-box.php');
     }
 
     function load_admin_assets()

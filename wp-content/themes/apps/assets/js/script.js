@@ -298,7 +298,7 @@ $(window).scroll(function () {
         $( window ).on( 'elementor/frontend/init', function() {
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-project.default', CB_Project );
             elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-testimonial.default', CB_Testimonial );
-            elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-dynamic-service.default', CB_Dynamic_Service );
+            elementorFrontend.hooks.addAction( 'frontend/element_ready/cb-dynamic-static-service.default', CB_Dynamic_Service );
         } );
 
 

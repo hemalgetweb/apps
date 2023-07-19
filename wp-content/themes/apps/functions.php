@@ -273,3 +273,13 @@ function add_extra_menu_item($item_output, $item, $depth, $args)
 	return $item_output;
 }
 add_filter('walker_nav_menu_start_el', 'add_extra_menu_item', 10, 4);
+function remove_comment_field_for_page($open, $post_id) {
+	$page_id = get_option('application_form_page_id');
+	if ( $post_id === get_the_ID() ) {
+		// Disable comments for the specified page
+		$open = false;
+	}
+
+	return $open;
+}
+add_filter( 'comments_open', 'remove_comment_field_for_page',  10, 2 );

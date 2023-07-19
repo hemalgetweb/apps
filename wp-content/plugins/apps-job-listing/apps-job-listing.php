@@ -12,7 +12,10 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 define("AJL_PLUGINS_VERSION", time());
 define("AJL_INCLUDE_DIR", plugin_dir_path(__FILE__) . "includes/");
+define("AJL_CONTACT_DIR", plugin_dir_path(__FILE__) . "contact/");
+define("AJL_VENDOR_DIR", plugin_dir_path(__FILE__) . "vendors/");
 define("AJL_DATA_DIR", plugin_dir_path(__FILE__) . "data/");
+define("AJL_AJAX_DIR", plugin_dir_path(__FILE__) . "ajax/");
 define("AJL_ADMIN_DIR", plugin_dir_url(__FILE__) . "assets/admin/");
 
 class Apps_Job_Listing {
@@ -26,17 +29,8 @@ class Apps_Job_Listing {
         add_action("plugins_loaded", [$this, "get_all_country_list"]);
         register_activation_hook(__FILE__, [$this, 'increase_max_allowed_packet']);
         add_action('admin_enqueue_scripts', [$this, 'enqueue_image_meta_box_scripts']);
-        add_filter( 'comments_open', [$this, 'remove_comment_field_for_page'],  10, 2 );
     }
-    function remove_comment_field_for_page($open, $post_id) {
-        $page_id = get_option('application_form_page_id');
-        if ( $post_id === $page_id ) {
-            // Disable comments for the specified page
-            $open = false;
-        }
-    
-        return $open;
-    }
+   
     function enqueue_image_meta_box_scripts($hook) {
         if ($hook === 'post.php' || $hook === 'post-new.php') {
             wp_enqueue_media();
@@ -72,11 +66,13 @@ class Apps_Job_Listing {
     }
     
     function include_required_files() {
+        include_once(AJL_CONTACT_DIR. 'email/send-mail-for-application.php');
         include_once(AJL_INCLUDE_DIR. 'post-types.php');
         include_once(AJL_INCLUDE_DIR. 'post-type-application.php');
         include_once(AJL_INCLUDE_DIR. 'form-handler/application-form-handler.php');
         include_once(AJL_INCLUDE_DIR. 'shortcodes/application_form.php');
         include_once(AJL_INCLUDE_DIR. 'meta-box/application-meta-box.php');
+        include_once(AJL_AJAX_DIR. 'application-ajax-handler.php');
     }
     
     function load_admin_assets() {

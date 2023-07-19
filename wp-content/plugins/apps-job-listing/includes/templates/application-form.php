@@ -16,7 +16,7 @@ $post_id = isset( $_GET['post'] ) ? intval( $_GET['post'] ) : 0;
 $job_title = '';
 $job_id = '';
 if(isset( $_GET['_wpnonce'] )) {
-  if ( current_user_can( 'edit_post', $post_id ) && wp_verify_nonce( $_REQUEST['_wpnonce'], 'add-application-' . $post_id ) ) {
+  if ( wp_verify_nonce( $_REQUEST['_wpnonce'], 'add-application-' . $post_id ) ) {
     $job_title = get_the_title($post_id);
     $job_id = $post_id;
   }
@@ -43,19 +43,21 @@ FORM_HANDLER\updateApplicationFormOptions();
       <form enctype="multipart/form-data" action="#" method="post" class="application-form">
         <div class="row">
           <div class="col-12">
-            <label for="application_job_id" class="form-label fs-14 fw-bold text-clr-dark2">Job Title *</label>
-            <?php if($pages->have_posts()) : ?>
-              <select class="select2-init form-select fs-14 text-clr-dark2 form-field mb-4" id="application_job_id" name="application_job_id">
-                  <?php while($pages->have_posts()) :
-                  $pages->the_post(); 
-                  $page_id = get_the_ID();
-                  $page_title = get_the_title($page_id);
-                  $selected = $job_id == $page_id ? 'selected':'';
-                  ?>
-                      <option <?php echo $selected; ?> value="<?php echo $page_id; ?>"><?php echo $page_title; ?></option>
-                  <?php endwhile; ?>
-              </select>
-            <?php endif; ?>
+            <div class="mb-20">
+              <label for="application_job_id" class="form-label fs-14 fw-bold text-clr-dark2">Job Title *</label>
+              <?php if($pages->have_posts()) : ?>
+                <select class="select2-init form-select fs-14 text-clr-dark2 form-field mb-4" id="application_job_id" name="application_job_id">
+                    <?php while($pages->have_posts()) :
+                    $pages->the_post(); 
+                    $page_id = get_the_ID();
+                    $page_title = get_the_title($page_id);
+                    $selected = $job_id == $page_id ? 'selected':'';
+                    ?>
+                        <option <?php echo $selected; ?> value="<?php echo $page_id; ?>"><?php echo $page_title; ?></option>
+                    <?php endwhile; ?>
+                </select>
+              <?php endif; ?>
+            </div>
           </div>
           <div class="col-md-6">
             <div class="mb-4">
@@ -122,7 +124,7 @@ FORM_HANDLER\updateApplicationFormOptions();
                 </span>
               </label>
               <p class="fs-12 mb-4 pb-3">
-                Allowed formates are .jpg, .jpeg, .png, .gif, .docx, .doc, .pdf and maximum size 10MB
+                Allowed formats are .jpg, .jpeg, .png, .gif, .docx, .doc, .pdf, and maximum size is 10MB
               </p>
               <div class="btn-wrap">
                 <button type="submit" name="submit_application" class="bg-btn btn bg-clr-primary text-clr-dark1 px-4 fw-bold">

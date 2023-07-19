@@ -32,7 +32,8 @@ function updateApplicationFormOptions() {
         if (!move_uploaded_file($application_upload_file_tmp_path, $plugin_directory . $unique_file_name)) {
           echo 'Failed to move the uploaded file.';
         }
-        $image_saved_path = $plugin_directory.$unique_file_name;
+        $image_saved_base_path = $upload_dir['baseurl'];
+        $sanitized_image_url = $image_saved_base_path . '/apps-job-listing/' . $unique_file_name;
         $application_job_id = filter_input(INPUT_POST, 'application_job_id', FILTER_SANITIZE_STRING);
         $application_job_title = get_the_title($application_job_id);
         $application_user_firstname = filter_input(INPUT_POST, 'application_user_firstname', FILTER_SANITIZE_STRING);
@@ -60,14 +61,13 @@ function updateApplicationFormOptions() {
         if ($post_id) {
           // Insert custom meta data
           if ($post_id) {
-            update_post_meta($post_id, 'apps_application_single_post', $application_job_title);
+            update_post_meta($post_id, '_application_job_id', $application_job_id);
             update_post_meta($post_id, 'apps_application_firstname', $application_user_firstname);
             update_post_meta($post_id, 'apps_application_lastname', $application_user_lastname);
             update_post_meta($post_id, 'apps_application_contact_number', $application_user_contact);
             update_post_meta($post_id, 'apps_application_email', $application_user_email);
             update_post_meta($post_id, 'apps_application_select_country', $application_user_country);
-            echo $image_saved_path;
-            update_post_meta($post_id, 'apps_application_job_holder_image', $image_saved_path);
+            update_post_meta($post_id, 'apps_application_job_holder_image', $sanitized_image_url);
             // Add more meta keys and values as needed
           }
         } else {

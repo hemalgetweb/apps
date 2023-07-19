@@ -13,7 +13,7 @@ class Meta_Box_Application {
              * Add Application Meta Box
              */
             add_meta_box(
-                '_application_job_title', // Unique ID
+                '_application_job_id', // Unique ID
                 'Job Title', // Meta Box title
                 [$this, 'render_application_job_title'], // Callback function
                 $post_type, // Post type
@@ -21,7 +21,7 @@ class Meta_Box_Application {
                 'high' // Priority (high, core, default, low)
             );
             add_meta_box(
-                '_application_job_firstname', // Unique ID
+                'apps_application_firstname', // Unique ID
                 'First Name', // Meta Box title
                 [$this, 'render_application_job_firstname'], // Callback function
                 $post_type, // Post type
@@ -29,7 +29,7 @@ class Meta_Box_Application {
                 'high' // Priority (high, core, default, low)
             );
             add_meta_box(
-                '_application_job_lastname', // Unique ID
+                'apps_application_lastname', // Unique ID
                 'Last Name', // Meta Box title
                 [$this, 'render_application_job_lastname'], // Callback function
                 $post_type, // Post type
@@ -37,7 +37,7 @@ class Meta_Box_Application {
                 'high' // Priority (high, core, default, low)
             );
             add_meta_box(
-                '_application_job_contact_number', // Unique ID
+                'apps_application_contact_number', // Unique ID
                 'Contact Number', // Meta Box title
                 [$this, 'render_application_job_contact_number'], // Callback function
                 $post_type, // Post type
@@ -45,7 +45,7 @@ class Meta_Box_Application {
                 'high' // Priority (high, core, default, low)
             );
             add_meta_box(
-                '_application_job_email', // Unique ID
+                'apps_application_email', // Unique ID
                 'Email', // Meta Box title
                 [$this, 'render_application_job_email'], // Callback function
                 $post_type, // Post type
@@ -53,7 +53,7 @@ class Meta_Box_Application {
                 'high' // Priority (high, core, default, low)
             );
             add_meta_box(
-                '_application_job_country', // Unique ID
+                'apps_application_select_country', // Unique ID
                 'country', // Meta Box title
                 [$this, 'render_application_job_country'], // Callback function
                 $post_type, // Post type
@@ -61,7 +61,7 @@ class Meta_Box_Application {
                 'high' // Priority (high, core, default, low)
             );
             add_meta_box(
-                '_application_job_holder_image', // Unique ID
+                'apps_application_job_holder_image', // Unique ID
                 'Job  Holder Image', // Meta Box title
                 [$this, 'render_application_job_holder_image'], // Callback function
                 $post_type, // Post type
@@ -81,7 +81,7 @@ class Meta_Box_Application {
             <input type="button" name="upload_button" id="upload_button" class="button" value="Upload Image">
             <div id="image_preview">
                 <?php if (!empty($apps_application_job_holder_image)) : ?>
-                    <img src="<?php echo esc_attr($apps_application_job_holder_image); ?>" alt="Image Preview" style="max-width: 200px;">
+                    <img src='<?php echo esc_attr($apps_application_job_holder_image); ?>' alt="Image Preview" style="max-width: 200px;">
                 <?php endif; ?>
             </div>
     <?php }
@@ -120,19 +120,23 @@ class Meta_Box_Application {
         echo '<input value="'.$apps_application_firstname.'" type="text" name="apps_application_firstname" placeholder="First Name" style="width: 100%;" id="apps_application_firstname" />';
     }
     function render_application_job_title($post) {
-        $apps_application_single_post = get_post_meta($post->ID, 'apps_application_single_post', true);
+        $apps_application_single_post_id = get_post_meta($post->ID, '_application_job_id', true);
         $args = array(
-            'post_type' => 'post', // Retrieve posts
-            'posts_per_page' => -1, // Retrieve all posts
+            'post_type' => 'job', // Retrieve jobs
+            'posts_per_page' => -1, // Retrieve all jobs
         );
-        echo $apps_application_single_post;
         $posts = get_posts($args);
-        echo '<select style="width: 100%;" name="apps_application_single_post">';
+        echo '<select style="width: 100%;" class="apps-has-simple-select" name="_application_job_id">';
         foreach ($posts as $post) {
+            var_dump($post);
+                $selected = '';
                 $post_title = $post->post_title;
                 $post_id = $post->ID;
+                if($apps_application_single_post_id == $post_id) {
+                    $selected = 'selected';
+                }
             ?>
-            <option value="<?php echo $post_id; ?>"><?php echo esc_html($post_title); ?></option>
+            <option <?php echo $selected; ?> value="<?php echo $post_id; ?>"><?php echo esc_html($post_title); ?></option>
         <?php }
         echo '</select>';
     }
@@ -165,9 +169,9 @@ class Meta_Box_Application {
             $apps_application_firstname = sanitize_text_field($_POST['apps_application_firstname']);
             update_post_meta($post_id, 'apps_application_firstname', $apps_application_firstname);
         }
-        if (isset($_POST['apps_application_single_post'])) {
-            $apps_application_single_post = sanitize_text_field($_POST['apps_application_single_post']);
-            update_post_meta($post_id, 'apps_application_single_post', $apps_application_single_post);
+        if (isset($_POST['_application_job_id'])) {
+            $_application_job_id = sanitize_text_field($_POST['_application_job_id']);
+            update_post_meta($post_id, '_application_job_id', $_application_job_id);
         }
     }
 }

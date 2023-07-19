@@ -7,6 +7,28 @@ class Post_Type_Application {
         add_action("init", [$this, "create_job_post_type"]);
         add_action("admin_menu", [$this, "add_settings_menu"]);
         add_filter("manage_application_posts_columns", [$this, "add_job_title_on_application"]);
+        add_filter("manage_edit-application_sortable_columns", [$this, "manage_application_id_sortable_column"]);
+        add_filter("pre_get_posts", [$this, "appliication_id_sort_column_data"]);
+    }
+    function appliication_id_sort_column_data($query) {
+        if ( ! is_admin() ) {
+            return;
+        }
+    
+        $orderby = $query->get( 'orderby' );
+        if(isset($_GET['post_type'])) {
+            if ( 'menu_order title' == $orderby && 'application' == $_GET['post_type'] ) {
+                $query->set( 'meta_key', 'application_id_count' );
+                $query->set( 'orderby', 'meta_value_num' );
+            }
+        }
+    }
+    /**
+     * Sortable column
+     */
+    function manage_application_id_sortable_column($columns) {
+        $columns['apps_application_id'] = 'application_id_count';
+        return $columns;
     }
     function add_settings_menu() {
         add_submenu_page(
@@ -47,15 +69,53 @@ class Post_Type_Application {
     <?php }
     // Display content in custom column
     function display_custom_column_content($column, $post_id) {
-        if ($column == 'post_title') {
-            $post_title = get_the_title($post_id);
-            echo $post_title;
-        }
+        $job_id = get_post_meta($post_id, '_application_job_id', true);
+        $job_title = get_the_title($job_id);
+        $job_email = get_post_meta($post_id, 'apps_application_email', true);
+        $user_image = get_post_meta($post_id, 'apps_application_job_holder_image', true);
+       if('apps_application_job_title' == $column) {
+            echo wp_trim_words($job_title, 7);
+       }
+       if('apps_application_email' == $column) {
+            echo $job_email;
+       }
+       
+       if('apps_application_thumbnail' == $column) {
+            echo '<img src="'.esc_url($user_image).'" style="max-width: 100px;" />';
+       }
+       if('apps_application_id' == $column) {
+            echo $post_id;
+       }
+       if('manage_applications' == $column) {
+            $status = get_post_status($post_id);
+            $draftSelected = '';
+            $publishSelected = '';
+            if('draft' == $status) {
+                $draftSelected = 'selected';
+            } else {
+                $draftSelected = '';
+            }
+            if('publish' == $status) {
+                $publishSelected = 'selected';
+            } else {
+                $publishSelected = '';
+            }
+            $html = <<<EOD
+            <select data-post_id="{$post_id}" name="manage_application_approve_status" class="manage_application_approve_status">
+                <option {$publishSelected} value="publish">Approve</option>
+                <option {$draftSelected} value="draft">Unapprove</option>
+            <select>
+            EOD;
+            echo $html;
+       }
+
     }
     function add_job_title_on_application($columns) {
         $columns['apps_application_job_title'] = 'Job Title';
         $columns['apps_application_email'] = 'Email';
         $columns['apps_application_thumbnail'] = 'Image';
+        $columns['apps_application_id'] = 'Application ID';
+        $columns['manage_applications'] = 'Manage Application';
         return $columns;
     }
     function create_job_post_type() {

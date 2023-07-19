@@ -6,7 +6,6 @@ $job_type = get_post_meta($post_id, 'onsite', true);
 $company_tagline = get_post_meta($post_id, 'company_tagline', true);
 $position = get_post_meta($post_id, 'position');
 $categories = get_the_category();
-var_dump($position);
 // pass page id to application form
 $nonce = wp_create_nonce('add-application-'. $post_id);
 $url = '';
@@ -60,7 +59,7 @@ if($get_selected_page_from_settings) {
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
               <?php echo esc_html__('Position --- ', 'apps'); ?>
               <?php if(!empty($position)) : ?>
-                <?php echo esc_html($position); ?>
+                <?php echo var_dump($position); ?>
               <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">

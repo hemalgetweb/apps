@@ -196,7 +196,7 @@ class CB_Core_Heading extends Widget_Base
                     'layout' => ['layout-1']
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .apps-service-section-title-114, {{WRAPPER}} .apps-service-section-subtitle-114, {{WRAPPER}} .intro' => 'text-align: {{VALUE}};',
+                    '{{WRAPPER}} .apps-service-section-title-114, {{WRAPPER}} .apps-service-section-subtitle-114, {{WRAPPER}} p' => 'text-align: {{VALUE}};',
                 ]
             ]
         );

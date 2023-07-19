@@ -4,33 +4,11 @@ $post_id = get_the_ID();
 $job_duration = get_post_meta($post_id, 'job_duration', true);
 $job_type = get_post_meta($post_id, 'onsite', true);
 $company_tagline = get_post_meta($post_id, 'company_tagline', true);
-$categories = get_the_category($post_id);
-var_dump($categories);
+$categories = get_the_category();
 $cat_name = '';
 if ( ! empty( $categories ) ) {
   $cat_name = $categories[0]->name;
 }
-// Replace 'my_custom_post_type' and 'my_taxonomy' with your custom post type and taxonomy names
-$post_type = 'job';
-$taxonomy = 'jobs_category';
-
-// Get the terms associated with the post for the given taxonomy
-$terms = get_the_terms(get_the_ID(), $taxonomy);
-
-// Check if there are terms (categories) assigned to the post
-if ($terms && !is_wp_error($terms)) {
-    // Get the first term (category)
-    $first_category = reset($terms);
-    // Extract the category name
-    $category_name = $first_category->name;
-} else {
-    // If no category is assigned, provide a default value or handle the case accordingly
-    $category_name = 'Uncategorized';
-}
-
-// Output the category name
-echo 'Category: ' . $category_name;
-
 // pass page id to application form
 $nonce = wp_create_nonce('add-application-'. $post_id);
 $url = '';

@@ -5,6 +5,7 @@ $job_duration = get_post_meta($post_id, 'job_duration', true);
 $job_type = get_post_meta($post_id, 'onsite', true);
 $company_tagline = get_post_meta($post_id, 'company_tagline', true);
 $categories = get_the_category();
+var_dump($categories);
 $cat_name = '';
 if ( ! empty( $categories ) ) {
   $cat_name = $categories[0]->name;

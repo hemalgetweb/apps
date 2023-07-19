@@ -126,7 +126,7 @@ if($cbblog_layout == 'right-sidebar') {
 					<?php endif; endif; ?>
 					<div class="item-pagination my-4 pb-3 pb-xl-0">
 						<nav aria-label="Page navigation example">
-						<?php apps_pagination( '<img src="'.get_template_directory_uri().'/assets/img/pagination--left.svg" class="img-fluid mb-1" alt="">', '<img src="'.get_template_directory_uri().'/assets/img/pagination-right.svg" class="img-fluid mb-1" alt="">', '', ['class' => ''] );?>
+						<?php apps_pagination( '<img src="'.get_template_directory_uri().'/assets/img/pagination--left.svg" class="img-fluid mb-1" alt="paginate-left">', '<img src="'.get_template_directory_uri().'/assets/img/pagination-right.svg" class="img-fluid mb-1" alt="pagination-right">', '', ['class' => ''] );?>
 						</nav>
 					</div>
 				</div>

@@ -65,14 +65,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-6">
-                    <div class="banner-img text-center text-lg-end" data-wow-duration="0.200s" data-wow-delay="400ms">
-                        <?php if (!empty($settings['banner_image'])): ?>
-                            <img src="<?php echo esc_url($settings['banner_image']['url']); ?>" alt="icon"
-                                class="img-fluid">
-                        <?php endif; ?>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

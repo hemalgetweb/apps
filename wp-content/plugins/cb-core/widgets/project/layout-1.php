@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="col-xxl-2 col-xl-2">
                                         <div class="apps-project-card-action-icon-114 text-xl-end">
-                                            <a href="<?php echo esc_url(get_the_permalink()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt=""></a>
+                                            <a href="<?php echo esc_url(get_the_permalink()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt="project"></a>
                                         </div>
                                     </div>
                                 </div>

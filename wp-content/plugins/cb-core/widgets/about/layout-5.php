@@ -7,7 +7,7 @@
                     <div class="about-content-left-5-114">
                         <div class="about-section-title-5-114 pb-40">
                             <?php if(!empty($settings['about_subtitle'])) : ?>
-                            <span class="subtitle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt=""> <?php echo wp_kses_post($settings['about_subtitle']); ?></span>
+                            <span class="subtitle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="subtitle image"> <?php echo wp_kses_post($settings['about_subtitle']); ?></span>
                             <?php endif; ?>
                             <?php if(!empty($settings['about_title'])) : ?>
                                 <h3 class="title"><?php echo wp_kses_post($settings['about_title']); ?></h3>

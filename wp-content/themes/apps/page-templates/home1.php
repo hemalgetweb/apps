@@ -32,7 +32,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries1.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries1">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Oil & Gas</p>
                     </div>
@@ -41,7 +41,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries2.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries2">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Retail</p>
                     </div>
@@ -50,7 +50,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries3.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries3">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Hospitality</p>
                     </div>
@@ -59,7 +59,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries4.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries4">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Healthcare</p>
                     </div>
@@ -68,7 +68,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries5.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries5">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Manufacturing</p>
                     </div>
@@ -77,7 +77,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries6.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries6">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Transportation</p>
                     </div>
@@ -86,7 +86,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries7.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries7">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Media</p>
                     </div>
@@ -95,7 +95,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries8.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries8">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Finance</p>
                     </div>
@@ -104,7 +104,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries9.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries9">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">eCommerce</p>
                     </div>
@@ -113,7 +113,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries10.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries10">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Banking</p>
                     </div>
@@ -122,7 +122,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries11.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries11">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Lifestyle</p>
                     </div>
@@ -131,7 +131,7 @@
                     <div class="icon px-3 py-4 text-center">
                         <div class="wrapper-img  d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/industries12.svg"
-                                class="img-fluid" alt="">
+                                class="img-fluid" alt="industries12">
                         </div>
                         <p class=" fs-14 text-white fw-bold mt-3 mb-0">Education</p>
                     </div>
@@ -369,7 +369,7 @@
             class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">
             <div class="footer-logo">
                 <a href="index.html">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class="img-fluid">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo" class="img-fluid">
                 </a>
             </div>
             <div

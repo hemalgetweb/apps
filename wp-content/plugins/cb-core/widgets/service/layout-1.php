@@ -10,7 +10,7 @@
                 <div class="apps-service-box-114 mb-30" style="min-height: <?php echo $box_min_height ? $box_min_height. 'px' : ''; ?>">
                     <?php if(!empty($slide['service_image']['url'])) : ?>
                     <div class="apps-service-box-icon-114">
-                        <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="">
+                        <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="service">
                     </div>
                     <?php endif; ?>
                     <div class="apps-service-box-content-wrap-114">

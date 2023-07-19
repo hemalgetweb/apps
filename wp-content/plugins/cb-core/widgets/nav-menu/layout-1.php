@@ -4,7 +4,7 @@
         <div class="row align-items-center">
             <div class="col-xxl-3 col-xl-2 col-lg-2 col-md-2 col-6">
                 <div class="apps-header-logo-114">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt=""></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"></a>
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 apps-menu-item-has-last-114">
@@ -35,7 +35,7 @@
             </div>
             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-6">
                 <div class="apps-header-right-114  text-end">
-                    <a href="#" class="apps-header-right-phone-114"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone2.svg" alt=""> <span>(347) 619-3312</span></a>
+                    <a href="#" class="apps-header-right-phone-114"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone2.svg" alt="phone"> <span>(347) 619-3312</span></a>
                     <a href="#" class="apps-header-right-btn-114 d-none d-lg-inline-block ml-40">Contact Us <i class="fal fa-arrow-right"></i></a>
                     <button class="apps-header-bar-btn-114 d-md-none">
                         <i class="fal fa-bars"></i>

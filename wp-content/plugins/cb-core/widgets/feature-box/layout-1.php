@@ -11,7 +11,7 @@
         ?>
         <ul>
             <?php foreach($list_arr as $list) : ?>
-                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/check-icon.svg" /> <?php echo esc_html($list); ?></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/check-icon.svg" alt="image" /> <?php echo esc_html($list); ?></li>
             <?php endforeach; ?>
         </ul>
         <?php endif; ?>

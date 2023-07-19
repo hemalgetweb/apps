@@ -41,7 +41,7 @@
                             <?php if(!empty($job_duration)) : ?>
                                 <span><?php echo esc_html($job_duration); ?></span>
                             <?php endif; ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="rect" />
                             <?php if(!empty($onsite)) : ?>
                                 <span><?php echo esc_html($onsite); ?></span>
                             <?php endif; ?>

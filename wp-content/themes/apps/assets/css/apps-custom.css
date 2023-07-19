@@ -4241,3 +4241,6 @@ div.apps-category-grid-item-single-114 .icon img {
 .pt-175 {
     padding-top: 175px;
 }
+section.job-application-form.section-padding form > .row > *:first-child {
+    margin-bottom: 30px;
+}

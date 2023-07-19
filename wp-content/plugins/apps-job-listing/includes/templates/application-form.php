@@ -40,6 +40,9 @@ FORM_HANDLER\updateApplicationFormOptions();
           most effective strategies and remain within the goals of our client.
         </p>
       </div>
+      <?php if($_SESSION['submit_application'] == 'success') : ?>
+      <div class="alert alert-success">Your Appliation Submitted Successfully</div>
+      <?php session_destroy(); endif; ?>
       <form enctype="multipart/form-data" action="#" method="post" class="application-form">
         <div class="row">
           <div class="col-12">

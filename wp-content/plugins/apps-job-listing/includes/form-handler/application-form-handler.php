@@ -70,6 +70,7 @@ function updateApplicationFormOptions() {
             update_post_meta($post_id, 'apps_application_job_holder_image', $sanitized_image_url);
             // Add more meta keys and values as needed
           }
+          $_SESSION['submit_application'] = 'success';
         } else {
             // Failed to insert the post
             echo 'Failed to insert the application post.';

@@ -59,7 +59,7 @@ if($get_selected_page_from_settings) {
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
               <?php echo esc_html__('Position --- ', 'apps'); ?>
               <?php if(!empty($position)) : ?>
-                <?php echo var_dump($position); ?>
+                <?php echo esc_html($position[0]); ?>
               <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">

@@ -4,17 +4,10 @@ $post_id = get_the_ID();
 $job_duration = get_post_meta($post_id, 'job_duration', true);
 $job_type = get_post_meta($post_id, 'onsite', true);
 $company_tagline = get_post_meta($post_id, 'company_tagline', true);
-// Replace 'job_category' with your actual taxonomy name
 $categories = get_the_category();
 $cat_name = '';
-var_dump($categories);
-die();
-
-if ($categories && !is_wp_error($categories)) {
-    // Get the first term (category)
-    $first_category = reset($categories);
-    // Extract the category name
-    $cat_name = $first_category->name;
+if ( ! empty( $categories ) ) {
+  $cat_name = $categories[0]->name;
 }
 // pass page id to application form
 $nonce = wp_create_nonce('add-application-'. $post_id);

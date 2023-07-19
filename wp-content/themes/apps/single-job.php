@@ -110,5 +110,17 @@ if($get_selected_page_from_settings) {
   </div>
 </section>
 <!--/ job_post -->
+<?php
+$elementor_template_id = 2011;
+// Check if Elementor is active
+if (class_exists('Elementor\Plugin')) {
+  $elementor = \Elementor\Plugin::$instance;
 
+  // Get the template content
+  $content = $elementor->frontend->get_builder_content($elementor_template_id);
+
+  // Output the template content
+  echo $content;
+}
+?>
 <?php get_footer();

@@ -81,7 +81,7 @@
                 $single_query_arg_query = new \WP_Query($single_query_arg);
                 ?>
                 <?php if($single_query_arg_query->have_posts()) : ?>
-                <div class="tab-pane fade" id="nav-tab<?php echo $index+2; ?>" role="tabpanel" aria-labelledby="nav-tab<?php echo $index; ?>-tab">
+                <div class="tab-pane fade" id="nav-tab<?php echo $index+2; ?>" role="tabpanel" aria-labelledby="nav-tab1-tab">
                     <div class="apps-project-tab-content-wrapper-main-114">
                         <div class="row row-cols-xxl-5">
                             <?php while($single_query_arg_query->have_posts()) : 

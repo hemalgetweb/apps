@@ -1,9 +1,10 @@
 <?php
 get_header();
 $post_id = get_the_ID();
-$job_duration = get_post_meta($post_id, 'job_duration', true);
-$job_type = get_post_meta($post_id, 'onsite', true);
-$company_tagline = get_post_meta($post_id, 'company_tagline', true);
+$job_duration = get_post_meta($post_id, 'job_duration');
+$job_type = get_post_meta($post_id, 'onsite');
+$company_tagline = get_post_meta($post_id, 'company_tagline');
+$expected_experience = get_post_meta($post_id, 'expected_experience');
 $position = get_post_meta($post_id, 'position');
 $categories = get_the_category();
 // pass page id to application form
@@ -76,8 +77,8 @@ if($get_selected_page_from_settings) {
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
               <?php echo esc_html__('Experience --- ', 'apps'); ?>
-              <?php if(!empty($company_tagline)) : ?>
-                <?php echo esc_html($company_tagline); ?>
+              <?php if(!empty($expected_experience)) : ?>
+                <?php echo esc_html($expected_experience); ?>
               <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">

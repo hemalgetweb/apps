@@ -30,7 +30,6 @@ if ($terms && !is_wp_error($terms)) {
 
 // Output the category name
 echo 'Category: ' . $category_name;
-die();
 
 // pass page id to application form
 $nonce = wp_create_nonce('add-application-'. $post_id);

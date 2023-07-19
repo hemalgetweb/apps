@@ -1,5 +1,9 @@
 <?php
 namespace APPS_Application_LISTING\FORM_HANDLER;
+// Start the session
+if (!session_id()) {
+  session_start();
+}
 function updateSettingsPageOption() {
     // Check if the form is submitted and the user has the necessary capability
     if (isset($_POST['submit_application_settings']) && current_user_can('manage_options')) {

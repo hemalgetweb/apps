@@ -2,7 +2,10 @@
 namespace APPS_Application_LISTING\POST_TYPES\POST_TYPE_APPLICATION;
 use APPS_Application_LISTING\FORM_HANDLER;
 use WP_Query;
-session_start();
+// Start the session
+if (!session_id()) {
+  session_start();
+}
 ?>
 <?php
 FORM_HANDLER\updateSettingsPageOption();

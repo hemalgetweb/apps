@@ -93,7 +93,7 @@ FORM_HANDLER\updateApplicationFormOptions();
           <div class="col-md-6">
             <div class="mb-4">
               <label for="application_user_email" class="form-label fs-14 fw-bold text-clr-dark2">Email</label>
-              <input required type="text" class="form-control form-field" id="application_user_email" name="application_user_email" placeholder="Enter your first name">
+              <input required type="email" class="form-control form-field" id="application_user_email" name="application_user_email" placeholder="Enter your Email">
             </div>
           </div>
           <div class="col-md-6">

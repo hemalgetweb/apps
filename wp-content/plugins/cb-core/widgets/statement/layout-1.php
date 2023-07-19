@@ -19,7 +19,7 @@
 
 
             <?php if (!empty($settings['statement_inner_title'])): ?>
-              <h4 class="statement_title text-white fs-4 fw-bold"><?php echo $settings['statement_inner_title']; ?></h4>
+              <h4 class="text-clr-dark5 fs-4 fw-bold"><?php echo $settings['statement_inner_title']; ?></h4>
             <?php endif; ?>
 
 

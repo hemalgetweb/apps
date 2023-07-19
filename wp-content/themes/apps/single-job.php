@@ -111,7 +111,7 @@ if($get_selected_page_from_settings) {
 </section>
 <!--/ job_post -->
 <?php
-$elementor_template_id = 2011;
+$elementor_template_id = 3264;
 // Check if Elementor is active
 if (class_exists('Elementor\Plugin')) {
   $elementor = \Elementor\Plugin::$instance;

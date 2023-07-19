@@ -28,7 +28,7 @@ FORM_HANDLER\updateApplicationFormOptions();
 
 
 <!-- job-application-form -->
-<section class="job-application-form">
+<section class="job-application-form pt-100">
   <div class="container">
     <div class="form-wrapper">
       <div class="form-header text-center mb-5">

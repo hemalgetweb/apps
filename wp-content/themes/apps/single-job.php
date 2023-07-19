@@ -24,7 +24,7 @@ if($get_selected_page_from_settings) {
 ?>
 
 <!-- job banner area start -->
-<section class="job-banner-area pt-60 pb-100">
+<section class="job-banner-area pt-175 pb-100">
   <div class="container">
     <span class="apps-job-banner-subtitle-114"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="rect"> Jobs</span>
     <h2 class="apps-job-banner-title-114"><?php echo get_the_title(); ?></h2>

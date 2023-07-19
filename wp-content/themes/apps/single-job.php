@@ -5,7 +5,7 @@ $job_duration = get_post_meta($post_id, 'job_duration', true);
 $job_type = get_post_meta($post_id, 'onsite', true);
 $company_tagline = get_post_meta($post_id, 'company_tagline', true);
 // Replace 'job_category' with your actual taxonomy name
-$categories = get_the_category($post_id);
+$categories = get_the_category();
 $cat_name = '';
 var_dump($categories);
 die();

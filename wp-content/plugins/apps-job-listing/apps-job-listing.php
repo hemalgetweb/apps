@@ -34,9 +34,6 @@ class Apps_Job_Listing {
         add_action('admin_enqueue_scripts', [$this, 'enqueue_image_meta_box_scripts']);
     }
    
-    function enqueue_image_meta_box_scripts($hook) {
-        add_filter('comments_open', [$this, 'remove_comment_field_for_page'], 10, 2);
-    }
     function remove_comment_field_for_page($open, $post_id)
     {
         $page_id = get_option('application_form_page_id');
@@ -49,6 +46,7 @@ class Apps_Job_Listing {
     }
     function enqueue_image_meta_box_scripts($hook)
     {
+        add_filter('comments_open', [$this, 'remove_comment_field_for_page'], 10, 2);
         if ($hook === 'post.php' || $hook === 'post-new.php') {
             wp_enqueue_media();
             wp_enqueue_script('image-meta-box', AJL_ADMIN_DIR . 'js/application-meta-box.js', array('jquery'), '1.0.0', true);

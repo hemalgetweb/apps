@@ -14,6 +14,8 @@ if ($categories && !is_wp_error($categories)) {
     $first_category = reset($categories);
     // Extract the category name
     $cat_name = $first_category->name;
+} else {
+  echo "no cat found";
 }
 // pass page id to application form
 $nonce = wp_create_nonce('add-application-'. $post_id);

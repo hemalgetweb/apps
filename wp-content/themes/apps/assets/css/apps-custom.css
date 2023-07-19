@@ -4208,3 +4208,29 @@ div.apps-about-list-box-wrapper-7-114.cb-core-repeater-content .icon img {
 .contact-us-form button br {
     display: none;
 }
+.apps-category-grid-item-single-114 {
+    border-radius: 6px;
+    text-align: center;
+    background: var(--white, #FFF);
+    box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);
+    padding: 30px 20px;
+}
+
+.apps-category-grid-item-single-114 .title {
+    color: var(--dark-dark-2, #1F516D);
+    text-align: center;
+/* Headline/H6/Medium */
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 0;
+}
+
+.apps-category-grid-item-single-114 .icon {
+    margin-bottom: 16px;
+}
+div.apps-category-grid-item-single-114 .icon img {
+    margin-bottom: 0;
+}

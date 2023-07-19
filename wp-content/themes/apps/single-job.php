@@ -77,8 +77,8 @@ if($get_selected_page_from_settings) {
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">
               <?php echo esc_html__('Experience --- ', 'apps'); ?>
-              <?php if(!empty($expected_experience)) : ?>
-                <?php echo esc_html($expected_experience); ?>
+              <?php if(!empty($expected_experience[0])) : ?>
+                <?php echo esc_html($expected_experience[0]); ?>
               <?php endif; ?>
             </li>
             <li class="fs-18 fw-normal text-clr-dark2 mb-3">

@@ -4303,3 +4303,26 @@ h5.apps-project-card-title-114 button {
     box-shadow: none;
     border-color: #003C4F;
 }
+
+
+/** faq extra css **/
+.accordion-body.apps-faq-accordion-body-wrapper {}
+
+.accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li {margin-bottom: 8px;padding-left: 13px;position: relative;}
+
+.accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: #1f516d;
+}
+
+.accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li p {
+    margin-bottom: 0px;
+}

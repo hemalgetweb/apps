@@ -4293,3 +4293,13 @@ div.apps-category-grid-item-single-114 .icon img {
 h5.apps-project-card-title-114 button {
     text-align: left;
 }
+.contact-us-form .contact-form textarea.form-control {
+    height: 114px;
+    resize: none;
+}
+
+.contact-us-form .contact-form input:focus, .contact-us-form .contact-form textarea:focus, .contact-us-form .contact-form select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #003C4F;
+}

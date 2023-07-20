@@ -110,7 +110,7 @@ FORM_HANDLER\updateApplicationFormOptions();
             <div class="mb-4">
               <label for="application_user_country" class="form-label fs-14 fw-bold text-clr-dark2">Country</label>
               <select required class="select2-init form-select fs-14 text-clr-dark2 form-field mb-4" name="application_user_country" id="application_user_country">
-              <option value="" selected>Selecct Subject</option>
+              <option value="" selected>Selecct Country</option>
                 <option value="1">Bangladesh</option>
                 <option value="2">Pakistan</option>
                 <option value="3">India</option>

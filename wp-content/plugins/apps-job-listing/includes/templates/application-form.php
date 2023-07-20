@@ -85,7 +85,7 @@ FORM_HANDLER\updateApplicationFormOptions();
               </label>
               <div class="phone-wrap border d-flex align-items-center overflow-hidden bg-white">
                 <select class="select2-init form-select text-clr-dark2 fs-14 border-0 py-0 px-2 bg-transparent">
-                  <option selected>BD(+88)</option>
+                  <option value="88" selected>BD(+88)</option>
                   <option value="213">DZ (+213)</option>
                   <option value="376">AD (+376)</option>
                   <option value="1268">AG (+1268)</option>

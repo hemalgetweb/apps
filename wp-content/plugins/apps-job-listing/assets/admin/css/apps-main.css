@@ -3,3 +3,6 @@ div#_application_job_id,div#apps_application_firstname, div#apps_application_las
     margin-right: 10px;
     display: inline-block;
 }
+div#project_image_meta_box p input {
+    max-width: 100%;
+}

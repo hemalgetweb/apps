@@ -564,8 +564,10 @@ section.pricing .pricing-wrapper {
     color: #003959;
 }
 
-.apps-project-card-title-114 a {
+.apps-project-card-title-114 button {
     color: inherit;
+    border: 0;
+    background-color: transparent;
 }
 
 .apps-project-card-category-114 {
@@ -4246,4 +4248,42 @@ div.apps-category-grid-item-single-114 .icon img {
 }
 .page.page-id-3270 footer.footer.bg-clr-deepDark.pt-300 {
     padding-top: 100px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+/* modal */
+.pt-40 {
+    padding-top: 40px;
+}
+
+.apps-portfolio-moal-top-left-box .icon {
+    float: left;
+    margin-right: 10px;
+}
+
+.apps-portfolio-moal-top-left-box .content {
+    overflow: hidden;
+    color: #fff;
+}
+
+.apps-portfolio-moal-top-left-box .content a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #00ffa3;
+    outline: none;
+}
+
+.apps-portfolio-moal-top-left-box .meta {
+    display: flex;
+    grid-gap: 0 14px;
+}
+.apps-project-card-action-icon-114 button {
+    background: transparent;
+    padding: 0;
+    border: 0;
 }

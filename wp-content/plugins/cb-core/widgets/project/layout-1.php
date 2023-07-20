@@ -52,7 +52,7 @@
                                     <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                         <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
                                         <?php if(!empty($cat_name)) : ?>
-                                            <a href="<?php echo $cat_link ? esc_url($cat_link): ''; ?>" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
+                                            <a href="#0" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
                                         <?php endif; ?>
                                     </div>
                                     <div class="col-xxl-2 col-xl-2">

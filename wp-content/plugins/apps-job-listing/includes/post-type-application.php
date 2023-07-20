@@ -82,7 +82,7 @@ class Post_Type_Application {
        
        if('apps_application_thumbnail' == $column) {
             echo '<img src="'.esc_url($user_image).'" style="max-width: 100px;" />';
-            echo '<a href="'.$user_image.'">Download</a>';
+            echo '<a href="'.$user_image.'" download>Download</a>';
        }
        if('apps_application_id' == $column) {
             echo $post_id;

@@ -76,7 +76,7 @@ class Meta_Box_Application {
     function render_application_job_holder_image($post) {
         $apps_application_job_holder_image = get_post_meta($post->ID, 'apps_application_job_holder_image', true);
         ?>
-         <label for="image_upload">Upload Image:</label>
+         <label for="image_upload">Upload File:</label>
             <input type="text" name="apps_application_job_holder_image" id="image_upload" value="<?php echo esc_attr($apps_application_job_holder_image); ?>" readonly>
             <input type="button" name="upload_button" id="upload_button" class="button" value="Upload Image">
             <div id="image_preview">

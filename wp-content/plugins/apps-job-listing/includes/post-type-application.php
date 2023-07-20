@@ -82,6 +82,7 @@ class Post_Type_Application {
        
        if('apps_application_thumbnail' == $column) {
             echo '<img src="'.esc_url($user_image).'" style="max-width: 100px;" />';
+            echo '<a href="'.$user_image.'">Download</a>';
        }
        if('apps_application_id' == $column) {
             echo $post_id;
@@ -113,7 +114,7 @@ class Post_Type_Application {
     function add_job_title_on_application($columns) {
         $columns['apps_application_job_title'] = 'Job Title';
         $columns['apps_application_email'] = 'Email';
-        $columns['apps_application_thumbnail'] = 'Image';
+        $columns['apps_application_thumbnail'] = 'File';
         $columns['apps_application_id'] = 'Application ID';
         $columns['manage_applications'] = 'Manage Application';
         return $columns;

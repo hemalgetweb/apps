@@ -4306,8 +4306,6 @@ h5.apps-project-card-title-114 button {
 
 
 /** faq extra css **/
-.accordion-body.apps-faq-accordion-body-wrapper {}
-
 .accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li {margin-bottom: 8px;padding-left: 13px;position: relative;}
 
 .accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li::before {
@@ -4325,4 +4323,17 @@ h5.apps-project-card-title-114 button {
 
 .accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li p {
     margin-bottom: 0px;
+}
+.accordion-body.apps-faq-accordion-body-wrapper .apps-content p .count {
+    float: left;
+    margin-right: 8px;
+}
+
+.accordion-body.apps-faq-accordion-body-wrapper .apps-content p span.apps-content {
+    overflow: hidden;
+    display: block;
+}
+
+.accordion-body.apps-faq-accordion-body-wrapper .apps-content p span.apps-content b {
+    font-weight: 600;
 }

@@ -85,7 +85,6 @@ FORM_HANDLER\updateApplicationFormOptions();
               </label>
               <div class="phone-wrap border d-flex align-items-center overflow-hidden bg-white">
               <select class="select2-init form-select text-clr-dark2 fs-14 border-0 py-0 px-2 bg-transparent" required>
-                <option value="" disabled selected>Select Country</option>
                 <option value="88">BD (+88)</option>
                 <option value="213">DZ (+213)</option>
                 <option value="376">AD (+376)</option>

@@ -4290,3 +4290,6 @@ div.apps-category-grid-item-single-114 .icon img {
 .contact-form button.btn.position-relative.rounded br {
     display: none;
 }
+h5.apps-project-card-title-114 button {
+    text-align: left;
+}

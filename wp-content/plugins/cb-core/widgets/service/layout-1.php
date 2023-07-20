@@ -20,7 +20,7 @@
                             }
                             ?>
                         <h5 class="apps-service-box-title-114">
-                            <a <?php echo $this->get_render_attribute_string( 'service_title_link' ); ?>><?php echo wp_kses_post($slide['service_title']);  ?></a>
+                            <a href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']): ''; ?>"><?php echo wp_kses_post($slide['service_title']);  ?></a>
                         </h5>
                         <?php endif; ?>
                         <?php if(!empty($slide['service_content'])) : ?>

@@ -62,7 +62,7 @@ class Meta_Box_Application {
             );
             add_meta_box(
                 'apps_application_job_holder_image', // Unique ID
-                'Job  Holder Image', // Meta Box title
+                'Download File', // Meta Box title
                 [$this, 'render_application_job_holder_image'], // Callback function
                 $post_type, // Post type
                 'normal', // Context (normal, side, advanced)
@@ -83,6 +83,7 @@ class Meta_Box_Application {
                 <?php if (!empty($apps_application_job_holder_image)) : ?>
                     <img src='<?php echo esc_attr($apps_application_job_holder_image); ?>' alt="Image Preview" style="max-width: 200px;">
                 <?php endif; ?>
+                <a href="<?php echo esc_attr($apps_application_job_holder_image); ?>" download>Download</a>
             </div>
     <?php }
     function render_application_job_country($post) {

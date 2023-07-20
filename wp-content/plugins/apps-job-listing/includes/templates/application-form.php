@@ -84,16 +84,17 @@ FORM_HANDLER\updateApplicationFormOptions();
                 Contact Number
               </label>
               <div class="phone-wrap border d-flex align-items-center overflow-hidden bg-white">
-                <select class="select2-init form-select text-clr-dark2 fs-14 border-0 py-0 px-2 bg-transparent">
-                  <option value="88" selected>BD(+88)</option>
-                  <option value="213">DZ (+213)</option>
-                  <option value="376">AD (+376)</option>
-                  <option value="1268">AG (+1268)</option>
-                  <option value="374">AM (+374)</option>
-                  <option value="297">AW (+297)</option>
-                  <option value="20">EG (+20)</option>
-                  <option value="503">SV (+503)</option>
-                </select>
+              <select class="select2-init form-select text-clr-dark2 fs-14 border-0 py-0 px-2 bg-transparent" required>
+                <option value="" disabled selected>Select Country</option>
+                <option value="88">BD (+88)</option>
+                <option value="213">DZ (+213)</option>
+                <option value="376">AD (+376)</option>
+                <option value="1268">AG (+1268)</option>
+                <option value="374">AM (+374)</option>
+                <option value="297">AW (+297)</option>
+                <option value="20">EG (+20)</option>
+                <option value="503">SV (+503)</option>
+              </select>
                 <input type="text" class="form-control border-0 rounded-0 border-start px-3 fs-14 text-clr-dark2"
                   id="application_user_contact" placeholder="Enter your number">
               </div>

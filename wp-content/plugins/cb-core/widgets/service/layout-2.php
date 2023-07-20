@@ -15,12 +15,8 @@
                     </div>
                     <?php endif; ?>
                     <div class="apps-service-box-content-2-114">
-                        <?php if(!empty($slide['service_title'])) : 
-                            if ( ! empty( $slide['service_title_link']['url'] ) ) {
-                                $this->add_link_attributes( 'service_title_link', $slide['service_title_link'] );
-                            }
-                        ?>
-                            <h4 class="title"><a <?php echo $this->get_render_attribute_string( 'service_title_link' ); ?>><?php echo wp_kses_post($slide['service_title']);  ?></a></h4>
+                        <?php if(!empty($slide['service_title'])) :  ?>
+                            <h4 class="title"><a href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']): ''; ?>"><?php echo wp_kses_post($slide['service_title']);  ?></a></h4>
                         <?php endif; ?>
                         <?php if(!empty($slide['service_content'])) : ?>
                             <p><?php echo wp_kses_post($slide['service_content']); ?></p>

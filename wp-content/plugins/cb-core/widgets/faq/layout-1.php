@@ -16,7 +16,7 @@
                     </h2>
                     <div id="collapse_<?php echo esc_attr($unique_key); ?>-<?php echo esc_attr($index); ?>" class="accordion-collapse collapse" aria-labelledby="<?php echo $unique_key; ?>_heading_<?php echo esc_attr($index); ?>" data-bs-parent="#questionAccordion-<?php echo $unique_key; ?>">
                         <?php if(!empty($slide['faq_content'])) : ?>
-                        <div class="accordion-body-wrapper">
+                        <div class="apps-faq-accordion-body-wrapper">
                             <span class="apps-answere-a-114">A</span>
                             <div class="apps-content">
                                 <?php echo wp_kses_post($slide['faq_content']); ?>

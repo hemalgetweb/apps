@@ -4287,3 +4287,6 @@ div.apps-category-grid-item-single-114 .icon img {
     padding: 0;
     border: 0;
 }
+.contact-form button.btn.position-relative.rounded br {
+    display: none;
+}

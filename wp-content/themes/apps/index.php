@@ -38,7 +38,7 @@ $categories = get_categories(array(
 
 ?>
 <!-- blog-pots -->
-<section class="blog-pots section-padding bg-clr-dark7 pt-218"
+<section class="blog-pots section-padding pt-218"
 	style="background-image: url(assets/img/w-shape.svg); background-repeat: no-repeat; background-position: 0 0px;">
 	<div class="apps-blog-page-topbar-114">
 		<div class="container">

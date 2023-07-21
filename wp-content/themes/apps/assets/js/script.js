@@ -16,19 +16,17 @@
  * ===========================================================
  */
 
-// $(window).on('load', function () {
+$(window).on('load', function () {
 
-//     // code should be execute here
-
-// });
-$('.apps-has-portfolio-popup').on('click', function() {
-    var url = $(this).data('url');
-    var title = $(this).data('title');
-    var titleDom = $('.apps-portfolio-moal-top-left-box .content .title');
-    var imageDom = $('.apps-portfolio-modal .modal-content img');
-    titleDom.text(title);
-    imageDom.attr('src', url);
-})
+    $('.apps-has-portfolio-popup').on('click', function() {
+        var url = $(this).data('url');
+        var title = $(this).data('title');
+        var titleDom = $('.apps-portfolio-moal-top-left-box .content .title');
+        var imageDom = $('.apps-portfolio-modal .modal-content img');
+        titleDom.text(title);
+        imageDom.attr('src', url);
+    })
+});
 $(window).on('load resize', function() {
         var windowWidth = $(window).width();
         // Common actions for both 'load' and 'resize' events

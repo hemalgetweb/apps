@@ -5,8 +5,8 @@
         var title = $(this).data('title');
         var titleDom = $('.apps-portfolio-moal-top-left-box .content .title');
         var imageDom = $('.apps-portfolio-modal .modal-content img');
-        // titleDom.text(title);
-        // imageDom.attr('src', url);
+        titleDom.text(title);
+        imageDom.attr('src', url);
     });
 
     // Function to handle mobile menu toggle

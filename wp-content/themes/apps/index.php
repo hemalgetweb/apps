@@ -43,7 +43,7 @@ $categories = get_categories(array(
 	<div class="apps-blog-page-topbar-114">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-8">
 					<div class="apps-blog-page-topbar-select">
 						<select name="cat" class="apps-has-category-select select2-init" id="apps-has-simple-select-12324">
 							<option value="all">All Categories</option>
@@ -59,7 +59,7 @@ $categories = get_categories(array(
 						</select>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-4">
 					<div class="apps-blog-page-topbar-search text-md-end">
 						<div class="apps-form-group">
 							<i class="fal fa-search"></i>

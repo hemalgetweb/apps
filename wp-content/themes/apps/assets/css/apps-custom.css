@@ -4981,7 +4981,11 @@ h5.apps-project-card-title-114 button {
 .apps-blog-page-topbar-search .apps-form-group {
     padding: 0 16px;
 }
-
+.apps-blog-page-topbar-search .apps-form-group {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
 .apps-blog-page-topbar-search input::placeholder {
     color: var(--dark-dark-3, #316785);
     font-family: Cairo;

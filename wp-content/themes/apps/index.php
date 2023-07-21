@@ -45,7 +45,7 @@ $categories = get_categories(array(
 			<div class="row">
 				<div class="col-lg-6 col-md-8">
 					<div class="apps-blog-page-topbar-select">
-						<select name="cat" class="apps-has-category-select mb-30 mb-md-0 select2-init" id="apps-has-simple-select-12324">
+						<select name="cat" class="apps-has-category-select mb-md-0 select2-init" id="apps-has-simple-select-12324">
 							<option value="all">All Categories</option>
 							<?php foreach ($categories as $category) : ?>
 								<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>

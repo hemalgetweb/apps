@@ -5018,10 +5018,6 @@ h5.apps-project-card-title-114 button {
     color: #335E6B
 }
 
-input#wp-block-search__input-1 {}
-
-form#mc4wp-form-1 {}
-
 form#mc4wp-form-1 label {
     display: none;
 }
@@ -5067,4 +5063,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
     width: 67px;
     height: 67px;
     border-radius: 6px;
+}
+@media (max-width: 767px) {
+    .apps-blog-page-topbar-select span.select2-selection {
+        margin-bottom: 25px;
+    }
 }

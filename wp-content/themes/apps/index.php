@@ -104,7 +104,7 @@ $categories = get_categories(array(
 							</span>
 							<h3 class="blog-title fs-28 fw-semi-bold">
 								<a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="text-decoration-none text-clr-dark1">
-									<?php echo get_the_title(get_the_ID()); ?>
+									<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
 								</a>
 							</h3>
 							<div class="blog-intro fs-6 text-clr-dark2 mb-0">

@@ -28,7 +28,7 @@
                         $active_class = $index == 0 ? 'show active': '';
                         ?>
                         <div class="tab-content" id="nav-tabContent-<?php echo $index; ?>">
-                            <div class="tab-pane fade <?php echo esc_attr($active_class); ?>" id="nav-mytab<?php echo $index; ?>" role="tabpanel" aria-labelledby="nav-mytab-<?php echo $index; ?>-tab">
+                            <div class="tab-pane fade <?php echo esc_attr($active_class); ?>" id="nav-mytab<?php echo $index; ?>" role="tabpanel" aria-labelledby="nav-mytab<?php echo $index; ?>-tab">
                             <?php if(!empty($template_content)) : ?>
                                 <?php echo wp_kses_post($template_content); ?>
                             <?php endif; ?>

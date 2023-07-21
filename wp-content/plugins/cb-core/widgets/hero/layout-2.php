@@ -5,7 +5,7 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6">
                 <div class="apps-hero-content-wrapper-114 mb-50 mb-lg-0">
                     <?php if(!empty($settings['subtitle'])) : ?>
-                    <span class="subtitle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-spinner.png" alt=""> <?php echo esc_html($settings['subtitle']); ?></span>
+                    <span class="subtitle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-spinner.png" alt="subtitle image"> <?php echo esc_html($settings['subtitle']); ?></span>
                     <?php endif; ?>
                     <?php if(!empty($settings['bannerTitle'])) : ?>
                     <h2 class="title"><?php echo esc_html($settings['bannerTitle']); ?></h2>

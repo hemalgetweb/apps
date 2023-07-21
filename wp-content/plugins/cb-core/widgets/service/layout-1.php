@@ -10,7 +10,7 @@
                 <div class="apps-service-box-114 mb-30" style="min-height: <?php echo $box_min_height ? $box_min_height. 'px' : ''; ?>">
                     <?php if(!empty($slide['service_image']['url'])) : ?>
                     <div class="apps-service-box-icon-114">
-                        <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="">
+                        <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="service">
                     </div>
                     <?php endif; ?>
                     <div class="apps-service-box-content-wrap-114">
@@ -20,7 +20,7 @@
                             }
                             ?>
                         <h5 class="apps-service-box-title-114">
-                            <a <?php echo $this->get_render_attribute_string( 'service_title_link' ); ?>><?php echo wp_kses_post($slide['service_title']);  ?></a>
+                            <a href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']): ''; ?>"><?php echo wp_kses_post($slide['service_title']);  ?></a>
                         </h5>
                         <?php endif; ?>
                         <?php if(!empty($slide['service_content'])) : ?>

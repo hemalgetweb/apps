@@ -5,7 +5,40 @@ class Meta_Box_Application {
     public function __construct() {
         add_action("add_meta_boxes", [$this, "add_application_meta_box"], 0);
         add_action('save_post', [$this, '_application_job_holder_image_save']);
+        add_action("add_meta_boxes", [$this, "project_image_meta_box"]);
     }
+    function project_image_meta_box($post_type)
+    {
+        $post_types = array("project");
+        if (in_array($post_type, $post_types)) {
+            add_meta_box(
+                'project_image_meta_box', // Meta box ID
+                'Project Image',          // Meta box title
+                [$this, 'render_project_image_meta_box'], // Callback function to render the meta box content
+                'project',                // Post type to display the meta box
+                'side',                   // Context (normal, side, advanced)
+                'high'                    // Priority (high, default, low)
+            );
+        }
+    }
+    function render_project_image_meta_box($post)
+    {
+        // Get the current value of the image field, if it exists
+        $project_image = get_post_meta($post->ID, 'project_image', true);
+
+        // Add a nonce field to verify the data came from our meta box
+        wp_nonce_field('project_image_meta_box_nonce', 'project_image_nonce');
+
+        // Output the HTML for the image upload field
+        ?>
+        <p>
+            <label for="project_image">Project Image:</label><br>
+            <input type="text" id="project_image" name="project_image" value="<?php echo esc_attr($project_image); ?>" size="50">
+            <input type="button" id="upload_project_image_button" class="button" value="Upload Image">
+        </p>
+        <?php
+    }
+
     function add_application_meta_box($post_type) {
         $post_types = array("application");
         if (in_array($post_type, $post_types)) {
@@ -62,7 +95,7 @@ class Meta_Box_Application {
             );
             add_meta_box(
                 'apps_application_job_holder_image', // Unique ID
-                'Job  Holder Image', // Meta Box title
+                'Download File', // Meta Box title
                 [$this, 'render_application_job_holder_image'], // Callback function
                 $post_type, // Post type
                 'normal', // Context (normal, side, advanced)
@@ -76,13 +109,14 @@ class Meta_Box_Application {
     function render_application_job_holder_image($post) {
         $apps_application_job_holder_image = get_post_meta($post->ID, 'apps_application_job_holder_image', true);
         ?>
-         <label for="image_upload">Upload Image:</label>
+         <label for="image_upload">Upload File:</label>
             <input type="text" name="apps_application_job_holder_image" id="image_upload" value="<?php echo esc_attr($apps_application_job_holder_image); ?>" readonly>
             <input type="button" name="upload_button" id="upload_button" class="button" value="Upload Image">
             <div id="image_preview">
                 <?php if (!empty($apps_application_job_holder_image)) : ?>
                     <img src='<?php echo esc_attr($apps_application_job_holder_image); ?>' alt="Image Preview" style="max-width: 200px;">
                 <?php endif; ?>
+                <a href="<?php echo esc_attr($apps_application_job_holder_image); ?>" download>Download</a>
             </div>
     <?php }
     function render_application_job_country($post) {
@@ -145,6 +179,10 @@ class Meta_Box_Application {
      * Save All Metaboxes
      */
     function _application_job_holder_image_save($post_id) {
+        if (isset($_POST['project_image'])) {
+            $project_image = sanitize_text_field($_POST['project_image']);
+            update_post_meta($post_id, 'project_image', $project_image);
+        }
         if (isset($_POST['apps_application_job_holder_image'])) {
             $apps_application_job_holder_image = sanitize_text_field($_POST['apps_application_job_holder_image']);
             update_post_meta($post_id, 'apps_application_job_holder_image', $apps_application_job_holder_image);

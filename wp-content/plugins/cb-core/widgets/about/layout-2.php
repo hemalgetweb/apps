@@ -11,7 +11,7 @@
                 <div class="apps-about-right-114">
                 <div class="apps-about-section-title-wrapper-114">
                     <?php if(!empty($settings['about_subtitle'])) : ?>
-                        <span class="apps-about-section-subtitle-114"><img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt=""> <?php echo esc_html($settings['about_subtitle']); ?></span>
+                        <span class="apps-about-section-subtitle-114"><img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="about subtitle image"> <?php echo esc_html($settings['about_subtitle']); ?></span>
                     <?php endif; ?>
                     <?php if(!empty($settings['about_title'])) : ?>
                         <h3 class="apps-about-section-title-114"><?php echo wp_kses_post($settings['about_title']); ?></h3>

@@ -136,8 +136,7 @@ class CB_Core_Faq extends Widget_Base
 			'faq_unique_key',
 			[
 				'label' => esc_html__( 'Faq Unique Key', 'cb-core' ),
-				'type' => Controls_Manager::HIDDEN,
-				'default' => rand(500, 5000),
+				'type' => Controls_Manager::TEXT,
 			]
 		);
         $repeater = new \Elementor\Repeater();

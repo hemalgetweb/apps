@@ -11,16 +11,12 @@
                 <div class="apps-service-box-2-114 mb-30 <?php echo $enable_box_border ? esc_attr__('has-enabled-border', 'cb-core'): ''; ?> <?php echo $settings['enable_box_shadow_effect'] ? esc_attr__('has-shadow-on-hover'): ''; ?>" style="min-height: <?php echo $box_min_height ? $box_min_height. 'px' : ''; ?>">
                     <?php if(!empty($slide['service_image']['url'])) : ?>
                     <div class="apps-service-box-icon-2-114">
-                        <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="">
+                        <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="service">
                     </div>
                     <?php endif; ?>
                     <div class="apps-service-box-content-2-114">
-                        <?php if(!empty($slide['service_title'])) : 
-                            if ( ! empty( $slide['service_title_link']['url'] ) ) {
-                                $this->add_link_attributes( 'service_title_link', $slide['service_title_link'] );
-                            }
-                        ?>
-                            <h4 class="title"><a <?php echo $this->get_render_attribute_string( 'service_title_link' ); ?>><?php echo wp_kses_post($slide['service_title']);  ?></a></h4>
+                        <?php if(!empty($slide['service_title'])) :  ?>
+                            <h4 class="title"><a href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']): ''; ?>"><?php echo wp_kses_post($slide['service_title']);  ?></a></h4>
                         <?php endif; ?>
                         <?php if(!empty($slide['service_content'])) : ?>
                             <p><?php echo wp_kses_post($slide['service_content']); ?></p>

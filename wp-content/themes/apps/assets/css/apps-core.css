@@ -1183,8 +1183,8 @@ a:hover {
   }
 
   100% {
-    -webkit-transform: translateX(calc(-378px * 5));
-    transform: translateX(calc(-378px * 5));
+    -webkit-transform: translateX(calc(-378px * 8));
+    transform: translateX(calc(-378px * 8));
   }
 }
 
@@ -1195,8 +1195,8 @@ a:hover {
   }
 
   100% {
-    -webkit-transform: translateX(calc(-378px * 5));
-    transform: translateX(calc(-378px * 5));
+    -webkit-transform: translateX(calc(-378px * 8));
+    transform: translateX(calc(-378px * 8));
   }
 }
 
@@ -1208,8 +1208,8 @@ a:hover {
     }
 
     100% {
-      -webkit-transform: translateX(calc(-221px * 5));
-      transform: translateX(calc(-221px * 5));
+      -webkit-transform: translateX(calc(-221px * 8));
+      transform: translateX(calc(-221px * 8));
     }
   }
 
@@ -1220,8 +1220,8 @@ a:hover {
     }
 
     100% {
-      -webkit-transform: translateX(calc(-221px * 5));
-      transform: translateX(calc(-221px * 5));
+      -webkit-transform: translateX(calc(-221px * 8));
+      transform: translateX(calc(-221px * 8));
     }
   }
 }
@@ -1234,8 +1234,8 @@ a:hover {
     }
 
     100% {
-      -webkit-transform: translateX(calc(-185px * 5));
-      transform: translateX(calc(-185px * 5));
+      -webkit-transform: translateX(calc(-185px * 8));
+      transform: translateX(calc(-185px * 8));
     }
   }
 
@@ -1246,8 +1246,8 @@ a:hover {
     }
 
     100% {
-      -webkit-transform: translateX(calc(-185px * 5));
-      transform: translateX(calc(-185px * 5));
+      -webkit-transform: translateX(calc(-185px * 8));
+      transform: translateX(calc(-185px * 8));
     }
   }
 }

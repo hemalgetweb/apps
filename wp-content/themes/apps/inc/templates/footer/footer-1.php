@@ -33,7 +33,7 @@ EOD;
                 class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">
                 <div class="footer-logo">
                     <a href="<?php echo home_url('/'); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo" class="img-fluid">
                     </a>
                 </div>
                 <?php if(!empty($cbtoolkit_footer_top_repeater)) : ?>

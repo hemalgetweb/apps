@@ -1,5 +1,9 @@
 <?php
 namespace APPS_Application_LISTING\FORM_HANDLER;
+// Start the session
+if (!session_id()) {
+  session_start();
+}
 function updateSettingsPageOption() {
     // Check if the form is submitted and the user has the necessary capability
     if (isset($_POST['submit_application_settings']) && current_user_can('manage_options')) {
@@ -70,6 +74,7 @@ function updateApplicationFormOptions() {
             update_post_meta($post_id, 'apps_application_job_holder_image', $sanitized_image_url);
             // Add more meta keys and values as needed
           }
+          $_SESSION['submit_application'] = 'success';
         } else {
             // Failed to insert the post
             echo 'Failed to insert the application post.';

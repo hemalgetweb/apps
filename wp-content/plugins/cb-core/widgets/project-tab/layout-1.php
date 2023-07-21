@@ -1,3 +1,25 @@
+<div class="modal fade apps-portfolio-modal" id="modal_for_project" tabindex="-1" aria-labelledby="modal_for_projectLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="apps-portfolio-modal-top-114  pt-40">
+            <div class="apps-portfolio-moal-top-left-box">
+                <div class="icon">
+                    <img src="https://www.getwebinc.com/wp-content/uploads/2022/11/companyLogo.92df1bb6.svg" alt="icon">
+                </div>
+                <div class="content">
+                    <h5 class="title">Easpa – Mobile Wallet App</h5>
+                    <div class="meta">
+                        <p>Getweb</p>
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content bg-transparent">
+            <img src="https://www.getwebinc.com/wp-content/uploads/2022/11/Stype-Health-Walk-Tracker-App-Design-Image-Preview-min.png" alt="image">
+        </div>
+    </div>
+</div>
+
 <!-- tab project start -->
 <section class="tab-project">
     <div class="container  container-tab-project-114">
@@ -28,31 +50,29 @@
                         <div class="row row-cols-xxl-5">
                             <?php while ($all_wp_query->have_posts()):
                                 $all_wp_query->the_post();
+                                $post_id = get_the_ID();
+                                $project_big_image = get_post_meta($post_id, 'project_image', true);
                                 ?>
                                 <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <div class="apps-project-tab-main-content-114 mb-30">
                                         <!-- project card -->
                                         <div class="apps-project-card-114">
-                                            <?php if (has_post_thumbnail(get_the_ID())): ?>
-                                                <div class="apps-project-card-image-114">
-                                                    <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
-                                                </div>
+                                            <?php if(has_post_thumbnail(get_the_ID())) : ?>
+                                            <div class="apps-project-card-image-114">
+                                                <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
+                                            </div>
                                             <?php endif; ?>
                                             <div class="apps-project-card-description-wrapper-114">
                                                 <div class="row">
                                                     <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                                        <h5 class="apps-project-card-title-114"><a
-                                                                href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo get_the_title(); ?></a></h5>
-                                                        <?php if (!empty($cat_name)): ?>
-                                                            <a href="<?php echo $cat_link ? esc_url($cat_link) : ''; ?>"
-                                                                class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
+                                                        <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
+                                                        <?php if(!empty($cat_name)) : ?>
+                                                            <a href="#0" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
                                                         <?php endif; ?>
                                                     </div>
                                                     <div class="col-xxl-2 col-xl-2">
                                                         <div class="apps-project-card-action-icon-114 text-xl-end">
-                                                            <a href="<?php echo esc_url(get_the_permalink()); ?>"><img
-                                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg"
-                                                                    alt=""></a>
+                                                            <button data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>" class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt="project"></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -81,36 +101,34 @@
                 $single_query_arg_query = new \WP_Query($single_query_arg);
                 ?>
                 <?php if($single_query_arg_query->have_posts()) : ?>
-                <div class="tab-pane fade" id="nav-tab<?php echo $index+2; ?>" role="tabpanel" aria-labelledby="nav-tab<?php echo $index; ?>-tab">
+                <div class="tab-pane fade" id="nav-tab<?php echo $index+2; ?>" role="tabpanel" aria-labelledby="nav-tab1-tab">
                     <div class="apps-project-tab-content-wrapper-main-114">
                         <div class="row row-cols-xxl-5">
                             <?php while($single_query_arg_query->have_posts()) : 
                                 $single_query_arg_query->the_post();
+                                $post_id = get_the_ID();
+                                $project_big_image = get_post_meta($post_id, 'project_image', true);
                                 ?>
                             <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="apps-project-tab-main-content-114 mb-30">
                                     <!-- project card -->
                                     <div class="apps-project-card-114">
-                                        <?php if (has_post_thumbnail(get_the_ID())): ?>
-                                            <div class="apps-project-card-image-114">
-                                                <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
-                                            </div>
+                                        <?php if(has_post_thumbnail(get_the_ID())) : ?>
+                                        <div class="apps-project-card-image-114">
+                                            <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
+                                        </div>
                                         <?php endif; ?>
                                         <div class="apps-project-card-description-wrapper-114">
                                             <div class="row">
                                                 <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                                    <h5 class="apps-project-card-title-114"><a
-                                                            href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo get_the_title(); ?></a></h5>
-                                                    <?php if (!empty($cat_name)): ?>
-                                                        <a href="<?php echo $cat_link ? esc_url($cat_link) : ''; ?>"
-                                                            class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
+                                                    <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
+                                                    <?php if(!empty($cat_name)) : ?>
+                                                        <a href="#0" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
                                                     <?php endif; ?>
                                                 </div>
                                                 <div class="col-xxl-2 col-xl-2">
                                                     <div class="apps-project-card-action-icon-114 text-xl-end">
-                                                        <a href="<?php echo esc_url(get_the_permalink()); ?>"><img
-                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg"
-                                                                alt=""></a>
+                                                        <button data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>" class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt="project"></button>
                                                     </div>
                                                 </div>
                                             </div>

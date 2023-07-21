@@ -38,6 +38,33 @@ if($cbblog_layout == 'right-sidebar') {
 							<div class="apps-details-sidebar">
 								<?php dynamic_sidebar('blog-sidebar');?>
 							</div>
+							<div class="sidebar">
+								<div class="sidebar-widget border-dark1 radius-6 overflow-hidden mb-4">
+									<h3 class="widget-title px-4 py-3 fs-4 fw-semi-bold mb-0">
+										Categories
+									</h3>
+									<div class="bg-light">
+										<?php if(!empty($category)) : ?>
+										<ul class="recent-post architect-3 list-unstyled py-3 px-4 mb-0 bg-white">
+											<?php foreach($category as $cat) :
+												$cat_id = $cat->term_id;
+												$cat_url = get_category_link($cat_id);
+											?>
+											<li class="recent-post-list py-2">
+												<a href="<?php echo $cat_url ? esc_url($cat_url) : ''; ?>"
+													class="d-flex justify-content-between fs-6 fw-normal text-clr-dark1 text-decoration-none">
+													<span class="category-name"><?php echo $cat->name; ?></span>
+													<?php if($cat->count) : ?>
+														<span class="has-post">(<?php echo $cat->count ?>)</span>
+													<?php endif; ?>
+												</a>
+											</li>
+											<?php endforeach; ?>
+										</ul>
+										<?php endif; ?>
+									</div>
+								</div>
+							</div>
 						</div>
 					<?php endif;?>
 				<?php endif; ?>

@@ -43,12 +43,18 @@ $categories = get_categories(array(
 	<div class="container">
 		
 		<div class="apps-blog-page-topbar-114">
-			<div class="apps-blog-page-topbar-category-select">
-				<select name="cat" class="select2-init" id="apps-has-simple-select-12324">
+			<div class="apps-blog-page-topbar-select">
+				<select name="cat" class="apps-has-category-select select2-init" id="apps-has-simple-select-12324">
 					<option value="all">All Categories</option>
 					<?php foreach ($categories as $category) : ?>
 						<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>
 					<?php endforeach; ?>
+				</select>
+				<select name="cat" class="apps-has-duration-select select2-init" id="apps-has-simple-select-4321">
+					<option value="all">All Posts</option>
+					<option value="last-7-days">Last 7 Days</option>
+					<option value="last-month">Last Month</option>
+					<option value="last-year">Last Year</option>
 				</select>
 			</div>
 		</div>

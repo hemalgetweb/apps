@@ -16,7 +16,6 @@
  * ===========================================================
  */
 
-
 $('.apps-has-portfolio-popup').on('click', function() {
     var url = $(this).data('url');
     var title = $(this).data('title');

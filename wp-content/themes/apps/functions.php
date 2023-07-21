@@ -142,7 +142,7 @@ function apps_widgets_init()
 			'name' => esc_html__('Blog Sidebar', 'apps'),
 			'id' => 'blog-sidebar',
 			'description' => esc_html__('Add Blog Sidebar.', 'apps'),
-			'before_widget' => '<section id="%1$s" class="apps-custom-blog-sidebar-1 sidebar-widget border-dark1 radius-6 overflow-hidden mb-4 %2$s">',
+			'before_widget' => '<section id="%1$s" class="apps-custom-blog-sidebar-1 sidebar-widget radius-6 overflow-hidden mb-4 %2$s">',
 			'after_widget' => '</section>',
 			'before_title' => '<h5 class="widget-title px-4 py-3 fs-4 fw-semi-bold mb-0">',
 			'after_title' => '</h5>',
@@ -294,6 +294,8 @@ add_filter( 'comments_open', 'remove_comment_field_for_page',  10, 2 );
 /**
  * Filter blog post by category
  */
+
+
 // AJAX handler for filtering blog posts
 function apps_filter_blog_posts_by_category()
 {
@@ -406,3 +408,67 @@ function apps_filter_blog_posts_by_category()
 }
 add_action('wp_ajax_apps_filter_blog_posts', 'apps_filter_blog_posts_by_category');
 add_action('wp_ajax_nopriv_apps_filter_blog_posts', 'apps_filter_blog_posts_by_category');
+
+
+
+/**
+ * Filter blog post by date
+ */
+
+function apps_filter_blog_posts()
+{
+    $date_filter = $_POST['date_filter'];
+
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+    );
+
+    // Handle date filtering based on the selected option
+    if ($date_filter === 'last-7-days') {
+        $args['date_query'] = array(
+            array(
+                'after' => '1 week ago',
+            ),
+        );
+    } elseif ($date_filter === 'last-month') {
+        $args['date_query'] = array(
+            array(
+                'after' => '1 month ago',
+            ),
+        );
+    } elseif ($date_filter === 'last-year') {
+        $args['date_query'] = array(
+            array(
+                'after' => '1 year ago',
+            ),
+        );
+    }
+
+    $query = new WP_Query($args);
+
+    // Start output buffer to store the HTML content
+    ob_start();
+
+    // Check if there are blog posts to display
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            // Output the content of each blog post here
+            echo '<h2>' . get_the_title() . '</h2>';
+            echo '<p>' . get_the_excerpt() . '</p>';
+        }
+        wp_reset_postdata();
+    } else {
+        // No blog posts found for the selected date
+        echo '<p>No blog posts found for the selected date range.</p>';
+    }
+
+    // End the output buffer and return the content
+    $output = ob_get_clean();
+    echo $output;
+    exit;
+}
+add_action('wp_ajax_filter_blog_posts', 'apps_filter_blog_posts');
+add_action('wp_ajax_nopriv_filter_blog_posts', 'apps_filter_blog_posts');

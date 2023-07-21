@@ -4946,6 +4946,9 @@ h5.apps-project-card-title-114 button {
 .pt-300 {
     padding-top: 300px;
 }
+.pt-218 {
+    padding-top: 300px;
+}
 
 .apps-sidebar-category ul {
     list-style: none;
@@ -5070,7 +5073,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     }
 }
 @media (max-width: 1199px) {
-    section.blog-pots.section-padding.pt-300 {
+    section.blog-pots.section-padding.pt-218 {
         padding-top: 100px;
     }
 }

@@ -716,27 +716,27 @@ function apps_head_animation() {
 		*For small box
 		*/
 		@-webkit-keyframes animated-slide-sm {
-		0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-		}
+			0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
 
-		100% {
-			-webkit-transform: translateX(calc(-378px * 5));
-			transform: translateX(calc(-378px * 5));
-		}
-		}
+			100% {
+				-webkit-transform: translateX(calc(-228px * 5));
+				transform: translateX(calc(-228px * 5));
+			}
+			}
 
-		@keyframes animated-slide-sm {
-		0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-		}
+			@keyframes animated-slide-sm {
+			0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
 
-		100% {
-			-webkit-transform: translateX(calc(-378px * 5));
-			transform: translateX(calc(-378px * 5));
-		}
+			100% {
+				-webkit-transform: translateX(calc(-228px * 5));
+				transform: translateX(calc(-228px * 5));
+			}
 		}
 
 		@media (max-width: 776px) {

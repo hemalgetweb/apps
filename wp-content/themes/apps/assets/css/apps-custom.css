@@ -5131,3 +5131,6 @@ form#mc4wp-form-1 input.form-control.subscribe {
     padding-bottom: 50px;
     border-bottom: 1px solid #0039591c;
 }
+.apps-blog-page-topbar-select .select2-selection__rendered {
+    color: #316785 !important;
+}

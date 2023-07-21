@@ -1,7 +1,7 @@
 {
     "name": "kirki-framework/kirki",
     "type": "library",
-    "version": "4.1.1",
+    "version": "4.2.0",
     "keywords": [
         "WordPress",
         "Customizer"
@@ -98,5 +98,10 @@
         "php": ">=7.0"
     },
     "require-dev": {
+        "composer/installers": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "wp-coding-standards/wpcs": "*",
+        "phpcompatibility/phpcompatibility-wp": "*",
+        "wptrt/wpthemereview": "dev-develop"
     }
 }

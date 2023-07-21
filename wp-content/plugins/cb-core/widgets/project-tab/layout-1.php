@@ -83,6 +83,19 @@
                             <?php endwhile; wp_reset_query(); ?>
                         </div>
                     <?php endif; ?>
+                    <?php
+                    $total_pages = $all_wp_query->max_num_pages; // Get the total number of pages.
+                    if ($total_pages > 1) {
+                        echo '<div class="pagination">';
+                        echo paginate_links(array(
+                            'base' => get_pagenum_link(1) . '%_%',
+                            'format' => '/page/%#%', // Use /page/ instead of ?paged= for better permalinks.
+                            'current' => max(1, $paged),
+                            'total' => $total_pages,
+                        ));
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
                 </div>
             <?php if (!empty($settings['cat_query'])): ?>

@@ -5094,3 +5094,36 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .apps-blog-page-topbar-select .select2.select2-container.select2-container--default {
     width: auto !important;
 }
+
+.apps-project-tab-content-wrapper-main-114 .pagination>* {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-dark-6, #BADDF0);
+    text-align: center;
+    line-height: 35px;
+    color: #316785;
+}
+
+.apps-project-tab-content-wrapper-main-114 .pagination>* {
+    display: inline-block;
+}
+
+.apps-project-tab-content-wrapper-main-114 .pagination span {
+    color: #316785;
+}
+
+.apps-project-tab-content-wrapper-main-114 .pagination span.page-numbers.current {
+    background: #00C7C7;
+    color: #fff;
+    border-color: transparent;
+}
+
+.apps-project-tab-content-wrapper-main-114 .pagination>* {
+    margin: 0 5px;
+}
+
+.apps-project-tab-content-wrapper-main-114 .pagination {
+    text-align: center;
+    display: block;
+}

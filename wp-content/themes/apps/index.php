@@ -45,18 +45,22 @@ $categories = get_categories(array(
 			<div class="row">
 				<div class="col-lg-6 col-md-8">
 					<div class="apps-blog-page-topbar-select">
-						<select name="cat" class="apps-has-category-select mb-md-0 select2-init" id="apps-has-simple-select-12324">
-							<option value="all">All Categories</option>
-							<?php foreach ($categories as $category) : ?>
-								<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>
-							<?php endforeach; ?>
-						</select>
-						<select name="cat" class="apps-has-duration-select mb-30 mb-md-0 select2-init" id="apps-has-simple-select-4321">
-							<option value="all">All Posts</option>
-							<option value="last-7-days">Last 7 Days</option>
-							<option value="last-month">Last Month</option>
-							<option value="last-year">Last Year</option>
-						</select>
+						<div class="apps-blog-cat-select-114 d-inline-block">
+							<select name="cat" class="apps-has-category-select mb-md-0 select2-init" id="apps-has-simple-select-12324">
+								<option value="all">All Categories</option>
+								<?php foreach ($categories as $category) : ?>
+									<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="apps-blog-duration-select-114 d-inline-block">
+							<select name="cat" class="apps-has-duration-select mb-30 mb-md-0 select2-init" id="apps-has-simple-select-4321">
+								<option value="all">All Posts</option>
+								<option value="last-7-days">Last 7 Days</option>
+								<option value="last-month">Last Month</option>
+								<option value="last-year">Last Year</option>
+							</select>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-4">

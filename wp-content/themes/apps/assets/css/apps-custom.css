@@ -5073,6 +5073,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
     .apps-blog-page-topbar-select span.select2-selection {
         margin-bottom: 25px;
     }
+    .apps-blog-page-topbar-search .apps-form-group {
+        float: none;
+    }
 }
 @media (max-width: 1199px) {
     section.blog-pots.section-padding.pt-218 {

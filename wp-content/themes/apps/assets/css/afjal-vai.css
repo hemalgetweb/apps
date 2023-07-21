@@ -5,7 +5,7 @@
   }
 }
 
-@media (max-width:575px) {
+@media (max-width:480px) {
   .apps-blog-page-topbar-select {
     gap: 0 !important;
   }

@@ -40,11 +40,11 @@
                 },
                 beforeSend: function() {
                     // Show loading spinner or message if needed
-                    $('#filtered-blog-posts').html('Loading...');
+                    $('#home-filtered-blog-post-114').html('Loading...');
                 },
                 success: function(response) {
                     // Update the content of the blog post container
-                    $('#filtered-blog-posts').html(response);
+                    $('#home-filtered-blog-post-114').html(response);
                 },
                 error: function(xhr, status, error) {
                     // Handle error if AJAX request fails

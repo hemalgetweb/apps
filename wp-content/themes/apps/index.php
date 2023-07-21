@@ -43,19 +43,28 @@ $categories = get_categories(array(
 	<div class="container">
 		
 		<div class="apps-blog-page-topbar-114">
-			<div class="apps-blog-page-topbar-select">
-				<select name="cat" class="apps-has-category-select select2-init" id="apps-has-simple-select-12324">
-					<option value="all">All Categories</option>
-					<?php foreach ($categories as $category) : ?>
-						<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>
-					<?php endforeach; ?>
-				</select>
-				<select name="cat" class="apps-has-duration-select select2-init" id="apps-has-simple-select-4321">
-					<option value="all">All Posts</option>
-					<option value="last-7-days">Last 7 Days</option>
-					<option value="last-month">Last Month</option>
-					<option value="last-year">Last Year</option>
-				</select>
+			<div class="row">
+				<div class="col-xxl-6">
+					<div class="apps-blog-page-topbar-select">
+						<select name="cat" class="apps-has-category-select select2-init" id="apps-has-simple-select-12324">
+							<option value="all">All Categories</option>
+							<?php foreach ($categories as $category) : ?>
+								<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>
+							<?php endforeach; ?>
+						</select>
+						<select name="cat" class="apps-has-duration-select select2-init" id="apps-has-simple-select-4321">
+							<option value="all">All Posts</option>
+							<option value="last-7-days">Last 7 Days</option>
+							<option value="last-month">Last Month</option>
+							<option value="last-year">Last Year</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-xxl-6">
+					<div class="apps-blog-page-topbar-search text-end">
+						<input type="search" class="apps-search-post-for-home-114" name="search_post" id="apps_searh_post">
+					</div>
+				</div>
 			</div>
 		</div>
 

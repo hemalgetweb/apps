@@ -4955,3 +4955,6 @@ h5.apps-project-card-title-114 button {
     text-decoration: none;
     color: #003959;
 }
+.apps-blog-page-topbar-select .select2-container {
+    min-width: 200px;
+}

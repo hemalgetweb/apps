@@ -35,9 +35,9 @@ if($cbblog_layout == 'right-sidebar') {
 				<?php if($cbblog_layout == 'left-sidebar') : ?>
 					<?php if ( is_active_sidebar( 'blog-sidebar' ) ): ?>
 						<div class="col-lg-4 col-md-12 col-sm-12">
-							<!-- <div class="apps-details-sidebar">
-								<?php // dynamic_sidebar('blog-sidebar');?>
-							</div> -->
+							<div class="apps-details-sidebar">
+								<?php dynamic_sidebar('blog-sidebar');?>
+							</div>
 							<div class="sidebar">
 								<div class="sidebar-widget border-dark1 radius-6 overflow-hidden mb-4">
 									<h3 class="widget-title px-4 py-3 fs-4 fw-semi-bold mb-0">

@@ -32,7 +32,7 @@ if($cbblog_layout == 'right-sidebar') {
 $categories = get_categories(array(
     'taxonomy' => 'category', // Specify the taxonomy (category in this case)
     'hide_empty' => true,    // Set to false to include categories with no posts
-	'post_type' => 'posts'
+	'post_type' => 'post'
 ));
 
 

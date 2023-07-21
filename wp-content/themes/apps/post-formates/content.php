@@ -43,7 +43,7 @@ $cbtoolkit_blog_btn_text = get_theme_mod('cbtoolkit_blog_btn_text', __('Read Mor
                 <?php endif; ?>
                 <h3 class="blog-title fs-18 lh-base fw-medium">
                     <a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-                        <?php echo get_the_title(); ?>
+                        <?php echo wp_trim_words( get_the_title(), 7 ); ?>
                     </a>
                 </h3>
                 <div class="blog-intro fs-14 text-clr-dark2 mb-0">

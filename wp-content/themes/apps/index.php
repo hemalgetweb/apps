@@ -38,20 +38,20 @@ $categories = get_categories(array(
 
 ?>
 <!-- blog-pots -->
-<section class="blog-pots section-padding bg-clr-dark7 pt-300"
+<section class="blog-pots section-padding bg-clr-dark7 pt-218"
 	style="background-image: url(assets/img/w-shape.svg); background-repeat: no-repeat; background-position: 0 0px;">
 	<div class="apps-blog-page-topbar-114">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-8">
 					<div class="apps-blog-page-topbar-select">
-						<select name="cat" class="apps-has-category-select select2-init" id="apps-has-simple-select-12324">
+						<select name="cat" class="apps-has-category-select mb-md-0 select2-init" id="apps-has-simple-select-12324">
 							<option value="all">All Categories</option>
 							<?php foreach ($categories as $category) : ?>
 								<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>
 							<?php endforeach; ?>
 						</select>
-						<select name="cat" class="apps-has-duration-select select2-init" id="apps-has-simple-select-4321">
+						<select name="cat" class="apps-has-duration-select mb-30 mb-md-0 select2-init" id="apps-has-simple-select-4321">
 							<option value="all">All Posts</option>
 							<option value="last-7-days">Last 7 Days</option>
 							<option value="last-month">Last Month</option>
@@ -60,7 +60,7 @@ $categories = get_categories(array(
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-4">
-					<div class="apps-blog-page-topbar-search text-md-end">
+					<div class="apps-blog-page-topbar-search text-start text-md-end">
 						<div class="apps-form-group">
 							<i class="fal fa-search"></i>
 							<input type="search" placeholder="Search" class="apps-search-post-for-home-114" name="search_post" id="apps_searh_post">
@@ -104,7 +104,7 @@ $categories = get_categories(array(
 							</span>
 							<h3 class="blog-title fs-28 fw-semi-bold">
 								<a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="text-decoration-none text-clr-dark1">
-									<?php echo get_the_title(get_the_ID()); ?>
+									<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
 								</a>
 							</h3>
 							<div class="blog-intro fs-6 text-clr-dark2 mb-0">

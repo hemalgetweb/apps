@@ -5,11 +5,9 @@ $cbtoolkit_blog_author_switch = get_theme_mod('cbtoolkit_blog_author_switch', tr
 $cbtoolkit_blog_date_switch = get_theme_mod('cbtoolkit_blog_date_switch', true);
 $cbtoolkit_blog_comments_switch = get_theme_mod('cbtoolkit_blog_comments_switch', true);
 $cbtoolkit_blog_btn_text = get_theme_mod('cbtoolkit_blog_btn_text', __('Read More', 'apps'));
-if(get_field('featured_post')) {
-    return false;
-}
+
 ?>
-<div class="col-xl-4 col-sm-6 mb-4">
+<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
     <div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 p-xl-4 radius-6 box-shadow2'); ?>>
         <?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())) :
         $att = get_post_thumbnail_id();
@@ -45,12 +43,12 @@ if(get_field('featured_post')) {
                 <?php endif; ?>
                 <h3 class="blog-title fs-18 lh-base fw-medium">
                     <a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-                        <?php echo get_the_title(); ?>
+                        <?php echo wp_trim_words( get_the_title(), 7 ); ?>
                     </a>
                 </h3>
                 <div class="blog-intro fs-14 text-clr-dark2 mb-0">
                     <p class="">
-                    <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+                        <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
                     </p>
                 </div>
             </div>

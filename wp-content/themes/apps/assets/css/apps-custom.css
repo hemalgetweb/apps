@@ -4947,6 +4947,9 @@ h5.apps-project-card-title-114 button {
 .pt-300 {
     padding-top: 300px;
 }
+.pt-218 {
+    padding-top: 218px;
+}
 
 .apps-sidebar-category ul {
     list-style: none;
@@ -4971,8 +4974,9 @@ h5.apps-project-card-title-114 button {
 .apps-blog-page-topbar-search input {
     border: 0;
     height: 44px;
+    background: transparent;
+    width: 100%;
 }
-
 .apps-blog-page-topbar-search i {
     font-size: 17px;
     color: #316785;
@@ -4982,7 +4986,13 @@ h5.apps-project-card-title-114 button {
 .apps-blog-page-topbar-search .apps-form-group {
     padding: 0 16px;
 }
-
+.apps-blog-page-topbar-search .apps-form-group {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    float: right;
+}
 .apps-blog-page-topbar-search input::placeholder {
     color: var(--dark-dark-3, #316785);
     font-family: Cairo;
@@ -5014,10 +5024,6 @@ h5.apps-project-card-title-114 button {
     border-color: transparent;
     color: #335E6B
 }
-
-input#wp-block-search__input-1 {}
-
-form#mc4wp-form-1 {}
 
 form#mc4wp-form-1 label {
     display: none;
@@ -5064,4 +5070,20 @@ form#mc4wp-form-1 input.form-control.subscribe {
     width: 67px;
     height: 67px;
     border-radius: 6px;
+}
+@media (max-width: 767px) {
+    .apps-blog-page-topbar-select span.select2-selection {
+        margin-bottom: 25px;
+    }
+    .apps-blog-page-topbar-search .apps-form-group {
+        float: none;
+    }
+}
+@media (max-width: 1199px) {
+    section.blog-pots.section-padding.pt-218 {
+        padding-top: 100px;
+    }
+}
+.single-post footer.footer.bg-clr-deepDark.pt-300 {
+    padding-top: 100px;
 }

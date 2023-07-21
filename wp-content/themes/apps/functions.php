@@ -375,7 +375,7 @@ function apps_filter_blog_posts_by_category()
 						<?php endif; ?>
 						<h3 class="blog-title fs-18 lh-base fw-medium">
 							<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-								<?php echo get_the_title(); ?>
+							<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
 							</a>
 						</h3>
 						<div class="blog-intro fs-14 text-clr-dark2 mb-0">
@@ -493,7 +493,7 @@ function apps_filter_blog_posts()
 							<?php endif; ?>
 							<h3 class="blog-title fs-18 lh-base fw-medium">
 								<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-									<?php echo get_the_title(); ?>
+									<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
 								</a>
 							</h3>
 							<div class="blog-intro fs-14 text-clr-dark2 mb-0">
@@ -588,7 +588,7 @@ add_action('wp_ajax_nopriv_filter_blog_posts', 'apps_filter_blog_posts');
 							<?php endif; ?>
 							<h3 class="blog-title fs-18 lh-base fw-medium">
 								<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-									<?php echo get_the_title(); ?>
+								<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
 								</a>
 							</h3>
 							<div class="blog-intro fs-14 text-clr-dark2 mb-0">

@@ -940,7 +940,8 @@ section.pricing .pricing-wrapper {
 
 @media (max-width: 575px) {
     .apps-accordion-wrapper-main-114 .accordion-button .apps-question-q-114 {
-        width: 40px;
+        width: 20px;
+        flex-shrink: 0;
     }
 }
 

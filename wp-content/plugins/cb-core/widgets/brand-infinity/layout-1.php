@@ -7,7 +7,7 @@ $enable_small_box_class = $settings['enable_small_box'] ? 'has-enable-small-box-
     <?php if (empty($settings['reverce_direction'])): ?>
       <div class="marquee-vertical">
         <?php if (!empty($settings['slides'])): ?>
-          <div class="top-slide-wrap d-flex align-items-center <?php $settings['enable_small_box'] ? 'has-sm-slide-wrap': ''; ?>">
+          <div class="top-slide-wrap d-flex align-items-center <?php echo $settings['enable_small_box'] ? 'has-sm-slide-wrap': ''; ?>">
             <?php foreach ($settings['slides'] as $slide): ?>
               <div class="slide-item radius-6 d-flex align-items-center justify-content-center">
                 <?php if (!empty($slide['product_brand_image'])): ?>
@@ -21,7 +21,7 @@ $enable_small_box_class = $settings['enable_small_box'] ? 'has-enable-small-box-
     <?php else: ?>
       <div class="marquee-reverse">
         <?php if (!empty($settings['slides'])): ?>
-          <div class="top-slide-wrap d-flex align-items-center <?php $settings['enable_small_box'] ? 'has-sm-slide-wrap': ''; ?>">
+          <div class="top-slide-wrap d-flex align-items-center <?php echo $settings['enable_small_box'] ? 'has-sm-slide-wrap': ''; ?>">
             <?php foreach ($settings['slides'] as $slide): ?>
               <div class="slide-item radius-6 d-flex align-items-center justify-content-center">
                 <?php if (!empty($slide['product_brand_image'])): ?>

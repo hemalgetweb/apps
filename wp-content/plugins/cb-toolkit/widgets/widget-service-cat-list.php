@@ -33,7 +33,7 @@ Class Latest_Services_Category_List_Widget extends WP_Widget{
 					?>
 					<?php if ( !empty($categories) && is_array( $categories ) ) : ?>
 						<?php foreach ( $categories as $category ) : ?>
-							<li><a href="<?php echo esc_url( get_category_link( $category->term_id)); ?>" class="blog-sidebar-link d-flex justify-content-between align-items-center mb-20"><span><span class="fz-14 lh-0"><i class="icofont-simple-right"></i></span> <?php echo esc_html($category->name); ?></span><span><?php echo esc_html($category->count); ?></span></a></li>
+							<li><a href="<?php echo esc_url( get_category_link( $category->term_id)); ?>" class="blog-sidebar-link d-flex justify-content-between align-items-center mb-20"><span><span class="fz-14 lh-0"><i class="icofont-simple-right"></i></span> <?php echo esc_html($category->name); ?></span><span>(<?php echo esc_html($category->count); ?>)</span></a></li>
 						<?php endforeach; ?>
 					<?php endif; ?>
 				</ul>

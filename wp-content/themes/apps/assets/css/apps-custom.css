@@ -4962,14 +4962,14 @@ h5.apps-project-card-title-114 button {
     min-width: 200px;
 }
 
-.apps-blog-page-topbar-searchs .apps-form-group {
+.apps-blog-page-topbar-search .apps-form-group {
     border-radius: 4px;
     border: 1px solid var(--dark-dark-4, #73A7C3);
     background: var(--white, #FFF);
     display: inline-block;
 }
 
-.apps-blog-page-topbar-searchs input {
+.apps-blog-page-topbar-search input {
     border: 0;
     height: 44px;
 }
@@ -4984,7 +4984,7 @@ h5.apps-project-card-title-114 button {
     padding: 0 16px;
 }
 
-.apps-blog-page-topbar-searchs input::placeholder {
+.apps-blog-page-topbar-search input::placeholder {
     color: var(--dark-dark-3, #316785);
     font-family: Cairo;
     font-size: 16px;

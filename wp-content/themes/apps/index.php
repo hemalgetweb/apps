@@ -38,13 +38,12 @@ $categories = get_categories(array(
 
 ?>
 <!-- blog-pots -->
-<section class="blog-pots section-padding bg-clr-dark7 pt-260"
+<section class="blog-pots section-padding bg-clr-dark7 pt-300"
 	style="background-image: url(assets/img/w-shape.svg); background-repeat: no-repeat; background-position: 0 0px;">
-	<div class="container">
-		
-		<div class="apps-blog-page-topbar-114">
+	<div class="apps-blog-page-topbar-114">
+		<div class="container">
 			<div class="row">
-				<div class="col-xxl-6">
+				<div class="col-lg-6 col-md-8">
 					<div class="apps-blog-page-topbar-select">
 						<select name="cat" class="apps-has-category-select select2-init" id="apps-has-simple-select-12324">
 							<option value="all">All Categories</option>
@@ -60,8 +59,8 @@ $categories = get_categories(array(
 						</select>
 					</div>
 				</div>
-				<div class="col-xxl-6">
-					<div class="apps-blog-page-topbar-search text-end">
+				<div class="col-lg-6 col-md-4">
+					<div class="apps-blog-page-topbar-search text-md-end">
 						<div class="apps-form-group">
 							<i class="fal fa-search"></i>
 							<input type="search" placeholder="Search" class="apps-search-post-for-home-114" name="search_post" id="apps_searh_post">
@@ -70,6 +69,9 @@ $categories = get_categories(array(
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container">
+		
 
 
 		<?php

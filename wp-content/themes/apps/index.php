@@ -27,31 +27,51 @@ if($cbblog_layout == 'right-sidebar') {
 } else {
 	$blog_column = 8;
 }
+
+// Get all categories for the "post" post type
+$categories = get_categories(array(
+    'taxonomy' => 'category', // Specify the taxonomy (category in this case)
+    'hide_empty' => true,    // Set to false to include categories with no posts
+	'post_type' => 'post'
+));
+
+
 ?>
 <!-- blog-pots -->
-<section class="blog-pots section-padding bg-clr-dark7"
+<section class="blog-pots section-padding bg-clr-dark7 pt-260"
 	style="background-image: url(assets/img/w-shape.svg); background-repeat: no-repeat; background-position: 0 0px;">
 	<div class="container">
-		<div class="section-header pt-100">
-			<div class="title-hints d-flex align-items-center gap-2">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
-				<h6 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-0">
-					<?php echo esc_html__('Latest blogs', 'apps'); ?>
-				</h6>
-			</div>
-			<h2 class="text-clr-dark1 fw-semi-bold fs-36 mb-2">
-				<?php echo get_the_title(get_option('page_for_posts', true) ); ?>
-			</h2>
-			<div>
-				<p class="fs-6 text-clr-dark2 mb-0">
-					<?php
-					$page_for_posts_id = get_option( 'page_for_posts' );
-					$page_for_posts_obj = get_post( $page_for_posts_id );
-					echo apply_filters( 'the_content', $page_for_posts_obj->post_content );
-					?>
-				</p>
+		
+		<div class="apps-blog-page-topbar-114">
+			<div class="row">
+				<div class="col-xxl-6">
+					<div class="apps-blog-page-topbar-select">
+						<select name="cat" class="apps-has-category-select select2-init" id="apps-has-simple-select-12324">
+							<option value="all">All Categories</option>
+							<?php foreach ($categories as $category) : ?>
+								<option value="<?php echo esc_attr($category->term_id); ?>"><?php echo $category->name; ?></option>
+							<?php endforeach; ?>
+						</select>
+						<select name="cat" class="apps-has-duration-select select2-init" id="apps-has-simple-select-4321">
+							<option value="all">All Posts</option>
+							<option value="last-7-days">Last 7 Days</option>
+							<option value="last-month">Last Month</option>
+							<option value="last-year">Last Year</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-xxl-6">
+					<div class="apps-blog-page-topbar-search text-end">
+						<div class="apps-form-group">
+							<i class="fal fa-search"></i>
+							<input type="search" placeholder="Search" class="apps-search-post-for-home-114" name="search_post" id="apps_searh_post">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
+
 		<?php
 			if ( have_posts() ):
 			if ( is_home() && !is_front_page() ):
@@ -59,10 +79,10 @@ if($cbblog_layout == 'right-sidebar') {
 		<?php
 			while(have_posts()) :
 			the_post();
-			$is_featured = get_field('featured_post');
+			$is_featured = function_exists('get_field') ? get_field('featured_post'): false;
 			$category = get_the_category(get_the_ID());
-			$cat_id = $category[0]->term_id;
-			$cat_name = $category[0]->name;
+			$cat_id = $category ? $category[0]->term_id: '';
+			$cat_name = $category ? $category[0]->name : '';
 		?>
 		<?php if($is_featured) : ?>
 		<div class="blog-featured bg-white p-4 p-xl-5 radius-12 mt-5">
@@ -102,7 +122,7 @@ if($cbblog_layout == 'right-sidebar') {
 		</div>
 		<?php endif; ?>
 		<?php endwhile; endif; endif; ?>
-		<div class="articles pt-3">
+		<div class="articles pt-3" id="home-filtered-blog-post-114">
 			<div class="row mt-4">
 				<div class="col-12">
 					<?php

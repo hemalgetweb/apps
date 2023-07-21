@@ -16,11 +16,6 @@
  * ===========================================================
  */
 
-// $(window).on('load', function () {
-
-//     // code should be execute here
-
-// });
 $('.apps-has-portfolio-popup').on('click', function() {
     var url = $(this).data('url');
     var title = $(this).data('title');

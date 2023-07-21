@@ -5,9 +5,7 @@ $cbtoolkit_blog_author_switch = get_theme_mod('cbtoolkit_blog_author_switch', tr
 $cbtoolkit_blog_date_switch = get_theme_mod('cbtoolkit_blog_date_switch', true);
 $cbtoolkit_blog_comments_switch = get_theme_mod('cbtoolkit_blog_comments_switch', true);
 $cbtoolkit_blog_btn_text = get_theme_mod('cbtoolkit_blog_btn_text', __('Read More', 'apps'));
-if(get_field('featured_post')) {
-    return false;
-}
+
 ?>
 <div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
     <div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 p-xl-4 radius-6 box-shadow2'); ?>>

@@ -627,12 +627,15 @@ add_action('wp_ajax_nopriv_apps_perform_post_search', 'apps_perform_post_search'
 
 
 /**
- * Add css for homepage animation
+ * Add css for brand animation
  */
 
 
 function apps_head_animation() {
 	$current_page_id = get_queried_object_id();
+	/** 
+	 * For homepage
+	*/
 	if($current_page_id == 9) {?>
 	<style>
 		@-webkit-keyframes animated-slide {
@@ -792,5 +795,170 @@ function apps_head_animation() {
 		}
 	</style>
 	<?php }
+
+
+	/**
+	 * For about page
+	 */
+
+	 if($current_page_id == 799) {?>
+		<style>
+			@-webkit-keyframes animated-slide {
+			0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+	
+			100% {
+				-webkit-transform: translateX(calc(-378px * 8));
+				transform: translateX(calc(-378px * 8));
+			}
+			}
+	
+			@keyframes animated-slide {
+			0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+	
+			100% {
+				-webkit-transform: translateX(calc(-378px * 8));
+				transform: translateX(calc(-378px * 8));
+			}
+			}
+	
+			@media (max-width: 776px) {
+			@-webkit-keyframes animated-slide {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 8));
+				transform: translateX(calc(-221px * 8));
+				}
+			}
+	
+			@keyframes animated-slide {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 8));
+				transform: translateX(calc(-221px * 8));
+				}
+			}
+			}
+	
+			@media (max-width: 576px) {
+			@-webkit-keyframes animated-slide {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-185px * 8));
+				transform: translateX(calc(-185px * 8));
+				}
+			}
+	
+			@keyframes animated-slide {
+					0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+					}
+	
+					100% {
+					-webkit-transform: translateX(calc(-185px * 8));
+					transform: translateX(calc(-185px * 8));
+					}
+				}
+			}
+	
+	
+			/**
+			*For small box
+			*/
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+	
+				100% {
+					-webkit-transform: translateX(calc(-228px * 5));
+					transform: translateX(calc(-228px * 5));
+				}
+				}
+	
+				@keyframes animated-slide-sm {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+	
+				100% {
+					-webkit-transform: translateX(calc(-228px * 5));
+					transform: translateX(calc(-228px * 5));
+				}
+			}
+	
+			@media (max-width: 776px) {
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 5));
+				transform: translateX(calc(-221px * 5));
+				}
+			}
+	
+			@keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 5));
+				transform: translateX(calc(-221px * 5));
+				}
+			}
+			}
+	
+			@media (max-width: 576px) {
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-185px * 5));
+				transform: translateX(calc(-185px * 5));
+				}
+			}
+	
+			@keyframes animated-slide-sm {
+					0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+					}
+	
+					100% {
+					-webkit-transform: translateX(calc(-185px * 5));
+					transform: translateX(calc(-185px * 5));
+					}
+				}
+			}
+		</style>
+		<?php }
 }
  add_action('wp_head', 'apps_head_animation');

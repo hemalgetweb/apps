@@ -1839,9 +1839,7 @@ span.authure-name a {
     font-family: "Font awesome 6 pro";
 }
 
-.sidebar-widget .recent-post li.recent-post-list .img-fluid {
-    width: 67px;
-}
+
 
 .sidebar-widget .widget-title {
     color: rgb(33, 37, 41);
@@ -5059,4 +5057,10 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
 .apps-sidebar-category ul li a:hover {
     color: #00C7C7;
+}
+
+.sidebar-widget .recent-post li.recent-post-list .img-fluid {
+    width: 67px;
+    height: 67px;
+    border-radius: 6px;
 }

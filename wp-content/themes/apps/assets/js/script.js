@@ -8,16 +8,6 @@
         titleDom.text(title);
         imageDom.attr('src', url);
     });
-
-    // Function to handle mobile menu toggle
-    $('.navbar-toggler-icons.openMenu').on('click', function() {
-        $('body').addClass('overflow-hidden');
-    });
-
-    $('.navbar-toggler-icons.closeMenu').on('click', function() {
-        $('body').removeClass('overflow-hidden');
-    });
-
     // Function to handle fixed header
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 100) {

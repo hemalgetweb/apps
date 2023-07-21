@@ -850,18 +850,7 @@ section.pricing .pricing-wrapper {
 /**
 * accordion
 */
-.apps-accordion-wrapper-main-114 .accordion-button .apps-question-q-114 {
-    background: #00C7C7;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 22px;
-    color: #003959;
-    width: 18px;
-    height: 22px;
-    border-radius: 6px;
-    text-align: center;
-    margin-right: 12px;
-}
+
 
 .apps-accordion-wrapper-main-114 .accordion-button {
     font-weight: 500;
@@ -941,7 +930,6 @@ section.pricing .pricing-wrapper {
 @media (max-width: 575px) {
     .apps-accordion-wrapper-main-114 .accordion-button .apps-question-q-114 {
         width: 20px;
-        flex-shrink: 0;
     }
 }
 
@@ -2510,6 +2498,7 @@ section.pricing .pricing-wrapper {
     border-radius: 6px;
     text-align: center;
     margin-right: 12px;
+    flex-shrink: 0;
 }
 
 .apps-accordion-wrapper-main-114 .accordion-button {
@@ -2589,7 +2578,7 @@ section.pricing .pricing-wrapper {
 
 @media (max-width: 575px) {
     .apps-accordion-wrapper-main-114 .accordion-button .apps-question-q-114 {
-        width: 40px;
+        width: 20px;
     }
 }
 
@@ -4947,6 +4936,7 @@ h5.apps-project-card-title-114 button {
 .pt-300 {
     padding-top: 300px;
 }
+
 .pt-218 {
     padding-top: 218px;
 }
@@ -4977,6 +4967,7 @@ h5.apps-project-card-title-114 button {
     background: transparent;
     width: 100%;
 }
+
 .apps-blog-page-topbar-search i {
     font-size: 17px;
     color: #316785;
@@ -4986,6 +4977,7 @@ h5.apps-project-card-title-114 button {
 .apps-blog-page-topbar-search .apps-form-group {
     padding: 0 16px;
 }
+
 .apps-blog-page-topbar-search .apps-form-group {
     padding: 0 16px;
     display: flex;
@@ -4993,6 +4985,7 @@ h5.apps-project-card-title-114 button {
     max-width: 200px;
     float: right;
 }
+
 .apps-blog-page-topbar-search input::placeholder {
     color: var(--dark-dark-3, #316785);
     font-family: Cairo;
@@ -5071,19 +5064,23 @@ form#mc4wp-form-1 input.form-control.subscribe {
     height: 67px;
     border-radius: 6px;
 }
+
 @media (max-width: 767px) {
     .apps-blog-page-topbar-select span.select2-selection {
         margin-bottom: 25px;
     }
+
     .apps-blog-page-topbar-search .apps-form-group {
         float: none;
     }
 }
+
 @media (max-width: 1199px) {
     section.blog-pots.section-padding.pt-218 {
         padding-top: 100px;
     }
 }
+
 .single-post footer.footer.bg-clr-deepDark.pt-300 {
     padding-top: 100px;
 }

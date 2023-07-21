@@ -4926,6 +4926,7 @@ h5.apps-project-card-title-114 button {
 .page-id-2181 footer.footer.bg-clr-deepDark.pt-300 {
     padding-top: 100px;
 }
+
 @media (max-width: 575px) {
     footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even) {
         padding-left: 20px;
@@ -4947,6 +4948,7 @@ h5.apps-project-card-title-114 button {
 .pt-300 {
     padding-top: 300px;
 }
+
 .apps-sidebar-category ul {
     list-style: none;
 }
@@ -4955,19 +4957,23 @@ h5.apps-project-card-title-114 button {
     text-decoration: none;
     color: #003959;
 }
+
 .apps-blog-page-topbar-select .select2-container {
     min-width: 200px;
 }
+
 .apps-blog-page-topbar-search.text-end .apps-form-group {
     border-radius: 4px;
     border: 1px solid var(--dark-dark-4, #73A7C3);
     background: var(--white, #FFF);
     display: inline-block;
 }
-.apps-blog-page-topbar-search.text-end input{
+
+.apps-blog-page-topbar-search.text-end input {
     border: 0;
     height: 44px;
 }
+
 .apps-blog-page-topbar-search i {
     font-size: 17px;
     color: #316785;
@@ -4984,5 +4990,73 @@ h5.apps-project-card-title-114 button {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
+    line-height: 26px;
+    /* 162.5% */
+}
+
+/* sidebar css */
+
+.Sidebar .sidebar-widget {
+    box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);
+    padding: 5px;
+}
+
+.Sidebar .sidebar-widget input {
+    border-color: transparent;
+}
+
+
+.Sidebar .sidebar-widget {
+    box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);
+    padding: 5px;
+}
+
+.Sidebar .sidebar-widget input {
+    border-color: transparent;
+    color: #335E6B
+}
+
+input#wp-block-search__input-1 {}
+
+form#mc4wp-form-1 {}
+
+form#mc4wp-form-1 label {
+    display: none;
+}
+
+form#mc4wp-form-1 input.form-control.subscribe {
+    border: 1px solid #AECBD3;
+    color: #AECBD3;
+}
+
+.Sidebar .widget-title {
+    color: #003959;
+    font-family: Cairo;
+    font-size: 24px;
+}
+
+.recent-post-list .post-title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 3.6em;
+    color: #1F516D;
+    font-weight: 500;
+}
+
+.recent-post-list .post-time {
+    font-weight: 700 !important;
+    color: #1F516D !important;
+    text-transform: uppercase;
+}
+
+#cb-widget-post-list-2 a {
+    font-weight: 700 !important;
+    color: #316785 !important;
+}
+
+.apps-sidebar-category ul li a:hover {
+    color: #00C7C7;
 }

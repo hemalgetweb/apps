@@ -60,7 +60,7 @@ $categories = get_categories(array(
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-4">
-					<div class="apps-blog-page-topbar-search text-md-end">
+					<div class="apps-blog-page-topbar-search text-start text-md-end">
 						<div class="apps-form-group">
 							<i class="fal fa-search"></i>
 							<input type="search" placeholder="Search" class="apps-search-post-for-home-114" name="search_post" id="apps_searh_post">

@@ -4943,3 +4943,7 @@ h5.apps-project-card-title-114 button {
 .footer-widget ul li a:hover {
     color: #fff !important;
 }
+
+.pt-260 {
+    padding-top: 260px;
+}

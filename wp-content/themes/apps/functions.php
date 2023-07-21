@@ -712,7 +712,7 @@ function apps_head_animation() {
 
 
 		/**
-		*For small
+		*For small box
 		*/
 		@-webkit-keyframes animated-slide-sm {
 		0% {

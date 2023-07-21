@@ -5069,3 +5069,8 @@ form#mc4wp-form-1 input.form-control.subscribe {
         margin-bottom: 25px;
     }
 }
+@media (max-width: 1199px) {
+    section.blog-pots.section-padding.pt-300 {
+        padding-top: 100px;
+    }
+}

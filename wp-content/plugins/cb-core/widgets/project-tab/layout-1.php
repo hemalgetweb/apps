@@ -84,6 +84,8 @@
                         <div class="row row-cols-xxl-5">
                             <?php while($single_query_arg_query->have_posts()) : 
                                 $single_query_arg_query->the_post();
+                                $post_id = get_the_ID();
+                                $project_big_image = get_post_meta($post_id, 'project_image', true);
                                 ?>
                             <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="apps-project-tab-main-content-114 mb-30">

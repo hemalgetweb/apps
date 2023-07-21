@@ -5084,3 +5084,13 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .single-post footer.footer.bg-clr-deepDark.pt-300 {
     padding-top: 100px;
 }
+
+.apps-blog-page-topbar-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.apps-blog-page-topbar-select .select2.select2-container.select2-container--default {
+    width: auto !important;
+}

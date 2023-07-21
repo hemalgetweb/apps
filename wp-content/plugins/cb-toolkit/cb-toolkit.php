@@ -29,6 +29,7 @@ final class CB_toolkit {
 		require_once CB_TOOLKIT_DIR . '/inc/one-click-demo-importer/one_click_demo_importer.php';
 		require_once CB_TOOLKIT_DIR . '/inc/class-cb-kirki.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-service-cat-list.php';
+		require_once CB_TOOLKIT_DIR . '/widgets/widget-post-cat-list.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-contact.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-banner.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-subscribe.php';
@@ -36,7 +37,6 @@ final class CB_toolkit {
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-question.php';
 		require_once CB_TOOLKIT_DIR . '/inc/cb-toolkit-functions.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-latest-post-sidebar.php';
-		require_once CB_TOOLKIT_DIR . '/widgets/widget-post-cat-list.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-post-tag-list.php';
 		require_once CB_TOOLKIT_DIR . '/widgets/widget-social.php';
 		if(function_exists( 'Kirki' )) {

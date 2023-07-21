@@ -525,3 +525,98 @@ function apps_filter_blog_posts()
 }
 add_action('wp_ajax_filter_blog_posts', 'apps_filter_blog_posts');
 add_action('wp_ajax_nopriv_filter_blog_posts', 'apps_filter_blog_posts');
+
+
+/**
+ * Filter blog post by search
+ */
+
+ function apps_perform_post_search()
+{
+    $search_term = $_POST['search_term'];
+
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        's' => $search_term,
+    );
+
+    $query = new WP_Query($args);
+
+    // Start output buffer to store the HTML content
+    ob_start();
+
+    // Check if there are search results to display
+    if ($query->have_posts()) {
+		echo '<div class="row">';
+        while ($query->have_posts()) {
+            $query->the_post();?>
+            <div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
+				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 p-xl-4 radius-6 box-shadow2'); ?>>
+					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())) :
+					$att = get_post_thumbnail_id();
+						$image_src = wp_get_attachment_image_src($att, 'full');
+						if (!empty($image_src)) {
+							$image_src = $image_src[0];
+						}
+						$apps_cat  = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0]: '';
+					$first_cat_name = '';
+					$first_cat_id = '';
+					$first_cat_url = '';
+					if(!empty($apps_cat)) {
+						$first_cat_name = $apps_cat['name'];
+						$first_cat_id = $apps_cat['term_id'];
+						$first_cat_url = get_category_link( $first_cat_id );
+					}
+					?>
+					<div class="blog-img mb-2 radius-6 overflow-hidden">
+						<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
+					</div>
+					<?php endif; ?>
+					<div class="blog-info ">
+						<div class="feature-top">
+							<?php if(!empty($first_cat_name)) : ?>
+							<a href="<?php echo esc_url($first_cat_url); ?>">
+								<span
+									class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" alt="icon"
+										class="img-fluid">
+									<?php echo $first_cat_name; ?>
+								</span>
+							</a>
+							<?php endif; ?>
+							<h3 class="blog-title fs-18 lh-base fw-medium">
+								<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
+									<?php echo get_the_title(); ?>
+								</a>
+							</h3>
+							<div class="blog-intro fs-14 text-clr-dark2 mb-0">
+								<p class="">
+									<?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+								</p>
+							</div>
+						</div>
+						<a href="<?php echo get_the_permalink(); ?>"
+							class="text-decoration-none fs-12 fw-bold text-clr-primary text-uppercase d-flex gap-2 align-items-center">
+							<?php echo esc_html__('Read more', 'apps'); ?>
+							<span class="ni fs-6 ni-arrow-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+        <?php }
+        wp_reset_postdata();
+		echo '</div>';
+    } else {
+        // No search results found
+        echo '<p>No results found for the search term: "' . $search_term . '".</p>';
+    }
+
+    // End the output buffer and return the content
+    $output = ob_get_clean();
+    echo $output;
+    exit;
+}
+add_action('wp_ajax_apps_perform_post_search', 'apps_perform_post_search');
+add_action('wp_ajax_nopriv_apps_perform_post_search', 'apps_perform_post_search');

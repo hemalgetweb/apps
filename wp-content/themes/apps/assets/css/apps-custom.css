@@ -4958,3 +4958,31 @@ h5.apps-project-card-title-114 button {
 .apps-blog-page-topbar-select .select2-container {
     min-width: 200px;
 }
+.apps-blog-page-topbar-search.text-end .apps-form-group {
+    border-radius: 4px;
+    border: 1px solid var(--dark-dark-4, #73A7C3);
+    background: var(--white, #FFF);
+    display: inline-block;
+}
+.apps-blog-page-topbar-search.text-end input{
+    border: 0;
+    height: 44px;
+}
+.apps-blog-page-topbar-search i {
+    font-size: 17px;
+    color: #316785;
+    margin-right: 6px;
+}
+
+.apps-blog-page-topbar-search .apps-form-group {
+    padding: 0 16px;
+}
+
+.apps-blog-page-topbar-search.text-end input::placeholder {
+    color: var(--dark-dark-3, #316785);
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}

@@ -45,7 +45,7 @@ if(get_field('featured_post')) {
                 <?php endif; ?>
                 <h3 class="blog-title fs-18 lh-base fw-medium">
                     <a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-                        <?php echo get_the_title(); ?>
+                        <?php echo wp_trim_words( get_the_title(), 8 ); ?>
                     </a>
                 </h3>
                 <div class="blog-intro fs-14 text-clr-dark2 mb-0">

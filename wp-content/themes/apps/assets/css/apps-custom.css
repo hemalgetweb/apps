@@ -4988,6 +4988,8 @@ h5.apps-project-card-title-114 button {
     padding: 0 16px;
     display: flex;
     align-items: center;
+    max-width: 200px;
+    float: right;
 }
 .apps-blog-page-topbar-search input::placeholder {
     color: var(--dark-dark-3, #316785);

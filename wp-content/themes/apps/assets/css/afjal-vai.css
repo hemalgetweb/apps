@@ -1,10 +1,10 @@
-@media (max-width:768px) {
+@media (max-width:575px) {
   .apps-blog-page-topbar-search {
     display: flex;
     justify-content: center;
   }
 
   .apps-blog-page-topbar-select {
-    gap: 0;
+    gap: 0 !important;
   }
 }

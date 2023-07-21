@@ -59,7 +59,7 @@ if($cbblog_layout == 'right-sidebar') {
 		<?php
 			while(have_posts()) :
 			the_post();
-			$is_featured = get_field('featured_post');
+			$is_featured = function_exists('get_field') ? get_field('featured_post'): false;
 			$category = get_the_category(get_the_ID());
 			$cat_id = $category[0]->term_id;
 			$cat_name = $category[0]->name;

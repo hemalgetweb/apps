@@ -4973,8 +4973,9 @@ h5.apps-project-card-title-114 button {
 .apps-blog-page-topbar-search input {
     border: 0;
     height: 44px;
+    background: transparent;
+    width: 100%;
 }
-
 .apps-blog-page-topbar-search i {
     font-size: 17px;
     color: #316785;

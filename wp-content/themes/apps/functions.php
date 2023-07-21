@@ -632,7 +632,8 @@ add_action('wp_ajax_nopriv_apps_perform_post_search', 'apps_perform_post_search'
 
 
 function apps_head_animation() {
-	if(is_home()) {?>
+	$current_page_id = get_queried_object_id();
+	if($current_page_id == 9) {?>
 	<style>
 		@-webkit-keyframes animated-slide {
 		0% {

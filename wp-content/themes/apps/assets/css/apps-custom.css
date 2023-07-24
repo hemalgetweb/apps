@@ -5257,3 +5257,43 @@ form#mc4wp-form-1 input.form-control.subscribe {
         padding: 31px 26px;
     }
 }
+.pt-7 {
+    padding-top: 50px;
+}
+.dynamic-service-box-content-114 .title a:hover, .apps-service-box-content-2-114 .title a:hover, h5.apps-project-card-title-114 button:hover {
+    color: #1ae3e3;
+}
+
+.apps-project-card-114  .apps-project-card-image-114 {
+    overflow: hidden;
+}
+
+.apps-project-card-114 .apps-project-card-image-114 img {
+    transition: all .3s;
+}
+
+.apps-project-card-114:hover .apps-project-card-image-114 img {
+    transform: scale(1.06);
+}
+
+.instruction-wrap .instruction-item:hover img {
+    transform: scale(0.8);
+}
+.dynamic-service-box-114 .dynamic-service-box-img-114 img {
+    transition: all .3s;
+}
+
+.dynamic-service-box-114 .dynamic-service-box-img-114 {
+    overflow: hidden;
+}
+
+.dynamic-service-box-114:hover .dynamic-service-box-img-114 img {
+    transform: scale(1.08);
+}
+.apps-service-box-2-114:hover .apps-service-box-icon-2-114 img {
+    transform: rotateY(180deg)
+}
+
+.apps-service-box-2-114 .apps-service-box-icon-2-114 img {
+    transition: all .3s;
+}

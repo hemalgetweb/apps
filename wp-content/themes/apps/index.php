@@ -128,8 +128,8 @@ $categories = get_categories(array(
 		</div>
 		<?php endif; ?>
 		<?php endwhile; endif; endif; ?>
-		<div class="articles pt-3" id="home-filtered-blog-post-114">
-			<div class="row mt-4">
+		<div class="articles pt-7" id="home-filtered-blog-post-114">
+			<div class="row">
 				<div class="col-12">
 					<?php
 						if ( have_posts() ):

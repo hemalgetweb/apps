@@ -25,7 +25,7 @@
   }
 
   .banner-img {
-    position: static !important;
+    /* position: static !important; */
     text-align: end !important;
   }
 

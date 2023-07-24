@@ -1,15 +1,11 @@
-@media (max-width:768px) {
-  .apps-blog-page-topbar-search {
-    display: flex;
-    justify-content: center;
-  }
+.tech-stack-box-icon-single-114:hover img {
+  transform: scale(1.1);
 }
 
-@media (max-width:480px) {
-  .apps-blog-page-topbar-select {
-    gap: 0 !important;
-  }
+.tech-stack-box-icon-single-114:hover .label {
+  transform: scale(1.1);
 }
+
 
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {
   left: -24px;
@@ -57,6 +53,10 @@
     overflow-y: hidden !important;
   }
 
+  .pricing-wrapper .single-price {
+    padding-bottom: 0;
+  }
+
 
 }
 
@@ -73,10 +73,13 @@
     white-space: revert;
   }
 
-  .pricing-wrapper .single-price {
-    padding-bottom: 0;
-  }
+}
 
+@media (max-width:768px) {
+  .apps-blog-page-topbar-search {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -88,5 +91,9 @@
 @media (max-width: 480px) {
   .mobileMenu .navbar-nav .menu-item>ul.dropdown-menus {
     max-width: 100%;
+  }
+
+  .apps-blog-page-topbar-select {
+    gap: 0 !important;
   }
 }

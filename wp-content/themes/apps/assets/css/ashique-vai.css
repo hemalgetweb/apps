@@ -20,3 +20,10 @@ body.overflow-hidden {
 .apps-btn-transparent-border-114 i {
     margin-left: 3px;
 }
+
+.apps-job-list-box-title-114 .title {
+    transition: all 200ms linear;
+}
+.apps-job-list-box-title-114 .title:hover {
+    color: #00C7C7;
+}

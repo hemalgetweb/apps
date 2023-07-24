@@ -103,9 +103,9 @@
     gap: 0 !important;
   }
 
-  .instruction-wrap .instruction-item:nt:nth-child(4)::after,
-  .instruction-wrap .instruction-item:nt:nth-child(5)::after,
-  .instruction-wrap .instruction-item:nt:nth-child(6)::after {
+  .instruction-wrap .instruction-item:nth-child(4)::after,
+  .instruction-wrap .instruction-item:nth-child(5)::after,
+  .instruction-wrap .instruction-item:nth-child(6)::after {
     opacity: 0;
   }
 

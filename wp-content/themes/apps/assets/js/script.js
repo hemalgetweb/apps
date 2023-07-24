@@ -28,7 +28,7 @@ $(window).on('load resize', function() {
         var windowWidth = $(window).width();
         // Common actions for both 'load' and 'resize' events
         if(windowWidth < 1200) {
-            $('ul#menu-main-menu > li > a').on('click', function(e) {
+            $('ul#menu-main-menu > li.has-mega-menu menu-item > a, ul#menu-main-menu > li.has-sub-menu menu-item > a').on('click', function(e) {
                 e.preventDefault();
             })
         }

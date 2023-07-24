@@ -5320,3 +5320,74 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .blog-pagination>.page-numbers > img {
     transition: all .3s;
 }
+.apps-btn-transparent-border-114:hover {
+    border-color: transparent;
+}
+.apps-service-box-114 .apps-service-box-icon-114 img {
+    transition: all .3s;
+}
+.apps-service-box-114 .apps-service-box-icon-114 {
+    overflow: hidden;
+}
+.apps-service-box-114:hover .apps-service-box-icon-114 img {
+    transform: scale(1.1);
+}
+
+.apps-feature-list-widget-114 .apps-feature-list-box-114:hover {
+    transform: translateY(-20px);
+}
+
+.apps-feature-list-widget-114 .apps-feature-list-box-114 {
+    transition: all .3s;
+}
+.apps-brand-grid-item-114 .thumb {
+    transition: all.3s;
+}
+
+.apps-brand-grid-item-114:hover .thumb {
+    transform: rotateY(180deg);
+}
+
+.feature-list-area .apps-feature-list-box-3-114 {
+    transition: all .3s;
+}
+
+.feature-list-area .apps-feature-list-box-3-114:hover {
+    transform: translateY(-15px);
+}
+.pricing .pricing-wrapper .pricing-item .pricing-count .price-btn:hover {
+    border-color: transparent;
+}
+.top-slide-wrap .slide-item img {
+    transition: all .3s;
+}
+
+.top-slide-wrap .slide-item:hover img {
+    transform: scale(1.05);
+}
+.apps-feature-list-content-bottom-wrapper-4-114 ul li:hover img {
+    transform: translateY(-7px);
+}
+.seo-case-studies-item .seo-feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.seo-case-studies-item .seo-feature-item {
+    transition: all .3s;
+}
+.apps-service-box-content-wrap-114 .apps-service-box-title-114 a:hover {
+    color: #1ae3e3;
+}
+.apps-category-grid-item-single-114 .icon img {
+    transition: all .3s;
+}
+
+.apps-category-grid-item-single-114:hover .icon img {
+    transform: rotateY(180deg);
+}
+@media (max-width: 767px) {
+    .mobileMenu .navbar-nav .menu-item>ul.dropdown-menus {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}

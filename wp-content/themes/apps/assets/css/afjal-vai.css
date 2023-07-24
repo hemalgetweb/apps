@@ -2,6 +2,10 @@
   cursor: pointer;
 }
 
+.tech-stack-box-icon-single-114 img {
+  transition: all 0.3s linear;
+}
+
 .tech-stack-box-icon-single-114:hover img {
   transform: scale(1.2);
 }
@@ -98,4 +102,12 @@
   .apps-blog-page-topbar-select {
     gap: 0 !important;
   }
+
+  .instruction-wrap .instruction-item:nth-child(4)::after,
+  .instruction-wrap .instruction-item:nth-child(5)::after,
+  .instruction-wrap .instruction-item:nth-child(6)::after {
+    opacity: 0;
+  }
+
+
 }

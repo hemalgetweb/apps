@@ -80,15 +80,15 @@
   }
 
   .apps-blog-box-img-114 a {
-    display: block;
+    display: block !important;
   }
 
   .apps-blog-box-img-114 img {
-    width: 100%;
+    width: 100% !important;
   }
 
   .apps-blog-box-content-114 {
-    padding: 10px;
+    padding: 10px !important;
   }
 
 }

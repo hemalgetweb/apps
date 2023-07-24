@@ -645,8 +645,8 @@ function apps_head_animation() {
 		}
 
 		100% {
-			-webkit-transform: translateX(calc(-378px * 9));
-			transform: translateX(calc(-378px * 9));
+			-webkit-transform: translateX(calc(-378px * 16));
+			transform: translateX(calc(-378px * 16));
 		}
 		}
 
@@ -657,8 +657,8 @@ function apps_head_animation() {
 		}
 
 		100% {
-			-webkit-transform: translateX(calc(-378px * 9));
-			transform: translateX(calc(-378px * 9));
+			-webkit-transform: translateX(calc(-378px * 16));
+			transform: translateX(calc(-378px * 16));
 		}
 		}
 
@@ -670,8 +670,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-221px * 9));
-			transform: translateX(calc(-221px * 9));
+			-webkit-transform: translateX(calc(-221px * 16));
+			transform: translateX(calc(-221px * 16));
 			}
 		}
 
@@ -682,8 +682,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-221px * 9));
-			transform: translateX(calc(-221px * 9));
+			-webkit-transform: translateX(calc(-221px * 16));
+			transform: translateX(calc(-221px * 16));
 			}
 		}
 		}
@@ -696,8 +696,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-185px * 9));
-			transform: translateX(calc(-185px * 9));
+			-webkit-transform: translateX(calc(-185px * 16));
+			transform: translateX(calc(-185px * 16));
 			}
 		}
 
@@ -708,8 +708,8 @@ function apps_head_animation() {
 				}
 
 				100% {
-				-webkit-transform: translateX(calc(-185px * 9));
-				transform: translateX(calc(-185px * 9));
+				-webkit-transform: translateX(calc(-185px * 16));
+				transform: translateX(calc(-185px * 16));
 				}
 			}
 		}
@@ -725,8 +725,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-				-webkit-transform: translateX(calc(-228px * 5));
-				transform: translateX(calc(-228px * 5));
+				-webkit-transform: translateX(calc(-228px * 10));
+				transform: translateX(calc(-228px * 10));
 			}
 			}
 
@@ -737,8 +737,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-				-webkit-transform: translateX(calc(-228px * 5));
-				transform: translateX(calc(-228px * 5));
+				-webkit-transform: translateX(calc(-228px * 10));
+				transform: translateX(calc(-228px * 10));
 			}
 		}
 
@@ -750,8 +750,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-221px * 5));
-			transform: translateX(calc(-221px * 5));
+			-webkit-transform: translateX(calc(-221px * 10));
+			transform: translateX(calc(-221px * 10));
 			}
 		}
 
@@ -762,8 +762,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-221px * 5));
-			transform: translateX(calc(-221px * 5));
+			-webkit-transform: translateX(calc(-221px * 10));
+			transform: translateX(calc(-221px * 10));
 			}
 		}
 		}
@@ -776,8 +776,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-185px * 5));
-			transform: translateX(calc(-185px * 5));
+			-webkit-transform: translateX(calc(-185px * 10));
+			transform: translateX(calc(-185px * 10));
 			}
 		}
 
@@ -788,8 +788,8 @@ function apps_head_animation() {
 				}
 
 				100% {
-				-webkit-transform: translateX(calc(-185px * 5));
-				transform: translateX(calc(-185px * 5));
+				-webkit-transform: translateX(calc(-185px * 10));
+				transform: translateX(calc(-185px * 10));
 				}
 			}
 		}
@@ -960,6 +960,86 @@ function apps_head_animation() {
 					100% {
 					-webkit-transform: translateX(calc(-185px * 8));
 					transform: translateX(calc(-185px * 8));
+					}
+				}
+			}
+	
+	
+			/**
+			*For small box
+			*/
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+	
+				100% {
+					-webkit-transform: translateX(calc(-228px * 5));
+					transform: translateX(calc(-228px * 5));
+				}
+				}
+	
+				@keyframes animated-slide-sm {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+	
+				100% {
+					-webkit-transform: translateX(calc(-228px * 5));
+					transform: translateX(calc(-228px * 5));
+				}
+			}
+	
+			@media (max-width: 776px) {
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 5));
+				transform: translateX(calc(-221px * 5));
+				}
+			}
+	
+			@keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 5));
+				transform: translateX(calc(-221px * 5));
+				}
+			}
+			}
+	
+			@media (max-width: 576px) {
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-185px * 5));
+				transform: translateX(calc(-185px * 5));
+				}
+			}
+	
+			@keyframes animated-slide-sm {
+					0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+					}
+	
+					100% {
+					-webkit-transform: translateX(calc(-185px * 5));
+					transform: translateX(calc(-185px * 5));
 					}
 				}
 			}

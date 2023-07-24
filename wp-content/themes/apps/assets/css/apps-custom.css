@@ -5314,3 +5314,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .apps-fz-about-team-single-content-social a:hover {
     background: #1ae3e3;
 }
+.blog-pagination>.page-numbers:hover > img {
+    filter: brightness(100);
+}
+.blog-pagination>.page-numbers > img {
+    transition: all .3s;
+}

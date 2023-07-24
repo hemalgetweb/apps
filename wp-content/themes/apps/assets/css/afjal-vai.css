@@ -79,6 +79,14 @@
     white-space: revert;
   }
 
+  .apps-blog-box-img-114 img {
+    width: 100%;
+  }
+
+  .apps-blog-box-content-114 {
+    padding: 10px;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -103,11 +111,7 @@
     gap: 0 !important;
   }
 
-  .instruction-wrap .instruction-item:nth-child(4)::after,
-  .instruction-wrap .instruction-item:nth-child(5)::after,
-  .instruction-wrap .instruction-item:nth-child(6)::after {
-    opacity: 0;
+  .instruction-wrap.row.position-relative>*:nth-child(4)::after {
+    display: none;
   }
-
-
 }

@@ -48,4 +48,8 @@
     padding: 100px 0px 100px 0px;
   }
 
+  .job-application-form.pt-100 {
+    padding-top: 100px !important;
+  }
+
 }

@@ -40,4 +40,8 @@
     gap: 12px;
   }
 
+  .client-testimonials-slide .swiper-pagination11 {
+    display: none;
+  }
+
 }

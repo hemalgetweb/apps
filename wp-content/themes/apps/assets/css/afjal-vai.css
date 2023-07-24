@@ -65,6 +65,10 @@
     left: 0 !important;
   }
 
+  .navbar-nav .menu-item>ul.dropdown-menus li a {
+    white-space: revert;
+  }
+
 }
 
 @media (max-width: 575px) {

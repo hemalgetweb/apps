@@ -5326,9 +5326,11 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .apps-service-box-114 .apps-service-box-icon-114 img {
     transition: all .3s;
 }
-
+.apps-service-box-114 .apps-service-box-icon-114 {
+    overflow: hidden;
+}
 .apps-service-box-114:hover .apps-service-box-icon-114 img {
-    transform: rotateY(180deg);
+    transform: scale(1.1);
 }
 
 .apps-feature-list-widget-114 .apps-feature-list-box-114:hover {
@@ -5362,4 +5364,14 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
 .top-slide-wrap .slide-item:hover img {
     transform: scale(1.05);
+}
+.apps-feature-list-content-bottom-wrapper-4-114 ul li:hover img {
+    transform: translateY(-7px);
+}
+.seo-case-studies-item .seo-feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.seo-case-studies-item .seo-feature-item {
+    transition: all .3s;
 }

@@ -47,8 +47,9 @@ if(!empty($category)) {
                                     <h2 class="blog-title text-clr-dark1 fs-36 fw-bold mb-3">
 										<?php the_title(); ?>
                                     </h2>
+									<!-- display none -->
                                     <div
-                                        class="authors text-decoration-none d-flex gap-2 gap-lg-3 align-items-center">
+                                        class="d-none authors text-decoration-none d-flex gap-2 gap-lg-3 align-items-center">
                                         <?php echo get_avatar(get_the_author_meta('ID'), get_the_ID()); ?>
                                         <span>
                                             <span class="authure-name fs-6 text-clr-dark1 mb-1">

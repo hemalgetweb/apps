@@ -73,6 +73,10 @@
     white-space: revert;
   }
 
+  .pricing-wrapper .single-price {
+    padding-bottom: 0;
+  }
+
 }
 
 @media (max-width: 575px) {

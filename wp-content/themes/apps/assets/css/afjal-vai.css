@@ -80,10 +80,10 @@
   }
 
   .apps-blog-box-img-114 a {
-    display: block;
+    display: block !important;
   }
 
-  .apps-blog-box-img-114 img {
+  .apps-blog-box-img-114 a img {
     width: 100% !important;
   }
 

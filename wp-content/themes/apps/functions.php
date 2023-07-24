@@ -795,6 +795,91 @@ function apps_head_animation() {
 		}
 	</style>
 	<?php }
+	/** 
+	 * For ecommerce web development
+	*/
+	if($current_page_id == 1469) {?>
+	<style>
+		/**
+		*For small box
+		*/
+		@-webkit-keyframes animated-slide-sm {
+			0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+
+			100% {
+				-webkit-transform: translateX(calc(-228px * 14));
+				transform: translateX(calc(-228px * 14));
+			}
+			}
+
+			@keyframes animated-slide-sm {
+			0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+
+			100% {
+				-webkit-transform: translateX(calc(-228px * 14));
+				transform: translateX(calc(-228px * 14));
+			}
+		}
+
+		@media (max-width: 776px) {
+		@-webkit-keyframes animated-slide-sm {
+			0% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			}
+
+			100% {
+			-webkit-transform: translateX(calc(-221px * 14));
+			transform: translateX(calc(-221px * 14));
+			}
+		}
+
+		@keyframes animated-slide-sm {
+			0% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			}
+
+			100% {
+			-webkit-transform: translateX(calc(-221px * 14));
+			transform: translateX(calc(-221px * 14));
+			}
+		}
+		}
+
+		@media (max-width: 576px) {
+		@-webkit-keyframes animated-slide-sm {
+			0% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			}
+
+			100% {
+			-webkit-transform: translateX(calc(-185px * 14));
+			transform: translateX(calc(-185px * 14));
+			}
+		}
+
+		@keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+
+				100% {
+				-webkit-transform: translateX(calc(-185px * 14));
+				transform: translateX(calc(-185px * 14));
+				}
+			}
+		}
+	</style>
+	<?php }
 
 
 	/**

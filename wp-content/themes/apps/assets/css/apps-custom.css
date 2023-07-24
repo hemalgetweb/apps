@@ -5252,3 +5252,8 @@ form#mc4wp-form-1 input.form-control.subscribe {
     }
     
 }
+@media (min-width: 1200px) and (max-width: 1399px) {
+    #header .navbar-nav .nav-item>.nav-link {
+        padding: 31px 26px;
+    }
+}

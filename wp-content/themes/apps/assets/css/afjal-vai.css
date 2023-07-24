@@ -52,4 +52,16 @@
     padding-top: 100px !important;
   }
 
+
+
+}
+
+@media (max-width: 991px) {
+  .footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even) {
+    padding-left: 20px;
+  }
+
+  .footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {
+    left: 0;
+  }
 }

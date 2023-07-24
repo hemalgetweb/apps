@@ -5230,3 +5230,25 @@ form#mc4wp-form-1 input.form-control.subscribe {
         }
     }
 }
+@media  (max-width: 991px) {
+    .apps-tab-navigation-114 {
+        border: 0;
+    }
+    
+    .apps-tab-navigation-114 div#nav-tab {
+        flex-wrap: nowrap;
+        min-width: 960px;
+        border: 0;
+    }
+    
+    .apps-tab-navigation-114 div#nav-tab button::after {display: none;}
+    
+    .apps-tab-navigation-114.mb-50 {
+        margin-bottom: 0;
+    }
+    
+    .tab-project .container.container-tab-project-114 {
+        margin-bottom: 40px;
+    }
+    
+}

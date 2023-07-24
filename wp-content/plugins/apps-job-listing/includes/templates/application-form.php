@@ -128,7 +128,7 @@ FORM_HANDLER\updateApplicationFormOptions();
                   <span class="attach-file d-block p-3 bg-white rounded-4 mt-2 text-center">
                     <span class="attach-text fw-normal">
                       <span class="ni ni-upload text-clr-dark1"></span>
-                      Attach your file
+                      <span class="apps-has-application-attached">Attach your file</span>
                     </span>
                   </span>
                 </label>

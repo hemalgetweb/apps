@@ -139,9 +139,9 @@ a:hover {
   transition: all 0.2s linear;
 }
 
-.bg-btn:hover,
-.bg-btn.active {
+.bg-btn:hover, .bg-btn.active {
   background-color: var(--secondary) !important;
+  color: #003c4f;
 }
 
 .bg-btn:hover .btn-icon,

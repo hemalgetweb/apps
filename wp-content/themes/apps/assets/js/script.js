@@ -312,21 +312,25 @@ $(window).scroll(function () {
                 width: 'resolve' // need to override the changed default
             });
         }
-        $('#application_upload_file').on('change', function() {
-            if (this.files && this.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                var image = $('<img>').attr('src', e.target.result).css({
-                'max-width': '100px',
-                'max-height': '100px',
-                'margin-top': '10px'
-                });
-                $('.file-uploads').append(image);
-            };
-            reader.readAsDataURL(this.files[0]);
-            }
-        });
     });
+    // Function to update the HTML value with the file name
+    function updateHTMLValue(fileName) {
+        $('.apps-has-application-attached').text(fileName);
+    }
 
+    // Function to handle the file selection
+    function handleFileUpload() {
+        const fileInput = $('#application_upload_file')[0];
+        const file = fileInput.files[0];
+
+        if (file) {
+            updateHTMLValue(file.name);
+        } else {
+            updateHTMLValue('No file selected');
+        }
+    }
+
+    // Attach an event listener to the file input
+    $('#application_upload_file').on('change', handleFileUpload);
 
 })(jQuery)

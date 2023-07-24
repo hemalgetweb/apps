@@ -51,11 +51,11 @@
                                     $this->add_link_attributes('btn_link2', $settings['btn_link2']);
                                 }
                                 ?>
-                                <a class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 bg-clr-secondary text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
+                                <a class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 bg-clr-secondary text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
                                 <?php echo $this->get_render_attribute_string('btn_link2'); ?>
                                 >
                                     <?php echo cb_core_kses_basic($settings['btn_text2']); ?>
-                                    <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
+                                    <svg class="btn-icon position-absolute " width="10" height="10" viewBox="0 0 10 10"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z"
                                             fill="#003C4F" />

@@ -33,4 +33,11 @@
   .tech-stack-box-left-label-114 {
     padding-right: 20px;
   }
+
+  .tech-stack-box-right-icon-list-114 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px;
+  }
+
 }

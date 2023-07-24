@@ -79,6 +79,10 @@
     white-space: revert;
   }
 
+  .apps-blog-box-img-114 a {
+    display: block;
+  }
+
   .apps-blog-box-img-114 img {
     width: 100%;
   }

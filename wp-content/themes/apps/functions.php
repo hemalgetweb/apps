@@ -636,7 +636,7 @@ function apps_head_animation() {
 	/** 
 	 * For homepage
 	*/
-	if($current_page_id == 9) {?>
+	if($current_page_id == 9 || 758) {?>
 	<style>
 		@-webkit-keyframes animated-slide {
 		0% {

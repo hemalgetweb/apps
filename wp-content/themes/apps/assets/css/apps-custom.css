@@ -5279,3 +5279,14 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .instruction-wrap .instruction-item:hover img {
     transform: scale(0.8);
 }
+.dynamic-service-box-114 .dynamic-service-box-img-114 img {
+    transition: all .3s;
+}
+
+.dynamic-service-box-114 .dynamic-service-box-img-114 {
+    overflow: hidden;
+}
+
+.dynamic-service-box-114:hover .dynamic-service-box-img-114 img {
+    transform: scale(1.08);
+}

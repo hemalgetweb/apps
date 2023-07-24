@@ -5385,3 +5385,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .apps-category-grid-item-single-114:hover .icon img {
     transform: rotateY(180deg);
 }
+@media (max-width: 767px) {
+    .mobileMenu .navbar-nav .menu-item>ul.dropdown-menus {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}

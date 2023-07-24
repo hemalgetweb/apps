@@ -72,3 +72,9 @@
     padding: 0 15px !important;
   }
 }
+
+@media (max-width: 480px) {
+  .mobileMenu .navbar-nav .menu-item>ul.dropdown-menus {
+    max-width: 100%;
+  }
+}

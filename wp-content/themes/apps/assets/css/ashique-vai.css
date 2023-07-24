@@ -1,8 +1,4 @@
 
-body.overflow-hidden {
-    overflow-y: scroll !important;
-}
-
 .mobileMenu .navbar .mobileMenu-header {
     background-color: #003959;
 }

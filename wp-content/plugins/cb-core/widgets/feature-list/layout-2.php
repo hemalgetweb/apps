@@ -2,7 +2,7 @@
   <div class="container">
     <?php if (!empty($settings['slides'])): ?>
       <div
-        class="our-strategy position-relative d-flex gap-sm-4 gap-3 align-items-center justify-content-lg-between mt-5 mt-lg-0 wow fadeInUp flex-wrap flex-xl-nowrap"
+        class="our-strategy position-relative d-flex gap-sm-4 gap-3 align-items-center justify-content-lg-between mt-lg-0 wow fadeInUp flex-wrap flex-xl-nowrap"
         data-wow-duration="0.200s" data-wow-delay="600ms">
         <?php foreach ($settings['slides'] as $slide): ?>
           <div class="strategy-item d-flex align-items-center gap-3">

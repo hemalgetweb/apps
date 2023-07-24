@@ -4,11 +4,11 @@
  * Plugin URI: https://kirki.org
  * Description: The Ultimate WordPress Customizer Framework
  * Author: Themeum
- * Author URI: https://www.themeum.com
- * Version: 4.1.0
+ * Author URI: https://themeum.com
+ * Version: 4.2.0
  * Text Domain: kirki
  * Requires at least: 5.2
- * Requires PHP: 7.0
+ * Requires PHP: 7.1
  *
  * @package Kirki
  * @category Core
@@ -44,7 +44,7 @@ require_once __DIR__ . '/kirki-composer/autoload.php'; // phpcs:ignore WPThemeRe
 require_once __DIR__ . '/inc/bootstrap.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude
 
 if ( ! defined( 'KIRKI_VERSION' ) ) {
-	define( 'KIRKI_VERSION', '4.1.1' );
+	define( 'KIRKI_VERSION', '4.2.0' );
 }
 
 if ( ! defined( 'KIRKI_PLUGIN_DIR' ) ) {

@@ -5353,3 +5353,6 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .feature-list-area .apps-feature-list-box-3-114:hover {
     transform: translateY(-15px);
 }
+.pricing .pricing-wrapper .pricing-item .pricing-count .price-btn:hover {
+    border-color: transparent;
+}

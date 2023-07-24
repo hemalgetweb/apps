@@ -801,83 +801,83 @@ function apps_head_animation() {
 	if($current_page_id == 1469) {?>
 	<style>
 		/**
-		*For small box
-		*/
-		@-webkit-keyframes animated-slide-sm {
-			0% {
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
+			*For small box
+			*/
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+	
+				100% {
+					-webkit-transform: translateX(calc(-228px * 10));
+					transform: translateX(calc(-228px * 10));
+				}
+				}
+	
+				@keyframes animated-slide-sm {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+	
+				100% {
+					-webkit-transform: translateX(calc(-228px * 10));
+					transform: translateX(calc(-228px * 10));
+				}
 			}
-
-			100% {
-				-webkit-transform: translateX(calc(-228px * 10));
-				transform: translateX(calc(-228px * 10));
-			}
-			}
-
-			@keyframes animated-slide-sm {
-			0% {
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
-			}
-
-			100% {
-				-webkit-transform: translateX(calc(-228px * 10));
-				transform: translateX(calc(-228px * 10));
-			}
-		}
-
-		@media (max-width: 776px) {
-		@-webkit-keyframes animated-slide-sm {
-			0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-			}
-
-			100% {
-			-webkit-transform: translateX(calc(-221px * 10));
-			transform: translateX(calc(-221px * 10));
-			}
-		}
-
-		@keyframes animated-slide-sm {
-			0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-			}
-
-			100% {
-			-webkit-transform: translateX(calc(-221px * 10));
-			transform: translateX(calc(-221px * 10));
-			}
-		}
-		}
-
-		@media (max-width: 576px) {
-		@-webkit-keyframes animated-slide-sm {
-			0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-			}
-
-			100% {
-			-webkit-transform: translateX(calc(-185px * 10));
-			transform: translateX(calc(-185px * 10));
-			}
-		}
-
-		@keyframes animated-slide-sm {
+	
+			@media (max-width: 776px) {
+			@-webkit-keyframes animated-slide-sm {
 				0% {
 				-webkit-transform: translateX(0);
 				transform: translateX(0);
 				}
-
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 10));
+				transform: translateX(calc(-221px * 10));
+				}
+			}
+	
+			@keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
+				100% {
+				-webkit-transform: translateX(calc(-221px * 10));
+				transform: translateX(calc(-221px * 10));
+				}
+			}
+			}
+	
+			@media (max-width: 576px) {
+			@-webkit-keyframes animated-slide-sm {
+				0% {
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+				}
+	
 				100% {
 				-webkit-transform: translateX(calc(-185px * 10));
 				transform: translateX(calc(-185px * 10));
 				}
 			}
-		}
+	
+			@keyframes animated-slide-sm {
+					0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+					}
+	
+					100% {
+					-webkit-transform: translateX(calc(-185px * 10));
+					transform: translateX(calc(-185px * 10));
+					}
+				}
+			}
 	</style>
 	<?php }
 

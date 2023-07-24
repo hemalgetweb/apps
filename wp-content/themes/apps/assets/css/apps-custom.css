@@ -5260,3 +5260,22 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .pt-7 {
     padding-top: 50px;
 }
+.dynamic-service-box-content-114 .title a:hover, .apps-service-box-content-2-114 .title a:hover, h5.apps-project-card-title-114 button:hover {
+    color: #1ae3e3;
+}
+
+.apps-project-card-114  .apps-project-card-image-114 {
+    overflow: hidden;
+}
+
+.apps-project-card-114 .apps-project-card-image-114 img {
+    transition: all .3s;
+}
+
+.apps-project-card-114:hover .apps-project-card-image-114 img {
+    transform: scale(1.06);
+}
+
+.instruction-wrap .instruction-item:hover img {
+    transform: scale(0.8);
+}

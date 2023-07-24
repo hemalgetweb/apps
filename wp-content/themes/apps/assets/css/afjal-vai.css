@@ -103,4 +103,7 @@
     gap: 0 !important;
   }
 
+  .instruction-wrap.row.position-relative>*:nth-child(4)::after {
+    display: none;
+  }
 }

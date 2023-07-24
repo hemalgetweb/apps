@@ -5375,3 +5375,13 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .seo-case-studies-item .seo-feature-item {
     transition: all .3s;
 }
+.apps-service-box-content-wrap-114 .apps-service-box-title-114 a:hover {
+    color: #1ae3e3;
+}
+.apps-category-grid-item-single-114 .icon img {
+    transition: all .3s;
+}
+
+.apps-category-grid-item-single-114:hover .icon img {
+    transform: rotateY(180deg);
+}

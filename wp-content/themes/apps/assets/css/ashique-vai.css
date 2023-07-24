@@ -32,6 +32,7 @@
 
 .button-arrow-left-icon {
 	position: relative;
+    padding: 14px 55px 14px 30px;
 }
 
 .button-arrow-left-icon::after {
@@ -58,4 +59,10 @@
         right: 11px;
     }
 
+}
+
+
+
+.seo-case-studies-wrap .seo-feature .border-bottom1 {
+    border-bottom: none !important;
 }

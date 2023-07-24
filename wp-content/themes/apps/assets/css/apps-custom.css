@@ -5063,6 +5063,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     width: 67px;
     height: 67px;
     border-radius: 6px;
+    object-fit: cover;
 }
 
 @media (max-width: 767px) {

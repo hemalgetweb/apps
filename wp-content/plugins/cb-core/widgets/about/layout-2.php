@@ -20,7 +20,7 @@
                     <p><?php echo wp_kses_post($settings['about_desc']); ?></p>
                     <?php endif; ?>
                     <?php if(!empty($settings['btn_text'])) : ?>
-                        <a href="<?php echo $settings['btn_link']['url'] ?? esc_url($settings['btn_link']['url']); ?>" class="apps-el-btn-114"><?php echo esc_html($settings['btn_text']); ?> <i class="fal fa-arrow-right"></i></a>
+                        <a href="<?php echo $settings['btn_link']['url'] ?? esc_url($settings['btn_link']['url']); ?>" class="apps-el-btn-114 button-arrow-left-icon"><?php echo esc_html($settings['btn_text']); ?></a>
                     <?php endif; ?>
                 </div>
                 </div>

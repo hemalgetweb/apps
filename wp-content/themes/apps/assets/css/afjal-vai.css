@@ -45,23 +45,26 @@
   }
 
   .elementor-803 .elementor-element.elementor-element-bb166dd {
-    padding: 100px 0px 100px 0px;
+    padding: 102px 0px 100px 0px;
   }
 
   .job-application-form.pt-100 {
     padding-top: 100px !important;
   }
 
+  .brand-carousel-area .top-slide-wrap .slide-item {
+    overflow: hidden;
+  }
 
 
 }
 
 @media (max-width: 991px) {
-  .footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even) {
+  .footer .menu-company-container ul>li:nth-child(even) {
     padding-left: 20px;
   }
 
-  .footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {
+  .footer .menu-company-container ul>li:nth-child(even)::before {
     left: 0;
   }
 }

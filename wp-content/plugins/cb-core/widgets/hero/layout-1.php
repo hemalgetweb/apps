@@ -51,7 +51,7 @@
                                     $this->add_link_attributes('btn_link2', $settings['btn_link2']);
                                 }
                                 ?>
-                                <a class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 bg-clr-secondary text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
+                                <a class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 bg-clr-secondary text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
                                 <?php echo $this->get_render_attribute_string('btn_link2'); ?>
                                 >
                                     <?php echo cb_core_kses_basic($settings['btn_text2']); ?>

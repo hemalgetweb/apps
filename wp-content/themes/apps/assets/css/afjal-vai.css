@@ -79,6 +79,14 @@
     white-space: revert;
   }
 
+  .apps-blog-box-img-114 img {
+    width: 100%;
+  }
+
+  .apps-blog-box-content-114 {
+    padding: 10px;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -102,8 +110,6 @@
   .apps-blog-page-topbar-select {
     gap: 0 !important;
   }
-
-  body {}
 
   .instruction-wrap.row.position-relative>*:nth-child(4)::after {
     display: none;

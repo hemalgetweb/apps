@@ -1,10 +1,12 @@
-.tech-stack-box-icon-single-114:hover img {
-  transform: scale(1.1);
+.tech-stack-box-icon-single-114 {
+  cursor: pointer;
 }
 
-.tech-stack-box-icon-single-114:hover .label {
-  transform: scale(1.1);
+.tech-stack-box-icon-single-114:hover img {
+  transform: scale(1.2);
 }
+
+
 
 
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {

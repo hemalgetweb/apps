@@ -5338,6 +5338,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .apps-feature-list-widget-114 .apps-feature-list-box-114 {
     transition: all .3s;
 }
+.apps-brand-grid-item-114 .thumb {
+    transition: all.3s;
+}
 
 .apps-brand-grid-item-114:hover .thumb {
     transform: rotateY(180deg);

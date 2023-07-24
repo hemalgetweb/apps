@@ -44,9 +44,6 @@
     display: none;
   }
 
-  .elementor-803 .elementor-element.elementor-element-bb166dd {
-    padding: 102px 0px 100px 0px !important;
-  }
 
   .job-application-form.pt-100 {
     padding-top: 100px !important;
@@ -66,5 +63,12 @@
 
   .footer .menu-company-container ul>li:nth-child(even)::before {
     left: 0 !important;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .mobileMenu .navbar .mobileMenu-header {
+    padding: 0 15px !important;
   }
 }

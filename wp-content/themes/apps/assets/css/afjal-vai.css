@@ -11,4 +11,37 @@
   }
 }
 
-body {}
+.client-testimonials-slide .client-item-wraps .client-qoute-icon {
+  left: -24px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .strategy-wrapper .our-strategy.position-relative.d-flex {
+    justify-content: start !important;
+  }
+
+  .strategy-wrapper .our-strategy.position-relative.d-flex>* {
+    flex: 0 0 48%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .apps-project-wrapper-114 .apps-project-pagination-wrapper-114 {
+    justify-content: center !important;
+  }
+
+  .tech-stack-box-left-label-114 {
+    padding-right: 20px;
+  }
+
+  .tech-stack-box-right-icon-list-114 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px;
+  }
+
+  .client-testimonials-slide .swiper-pagination11 {
+    display: none;
+  }
+
+}

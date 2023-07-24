@@ -6,3 +6,24 @@ body.overflow-hidden {
 .mobileMenu .navbar .mobileMenu-header {
     background-color: #003959;
 }
+
+
+.apps-btn-primary-114:hover {
+    background-color: #50FF81;
+}
+
+.apps-btn-transparent-border-114:hover {
+    background-color: #00C7C7;
+    color: #003959;
+}
+
+.apps-btn-transparent-border-114 i {
+    margin-left: 3px;
+}
+
+.apps-job-list-box-title-114 .title {
+    transition: all 200ms linear;
+}
+.apps-job-list-box-title-114 .title:hover {
+    color: #00C7C7;
+}

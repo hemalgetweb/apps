@@ -725,8 +725,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-				-webkit-transform: translateX(calc(-228px * 8));
-				transform: translateX(calc(-228px * 8));
+				-webkit-transform: translateX(calc(-228px * 5));
+				transform: translateX(calc(-228px * 5));
 			}
 			}
 
@@ -737,8 +737,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-				-webkit-transform: translateX(calc(-228px * 8));
-				transform: translateX(calc(-228px * 8));
+				-webkit-transform: translateX(calc(-228px * 5));
+				transform: translateX(calc(-228px * 5));
 			}
 		}
 
@@ -750,8 +750,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-221px * 8));
-			transform: translateX(calc(-221px * 8));
+			-webkit-transform: translateX(calc(-221px * 5));
+			transform: translateX(calc(-221px * 5));
 			}
 		}
 
@@ -762,8 +762,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-221px * 8));
-			transform: translateX(calc(-221px * 8));
+			-webkit-transform: translateX(calc(-221px * 5));
+			transform: translateX(calc(-221px * 5));
 			}
 		}
 		}
@@ -776,8 +776,8 @@ function apps_head_animation() {
 			}
 
 			100% {
-			-webkit-transform: translateX(calc(-185px * 8));
-			transform: translateX(calc(-185px * 8));
+			-webkit-transform: translateX(calc(-185px * 5));
+			transform: translateX(calc(-185px * 5));
 			}
 		}
 
@@ -788,8 +788,8 @@ function apps_head_animation() {
 				}
 
 				100% {
-				-webkit-transform: translateX(calc(-185px * 8));
-				transform: translateX(calc(-185px * 8));
+				-webkit-transform: translateX(calc(-185px * 5));
+				transform: translateX(calc(-185px * 5));
 				}
 			}
 		}

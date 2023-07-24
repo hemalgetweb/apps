@@ -45,7 +45,7 @@
   }
 
   .elementor-803 .elementor-element.elementor-element-bb166dd {
-    padding: 102px 0px 100px 0px;
+    padding: 102px 0px 100px 0px !important;
   }
 
   .job-application-form.pt-100 {
@@ -53,7 +53,7 @@
   }
 
   .brand-carousel-area .top-slide-wrap .slide-item {
-    overflow: hidden;
+    overflow: hidden !important;
   }
 
 
@@ -61,10 +61,10 @@
 
 @media (max-width: 991px) {
   .footer .menu-company-container ul>li:nth-child(even) {
-    padding-left: 20px;
+    padding-left: 20px !important;
   }
 
   .footer .menu-company-container ul>li:nth-child(even)::before {
-    left: 0;
+    left: 0 !important;
   }
 }

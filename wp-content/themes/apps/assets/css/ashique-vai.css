@@ -29,40 +29,6 @@
 
 
 
-/* 
-.button-arrow-left-icon {
-	position: relative;
-    padding: 14px 55px 14px 30px;
-}
-
-.button-arrow-left-icon::after {
-	position: absolute;
-	content: "";
-	width: 20px;
-	height: 20px;
-    background: url('http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/common-btn-arrow_forward.svg');
-	top: calc(50% - 10px);
-	right: 30px;
-	transition: all 200ms linear;
-}
-
-.button-arrow-left-icon:hover::after {
-	right: 26px;
-}
-
-@media (max-width: 768px) {
-	
-	.button-arrow-left-icon::after {
-        right: 15px;
-    }
-	.button-arrow-left-icon:hover::after {
-        right: 11px;
-    }
-
-} */
-
-
-
 .seo-case-studies-wrap .seo-feature .border-bottom1 {
     border-bottom: none !important;
 }
@@ -117,4 +83,16 @@
 
 .button-arrow-left-icon:hover::after {
 	right: 26px;
+}
+
+textarea {
+    resize: none;
+}
+
+.apps-contact-form-contact-list-wap-114 a {
+    transition: all 200ms linear;
+}
+
+.apps-contact-form-contact-list-wap-114 a:hover {
+    color: #ffffff;
 }

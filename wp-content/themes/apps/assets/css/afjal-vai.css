@@ -234,3 +234,7 @@
     margin-right: 10px !important;
   }
 }
+
+.home-about-style .elementor-widget-container {
+  margin-left: 0 !important;
+}

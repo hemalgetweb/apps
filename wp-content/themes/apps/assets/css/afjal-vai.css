@@ -70,7 +70,8 @@
 }
 
 
-.has-sub-menu .dropdown-toggle::after {
+.has-sub-menu .dropdown-toggle::after,
+.has-mega-menu .dropdown-toggle::after {
   margin-left: 10px;
 }
 

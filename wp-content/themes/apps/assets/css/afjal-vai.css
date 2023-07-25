@@ -58,7 +58,8 @@
 }
 
 .contact-element a,
-.contact-element p {
+.contact-element p,
+.copyright p {
   color: #A8E0FF !important;
 }
 
@@ -68,6 +69,10 @@
   left: -24px;
 }
 
+
+.has-sub-menu .dropdown-toggle::after {
+  margin-left: 10px;
+}
 
 
 @media (max-width: 1200px) {

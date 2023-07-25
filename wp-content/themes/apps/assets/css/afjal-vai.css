@@ -190,8 +190,12 @@
     border-bottom: 0
   }
 
+  #contact .form-wrapper .form-control {
+    color: #6A96A4 !important;
+  }
+
   .wpcf7-form-control-wrap .form-control::placeholder {
-    color: #6A96A4;
+    color: #6A96A4 !important;
   }
 
 }

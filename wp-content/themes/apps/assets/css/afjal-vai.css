@@ -251,3 +251,11 @@
   display: inline-block;
   width: auto;
 }
+
+.footer-widget-area #menu-social li::before {
+  display: none;
+}
+
+.footer-widget-area #menu-social li {
+  padding-left: 0;
+}

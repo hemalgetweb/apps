@@ -190,6 +190,10 @@
     border-bottom: 0
   }
 
+  .wpcf7-form-control-wrap .form-control::placeholder {
+    color: #6A96A4;
+  }
+
 }
 
 @media (max-width:768px) {

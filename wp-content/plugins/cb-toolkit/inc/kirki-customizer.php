@@ -2414,7 +2414,7 @@ function cbtoolkit_404_fields($fields)
         'settings'    => 'cbtoolkit_error_404_image',
         'description' => __('Upload Error Image.', 'cb-toolkit'),
         'section'     => '404_page',
-        'default'     => get_template_directory_uri() . '/assets/images/error.png',
+        'default'     => get_template_directory_uri() . '/assets/img/404.png',
         'priority' => 10,
     ];
     $fields[] = [
@@ -2422,7 +2422,7 @@ function cbtoolkit_404_fields($fields)
         'settings' => 'cbtoolkit_error_title',
         'label'    => __('Page not found', 'cb-toolkit'),
         'section'  => '404_page',
-        'default'  => __('Page not found', 'cb-toolkit'),
+        'default'  => __('Oh no! This Page Not Found', 'cb-toolkit'),
         'priority' => 10,
     ];
     $fields[] = [
@@ -2430,7 +2430,7 @@ function cbtoolkit_404_fields($fields)
         'settings' => 'cbtoolkit_error_desc',
         'label'    => __('404 Description Text', 'cb-toolkit'),
         'section'  => '404_page',
-        'default'  => __('Oops! The page you are looking for does not exist. It might have been moved or deleted', 'cb-toolkit'),
+        'default'  => __('The page you are looking for might have been removed its name, changed or is temporary unavailable.', 'cb-toolkit'),
         'priority' => 10,
     ];
     $fields[] = [

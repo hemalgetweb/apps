@@ -181,6 +181,15 @@
     display: none !important;
   }
 
+  .apps-service-grid-item-114:nth-child(4) .apps-service-box-3-114 {
+    border-bottom: 1px solid #D2ECFA;
+  }
+
+  .apps-service-grid-item-114:nth-child(5) .apps-service-box-3-114,
+  .apps-service-grid-item-114:nth-child(6) .apps-service-box-3-114 {
+    border-bottom: 0
+  }
+
 }
 
 @media (max-width:768px) {
@@ -220,6 +229,18 @@
   .apps-project-card-description-wrapper-114.mb-30 {
     margin-bottom: 10px;
   }
+
+  .apps-about-section-title-wrapper-7-114 .title {
+    font-size: 30px;
+  }
+
+  .apps-service-grid-3-114>* .apps-service-box-3-114 {
+    padding: 20px !important;
+  }
+
+
+
+
 }
 
 @media (max-width: 480px) {
@@ -234,6 +255,11 @@
   .instruction-wrap.row.position-relative>*:nth-child(4)::after {
     display: none;
   }
+
+  .apps-about-section-title-wrapper-7-114 .title {
+    font-size: 25px;
+  }
+
 }
 
 @media (max-width: 320px) {
@@ -250,4 +276,27 @@
 .elementor-element.elementor-element-40360cd.common-primary-clr-btn.elementor-widget-laptop__width-initial.elementor-align-left.elementor-widget.elementor-widget-button {
   display: inline-block;
   width: auto;
+}
+
+.footer-widget-area #menu-social li::before {
+  display: none;
+}
+
+.footer-widget-area #menu-social li {
+  padding-left: 0;
+}
+
+
+.contact-form .form-wrapper input::placeholder,
+.contact-form .form-wrapper textarea::placeholder {
+  color: #6A96A4;
+}
+
+.contact-form .select-menu {
+  color: #6A96A4;
+}
+
+
+.has-sub-menu ul.dropdown-menus li a .extra-info {
+  margin-top: -16px;
 }

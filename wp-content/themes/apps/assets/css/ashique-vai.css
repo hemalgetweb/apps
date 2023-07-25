@@ -83,3 +83,17 @@
 .statement .map img {
     height: 100%;
 }
+
+/* .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 15px !important;
+} */
+
+
+.seo-feature-item .fs-4.fw-semi-bold.mb-0 {
+    word-break: break-all;
+}
+
+
+.button-arrow-left-icon {
+
+}

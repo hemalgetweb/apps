@@ -70,3 +70,8 @@
 .contact-section-bg {
     background-color: #E3F5FF;
 }
+
+#header .navbar-nav .nav-item>.nav-link {
+    padding-inline: 20px;
+    
+}

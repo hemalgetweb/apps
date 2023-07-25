@@ -133,6 +133,19 @@ class CB_Core_Heading extends Widget_Base
             ]
         );
         $this->add_control(
+            'enable_container',
+            [
+                'label' => esc_html__('Enable Container', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => esc_html__('Enable', 'cb-core'),
+                'label_off' => esc_html__('Disable', 'cb-core'),
+                'return_value' => 'yes',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_control(
             'heading_subtitle',
             [
                 'label' => esc_html__('Heading Subtitle', 'cb-core'),
@@ -209,17 +222,17 @@ class CB_Core_Heading extends Widget_Base
             ]
         );
         $this->add_control(
-         'title_bg_color',
-         [
-           'label'       => esc_html__( 'Title BG Color', 'Text-domain' ),
-           'type'     => \Elementor\Controls_Manager::COLOR,
-           'condition' => [
-            'layout' => ['layout-2']
-           ],
-           'selectors' => [
-           '{{WRAPPER}} .apps-steps-heading-114 .apps-title span' => 'background-color: {{VALUE}}',
-           ],
-         ]
+            'title_bg_color',
+            [
+                'label' => esc_html__('Title BG Color', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'condition' => [
+                    'layout' => ['layout-2']
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .apps-steps-heading-114 .apps-title span' => 'background-color: {{VALUE}}',
+                ],
+            ]
         );
         $this->add_control(
             '_subtitle_heading',
@@ -235,7 +248,7 @@ class CB_Core_Heading extends Widget_Base
         $this->add_control(
             '_subtitle_color',
             [
-                'label' => esc_html__('Subtitle Color', 'Text-domain'),
+                'label' => esc_html__('Subtitle Color', 'cb-core'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .apps-service-section-subtitle-114' => 'color: {{VALUE}}',
@@ -270,7 +283,7 @@ class CB_Core_Heading extends Widget_Base
         $this->add_control(
             '_heading_title_color',
             [
-                'label' => esc_html__('heading_title Color', 'Text-domain'),
+                'label' => esc_html__('heading_title Color', 'cb-core'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .apps-service-section-title-114' => 'color: {{VALUE}}',
@@ -305,7 +318,7 @@ class CB_Core_Heading extends Widget_Base
         $this->add_control(
             '_description_color',
             [
-                'label' => esc_html__('description Color', 'Text-domain'),
+                'label' => esc_html__('description Color', 'cb-core'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .intro' => 'color: {{VALUE}}',

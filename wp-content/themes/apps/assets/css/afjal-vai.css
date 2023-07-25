@@ -209,6 +209,10 @@
     padding-left: 0 !important;
     text-align: center;
   }
+
+  .apps-project-card-description-wrapper-114.mb-30 {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -227,6 +231,6 @@
 
 @media (max-width: 320px) {
   .tech-stack-box-icon-single-114 {
-    margin-right: 10px;
+    margin-right: 10px !important;
   }
 }

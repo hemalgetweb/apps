@@ -27,12 +27,18 @@
   max-width: 100% !important;
 }
 
-.marquee-vertical .slide-item,
-.marquee-reverse .slide-item {
-  overflow: hidden !important;
+.accordion-item:last-child {
+  border-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-
+.apps-blog-box-title-114 {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+}
 
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {
   left: -24px;

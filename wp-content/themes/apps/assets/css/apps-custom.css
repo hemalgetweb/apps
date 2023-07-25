@@ -5549,8 +5549,10 @@ section.apps-error-area-114 {
     max-width: 100%;
 }
 
-section.apps-error-area-114.pt-165.pb-100 {
-    padding-top: 100px;
+@media (max-width: 1199px) {
+    section.apps-error-area-114.pt-165.pb-100 {
+        padding-top: 100px;
+    }
 }
 
 a.apps-errror-btn-114 i {

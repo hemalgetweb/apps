@@ -5,7 +5,7 @@
 <!-- statement -->
 <section class="statement ">
   <div class="map">
-    <img src="<?php echo get_template_directory_uri() ?>/assets/img/map-img.svg" alt="map img" class="img-fluid">
+    <img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/map-img.webp" alt="map img" class="img-fluid">
   </div>
   <div class="container">
     <div class="row">

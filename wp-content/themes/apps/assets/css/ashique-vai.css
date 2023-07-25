@@ -79,3 +79,7 @@
 .feature-list-area .row {
     --bs-gutter-x: 1.75rem !important;
 }
+
+.statement .map img {
+    height: 100%;
+}

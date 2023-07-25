@@ -20,13 +20,6 @@
             <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">
                 <?php apps_header_logo_1(); ?>
             </a>
-            <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icons">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-bar.png" alt="bar icon" class="img-fluid">
-                </span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <?php apps_header_menu_1(); ?>
                 <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4">

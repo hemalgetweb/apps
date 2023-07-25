@@ -71,7 +71,7 @@
     background-color: #E3F5FF;
 }
 
-#header .navbar-nav .nav-item>.nav-link {
-    padding-inline: 20px;
-    
+
+.our-work-process-wrap .service-area .row {
+    --bs-gutter-x: 1.75rem !important;
 }

@@ -27,6 +27,11 @@
   max-width: 100% !important;
 }
 
+.marquee-vertical .slide-item,
+.marquee-reverse .slide-item {
+  overflow: hidden !important;
+}
+
 
 
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {

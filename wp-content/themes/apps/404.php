@@ -10,9 +10,9 @@
 
 get_header();
 
-$cbtoolkit_error_404_image = get_theme_mod('cbtoolkit_error_404_image', get_template_directory_uri() . '/assets/images/error.png');
-$cbtoolkit_error_title = get_theme_mod('cbtoolkit_error_title', __('Page not found', 'apps'));
-$cbtoolkit_error_desc = get_theme_mod('cbtoolkit_error_desc', __('Oops! The page you are looking for does not exist. It might have been moved or deleted', 'apps'));
+$cbtoolkit_error_404_image = get_theme_mod('cbtoolkit_error_404_image', get_template_directory_uri() . '/assets/img/404.png');
+$cbtoolkit_error_title = get_theme_mod('cbtoolkit_error_title', __('Oh no! This Page Not Found', 'apps'));
+$cbtoolkit_error_desc = get_theme_mod('cbtoolkit_error_desc', __('The page you are looking for might have been removed its name, changed or is temporary unavailable.', 'apps'));
 $cbtoolkit_error_link_text = get_theme_mod('cbtoolkit_error_link_text', __('Back To Home', 'apps'));
 ?>
 <!-- error area start -->

@@ -72,6 +72,14 @@
 }
 
 
-.our-work-process-wrap .service-area .row {
+.service-area .row {
     --bs-gutter-x: 1.75rem !important;
+}
+
+.feature-list-area .row {
+    --bs-gutter-x: 1.75rem !important;
+}
+
+.statement .map img {
+    height: 100%;
 }

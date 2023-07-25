@@ -10,6 +10,19 @@
   transform: scale(1.2);
 }
 
+.tech-stack-box-icon-single-114:hover .label {
+  color: #00C7C7;
+}
+
+.home-faq-style .apps-content ol li span {
+  color: #1F516D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+
 
 .navbar-nav .menu-item.has-mega-menu>.dropdown-menus li .extra-info {
   margin-top: -14px !important;
@@ -110,6 +123,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 30px;
   }
 
   .client-testimonials-slide .swiper-control .swiper-next,
@@ -155,6 +169,10 @@
     padding: 10px !important;
   }
 
+  .home-about-style .apps-service-section-wrapper-114 p br {
+    display: none !important;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -167,6 +185,28 @@
 @media (max-width: 575px) {
   .mobileMenu .navbar .mobileMenu-header {
     padding: 0 15px !important;
+  }
+
+  .dropdown-menus .dropdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .dropdown-menus .dropdown-item img {
+    max-width: 40px !important;
+    margin: auto;
+  }
+
+  .dropdown-menus .dropdown-item .menu-image-title {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .dropdown-menus .dropdown-item .extra-info {
+    padding-left: 0 !important;
+    text-align: center;
   }
 }
 

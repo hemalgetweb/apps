@@ -95,7 +95,7 @@
 
 
 .button-arrow-left-icon {
-    padding-right: 55px;
+    padding-right: 55px !important;
     position: relative;
     transition: all 200ms linear;
 }

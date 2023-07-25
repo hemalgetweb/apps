@@ -57,7 +57,8 @@
   color: #A8E0FF;
 }
 
-.contact-element a {
+.contact-element a,
+.contact-element p {
   color: #A8E0FF !important;
 }
 
@@ -221,5 +222,11 @@
 
   .instruction-wrap.row.position-relative>*:nth-child(4)::after {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .tech-stack-box-icon-single-114 {
+    margin-right: 10px;
   }
 }

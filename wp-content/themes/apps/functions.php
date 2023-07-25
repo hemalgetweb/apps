@@ -386,11 +386,7 @@ function apps_filter_blog_posts_by_category()
 							</p>
 						</div>
 					</div>
-					<a href="<?php echo get_the_permalink(); ?>"
-						class="text-decoration-none fs-12 fw-bold text-clr-primary text-uppercase d-flex gap-2 align-items-center">
-						<?php echo esc_html__('Read more', 'apps'); ?>
-						<span class="ni fs-6 ni-arrow-right"></span>
-					</a>
+					<span class="apps-has-blog-date-114"><?php echo get_the_date(); ?></span>
 				</div>
 			</div>
 		</div>

@@ -190,14 +190,6 @@
     border-bottom: 0
   }
 
-  #contact .form-wrapper .form-control {
-    color: #6A96A4 !important;
-  }
-
-  .wpcf7-form-control-wrap .form-control::placeholder {
-    color: #6A96A4 !important;
-  }
-
 }
 
 @media (max-width:768px) {
@@ -275,4 +267,14 @@
 
 .footer-widget-area #menu-social li {
   padding-left: 0;
+}
+
+
+.contact-form .form-wrapper input::placeholder,
+.contact-form .form-wrapper textarea::placeholder {
+  color: #6A96A4;
+}
+
+.contact-form .select-menu {
+  color: #6A96A4;
 }

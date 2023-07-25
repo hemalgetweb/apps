@@ -22,6 +22,8 @@
 }
 
 
+
+
 .navbar-nav .menu-item.has-mega-menu>.dropdown-menus li .extra-info {
   margin-top: -14px !important;
 }
@@ -165,6 +167,10 @@
 
   .apps-blog-box-content-114 {
     padding: 10px !important;
+  }
+
+  .home-about-style .apps-service-section-wrapper-114 p br {
+    display: none !important;
   }
 
 }

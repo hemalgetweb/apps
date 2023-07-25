@@ -185,6 +185,11 @@
     border-bottom: 1px solid #D2ECFA;
   }
 
+  .apps-service-grid-item-114:nth-child(5) .apps-service-box-3-114,
+  .apps-service-grid-item-114:nth-child(6) .apps-service-box-3-114 {
+    border-bottom: 0
+  }
+
 }
 
 @media (max-width:768px) {

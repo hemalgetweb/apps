@@ -96,6 +96,12 @@
     position: static !important;
     transform: translateY(0) !important;
     margin: 0 8px;
+    text-align: center;
+  }
+
+  .dynamic-prev,
+  .dynamic-next {
+    position: static !important;
   }
 
 

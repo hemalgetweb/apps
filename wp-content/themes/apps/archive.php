@@ -28,7 +28,7 @@ if($cbblog_layout == 'right-sidebar') {
 }
 ?>
 
-	<main id="primary" class="apps-blog-page-area pt-100 pb-60 <?php echo esc_attr($sidebar_class); ?>">
+	<main id="primary" class="apps-blog-page-area pt-215 pb-100 <?php echo esc_attr($sidebar_class); ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">

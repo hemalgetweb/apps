@@ -1,9 +1,11 @@
-
+<?php
+$card_min_height = $settings['card_min_height'] ? $settings['card_min_height']: '';
+?>
     <!-- seo-feature -->
     <section class="seo-feature">
-        <div class="row border-bottom1 pb-4">
+        <div class="row border-bottom1">
             <div class="12">
-                <div class="seo-feature-item p-30">
+                <div class="seo-feature-item p-30" style="min-height: <?php echo esc_attr($card_min_height); ?>;">
                     <div class="seo-feature-top border-bottom1 d-flex gap-3 align-items-center pb-4">
                         <?php if(!empty($settings['card_img']['url'])) : ?>
                             <img src="<?php echo esc_url($settings['card_img']['url']); ?>" alt="icon" class="img-fluid">

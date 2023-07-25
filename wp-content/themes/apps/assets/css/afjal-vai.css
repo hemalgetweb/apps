@@ -40,6 +40,10 @@
   -webkit-box-orient: vertical;
 }
 
+.footer .footer-widget-area .footer-widget ul li::before {
+  color: #A8E0FF;
+}
+
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {
   left: -24px;
 }

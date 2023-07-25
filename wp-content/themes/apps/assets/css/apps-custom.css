@@ -5525,3 +5525,46 @@ section.apps-error-area-114 {
 .apps-errror-btn-114:hover {
     color: var(--dark-dark-1, #003959);
 }
+.apps-error-image-top-114 {
+    margin-bottom: 30px;
+}
+.apps-error-image-top-114 {
+    margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+    .apps-error-image-top-114 {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .apps-error-cotnent-114 .title {
+        font-size: 35px;
+        line-height: 1.4;
+    }
+}
+.apps-errror-btn-114 i {
+    margin-right: 5px;
+}
+.apps-error-image-top-114 img {
+    max-width: 100%;
+}
+
+section.apps-error-area-114.pt-165.pb-100 {
+    padding-top: 100px;
+}
+
+a.apps-errror-btn-114 i {
+    margin-right: 5px;
+}
+
+.apps-errror-btn-114:hover {
+    background: var(--secondary);
+}
+
+.apps-errror-btn-114:hover i {
+    transform: translateX(-5px);
+}
+
+.apps-errror-btn-114 i {
+    transition: all .3s;
+}

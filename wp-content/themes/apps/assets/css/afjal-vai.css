@@ -11,6 +11,27 @@
 }
 
 
+.navbar-nav .menu-item.has-mega-menu>.dropdown-menus li .extra-info {
+  margin-top: -14px !important;
+}
+
+.dynamic-service-box-114 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 57, 89, 0.10) !important;
+}
+
+.apps-project-card-114 {
+  box-shadow: 0px 0px 20px rgba(0, 60, 79, 0.1) !important;
+}
+
+.tech-stack-box-icon-single-114 .icon {
+  max-width: 100% !important;
+}
+
+.marquee-vertical .slide-item,
+.marquee-reverse .slide-item {
+  overflow: hidden !important;
+}
+
 
 
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {
@@ -79,12 +100,16 @@
     white-space: revert;
   }
 
-  .apps-blog-box-img-114 img {
-    width: 100%;
+  .apps-blog-box-img-114 a {
+    display: block !important;
+  }
+
+  .apps-blog-box-img-114 a img {
+    width: 100% !important;
   }
 
   .apps-blog-box-content-114 {
-    padding: 10px;
+    padding: 10px !important;
   }
 
 }

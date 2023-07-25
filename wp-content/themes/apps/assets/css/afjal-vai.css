@@ -106,6 +106,17 @@
     position: static !important;
   }
 
+  .client-testimonials-slide .swiper-control {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .client-testimonials-slide .swiper-control .swiper-next,
+  .client-testimonials-slide .swiper-control .swiper-prev {
+    position: static !important;
+  }
+
 
 }
 

@@ -5409,3 +5409,6 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .dynamic-service-box-114 .dynamic-service-box-content-114 .title {
     min-height: 64px;
 }
+div#modal_for_project.apps-portfolio-modal {
+    background: #000000d9;
+}

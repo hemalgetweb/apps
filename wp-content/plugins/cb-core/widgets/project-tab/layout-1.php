@@ -8,7 +8,7 @@
                 <div class="content">
                     <h5 class="title">Easpa – Mobile Wallet App</h5>
                     <div class="meta">
-                        <p>Getweb</p>
+                        <p>Wadi Al Bada</p>
                         <a href="#">Follow</a>
                     </div>
                 </div>

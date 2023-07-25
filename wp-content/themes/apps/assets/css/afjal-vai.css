@@ -59,7 +59,8 @@
 
 .contact-element a,
 .contact-element p,
-.copyright p {
+.copyright p,
+.inner-statement h4 {
   color: #A8E0FF !important;
 }
 
@@ -70,7 +71,8 @@
 }
 
 
-.has-sub-menu .dropdown-toggle::after {
+.has-sub-menu .dropdown-toggle::after,
+.has-mega-menu .dropdown-toggle::after {
   margin-left: 10px;
 }
 

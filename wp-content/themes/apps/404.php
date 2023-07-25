@@ -15,7 +15,21 @@ $cbtoolkit_error_title = get_theme_mod('cbtoolkit_error_title', __('Page not fou
 $cbtoolkit_error_desc = get_theme_mod('cbtoolkit_error_desc', __('Oops! The page you are looking for does not exist. It might have been moved or deleted', 'apps'));
 $cbtoolkit_error_link_text = get_theme_mod('cbtoolkit_error_link_text', __('Back To Home', 'apps'));
 ?>
-<section class="error__area pt-120 pb-120">
+<!-- error area start -->
+<section class="apps-error-area-114 pt-165 pb-100">
+   <div class="container">
+      <div class="apps-error-image-top-114">
+         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/404.png" alt="Error image">
+      </div>
+      <div class="apps-error-cotnent-114">
+         <h4 class="title"><a href="#">Oh no! This Page Not Found</a></h4>
+         <p>The page you are looking for might have been removed its <br/>name, changed or is temporary unavailable.</p>
+         <a href="#" class="apps-errror-btn-114"><i class="fas fa-long-arrow-alt-left"></i> Back To Home</a>
+      </div>
+   </div>
+</section>
+<!-- error area end -->
+<section class="error__area pt-120 pb-120 d-none">
    <div class="container">
       <div class="row">
          <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">

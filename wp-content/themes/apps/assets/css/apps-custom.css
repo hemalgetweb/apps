@@ -4517,9 +4517,8 @@ header#header {
 }
 
 #header .navbar-nav .nav-item>.nav-link {
-    padding: 31px 30px;
+    padding: 30px 20px;
 }
-
 .navbar-nav .menu-item.has-sub-menu>ul.dropdown-menus::after {
     left: 30px;
 }
@@ -5411,4 +5410,118 @@ form#mc4wp-form-1 input.form-control.subscribe {
 }
 div#modal_for_project.apps-portfolio-modal {
     background: #000000d9;
+}
+section.apps-error-area-114 {
+    background: #013E60;
+    text-align: center;
+}
+
+.pt-165 {
+    padding-top: 165px;
+}
+
+.apps-error-cotnent-114 .title {
+    color: var(--white, #FFF);
+    text-align: center;
+/* Headline/H1/Regular */
+    font-family: Cairo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 125% */
+}
+
+.apps-error-cotnent-114 .title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.apps-error-cotnent-114 p {
+    color: var(--dark-dark-5, #A8E0FF);
+    text-align: center;
+/* Paragraph/P2 */
+    font-family: Cairo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 30px; /* 166.667% */
+}
+
+.apps-errror-btn-114 {
+    border-radius: 4px;
+    background: var(--primary-primary, #00C7C7);
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+    color: var(--dark-dark-1, #003959);
+/* Text/Button Large */
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.apps-errror-btn-114:hover {
+    color: var(--dark-dark-1, #003959);
+}
+section.apps-error-area-114 {
+    background: #013E60;
+    text-align: center;
+}
+
+.pt-165 {
+    padding-top: 165px;
+}
+
+.apps-error-cotnent-114 .title {
+    color: var(--white, #FFF);
+    text-align: center;
+/* Headline/H1/Regular */
+    font-family: Cairo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 125% */
+}
+
+.apps-error-cotnent-114 .title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.apps-error-cotnent-114 p {
+    color: var(--dark-dark-5, #A8E0FF);
+    text-align: center;
+    font-family: Cairo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.apps-errror-btn-114 {
+    border-radius: 4px;
+    background: var(--primary-primary, #00C7C7);
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+    color: var(--dark-dark-1, #003959);
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.apps-errror-btn-114:hover {
+    color: var(--dark-dark-1, #003959);
 }

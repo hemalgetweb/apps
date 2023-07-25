@@ -95,5 +95,26 @@
 
 
 .button-arrow-left-icon {
+    padding-right: 55px !important;
+    position: relative;
+    transition: all 200ms linear;
+}
 
+.button-arrow-left-icon::after {
+    position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+    background: url('http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/common-btn-arrow_forward.svg');
+	top: calc(50% - 10px);
+	right: 30px;
+	transition: all 200ms linear;
+}
+
+.button-arrow-left-icon:hover {
+    background-color: #50FF81;
+}
+
+.button-arrow-left-icon:hover::after {
+	right: 26px;
 }

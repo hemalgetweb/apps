@@ -186,6 +186,17 @@
   .mobileMenu .navbar .mobileMenu-header {
     padding: 0 15px !important;
   }
+
+  .dropdown-menus .dropdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .dropdown-menus .dropdown-item img {
+    width: auto !important;
+  }
 }
 
 @media (max-width: 480px) {

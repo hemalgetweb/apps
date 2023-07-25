@@ -23,7 +23,6 @@ $sidebar_space = '';
 if($cbblog_layout == 'right-sidebar') {
 	$sidebar_space = is_active_sidebar( 'blog-sidebar' ) ? 'mr-20' : '';
 } else if($cbblog_layout == 'left-sidebar') {
-	$sidebar_space = is_active_sidebar( 'blog-sidebar' ) ? 'ml-20' : '';
 } else {
 	$blog_column = 8;
 }
@@ -33,7 +32,7 @@ if($cbblog_layout == 'right-sidebar') {
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="blog-wrapper <?php echo is_active_sidebar( 'blog-sidebar' ) ? esc_attr($sidebar_space) : ''; ?>">
+					<div class="blog-wrapper">
 						<div class="row">
 							<?php
 								if ( have_posts() ):
@@ -63,15 +62,6 @@ if($cbblog_layout == 'right-sidebar') {
 						</div>
 					</div>
 				</div>
-				<?php if($cbblog_layout == 'right-sidebar') : ?>
-					<?php if ( is_active_sidebar( 'blog-sidebar' ) ): ?>
-						<div class="col-lg-4 col-md-12 col-sm-12">
-							<div class="apps-details-sidebar">
-								<?php dynamic_sidebar('blog-sidebar');?>
-							</div>
-						</div>
-					<?php endif;?>
-				<?php endif; ?>
 			</div>
 		</div>
 	</main><!-- #main -->

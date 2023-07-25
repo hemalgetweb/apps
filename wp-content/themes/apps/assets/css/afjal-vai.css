@@ -181,6 +181,10 @@
     display: none !important;
   }
 
+  .apps-service-grid-item-114:nth-child(4) .apps-service-box-3-114 {
+    border-bottom: 1px solid #D2ECFA;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -258,8 +262,4 @@
 
 .footer-widget-area #menu-social li {
   padding-left: 0;
-}
-
-.apps-service-grid-item-114:nth-child(4) .apps-service-box-3-114 {
-  border-bottom: 1px solid #ff0000;
 }

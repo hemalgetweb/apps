@@ -205,7 +205,7 @@
   }
 
   .dropdown-menus .dropdown-item .extra-info {
-    padding-left: 0;
+    padding-left: 0 !important;
     text-align: center;
   }
 }

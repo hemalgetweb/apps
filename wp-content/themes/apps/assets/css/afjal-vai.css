@@ -195,7 +195,8 @@
   }
 
   .dropdown-menus .dropdown-item img {
-    width: auto !important;
+    max-width: 40px !important;
+    margin: auto;
   }
 }
 

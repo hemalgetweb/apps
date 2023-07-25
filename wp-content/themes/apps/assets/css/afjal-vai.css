@@ -234,6 +234,13 @@
     font-size: 30px;
   }
 
+  .apps-service-grid-3-114>* .apps-service-box-3-114 {
+    padding: 20px !important;
+  }
+
+
+
+
 }
 
 @media (max-width: 480px) {
@@ -287,4 +294,9 @@
 
 .contact-form .select-menu {
   color: #6A96A4;
+}
+
+
+.has-sub-menu ul.dropdown-menus li a .extra-info {
+  margin-top: -16px;
 }

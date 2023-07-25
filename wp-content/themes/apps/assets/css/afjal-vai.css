@@ -44,19 +44,17 @@
   color: #A8E0FF;
 }
 
+.contact-element a {
+  color: #A8E0FF !important;
+}
+
+
+
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {
   left: -24px;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .strategy-wrapper .our-strategy.position-relative.d-flex {
-    justify-content: start !important;
-  }
 
-  .strategy-wrapper .our-strategy.position-relative.d-flex>* {
-    flex: 0 0 48%;
-  }
-}
 
 @media (max-width: 1200px) {
   .apps-project-wrapper-114 .apps-project-pagination-wrapper-114 {
@@ -94,7 +92,23 @@
     padding-bottom: 0;
   }
 
+  .dynamic-slider-paginations {
+    position: static !important;
+    transform: translateY(0) !important;
+    margin: 0 8px;
+  }
 
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .strategy-wrapper .our-strategy.position-relative.d-flex {
+    justify-content: start !important;
+  }
+
+  .strategy-wrapper .our-strategy.position-relative.d-flex>* {
+    flex: 0 0 48%;
+  }
 }
 
 @media (max-width: 991px) {

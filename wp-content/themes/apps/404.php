@@ -25,13 +25,13 @@ $cbtoolkit_error_link_text = get_theme_mod('cbtoolkit_error_link_text', __('Back
       <?php endif; ?>
       <div class="apps-error-cotnent-114">
          <?php if(!empty($cbtoolkit_error_title)) : ?>
-            <h4 class="title"><a href="#"><?php echo esc_html($cbtoolkit_error_title); ?></a></h4>
+            <h4 class="title"><a href="#"><?php echo wp_kses_post($cbtoolkit_error_title); ?></a></h4>
          <?php endif; ?>
          <?php if(!empty($cbtoolkit_error_desc)) : ?>
-            <p><?php echo esc_html($cbtoolkit_error_desc); ?></p>
+            <p><?php echo wp_kses_post($cbtoolkit_error_desc); ?></p>
          <?php endif; ?>
          <?php if(!empty($cbtoolkit_error_link_text)) : ?>
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="apps-errror-btn-114"><i class="fas fa-long-arrow-alt-left"></i> <?php echo esc_html($cbtoolkit_error_link_text); ?></a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="apps-errror-btn-114"><i class="fas fa-long-arrow-alt-left"></i> <?php echo wp_kses_post($cbtoolkit_error_link_text); ?></a>
          <?php endif; ?>
       </div>
    </div>

@@ -140,6 +140,7 @@ class CB_Core_Heading extends Widget_Base
                 'label_on' => esc_html__('Enable', 'cb-core'),
                 'label_off' => esc_html__('Disable', 'cb-core'),
                 'return_value' => 'yes',
+                'default' => 'yes',
                 'condition' => [
                     'layout' => ['layout-1']
                 ]

@@ -11,6 +11,18 @@
 }
 
 
+.navbar-nav .menu-item.has-mega-menu>.dropdown-menus li .extra-info {
+  margin-top: -14px !important;
+}
+
+.dynamic-service-box-114 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 57, 89, 0.10) !important;
+}
+
+.apps-project-card-114 {
+  box-shadow: 0px 0px 20px rgba(0, 60, 79, 0.1) !important;
+}
+
 
 
 .client-testimonials-slide .client-item-wraps .client-qoute-icon {

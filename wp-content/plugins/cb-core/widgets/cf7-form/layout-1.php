@@ -1,5 +1,5 @@
     <!-- contact -->
-    <section class="contact bg-clr-dark8 pt-100">
+    <section class="contact contact-section-bg pt-100">
         <div id="contact">
             <div class="contact-wrapper bg-white radius-6 position-relative">
                 <div class="container">

@@ -25,7 +25,7 @@ $cbtoolkit_error_link_text = get_theme_mod('cbtoolkit_error_link_text', __('Back
       <?php endif; ?>
       <div class="apps-error-cotnent-114">
          <?php if(!empty($cbtoolkit_error_title)) : ?>
-            <h4 class="title"><a href="#"><?php echo wp_kses_post($cbtoolkit_error_title); ?></a></h4>
+            <h4 class="title"><?php echo wp_kses_post($cbtoolkit_error_title); ?></h4>
          <?php endif; ?>
          <?php if(!empty($cbtoolkit_error_desc)) : ?>
             <p><?php echo wp_kses_post($cbtoolkit_error_desc); ?></p>

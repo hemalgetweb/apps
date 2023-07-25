@@ -5397,3 +5397,8 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .pb-100 {
     padding-bottom: 100px;
 }
+@media (max-width: 1199px) {
+    .pb-100.theme-has-blog-sidebar {
+        padding-top: 100px;
+    }
+}

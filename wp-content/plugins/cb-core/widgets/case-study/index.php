@@ -136,6 +136,16 @@ class CB_Core_Case_Study extends Widget_Base
 			 ]
 		);
 		$this->add_control(
+		 'card_min_height',
+		 [
+		   'label'   => esc_html__( 'Card Min Height', 'cb-core' ),
+		   'type'    => \Elementor\Controls_Manager::NUMBER,
+		   'condition' => [
+			'layout' => ['layout-1']
+		   ]
+		 ]
+		);
+		$this->add_control(
 		 'card_img',
 		 [
 		   'label'   => esc_html__( 'Card Image', 'cb-core' ),

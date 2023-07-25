@@ -198,6 +198,16 @@
     max-width: 40px !important;
     margin: auto;
   }
+
+  .dropdown-menus .dropdown-item .menu-image-title {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .dropdown-menus .dropdown-item .extra-info {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {

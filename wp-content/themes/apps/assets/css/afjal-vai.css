@@ -58,7 +58,9 @@
 }
 
 .contact-element a,
-.contact-element p {
+.contact-element p,
+.copyright p,
+.inner-statement h4 {
   color: #A8E0FF !important;
 }
 
@@ -68,6 +70,11 @@
   left: -24px;
 }
 
+
+.has-sub-menu .dropdown-toggle::after,
+.has-mega-menu .dropdown-toggle::after {
+  margin-left: 10px;
+}
 
 
 @media (max-width: 1200px) {
@@ -233,4 +240,22 @@
   .tech-stack-box-icon-single-114 {
     margin-right: 10px !important;
   }
+}
+
+.elementor-9 .elementor-element.elementor-element-40360cd {
+  display: inline-block;
+  max-width: max-content;
+}
+
+.elementor-element.elementor-element-40360cd.common-primary-clr-btn.elementor-widget-laptop__width-initial.elementor-align-left.elementor-widget.elementor-widget-button {
+  display: inline-block;
+  width: auto;
+}
+
+.footer-widget-area #menu-social li::before {
+  display: none;
+}
+
+.footer-widget-area #menu-social li {
+  padding-left: 0;
 }

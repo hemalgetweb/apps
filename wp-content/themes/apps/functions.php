@@ -800,3 +800,7 @@ function apps_head_animation()
 <?php }
 }
 add_action('wp_head', 'apps_head_animation');
+
+
+// Disable WordPress' automatic image scaling feature
+add_filter( 'big_image_size_threshold', '__return_false' );

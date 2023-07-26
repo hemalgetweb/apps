@@ -147,3 +147,8 @@ ul.dropdown-menus li.menu-item a:hover img {
 .navbar-nav .menu-item>ul.dropdown-menus li a {
     padding-bottom: 10px !important;
 }
+
+.footer-contact-address {
+    max-width: 385px;
+    width: 100%;
+}

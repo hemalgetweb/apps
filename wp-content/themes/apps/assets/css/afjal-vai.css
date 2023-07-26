@@ -143,6 +143,10 @@
     padding-top: 100px;
   }
 
+  section.job-application-form.pt-100 {
+    padding-top: 0 !important;
+  }
+
 
 }
 

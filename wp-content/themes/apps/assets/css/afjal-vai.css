@@ -250,7 +250,9 @@
     padding: 20px !important;
   }
 
-
+  #contact {
+    padding: 0;
+  }
 
 
 }

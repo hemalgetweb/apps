@@ -395,3 +395,7 @@ body {
   padding-right: 0 !important;
   overflow-y: scroll !important;
 }
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}

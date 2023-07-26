@@ -417,3 +417,7 @@ body::-webkit-scrollbar {
 .application-form .form-label {
   width: 100% !important;
 }
+
+.border-bottom1 {
+  border-bottom: 1px solid #17647C !important;
+}

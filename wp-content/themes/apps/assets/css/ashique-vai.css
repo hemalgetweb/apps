@@ -159,10 +159,20 @@ ul.dropdown-menus li.menu-item a {
 ul.dropdown-menus li.menu-item a::after {
     position: absolute;
     content: "";
-    right: 10px;
+    right: 15px;
     top: calc(50% - 10px);
     width: 20px;
     height: 20px;
     background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6875 14.9583L10.7917 14.0833L14.2917 10.5833H3.33337V9.33333H14.2917L10.7709 5.8125L11.6667 4.9375L16.6875 9.95833L11.6875 14.9583Z" fill="%23003959"/></svg>');
-    
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 100ms ease-in;
+}
+
+ul.dropdown-menus li.menu-item a:hover::after {
+    opacity: 1;
+    right: 10px;
+    visibility: visible;
 }

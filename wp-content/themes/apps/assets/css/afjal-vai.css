@@ -440,7 +440,14 @@ body::-webkit-scrollbar {
 
   .apps-service-grid-item-114:nth-child(5) .apps-service-box-3-114,
   .apps-service-grid-item-114:nth-child(6) .apps-service-box-3-114 {
-    border-bottom: 0;
+    border-bottom: 1px solid #D2ECFA !important;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 991px) {
+
+  .apps-service-grid-item-114:nth-child(5) .apps-service-box-3-114,
+  .apps-service-grid-item-114:nth-child(6) .apps-service-box-3-114 {
     border-bottom: 1px solid #D2ECFA;
   }
 }

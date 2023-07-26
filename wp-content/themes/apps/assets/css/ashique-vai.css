@@ -113,6 +113,6 @@ body.error404 footer.footer.bg-clr-deepDark.pt-300 {
 
 
 div#modal_for_project.apps-portfolio-modal {
-    background: #00000029;
-    backdrop-filter: blur(5px);
+    background: #00000029 !important;
+    backdrop-filter: blur(5px) !important;
 }

@@ -208,6 +208,10 @@
   .apps-blog-page-topbar-search {
     display: flex;
     justify-content: center;
+
+    .pricing-style .pricing {
+      padding: 0 30px;
+    }
   }
 
   /* .select2-container--open .select2-dropdown {
@@ -263,6 +267,9 @@
     line-height: 42px;
   }
 
+  .pricing-style .pricing {
+    padding: 0 20px;
+  }
 
 
 }
@@ -282,6 +289,10 @@
 
   .apps-about-section-title-wrapper-7-114 .title {
     font-size: 25px;
+  }
+
+  .pricing-style .pricing {
+    padding: 0 15px;
   }
 
 }

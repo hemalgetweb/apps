@@ -114,4 +114,4 @@ function apps_custom_post_type_for_service() {
 	register_post_type( 'service', $args );
 
 }
-add_action( 'init', 'apps_custom_post_type_for_service', 0 );
+// add_action( 'init', 'apps_custom_post_type_for_service', 0 );

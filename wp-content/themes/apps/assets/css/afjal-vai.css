@@ -421,3 +421,7 @@ body::-webkit-scrollbar {
 .border-bottom1 {
   border-bottom: 1px solid #17647C !important;
 }
+
+.apps-service-grid-3-114>*:nth-child(8) .apps-service-box-3-114 {
+  padding-left: 30px;
+}

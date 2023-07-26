@@ -312,3 +312,17 @@
 #home-filtered-blog-post-114 .single-blog .blog-info {
   padding: 15px;
 }
+
+#home-filtered-blog-post-114 .single-blog .section-tag {
+  color: #316785;
+}
+
+#home-filtered-blog-post-114 .single-blog .blog-title a {
+  color: #003959;
+  font-size: 24px;
+}
+
+#home-filtered-blog-post-114 .single-blog .blog-intro p {
+  color: #1F516D;
+  font-size: 16px;
+}

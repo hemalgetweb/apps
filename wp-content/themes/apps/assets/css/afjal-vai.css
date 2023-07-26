@@ -298,5 +298,9 @@
 
 
 .has-sub-menu ul.dropdown-menus li a .extra-info {
-  margin-top: -16px;
+  margin-top: -16px !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-top: 1px solid #ced4da;
 }

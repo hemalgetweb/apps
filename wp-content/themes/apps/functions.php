@@ -224,9 +224,9 @@ function apps_scripts()
 		wp_enqueue_script('comment-reply');
 	}
 	$data = array(
-        'ajax_url' => admin_url( 'admin-ajax.php' ),
-    );
-    wp_localize_script( 'apps-ajax-script', 'ajax', $data );
+		'ajax_url' => admin_url('admin-ajax.php'),
+	);
+	wp_localize_script('apps-ajax-script', 'ajax', $data);
 }
 add_action('wp_enqueue_scripts', 'apps_scripts');
 /*
@@ -236,9 +236,9 @@ function apps_fonts_url()
 {
 	$font_url = '';
 	/*
-									 Translators: If there are characters in your language that are not supported
-									 by chosen font(s), translate this to 'off'. Do not translate into your own language.
-										*/
+											Translators: If there are characters in your language that are not supported
+											by chosen font(s), translate this to 'off'. Do not translate into your own language.
+											 */
 	if ('off' !== _x('on', 'Google font: on or off', 'apps')) {
 		$font_url = 'https://fonts.googleapis.com/css2?' . urlencode('family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 	}
@@ -270,7 +270,7 @@ if (class_exists('TGM_Plugin_Activation')) {
 function add_extra_menu_item($item_output, $item, $depth, $args)
 {
 	// Get the custom field value for the current menu item
-	$extra_info = function_exists('get_field') ? get_field('menu_info', $item->ID): '';
+	$extra_info = function_exists('get_field') ? get_field('menu_info', $item->ID) : '';
 	// If the custom field value exists, wrap the menu title and extra info in a single <div>
 	if ($extra_info) {
 		$extra_info_markup = '<span class="extra-info">' . $extra_info . '</span>';
@@ -280,16 +280,17 @@ function add_extra_menu_item($item_output, $item, $depth, $args)
 	return $item_output;
 }
 add_filter('walker_nav_menu_start_el', 'add_extra_menu_item', 10, 4);
-function remove_comment_field_for_page($open, $post_id) {
+function remove_comment_field_for_page($open, $post_id)
+{
 	$page_id = get_option('application_form_page_id');
-	if ( $post_id === get_the_ID() ) {
+	if ($post_id === get_the_ID()) {
 		// Disable comments for the specified page
 		$open = false;
 	}
 
 	return $open;
 }
-add_filter( 'comments_open', 'remove_comment_field_for_page',  10, 2 );
+add_filter('comments_open', 'remove_comment_field_for_page', 10, 2);
 
 
 /**
@@ -300,108 +301,108 @@ add_filter( 'comments_open', 'remove_comment_field_for_page',  10, 2 );
 // AJAX handler for filtering blog posts
 function apps_filter_blog_posts_by_category()
 {
-    $category = $_POST['category'];
+	$category = $_POST['category'];
 
-    $args = array(
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'posts_per_page' => -1,
-    );
+	$args = array(
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'posts_per_page' => -1,
+	);
 
-    // If a specific category is selected, add it to the query arguments
-    if ($category !== 'all') {
-        $args['cat'] = $category;
-    }
+	// If a specific category is selected, add it to the query arguments
+	if ($category !== 'all') {
+		$args['cat'] = $category;
+	}
 
-    $query = new WP_Query($args);
+	$query = new WP_Query($args);
 
-    // Start output buffer to store the HTML content
-    ob_start();
+	// Start output buffer to store the HTML content
+	ob_start();
 
-    // Check if there are blog posts to display
-    if ($query->have_posts()) {
+	// Check if there are blog posts to display
+	if ($query->have_posts()) {
 		echo '<div class="row">';
-        while ($query->have_posts()) {
-            $query->the_post();
-            // Output the content of each blog post here?>
-			<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())) :
+		while ($query->have_posts()) {
+			$query->the_post();
+			// Output the content of each blog post here?>
+			<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
 				$att = get_post_thumbnail_id();
 				$image_src = wp_get_attachment_image_src($att, 'full');
 				if (!empty($image_src)) {
 					$image_src = $image_src[0];
 				}
 			endif;
-			$apps_cat  = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0]: '';
+			$apps_cat = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0] : '';
 			$first_cat_name = '';
 			$first_cat_id = '';
 			$first_cat_url = '';
-			if(!empty($apps_cat)) {
+			if (!empty($apps_cat)) {
 				$first_cat_name = $apps_cat['name'];
 				$first_cat_id = $apps_cat['term_id'];
-				$first_cat_url = get_category_link( $first_cat_id );
+				$first_cat_url = get_category_link($first_cat_id);
 			}
-        ?>
-        <div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
-			<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 p-xl-4 radius-6 box-shadow2'); ?>>
-				<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())) :
-				$att = get_post_thumbnail_id();
-					$image_src = wp_get_attachment_image_src($att, 'full');
-					if (!empty($image_src)) {
-						$image_src = $image_src[0];
-					}
-					$apps_cat  = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0]: '';
-				$first_cat_name = '';
-				$first_cat_id = '';
-				$first_cat_url = '';
-				if(!empty($apps_cat)) {
-					$first_cat_name = $apps_cat['name'];
-					$first_cat_id = $apps_cat['term_id'];
-					$first_cat_url = get_category_link( $first_cat_id );
-				}
-				?>
-				<div class="blog-img mb-2 radius-6 overflow-hidden">
-					<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
-				</div>
-				<?php endif; ?>
-				<div class="blog-info ">
-					<div class="feature-top">
-						<?php if(!empty($first_cat_name)) : ?>
-						<a href="<?php echo esc_url($first_cat_url); ?>">
-							<span
-								class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" alt="icon"
-									class="img-fluid">
-								<?php echo $first_cat_name; ?>
-							</span>
-						</a>
-						<?php endif; ?>
-						<h3 class="blog-title fs-18 lh-base fw-medium">
-							<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-							<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
-							</a>
-						</h3>
-						<div class="blog-intro fs-14 text-clr-dark2 mb-0">
-							<p class="">
-								<?php echo wp_trim_words(get_the_excerpt(), 15); ?>
-							</p>
+			?>
+			<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
+				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 radius-6 box-shadow2'); ?>>
+					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
+						$att = get_post_thumbnail_id();
+						$image_src = wp_get_attachment_image_src($att, 'full');
+						if (!empty($image_src)) {
+							$image_src = $image_src[0];
+						}
+						$apps_cat = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0] : '';
+						$first_cat_name = '';
+						$first_cat_id = '';
+						$first_cat_url = '';
+						if (!empty($apps_cat)) {
+							$first_cat_name = $apps_cat['name'];
+							$first_cat_id = $apps_cat['term_id'];
+							$first_cat_url = get_category_link($first_cat_id);
+						}
+						?>
+						<div class="blog-img mb-2 radius-6 overflow-hidden">
+							<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
 						</div>
+					<?php endif; ?>
+					<div class="blog-info ">
+						<div class="feature-top">
+							<?php if (!empty($first_cat_name)): ?>
+								<a href="<?php echo esc_url($first_cat_url); ?>">
+									<span
+										class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" alt="icon"
+											class="img-fluid">
+										<?php echo $first_cat_name; ?>
+									</span>
+								</a>
+							<?php endif; ?>
+							<h3 class="blog-title fs-18 lh-base fw-medium">
+								<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
+									<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
+								</a>
+							</h3>
+							<div class="blog-intro fs-14 text-clr-dark2 mb-0">
+								<p class="">
+									<?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+								</p>
+							</div>
+						</div>
+						<span class="apps-has-blog-date-114"><?php echo get_the_date(); ?></span>
 					</div>
-					<span class="apps-has-blog-date-114"><?php echo get_the_date(); ?></span>
 				</div>
 			</div>
-		</div>
-        <?php }
-        wp_reset_postdata();
+		<?php }
+		wp_reset_postdata();
 		echo '</div>';
 	} else {
-        // No blog posts found for the selected category
-        echo '<p>No blog posts found for the selected category.</p>';
-    }
+		// No blog posts found for the selected category
+		echo '<p>No blog posts found for the selected category.</p>';
+	}
 
-    // End the output buffer and return the content
-    $output = ob_get_clean();
-    echo $output;
-    exit;
+	// End the output buffer and return the content
+	$output = ob_get_clean();
+	echo $output;
+	exit;
 }
 add_action('wp_ajax_apps_filter_blog_posts', 'apps_filter_blog_posts_by_category');
 add_action('wp_ajax_nopriv_apps_filter_blog_posts', 'apps_filter_blog_posts_by_category');
@@ -415,79 +416,79 @@ add_action('wp_ajax_nopriv_apps_filter_blog_posts', 'apps_filter_blog_posts_by_c
 
 function apps_filter_blog_posts()
 {
-    $date_filter = $_POST['date_filter'];
+	$date_filter = $_POST['date_filter'];
 
-    $args = array(
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'posts_per_page' => -1,
-    );
+	$args = array(
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'posts_per_page' => -1,
+	);
 
-    // Handle date filtering based on the selected option
-    if ($date_filter === 'last-7-days') {
-        $args['date_query'] = array(
-            array(
-                'after' => '1 week ago',
-            ),
-        );
-    } elseif ($date_filter === 'last-month') {
-        $args['date_query'] = array(
-            array(
-                'after' => '1 month ago',
-            ),
-        );
-    } elseif ($date_filter === 'last-year') {
-        $args['date_query'] = array(
-            array(
-                'after' => '1 year ago',
-            ),
-        );
-    }
+	// Handle date filtering based on the selected option
+	if ($date_filter === 'last-7-days') {
+		$args['date_query'] = array(
+			array(
+				'after' => '1 week ago',
+			),
+		);
+	} elseif ($date_filter === 'last-month') {
+		$args['date_query'] = array(
+			array(
+				'after' => '1 month ago',
+			),
+		);
+	} elseif ($date_filter === 'last-year') {
+		$args['date_query'] = array(
+			array(
+				'after' => '1 year ago',
+			),
+		);
+	}
 
-    $query = new WP_Query($args);
+	$query = new WP_Query($args);
 
-    // Start output buffer to store the HTML content
-    ob_start();
+	// Start output buffer to store the HTML content
+	ob_start();
 
-    // Check if there are blog posts to display
-    if ($query->have_posts()) {
+	// Check if there are blog posts to display
+	if ($query->have_posts()) {
 		echo '<div class="row">';
-        while ($query->have_posts()) {
-            $query->the_post();
-            ?>
+		while ($query->have_posts()) {
+			$query->the_post();
+			?>
 			<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
-				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 p-xl-4 radius-6 box-shadow2'); ?>>
-					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())) :
-					$att = get_post_thumbnail_id();
+				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 radius-6 box-shadow2'); ?>>
+					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
+						$att = get_post_thumbnail_id();
 						$image_src = wp_get_attachment_image_src($att, 'full');
 						if (!empty($image_src)) {
 							$image_src = $image_src[0];
 						}
-						$apps_cat  = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0]: '';
-					$first_cat_name = '';
-					$first_cat_id = '';
-					$first_cat_url = '';
-					if(!empty($apps_cat)) {
-						$first_cat_name = $apps_cat['name'];
-						$first_cat_id = $apps_cat['term_id'];
-						$first_cat_url = get_category_link( $first_cat_id );
-					}
-					?>
-					<div class="blog-img mb-2 radius-6 overflow-hidden">
-						<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
-					</div>
+						$apps_cat = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0] : '';
+						$first_cat_name = '';
+						$first_cat_id = '';
+						$first_cat_url = '';
+						if (!empty($apps_cat)) {
+							$first_cat_name = $apps_cat['name'];
+							$first_cat_id = $apps_cat['term_id'];
+							$first_cat_url = get_category_link($first_cat_id);
+						}
+						?>
+						<div class="blog-img mb-2 radius-6 overflow-hidden">
+							<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
+						</div>
 					<?php endif; ?>
 					<div class="blog-info ">
 						<div class="feature-top">
-							<?php if(!empty($first_cat_name)) : ?>
-							<a href="<?php echo esc_url($first_cat_url); ?>">
-								<span
-									class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" alt="icon"
-										class="img-fluid">
-									<?php echo $first_cat_name; ?>
-								</span>
-							</a>
+							<?php if (!empty($first_cat_name)): ?>
+								<a href="<?php echo esc_url($first_cat_url); ?>">
+									<span
+										class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" alt="icon"
+											class="img-fluid">
+										<?php echo $first_cat_name; ?>
+									</span>
+								</a>
 							<?php endif; ?>
 							<h3 class="blog-title fs-18 lh-base fw-medium">
 								<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
@@ -508,18 +509,18 @@ function apps_filter_blog_posts()
 					</div>
 				</div>
 			</div>
-        <?php }
-        wp_reset_postdata();
+		<?php }
+		wp_reset_postdata();
 		echo '</div>';
-    } else {
-        // No blog posts found for the selected date
-        echo '<p>No blog posts found for the selected date range.</p>';
-    }
+	} else {
+		// No blog posts found for the selected date
+		echo '<p>No blog posts found for the selected date range.</p>';
+	}
 
-    // End the output buffer and return the content
-    $output = ob_get_clean();
-    echo $output;
-    exit;
+	// End the output buffer and return the content
+	$output = ob_get_clean();
+	echo $output;
+	exit;
 }
 add_action('wp_ajax_filter_blog_posts', 'apps_filter_blog_posts');
 add_action('wp_ajax_nopriv_filter_blog_posts', 'apps_filter_blog_posts');
@@ -529,64 +530,64 @@ add_action('wp_ajax_nopriv_filter_blog_posts', 'apps_filter_blog_posts');
  * Filter blog post by search
  */
 
- function apps_perform_post_search()
+function apps_perform_post_search()
 {
-    $search_term = $_POST['search_term'];
+	$search_term = $_POST['search_term'];
 
-    $args = array(
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'posts_per_page' => -1,
-        's' => $search_term,
-    );
+	$args = array(
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'posts_per_page' => -1,
+		's' => $search_term,
+	);
 
-    $query = new WP_Query($args);
+	$query = new WP_Query($args);
 
-    // Start output buffer to store the HTML content
-    ob_start();
+	// Start output buffer to store the HTML content
+	ob_start();
 
-    // Check if there are search results to display
-    if ($query->have_posts()) {
+	// Check if there are search results to display
+	if ($query->have_posts()) {
 		echo '<div class="row">';
-        while ($query->have_posts()) {
-            $query->the_post();?>
-            <div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
-				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 p-xl-4 radius-6 box-shadow2'); ?>>
-					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())) :
-					$att = get_post_thumbnail_id();
+		while ($query->have_posts()) {
+			$query->the_post(); ?>
+			<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
+				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 radius-6 box-shadow2'); ?>>
+					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
+						$att = get_post_thumbnail_id();
 						$image_src = wp_get_attachment_image_src($att, 'full');
 						if (!empty($image_src)) {
 							$image_src = $image_src[0];
 						}
-						$apps_cat  = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0]: '';
-					$first_cat_name = '';
-					$first_cat_id = '';
-					$first_cat_url = '';
-					if(!empty($apps_cat)) {
-						$first_cat_name = $apps_cat['name'];
-						$first_cat_id = $apps_cat['term_id'];
-						$first_cat_url = get_category_link( $first_cat_id );
-					}
-					?>
-					<div class="blog-img mb-2 radius-6 overflow-hidden">
-						<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
-					</div>
+						$apps_cat = get_the_category(get_the_ID()) ? (array) get_the_category(get_the_ID())[0] : '';
+						$first_cat_name = '';
+						$first_cat_id = '';
+						$first_cat_url = '';
+						if (!empty($apps_cat)) {
+							$first_cat_name = $apps_cat['name'];
+							$first_cat_id = $apps_cat['term_id'];
+							$first_cat_url = get_category_link($first_cat_id);
+						}
+						?>
+						<div class="blog-img mb-2 radius-6 overflow-hidden">
+							<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
+						</div>
 					<?php endif; ?>
 					<div class="blog-info ">
 						<div class="feature-top">
-							<?php if(!empty($first_cat_name)) : ?>
-							<a href="<?php echo esc_url($first_cat_url); ?>">
-								<span
-									class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" alt="icon"
-										class="img-fluid">
-									<?php echo $first_cat_name; ?>
-								</span>
-							</a>
+							<?php if (!empty($first_cat_name)): ?>
+								<a href="<?php echo esc_url($first_cat_url); ?>">
+									<span
+										class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" alt="icon"
+											class="img-fluid">
+										<?php echo $first_cat_name; ?>
+									</span>
+								</a>
 							<?php endif; ?>
 							<h3 class="blog-title fs-18 lh-base fw-medium">
 								<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
-								<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
+									<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
 								</a>
 							</h3>
 							<div class="blog-intro fs-14 text-clr-dark2 mb-0">
@@ -603,18 +604,18 @@ add_action('wp_ajax_nopriv_filter_blog_posts', 'apps_filter_blog_posts');
 					</div>
 				</div>
 			</div>
-        <?php }
-        wp_reset_postdata();
+		<?php }
+		wp_reset_postdata();
 		echo '</div>';
-    } else {
-        // No search results found
-        echo '<p>No results found for the search term: "' . $search_term . '".</p>';
-    }
+	} else {
+		// No search results found
+		echo '<p>No results found for the search term: "' . $search_term . '".</p>';
+	}
 
-    // End the output buffer and return the content
-    $output = ob_get_clean();
-    echo $output;
-    exit;
+	// End the output buffer and return the content
+	$output = ob_get_clean();
+	echo $output;
+	exit;
 }
 add_action('wp_ajax_apps_perform_post_search', 'apps_perform_post_search');
 add_action('wp_ajax_nopriv_apps_perform_post_search', 'apps_perform_post_search');
@@ -627,175 +628,175 @@ add_action('wp_ajax_nopriv_apps_perform_post_search', 'apps_perform_post_search'
  */
 
 
-function apps_head_animation() {
+function apps_head_animation()
+{
 	$current_page_id = get_queried_object_id();
 	/** 
 	 * For homepage
-	*/
-	if($current_page_id == 9 || 758) {?>
-	<style>
-		@-webkit-keyframes animated-slide {
-		0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-webkit-transform: translateX(calc(-378px * 8));
-			transform: translateX(calc(-378px * 8));
-		}
-		}
-
-		@keyframes animated-slide {
-		0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-webkit-transform: translateX(calc(-378px * 8));
-			transform: translateX(calc(-378px * 8));
-		}
-		}
-
-		@media (max-width: 776px) {
-		@-webkit-keyframes animated-slide {
-			0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-			}
-
-			100% {
-			-webkit-transform: translateX(calc(-221px * 8));
-			transform: translateX(calc(-221px * 8));
-			}
-		}
-
-		@keyframes animated-slide {
-			0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-			}
-
-			100% {
-			-webkit-transform: translateX(calc(-221px * 8));
-			transform: translateX(calc(-221px * 8));
-			}
-		}
-		}
-
-		@media (max-width: 576px) {
-		@-webkit-keyframes animated-slide {
-			0% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
-			}
-
-			100% {
-			-webkit-transform: translateX(calc(-185px * 8));
-			transform: translateX(calc(-185px * 8));
-			}
-		}
-
-		@keyframes animated-slide {
+	 */
+	if ($current_page_id == 9 || 758) { ?>
+		<style>
+			@-webkit-keyframes animated-slide {
 				0% {
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
 				}
 
 				100% {
-				-webkit-transform: translateX(calc(-185px * 8));
-				transform: translateX(calc(-185px * 8));
+					-webkit-transform: translateX(calc(-378px * 8));
+					transform: translateX(calc(-378px * 8));
 				}
 			}
-		}
 
-	</style>
-	<?php }
+			@keyframes animated-slide {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+
+				100% {
+					-webkit-transform: translateX(calc(-378px * 8));
+					transform: translateX(calc(-378px * 8));
+				}
+			}
+
+			@media (max-width: 776px) {
+				@-webkit-keyframes animated-slide {
+					0% {
+						-webkit-transform: translateX(0);
+						transform: translateX(0);
+					}
+
+					100% {
+						-webkit-transform: translateX(calc(-221px * 8));
+						transform: translateX(calc(-221px * 8));
+					}
+				}
+
+				@keyframes animated-slide {
+					0% {
+						-webkit-transform: translateX(0);
+						transform: translateX(0);
+					}
+
+					100% {
+						-webkit-transform: translateX(calc(-221px * 8));
+						transform: translateX(calc(-221px * 8));
+					}
+				}
+			}
+
+			@media (max-width: 576px) {
+				@-webkit-keyframes animated-slide {
+					0% {
+						-webkit-transform: translateX(0);
+						transform: translateX(0);
+					}
+
+					100% {
+						-webkit-transform: translateX(calc(-185px * 8));
+						transform: translateX(calc(-185px * 8));
+					}
+				}
+
+				@keyframes animated-slide {
+					0% {
+						-webkit-transform: translateX(0);
+						transform: translateX(0);
+					}
+
+					100% {
+						-webkit-transform: translateX(calc(-185px * 8));
+						transform: translateX(calc(-185px * 8));
+					}
+				}
+			}
+		</style>
+<?php }
 
 
 	/**
 	 * For about page
 	 */
 
-	 if($current_page_id == 799) {?>
-		<style>
-			@-webkit-keyframes animated-slide {
+	if ($current_page_id == 799) { ?>
+	<style>
+		@-webkit-keyframes animated-slide {
 			0% {
 				-webkit-transform: translateX(0);
 				transform: translateX(0);
 			}
-	
+
 			100% {
 				-webkit-transform: translateX(calc(-378px * 8));
 				transform: translateX(calc(-378px * 8));
 			}
-			}
-	
-			@keyframes animated-slide {
+		}
+
+		@keyframes animated-slide {
 			0% {
 				-webkit-transform: translateX(0);
 				transform: translateX(0);
 			}
-	
+
 			100% {
 				-webkit-transform: translateX(calc(-378px * 8));
 				transform: translateX(calc(-378px * 8));
 			}
-			}
-	
-			@media (max-width: 776px) {
+		}
+
+		@media (max-width: 776px) {
 			@-webkit-keyframes animated-slide {
 				0% {
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
-				}
-	
-				100% {
-				-webkit-transform: translateX(calc(-221px * 8));
-				transform: translateX(calc(-221px * 8));
-				}
-			}
-	
-			@keyframes animated-slide {
-				0% {
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
-				}
-	
-				100% {
-				-webkit-transform: translateX(calc(-221px * 8));
-				transform: translateX(calc(-221px * 8));
-				}
-			}
-			}
-	
-			@media (max-width: 576px) {
-			@-webkit-keyframes animated-slide {
-				0% {
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
-				}
-	
-				100% {
-				-webkit-transform: translateX(calc(-185px * 8));
-				transform: translateX(calc(-185px * 8));
-				}
-			}
-	
-			@keyframes animated-slide {
-					0% {
 					-webkit-transform: translateX(0);
 					transform: translateX(0);
-					}
-	
-					100% {
-					-webkit-transform: translateX(calc(-185px * 8));
-					transform: translateX(calc(-185px * 8));
-					}
+				}
+
+				100% {
+					-webkit-transform: translateX(calc(-221px * 8));
+					transform: translateX(calc(-221px * 8));
 				}
 			}
-		</style>
-		<?php }
+
+			@keyframes animated-slide {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+
+				100% {
+					-webkit-transform: translateX(calc(-221px * 8));
+					transform: translateX(calc(-221px * 8));
+				}
+			}
+		}
+
+		@media (max-width: 576px) {
+			@-webkit-keyframes animated-slide {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+
+				100% {
+					-webkit-transform: translateX(calc(-185px * 8));
+					transform: translateX(calc(-185px * 8));
+				}
+			}
+
+			@keyframes animated-slide {
+				0% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+
+				100% {
+					-webkit-transform: translateX(calc(-185px * 8));
+					transform: translateX(calc(-185px * 8));
+				}
+			}
+		}
+	</style>
+<?php }
 }
- add_action('wp_head', 'apps_head_animation');
+add_action('wp_head', 'apps_head_animation');

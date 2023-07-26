@@ -3,7 +3,7 @@
         <div class="apps-portfolio-modal-top-114  pt-40">
             <div class="apps-portfolio-moal-top-left-box">
                 <div class="icon">
-                    <img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/small-logo-wab.svg" alt="icon">
+                    <img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/portfolio-logo-icon1.svg" alt="icon">
                 </div>
                 <div class="content">
                     <h5 class="title">Easpa – Mobile Wallet App</h5>

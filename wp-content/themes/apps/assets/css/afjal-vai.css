@@ -340,3 +340,9 @@
 body.blog footer.footer.bg-clr-deepDark.pt-300 {
   padding-top: 100px;
 }
+
+span.page-numbers.current {
+  background-color: #00C7C7;
+  color: #fff;
+  border-color: #00C7C7;
+}

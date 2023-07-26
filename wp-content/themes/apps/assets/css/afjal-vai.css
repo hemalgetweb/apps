@@ -197,6 +197,15 @@
     display: flex;
     justify-content: center;
   }
+
+  .select2-container--open .select2-dropdown--above,
+  .select2-container--open .select2-dropdown--below {
+    min-width: 240px !important;
+  }
+
+  .select2-container--open .select2-dropdown {
+    left: -20px;
+  }
 }
 
 @media (max-width: 575px) {

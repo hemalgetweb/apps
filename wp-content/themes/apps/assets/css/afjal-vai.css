@@ -386,3 +386,12 @@ span.page-numbers.current {
 .pricing .pricing-wrapper .pricing-item .pricing-count .price-btn {
   border: 1px solid #BADDF0;
 }
+
+.pricing .pricing-wrapper .pricing-item {
+  border: 1px solid #BADDF0;
+}
+
+body {
+  padding-right: 0 !important;
+  overflow-y: scroll !important;
+}

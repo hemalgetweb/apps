@@ -346,3 +346,9 @@ span.page-numbers.current {
   color: #fff;
   border-color: #00C7C7;
 }
+
+.blog-pagination.mb-40 {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}

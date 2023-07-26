@@ -139,6 +139,10 @@
     position: static !important;
   }
 
+  section.job-banner-area.pt-175.pb-100 {
+    padding-top: 100px;
+  }
+
 
 }
 
@@ -196,11 +200,6 @@
   .apps-blog-page-topbar-search {
     display: flex;
     justify-content: center;
-  }
-
-  .select2-container--open .select2-dropdown--above,
-  .select2-container--open .select2-dropdown--below {
-    min-width: 240px !important;
   }
 
   .select2-container--open .select2-dropdown {
@@ -365,4 +364,8 @@ span.page-numbers.current {
   justify-content: center;
   display: flex;
   margin-top: 30px;
+}
+
+.career-style .apps-about-section-title-114 {
+  margin-bottom: 20px;
 }

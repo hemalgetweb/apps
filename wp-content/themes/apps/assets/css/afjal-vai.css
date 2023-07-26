@@ -254,7 +254,12 @@
     padding: 0;
   }
 
-  body {}
+  .contact-left h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+
 
 }
 
@@ -376,4 +381,8 @@ span.page-numbers.current {
 
 .career-style .apps-about-section-title-114 {
   margin-bottom: 20px;
+}
+
+.pricing .pricing-wrapper .pricing-item .pricing-count .price-btn {
+  border: 1px solid #BADDF0;
 }

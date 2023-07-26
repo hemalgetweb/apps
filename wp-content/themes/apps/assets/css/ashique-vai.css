@@ -139,3 +139,11 @@ ul.dropdown-menus li.menu-item a:hover {
     line-height: 24px; /* 171.429% */
     letter-spacing: 1px;
 }
+
+ul.dropdown-menus li.menu-item a:hover img {
+    background-color: #00C7C7 !important;
+}
+
+.navbar-nav .menu-item>ul.dropdown-menus li a {
+    padding-bottom: 10px !important;
+}

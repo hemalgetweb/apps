@@ -208,15 +208,11 @@
   .apps-blog-page-topbar-search {
     display: flex;
     justify-content: center;
-
-    .pricing-style .pricing {
-      padding: 0 30px;
-    }
   }
 
-  /* .select2-container--open .select2-dropdown {
-    left: -20px !important;
-  } */
+  .pricing-style .pricing {
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 575px) {

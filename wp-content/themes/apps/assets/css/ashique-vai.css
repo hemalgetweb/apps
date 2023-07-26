@@ -122,3 +122,20 @@ div#modal_for_project.apps-portfolio-modal {
     flex-direction: column;
     gap: 20px;
 }
+
+ul.dropdown-menus li.menu-item a img {
+    transform: translateY(0px) !important;
+}
+
+ul.dropdown-menus li.menu-item a:hover {
+    background: #E9FFFF !important;
+}
+
+.navbar-nav .menu-item>ul.dropdown-menus li a {
+    color: var(--dark-dark-1, #003959) !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 1px;
+}

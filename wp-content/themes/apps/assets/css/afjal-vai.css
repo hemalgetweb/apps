@@ -336,3 +336,7 @@
   letter-spacing: 1.8px;
   text-transform: uppercase;
 }
+
+body.blog footer.footer.bg-clr-deepDark.pt-300 {
+  padding-top: 100px;
+}

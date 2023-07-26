@@ -417,3 +417,7 @@ body::-webkit-scrollbar {
 .application-form .form-label {
   width: 100% !important;
 }
+
+.contact-section-bg {
+  background-color: rgba(227, 245, 255, 0.5);
+}

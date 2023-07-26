@@ -210,9 +210,9 @@
     justify-content: center;
   }
 
-  .select2-container--open .select2-dropdown {
+  /* .select2-container--open .select2-dropdown {
     left: -20px !important;
-  }
+  } */
 }
 
 @media (max-width: 575px) {
@@ -412,4 +412,8 @@ body::-webkit-scrollbar {
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 40px;
+}
+
+.application-form .form-label {
+  width: 100% !important;
 }

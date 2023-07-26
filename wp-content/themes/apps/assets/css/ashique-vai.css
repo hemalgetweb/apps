@@ -105,3 +105,14 @@ textarea {
 body.error404 footer.footer.bg-clr-deepDark.pt-300 {
     padding-top: 100px;
 }
+
+
+.apps-portfolio-moal-top-left-box .content a {
+    color: #50FF81 !important;
+}
+
+
+div#modal_for_project.apps-portfolio-modal {
+    background: #00000029 !important;
+    backdrop-filter: blur(5px) !important;
+}

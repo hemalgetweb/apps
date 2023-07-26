@@ -236,9 +236,9 @@ function apps_fonts_url()
 {
 	$font_url = '';
 	/*
-											Translators: If there are characters in your language that are not supported
-											by chosen font(s), translate this to 'off'. Do not translate into your own language.
-											 */
+														Translators: If there are characters in your language that are not supported
+														by chosen font(s), translate this to 'off'. Do not translate into your own language.
+														 */
 	if ('off' !== _x('on', 'Google font: on or off', 'apps')) {
 		$font_url = 'https://fonts.googleapis.com/css2?' . urlencode('family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 	}
@@ -343,7 +343,7 @@ function apps_filter_blog_posts_by_category()
 			}
 			?>
 			<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
-				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 radius-6 box-shadow2'); ?>>
+				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-2 radius-6 box-shadow2'); ?>>
 					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
 						$att = get_post_thumbnail_id();
 						$image_src = wp_get_attachment_image_src($att, 'full');
@@ -457,7 +457,7 @@ function apps_filter_blog_posts()
 			$query->the_post();
 			?>
 			<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
-				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 radius-6 box-shadow2'); ?>>
+				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-2 radius-6 box-shadow2'); ?>>
 					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
 						$att = get_post_thumbnail_id();
 						$image_src = wp_get_attachment_image_src($att, 'full');
@@ -552,7 +552,7 @@ function apps_perform_post_search()
 		while ($query->have_posts()) {
 			$query->the_post(); ?>
 			<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
-				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 radius-6 box-shadow2'); ?>>
+				<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-2 radius-6 box-shadow2'); ?>>
 					<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
 						$att = get_post_thumbnail_id();
 						$image_src = wp_get_attachment_image_src($att, 'full');

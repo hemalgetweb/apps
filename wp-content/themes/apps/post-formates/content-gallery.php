@@ -8,7 +8,7 @@ $cbtoolkit_blog_btn_text = get_theme_mod('cbtoolkit_blog_btn_text', __('Read Mor
 
 ?>
 <div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
-    <div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-3 radius-6 box-shadow2'); ?>>
+    <div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-2 radius-6 box-shadow2'); ?>>
         <?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
             $att = get_post_thumbnail_id();
             $image_src = wp_get_attachment_image_src($att, 'full');

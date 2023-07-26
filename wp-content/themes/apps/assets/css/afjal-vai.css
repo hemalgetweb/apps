@@ -204,7 +204,7 @@
   }
 
   .select2-container--open .select2-dropdown {
-    left: -20px;
+    left: -20px !important;
   }
 }
 

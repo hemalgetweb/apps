@@ -194,6 +194,10 @@
     border-bottom: 0
   }
 
+  h2.apps-job-banner-title-114 {
+    font-size: 35px;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -354,6 +358,7 @@ body.blog footer.footer.bg-clr-deepDark.pt-300 {
   padding-top: 100px;
 }
 
+span.page-numbers:hover,
 span.page-numbers.current {
   background-color: #00C7C7;
   color: #fff;

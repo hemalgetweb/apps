@@ -817,7 +817,7 @@ a:hover {
 /* banner style */
 .banner-wrapper {
   padding-top: 180px;
-  min-height: 800px;
+  min-height: 840px;
 }
 
 @media (max-width: 550px) {

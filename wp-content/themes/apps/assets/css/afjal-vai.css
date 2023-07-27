@@ -504,3 +504,9 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   top: 55px;
 }
+
+
+.pricing.active .pricing-wrapper .pricing-item,
+.pricing .pricing-wrapper .pricing-item:hover {
+  border-color: #00C7C7 !important;
+}

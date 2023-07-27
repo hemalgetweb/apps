@@ -510,3 +510,7 @@ body::-webkit-scrollbar {
 .pricing .pricing-wrapper .pricing-item:hover {
   border-color: #00C7C7 !important;
 }
+
+section.pricing.active .single-price .pricing-item {
+  border-color: #00C7C7 !important;
+}

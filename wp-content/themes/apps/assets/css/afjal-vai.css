@@ -473,7 +473,7 @@ body::-webkit-scrollbar {
   font-size: 48px !important;
 }
 
-.uiux-style .overview .strategy-item:nth-child(-n + 2)::before {
+.uiux-style .overview .strategy-item::before {
   content: "";
   position: absolute;
   right: 0;

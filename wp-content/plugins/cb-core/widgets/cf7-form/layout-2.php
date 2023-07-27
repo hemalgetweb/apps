@@ -47,9 +47,9 @@
                                 <?php if(!empty($settings['number_text'])) : ?>
                                 <a href="tel:<?php echo $settings['number_link'] ?? $settings['number_link']; ?>"><img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/p-1.svg" alt="tel"><?php echo esc_html($settings['number_text']); ?></a>
                                 <?php endif;  ?>
-                                
-                                <?php if(!empty($settings['number_text'])) : ?>
-                                <a href="tel:<?php echo $settings['number_link'] ?? $settings['number_link']; ?>"><img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/p-1.svg" alt="tel"><?php echo esc_html($settings['number_text']); ?></a>
+
+                                <?php if(!empty($settings['number_text2'])) : ?>
+                                <a href="tel:<?php echo $settings['number_link2'] ?? $settings['number_link2']; ?>"><img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/p-1.svg" alt="tel"><?php echo esc_html($settings['number_text2']); ?></a>
                                 <?php endif;  ?>
                             </div>
                             

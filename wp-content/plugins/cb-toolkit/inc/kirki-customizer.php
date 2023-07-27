@@ -414,7 +414,7 @@ function _header_fields($fields)
         'settings' => 'cbtoolkit_side_support_number_text_1',
         'label'    => __('Support Number Text', 'cb-toolkit'),
         'section'  => 'section_header_settings',
-        'default'  => __('(347) 619-3312', 'cb-toolkit'),
+        'default'  => __('(971) 42276926', 'cb-toolkit'),
         'priority' => 10,
         'active_callback' => [
             [

@@ -1182,9 +1182,9 @@ function apps_sidebar_mobile_menu_1()
                     <div
                         class="navbar-right btn-wrap d-flex flex-wrap justify-content-between align-content-center w-100 gap-3 gap-lg-4">
                         <a class="link-text text-decoration-none pe-4 fs-18 text-white fw-semi-bold d-flex gap-2 align-items-center"
-                            href="mailto:619-3312">
+                            href="tel:+97142276926">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.svg" alt="icon" class="img-fluid">
-                            (347) 619-3312
+                            (971) 42276926
                         </a>
                         <a class="btn position-relative rounded bg-btn text-uppercase py-2 ps-4 border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
                             href="contact-us.html">

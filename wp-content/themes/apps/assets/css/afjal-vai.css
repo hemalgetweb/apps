@@ -473,15 +473,11 @@ body::-webkit-scrollbar {
   font-size: 48px !important;
 }
 
-.uiux-style .overview .strategy-item:after {
+.uiux-style .overview .strategy-item::before {
   content: "";
   position: absolute;
-  right: -20px;
+  right: 0;
   width: 10px;
   height: 100px;
   background-image: url(http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/line-shapen.svg);
-}
-
-.uiux-style .overview .strategy-item:last-child::after {
-  display: none;
 }

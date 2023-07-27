@@ -526,3 +526,7 @@ section.pricing.active .single-price .pricing-item {
   display: flex;
   gap: 20px;
 }
+
+.apps-category-grid-item-single-114 {
+  padding: 30px 18px;
+}

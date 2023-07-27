@@ -80,7 +80,7 @@ EOD;
                         <?php endif; ?>
                     <?php endforeach; ?>
                     <?php if ($index == 2): ?>
-                        <div class="contact-element d-flex gap-4 align-items-center">
+                        <div class="contact-element d-flex gap-4 align-items-center footer-contact-address">
                             <?php if (!empty($repeater['repeater_image'])): ?>
                                 <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                             <?php endif; ?>

@@ -484,8 +484,6 @@ body::-webkit-scrollbar {
   top: 55px;
 }
 
-/* .uiux-style .overview .strategy-item:last-child::before {
-  display: none !important;
-} */
-
-body {}
+.uiux-style .overview .strategy-item:last-child::before {
+  background-image: none !important;
+}

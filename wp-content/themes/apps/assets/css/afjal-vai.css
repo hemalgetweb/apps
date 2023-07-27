@@ -450,4 +450,10 @@ body::-webkit-scrollbar {
   .apps-service-grid-item-114:nth-child(6) .apps-service-box-3-114 {
     border-bottom: 1px solid #D2ECFA;
   }
+
+}
+
+.overview .strategy-item {
+  box-shadow: none !important;
+  background-color: transparent !important;
 }

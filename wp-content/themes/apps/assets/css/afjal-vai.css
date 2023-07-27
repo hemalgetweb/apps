@@ -267,8 +267,12 @@
     padding: 0 20px;
   }
 
-  .uiux-style .overview .strategy-item {
+  .uiux-style .our-strategy .strategy-item {
     justify-content: center;
+  }
+
+  .uiux-style .our-strategy .strategy-item::before {
+    background-image: none !important;
   }
 
 
@@ -482,8 +486,4 @@ body::-webkit-scrollbar {
   background-image: url(http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/line-shapen.svg);
   background-repeat: no-repeat;
   top: 55px;
-}
-
-.uiux-style .our-strategy .strategy-item:nth-child(3)::before {
-  background-image: none !important;
 }

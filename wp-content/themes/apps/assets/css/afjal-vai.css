@@ -231,9 +231,7 @@
     padding: 0 30px;
   }
 
-  .apps-service-box-114 {
-    min-height: 400px !important;
-  }
+
 
 }
 
@@ -483,6 +481,14 @@ body::-webkit-scrollbar {
 
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+
+  .apps-service-box-114 {
+    min-height: 400px !important;
+  }
+
+}
+
 .uiux-style .our-strategy .strategy-item {
   box-shadow: none !important;
   background-color: transparent !important;
@@ -525,4 +531,8 @@ section.pricing.active .single-price .pricing-item {
   list-style: none !important;
   display: flex;
   gap: 20px;
+}
+
+.apps-category-grid-item-single-114 {
+  padding: 30px 18px !important;
 }

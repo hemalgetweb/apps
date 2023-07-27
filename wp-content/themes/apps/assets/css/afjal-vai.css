@@ -453,7 +453,7 @@ body::-webkit-scrollbar {
 
 }
 
-.overview .strategy-item {
+.uiux-style .overview .strategy-item {
   box-shadow: none !important;
   background-color: transparent !important;
 }

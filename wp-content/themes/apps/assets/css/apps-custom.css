@@ -76,7 +76,7 @@ img {
 
 @media (max-width: 1199px) {
     .navbar-right.btn-wrap {
-        margin-bottom: 60px;
+        padding-bottom: 20px;
     }
 }
 

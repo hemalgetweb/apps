@@ -478,6 +478,12 @@ body::-webkit-scrollbar {
   position: absolute;
   right: 0;
   width: 10px;
-  height: 100px;
+  height: 60px;
   background-image: url(http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/line-shapen.svg);
+  background-repeat: no-repeat;
+  top: 55px;
+}
+
+.uiux-style .overview .strategy-item:last-child::before {
+  display: none !important;
 }

@@ -61,6 +61,7 @@ EOD;
                             </div>
                         <?php endif; ?>
                         <?php if ($index == 1): ?>
+
                             <div class="contact-element d-flex gap-4 align-items-center">
                                 <?php if (!empty($repeater['repeater_image'])): ?>
                                     <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
@@ -72,7 +73,16 @@ EOD;
                                         <?php echo esc_html($repeater['repeater_label']); ?>
                                     </a>
                                 <?php endif; ?>
+                                
+                                <?php if (!empty($repeater['repeater_label'])): ?>
+                                    <a href="tel:<?php echo $repeater['repeater_url'] ? $repeater['repeater_url'] : ''; ?>"
+                                        class="fs-14 fw-bold text-clr-dark5 text-decoration-none text-uppercase"
+                                        target="<?php echo $repeater['repeater_url_target'] ? $repeater['repeater_url_target'] : ''; ?>">
+                                        <?php echo esc_html($repeater['repeater_label']); ?>
+                                    </a>
+                                <?php endif; ?>
                             </div>
+
                             <div class="divider d-none d-lg-block">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/divider.svg" alt="divider"
                                     class="img-fluid">

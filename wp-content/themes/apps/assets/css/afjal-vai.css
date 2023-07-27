@@ -473,7 +473,7 @@ body::-webkit-scrollbar {
   font-size: 48px !important;
 }
 
-.uiux-style .overview .strategy-item::before {
+.uiux-style .overview .strategy-item:nth-child(-n+3)::before {
   content: "";
   position: absolute;
   right: 0;
@@ -484,6 +484,8 @@ body::-webkit-scrollbar {
   top: 55px;
 }
 
-.uiux-style .overview .strategy-item:last-child::before {
+/* .uiux-style .overview .strategy-item:last-child::before {
   display: none !important;
-}
+} */
+
+body {}

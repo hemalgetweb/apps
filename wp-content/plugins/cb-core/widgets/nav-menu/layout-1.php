@@ -4,7 +4,7 @@
         <div class="row align-items-center">
             <div class="col-xxl-3 col-xl-2 col-lg-2 col-md-2 col-6">
                 <div class="apps-header-logo-114">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"></a>
+                    <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"></a>
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 apps-menu-item-has-last-114">

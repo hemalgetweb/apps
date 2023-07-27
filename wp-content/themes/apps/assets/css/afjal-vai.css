@@ -215,8 +215,8 @@
   }
 
   .apps-feature-list-box-3-114 {
-    padding: 30px 20px;
-    padding-bottom: 30px;
+    padding: 30px 20px !important;
+    padding-bottom: 30px !important;
   }
 
 }

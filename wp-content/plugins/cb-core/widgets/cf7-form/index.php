@@ -265,6 +265,33 @@ class CB_Core_CF7_Form extends Widget_Base
 				]
 			 ]
 		);
+
+		
+		$this->add_control(
+			'number_text2',
+			 [
+				'label'       => esc_html__( 'Number Text 2', 'cb-core' ),
+				'type'        => \Elementor\Controls_Manager::TEXT,
+				'default'     => esc_html__( '(307) 555-0133', 'cb-core' ),
+				'placeholder' => esc_html__( 'Number Text', 'cb-core' ),
+				'condition' => [
+				   'layout' => ['layout-2']
+				]
+			 ]
+		);
+		$this->add_control(
+			'number_link2',
+			 [
+				'label'       => esc_html__( 'Number Link 2', 'cb-core' ),
+				'type'        => \Elementor\Controls_Manager::TEXT,
+				'default'     => esc_html__( '307555-0133', 'cb-core' ),
+				'placeholder' => esc_html__( 'Number Link', 'cb-core' ),
+				'condition' => [
+				   'layout' => ['layout-2']
+				]
+			 ]
+		);
+
 		$this->add_control(
 			'cf7_image',
 			[

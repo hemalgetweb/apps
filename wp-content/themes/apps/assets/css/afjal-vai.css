@@ -522,7 +522,7 @@ section.pricing.active .single-price .pricing-item {
 
 
 .maintenance-style ul li {
-  list-style: none;
+  list-style: none !important;
   display: flex;
   gap: 20px;
 }

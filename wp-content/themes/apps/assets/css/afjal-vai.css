@@ -464,4 +464,5 @@ body::-webkit-scrollbar {
 
 .uiux-style .overview .strategy-item .number .counter {
   font-weight: 700 !important;
+  font-size: 48px !important;
 }

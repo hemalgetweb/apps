@@ -457,3 +457,11 @@ body::-webkit-scrollbar {
   box-shadow: none !important;
   background-color: transparent !important;
 }
+
+.uiux-style .overview .strategy-item .icon {
+  background: transparent !important;
+}
+
+.uiux-style .overview .strategy-item .number .counter {
+  font-weight: 700 !important;
+}

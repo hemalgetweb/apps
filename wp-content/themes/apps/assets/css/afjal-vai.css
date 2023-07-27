@@ -206,6 +206,14 @@
     padding: 0 0;
   }
 
+  .apps-feature-list-box-3-114 ul li {
+    align-items: self-start !important;
+  }
+
+  .apps-feature-list-box-3-114 ul li i {
+    margin-top: 6px;
+  }
+
 }
 
 @media (max-width:768px) {

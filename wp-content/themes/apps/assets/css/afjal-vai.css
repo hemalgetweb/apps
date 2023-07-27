@@ -457,23 +457,23 @@ body::-webkit-scrollbar {
 
 }
 
-.uiux-style .overview .strategy-item {
+.uiux-style .our-strategy .strategy-item {
   box-shadow: none !important;
   background-color: transparent !important;
   position: relative;
 }
 
-.uiux-style .overview .strategy-item .icon {
+.uiux-style .our-strategy .strategy-item .icon {
   background: transparent !important;
 
 }
 
-.uiux-style .overview .strategy-item .number .counter {
+.uiux-style .our-strategy .strategy-item .number .counter {
   font-weight: 700 !important;
   font-size: 48px !important;
 }
 
-.uiux-style .overview .strategy-item::before {
+.uiux-style .our-strategy .strategy-item::before {
   content: "";
   position: absolute;
   right: 0;
@@ -484,6 +484,6 @@ body::-webkit-scrollbar {
   top: 55px;
 }
 
-.uiux-style .overview .strategy-item:nth-child(3):before {
+.uiux-style .our-strategy .strategy-item:nth-child(3)::before {
   background-image: none !important;
 }

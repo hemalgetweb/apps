@@ -230,6 +230,11 @@
   .pricing-style .pricing {
     padding: 0 30px;
   }
+
+  .apps-service-box-114 {
+    min-height: 400px !important;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -513,4 +518,11 @@ body::-webkit-scrollbar {
 
 section.pricing.active .single-price .pricing-item {
   border-color: #00C7C7 !important;
+}
+
+
+.maintenance-style ul li {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }

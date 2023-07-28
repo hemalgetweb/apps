@@ -62,7 +62,7 @@ EOD;
                         <?php endif; ?>
                         <?php if ($index == 1): ?>
 
-                            <div class="contact-element d-flex gap-4 align-items-center">
+                            <div class="contact-element d-flex gap-3 align-items-center">
                                 <?php if (!empty($repeater['repeater_image'])): ?>
                                     <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                                 <?php endif; ?>

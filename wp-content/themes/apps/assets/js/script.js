@@ -59,7 +59,9 @@ $(window).scroll(function () {
 
         $(document).ready(function () {
 
-
+            $('.apps-portfolio-close').on('click', function() {
+                $('.apps-portfolio-modal, .modal-backdrop').hide(500);
+            })
             //navbar add class
             $(function () {
                 if ($('.mobileMenu').length) {

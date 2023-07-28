@@ -60,7 +60,7 @@ $(window).scroll(function () {
         $(document).ready(function () {
 
             $('.apps-portfolio-close').on('click', function() {
-                $('.apps-portfolio-modal, .modal-backdrop').hide(500);
+                $('.apps-portfolio-modal, .modal-backdrop').hide(0);
             })
             //navbar add class
             $(function () {

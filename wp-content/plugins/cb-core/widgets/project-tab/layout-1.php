@@ -2,6 +2,7 @@
     <div class="modal-dialog modal-xl">
         <div class="apps-portfolio-modal-top-114  pt-40">
             <div class="apps-portfolio-moal-top-left-box">
+                <button type="button" class="btn-close apps-portfolio-close" data-bs-dismiss="modal"><i class="fal fa-times"></i></button>
                 <div class="icon">
                     <img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/portfolio-logo-icon1.svg" alt="icon">
                 </div>

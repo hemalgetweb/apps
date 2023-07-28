@@ -104,8 +104,8 @@
                             'format' => '/page/%#%', // Use /page/ instead of ?paged= for better permalinks.
                             'current' => max(1, $paged),
                             'total' => $total_pages,
-                            'prev_text' => '<i class="fal fa-left"></i>', // Custom icon for previous link.
-                            'next_text' => '<i class="fal fa-right"></i>', // Custom icon for next link.
+                            'prev_text' => '<i class="fal fa-angle-left"></i>', // Custom icon for previous link.
+                            'next_text' => '<i class="fal fa-angle-right"></i>', // Custom icon for next link.
                         ));
                         echo '</div>';
                     }

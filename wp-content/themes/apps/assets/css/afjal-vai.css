@@ -128,7 +128,7 @@
     padding-top: 15px !important;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 480px) {
     .navbar-nav .menu-item>ul.dropdown-menus {
         padding: 10px;
     }

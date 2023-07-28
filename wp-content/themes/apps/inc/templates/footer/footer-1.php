@@ -40,7 +40,7 @@ EOD;
             </div>
             <?php if (!empty($cbtoolkit_footer_top_repeater)): ?>
                 <div
-                    class="footer-top-right d-flex justify-content-md-center justify-content-xl-start flex-wrap gap-4 align-items-center">
+                    class="footer-top-right d-flex justify-content-md-start justify-content-xl-start flex-wrap flex-lg-nowrap gap-4 align-items-center">
                     <?php foreach ($cbtoolkit_footer_top_repeater as $index => $repeater): ?>
                         <?php if ($index == 0): ?>
                             <div class="contact-element d-flex gap-4 align-items-center">
@@ -73,7 +73,7 @@ EOD;
                                         <?php echo esc_html($repeater['repeater_label']); ?>
                                     </a>
                                 <?php endif; ?>
-                                
+
                                 <?php if (!empty($repeater['repeater_label'])): ?>
                                     <a href="tel:<?php echo $repeater['repeater_url'] ? $repeater['repeater_url'] : ''; ?>"
                                         class="fs-14 fw-bold text-clr-dark5 text-decoration-none text-uppercase"

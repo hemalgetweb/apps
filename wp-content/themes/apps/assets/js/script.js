@@ -217,6 +217,7 @@ $(window).scroll(function () {
                 let dynamicSliderSlide = new Swiper('.dynamic-service-active', {
                     slidesPerView: 4,
                     spaceBetween: 30,
+                    allowTouchMove: false,
                     loop: false,
                     pagination: {
                         el: ".dynamic-pagination",

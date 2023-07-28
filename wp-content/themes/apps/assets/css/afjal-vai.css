@@ -127,3 +127,17 @@
 .accordion-body {
     padding-top: 15px !important;
 }
+
+@media (max-width: 350px) {
+    .navbar-nav .menu-item>ul.dropdown-menus {
+        padding: 10px;
+    }
+    
+    .dropdown-menus .dropdown-item .menu-image-title {
+        padding-left: 15px !important;
+    }
+    
+    .navbar-nav .menu-item>ul.dropdown-menus li a {
+        font-size: 12px;
+    }
+}

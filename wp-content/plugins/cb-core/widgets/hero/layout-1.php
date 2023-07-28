@@ -8,8 +8,7 @@
                         <?php if (!empty($settings['subtitle'])): ?>
                             <span
                                 class="section-tag fs-12 fw-bold text-uppercase text-clr-primary2 d-inline-flex gap-2 align-items-center mb-2 ">
-                                <img src="<?php echo esc_url($settings['subtitle_image']['url']); ?>" alt="icon"
-                                    class="img-fluid">
+                                <?php echo wp_get_attachment_image( $settings['subtitle_image']['id'], 'full' ); ?>
                                 <?php echo cb_core_kses_basic($settings['subtitle']); ?>
                             </span>
                         <?php endif; ?>

@@ -1,5 +1,5 @@
 <div class="modal fade apps-portfolio-modal" id="modal_for_project" tabindex="-1" aria-labelledby="modal_for_projectLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <div class="container">
         <div class="apps-portfolio-modal-top-114  pt-40">
             <div class="apps-portfolio-moal-top-left-box">
                 <button type="button" class="btn-close apps-portfolio-close" data-bs-dismiss="modal"><i class="fal fa-times"></i></button>
@@ -15,6 +15,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="modal-dialog modal-xl">
         <div class="modal-content bg-transparent">
             <img src="https://www.getwebinc.com/wp-content/uploads/2022/11/Stype-Health-Walk-Tracker-App-Design-Image-Preview-min.png" alt="image">
         </div>

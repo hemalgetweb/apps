@@ -51,6 +51,15 @@
                             <?php while ($all_wp_query->have_posts()):
                                 $all_wp_query->the_post();
                                 $post_id = get_the_ID();
+                                $categories = get_the_category();
+                                $cat_name = '';
+                                $cat_id = '';
+                                $cat_link = '';
+                                if(!empty($categories)) {
+                                    $cat_name = $categories[0]->name;
+                                    $cat_id = $categories[0]->term_id;
+                                    $cat_link = get_category_link( $cat_id );
+                                }
                                 $project_big_image = get_post_meta($post_id, 'project_image', true);
                                 ?>
                                 <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">

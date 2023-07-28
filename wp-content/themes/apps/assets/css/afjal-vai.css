@@ -99,3 +99,11 @@
     }
     
 }
+
+.about-content-left-5-114 ul {
+    padding-left: 15px;
+}
+
+.about-section-content-5-114 ul li::before {
+    top: 16px;
+}

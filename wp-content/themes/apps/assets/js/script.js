@@ -88,7 +88,7 @@ $(window).scroll(function () {
                         $(".navbar-toggler").click();
                     }
                 });
-               
+            
             })
 
             jQuery('.apps-header-bar-btn-114').on('click', function() {
@@ -104,7 +104,7 @@ $(window).scroll(function () {
             slidesPerView: 3,
             spaceBetween: 0,
             loop: true,
-             pagination: {
+            pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
@@ -126,12 +126,6 @@ $(window).scroll(function () {
         });
 
 
-
-
-
-
-
-        
 
 
 
@@ -197,6 +191,7 @@ $(window).scroll(function () {
                 slidesPerView: 3,
                 spaceBetween: 30,
                 loop: true,
+                grabCursor: true,
                 pagination: {
                     el: ".apps-project-paginate",
                     clickable: true,

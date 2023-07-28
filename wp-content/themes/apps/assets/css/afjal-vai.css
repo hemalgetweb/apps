@@ -1,6 +1,6 @@
 
 
-.project-area .swiper-wrapper {
+/* .project-area .swiper-wrapper {
     height: 395px !important;
 }
 
@@ -48,4 +48,13 @@
     .project-area .swiper-wrapper {
         height: 415px !important;
     }
+} */
+
+
+.apps-project-next-114, .apps-project-prev-114 {
+    background-color: #fff;
+}
+
+.apps-focus-industries-area-1-114 .instruction-wrap .icon .wrapper-img {
+    transition: all 350ms linear;
 }

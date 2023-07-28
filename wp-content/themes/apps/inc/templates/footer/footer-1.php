@@ -31,8 +31,8 @@ EOD;
     style="<?PHP echo $bg_properties; ?>">
     <div class="container">
         <div
-            class="footer-top pb-5 d-flex justify-content-md-center justify-content-xl-between flex-wrap gap-4 align-items-center">
-            <div class="footer-logo">
+            class="footer-top pb-5 d-flex justify-content-lg-center justify-content-xl-between flex-wrap gap-4 align-items-center">
+            <div class="footer-logo mb-3 mb-lg-0">
                 <a href="<?php echo home_url('/'); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"
                         class="img-fluid">
@@ -40,10 +40,10 @@ EOD;
             </div>
             <?php if (!empty($cbtoolkit_footer_top_repeater)): ?>
                 <div
-                    class="footer-top-right d-flex justify-content-md-center justify-content-xl-start flex-wrap gap-4 align-items-center">
+                    class="footer-top-right d-flex justify-content-md-start justify-content-xl-start flex-wrap flex-lg-nowrap gap-4 align-items-center">
                     <?php foreach ($cbtoolkit_footer_top_repeater as $index => $repeater): ?>
                         <?php if ($index == 0): ?>
-                            <div class="contact-element d-flex gap-4 align-items-center">
+                            <div class="contact-element d-flex gap-3 align-items-center">
                                 <?php if (!empty($repeater['repeater_image'])): ?>
                                     <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                                 <?php endif; ?>
@@ -62,13 +62,13 @@ EOD;
                         <?php endif; ?>
                         <?php if ($index == 1): ?>
 
-                            <div class="contact-element d-flex gap-4 align-items-center">
+                            <div class="contact-element d-flex gap-3 align-items-center">
                                 <?php if (!empty($repeater['repeater_image'])): ?>
                                     <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                                 <?php endif; ?>
                                 <?php if (!empty($repeater['repeater_label'])): ?>
                                     <a href="tel:<?php echo $repeater['repeater_url'] ? $repeater['repeater_url'] : ''; ?>"
-                                        class="fs-14 fw-bold text-clr-dark5 text-decoration-none text-uppercase"
+                                        class="fs-14 fw-bold text-clr-dark5 text-decoration-none text-uppercase text-nowrap"
                                         target="<?php echo $repeater['repeater_url_target'] ? $repeater['repeater_url_target'] : ''; ?>">
                                         <?php echo esc_html($repeater['repeater_label']); ?>
                                     </a>
@@ -82,7 +82,7 @@ EOD;
                         <?php endif; ?>
                     <?php endforeach; ?>
                     <?php if ($index == 2): ?>
-                        <div class="contact-element d-flex gap-4 align-items-center footer-contact-address">
+                        <div class="contact-element d-flex gap-3 align-items-center footer-contact-address">
                             <?php if (!empty($repeater['repeater_image'])): ?>
                                 <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                             <?php endif; ?>

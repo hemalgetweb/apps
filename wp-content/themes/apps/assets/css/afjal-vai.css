@@ -78,3 +78,19 @@
     -webkit-box-orient: vertical;
 }
 
+
+
+.navbar-nav .menu-item>ul.dropdown-menus li a {
+    color: var(--dark-dark-1, #003959) !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 24px;
+    letter-spacing: 1px;
+    display: block;
+}
+
+
+.dropdown-menus .dropdown-item .menu-image-title {
+    padding-left: 20px;
+}

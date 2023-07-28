@@ -11,7 +11,7 @@
                 <div class="apps-service-box-2-114 mb-30 <?php echo $enable_box_border ? esc_attr__('has-enabled-border', 'cb-core'): ''; ?> <?php echo $settings['enable_box_shadow_effect'] ? esc_attr__('has-shadow-on-hover'): ''; ?>" style="min-height: <?php echo $box_min_height ? $box_min_height. 'px' : ''; ?>">
                     <?php if(!empty($slide['service_image']['url'])) : ?>
                     <div class="apps-service-box-icon-2-114">
-                        <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="service">
+                        <img width="48" height="48" src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="service">
                     </div>
                     <?php endif; ?>
                     <div class="apps-service-box-content-2-114">

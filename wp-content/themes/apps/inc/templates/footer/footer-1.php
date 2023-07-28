@@ -32,7 +32,7 @@ EOD;
     <div class="container">
         <div
             class="footer-top pb-5 d-flex justify-content-lg-center justify-content-xl-between flex-wrap gap-4 align-items-center">
-            <div class="footer-logo">
+            <div class="footer-logo mb-3 mb-lg-0">
                 <a href="<?php echo home_url('/'); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"
                         class="img-fluid">

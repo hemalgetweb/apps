@@ -1185,7 +1185,7 @@ function apps_sidebar_mobile_menu_1()
                         class="navbar-right btn-wrap d-flex flex-wrap justify-content-between align-content-center w-100 gap-3 gap-lg-4">
                         <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
                         <a class="link-text text-decoration-none pe-4 fs-18 text-white fw-semi-bold d-flex gap-2 align-items-center"
-                            href="tel:<?php echo $cbtoolkit_header_btn_link ? esc_url($cbtoolkit_header_btn_link): ''; ?>">
+                            href="tel:<?php echo esc_attr($cbtoolkit_side_support_number_link_1) ? esc_attr($cbtoolkit_side_support_number_link_1): ''; ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.svg" alt="icon" class="img-fluid">
                             <?php echo esc_html($cbtoolkit_side_support_number_text_1); ?>
                         </a>

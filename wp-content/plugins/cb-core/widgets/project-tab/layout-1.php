@@ -51,7 +51,7 @@
                             <?php while ($all_wp_query->have_posts()):
                                 $all_wp_query->the_post();
                                 $post_id = get_the_ID();
-                                $categories = get_the_category();
+                                $categories = get_the_category($post_id);
                                 $cat_name = '';
                                 $cat_id = '';
                                 $cat_link = '';

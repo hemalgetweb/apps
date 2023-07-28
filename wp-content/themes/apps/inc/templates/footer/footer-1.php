@@ -73,7 +73,6 @@ EOD;
                                         <?php echo esc_html($repeater['repeater_label']); ?>
                                     </a>
                                 <?php endif; ?>
-<<<<<<< HEAD
 
                                 <?php if (!empty($repeater['repeater_label'])): ?>
                                     <a href="tel:<?php echo $repeater['repeater_url'] ? $repeater['repeater_url'] : ''; ?>"
@@ -82,8 +81,6 @@ EOD;
                                         <?php echo esc_html($repeater['repeater_label']); ?>
                                     </a>
                                 <?php endif; ?>
-=======
->>>>>>> 1b365c804d6e164d20e87076b80f55713ba02226
                             </div>
 
                             <div class="divider d-none d-lg-block">

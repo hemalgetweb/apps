@@ -107,3 +107,7 @@
 .about-section-content-5-114 ul li::before {
     top: 16px;
 }
+
+.apps-about-section-title-114 {
+    margin-bottom: 25px !important;
+}

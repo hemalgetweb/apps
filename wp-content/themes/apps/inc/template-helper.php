@@ -1155,6 +1155,8 @@ function apps_sidebar_mobile_menu_1()
     $cbtoolkit_side_support_number_text_1 = get_theme_mod('cbtoolkit_side_support_number_text_1',  __('(+642) 394 396 432', 'apps'));
     $cbtoolkit_side_contact_address_link_1 = get_theme_mod('cbtoolkit_side_contact_address_link_1',  __('https://goo.gl/maps/ZNyPLyPfoLkFYpiS7', 'apps'));
     $cbtoolkit_side_contact_address_text_1 = get_theme_mod('cbtoolkit_side_contact_address_text_1',  __('Ave 14th Street, Mirpur 210, San Franciso, USA 3296.', 'apps'));
+    $cbtoolkit_header_btn_text = get_theme_mod('cbtoolkit_header_btn_text', __('CONTACT US', 'apps'));
+    $cbtoolkit_header_btn_link = get_theme_mod('cbtoolkit_header_btn_link', __('#', 'apps'));
 ?>
 
 
@@ -1181,20 +1183,24 @@ function apps_sidebar_mobile_menu_1()
                 <?php apps_header_menu_1(); ?>
                     <div
                         class="navbar-right btn-wrap d-flex flex-wrap justify-content-between align-content-center w-100 gap-3 gap-lg-4">
+                        <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
                         <a class="link-text text-decoration-none pe-4 fs-18 text-white fw-semi-bold d-flex gap-2 align-items-center"
-                            href="tel:+97142276926">
+                            href="tel:<?php echo $cbtoolkit_header_btn_link ? esc_url($cbtoolkit_header_btn_link): ''; ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.svg" alt="icon" class="img-fluid">
-                            (971) 42276926
+                            <?php echo esc_html($cbtoolkit_side_support_number_text_1); ?>
                         </a>
+                        <?php endif; ?>
+                        <?php if(!empty($cbtoolkit_header_btn_text)) : ?>
                         <a class="btn position-relative rounded bg-btn text-uppercase py-2 ps-4 border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
-                            href="contact-us.html">
-                            Contact Us
+                            href="<?php echo $cbtoolkit_header_btn_link ? esc_url($cbtoolkit_header_btn_link): ''; ?>">
+                            <?php echo esc_html($cbtoolkit_header_btn_text); ?>
                             <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z"
                                     fill="#003C4F" />
                             </svg>
                         </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

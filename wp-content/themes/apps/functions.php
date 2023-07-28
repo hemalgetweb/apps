@@ -204,7 +204,7 @@ function apps_scripts()
 	wp_enqueue_style('bootstrap', apps_THEME_CSS_DIR . 'bootstrap.min.css');
 	wp_enqueue_style('fontawesome', apps_THEME_CSS_DIR . 'font-awesome.min.css', null, time());
 	wp_enqueue_style('swiper', apps_THEME_CSS_DIR . 'swiper.min.css');
-	// wp_enqueue_style('nioicon', apps_THEME_CSS_DIR . 'nioicon.css');
+	wp_enqueue_style('nioicon', apps_THEME_CSS_DIR . 'nioicon.css');
 	wp_enqueue_style('select2', apps_THEME_CSS_DIR . 'select2.min.css', null, time());
 	wp_enqueue_style('apps-core', apps_THEME_CSS_DIR . 'apps-core.css', null, time());
 	wp_enqueue_style('support', apps_THEME_CSS_DIR . 'support.css', null, time());

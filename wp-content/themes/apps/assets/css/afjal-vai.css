@@ -58,3 +58,23 @@
 .apps-focus-industries-area-1-114 .instruction-wrap .icon .wrapper-img {
     transition: all 350ms linear;
 }
+
+.apps-portfolio-moal-top-left-box button.apps-portfolio-close {
+    box-shadow: none !important;
+}
+
+
+@media (max-width: 768px) {
+    .banner-img {
+        width: 390px;
+    }
+}
+
+.apps-blog-box-title-114 a {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+

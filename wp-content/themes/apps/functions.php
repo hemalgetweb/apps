@@ -202,22 +202,21 @@ function apps_scripts()
 	// all CSS
 	wp_enqueue_style('apps-fonts', apps_fonts_url(), array(), '1.0.0');
 	wp_enqueue_style('bootstrap', apps_THEME_CSS_DIR . 'bootstrap.min.css');
-	wp_enqueue_style('fontawesome', apps_THEME_CSS_DIR . 'font-awesome.min.css');
+	wp_enqueue_style('fontawesome', apps_THEME_CSS_DIR . 'font-awesome.min.css', null, time());
 	wp_enqueue_style('swiper', apps_THEME_CSS_DIR . 'swiper.min.css');
 	wp_enqueue_style('nioicon', apps_THEME_CSS_DIR . 'nioicon.css');
 	wp_enqueue_style('select2', apps_THEME_CSS_DIR . 'select2.min.css', null, time());
 	wp_enqueue_style('apps-core', apps_THEME_CSS_DIR . 'apps-core.css', null, time());
 	wp_enqueue_style('support', apps_THEME_CSS_DIR . 'support.css', null, time());
 	wp_enqueue_style('apps-afjal-vai', apps_THEME_CSS_DIR . 'afjal-vai.css', null, time());
-	wp_enqueue_style('apps-ashique-vai', apps_THEME_CSS_DIR . 'ashique-vai.css', null, time());
+	// wp_enqueue_style('apps-ashique-vai', apps_THEME_CSS_DIR . 'ashique-vai.css', null, time());
 	wp_enqueue_style('apps-custom', apps_THEME_CSS_DIR . 'apps-custom.css', null, time());
-	wp_enqueue_style('apps-unit', apps_THEME_CSS_DIR . 'apps-unit.css', null, time());
+	// wp_enqueue_style('apps-unit', apps_THEME_CSS_DIR . 'apps-unit.css', null, time());
 
 	// all js
 	wp_enqueue_script('bootstrap', APPS_THEME_JS_DIR . 'bootstrap.bundle.min.js', ['jquery'], '', true);
 	wp_enqueue_script('select2', APPS_THEME_JS_DIR . 'select2.min.js', ['jquery'], '', true);
 	wp_enqueue_script('swiper', APPS_THEME_JS_DIR . 'swiper.min.js', ['jquery'], '', true);
-	wp_enqueue_script('lottie', APPS_THEME_JS_DIR . 'lottie-player.js', ['jquery'], '', true);
 	wp_enqueue_script('apps-ajax-script', APPS_THEME_JS_DIR . 'apps-ajax-handle.js', ['jquery'], time(), true);
 	wp_enqueue_script('apps-script', APPS_THEME_JS_DIR . 'script.js', ['jquery'], time(), true);
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

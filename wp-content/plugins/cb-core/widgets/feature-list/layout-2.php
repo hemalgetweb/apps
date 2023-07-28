@@ -8,7 +8,7 @@
           <div class="strategy-item d-flex align-items-center gap-3">
             <div class="icon flex-shrink-0">
               <?php if (!empty($slide['strategy_icon'])): ?>
-                <img src="<?php echo esc_url($slide['strategy_icon']['url']); ?>" alt="icon" class="img-fluid">
+                <?php echo wp_get_attachment_image( $slide['strategy_icon']['id'], 'thumbnail' ); ?>
               <?php endif; ?>
             </div>
             <div class="strategy-info">

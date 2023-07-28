@@ -8,7 +8,7 @@
                         <?php if (!empty($settings['subtitle'])): ?>
                             <span
                                 class="section-tag fs-12 fw-bold text-uppercase text-clr-primary2 d-inline-flex gap-2 align-items-center mb-2 ">
-                                <img src="<?php echo esc_url($settings['subtitle_image']['url']); ?>" alt="icon"
+                                <img width="10" height="10" src="<?php echo esc_url($settings['subtitle_image']['url']); ?>" alt="icon"
                                     class="img-fluid">
                                 <?php echo cb_core_kses_basic($settings['subtitle']); ?>
                             </span>
@@ -73,7 +73,7 @@
     <div class="banner-img text-center text-lg-end position-absolute end-0 bottom-0" data-wow-duration="0.200s"
         data-wow-delay="400ms">
         <?php if (!empty($settings['banner_image'])): ?>
-            <img src="<?php echo esc_url($settings['banner_image']['url']); ?>" alt="icon" class="img-fluid">
+           <?php echo wp_get_attachment_image( $settings['banner_image']['id'], 'full' ); ?>
         <?php endif; ?>
     </div>
 </div>

@@ -18,7 +18,7 @@
     </div>
     <div class="modal-dialog modal-xl">
         <div class="modal-content bg-transparent">
-            <img src="https://www.getwebinc.com/wp-content/uploads/2022/11/Stype-Health-Walk-Tracker-App-Design-Image-Preview-min.png" alt="image">
+            <img src="#" alt="image">
         </div>
     </div>
 </div>

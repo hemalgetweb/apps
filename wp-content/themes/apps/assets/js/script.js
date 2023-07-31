@@ -16,13 +16,15 @@
  * ===========================================================
  */
 
-$('.apps-has-portfolio-popup').on('click', function() {
-    var url = $(this).data('url');
-    var title = $(this).data('title');
-    var titleDom = $('.apps-portfolio-moal-top-left-box .content .title');
-    var imageDom = $('.apps-portfolio-modal .modal-content img');
-    titleDom.text(title);
-    imageDom.attr('src', url);
+$(window).on('load', function() {
+    $('.apps-has-portfolio-popup').on('click', function() {
+        var url = $(this).data('url');
+        var title = $(this).data('title');
+        var titleDom = $('.apps-portfolio-moal-top-left-box .content .title');
+        var imageDom = $('.apps-portfolio-modal .modal-content img');
+        titleDom.text(title);
+        imageDom.attr('src', url);
+    })
 })
 $(window).on('load resize', function() {
         var windowWidth = $(window).width();

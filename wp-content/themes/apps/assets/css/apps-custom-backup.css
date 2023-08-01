@@ -762,9 +762,6 @@ section.pricing .pricing-wrapper {
     ;
 }
 
-.swiper-container.apps-project-active-114 {
-    padding-bottom: 50px;
-}
 
 .apps-scrollable-content-sections-nav-114 {
     position: sticky;
@@ -4951,7 +4948,7 @@ h5.apps-project-card-title-114 button {
 }
 
 .apps-blog-page-topbar-select .select2-container {
-    min-width: 200px;
+    min-width: 230px;
 }
 
 .apps-blog-page-topbar-search .apps-form-group {

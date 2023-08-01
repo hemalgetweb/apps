@@ -283,6 +283,7 @@
   line-height: 42px;
   padding: 0 25px;
   font-size: 14px;
+  padding-right: 30px !important;
 }
 
 .select2-dropdown {

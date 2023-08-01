@@ -16,7 +16,7 @@
                     <?php endif; ?>
                     <div class="apps-service-box-content-2-114">
                         <?php if(!empty($slide['service_title'])) :  ?>
-                            <h4 class="title"><?php echo wp_kses_post($slide['service_title']);  ?></h4>
+                            <h4 class="title text-clr-deepDark"><?php echo wp_kses_post($slide['service_title']);  ?></h4>
                         <?php endif; ?>
                         <?php if(!empty($slide['service_content'])) : ?>
                             <p><?php echo wp_kses_post($slide['service_content']); ?></p>

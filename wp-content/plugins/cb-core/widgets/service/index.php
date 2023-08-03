@@ -224,7 +224,7 @@ class CB_Core_Service extends Widget_Base
             'label'   => esc_html__( 'Service Title Link', 'cb-core' ),
             'type'        => \Elementor\Controls_Manager::URL,
             'condition' => [
-                'field_condition' => ['style-1', 'style-2', 'style-3']
+                'field_condition' => ['style-1', 'style-3']
             ],
             'label_block' => true,
             'default'     => [

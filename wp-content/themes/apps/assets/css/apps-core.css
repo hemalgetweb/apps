@@ -139,7 +139,8 @@ a:hover {
   transition: all 0.2s linear;
 }
 
-.bg-btn:hover, .bg-btn.active {
+.bg-btn:hover,
+.bg-btn.active {
   background-color: var(--secondary) !important;
   color: #003c4f;
 }
@@ -1169,10 +1170,12 @@ a:hover {
   -webkit-animation: animated-slide 30s linear infinite;
   animation: animated-slide 30s linear infinite;
 }
+
 .top-slide-wrap.has-sm-slide-wrap {
   -webkit-animation: animated-slide-sm 30s linear infinite;
   animation: animated-slide-sm 30s linear infinite;
 }
+
 @media (max-width: 776px) {
   .top-slide-wrap {
     gap: 20px;
@@ -2398,6 +2401,7 @@ a:hover {
   transition: all 0.2s linear;
   z-index: 10;
 }
+
 .swiper-arrow:hover {
   background-color: var(--main-extra-light);
   border-color: var(--main-extra-light) !important;
@@ -2420,4 +2424,8 @@ a:hover {
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--main-extra-light);
+}
+
+.dynamic-service-box-content-114 p {
+  min-height: 144px;
 }

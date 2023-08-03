@@ -281,8 +281,9 @@
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #1F516D;
   line-height: 42px;
-  padding: 0 25px;
+  padding: 0 15px;
   font-size: 14px;
+  padding-right: 32px !important;
 }
 
 .select2-dropdown {

@@ -7,7 +7,7 @@
 <div class="feature-list-area <?php echo $enable_box_hover_shadow ? esc_attr__('apps-has-box-hover-shadow'): ''; ?>">
     <?php if(!empty($settings['slides'])) : ?>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <?php foreach($settings['slides'] as $slide) :
                 $feature_lists = $slide['feature_lists'] ? $slide['feature_lists']: '';
                 $feature_arr = array();

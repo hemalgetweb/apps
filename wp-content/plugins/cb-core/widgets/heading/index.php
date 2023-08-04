@@ -216,6 +216,19 @@ class CB_Core_Heading extends Widget_Base
             ]
         );
         $this->add_control(
+            'enable_button',
+            [
+                'label' => esc_html__('Enable Button', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::SWITCHER,
+                'label_on' => esc_html__('Enable', 'cb-core'),
+                'label_off' => esc_html__('Disable', 'cb-core'),
+                'return_value' => 'yes',
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_control(
             'btn_text_1',
             [
                 'label' => esc_html__('Button Text 1', 'cb-core'),
@@ -224,7 +237,8 @@ class CB_Core_Heading extends Widget_Base
                 'placeholder' => esc_html__('Button text', 'cb-core'),
                 'label_block' => true,
                 'condition' => [
-                    'layout' => ['layout-1']
+                    'layout' => ['layout-1'],
+                    'enable_button' => 'yes'
                 ]
             ]
         );
@@ -242,7 +256,8 @@ class CB_Core_Heading extends Widget_Base
 				],
 				'label_block' => true,
                 'condition' => [
-                    'layout' => ['layout-1']
+                    'layout' => ['layout-1'],
+                    'enable_button' => 'yes'
                 ]
 			]
 		);
@@ -255,7 +270,8 @@ class CB_Core_Heading extends Widget_Base
                 'placeholder' => esc_html__('Button text', 'cb-core'),
                 'label_block' => true,
                 'condition' => [
-                    'layout' => ['layout-1']
+                    'layout' => ['layout-1'],
+                    'enable_button' => 'yes'
                 ]
             ]
         );
@@ -273,7 +289,8 @@ class CB_Core_Heading extends Widget_Base
 				],
 				'label_block' => true,
                 'condition' => [
-                    'layout' => ['layout-1']
+                    'layout' => ['layout-1'],
+                    'enable_button' => 'yes'
                 ]
 			]
 		);

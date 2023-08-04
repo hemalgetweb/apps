@@ -61,14 +61,31 @@ a:hover {
   padding-top: 100px;
 }
 
+@media (max-width: 1200px) {
+  .pt-100 {
+    padding-top: 80px;
+  }
+}
 @media (max-width: 991px) {
   .pt-100 {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 }
 
+
 .pb-100 {
   padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .pb-100 {
+    padding-bottom: 60px;
+  }
 }
 
 .mb-30 {
@@ -1027,9 +1044,14 @@ a:hover {
   padding-top: 100px !important;
 }
 
+@media (max-width: 1200px) {
+  .footer.pt-100 {
+    padding-top: 80px !important;
+  }
+}
 @media (max-width: 991px) {
   .footer.pt-100 {
-    padding-top: 70px !important;
+    padding-top: 60px !important;
   }
 }
 

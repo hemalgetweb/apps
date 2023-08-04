@@ -18,6 +18,22 @@ $enable_container_class = $settings['enable_container'] ? 'container' : 'apps-ha
                 <?php if (!empty($settings['description'])): ?>
                     <p class="intro"><?php echo wp_kses_post($settings['description']); ?></p>
                 <?php endif; ?>
+                <div class="apps-service-link-wrap-114">
+                    <?php if(!empty($settings['btn_text_1'])) :
+                    if ( ! empty( $settings['btn_link_1']['url'] ) ) {
+                        $this->add_link_attributes( 'btn_link_1', $settings['btn_link_1'] );
+                    }    
+                    ?>
+                    <a <?php echo $this->get_render_attribute_string( 'btn_link_1' ); ?> class="apps-service-link-single-114"><?php echo esc_html($settings['btn_text_1']); ?> <i class="fal fa-arrow-right"></i></a>
+                    <?php endif; ?>
+                    <?php if(!empty($settings['btn_text_2'])) :
+                    if ( ! empty( $settings['btn_link_2']['url'] ) ) {
+                        $this->add_link_attributes( 'btn_link_2', $settings['btn_link_2'] );
+                    }    
+                    ?>
+                    <a <?php echo $this->get_render_attribute_string( 'btn_link_2' ); ?> class="apps-service-link-single-114 style-2"><?php echo esc_html($settings['btn_text_2']); ?> <i class="fal fa-arrow-right"></i></a>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>

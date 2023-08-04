@@ -329,6 +329,68 @@ class CB_Core_Heading extends Widget_Base
                 ]
             ]
         );
+        $this->add_control(
+            'btn_text_1',
+            [
+                'label' => esc_html__('Button Text 1', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => esc_html__('ABOUT US', 'cb-core'),
+                'placeholder' => esc_html__('Button text', 'cb-core'),
+                'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_control(
+			'btn_link_1',
+			[
+				'label' => esc_html__( 'Button Link 1', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'options' => [ 'url', 'is_external', 'nofollow' ],
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
+				'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+			]
+		);
+        $this->add_control(
+            'btn_text_2',
+            [
+                'label' => esc_html__('Button Text 2', 'cb-core'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => esc_html__('ABOUT US', 'cb-core'),
+                'placeholder' => esc_html__('Button text', 'cb-core'),
+                'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+            ]
+        );
+        $this->add_control(
+			'btn_link_2',
+			[
+				'label' => esc_html__( 'Button Link 2', 'cb-core' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'options' => [ 'url', 'is_external', 'nofollow' ],
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
+				'label_block' => true,
+                'condition' => [
+                    'layout' => ['layout-1']
+                ]
+			]
+		);
         $this->add_group_control(
             \Elementor\Group_Control_Typography::get_type(),
             [

@@ -83,9 +83,14 @@ a:hover {
   padding: 100px 0;
 }
 
+@media (max-width: 1200px) {
+  .section-padding {
+    padding: 80px 0;
+  }
+}
 @media (max-width: 991px) {
   .section-padding {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 }
 

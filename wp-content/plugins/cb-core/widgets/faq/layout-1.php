@@ -9,7 +9,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="<?php echo $unique_key; ?>_heading_<?php echo esc_attr($index); ?>">
                     <?php if(!empty($slide['faq_title'])) : ?>
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_<?php echo esc_attr($unique_key); ?>-<?php echo esc_attr($index); ?>" aria-expanded="false" aria-controls="collapse_<?php echo esc_attr($unique_key); ?>-<?php echo esc_attr($index); ?>">
+                        <button class="accordion-button collapsed d-flex align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_<?php echo esc_attr($unique_key); ?>-<?php echo esc_attr($index); ?>" aria-expanded="false" aria-controls="collapse_<?php echo esc_attr($unique_key); ?>-<?php echo esc_attr($index); ?>">
                             <span class="apps-question-q-114">Q</span> <?php echo wp_kses_post($slide['faq_title']); ?>
                         </button>
                     <?php endif; ?>

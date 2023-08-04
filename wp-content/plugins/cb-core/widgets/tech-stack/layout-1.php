@@ -11,14 +11,11 @@
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                     <?php if(!empty($settings['slides'])) : ?>
                     <div class="tech-stack-box-right-icon-list-114">
-                        <?php foreach($settings['slides'] as $slide) : 
-                            $this->add_render_attribute( 'stack_image', 'src', $slide['stack_image']['url'] );
-                            $this->add_render_attribute( 'stack_image', 'alt', \Elementor\Control_Media::get_image_alt( $slide['stack_image'] ) );
-                        ?>
+                        <?php foreach($settings['slides'] as $slide) :  ?>
                         <div class="tech-stack-box-icon-single-114">
-                            <?php if(!empty($slide['stack_image'])) : ?>
+                            <?php if(!empty($slide['stack_image']['url'])) : ?>
                             <div class="icon">
-                                <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $slide, 'thumbnail', 'stack_image' ); ?>
+                                <img src="<?php echo $slide['stack_image']['url'] ?>" alt="<?php echo \Elementor\Control_Media::get_image_alt( $slide['stack_image'] ); ?>">
                             </div>
                             <?php endif; ?>
                             <?php if(!empty($slide['stack_label'])) : ?>

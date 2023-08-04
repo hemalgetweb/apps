@@ -14,7 +14,6 @@
                         <?php foreach($settings['slides'] as $slide) : 
                             $this->add_render_attribute( 'stack_image', 'src', $slide['stack_image']['url'] );
                             $this->add_render_attribute( 'stack_image', 'alt', \Elementor\Control_Media::get_image_alt( $slide['stack_image'] ) );
-                            $this->add_render_attribute( 'stack_image', 'title', \Elementor\Control_Media::get_image_title( $slide['stack_image'] ) );    
                         ?>
                         <div class="tech-stack-box-icon-single-114">
                             <?php if(!empty($slide['stack_image'])) : ?>

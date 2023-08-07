@@ -182,6 +182,6 @@ ul.dropdown-menus li.menu-item a::after {
 
 @media (max-width: 576px) {
     .tech-stack-box-right-icon-list-114 {
-        gap: 25px !important;
+        gap: 20px !important;
     }
 }

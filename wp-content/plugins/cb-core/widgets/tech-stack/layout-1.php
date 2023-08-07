@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-xxl-4 col-xl-4 col-lg-4 text-center text-lg-start">
                     <?php if(!empty($settings['tech_stack_title'])) : ?>
-                        <h5 class="tech-stack-box-left-label-114 mb-2"><?php echo esc_html($settings['tech_stack_title']); ?></h5>
+                        <h5 class="tech-stack-box-left-label-114 mb-3 mb-lg-0"><?php echo esc_html($settings['tech_stack_title']); ?></h5>
                     <?php endif; ?>
                 </div>
                 <div class="col-xxl-8 col-xl-8 col-lg-8">

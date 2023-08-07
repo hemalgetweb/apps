@@ -185,3 +185,7 @@ ul.dropdown-menus li.menu-item a::after {
         gap: 20px !important;
     }
 }
+
+.apps-feature-list-content-bottom-wrapper-4-114 ul li img {
+    transition: all 200ms ease;
+}

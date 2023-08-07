@@ -4,11 +4,11 @@
         // Add an event listener listening for scroll
         $('.scrollable-question-area').on("scroll", navHighlighter);
 
-        function navHighlighter() {
+        function navHighlighter(e) {
         
         // Get current scroll position
-        let scrollY = window.pageYOffset;
-        
+        let scrollY = e.pageYOffset;
+        console.log(scrollY);
         // Now we loop through sections to get height, top and ID values for each
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;

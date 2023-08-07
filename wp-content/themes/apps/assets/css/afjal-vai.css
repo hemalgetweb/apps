@@ -117,7 +117,7 @@
 }
 
 .apps-service-section-title-114 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .apps-accordion-wrapper-main-114 .accordion-item {
@@ -154,7 +154,7 @@
 
 @media (max-width: 767px) {
     .about-section-title-5-114 .title {
-        font-size: 25px;
+        font-size: 28px;
         line-height: 1.4;
     }
 }

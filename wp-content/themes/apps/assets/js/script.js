@@ -208,7 +208,7 @@ $(window).scroll(function () {
                 document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
             } else {
                 console.log(sectionId+ 'remove');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
             }
         });
         }

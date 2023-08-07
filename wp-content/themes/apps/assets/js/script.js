@@ -1,6 +1,6 @@
 (function($) {
 
-    const sections = document.querySelectorAll("section.apps-panel[id]");
+    const sections = $("section.apps-panel[id]");
         // Add an event listener listening for scroll
         $('.scrollable-question-area').on("scroll", navHighlighter);
 
@@ -28,10 +28,10 @@
             scrollY <= sectionTop + sectionHeight
             ){
                 console.log(sectionId+ 'add');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
+                $(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
             } else {
                 console.log(sectionId+ 'remove');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
+                $(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
             }
         });
         }

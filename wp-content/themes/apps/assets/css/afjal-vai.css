@@ -158,3 +158,8 @@
         line-height: 1.4;
     }
 }
+
+
+.apps-accordion-wrapper-main-114 .accordion-button::before {
+    top: 15px;
+}

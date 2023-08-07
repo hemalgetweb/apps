@@ -182,9 +182,8 @@ $(window).scroll(function () {
         // });
         // Get all sections that have an ID defined
         const sections = document.querySelectorAll("section.apps-panel[id]");
-        console.log(sections);
         // Add an event listener listening for scroll
-        window.addEventListener("scroll", navHighlighter);
+        $('.scrollable-question-area').addEventListener("scroll", navHighlighter);
 
         function navHighlighter() {
         
@@ -196,10 +195,10 @@ $(window).scroll(function () {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             var sectionId = current.getAttribute("id");
-                console.log('id'+sectionId);
-                console.log('top'+sectionTop);
-                console.log('height'+sectionHeight);
-                console.log(current);
+            console.log('id'+sectionId);
+            console.log('top'+sectionTop);
+            console.log('height'+sectionHeight);
+            console.log(current);
             /*
             - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
             - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector

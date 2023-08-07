@@ -2,7 +2,7 @@
 
     const sections = $("section.apps-panel[id]");
         // Add an event listener listening for scroll
-        $('.scrollable-question-area').on("scroll", navHighlighter);
+        window.addEventListener('.scrollable-question-area').on("scroll", navHighlighter);
 
         function navHighlighter(e) {
         

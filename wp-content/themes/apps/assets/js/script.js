@@ -181,7 +181,7 @@ $(window).scroll(function () {
             
         // });
         // Get all sections that have an ID defined
-        const sections = document.querySelectorAll("section.apps-panel");
+        const sections = document.querySelectorAll("section.apps-panel[id]");
         // Add an event listener listening for scroll
         window.addEventListener("scroll", navHighlighter);
 
@@ -195,7 +195,7 @@ $(window).scroll(function () {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             var sectionId = current.getAttribute("id");
-            
+            console.log(sectionId);
             /*
             - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
             - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
@@ -204,13 +204,9 @@ $(window).scroll(function () {
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
             ){
-                console.log('hemal');
-                console.log(sectionId);
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]").addClass("active");
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
             } else {
-                console.log(sectionId);
-                console.log('hemal');
-            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+"]").removeClass("active");
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
             }
         });
         }

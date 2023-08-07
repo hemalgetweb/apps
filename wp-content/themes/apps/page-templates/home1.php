@@ -797,7 +797,7 @@
             </div>
         </div>
         <div class="copyright d-flex flex-column flex-sm-row justify-content-center py-3">
-            <p class="m-0 text-clr-dark5 fw-normal fs-6">
+            <p class="m-0 text-clr-dark5 fw-normal fs-6 text-center">
                 Copyright © 2023 I Wadi Al Bada I All Rights Reserved
             </p>
         </div>

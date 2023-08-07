@@ -175,7 +175,7 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .tech-stack-box-right-icon-list-114 {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: flex !important;
+    gap: 30px !important;
+    flex-wrap: wrap !important;
 }

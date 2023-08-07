@@ -195,7 +195,6 @@ $(window).scroll(function () {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             var sectionId = current.getAttribute("id");
-        console.log(sectionId);
             
             /*
             - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
@@ -205,9 +204,9 @@ $(window).scroll(function () {
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
             ){
-            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]").classList.add("active");
+            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]").addClass("active");
             } else {
-            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+"]").classList.remove("active");
+            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+"]").removeClass("active");
             }
         });
         }

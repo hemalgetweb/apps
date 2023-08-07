@@ -203,3 +203,9 @@ ul.dropdown-menus li.menu-item a::after {
         padding-top: 260px;
     }
 }
+
+@media (max-width: 992px) {
+    .pt-300 {
+        padding-top: 280px;
+    }
+}

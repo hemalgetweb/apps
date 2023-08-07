@@ -198,5 +198,8 @@ ul.dropdown-menus li.menu-item a::after {
 @media (max-width: 576px) {
     .copyright p {
         font-size: 12px !important;
-    } 
+    }
+    .pt-300 {
+        padding-top: 260px;
+    }
 }

@@ -207,7 +207,7 @@ $(window).scroll(function () {
             ){
             document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]").classList.add("active");
             } else {
-            document.querySelector(".navigation a[href*="+sectionId+"]").classList.remove("active");
+            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+"]").classList.remove("active");
             }
         });
         }

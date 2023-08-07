@@ -204,10 +204,12 @@ $(window).scroll(function () {
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
             ){
+                console.log('hemal');
                 console.log(sectionId);
                 document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]").addClass("active");
             } else {
                 console.log(sectionId);
+                console.log('hemal');
             document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+"]").removeClass("active");
             }
         });

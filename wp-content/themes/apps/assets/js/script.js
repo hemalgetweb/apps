@@ -1,21 +1,4 @@
 (function($) {
-    /**
- * @Script js for (Template/Project Name)
- *
- * @project     - Project Name
- * @author      - 
- * @created_by  - 
- * @created_at  - 
- * @modified_by -
- */
-
-
-/**
- * ========================================================
- * this function execute when window properly loaded
- * ===========================================================
- */
-
 $(window).on('load', function() {
     $('.apps-has-portfolio-popup').on('click', function() {
         var url = $(this).data('url');
@@ -24,7 +7,42 @@ $(window).on('load', function() {
         var imageDom = $('.apps-portfolio-modal .modal-content img');
         titleDom.text(title);
         imageDom.attr('src', url);
-    })
+    });
+    const sections = document.querySelector("section.apps-panel[id]");
+        // Add an event listener listening for scroll
+        window.addEventListener("scroll",navHighlighter);
+
+        function navHighlighter(e) {
+        
+        // Get current scroll position
+        let scrollY = e.pageYOffset;
+        console.log(scrollY);
+        console.log('hi');
+        // Now we loop through sections to get height, top and ID values for each
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            var sectionId = current.getAttribute("id");
+            console.log('id'+sectionId);
+            console.log('top'+sectionTop);
+            console.log('height'+sectionHeight);
+            console.log(current);
+            /*
+            - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+            - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+            */
+            if (
+            scrollY > sectionTop &&
+            scrollY <= sectionTop + sectionHeight
+            ){
+                console.log(sectionId+ 'add');
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
+            } else {
+                console.log(sectionId+ 'remove');
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
+            }
+        });
+    }
 })
 $(window).on('load resize', function() {
         var windowWidth = $(window).width();
@@ -181,41 +199,6 @@ $(window).scroll(function () {
             
         // });
         // Get all sections that have an ID defined
-        const sections = document.querySelectorAll("section.apps-panel[id]");
-        console.log(sections);
-        // Add an event listener listening for scroll
-        window.addEventListener("scroll", navHighlighter);
-
-        function navHighlighter() {
-        
-        // Get current scroll position
-        let scrollY = window.pageYOffset;
-        
-        // Now we loop through sections to get height, top and ID values for each
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 50;
-            var sectionId = current.getAttribute("id");
-                console.log('id'+sectionId);
-                console.log('top'+sectionTop);
-                console.log('height'+sectionHeight);
-                console.log(current);
-            /*
-            - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
-            - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
-            */
-            if (
-            scrollY > sectionTop &&
-            scrollY <= sectionTop + sectionHeight
-            ){
-                console.log(sectionId+ 'add');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
-            } else {
-                console.log(sectionId+ 'remove');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
-            }
-        });
-        }
 
 
 

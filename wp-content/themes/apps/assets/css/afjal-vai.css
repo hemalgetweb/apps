@@ -167,3 +167,9 @@
 .apps-feature-list-widget-114 .apps-feature-list-box-114:hover {
     transform: translateY(-8px);
 }
+
+
+ul.dropdown-menus li.menu-item a::after {
+    transition: all 50ms ease;
+    right: 15px;
+}

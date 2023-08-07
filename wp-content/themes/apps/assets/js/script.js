@@ -204,10 +204,10 @@ $(window).scroll(function () {
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
             ){
-                console.log(document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]"));
-                console.log('hi');
-            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]").addClass("active");
+                console.log(sectionId);
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+ "]").addClass("active");
             } else {
+                console.log(sectionId);
             document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+sectionId+"]").removeClass("active");
             }
         });

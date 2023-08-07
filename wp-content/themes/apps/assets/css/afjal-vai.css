@@ -179,3 +179,9 @@ ul.dropdown-menus li.menu-item a::after {
     gap: 30px !important;
     flex-wrap: wrap !important;
 }
+
+@media (max-width: 576px) {
+    .tech-stack-box-right-icon-list-114 {
+        gap: 25px !important;
+    }
+}

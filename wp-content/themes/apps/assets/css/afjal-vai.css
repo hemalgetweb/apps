@@ -170,5 +170,5 @@
 
 
 ul.dropdown-menus li.menu-item a::after {
-    transition: all 50ms ease !important;
+    transition: all 70ms ease !important;
 }

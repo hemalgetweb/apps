@@ -3,7 +3,7 @@
     <div class="container">
         <div class="tech-stack-box-wrapper-114">
             <div class="row align-items-center">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 text-center text-md-left">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 text-center text-lg-start">
                     <?php if(!empty($settings['tech_stack_title'])) : ?>
                         <h5 class="tech-stack-box-left-label-114"><?php echo esc_html($settings['tech_stack_title']); ?></h5>
                     <?php endif; ?>

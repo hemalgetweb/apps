@@ -10,7 +10,7 @@
                             <span class="subtitle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="subtitle image"> <?php echo wp_kses_post($settings['about_subtitle']); ?></span>
                             <?php endif; ?>
                             <?php if(!empty($settings['about_title'])) : ?>
-                                <h3 class="title"><?php echo wp_kses_post($settings['about_title']); ?></h3>
+                                <h3 class="title fw-semi-bold fs-36 mb-3"><?php echo wp_kses_post($settings['about_title']); ?></h3>
                             <?php endif; ?>
                             <?php if(!empty($settings['about_desc'])) : ?>
                                 <p><?php echo wp_kses_post($settings['about_desc']); ?></p>

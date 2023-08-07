@@ -163,3 +163,7 @@
 .apps-accordion-wrapper-main-114 .accordion-button::before {
     top: 15px;
 }
+
+.apps-feature-list-widget-114 .apps-feature-list-box-114:hover {
+    transform: translateY(-8px);
+}

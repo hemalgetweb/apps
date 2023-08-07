@@ -866,17 +866,7 @@ section.pricing .pricing-wrapper {
     display: none;
 }
 
-.apps-accordion-wrapper-main-114 .accordion-button::before {
-    content: "\f068";
-    color: #00C7C7;
-    position: absolute;
-    right: 0;
-    font-family: 'Font awesome 6 pro';
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
 
-}
 
 .apps-accordion-wrapper-main-114 .accordion-button:focus {
     background-color: transparent;
@@ -2521,10 +2511,9 @@ section.pricing .pricing-wrapper {
     position: absolute;
     right: 0;
     font-family: 'Font awesome 6 pro';
-    top: 50%;
+    top: 15px;
     transform: translateY(-50%);
     font-size: 18px;
-
 }
 
 .apps-accordion-wrapper-main-114 .accordion-button:focus {

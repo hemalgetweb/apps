@@ -151,3 +151,10 @@
 .apps-project-card-description-wrapper-114 {
     min-height: 133px !important;
 }
+
+@media (max-width: 767px) {
+    .about-section-title-5-114 .title {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+}

@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                     <?php if(!empty($settings['slides'])) : ?>
-                    <div class="tech-stack-box-right-icon-list-114">
+                    <div class="tech-stack-box-right-icon-list-114 justify-content-center justify-content-md-start">
                         <?php foreach($settings['slides'] as $slide) :  ?>
                         <div class="tech-stack-box-icon-single-114">
                             <?php if(!empty($slide['stack_image']['url'])) : ?>

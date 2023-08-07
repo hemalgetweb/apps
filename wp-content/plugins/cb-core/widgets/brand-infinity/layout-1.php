@@ -2,7 +2,7 @@
 $enable_small_box_class = $settings['enable_small_box'] ? 'has-enable-small-box-class': '';
 ?>
 <!--  Happy Clients start -->
-<div class="section-padding p-0">
+<div class="">
   <div class="brand-carousel-area <?php echo esc_attr($enable_small_box_class); ?>">
     <?php if (empty($settings['reverce_direction'])): ?>
       <div class="marquee-vertical">

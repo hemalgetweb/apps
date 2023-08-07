@@ -190,13 +190,15 @@ $(window).scroll(function () {
         
         // Get current scroll position
         let scrollY = window.pageYOffset;
-        console.log(scrollY);
         
         // Now we loop through sections to get height, top and ID values for each
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             var sectionId = current.getAttribute("id");
+                consocle.log(sectionId);
+                console.log(sectionTop);
+                console.log(current);
             /*
             - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
             - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector

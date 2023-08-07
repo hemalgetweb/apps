@@ -1,8 +1,16 @@
 (function($) {
-
+$(window).on('load', function() {
+    $('.apps-has-portfolio-popup').on('click', function() {
+        var url = $(this).data('url');
+        var title = $(this).data('title');
+        var titleDom = $('.apps-portfolio-moal-top-left-box .content .title');
+        var imageDom = $('.apps-portfolio-modal .modal-content img');
+        titleDom.text(title);
+        imageDom.attr('src', url);
+    });
     const sections = $("section.apps-panel[id]");
         // Add an event listener listening for scroll
-        window.addEventListener('.scrollable-question-area').on("scroll", navHighlighter);
+        window.addEventListener("scroll",navHighlighter);
 
         function navHighlighter(e) {
         
@@ -28,23 +36,13 @@
             scrollY <= sectionTop + sectionHeight
             ){
                 console.log(sectionId+ 'add');
-                $(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
             } else {
                 console.log(sectionId+ 'remove');
-                $(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
             }
         });
-        }
-
-$(window).on('load', function() {
-    $('.apps-has-portfolio-popup').on('click', function() {
-        var url = $(this).data('url');
-        var title = $(this).data('title');
-        var titleDom = $('.apps-portfolio-moal-top-left-box .content .title');
-        var imageDom = $('.apps-portfolio-modal .modal-content img');
-        titleDom.text(title);
-        imageDom.attr('src', url);
-    })
+    }
 })
 $(window).on('load resize', function() {
         var windowWidth = $(window).width();

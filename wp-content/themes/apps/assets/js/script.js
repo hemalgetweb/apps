@@ -190,6 +190,7 @@ $(window).scroll(function () {
         
         // Get current scroll position
         let scrollY = window.pageYOffset;
+        console.log(scrollY);
         
         // Now we loop through sections to get height, top and ID values for each
         sections.forEach(current => {

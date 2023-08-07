@@ -196,7 +196,7 @@ $(window).scroll(function () {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             var sectionId = current.getAttribute("id");
-                consocle.log(sectionId);
+                console.log(sectionId);
                 console.log(sectionTop);
                 console.log(current);
             /*

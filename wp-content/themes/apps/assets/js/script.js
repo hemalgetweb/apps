@@ -9,6 +9,7 @@
         // Get current scroll position
         let scrollY = e.pageYOffset;
         console.log(scrollY);
+        console.log('hi');
         // Now we loop through sections to get height, top and ID values for each
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;

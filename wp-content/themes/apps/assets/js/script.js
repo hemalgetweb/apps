@@ -8,7 +8,7 @@ $(window).on('load', function() {
         titleDom.text(title);
         imageDom.attr('src', url);
     });
-    const sections = $("section.apps-panel[id]");
+    const sections = document.querySelector("section.apps-panel[id]");
         // Add an event listener listening for scroll
         window.addEventListener("scroll",navHighlighter);
 

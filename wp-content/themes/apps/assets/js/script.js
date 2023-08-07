@@ -205,9 +205,9 @@ $(window).scroll(function () {
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
             ){
-            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+apps_panel_+sectionId+ "]").classList.add("active");
+            document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*="+'apps_panel_'+sectionId+ "]").classList.add("active");
             } else {
-            document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+            document.querySelector(".navigation a[href*="+'apps_panel_'+sectionId+"]").classList.remove("active");
             }
         });
         }

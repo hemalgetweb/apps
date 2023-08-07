@@ -189,3 +189,9 @@ ul.dropdown-menus li.menu-item a::after {
 .apps-feature-list-content-bottom-wrapper-4-114 ul li img {
     transition: all 200ms ease;
 }
+
+@media (max-width: 576px) {
+    .apps-scrollable-content-sections-nav-114 ul li a {
+        margin-bottom: 20px;
+    }
+}

@@ -173,3 +173,9 @@ ul.dropdown-menus li.menu-item a::after {
     transition: all 50ms ease;
     right: 15px;
 }
+
+.tech-stack-box-right-icon-list-114 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}

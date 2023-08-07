@@ -1,20 +1,39 @@
 (function($) {
-    /**
- * @Script js for (Template/Project Name)
- *
- * @project     - Project Name
- * @author      - 
- * @created_by  - 
- * @created_at  - 
- * @modified_by -
- */
 
+    const sections = document.querySelectorAll("section.apps-panel[id]");
+        // Add an event listener listening for scroll
+        $('.scrollable-question-area').on("scroll", navHighlighter);
 
-/**
- * ========================================================
- * this function execute when window properly loaded
- * ===========================================================
- */
+        function navHighlighter() {
+        
+        // Get current scroll position
+        let scrollY = window.pageYOffset;
+        
+        // Now we loop through sections to get height, top and ID values for each
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            var sectionId = current.getAttribute("id");
+            console.log('id'+sectionId);
+            console.log('top'+sectionTop);
+            console.log('height'+sectionHeight);
+            console.log(current);
+            /*
+            - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+            - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+            */
+            if (
+            scrollY > sectionTop &&
+            scrollY <= sectionTop + sectionHeight
+            ){
+                console.log(sectionId+ 'add');
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
+            } else {
+                console.log(sectionId+ 'remove');
+                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
+            }
+        });
+        }
 
 $(window).on('load', function() {
     $('.apps-has-portfolio-popup').on('click', function() {
@@ -181,40 +200,6 @@ $(window).scroll(function () {
             
         // });
         // Get all sections that have an ID defined
-        const sections = document.querySelectorAll("section.apps-panel[id]");
-        // Add an event listener listening for scroll
-        $('.scrollable-question-area').addEventListener("scroll", navHighlighter);
-
-        function navHighlighter() {
-        
-        // Get current scroll position
-        let scrollY = window.pageYOffset;
-        
-        // Now we loop through sections to get height, top and ID values for each
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 50;
-            var sectionId = current.getAttribute("id");
-            console.log('id'+sectionId);
-            console.log('top'+sectionTop);
-            console.log('height'+sectionHeight);
-            console.log(current);
-            /*
-            - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
-            - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
-            */
-            if (
-            scrollY > sectionTop &&
-            scrollY <= sectionTop + sectionHeight
-            ){
-                console.log(sectionId+ 'add');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.add("active");
-            } else {
-                console.log(sectionId+ 'remove');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 ul li a[href*=" + sectionId + "]").classList.remove("active");
-            }
-        });
-        }
 
 
 

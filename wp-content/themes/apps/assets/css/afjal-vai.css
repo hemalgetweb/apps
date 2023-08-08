@@ -217,6 +217,10 @@ ul.dropdown-menus li.menu-item a::after {
         padding: 40px 0 !important;
     }
 
+    .blog-content p {
+        font-size: 16px !important;
+    }
+
 }
 
 .blog-subscription-field {

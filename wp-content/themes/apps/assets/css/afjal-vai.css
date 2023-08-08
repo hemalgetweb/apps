@@ -132,6 +132,10 @@ ul.dropdown-menus li.menu-item a::after {
     margin-top: 20px;
 }
 
+.faq-area .accordion-item ol li {
+    margin-bottom: 10px;
+}
+
 @media (max-width: 576px) {
     .tech-stack-box-right-icon-list-114 {
         gap: 20px !important;

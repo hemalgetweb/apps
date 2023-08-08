@@ -205,11 +205,6 @@ ul.dropdown-menus li.menu-item a::after {
         font-size: 29px;
         line-height: 1.5;
     }
-
-    .swiper-wrapper {
-        gap: 20px;
-    }
-
     .apps-service-grid-3-114 .apps-service-box-3-114 {
         padding-left: 20px !important;
     }

@@ -245,12 +245,9 @@ $(window).scroll(function () {
                             slidesPerView: 3,
                         },
                         1200: {
-<<<<<<< HEAD
                             spaceBetween: 30,
                             slidesPerView: 3,
-=======
                         slidesPerView: 3,
->>>>>>> ff81cc268e00c3d8d85480b923420cd8436583bc
                         },
                         1400: {
                             slidesPerView: 4,

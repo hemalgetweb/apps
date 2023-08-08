@@ -35,7 +35,7 @@ if(!empty($category)) {
                 <div class="col-lg-8">
                     <article class="articles">
                         <div class="psot-details">
-                            <div class="blog-info p-3">
+                            <div class="blog-info p-0 p-xl-3">
                                 <div class="blog-header">
 									<?php if(!empty($cat_name)) : ?>
                                     <span

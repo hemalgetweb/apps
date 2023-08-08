@@ -208,6 +208,9 @@ ul.dropdown-menus li.menu-item a::after {
     .pt-300 {
         padding-top: 280px;
     }
+    .swiper-wrapper {
+        gap: 1px; 
+    }
 }
 
 @media (max-width: 1201px) {
@@ -221,10 +224,11 @@ ul.dropdown-menus li.menu-item a::after {
         font-size: 29px;
         line-height: 1.5;
     }
+    .swiper-wrapper {
+        gap: 20px; 
+    }
 }
 
-.swiper-wrapper {
-    gap: 1px; 
-}
+
 
 

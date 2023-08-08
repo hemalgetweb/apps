@@ -1,4 +1,4 @@
-<div class="strategy-wrapper py-4">
+<div class="strategy-wrapper py-3 py-lg-4">
   <div class="container">
     <?php if (!empty($settings['slides'])): ?>
       <div

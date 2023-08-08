@@ -30,7 +30,7 @@ if(!empty($category)) {
     <!-- blog-details -->
     <section class="blog-details section-padding"
         style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/img/w-shape.svg); background-repeat: no-repeat;">
-        <div class="container mt-0 mt-lg-5 pt-0 pt-lg-4">
+        <div class="container mt-0 mt-xl-5 pt-0 pt-xl-4">
             <div class="row">
                 <div class="col-lg-8">
                     <article class="articles">

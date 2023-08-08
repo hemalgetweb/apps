@@ -212,5 +212,5 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .form#mc4wp-form-1 input.form-control.subscribe {
-    height: 50px;
+    height: 50px !important;
 }

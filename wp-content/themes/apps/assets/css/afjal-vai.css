@@ -209,12 +209,18 @@ ul.dropdown-menus li.menu-item a::after {
         padding-top: 280px;
     }
 }
-/* 
+
 @media (max-width: 1201px) {
     .apps-hero-content-wrapper-114 .title {
         font-size: 38px;
         line-height: 1.3;
     }
-} */
+}
+@media (max-width: 768px) {
+    .apps-hero-content-wrapper-114 .title {
+        font-size: 29px;
+        line-height: 1.5;
+    }
+}
 
 

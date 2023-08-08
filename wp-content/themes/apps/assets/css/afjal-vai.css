@@ -136,6 +136,10 @@ ul.dropdown-menus li.menu-item a::after {
     margin-bottom: 10px;
 }
 
+.overview .strategy-item .icon {
+    flex-shrink: 0;
+}
+
 @media (max-width: 576px) {
     .tech-stack-box-right-icon-list-114 {
         gap: 20px !important;
@@ -173,6 +177,10 @@ ul.dropdown-menus li.menu-item a::after {
 
     .dynamic-service-active .swiper-wrapper {
         gap: 30px;
+    }
+
+    .overview .strategy-item {
+        padding: 0 20px;
     }
 }
 

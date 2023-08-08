@@ -203,7 +203,7 @@ $(window).scroll(function () {
                     320: {
                     slidesPerView: 1,
                     },
-                    575: {
+                    767: {
                     slidesPerView: 2,
                     },
                     1200: {

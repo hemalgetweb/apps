@@ -4,7 +4,7 @@
 <section class="service-area <?php echo $enable_box_shadow_effect ? __('apps-has-shadow-effect-114'): ''; ?>" >
     <div class="container">
         <?php if(!empty($settings['slides'])) : ?>
-        <div class="row">
+        <div class="row justify-content-center">
             <?php foreach($settings['slides'] as $slide) : ?>
             <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6">
                 <div class="apps-service-box-114 mb-30" style="min-height: <?php echo $box_min_height ? $box_min_height. 'px' : ''; ?>">

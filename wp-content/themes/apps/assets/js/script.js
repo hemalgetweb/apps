@@ -201,9 +201,10 @@ $(window).scroll(function () {
                 },
                 breakpoints: {
                     320: {
-                    slidesPerView: 1,
+                        slidesPerView: 1,
+                        spaceBetween: 0
                     },
-                    575: {
+                    767: {
                     slidesPerView: 2,
                     },
                     1200: {
@@ -232,26 +233,27 @@ $(window).scroll(function () {
                     breakpoints: {
                         320: {
                             slidesPerView: 1,
+                            spaceBetween: 0
                         },
                         575: {
-                            slidesPerView: 2,
-                            spaceBetween: 30,
+                            slidesPerView: 1,
                         },
                         768: {
                             slidesPerView: 2,
-                            spaceBetween: 30,
                         },
                         992: {
                             slidesPerView: 3,
-                            spaceBetween: 30,
                         },
                         1200: {
-                        spaceBetween: 30,
+<<<<<<< HEAD
+                            spaceBetween: 30,
+                            slidesPerView: 3,
+=======
                         slidesPerView: 3,
+>>>>>>> ff81cc268e00c3d8d85480b923420cd8436583bc
                         },
                         1400: {
                             slidesPerView: 4,
-                            spaceBetween: 30,
                         }
                     }
                 });
@@ -276,12 +278,15 @@ $(window).scroll(function () {
                 breakpoints: {
                     320: {
                         slidesPerView: 1,
+                        spaceBetween: 0
                     },
                     575: {
                         slidesPerView: 1,
+                        spaceBetween: 0
                     },
                     768: {
-                        slidesPerView: 1
+                        slidesPerView: 1,
+                        spaceBetween: 0
                     },
                     992: {
                         slidesPerView: 2

@@ -210,3 +210,7 @@ ul.dropdown-menus li.menu-item a::after {
         padding-left: 20px !important;
     }
 }
+
+.form#mc4wp-form-1 input.form-control.subscribe {
+    height: 50px;
+}

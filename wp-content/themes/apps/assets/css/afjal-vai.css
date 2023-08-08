@@ -187,6 +187,10 @@ ul.dropdown-menus li.menu-item a::after {
         top: 30px;
     }
 
+    .blog-details.section-padding {
+        padding: 50px !important;
+    }
+
 }
 
 @media (max-width: 1201px) {
@@ -209,6 +213,10 @@ ul.dropdown-menus li.menu-item a::after {
     .apps-service-grid-3-114 .apps-service-box-3-114 {
         padding-left: 20px !important;
     }
+    .blog-details.section-padding {
+        padding: 40px !important;
+    }
+
 }
 
 .blog-subscription-field {

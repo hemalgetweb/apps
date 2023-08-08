@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xxl-6 col-xl-6 col-lg-5">
-                <div class="apps-about-content-left-7-114 mb-50 m b-lg-0">
+                <div class="apps-about-content-left-7-114 mb-50 m b-lg-0 text-center">
                     <?php echo wp_get_attachment_image( $settings['about_image']['id'], 'full' ); ?>
                 </div>
             </div>

@@ -234,24 +234,19 @@ $(window).scroll(function () {
                             slidesPerView: 1,
                         },
                         575: {
-                            slidesPerView: 2,
-                            spaceBetween: 30,
+                            slidesPerView: 1,
                         },
                         768: {
                             slidesPerView: 2,
-                            spaceBetween: 30,
                         },
                         992: {
                             slidesPerView: 3,
-                            spaceBetween: 30,
                         },
                         1200: {
-                        spaceBetween: 30,
                         slidesPerView: 3,
                         },
                         1400: {
                             slidesPerView: 4,
-                            spaceBetween: 30,
                         }
                     }
                 });

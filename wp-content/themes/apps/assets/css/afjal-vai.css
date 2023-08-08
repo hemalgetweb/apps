@@ -1,57 +1,5 @@
-
-
-/* .project-area .swiper-wrapper {
-    height: 395px !important;
-}
-
-@media (max-width: 1200px) {
-    .project-area .swiper-wrapper {
-        height: 500px !important;
-    }
-}
-@media (max-width: 992px) {
-    .project-area .swiper-wrapper {
-        height: 440px !important;
-    }
-}
-@media (max-width: 768px) {
-    .project-area .swiper-wrapper {
-        height: 400px !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .project-area .swiper-wrapper {
-        height: 570px !important;
-    }
-}
-
-@media (max-width: 450px) {
-    .project-area .swiper-wrapper {
-        height: 510px !important;
-    }
-}
-
-@media (max-width: 380px) {
-    .project-area .swiper-wrapper {
-        height: 455px !important;
-    }
-}
-
-@media (max-width: 350px) {
-    .project-area .swiper-wrapper {
-        height: 430px !important;
-    }
-}
-
-@media (max-width: 320px) {
-    .project-area .swiper-wrapper {
-        height: 415px !important;
-    }
-} */
-
-
-.apps-project-next-114, .apps-project-prev-114 {
+.apps-project-next-114,
+.apps-project-prev-114 {
     background-color: #fff;
 }
 
@@ -92,12 +40,12 @@
         letter-spacing: 1px;
         display: block;
     }
-    
-    
+
+
     .dropdown-menus .dropdown-item .menu-image-title {
         padding-left: 20px !important;
     }
-    
+
 }
 
 .about-content-left-5-114 ul {
@@ -132,11 +80,11 @@
     .navbar-nav .menu-item>ul.dropdown-menus {
         padding: 10px;
     }
-    
+
     .dropdown-menus .dropdown-item .menu-image-title {
         padding-left: 15px !important;
     }
-    
+
     .navbar-nav .menu-item>ul.dropdown-menus li a {
         font-size: 12px;
     }
@@ -180,6 +128,18 @@ ul.dropdown-menus li.menu-item a::after {
     flex-wrap: wrap !important;
 }
 
+.faq-area .accordion-item ol {
+    margin-top: 20px;
+}
+
+.faq-area .accordion-item ol li {
+    margin-bottom: 10px;
+}
+
+.overview .strategy-item .icon {
+    flex-shrink: 0;
+}
+
 @media (max-width: 576px) {
     .tech-stack-box-right-icon-list-114 {
         gap: 20px !important;
@@ -195,10 +155,12 @@ ul.dropdown-menus li.menu-item a::after {
         margin-bottom: 20px;
     }
 }
+
 @media (max-width: 576px) {
     .copyright p {
         font-size: 12px !important;
     }
+
     .pt-300 {
         padding-top: 260px;
     }
@@ -208,4 +170,59 @@ ul.dropdown-menus li.menu-item a::after {
     .pt-300 {
         padding-top: 280px;
     }
+
+    .swiper-wrapper {
+        gap: 1px;
+    }
+
+    .dynamic-service-active .swiper-wrapper {
+        gap: 30px;
+    }
+
+    .overview .strategy-item {
+        padding: 0 20px;
+    }
+
+    .uiux-style .our-strategy .strategy-item::before {
+        top: 30px;
+    }
+
+    .blog-details.section-padding {
+        padding: 50px 0 !important;
+    }
+
+}
+
+@media (max-width: 1201px) {
+    .apps-hero-content-wrapper-114 .title {
+        font-size: 38px;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 768px) {
+    .apps-hero-content-wrapper-114 .title {
+        font-size: 29px;
+        line-height: 1.5;
+    }
+
+    .swiper-wrapper {
+        gap: 20px;
+    }
+
+    .apps-service-grid-3-114 .apps-service-box-3-114 {
+        padding-left: 20px !important;
+    }
+    .blog-details.section-padding {
+        padding: 40px 0 !important;
+    }
+
+    .blog-content p {
+        font-size: 16px !important;
+    }
+
+}
+
+.blog-subscription-field {
+    height: 50px !important;
 }

@@ -201,8 +201,7 @@ $(window).scroll(function () {
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 1,
-                        spaceBetween: 0
+                    slidesPerView: 1,
                     },
                     575: {
                     slidesPerView: 2,
@@ -233,7 +232,6 @@ $(window).scroll(function () {
                     breakpoints: {
                         320: {
                             slidesPerView: 1,
-                            spaceBetween: 0
                         },
                         575: {
                             slidesPerView: 2,
@@ -248,8 +246,8 @@ $(window).scroll(function () {
                             spaceBetween: 30,
                         },
                         1200: {
-                            spaceBetween: 30,
-                            slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerView: 3,
                         },
                         1400: {
                             slidesPerView: 4,
@@ -278,15 +276,12 @@ $(window).scroll(function () {
                 breakpoints: {
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 0
                     },
                     575: {
                         slidesPerView: 1,
-                        spaceBetween: 0
                     },
                     768: {
-                        slidesPerView: 1,
-                        spaceBetween: 0
+                        slidesPerView: 1
                     },
                     992: {
                         slidesPerView: 2

@@ -15,7 +15,7 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 text-center">
                 <div class="apps-hero-svg-114">
                     <?php
                         $this->add_render_attribute( 'banner_image', 'src', $settings['banner_image']['url'] );

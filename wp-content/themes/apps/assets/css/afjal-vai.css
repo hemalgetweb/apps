@@ -211,6 +211,6 @@ ul.dropdown-menus li.menu-item a::after {
     }
 }
 
-.form#mc4wp-form-1 input.form-control.subscribe {
+.blog-subscription-field {
     height: 50px !important;
 }

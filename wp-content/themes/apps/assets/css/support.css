@@ -88,7 +88,7 @@
   height: 1px;
   left: 0;
   right: 0;
-  opacity: 1;
+  opacity: .3;
 }
 
 @media (min-width: 992px) {
@@ -115,8 +115,9 @@
   content: "";
   width: 1px;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 24px;
+  opacity: .3;
+  bottom: 29px;
   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
 }
 

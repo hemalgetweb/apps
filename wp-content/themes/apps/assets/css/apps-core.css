@@ -2466,12 +2466,12 @@ a:hover {
 */
 @keyframes animated-slide-sm {
   0% {
-    -webkit-transform: translateX(0);
+    /* -webkit-transform: translateX(0); */
     transform: translateX(0);
   }
 
   100% {
-    -webkit-transform: translateX(calc(-228px * 5));
+    /* -webkit-transform: translateX(calc(-228px * 5)); */
     transform: translateX(calc(-228px * 5));
   }
 }
@@ -2479,12 +2479,12 @@ a:hover {
 @media (max-width: 767px) {
   @keyframes animated-slide-sm {
     0% {
-      -webkit-transform: translateX(0);
+      /* -webkit-transform: translateX(0); */
       transform: translateX(0);
     }
   
     100% {
-      -webkit-transform: translateX(calc(-178px * 5)) !important;
+      /* -webkit-transform: translateX(calc(-178px * 5)) !important; */
       transform: translateX(calc(-178px * 5)) !important;
     }
   }

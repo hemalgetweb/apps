@@ -170,15 +170,6 @@ ul.dropdown-menus li.menu-item a::after {
     .pt-300 {
         padding-top: 280px;
     }
-
-    .swiper-wrapper {
-        gap: 1px;
-    }
-
-    .dynamic-service-active .swiper-wrapper {
-        gap: 30px;
-    }
-
     .overview .strategy-item {
         padding: 0 20px;
     }

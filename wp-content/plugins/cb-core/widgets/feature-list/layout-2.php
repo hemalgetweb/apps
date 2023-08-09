@@ -5,7 +5,7 @@
         class="our-strategy position-relative d-flex gap-sm-4 gap-2 gap-md-3 align-items-center justify-content-lg-between mt-lg-0 wow fadeInUp flex-wrap flex-xl-nowrap"
         data-wow-duration="0.200s" data-wow-delay="600ms">
         <?php foreach ($settings['slides'] as $slide): ?>
-          <div class="strategy-item d-flex align-items-center gap-3">
+          <div class="strategy-item d-flex align-items-center has-strategy-gap-114">
             <div class="icon flex-shrink-0">
               <?php if (!empty($slide['strategy_icon'])): ?>
                 <?php echo wp_get_attachment_image( $slide['strategy_icon']['id'], 'thumbnail' ); ?>

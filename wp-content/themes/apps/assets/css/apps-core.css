@@ -1203,8 +1203,8 @@ a:hover {
 }
 
 .top-slide-wrap.has-sm-slide-wrap {
-  -webkit-animation: animated-slide-sm 30s linear infinite;
-  animation: animated-slide-sm 30s linear infinite;
+  -webkit-animation: animated-slide-sm 25s linear infinite;
+  animation: animated-slide-sm 25s linear infinite;
 }
 
 @media (max-width: 776px) {
@@ -2464,7 +2464,7 @@ a:hover {
 /**
     *For small box
 */
-@-webkit-keyframes animated-slide-sm {
+@keyframes animated-slide-sm {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -2477,7 +2477,7 @@ a:hover {
 }
 
 @media (max-width: 767px) {
-  @-webkit-keyframes animated-slide-sm {
+  @keyframes animated-slide-sm {
     0% {
       -webkit-transform: translateX(0);
       transform: translateX(0);

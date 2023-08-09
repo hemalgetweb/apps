@@ -73,7 +73,7 @@
     <div class="banner-img text-center text-lg-end position-absolute end-0 bottom-0" data-wow-duration="0.200s"
         data-wow-delay="400ms">
         <?php if (!empty($settings['banner_image']['url'])): ?>
-            <img width="945" height="705" src="<?php echo esc_url($settings['banner_image']['url']); ?>" alt="home hero">
+           <?php echo wp_get_attachment_image( $settings['banner_image']['id'], 'full' ); ?>
         <?php endif; ?>
     </div>
 </div>

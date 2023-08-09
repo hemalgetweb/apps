@@ -98,31 +98,6 @@ $(window).scroll(function () {
         
 
         // swiper activations and options initialization
-        let swiper = new Swiper('.swiper-container', {
-            
-            slidesPerView: 3,
-            spaceBetween: 0,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-            breakpoints: {
-                320: {
-                slidesPerView: 1,
-                },
-                575: {
-                slidesPerView: 2,
-                },
-                1200: {
-                    slidesPerView: 3,
-                }
-            }
-        });
 
 
 

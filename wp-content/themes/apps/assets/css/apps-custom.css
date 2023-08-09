@@ -25879,3 +25879,11 @@ i {
 .apps-has-client-testimonial-slide-arrow-114 .swiper-prev {
     left: -51px;
 }
+@media (max-width: 991px) {
+    .apps-has-client-testimonial-slide-arrow-114 .client-testimonial-active  {
+        padding-left: 0;
+    }
+    .apps-has-client-testimonial-slide-arrow-114 .swiper-prev {
+        left: -70px;
+    }
+}

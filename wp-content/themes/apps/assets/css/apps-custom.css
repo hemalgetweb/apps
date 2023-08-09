@@ -25886,7 +25886,7 @@ i {
     .apps-has-client-testimonial-slide-arrow-114 .swiper-prev {
         left: -70px;
     }
-    .apps-has-client-testimonial-slide-arrow-114 .client-testimonials-slide .client-item-wraps .client-qoute-icon {
+    .apps-has-client-testimonial-slide-arrow-114.client-testimonials-slide .client-item-wraps .client-qoute-icon {
         left: 20px;
         top: -22px;
     }

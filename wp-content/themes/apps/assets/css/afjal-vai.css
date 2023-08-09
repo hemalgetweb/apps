@@ -212,3 +212,7 @@ ul.dropdown-menus li.menu-item a::after {
 .blog-subscription-field {
     height: 50px !important;
 }
+
+.apps-about-right-114 p {
+    margin-bottom: 0;
+}

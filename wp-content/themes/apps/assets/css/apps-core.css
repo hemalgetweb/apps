@@ -2484,8 +2484,8 @@ a:hover {
     }
   
     100% {
-      -webkit-transform: translateX(calc(-148px * 5));
-      transform: translateX(calc(-148px * 5));
+      -webkit-transform: translateX(calc(-178px * 5)) !important;
+      transform: translateX(calc(-178px * 5)) !important;
     }
   }
 }

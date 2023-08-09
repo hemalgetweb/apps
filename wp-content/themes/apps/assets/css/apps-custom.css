@@ -25872,3 +25872,6 @@ i {
 .has-strategy-gap-114 {
     grid-gap: 0 10px;
 }
+.apps-has-client-testimonial-slide-arrow-114 .swiper-wrapper {
+	gap: 9px;
+}

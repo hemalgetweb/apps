@@ -2,7 +2,7 @@
 <!-- Client-Testimonials -->
 <section class="Client-Testimonials">
     <div class="container">
-        <div class="client-testimonials-slide">
+        <div class="client-testimonials-slide apps-has-client-testimonial-slide-arrow-114">
             <div class="swiper_wrap">
                 <div class="swiper-container client-testimonial-active">
                     <div class="swiper-wrapper">

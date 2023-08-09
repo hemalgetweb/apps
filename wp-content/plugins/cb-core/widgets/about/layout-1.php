@@ -2,7 +2,7 @@
 <section class="about-area">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-xxl-6 col-xl-6 col-lg-5">
+            <div class="col-xxl-6 col-xl-6 col-lg-5 text-center">
                 <div class="apps-about-left-114 mb-50 mb-lg-0">
                     <?php echo wp_get_attachment_image( $settings['about_image']['id'], 'full' ); ?>
                 </div>

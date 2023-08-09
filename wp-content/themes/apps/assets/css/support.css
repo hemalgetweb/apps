@@ -180,28 +180,22 @@
   background-color: var(--primary);
 }
 
-.client-testimonials-slide .swiper-container {
-  padding: 0 15px;
-}
-
-
 .job_key {
   list-style: none;
-
-  li {
-    position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      background-color: #1F516D;
-      top: 0;
-      left: 0;
-    }
-  }
 }
+.job_key li {
+  position: relative;
+}
+.job_key li:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #1f516d;
+  top: 0;
+  left: 0;
+}
+
 
 .job_key li {
   position: relative;

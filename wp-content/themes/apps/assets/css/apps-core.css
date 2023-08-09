@@ -2464,6 +2464,18 @@ a:hover {
 /**
     *For small box
 */
+@-webkit-keyframes animated-slide-sm {
+  0% {
+    /* -webkit-transform: translateX(0); */
+    transform: translateX(0);
+  }
+
+  100% {
+    /* -webkit-transform: translateX(calc(-228px * 5)); */
+    transform: translateX(calc(-228px * 5));
+  }
+}
+
 @keyframes animated-slide-sm {
   0% {
     /* -webkit-transform: translateX(0); */
@@ -2477,6 +2489,17 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+  @-webkit-keyframes animated-slide-sm {
+    0% {
+      /* -webkit-transform: translateX(0); */
+      transform: translateX(0);
+    }
+  
+    100% {
+      /* -webkit-transform: translateX(calc(-178px * 5)) !important; */
+      transform: translateX(calc(-178px * 5)) !important;
+    }
+  }
   @keyframes animated-slide-sm {
     0% {
       /* -webkit-transform: translateX(0); */

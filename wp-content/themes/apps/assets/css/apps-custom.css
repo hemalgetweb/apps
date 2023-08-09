@@ -25865,10 +25865,16 @@ i {
         height: 141px;
     }
     .apps-project-card-114 .apps-project-card-image-114 img {
-        height: 186px;
+        height: 226px;
+        object-fit: cover;
+        object-position: top left;
     }
 }
-
+@media (min-width: 576px) and (max-width: 767px) {
+    .apps-project-card-114 .apps-project-card-image-114 img {
+        height: 396px;
+    }
+}
 .has-strategy-gap-114 {
     grid-gap: 0 10px;
 }
@@ -25892,5 +25898,11 @@ i {
     }
     .apps-has-client-testimonial-slide-arrow-114 .swiper-container.client-testimonial-active {
         padding-top: 11px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .apps-project-card-114 .apps-project-card-image-114 img {
+        height: 343px;
+        object-fit: cover;
     }
 }

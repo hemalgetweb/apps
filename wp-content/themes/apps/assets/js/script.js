@@ -202,10 +202,9 @@ $(window).scroll(function () {
                 breakpoints: {
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 0
                     },
                     767: {
-                    slidesPerView: 2,
+                        slidesPerView: 2,
                     },
                     1200: {
                         slidesPerView: 3,

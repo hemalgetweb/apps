@@ -25872,18 +25872,10 @@ i {
 .has-strategy-gap-114 {
     grid-gap: 0 10px;
 }
-/* .apps-has-client-testimonial-slide-arrow-114 .client-testimonial-active  {
+.apps-has-client-testimonial-slide-arrow-114 .client-testimonial-active  {
     padding-left: 19px;
 }
 
 .apps-has-client-testimonial-slide-arrow-114 .swiper-prev {
     left: -51px;
 }
-@media (max-width: 991px) {
-    .apps-has-client-testimonial-slide-arrow-114 .client-qoute-icon img {
-        display: none;
-    }
-    .apps-has-client-testimonial-slide-arrow-114 .swiper-slide-active .client-qoute-icon img {
-        display: block;
-    }
-} */

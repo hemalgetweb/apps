@@ -1198,12 +1198,12 @@ a:hover {
 
 .top-slide-wrap {
   gap: 30px;
-  -webkit-animation: animated-slide 30s linear infinite;
+  /* -webkit-animation: animated-slide 30s linear infinite; */
   animation: animated-slide 30s linear infinite;
 }
 
 .top-slide-wrap.has-sm-slide-wrap {
-  -webkit-animation: animated-slide-sm 25s linear infinite;
+  /* -webkit-animation: animated-slide-sm 25s linear infinite; */
   animation: animated-slide-sm 25s linear infinite;
 }
 
@@ -2489,3 +2489,4 @@ a:hover {
     }
   }
 }
+

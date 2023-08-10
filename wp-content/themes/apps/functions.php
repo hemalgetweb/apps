@@ -810,3 +810,11 @@ function remove_lazy_loading_attribute($content) {
     $content = preg_replace('/<img(.*?)loading=[\'"]?lazy[\'"]?(.*?)>/i', '<img$1$2>', $content);
     return $content;
 }
+
+function disable_lazy_loading() {
+    // Apply the 'remove_lazy_loading_attribute' function globally
+    add_filter('the_content', 'remove_lazy_loading_attribute');
+    add_filter('widget_text_content', 'remove_lazy_loading_attribute');
+    add_filter('widget_text', 'remove_lazy_loading_attribute');
+}
+add_action('init', 'disable_lazy_loading');

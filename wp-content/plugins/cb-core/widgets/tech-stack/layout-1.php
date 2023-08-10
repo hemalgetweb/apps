@@ -15,7 +15,7 @@
                         <div class="tech-stack-box-icon-single-114">
                             <?php if(!empty($slide['stack_image']['url'])) : ?>
                             <div class="icon">
-                                <img src="<?php echo $slide['stack_image']['url'] ?>" alt="<?php echo \Elementor\Control_Media::get_image_alt( $slide['stack_image'] ); ?>">
+                                <?php echo wp_get_attachment_image( $slide['stack_image']['id'], 'full' ); ?>
                             </div>
                             <?php endif; ?>
                             <?php if(!empty($slide['stack_label'])) : ?>

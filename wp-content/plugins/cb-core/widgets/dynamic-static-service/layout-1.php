@@ -27,12 +27,12 @@ if($settings['card_height']) {
                                     <p><?php echo wp_kses_post($slide['service_excerpt']); ?></p>
                                 <?php endif; ?>
                                 <?php if(!empty($slide['service_title_link']['url'])) : ?>
-                                    <a href="<?php echo esc_url($slide['service_title_link']['url']); ?>" class="dynamic-service-read-more-btn-114">Read more <span>
+                                    <a href="<?php echo esc_url($slide['service_title_link']['url']); ?>" class="dynamic-service-read-more-btn-114">Read more 
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003959"/>
+<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#00C7C7"/>
 </svg>
 
-                                    </span></a>
+                                    </a>
                                 <?php endif; ?>
                             </div>
                         </div>

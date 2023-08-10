@@ -816,5 +816,6 @@ function disable_lazy_loading() {
     add_filter('the_content', 'remove_lazy_loading_attribute');
     add_filter('widget_text_content', 'remove_lazy_loading_attribute');
     add_filter('widget_text', 'remove_lazy_loading_attribute');
+	add_filter( 'wp_lazy_loading_enabled', '__return_false' );
 }
 add_action('init', 'disable_lazy_loading');

@@ -1167,6 +1167,7 @@ function apps_sidebar_mobile_menu_1()
                 <?php apps_header_menu_1(); ?>
                     <div
                         class="navbar-right btn-wrap d-flex flex-wrap justify-content-between align-content-center w-100 gap-3 gap-lg-4">
+                        <a class="apps-header-company-tel-number-114" href="tel:+97142276916"><?php echo esc_html__('+97142276916', 'apps'); ?></a>
                         <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
                         <a class="link-text text-decoration-none pe-4 fs-18 text-white fw-semi-bold d-flex gap-2 align-items-center"
                             href="<?php echo esc_url($cbtoolkit_side_support_number_link_1) ? esc_url($cbtoolkit_side_support_number_link_1): ''; ?>">

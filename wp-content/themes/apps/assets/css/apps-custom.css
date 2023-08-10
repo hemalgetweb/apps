@@ -25768,6 +25768,10 @@
 .mobileMenu .navbar-right.btn-wrap.d-flex.flex-wrap.justify-content-between.align-content-center .apps-header-company-tel-number-114 {
     line-height: 46px;
 }
+
+/**
+    * button css
+*/
 .apps-has-number-text-dubai-114 {
 	border-radius: 4px;
 	background: var(--secendery-secendery, #50FF81);
@@ -25778,4 +25782,16 @@
 	font-weight: 700;
 	line-height: 48px;
 	text-decoration: navajowhite;
+}
+.apps-has-number-text-dubai-114:hover {
+    background: rgba(80, 255, 129, 0.10);
+    color: var(--secendery-secendery, #50FF81);
+}
+
+.apps-has-number-text-dubai-114:hover svg path {
+    fill: #50ff81;
+}
+
+.apps-has-number-text-dubai-114 svg path {
+    transition: all .3s;
 }

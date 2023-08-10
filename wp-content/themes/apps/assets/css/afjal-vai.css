@@ -11,7 +11,8 @@
 .apps-project-prev-114,
 .apps-project-next-114,
 .dynamic-prev,
-.dynamic-next {
+.dynamic-next,
+.swiper-arrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,4 +35,8 @@
 }
 .dynamic-service-read-more-btn-114:hover svg {
     margin-left: 12px;
+}
+
+.swiper-arrow:hover svg * {
+    fill: #003959;
 }

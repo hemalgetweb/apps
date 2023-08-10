@@ -412,7 +412,7 @@ function _header_fields($fields)
     $fields[] = [
         'type'     => 'text',
         'settings' => 'cbtoolkit_side_support_number_text_1',
-        'label'    => __('Support Number Text', 'cb-toolkit'),
+        'label'    => __('Client Login Text', 'cb-toolkit'),
         'section'  => 'section_header_settings',
         'default'  => __('(971) 42276926', 'cb-toolkit'),
         'priority' => 10,
@@ -443,7 +443,7 @@ function _header_fields($fields)
     $fields[] = [
         'type'     => 'text',
         'settings' => 'cbtoolkit_side_support_number_link_1',
-        'label'    => __('Support Number Link', 'cb-toolkit'),
+        'label'    => __('Client Login Link', 'cb-toolkit'),
         'section'  => 'section_header_settings',
         'default'  => __('+3476193312', 'cb-toolkit'),
         'priority' => 10,

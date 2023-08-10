@@ -11620,7 +11620,7 @@
 
  @media (min-width: 1200px) and (max-width: 1399px) {
      #header .navbar-nav .nav-item>.nav-link {
-         padding: 30px 20px;
+        padding: 30px 15px;
      }
  }
 

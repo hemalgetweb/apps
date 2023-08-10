@@ -25765,3 +25765,6 @@
     color: var(--primary2);
     text-decoration: none;
 }
+.mobileMenu .navbar-right.btn-wrap.d-flex.flex-wrap.justify-content-between.align-content-center .apps-header-company-tel-number-114 {
+    line-height: 46px;
+}

@@ -1125,8 +1125,8 @@ function apps_sidebar_mobile_menu_1()
     $cbtoolkit_side_btn_url = get_theme_mod('cbtoolkit_side_btn_url',  __('#', 'apps'));
     $cbtoolkit_header_top_email_text_1 = get_theme_mod('cbtoolkit_header_top_email_text_1',  __('info@webmail.com', 'apps'));
     $cbtoolkit_header_top_email_link_1 = get_theme_mod('cbtoolkit_header_top_email_link_1',  __('info@webmail.com', 'apps'));
-    $cbtoolkit_side_support_number_link_1 = get_theme_mod('cbtoolkit_side_support_number_link_1',  __('+642394396432', 'apps'));
-    $cbtoolkit_side_support_number_text_1 = get_theme_mod('cbtoolkit_side_support_number_text_1',  __('(+642) 394 396 432', 'apps'));
+    $cbtoolkit_side_support_number_link_1 = get_theme_mod('cbtoolkit_side_support_number_link_1',  __('https://wadialbada.spp.io/login', 'apps'));
+    $cbtoolkit_side_support_number_text_1 = get_theme_mod('cbtoolkit_side_support_number_text_1',  __('Client Login', 'apps'));
     $cbtoolkit_side_contact_address_link_1 = get_theme_mod('cbtoolkit_side_contact_address_link_1',  __('https://goo.gl/maps/ZNyPLyPfoLkFYpiS7', 'apps'));
     $cbtoolkit_side_contact_address_text_1 = get_theme_mod('cbtoolkit_side_contact_address_text_1',  __('Ave 14th Street, Mirpur 210, San Franciso, USA 3296.', 'apps'));
     $cbtoolkit_header_btn_text = get_theme_mod('cbtoolkit_header_btn_text', __('CONTACT US', 'apps'));
@@ -1159,7 +1159,7 @@ function apps_sidebar_mobile_menu_1()
                         class="navbar-right btn-wrap d-flex flex-wrap justify-content-between align-content-center w-100 gap-3 gap-lg-4">
                         <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
                         <a class="link-text text-decoration-none pe-4 fs-18 text-white fw-semi-bold d-flex gap-2 align-items-center"
-                            href="tel:<?php echo esc_attr($cbtoolkit_side_support_number_link_1) ? esc_attr($cbtoolkit_side_support_number_link_1): ''; ?>">
+                            href="<?php echo esc_url($cbtoolkit_side_support_number_link_1) ? esc_url($cbtoolkit_side_support_number_link_1): ''; ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.svg" alt="icon" class="img-fluid">
                             <?php echo esc_html($cbtoolkit_side_support_number_text_1); ?>
                         </a>

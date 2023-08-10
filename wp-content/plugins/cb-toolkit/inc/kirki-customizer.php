@@ -412,9 +412,9 @@ function _header_fields($fields)
     $fields[] = [
         'type'     => 'text',
         'settings' => 'cbtoolkit_side_support_number_text_1',
-        'label'    => __('Number Text', 'cb-toolkit'),
+        'label'    => __('Client Login Text', 'cb-toolkit'),
         'section'  => 'section_header_settings',
-        'default'  => __('(971) 42276926', 'cb-toolkit'),
+        'default'  => __('Client Login', 'cb-toolkit'),
         'priority' => 10,
         'active_callback' => [
             [
@@ -443,9 +443,9 @@ function _header_fields($fields)
     $fields[] = [
         'type'     => 'text',
         'settings' => 'cbtoolkit_side_support_number_link_1',
-        'label'    => __('Number Link', 'cb-toolkit'),
+        'label'    => __('Client Login Link', 'cb-toolkit'),
         'section'  => 'section_header_settings',
-        'default'  => __('+3476193312', 'cb-toolkit'),
+        'default'  => __('https://wadialbada.spp.io/login', 'cb-toolkit'),
         'priority' => 10,
         'active_callback' => [
             [

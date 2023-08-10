@@ -16,6 +16,7 @@
     transition: all 200ms ease;
 }
 
-.apps-project-prev-114:hover svg * {
+.apps-project-prev-114:hover svg *,
+.apps-project-next-114:hover svg * {
     fill: #ffffff;
 }

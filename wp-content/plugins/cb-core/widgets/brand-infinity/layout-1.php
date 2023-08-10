@@ -10,8 +10,8 @@ $enable_small_box_class = $settings['enable_small_box'] ? 'has-enable-small-box-
           <div class="top-slide-wrap d-flex align-items-center <?php echo $settings['enable_small_box'] ? 'has-sm-slide-wrap': ''; ?>">
             <?php foreach ($settings['slides'] as $slide): ?>
               <div class="slide-item radius-6 d-flex align-items-center justify-content-center">
-                <?php if (!empty($slide['product_brand_image'])): ?>
-                  <img src="<?php echo esc_url($slide['product_brand_image']['url']); ?>" class="img-fluid" alt="icon">
+                <?php if (!empty($slide['product_brand_image']['url'])): ?>
+                  <?php echo wp_get_attachment_image( $slide['product_brand_image']['id'], 'full' ); ?>
                 <?php endif; ?>
               </div>
             <?php endforeach; ?>
@@ -24,7 +24,7 @@ $enable_small_box_class = $settings['enable_small_box'] ? 'has-enable-small-box-
           <div class="top-slide-wrap d-flex align-items-center <?php echo $settings['enable_small_box'] ? 'has-sm-slide-wrap': ''; ?>">
             <?php foreach ($settings['slides'] as $slide): ?>
               <div class="slide-item radius-6 d-flex align-items-center justify-content-center">
-                <?php if (!empty($slide['product_brand_image'])): ?>
+                <?php if (!empty($slide['product_brand_image']['url'])): ?>
                   <?php echo wp_get_attachment_image($slide['product_brand_image']['id'], 'full'); ?>
                 <?php endif; ?>
               </div>

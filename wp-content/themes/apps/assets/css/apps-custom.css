@@ -23810,10 +23810,6 @@
      position: fixed;
  }
 
- #header .navbar-nav .nav-item>.nav-link {
-     padding: 30px 20px;
- }
-
  .navbar-nav .menu-item.has-sub-menu>ul.dropdown-menus::after {
      left: 30px;
  }

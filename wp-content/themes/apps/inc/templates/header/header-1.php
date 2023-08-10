@@ -7,8 +7,8 @@
 ?>
 <?php apps_sidebar_mobile_menu_1(); 
     $cbtoolkit_header_main_right_switch_1 = get_theme_mod('cbtoolkit_header_main_right_switch_1', false);
-    $cbtoolkit_side_support_number_text_1 = get_theme_mod('cbtoolkit_side_support_number_text_1', __('(971) 42276926', 'apps'));
-    $cbtoolkit_side_support_number_link_1 = get_theme_mod('cbtoolkit_side_support_number_link_1', __('+97142276926', 'apps'));
+    $cbtoolkit_side_support_number_text_1 = get_theme_mod('cbtoolkit_side_support_number_text_1', __('Client Login', 'apps'));
+    $cbtoolkit_side_support_number_link_1 = get_theme_mod('cbtoolkit_side_support_number_link_1', __('https://wadialbada.spp.io/login', 'apps'));
     $cbtoolkit_header_btn_text = get_theme_mod('cbtoolkit_header_btn_text', __('CONTACT US', 'apps'));
     $cbtoolkit_header_btn_link = get_theme_mod('cbtoolkit_header_btn_link', __('#', 'apps'));
 ?>
@@ -24,8 +24,8 @@
                 <?php apps_header_menu_1(); ?>
                 <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4">
                     <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
-                    <a target="_blank" class="link-text ms-4 text-decoration-none pe-4 text-white fw-semi-bold d-flex gap-2 align-items-center"
-                        href="tel:<?php echo esc_attr($cbtoolkit_side_support_number_link_1) ? esc_attr($cbtoolkit_side_support_number_link_1): ''; ?>">
+                    <a class="apps-has-number-text-dubai-114" target="_blank" class="link-text ms-4 text-decoration-none pe-4 text-white fw-semi-bold d-flex gap-2 align-items-center"
+                        href="tel:<?php echo esc_url($cbtoolkit_side_support_number_link_1) ? esc_url($cbtoolkit_side_support_number_link_1): ''; ?>">
                         <?php echo esc_html($cbtoolkit_side_support_number_text_1); ?>
                     </a>
                     <?php endif; ?>

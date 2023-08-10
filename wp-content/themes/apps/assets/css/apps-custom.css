@@ -25821,3 +25821,6 @@
     color: var(--dark-dark-1, #003959);
     background: #50ff81;
 }
+.gap-15 {
+    grid-gap: 15px;
+}

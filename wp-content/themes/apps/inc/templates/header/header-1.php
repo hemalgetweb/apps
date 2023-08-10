@@ -22,7 +22,7 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <?php apps_header_menu_1(); ?>
-                <div class="navbar-right btn-wrap align-items-center d-flex flex-wrap gap-3 gap-lg-4">
+                <div class="navbar-right btn-wrap align-items-center d-flex flex-wrap gap-15">
                     <a class="apps-header-call-number-114" href="tel:+97142276916"><?php echo esc_html__('+97142276916', 'apps'); ?></a>
                     <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
                     <a class="apps-has-client-login-dubai-114" target="_blank" class="link-text ms-4 text-decoration-none pe-4 text-white fw-semi-bold d-flex gap-2 align-items-center"

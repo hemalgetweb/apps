@@ -26,7 +26,10 @@
                     <a class="apps-header-call-number-114" href="tel:+97142276916"><?php echo esc_html__('+97142276916', 'apps'); ?></a>
                     <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
                     <a class="apps-has-client-login-dubai-114" target="_blank" class="link-text ms-4 text-decoration-none pe-4 text-white fw-semi-bold d-flex gap-2 align-items-center"
-                        href="tel:<?php echo esc_url($cbtoolkit_side_support_number_link_1) ? esc_url($cbtoolkit_side_support_number_link_1): ''; ?>">
+                        href="<?php echo esc_url($cbtoolkit_side_support_number_link_1) ? esc_url($cbtoolkit_side_support_number_link_1): ''; ?>">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.99998 9.97917C9.05554 9.97917 8.26387 9.65972 7.62498 9.02083C6.98609 8.38194 6.66665 7.59028 6.66665 6.64583C6.66665 5.70139 6.98609 4.90972 7.62498 4.27083C8.26387 3.63194 9.05554 3.3125 9.99998 3.3125C10.9444 3.3125 11.7361 3.63194 12.375 4.27083C13.0139 4.90972 13.3333 5.70139 13.3333 6.64583C13.3333 7.59028 13.0139 8.38194 12.375 9.02083C11.7361 9.65972 10.9444 9.97917 9.99998 9.97917ZM5.02081 16.6667C4.5347 16.6667 4.12151 16.4965 3.78123 16.1562C3.44095 15.816 3.27081 15.4028 3.27081 14.9167V14.2708C3.27081 13.7847 3.39581 13.3472 3.64581 12.9583C3.89581 12.5694 4.2222 12.2778 4.62498 12.0833C5.4722 11.6806 6.35067 11.3715 7.2604 11.1562C8.17012 10.941 9.08331 10.8333 9.99998 10.8333C10.9166 10.8333 11.8333 10.941 12.75 11.1562C13.6666 11.3715 14.5416 11.6806 15.375 12.0833C15.7778 12.2778 16.1041 12.5694 16.3541 12.9583C16.6041 13.3472 16.7291 13.7847 16.7291 14.2708V14.9167C16.7291 15.4028 16.559 15.816 16.2187 16.1562C15.8785 16.4965 15.4653 16.6667 14.9791 16.6667H5.02081Z" fill="#50FF81"/>
+                        </svg> 
                         <?php echo esc_html($cbtoolkit_side_support_number_text_1); ?>
                     </a>
                     <?php endif; ?>

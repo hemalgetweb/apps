@@ -25795,3 +25795,29 @@
 .apps-has-number-text-dubai-114 svg path {
     transition: all .3s;
 }
+.apps-has-client-login-dubai-114 {
+    border-radius: 4px;
+    background: rgba(80, 255, 129, 0.10);
+    color: var(--secendery-secendery, #50FF81);
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    display: inline-block;
+    line-height: 48px;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.apps-has-client-login-dubai-114 path {
+    transition: all .3s;
+    color: #50FF81;
+}
+
+.apps-has-client-login-dubai-114:hover path {
+    color: var(--dark-dark-1, #003959);
+}
+
+.apps-has-client-login-dubai-114:hover {
+    color: var(--dark-dark-1, #003959);
+    background: #50ff81;
+}

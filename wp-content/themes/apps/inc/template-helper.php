@@ -1166,7 +1166,7 @@ function apps_sidebar_mobile_menu_1()
             <div class="mobileMenu-container">
                 <div class="mobileMenu-header d-flex align-items-center gap-4 justify-content-between">
                     <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-logo.svg" alt="logo" class="img-fluid">
+                        <img width="70" height="30" src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-logo.svg" alt="logo" class="img-fluid">
                     </a>
                     <div class="navbarToggler  border-0 text-decoration-none">
                         <div class="menuAction">

@@ -34,7 +34,7 @@ EOD;
             class="footer-top pb-5 d-flex justify-content-lg-center justify-content-xl-between flex-wrap gap-4 align-items-center">
             <div class="footer-logo mb-3 mb-lg-0">
                 <a href="<?php echo home_url('/'); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"
+                    <img width="103" height="45" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"
                         class="img-fluid">
                 </a>
             </div>
@@ -45,7 +45,7 @@ EOD;
                         <?php if ($index == 0): ?>
                             <div class="contact-element d-flex gap-3 align-items-center">
                                 <?php if (!empty($repeater['repeater_image'])): ?>
-                                    <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
+                                    <img width="35" height="34" src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                                 <?php endif; ?>
                                 <?php if (!empty($repeater['repeater_label'])): ?>
                                     <a href="mailto:<?php echo $repeater['repeater_url'] ? $repeater['repeater_url'] : ''; ?>"
@@ -64,7 +64,7 @@ EOD;
 
                             <div class="contact-element d-flex gap-3 align-items-center">
                                 <?php if (!empty($repeater['repeater_image'])): ?>
-                                    <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
+                                    <img width="35" height="34" src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                                 <?php endif; ?>
                                 <?php if (!empty($repeater['repeater_label'])): ?>
                                     <a href="tel:<?php echo $repeater['repeater_url'] ? $repeater['repeater_url'] : ''; ?>"
@@ -84,7 +84,7 @@ EOD;
                     <?php if ($index == 2): ?>
                         <div class="contact-element d-flex gap-3 align-items-center footer-contact-address">
                             <?php if (!empty($repeater['repeater_image'])): ?>
-                                <img src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
+                                <img width="35" height="34" src="<?php echo esc_url($repeater['repeater_image']); ?>" alt="icon" class="img-fluid">
                             <?php endif; ?>
                             <?php if (!empty($repeater['repeater_label'])): ?>
                                 <p class="fs-14 fw-bold text-clr-dark5 text-uppercase mb-0">

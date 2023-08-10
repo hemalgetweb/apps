@@ -9,7 +9,7 @@
                         <?php foreach($settings['slides'] as $index=>$slide) : ?>
                         <div class="swiper-slide client-item-wraps radius-16 position-relative">
                             <span class="client-qoute-icon position-absolute">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
+                                <img width="50" height="50' src="<?php echo get_template_directory_uri(); ?>/assets/img/client-qoute-icon.svg" alt="icon" class="img-fluid w-auto">
                             </span>
                             <div
                                 class="client-testimonials-card d-flex flex-column justify-content-between bg-white radius-16">

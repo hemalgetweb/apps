@@ -25768,3 +25768,14 @@
 .mobileMenu .navbar-right.btn-wrap.d-flex.flex-wrap.justify-content-between.align-content-center .apps-header-company-tel-number-114 {
     line-height: 46px;
 }
+.apps-has-number-text-dubai-114 {
+	border-radius: 4px;
+	background: var(--secendery-secendery, #50FF81);
+	height: 48px;
+	padding: 0 20px;
+	color: var(--dark-dark-1, #003959);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 48px;
+	text-decoration: navajowhite;
+}

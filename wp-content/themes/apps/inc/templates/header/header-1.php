@@ -23,15 +23,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <?php apps_header_menu_1(); ?>
                 <div class="navbar-right btn-wrap align-items-center d-flex flex-wrap gap-3 gap-lg-4">
-                    <a class="apps-header-company-tel-number-114" href="tel:+97142276916"><?php echo esc_html__('+97142276916', 'apps'); ?></a>
+                    <a class="apps-header-call-number-114" href="tel:+97142276916"><?php echo esc_html__('+97142276916', 'apps'); ?></a>
                     <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
-                    <a class="apps-has-number-text-dubai-114" target="_blank" class="link-text ms-4 text-decoration-none pe-4 text-white fw-semi-bold d-flex gap-2 align-items-center"
+                    <a class="apps-has-client-login-dubai-114" target="_blank" class="link-text ms-4 text-decoration-none pe-4 text-white fw-semi-bold d-flex gap-2 align-items-center"
                         href="tel:<?php echo esc_url($cbtoolkit_side_support_number_link_1) ? esc_url($cbtoolkit_side_support_number_link_1): ''; ?>">
                         <?php echo esc_html($cbtoolkit_side_support_number_text_1); ?>
                     </a>
                     <?php endif; ?>
                     <?php if(!empty($cbtoolkit_header_btn_text)) : ?>
-                    <a class="btn position-relative rounded bg-btn text-uppercase py-2 ps-4 border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center"
+                    <a class="apps-book-call-btn-114"
                         href="<?php echo $cbtoolkit_header_btn_link ? esc_url($cbtoolkit_header_btn_link): ''; ?>">
                         <?php echo esc_html($cbtoolkit_header_btn_text); ?>
                         <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"

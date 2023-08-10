@@ -806,5 +806,7 @@ add_filter( 'big_image_size_threshold', '__return_false' );
 /**
  * Remove lazy load
  */
-
+function disable_lazy_loading() {
+	add_filter( 'wp_lazy_loading_enabled', '__return_false' );
+}
 add_action('init', 'disable_lazy_loading');

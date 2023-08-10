@@ -26,7 +26,12 @@ if($settings['card_height']) {
                             <div class="dynamic-service-box-content-114">
                                 <h5 class="title"><a href="<?php echo get_the_permalink(get_the_ID()); ?>"><?php echo get_the_title(get_the_ID()); ?></a></h5>
                                 <p><?php echo get_the_excerpt(); ?></p>
-                                <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="dynamic-service-read-more-btn-114"><?php echo esc_html__('Read more', 'cb-core'); ?> <i class="fal fa-arrow-right"></i></a>
+                                <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="dynamic-service-read-more-btn-114"><?php echo esc_html__('Read more', 'cb-core'); ?> <span>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003959"/>
+</svg>
+
+                                </span></a>
                             </div>
                         </div>
                     </div>
@@ -34,8 +39,14 @@ if($settings['card_height']) {
                 </div>
             </div>
             <div class="dynamic-slider-paginations">
-                <div class="dynamic-prev"><i class="fal fa-arrow-left"></i></div>
-                <div class="dynamic-next"><i class="fal fa-arrow-right"></i></div>
+                <div class="dynamic-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 10L5.885 9.115L2.39583 5.625H10V4.375H2.39583L5.885 0.885L5 0L0 5L5 10Z" fill="#73A7C3"/>
+</svg>
+</div>
+                <div class="dynamic-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003959"/>
+</svg>
+</div>
             </div>
             <?php endif; ?>
         </div>

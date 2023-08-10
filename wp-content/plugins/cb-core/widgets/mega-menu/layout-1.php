@@ -26,7 +26,9 @@
                             <div class="col-xxl-2 col-xl-2 col-lg-2 col-sm-2">
                                 <div class="apps-mega-menu-item-right-114">
                                     <div class="icon">
-                                        <i class="fal fa-arrow-right"></i>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.68754 10.9583L7.79171 10.0833L11.2917 6.58333H0.333374V5.33333H11.2917L7.77087 1.8125L8.66671 0.9375L13.6875 5.95833L8.68754 10.9583Z" fill="#003959"/>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +64,9 @@
                                 <div class="col-xxl-2 col-xl-2 col-lg-2 col-sm-2">
                                     <div class="apps-mega-menu-item-right-114">
                                         <div class="icon">
-                                            <i class="fal fa-arrow-right"></i>
+                                            <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.68754 10.9583L7.79171 10.0833L11.2917 6.58333H0.333374V5.33333H11.2917L7.77087 1.8125L8.66671 0.9375L13.6875 5.95833L8.68754 10.9583Z" fill="#003959"/>
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>

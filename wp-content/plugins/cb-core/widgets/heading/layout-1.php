@@ -25,14 +25,26 @@ $enable_container_class = $settings['enable_container'] ? 'container' : 'apps-ha
                         $this->add_link_attributes( 'btn_link_1', $settings['btn_link_1'] );
                     }    
                     ?>
-                    <a <?php echo $this->get_render_attribute_string( 'btn_link_1' ); ?> class="apps-service-link-single-114"><?php echo esc_html($settings['btn_text_1']); ?> <i class="fal fa-arrow-right"></i></a>
+                    <a <?php echo $this->get_render_attribute_string( 'btn_link_1' ); ?> class="apps-service-link-single-114"><?php echo esc_html($settings['btn_text_1']); ?> 
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003959"/>
+                            </svg>
+                        </span>
+                    </a>
                     <?php endif; ?>
                     <?php if(!empty($settings['btn_text_2'])) :
                     if ( ! empty( $settings['btn_link_2']['url'] ) ) {
                         $this->add_link_attributes( 'btn_link_2', $settings['btn_link_2'] );
                     }    
                     ?>
-                    <a <?php echo $this->get_render_attribute_string( 'btn_link_2' ); ?> class="apps-service-link-single-114 style-2"><?php echo esc_html($settings['btn_text_2']); ?> <i class="fal fa-arrow-right"></i></a>
+                    <a <?php echo $this->get_render_attribute_string( 'btn_link_2' ); ?> class="apps-service-link-single-114 style-2"><?php echo esc_html($settings['btn_text_2']); ?> 
+                        <span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003959"/>
+                            </svg>
+                        </span>
+                    </a>
                     <?php endif; ?>
                 </div>
                 <?php endif; ?>

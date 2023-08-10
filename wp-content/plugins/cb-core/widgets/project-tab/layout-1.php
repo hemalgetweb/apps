@@ -2,7 +2,10 @@
     <div class="container">
         <div class="apps-portfolio-modal-top-114  pt-40">
             <div class="apps-portfolio-moal-top-left-box">
-                <button type="button" class="btn-close apps-portfolio-close" data-bs-dismiss="modal"><i class="fal fa-times"></i></button>
+                <button type="button" class="btn-close apps-portfolio-close" data-bs-dismiss="modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 1.414L22.586 0L12 10.586L1.414 0L0 1.414L10.586 12L0 22.586L1.414 24L12 13.414L22.586 24L24 22.586L13.414 12L24 1.414Z" fill="white"/>
+</svg>
+</button>
                 <div class="icon">
                     <img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/portfolio-logo-icon1.svg" alt="icon">
                 </div>
@@ -104,8 +107,8 @@
                             'format' => '/page/%#%', // Use /page/ instead of ?paged= for better permalinks.
                             'current' => max(1, $paged),
                             'total' => $total_pages,
-                            'prev_text' => '<i class="fal fa-angle-left"></i>', // Custom icon for previous link.
-                            'next_text' => '<i class="fal fa-angle-right"></i>', // Custom icon for next link.
+                            'prev_text' => '<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10L5.885 9.115L2.39583 5.625H10V4.375H2.39583L5.885 0.885L5 0L0 5L5 10Z" fill="#73A7C3"/></svg>', // Custom icon for previous link.
+                            'next_text' => '<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M5 0L4.115 0.885L7.60417 4.375L0 4.375L0 5.625L7.60417 5.625L4.115 9.115L5 10L10 5L5 0Z" fill="#73A7C3"/> </svg>', // Custom icon for next link.
                         ));
                         echo '</div>';
                     }

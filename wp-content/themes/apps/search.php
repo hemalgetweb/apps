@@ -63,7 +63,7 @@ if($cbblog_layout == 'right-sidebar') {
 								}
 								endwhile;
 							?>
-								<?php apps_pagination( '<i class="fal fa-long-arrow-left"></i>', '<i class="fal fa-long-arrow-right"></i>', '', ['class' => ''] );?>
+								<?php apps_pagination( '<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.74958 10.6199L1.94625 6.81655C1.49708 6.36738 1.49708 5.63238 1.94625 5.18322L5.74958 1.37988" stroke="#73A7C3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>', '<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.25042 10.6199L5.05375 6.81655C5.50292 6.36738 5.50292 5.63238 5.05375 5.18322L1.25042 1.37988" stroke="#73A7C3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>', '', ['class' => ''] );?>
 							<?php
 							else:
 								get_template_part( 'post-formates/content', 'none' );

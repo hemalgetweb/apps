@@ -803,3 +803,11 @@ add_action('wp_head', 'apps_head_animation');
 
 // Disable WordPress' automatic image scaling feature
 add_filter( 'big_image_size_threshold', '__return_false' );
+/**
+ * Remove lazy load
+ */
+function remove_lazy_loading_from_images($content) {
+    $content = preg_replace('/<img(.*?)loading=[\'"]?lazy[\'"]?(.*?)>/i', '<img$1$2>', $content);
+    return $content;
+}
+add_filter('the_content', 'remove_lazy_loading_from_images');

@@ -20,7 +20,11 @@
                                     $parent_class = $index == 0 ? esc_attr__('apps-product-offer-counting-plustext'): esc_attr__('apps-product-offer-counting-plustext-another');    
                                 ?>
                                     <div class="<?php echo esc_attr($parent_class); ?>">
-                                        <span class="apps-product-offer-counting-plussign"><i class="fa-thin fa-plus"></i></span>
+                                        <span class="apps-product-offer-counting-plussign"><span>
+                                            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 13V8H11V13H6V15H11V20H13V15H18V13H13Z" fill="#6A96A4"/>
+                                            </svg>
+                                        </span></span>
                                         <div class="apps-product-offer-counting-text">
                                             <?php if(!empty($slide['banner_title'])) : ?>
                                                 <h5 class="apps-prouduct-offer-counting-title"><a href="<?php echo esc_url($slide['banner_title_url']['url']) ? esc_url($slide['banner_title_url']['url']): ''; ?>"><?php echo cb_core_kses_basic($slide['banner_title']); ?></a></h5>

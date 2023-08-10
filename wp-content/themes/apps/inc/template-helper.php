@@ -424,7 +424,17 @@ function offcanvas_menu_fullwidth()
 
     <!-- apps-fz-offcanvas-main-nav-wrapper start -->
     <div class="apps-fz-offcanvas-main-nav-wrapper">
-        <button class="fz-button-close"><i class="fa-thin fa-xmark"></i></button>
+        <button class="fz-button-close"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_4003_25524)">
+<path d="M24 1.414L22.586 0L12 10.586L1.414 0L0 1.414L10.586 12L0 22.586L1.414 24L12 13.414L22.586 24L24 22.586L13.414 12L24 1.414Z" fill="#374957"/>
+</g>
+<defs>
+<clipPath id="clip0_4003_25524">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</span></button>
         <div class="apps-fz-offcanvas-main-nav-wrapper-sections">
             <div class="apps-fz-offcanvas-main-nav-section">
                 <div class="mobile-menu-updated"></div>

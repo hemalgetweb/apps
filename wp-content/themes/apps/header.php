@@ -21,7 +21,7 @@ $body_background_color = function_exists( 'get_field' ) ? get_field( 'body_backg
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('inner'); ?> data-bg-color="<?php echo esc_attr($body_background_color); ?>">
+<body <?php body_class('inner'); ?>>
 <?php wp_body_open(); ?>
 		<!-- preloader and scroll up added based on customizer -->
 		<?php if($cbtoolkit_preloader) : ?>

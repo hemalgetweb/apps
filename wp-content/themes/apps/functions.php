@@ -807,7 +807,7 @@ add_filter( 'big_image_size_threshold', '__return_false' );
  * Remove lazy load
  */
 function remove_lazy_loading_attribute($content) {
-    $content = preg_replace('/<img(.*?)loading=[\'"]?lazy[\'"]?(.*?)>/i', '<img$1$2>', $content);
+	$content = preg_replace('/<(img|iframe)(.*?)loading=[\'"]?lazy[\'"]?(.*?)>/i', '<$1$2$3>', $content);
     return $content;
 }
 

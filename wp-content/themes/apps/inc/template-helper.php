@@ -1037,32 +1037,6 @@ function apps_breadcrumb_func()
 
 // add_action('apps_before_main_content', 'apps_breadcrumb_func');
 
-// apps_search_form
-// function apps_search_form()
-// {
-//     ?>
-//     <!-- modal-search-start -->
-<!-- //     <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
-//         <button type="button" class="close" data-bs-dismiss="modal" aria-label="<?php echo esc_attr__('Close', 'apps'); ?>">
-//             <span aria-hidden="true"><?php echo esc_html__('×', 'apps'); ?></span>
-//         </button>
-//         <div class="modal-dialog" role="document">
-//             <div class="modal-content">
-//                 <form method="get" action="<?php print esc_url(home_url('/')); ?>">
-//                     <input type="search" name="s" value="<?php print esc_attr(get_search_query()) ?>" placeholder="<?php print esc_attr__('Enter Your Keyword', 'apps'); ?>">
-//                     <button>
-//                         <i class="fa fa-search"></i>
-//                     </button>
-//                 </form>
-//             </div>
-//         </div>
-//     </div> -->
-//     <!-- modal-search-end -->
-// <?php
-// }
-
-// add_action('apps_before_main_content', 'apps_search_form');
-
 
 /**
  *

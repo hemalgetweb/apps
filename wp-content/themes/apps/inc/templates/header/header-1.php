@@ -25,7 +25,7 @@
                 <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4">
                     <?php if(!empty($cbtoolkit_side_support_number_text_1)) : ?>
                     <a target="_blank" class="link-text ms-4 text-decoration-none pe-4 text-white fw-semi-bold d-flex gap-2 align-items-center"
-                        href="<?php echo esc_url($cbtoolkit_side_support_number_link_1) ? esc_url($cbtoolkit_side_support_number_link_1): ''; ?>">
+                        href="tel:<?php echo esc_attr($cbtoolkit_side_support_number_link_1) ? esc_attr($cbtoolkit_side_support_number_link_1): ''; ?>">
                         <?php echo esc_html($cbtoolkit_side_support_number_text_1); ?>
                     </a>
                     <?php endif; ?>

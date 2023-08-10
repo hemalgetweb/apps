@@ -28,7 +28,7 @@ if($settings['card_height']) {
                                 <p><?php echo get_the_excerpt(); ?></p>
                                 <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="dynamic-service-read-more-btn-114"><?php echo esc_html__('Read more', 'cb-core'); ?>
                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003959"/>
+<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#00C7C7"/>
 </svg>
 
                                 </a>
@@ -44,7 +44,7 @@ if($settings['card_height']) {
 </svg>
 </div>
                 <div class="dynamic-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003959"/>
+<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#73A7C3"/>
 </svg>
 </div>
             </div>

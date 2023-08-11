@@ -94,62 +94,17 @@ if(!empty($category)) {
 						<?php endif; ?>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!--/ blog-pots -->
-
-
-
-
-
-
-
-
-
-<div class="apps-blog-details-area blog-details pt-100 pb-60 d-none">
-	<div class="container">
-		<div class="row justify-content-center">
-			<?php if($cbblog_layout == 'left-sidebar') : ?>
-				<?php if(is_active_sidebar('blog-sidebar')) : ?>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="apps-details-sidebar">
-							<?php dynamic_sidebar( 'blog-sidebar' ); ?>
-						</div>
-					</div>
-				<?php endif; ?>
-			<?php endif; ?>
-			<div class="<?php echo esc_attr($blog_column); ?>">
-				<div class="apps-blog-details-wrapper mb-40">
-					<div class="apps-fz-blog-content-wrapper-448">
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-							<?php  get_template_part( 'post-formates/single-post/content', get_post_format() ); ?>
-						<?php endwhile; ?>
-						<?php  get_template_part( 'post-formates/single-post/content', 'biography' ); ?>
+				<div class="col-12">
+					<div class="apps-comment-114">
 						<div class="comments-area">
 							<?php 
 							comments_template();
 							?>
 						</div>
 					</div>
-					<?php else : ?>
-					<h2><?php esc_html_e('No Posts Found', 'apps') ?></h2>
-					<?php endif; ?>
 				</div>
-			</div>
-			<?php if($cbblog_layout == 'right-sidebar') : ?>
-				<?php if(is_active_sidebar('blog-sidebar')) : ?>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="apps-details-sidebar <?php echo esc_attr($sidebar_space); ?>">
-							<?php if ( is_active_sidebar( 'blog-sidebar' ) ) { ?>
-								<?php dynamic_sidebar( 'blog-sidebar' ); ?>
-							<?php } ?>
-						</div>
-					</div>
-				<?php endif; ?>
-			<?php endif; ?>
-		</div>
-	</div>
-</div>
-
+            </div>
+        </div>
+    </section>
+    <!--/ blog-pots -->
 <?php get_footer(); ?>

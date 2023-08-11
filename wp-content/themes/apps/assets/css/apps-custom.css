@@ -7385,13 +7385,14 @@
      display: none;
  }
 
-.apps-accordion-wrapper-main-114 .accordion-button::before {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: url('data:image/svg+xml,<svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 13H6V15H18V13Z" fill="%2300C7C7"/></svg>');
-}
+ .apps-accordion-wrapper-main-114 .accordion-button::before {
+     content: "";
+     position: absolute;
+     right: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     background: url('data:image/svg+xml,<svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 13H6V15H18V13Z" fill="%2300C7C7"/></svg>');
+ }
 
  .apps-accordion-wrapper-main-114 .accordion-button:focus {
      background-color: transparent;

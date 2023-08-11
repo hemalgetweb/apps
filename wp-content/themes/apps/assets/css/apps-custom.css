@@ -6639,28 +6639,12 @@
      padding-top: 300px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
-
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
-
+.apps-rv-footer-widget-title {
+    color: var(--primary-primary, #00C7C7);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
  .footer-widget ul li a:hover {
      color: #fff;
  }
@@ -8245,27 +8229,8 @@
      font-size: 14px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
 
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
+
 
  .footer-widget ul li a:hover {
      color: #fff;
@@ -19280,27 +19245,8 @@
      padding-top: 300px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
 
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
+
 
  .footer-widget ul li a:hover {
      color: #fff;
@@ -20728,27 +20674,8 @@
      font-size: 14px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
 
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
+
 
  .footer-widget ul li a:hover {
      color: #fff;

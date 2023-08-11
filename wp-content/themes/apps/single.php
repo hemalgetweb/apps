@@ -128,9 +128,7 @@ if(!empty($category)) {
 						<?php  get_template_part( 'post-formates/single-post/content', 'biography' ); ?>
 						<div class="comments-area">
 							<?php 
-								if ( comments_open() || get_comments_number(get_the_ID()) ):
-									comments_template();
-								endif;
+							comments_template();
 							?>
 						</div>
 					</div>

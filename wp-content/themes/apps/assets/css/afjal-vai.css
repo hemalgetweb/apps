@@ -285,3 +285,7 @@ ul.dropdown-menus li.menu-item a::after {
 .recent-post-content .post-title:hover {
     color: #00c7c7 !important;
 }
+
+.mobile-icon-contact-page {
+    margin-right: 10px;
+}

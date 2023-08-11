@@ -9,7 +9,10 @@
 }
 
 .apps-project-prev-114,
-.apps-project-next-114 {
+.apps-project-next-114,
+.dynamic-prev,
+.dynamic-next,
+.swiper-arrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,5 +21,22 @@
 
 .apps-project-prev-114:hover svg *,
 .apps-project-next-114:hover svg * {
-    fill: #ffffff;
+    fill: #003959;
+}
+
+.dynamic-prev:hover svg *,
+.dynamic-next:hover svg * {
+    fill: #003959;
+}
+
+.dynamic-service-read-more-btn-114 svg {
+    margin-left: 7px;
+    transition: all 150ms ease;
+}
+.dynamic-service-read-more-btn-114:hover svg {
+    margin-left: 12px;
+}
+
+.swiper-arrow:hover svg * {
+    fill: #003959;
 }

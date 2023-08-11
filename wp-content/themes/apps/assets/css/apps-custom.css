@@ -10245,7 +10245,6 @@
      display: flex;
      gap: 3px;
      color: var(--dark5);
-     text-transform: uppercase;
  }
 
  .footer .footer-widget-area .footer-widget ul li a svg {

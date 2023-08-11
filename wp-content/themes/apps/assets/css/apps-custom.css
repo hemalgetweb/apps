@@ -50169,3 +50169,9 @@ div#player {
         padding-top: 0 !important;
     }
 }
+@media (max-width: 767px) {
+    .apps-blog-archive-banner-inner-114 .title {
+        margin-bottom: 22px;
+        line-height: 1.4;
+    }
+}

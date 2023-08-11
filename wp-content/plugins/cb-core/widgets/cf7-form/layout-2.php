@@ -24,6 +24,10 @@
                                 </p>
                                 <?php endif; ?>
                             </div>
+                            <div class="apps-contact-us-border-114">
+                                <hr/>
+                                <hr class="mb-15-i"/>
+                            </div>
                             <?php if(!empty($settings['slides'])) : ?>
                             <div class="apps-contact-form-left-114">
                                 <?php foreach($settings['slides'] as $index => $slide) : ?>
@@ -34,8 +38,6 @@
                                         <p><?php echo wp_kses_post( $slide['address_repeater_content'] ); ?></p>
                                     <?php endif; ?>
                                     <?php if($index == 0) : ?>
-                                    <hr/>
-                                    <hr class="mb-15-i"/>
                                     <?php endif; ?>
                                 <?php endforeach; ?>
                             </div>

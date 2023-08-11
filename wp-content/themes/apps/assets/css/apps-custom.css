@@ -25388,6 +25388,7 @@ div#mobileHeader .apps-header-call-number-114 {
     font-size: 18px;
     text-decoration: none;
     display: block;
+    overflow: hidden;
 }
 
 .footer-widget  .apps-footer-widget-contact-info-item-114 .icon {
@@ -25402,4 +25403,12 @@ div#mobileHeader .apps-header-call-number-114 {
 
 .footer-widget  .apps-footer-widget-all-social-list-114 a:not(:last-child) {
     margin-right: 19px;
+}
+@media (max-width: 575px) {
+    .footer-widget  .apps-footer-widget-contact-info-item-114 a, .footer-widget  .apps-footer-widget-contact-info-item-114 span {
+        font-size: 16px;
+    }
+    .footer-widget .apps-footer-widget-contact-info-item-114 {
+        margin-bottom: 19px;
+    }
 }

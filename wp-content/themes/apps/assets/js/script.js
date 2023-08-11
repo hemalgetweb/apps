@@ -1,10 +1,5 @@
 ! function(e) {
 	e(window).on("load", function() {
-        /**
-         * Preloader
-         */
-        $(".preloader").fadeOut(); 
-        $('body').css({'overflow':'visible'});
 		e(".apps-has-portfolio-popup").on("click", function() {
 			var n = e(this).data("url"),
 				i = e(this).data("title"),
@@ -179,4 +174,11 @@
 			t = i.files[0];
 		t ? s(t.name) : s("No file selected")
 	})
+    $(window).on('load', function() {
+        /**
+         * Preloader
+         */
+        $(".preloader").fadeOut(); 
+        $('body').css({'overflow':'visible'});
+    });
 }(jQuery);

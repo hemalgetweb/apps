@@ -7,7 +7,7 @@
 </svg>
 </button>
                 <div class="icon">
-                    <img src="http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/portfolio-logo-icon1.svg" alt="icon">
+                    <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/portfolio-details.svg" alt="icon">
                 </div>
                 <div class="content">
                     <h5 class="title">Easpa – Mobile Wallet App</h5>

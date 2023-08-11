@@ -25412,8 +25412,3 @@ div#mobileHeader .apps-header-call-number-114 {
         margin-bottom: 19px;
     }
 }
-@media (max-width: 1199px) {
-    .footer-widget  .apps-footer-widget-contact-info-item-114 span br {
-        display: none;
-    }
-}

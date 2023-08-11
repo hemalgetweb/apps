@@ -50156,3 +50156,11 @@ div#player {
     width: 32px;
     border-radius: 50%;
 }
+.apps-blog-archive-banner-inner-114 .author-right svg {
+    margin-right: 12px;
+}
+
+.apps-blog-archive-banner-inner-114 .meta span {
+    display: inline-block;
+    transform: translateY(2px);
+}

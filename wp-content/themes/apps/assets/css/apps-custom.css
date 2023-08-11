@@ -25007,3 +25007,14 @@ div#mobileHeader .apps-header-call-number-114 {
 .apps-has-number-text-dubai-114:hover path {
     fill: #003959;
 }
+.apps-contact-us-border-114 hr {
+    margin: 1.5px 0 !important;
+}
+
+.apps-contact-us-border-114 {
+    margin-bottom: 25px;
+}
+
+.contact-left p.text-clr-primary2 {
+    margin-bottom: 0;
+}

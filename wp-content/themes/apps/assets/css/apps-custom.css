@@ -11893,9 +11893,7 @@ a.apps-errror-btn-114 i {
 }
 
 @media (max-width: 991px) {
-    .footer .menu-company-container ul>li:nth-child(even) {
-        padding-left: 20px !important;
-    }
+
 
     .footer .menu-company-container ul>li:nth-child(even)::before {
         left: 0 !important;
@@ -24385,14 +24383,6 @@ a.apps-errror-btn-114 i {
 }
 
 @media (max-width: 991px) {
-    .footer .menu-company-container ul>li:nth-child(even) {
-        padding-left: 20px !important;
-    }
-
-    .footer .menu-company-container ul>li:nth-child(even)::before {
-        left: 0 !important;
-    }
-
     .navbar-nav .menu-item>ul.dropdown-menus li a {
         white-space: revert;
     }

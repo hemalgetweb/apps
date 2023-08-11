@@ -2422,10 +2422,7 @@
      display: unset;
  }
 
- .footer-widget ul li {
-     margin-bottom: 16px;
-     color: #ccc;
- }
+
 
  .footer-widget .nice-select .option.selected {
      font-weight: 600;
@@ -6621,9 +6618,9 @@
      }
  }
 
- .footer-widget ul li {
-     margin-bottom: 1rem;
- }
+.footer-widget ul li {
+	margin-bottom: 11px;
+}
 
  .footer-widget ul li a {
      text-decoration: none;
@@ -6639,28 +6636,12 @@
      padding-top: 300px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
-
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
-
+.apps-rv-footer-widget-title {
+    color: var(--primary-primary, #00C7C7);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
  .footer-widget ul li a:hover {
      color: #fff;
  }
@@ -8231,9 +8212,7 @@
      }
  }
 
- .footer-widget ul li {
-     margin-bottom: 1rem;
- }
+
 
  .footer {
      padding-top: 300px;
@@ -8245,27 +8224,8 @@
      font-size: 14px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
 
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
+
 
  .footer-widget ul li a:hover {
      color: #fff;
@@ -10285,7 +10245,6 @@
      display: flex;
      gap: 3px;
      color: var(--dark5);
-     text-transform: uppercase;
  }
 
  .footer .footer-widget-area .footer-widget ul li a svg {
@@ -15063,10 +15022,7 @@
      display: unset;
  }
 
- .footer-widget ul li {
-     margin-bottom: 16px;
-     color: #ccc;
- }
+
 
  .footer-widget .nice-select .option.selected {
      font-weight: 600;
@@ -19262,9 +19218,7 @@
      }
  }
 
- .footer-widget ul li {
-     margin-bottom: 1rem;
- }
+
 
  .footer-widget ul li a {
      text-decoration: none;
@@ -19280,27 +19234,8 @@
      padding-top: 300px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
 
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
+
 
  .footer-widget ul li a:hover {
      color: #fff;
@@ -20714,9 +20649,7 @@
      }
  }
 
- .footer-widget ul li {
-     margin-bottom: 1rem;
- }
+
 
  .footer {
      padding-top: 300px;
@@ -20728,27 +20661,8 @@
      font-size: 14px;
  }
 
- .apps-rv-footer-widget-title {
-     color: #fff;
-     margin-bottom: 28px;
-     font-size: 20px;
-     font-weight: 700;
-     padding-left: 20px;
-     position: relative;
- }
 
- .apps-rv-footer-widget-title::before {
-     position: absolute;
-     left: 0;
-     top: 50%;
-     width: 10px;
-     height: 10px;
-     content: "";
-     background: rgb(38, 181, 181);
-     transform: rotate(45deg);
-     display: inline-block;
-     margin-top: -5px;
- }
+
 
  .footer-widget ul li a:hover {
      color: #fff;
@@ -25345,8 +25259,8 @@
 div#mobileHeader .apps-header-call-number-114 {
     line-height: 53px;
 }
-
-/ preloader /
+/* 
+/ preloader / */
 
 .preloader{
   background-color: #003959;
@@ -25408,7 +25322,7 @@ div#mobileHeader .apps-header-call-number-114 {
 	visibility: hidden;
 }
 
-/ Dark theme /
+/* / Dark theme / */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg: hsl(var(--hue),90%,10%);
@@ -25416,7 +25330,7 @@ div#mobileHeader .apps-header-call-number-114 {
 	}
 }
 
-/ Animations /
+/* / Animations / */
 @keyframes eye1 {
 	from {
 		transform: rotate(-260deg) translate(0,-56px);

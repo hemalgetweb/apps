@@ -26,7 +26,7 @@
                     <?php if($feature_arr) : ?>
                     <ul>
                         <?php foreach($feature_arr as $feature) : ?>
-                            <li><img decoding="async" src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/check-icon.svg" alt="image"> <?php echo cb_core_kses_basic($feature); ?></li>
+                            <li><img decoding="async" src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/check-icon.svg" alt="image" class=" me-2"> <?php echo cb_core_kses_basic($feature); ?></li>
                         <?php endforeach; ?>
                     </ul>
                     <?php endif; ?>

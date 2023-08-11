@@ -259,9 +259,7 @@ if (defined('JETPACK__VERSION')) {
  * WooCommerce Support
  */
 add_theme_support('woocommerce');
-if (class_exists('TGM_Plugin_Activation')) {
-	require_once APPS_THEME_INC . 'add_plugin.php';
-}
+
 /***
  * Add extra info on menu item
  */

@@ -35,7 +35,7 @@
 			</h5><!-- .comments-title -->
 		</div>
 		<?php the_comments_navigation(); ?>
-		<?php echo comment_form(); ?>
+		<?php comments_template( '', true ); ?>
 		<ol class="comment-list">
 			<?php
 			wp_list_comments(

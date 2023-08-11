@@ -50152,3 +50152,7 @@ div#player {
     grid-gap: 28px;
     flex-wrap: wrap;
 }
+.author-left img {
+    width: 32px;
+    border-radius: 50%;
+}

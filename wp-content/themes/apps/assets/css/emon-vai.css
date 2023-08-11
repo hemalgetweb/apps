@@ -20,3 +20,28 @@
 /* / work progressbar */
 
 
+
+
+
+
+/* all btn update css */
+
+.bg-btn:hover, .bg-btn.active {
+    background-color: #00E2E2 !important;
+    color: #003959;
+}
+.bg-btn:hover .btn-icon, .bg-btn.active .btn-icon {
+    right: 27px;
+}
+.bg-btn.btn-secondary:hover {
+    background-color: #68FF92 !important;
+    color: #003959;
+}
+
+
+.apps-service-link-single-114{
+    
+}
+/* / all btn update css  */
+
+

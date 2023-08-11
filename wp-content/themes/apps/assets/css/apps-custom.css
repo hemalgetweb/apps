@@ -50164,3 +50164,8 @@ div#player {
     display: inline-block;
     transform: translateY(2px);
 }
+@media (max-width: 1199px) {
+    section.blog-details.section-padding {
+        padding-top: 0 !important;
+    }
+}

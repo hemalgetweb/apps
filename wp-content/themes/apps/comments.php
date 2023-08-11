@@ -38,7 +38,7 @@ if ( post_password_required() ) {
 			</h5><!-- .comments-title -->
 		</div>
 		<?php the_comments_navigation(); ?>
-		<?php comment_form(); ?>
+		<?php echo comment_form(); ?>
 		<ol class="comment-list">
 			<?php
 			wp_list_comments(

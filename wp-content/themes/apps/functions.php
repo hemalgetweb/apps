@@ -209,6 +209,7 @@ function apps_scripts()
 	// wp_enqueue_style('apps-ashique-vai', apps_THEME_CSS_DIR . 'ashique-vai.css', null, time());
 	wp_enqueue_style('apps-custom', apps_THEME_CSS_DIR . 'apps-custom.css', null, time());
 	wp_enqueue_style('apps-afjal-vai', apps_THEME_CSS_DIR . 'afjal-vai.css', null, time());
+	wp_enqueue_style('apps-emon-vai', apps_THEME_CSS_DIR . 'emon-vai.css', null, time());
 	// wp_enqueue_style('apps-unit', apps_THEME_CSS_DIR . 'apps-unit.css', null, time());
 
 	// all js

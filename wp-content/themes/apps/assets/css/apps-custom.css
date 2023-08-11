@@ -11245,11 +11245,6 @@
  .page.page-id-3270 footer.footer.bg-clr-deepDark.pt-300 {
      padding-top: 100px;
  }
-
- footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even) {
-     padding-left: 60px;
- }
-
  footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {
      left: 39px;
  }
@@ -24046,10 +24041,6 @@
 
  .page.page-id-3270 footer.footer.bg-clr-deepDark.pt-300 {
      padding-top: 100px;
- }
-
- footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even) {
-     padding-left: 60px;
  }
 
  footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {

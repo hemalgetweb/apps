@@ -26,7 +26,7 @@ background-blend-mode: {$footer_background_blendmode_select_1};
 EOD;
 ?>
 <div class="apps-insta-logo">
-    <a href="https://wa.me/+971586130632"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta-logo.svg" alt="instagram"></a>
+    <a href="https://wa.me/+971586130632"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/whatsapp.svg" alt="instagram"></a>
 </div>
 <!-- footer -->
 <footer class="footer bg-clr-deepDark <?php echo esc_attr($contact_space_top); ?>"

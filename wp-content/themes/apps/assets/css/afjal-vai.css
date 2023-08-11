@@ -271,7 +271,7 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .mc-subscribe-btn {
-    color: #003959;
+    color: #003959 !important;
 }
 
 .apps-contact-form-contact-list-wap-114 a {

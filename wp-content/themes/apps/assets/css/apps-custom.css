@@ -11131,15 +11131,6 @@ h5.apps-project-card-title-114 button {
     padding-top: 100px;
 }
 
-@media (max-width: 575px) {
-    footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even) {
-        padding-left: 20px;
-    }
-
-    footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {
-        left: 0;
-    }
-}
 
 .footer-widget ul li a {
     color: #A8E0FF !important;
@@ -11893,9 +11884,7 @@ a.apps-errror-btn-114 i {
 }
 
 @media (max-width: 991px) {
-    .footer .menu-company-container ul>li:nth-child(even) {
-        padding-left: 20px !important;
-    }
+
 
     .footer .menu-company-container ul>li:nth-child(even)::before {
         left: 0 !important;
@@ -23629,15 +23618,6 @@ h5.apps-project-card-title-114 button {
     padding-top: 100px;
 }
 
-@media (max-width: 575px) {
-    footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even) {
-        padding-left: 20px;
-    }
-
-    footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {
-        left: 0;
-    }
-}
 
 .footer-widget ul li a {
     color: #A8E0FF !important;
@@ -24385,14 +24365,6 @@ a.apps-errror-btn-114 i {
 }
 
 @media (max-width: 991px) {
-    .footer .menu-company-container ul>li:nth-child(even) {
-        padding-left: 20px !important;
-    }
-
-    .footer .menu-company-container ul>li:nth-child(even)::before {
-        left: 0 !important;
-    }
-
     .navbar-nav .menu-item>ul.dropdown-menus li a {
         white-space: revert;
     }
@@ -25416,6 +25388,7 @@ div#mobileHeader .apps-header-call-number-114 {
     font-size: 18px;
     text-decoration: none;
     display: block;
+    overflow: hidden;
 }
 
 .footer-widget  .apps-footer-widget-contact-info-item-114 .icon {
@@ -25430,4 +25403,12 @@ div#mobileHeader .apps-header-call-number-114 {
 
 .footer-widget  .apps-footer-widget-all-social-list-114 a:not(:last-child) {
     margin-right: 19px;
+}
+@media (max-width: 575px) {
+    .footer-widget  .apps-footer-widget-contact-info-item-114 a, .footer-widget  .apps-footer-widget-contact-info-item-114 span {
+        font-size: 16px;
+    }
+    .footer-widget .apps-footer-widget-contact-info-item-114 {
+        margin-bottom: 19px;
+    }
 }

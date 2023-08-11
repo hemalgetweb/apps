@@ -174,11 +174,11 @@
 			t = i.files[0];
 		t ? s(t.name) : s("No file selected")
 	})
-    $(window).on('load', function() {
+    e(window).on('load', function() {
         /**
          * Preloader
          */
-        $(".preloader").fadeOut(); 
-        $('body').css({'overflow':'visible'});
+        e(".preloader").fadeOut(); 
+        e('body').css({'overflow':'visible'});
     });
 }(jQuery);

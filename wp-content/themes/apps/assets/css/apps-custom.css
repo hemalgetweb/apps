@@ -25032,3 +25032,7 @@ div#mobileHeader .apps-header-call-number-114 {
 div#player {
     max-width: 100% !important;
 }
+.psot-details iframe {
+    width: 100%;
+    height: 389px;
+}

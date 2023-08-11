@@ -5,7 +5,7 @@
                 <div class="row align-items-center gx-xl-5">
                     <div class="col-lg-5 mb-5 mb-lg-0">
                         <div class="contact-left">
-                            <div class="mb-5">
+                            <div class="mb-4">
                                 <?php if(!empty($settings['section_subtitle'])) : ?>
                                 <span
                                     class="section-tag fs-12 fw-bold text-uppercase text-clr-primary2 d-inline-flex gap-2 align-items-center mb-2">
@@ -26,7 +26,7 @@
                             </div>
                             <div class="apps-contact-us-border-114">
                                 <hr/>
-                                <hr class="mb-15-i"/>
+                                <hr/>
                             </div>
                             <?php if(!empty($settings['slides'])) : ?>
                             <div class="apps-contact-form-left-114">

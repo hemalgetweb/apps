@@ -24,8 +24,10 @@
                                 </p>
                                 <?php endif; ?>
                             </div>
-                            <hr/>
-                            <hr class="mb-15-i"/>
+                            <div class="apps-contact-us-border-114">
+                                <hr/>
+                                <hr class="mb-15-i"/>
+                            </div>
                             <?php if(!empty($settings['slides'])) : ?>
                             <div class="apps-contact-form-left-114">
                                 <?php foreach($settings['slides'] as $index => $slide) : ?>

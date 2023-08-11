@@ -99,7 +99,6 @@ if(!empty($category)) {
 						<div class="comments-area">
 							<?php 
 							comments_template();
-							comment_form();
 							?>
 						</div>
 					</div>

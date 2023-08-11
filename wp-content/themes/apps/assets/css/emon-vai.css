@@ -49,8 +49,15 @@
     fill: #003959 !important;
 }
 
-.apps-service-link-single-114{
-
+.button-arrow-left-icon:hover {
+    background-color: #00E2E2 !important;
+}
+.apps-btn-primary-114:hover {
+    background-color: #00E2E2 !important;
+}
+.apps-btn-transparent-border-114:hover {
+    background-color: #00E2E2 !important;
+    color: #003959;
 }
 /* / all btn update css  */
 

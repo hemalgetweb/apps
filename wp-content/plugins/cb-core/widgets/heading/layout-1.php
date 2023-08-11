@@ -19,7 +19,7 @@ $enable_container_class = $settings['enable_container'] ? 'container' : 'apps-ha
                     <p class="intro"><?php echo wp_kses_post($settings['description']); ?></p>
                 <?php endif; ?>
                 <?php if(!empty($settings['enable_button'])) : ?>
-                <div class="apps-service-link-wrap-114">
+                <div class="apps-service-link-wrap-114 d-flex gap-4 flex-wrap">
                     <?php if(!empty($settings['btn_text_1'])) :
                     if ( ! empty( $settings['btn_link_1']['url'] ) ) {
                         $this->add_link_attributes( 'btn_link_1', $settings['btn_link_1'] );

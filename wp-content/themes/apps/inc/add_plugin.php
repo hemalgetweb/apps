@@ -24,63 +24,7 @@ function apps_register_required_plugins()
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
      */
-    $plugins = [
-        [
-            'name'     => esc_html__('Classic Editor', 'apps'),
-            'slug'     => 'classic-editor',
-            'required' => false,
-        ],
-        [
-            'name'     => esc_html__('ACF Photo Gallery', 'apps'),
-            'slug'     => 'navz-photo-gallery',
-            'required' => false,
-        ],
-        array(
-            'name'     =>  esc_html__('Kirki Customizer Framework', 'apps'),
-            'slug'     => 'kirki',
-            'required' => false,
-        ),
-        [
-            'name'     => esc_html__('Mailchimp For WP', 'apps'),
-            'slug'     => 'mailchimp-for-wp',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('Menu Image, Icons made easy', 'apps'),
-            'slug'     => 'menu-image',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('Social Sharing Plugin – Sassy Social Share', 'apps'),
-            'slug'     => 'sassy-social-share',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('Yoast Duplicate Post', 'apps'),
-            'slug'     => 'duplicate-post',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('Elementor Website Builder – More than Just a Page Builder', 'apps'),
-            'slug'     => 'elementor',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('SVG Support', 'apps'),
-            'slug'     => 'svg-support',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('Contact Form 7', 'apps'),
-            'slug'     => 'contact-form-7',
-            'required' => true,
-        ],
-        [
-            'name'     => esc_html__('Paid Memberships Pro – Restrict Member Access to Content, Courses, Communities – Free or Paid Subscriptions', 'apps'),
-            'slug'     => 'paid-memberships-pro',
-            'required' => true,
-        ]
-    ];
+   
     $config = [
         'id'           => 'apps', // Unique ID for hashing notices for multiple instances of TGMPA.
         'default_path' => '', // Default absolute path to bundled plugins.

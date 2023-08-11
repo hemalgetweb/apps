@@ -277,3 +277,11 @@ ul.dropdown-menus li.menu-item a::after {
 .apps-contact-form-contact-list-wap-114 a {
     text-transform: lowercase !important;
 }
+
+.recent-post-content .post-title {
+    transition: all 150ms ease !important;
+}
+
+.recent-post-content .post-title:hover {
+    color: #00c7c7 !important;
+}

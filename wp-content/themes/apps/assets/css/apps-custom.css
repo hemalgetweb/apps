@@ -94,12 +94,7 @@ ul {
     padding: 0px;
 }
 
-hr {
-    border-color: #dedede;
-    border-top: 0 none;
-    margin: 30px 0;
-    padding: 0;
-}
+
 
 hr.wp-block-separator {
     border-color: #dedede;
@@ -114,20 +109,20 @@ label {
 }
 
 *::-moz-selection {
-    background: #d6b161;
-    color: #fff;
+    background: #50FF81;
+    color: #003959;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: #444;
-    color: #fff;
+    background: #50FF81;
+    color: #003959;
     text-shadow: none;
 }
 
 ::selection {
-    background: #444;
-    color: #fff;
+    background: #50FF81;
+    color: #003959;
     text-shadow: none;
 }
 
@@ -10592,15 +10587,6 @@ section.tab-project>.container.container-tab-project-114 {
     margin-bottom: 0;
 }
 
-.apps-contact-form-left-114 p {
-    color: var(--dark-dark-5, #A8E0FF);
-    font-size: 14px;
-    font-family: Cairo;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-}
 
 div.apps-contact-form-left-114 hr {
     width: 100%;
@@ -12569,12 +12555,7 @@ ul {
     padding: 0px;
 }
 
-hr {
-    border-color: #dedede;
-    border-top: 0 none;
-    margin: 30px 0;
-    padding: 0;
-}
+
 
 hr.wp-block-separator {
     border-color: #dedede;
@@ -12601,8 +12582,8 @@ label {
 }
 
 ::selection {
-    background: #444;
-    color: #fff;
+    background: #50FF81;
+    color: #003959;
     text-shadow: none;
 }
 
@@ -22744,7 +22725,6 @@ section.tab-project>.container.container-tab-project-114 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: uppercase;
 }
 
 div.apps-contact-form-left-114 hr {
@@ -25016,4 +24996,66 @@ div#mobileHeader .apps-header-call-number-114 {
 
 .apps-has-number-text-dubai-114:hover path {
     fill: #003959;
+}
+.apps-contact-us-border-114 hr {
+    margin: 1.5px 0 !important;
+}
+
+.apps-contact-us-border-114 {
+    margin-bottom: 25px;
+}
+
+.contact-left p.text-clr-primary2 {
+    margin-bottom: 0;
+}
+.blog-content ul, .blog-content ol {
+    padding-left: 25px;
+}
+
+.blog-content ul li, .blog-content ol li {
+    color: var(--dark-dark-2, #1F516D);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+.apps-insta-logo img {
+    max-width: 60px;
+}
+
+.apps-insta-logo.fixed-bottom-right {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+}
+div#player {
+    max-width: 100% !important;
+}
+.psot-details iframe {
+    width: 100%;
+    height: 389px;
+}
+.apps-blog-archive-banner-top-114 {
+    background: var(--dark-dark-1, #003959);
+    padding: 40px 0;
+}
+
+.apps-blog-archive-banner-inner-114 .subtitle {
+    color: var(--primary-primary, #00C7C7);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.apps-blog-archive-banner-inner-114 img {
+    margin-right: 5px;
+}
+
+.apps-blog-archive-banner-inner-114 .title {
+    color: var(--white, #FFF);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px; /* 125% */
 }

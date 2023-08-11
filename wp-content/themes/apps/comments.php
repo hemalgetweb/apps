@@ -1,72 +1,64 @@
 <?php
-/**
- * The template for displaying comments
- *
- * This is the template that displays the area of the page that contains both the current comments
- * and the comment form.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package apps
- */
+if (have_comments()) :
+    // Display comment list
+    ?>
+    <h3><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h3>
+    <ol class="comment-list">
+        <?php wp_list_comments('callback=custom_comment'); ?>
+    </ol>
 
-/*
- * If the current post is protected by a password and
- * the visitor has not yet entered the password we will
- * return early without loading the comments.
- */
-if ( post_password_required() ) {
-	return;
+    <?php
+    // Pagination for comments
+    if (get_comment_pages_count() > 1 && get_option('page_comments')) :
+        ?>
+        <nav class="comment-navigation" role="navigation">
+            <div class="nav-previous"><?php previous_comments_link('&larr; Older Comments'); ?></div>
+            <div class="nav-next"><?php next_comments_link('Newer Comments &rarr;'); ?></div>
+        </nav>
+        <?php
+    endif;
+
+else : // If there are no comments yet
+    if (comments_open()) :
+        // Comment form
+        comment_form();
+    else :
+        // Comments are closed
+        echo '<p class="alert">Comments are closed.</p>';
+    endif;
+endif;
+
+// Custom comment display function
+function custom_comment($comment, $args, $depth) {
+    $GLOBALS['comment'] = $comment;
+    ?>
+    <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+        <div class="comment-author vcard">
+            <?php echo get_avatar($comment, 48); ?>
+            <cite class="fn"><?php comment_author_link(); ?></cite>
+        </div>
+        <?php if ($comment->comment_approved == '0') : ?>
+            <em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
+        <?php endif; ?>
+        <div class="comment-meta commentmetadata">
+            <a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
+                <?php printf('%1$s at %2$s', get_comment_date(), get_comment_time()); ?>
+            </a>
+            <?php edit_comment_link('Edit', '  ', ''); ?>
+        </div>
+        <div class="comment-text">
+            <?php comment_text(); ?>
+        </div>
+        <div class="reply">
+            <?php
+            comment_reply_link(array_merge($args, array(
+                'reply_text' => 'Reply',
+                'depth' => $depth,
+                'max_depth' => $args['max_depth']
+            )));
+            ?>
+        </div>
+    </li>
+    <?php
 }
-?>
-<?php
-	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
-?>
-	<div id="comments" class="comments-area">
-		<div class="comments-title-wrap mb-35">
-			<h5 class="comments-title">
-				<?php
-				$apps_comment_count = get_comments_number();
-				if ( '1' === $apps_comment_count ) {
-					printf(
-						/* translators: 1: title. */
-						esc_html__('1 Comment', 'apps')
-					);
-				} else {
-					printf( 
-						esc_html($apps_comment_count.' Comments')
-					);
-				}
-				?>
-			</h5><!-- .comments-title -->
-		</div>
-		<?php the_comments_navigation(); ?>
-		<ol class="comment-list">
-			<?php
-			wp_list_comments(
-				array(
-					'walker'      => new Farzaa_Walker_Comment(),
-					'style'      => 'ol',
-					'avatar_size' => 100,
-					'short_ping' => true,
-				)
-			);
-			?>
-		</ol><!-- .comment-list -->
-
-		
-
-	</div><!-- #comments -->
-<?php
-// Check for have_comments(). 
-endif; ?>
-<?php
-	// If comments are closed and there are comments, let's leave a little note, shall we?
-	if ( ! comments_open() ) :
-		?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'apps' ); ?></p>
-		<?php
-	endif;
-	comment_form();
 ?>

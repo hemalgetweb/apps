@@ -26,21 +26,38 @@
 
 /* all btn update css */
 
+
+.bg-btn{
+    background-color: #00C7C7;
+}
 .bg-btn:hover, .bg-btn.active {
     background-color: #00E2E2 !important;
     color: #003959;
 }
 .bg-btn:hover .btn-icon, .bg-btn.active .btn-icon {
-    right: 27px;
+    right: 22px;
+}
+
+.bg-btn.btn-secondary{
+    background-color: #50FF81;
 }
 .bg-btn.btn-secondary:hover {
     background-color: #68FF92 !important;
     color: #003959;
 }
+.apps-has-number-text-dubai-114:hover svg path {
+    fill: #003959 !important;
+}
 
-
-.apps-service-link-single-114{
-    
+.button-arrow-left-icon:hover {
+    background-color: #00E2E2 !important;
+}
+.apps-btn-primary-114:hover {
+    background-color: #00E2E2 !important;
+}
+.apps-btn-transparent-border-114:hover {
+    background-color: #00E2E2 !important;
+    color: #003959;
 }
 /* / all btn update css  */
 

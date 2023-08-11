@@ -10463,15 +10463,6 @@
      padding-right: 0;
  }
 
- .footer .footer-widget-area .footer-widget ul li::before {
-     content: "\f105";
-     position: absolute;
-     left: 0;
-     top: 50%;
-     transform: translateY(-50%);
-     font-family: "Font awesome 6 pro";
- }
-
  .menu-footer-social-container li {
      width: 100% !important;
  }
@@ -11244,9 +11235,6 @@
 
  .page.page-id-3270 footer.footer.bg-clr-deepDark.pt-300 {
      padding-top: 100px;
- }
- footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {
-     left: 39px;
  }
 
  .pt-40 {
@@ -24042,11 +24030,6 @@
  .page.page-id-3270 footer.footer.bg-clr-deepDark.pt-300 {
      padding-top: 100px;
  }
-
- footer.footer.bg-clr-deepDark .menu-company-container ul>li:nth-child(even)::before {
-     left: 39px;
- }
-
  .pt-40 {
      padding-top: 40px;
  }

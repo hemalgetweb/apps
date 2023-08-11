@@ -33,7 +33,9 @@ if(!empty($category)) {
 		<div class="apps-blog-archive-banner-top-114">
 			<div class="container">
 				<div class="apps-blog-archive-banner-inner-114">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="image"><span class="subtitle">Digital Marketing</span>
+					<div class="apps-blog-archive-banner-subtitle-group">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="image"><span class="subtitle">Digital Marketing</span>
+					</div>
 					<h4 class="title">Contrary to popular belief, Lorem Ipsum is not simply random text. It roots in a piece</h4>
 					<div class="meta">
 						<div class="author-left">

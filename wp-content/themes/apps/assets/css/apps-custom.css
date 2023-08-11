@@ -25036,3 +25036,26 @@ div#player {
     width: 100%;
     height: 389px;
 }
+.apps-blog-archive-banner-top-114 {
+    background: var(--dark-dark-1, #003959);
+    padding: 40px 0;
+}
+
+.apps-blog-archive-banner-inner-114 .subtitle {
+    color: var(--primary-primary, #00C7C7);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.apps-blog-archive-banner-inner-114 img {
+    margin-right: 5px;
+}
+
+.apps-blog-archive-banner-inner-114 .title {
+    color: var(--white, #FFF);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px; /* 125% */
+}

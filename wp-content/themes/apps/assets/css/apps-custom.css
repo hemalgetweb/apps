@@ -50171,6 +50171,7 @@ div#player {
 }
 @media (max-width: 767px) {
     .apps-blog-archive-banner-inner-114 .title {
+        font-size: 32px;
         margin-bottom: 22px;
         line-height: 1.4;
     }

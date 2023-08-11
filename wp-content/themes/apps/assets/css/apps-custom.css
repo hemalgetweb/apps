@@ -50122,3 +50122,33 @@ div#player {
     font-weight: 600;
     line-height: 60px; /* 125% */
 }
+
+.apps-blog-archive-banner-inner-114 .author-left span {
+    color: var(--white, #FFF);
+
+/* Headline/H5/SamiBold */
+    font-family: Cairo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+}
+
+.apps-blog-archive-banner-inner-114 .author-right span {
+    color: var(--dark-dark-5, #A8E0FF);
+
+/* Text/tag_sm */
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.apps-blog-archive-banner-inner-114 .meta {
+    display: flex;
+    grid-gap: 28px;
+    flex-wrap: wrap;
+}

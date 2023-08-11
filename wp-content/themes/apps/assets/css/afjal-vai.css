@@ -269,3 +269,11 @@ ul.dropdown-menus li.menu-item a::after {
 .apps-search-post-for-home-114 {
     padding-left: 8px;
 }
+
+.mc-subscribe-btn {
+    color: #003959;
+}
+
+.apps-contact-form-contact-list-wap-114 a {
+    text-transform: lowercase !important;
+}

@@ -35,7 +35,7 @@
                                     $this->add_link_attributes('btn_link', $settings['btn_link']);
                                 }
                                 ?>
-                                <a class="btn position-relative rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
+                                <a class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
                                     <?php echo $this->get_render_attribute_string('btn_link'); ?>>
                                     <?php echo cb_core_kses_basic($settings['btn_text']); ?>
                                     <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
@@ -51,7 +51,7 @@
                                     $this->add_link_attributes('btn_link2', $settings['btn_link2']);
                                 }
                                 ?>
-                                <a class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 bg-clr-secondary text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
+                                <a class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
                                 <?php echo $this->get_render_attribute_string('btn_link2'); ?>
                                 >
                                     <?php echo cb_core_kses_basic($settings['btn_text2']); ?>

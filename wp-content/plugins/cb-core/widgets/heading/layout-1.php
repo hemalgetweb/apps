@@ -25,9 +25,9 @@ $enable_container_class = $settings['enable_container'] ? 'container' : 'apps-ha
                         $this->add_link_attributes( 'btn_link_1', $settings['btn_link_1'] );
                     }    
                     ?>
-                    <a <?php echo $this->get_render_attribute_string( 'btn_link_1' ); ?> class="apps-service-link-single-114"><?php echo esc_html($settings['btn_text_1']); ?> 
+                    <a <?php echo $this->get_render_attribute_string( 'btn_link_1' ); ?> class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"><?php echo esc_html($settings['btn_text_1']); ?> 
                         
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="btn-icon position-absolute" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 15L9.115 14.115L12.6042 10.625H5V9.375H12.6042L9.115 5.885L10 5L15 10L10 15Z" fill="#003959"/>
                         </svg>
                         
@@ -38,9 +38,9 @@ $enable_container_class = $settings['enable_container'] ? 'container' : 'apps-ha
                         $this->add_link_attributes( 'btn_link_2', $settings['btn_link_2'] );
                     }    
                     ?>
-                    <a <?php echo $this->get_render_attribute_string( 'btn_link_2' ); ?> class="apps-service-link-single-114 style-2"><?php echo esc_html($settings['btn_text_2']); ?> 
+                    <a <?php echo $this->get_render_attribute_string( 'btn_link_2' ); ?> class="btn position-relative rounded bg-btn btn-secondary text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"><?php echo esc_html($settings['btn_text_2']); ?> 
                         
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="btn-icon position-absolute " width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 15L9.115 14.115L12.6042 10.625H5V9.375H12.6042L9.115 5.885L10 5L15 10L10 15Z" fill="#003959"/>
                         </svg>
                         

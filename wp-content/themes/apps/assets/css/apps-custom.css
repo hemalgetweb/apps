@@ -110,19 +110,19 @@ label {
 
 *::-moz-selection {
     background: #50FF81;
-    color: #fff;
+    color: #003959;
     text-shadow: none;
 }
 
 ::-moz-selection {
     background: #50FF81;
-    color: #fff;
+    color: #003959;
     text-shadow: none;
 }
 
 ::selection {
     background: #50FF81;
-    color: #fff;
+    color: #003959;
     text-shadow: none;
 }
 
@@ -12583,7 +12583,7 @@ label {
 
 ::selection {
     background: #50FF81;
-    color: #fff;
+    color: #003959;
     text-shadow: none;
 }
 

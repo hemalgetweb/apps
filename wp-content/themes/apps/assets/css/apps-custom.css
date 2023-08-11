@@ -25418,3 +25418,7 @@ div#mobileHeader .apps-header-call-number-114 {
         display: none;
     }
 }
+.apps-job-list-box-action-list-114 a svg {
+    transform: translateY(-2px);
+    margin-left: 6px;
+}

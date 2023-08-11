@@ -19,10 +19,6 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<?php
-	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
-?>
 	<div id="comments" class="comments-area">
 		<div class="comments-title-wrap mb-35">
 			<h5 class="comments-title">
@@ -59,14 +55,3 @@ if ( post_password_required() ) {
 
 	</div><!-- #comments -->
 <?php
-// Check for have_comments(). 
-endif; ?>
-<?php
-	// If comments are closed and there are comments, let's leave a little note, shall we?
-	if ( ! comments_open() ) :
-		?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'apps' ); ?></p>
-		<?php
-	endif;
-	comment_form();
-?>

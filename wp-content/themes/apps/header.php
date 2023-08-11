@@ -61,7 +61,8 @@ $body_background_color = function_exists( 'get_field' ) ? get_field( 'body_backg
 						</svg>
 					</div>
 				</div>
-			<!-- preloader end -->
+			<!-- preloader end --> 
+
 		<?php endif; ?>
 
 <!-- header start -->

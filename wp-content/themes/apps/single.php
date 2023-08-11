@@ -44,9 +44,9 @@ if(!empty($category)) {
                                         <?php echo $cat_name; ?>
                                     </span>
 									<?php endif; ?>
-                                    <h2 class="blog-title text-clr-dark1 fs-36 fw-bold mb-3">
+                                    <h1 class="blog-title text-clr-dark1 fs-36 fw-bold mb-3">
 										<?php the_title(); ?>
-                                    </h2>
+                                    </h1>
 									<!-- display none -->
                                     <div
                                         class="d-none authors text-decoration-none d-flex gap-2 gap-lg-3 align-items-center">

@@ -6641,6 +6641,7 @@ img {
    font-size: 18px;
    font-weight: 700;
    line-height: 28px;
+   margin-bottom: 33px;
 }
 .footer-widget ul li a:hover {
     color: #fff;
@@ -25409,4 +25410,24 @@ div#mobileHeader .apps-header-call-number-114 {
    to {
        stroke-dashoffset: -351.86;
    }
+}
+.footer-widget  .apps-footer-widget-contact-info-item-114 a, .footer-widget  .apps-footer-widget-contact-info-item-114 span {
+    color: var(--dark-dark-5, #A8E0FF);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-widget  .apps-footer-widget-contact-info-item-114 .icon {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-widget .apps-footer-widget-contact-info-item-114 {
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.footer-widget  .apps-footer-widget-all-social-list-114 a:not(:last-child) {
+    margin-right: 19px;
 }

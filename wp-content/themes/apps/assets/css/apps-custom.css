@@ -25008,3 +25008,14 @@ div#mobileHeader .apps-header-call-number-114 {
 .contact-left p.text-clr-primary2 {
     margin-bottom: 0;
 }
+.blog-content ul, .blog-content ol {
+    padding-left: 25px;
+}
+
+.blog-content ul li, .blog-content ol li {
+    color: var(--dark-dark-2, #1F516D);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 8px;
+}

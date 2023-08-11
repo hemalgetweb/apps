@@ -10457,13 +10457,6 @@
  .footer .footer-widget-area .footer-widget ul li a:focus {
      color: #fff;
  }
-
- .footer .footer-widget-area .footer-widget ul li {
-     width: 50%;
-     float: left;
-     padding-right: 10px;
- }
-
  .footer .footer-widget-area .footer-widget ul li {
      position: relative;
      padding-left: 20px;
@@ -23284,42 +23277,6 @@
      }
  }
 
- .footer .footer-widget-area .footer-widget ul li a {
-     display: flex;
-     gap: 3px;
-     color: var(--dark5);
-     text-transform: uppercase;
- }
-
- .footer .footer-widget-area .footer-widget ul li a svg {
-     margin-top: 3px;
- }
-
- .footer .footer-widget-area .footer-widget ul li a:hover,
- .footer .footer-widget-area .footer-widget ul li a:focus {
-     color: #fff;
- }
-
- .footer .footer-widget-area .footer-widget ul li {
-     width: 50%;
-     float: left;
-     padding-right: 10px;
- }
-
- .footer .footer-widget-area .footer-widget ul li {
-     position: relative;
-     padding-left: 20px;
-     padding-right: 0;
- }
-
- .footer .footer-widget-area .footer-widget ul li::before {
-     content: "\f105";
-     position: absolute;
-     left: 0;
-     top: 50%;
-     transform: translateY(-50%);
-     font-family: "Font awesome 6 pro";
- }
 
  .menu-footer-social-container li {
      width: 100% !important;

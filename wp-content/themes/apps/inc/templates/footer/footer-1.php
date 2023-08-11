@@ -13,8 +13,8 @@ $contact_space_top = $contact_page_id == $current_page_id ? 'pt-100' : 'pt-300';
 /*
 cmt_section_footer_2: start section Footer 1
 */
-$footer_class_2[1] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-3 mb-3';
-$footer_class_2[2] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-3 mb-3';
+$footer_class_2[1] = 'col-sm-6 col-md-4 col-xl-3 col-lg-3 col-xxl-3 mb-3';
+$footer_class_2[2] = 'col-sm-6 col-md-8 col-xl-3 col-lg-3 col-xxl-3 mb-3';
 $footer_class_2[3] = 'col-sm-12 col-md-12 col-xl-6 col-lg-6 col-xxl-6 mb-3';
 $bg_properties = <<<EOD
 background-size: {$footer_background_size_1};

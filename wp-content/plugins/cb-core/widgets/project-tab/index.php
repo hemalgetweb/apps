@@ -136,7 +136,7 @@ class CB_Core_ProjectTab extends Widget_Base
 			[
 				'label' => __('Category', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => apps_drop_cat('category', 'project'),
+				'options' => apps_drop_cat('project_category', 'project'),
 				'multiple' => true,
 				'label_block' => true,
 			]

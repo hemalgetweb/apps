@@ -131,15 +131,16 @@
                 </div>
                 <?php if (!empty($settings['cat_query'])): ?>
                     <?php foreach($settings['cat_query'] as $index=>$category) :
+                    var_dump($category);
                     $single_query_arg = array(
-                        'post_type' => 'project'
-                        // 'tax_query' => array(
-                        //     array(
-                        //         'taxonomy' => 'project_category',
-                        //         'field' => 'term_id',
-                        //         'terms' => $category,
-                        //     ),
-                        // ),
+                        'post_type' => 'project',
+                            'tax_query' => array(
+                            array(
+                                'taxonomy' => 'project_category',
+                                'field'    => 'term_id',
+                                'terms'    => 29, // Replace with the term ID you want to query
+                            ),
+                        ),
                     );
 
                 $single_query_arg_query = new \WP_Query($single_query_arg);
@@ -151,7 +152,6 @@
                             <?php while($single_query_arg_query->have_posts()) : 
                                 $single_query_arg_query->the_post();
                                 $post_id = get_the_ID();
-                                echo $post_id;
                                 $categories = get_the_category($post_id);
                                 $cat_name = '';
                                 $cat_id = '';

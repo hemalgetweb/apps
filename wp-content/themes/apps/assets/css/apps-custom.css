@@ -44073,7 +44073,12 @@ table.woocommerce-grouped-product-list.group_table td>span>bdi {
     left: 0;
     top: 100%;
 }
-
+@media (max-width: 575px) {
+    div#mobileHeader .apps-header-call-number-114 {
+        line-height: 53px;
+        text-align: center;
+    }
+}
 .navbar-nav .menu-item>ul.dropdown-menus::after {
     content: "";
     background-image: url(http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/Rectangle-2493.png);

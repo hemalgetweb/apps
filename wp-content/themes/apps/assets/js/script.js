@@ -3,7 +3,7 @@
     const sections = document.querySelectorAll("section.apps-panel[id]");
 
     // Add an event listener listening for scroll
-    window.addEventListener("scroll", navHighlighter);
+    document.querySelector('.scrollable-question-area').addEventListener("scroll", navHighlighter);
 
     function navHighlighter() {
 

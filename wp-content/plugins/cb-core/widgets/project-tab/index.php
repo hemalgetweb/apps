@@ -171,7 +171,6 @@ class CB_Core_ProjectTab extends Widget_Base
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // Get the current page number.
 
 		$posts_per_page = 10; // Number of posts to display per page.
-		
 		$query_args = array(
 			'post_type' => 'project',
 			'tax_query' => array(
@@ -184,6 +183,9 @@ class CB_Core_ProjectTab extends Widget_Base
 			'paged' => $paged, // Set the current page number for pagination.
 			'posts_per_page' => $posts_per_page, // Set the number of posts per page.
 		);
+		var_dump($query_args);
+
+	$single_query_arg_query = new \WP_Query($single_query_arg);
 		$all_wp_query = new \WP_Query($query_args);
 		?>
 		<?php include dirname(__FILE__) . '/' . $settings['layout'] . '.php';

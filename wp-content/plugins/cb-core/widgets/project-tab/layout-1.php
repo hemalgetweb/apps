@@ -131,7 +131,6 @@
                 </div>
                 <?php if (!empty($settings['cat_query'])): ?>
                     <?php foreach($settings['cat_query'] as $index=>$category) :
-                    var_dump($category);
                     $single_query_arg = array(
                         'post_type' => 'project',
                             'tax_query' => array(

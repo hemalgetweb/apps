@@ -32,9 +32,17 @@
             <div class="swiper-container apps-project-active-114">
                 <?php if($wp_query->have_posts()) : ?>
                 <div class="swiper-wrapper">
-                    <?php while($wp_query->have_posts()) : $wp_query->the_post();
+                    <?php 
+                    $post_type = 'project';
+                    $taxonomy = 'project_category';
+                    while($wp_query->have_posts()) : $wp_query->the_post();
                     $post_id = get_the_ID();
-                    $categories = get_the_category();
+                    $categories = get_categories(array(
+                        'post_type' => $post_type,
+                        'taxonomy' => $taxonomy,
+                        'orderby' => 'name', // You can change the ordering method
+                        'order' => 'ASC',    // Change to 'DESC' if needed
+                    ));
                     $cat_name = '';
                     $cat_id = '';
                     $cat_link = '';
@@ -53,17 +61,25 @@
                                 <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
                             </div>
                             <?php endif; ?>
-                            <div class="apps-project-card-description-wrapper-114">
+                            <div class="apps-project-card-description-wrapper-114"  data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>" >
                                 <div class="row">
                                     <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                         <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
-                                        <?php if(!empty($cat_name)) : ?>
-                                            <a href="#0" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
-                                        <?php endif; ?>
+                                        <?php
+                                        if ($categories && !is_wp_error($categories)) {
+                                            $first_category = reset($categories); // Get the first category
+                                    
+                                            if ($first_category) {
+                                                $cat_name = $first_category->name;
+                                                echo '<a href="#0" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
+                                            }
+                                        }
+                                    
+                                        ?>
                                     </div>
                                     <div class="col-xxl-2 col-xl-2">
                                         <div class="apps-project-card-action-icon-114 text-xl-end">
-                                            <button data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>" class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" loading="async" width="20" height="20" alt="project"></button>
+                                            <button class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" loading="async" width="20" height="20" alt="project"></button>
                                         </div>
                                     </div>
                                 </div>

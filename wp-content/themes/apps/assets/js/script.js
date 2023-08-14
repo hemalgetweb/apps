@@ -1,6 +1,6 @@
 // scrollable content sections
     // Get all sections that have an ID defined
-    const sections = document.querySelectorAll("section[id]");
+    const sections = document.querySelectorAll(".scrollable-question-area");
 
     // Add an event listener listening for scroll
     window.addEventListener("scroll", navHighlighter);
@@ -24,9 +24,9 @@
                 scrollY > sectionTop &&
                 scrollY <= sectionTop + sectionHeight
             ) {
-                document.querySelector(".apps-scrollable-content-sections-nav-114 a[href*=" + sectionId + "]").classList.add("active");
+                document.querySelector(".apps-scrollable-content-sections-nav-114 nav ul li a[href*=" + sectionId + "]").classList.add("active");
             } else {
-                document.querySelector(".apps-scrollable-content-sections-nav-114 a[href*=" + sectionId + "]").classList.remove("active");
+                document.querySelector(".apps-scrollable-content-sections-nav-114 nav ul li a[href*=" + sectionId + "]").classList.remove("active");
             }
         });
     }

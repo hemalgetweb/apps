@@ -50185,9 +50185,8 @@ div#player {
 .process {
     background-image: url("../img/process-bg.svg");
     background-size: auto;
-    background-position: center;
+    background-position: 0 7px;
     background-repeat: no-repeat;
-    height: 674px;
 }
 @media (max-width: 767px) {
     .process {

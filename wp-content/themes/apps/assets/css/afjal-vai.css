@@ -283,3 +283,8 @@ ul.dropdown-menus li.menu-item a::after {
 .mobile-icon-contact-page {
     margin-right: 10px;
 }
+
+.btn,
+.elementor-button {
+    text-transform: math-auto !important;
+}

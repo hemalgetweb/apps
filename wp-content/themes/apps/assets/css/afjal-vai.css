@@ -291,3 +291,8 @@ ul.dropdown-menus li.menu-item a::after {
 .elementor-button {
     text-transform: none !important;
 }
+
+.apps-tab-faq-left-114 {
+    position: sticky;
+    top: 200px;
+}

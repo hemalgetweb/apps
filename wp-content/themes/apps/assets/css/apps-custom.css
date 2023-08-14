@@ -50294,12 +50294,12 @@ div#player {
     
     
 
-  /**
-  Hemal css
-  */
+/**
+    Hemal css
+*/
   @media (max-width: 575px) {
     div#mobileHeader .apps-header-call-number-114 {
-        line-height: 53px;
+        flex: 0 0 100%;
         text-align: center;
     }
 }

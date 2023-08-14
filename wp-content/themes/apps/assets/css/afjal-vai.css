@@ -286,6 +286,8 @@ ul.dropdown-menus li.menu-item a::after {
 
 .btn,
 .price-btn,
+.apps-btn-primary-114,
+.apps-btn-transparent-border-114,
 .elementor-button {
     text-transform: none !important;
 }

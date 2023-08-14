@@ -1,41 +1,35 @@
 // scrollable content sections
     // Get all sections that have an ID defined
-    const sections = document.querySelectorAll("section.apps-panel[id]");
+	const sections = document.querySelectorAll('.scrollable-question-area section');
 
-    // Add an event listener listening for scroll
-    document.querySelector('.scrollable-question-area').addEventListener("scroll", navHighlighter);
+	// Add an event listener listening for scroll
+	document.querySelector('.scrollable-question-area').addEventListener('scroll', navHighlighter);
 
-    function navHighlighter() {
+	function navHighlighter() {
+		// Get current scroll position
+		let scrollY = window.pageYOffset;
 
-        // Get current scroll position
-        let scrollY = window.pageYOffset;
+		// Loop through sections to get height, top, and ID values for each
+		sections.forEach(current => {
+			const sectionHeight = current.offsetHeight;
+			const sectionTop = current.offsetTop - 50;
+			const sectionId = current.getAttribute('id');
+			console.log('section id: ' + sectionId);
+			console.log('section height: ' + sectionHeight);
+			console.log('section top: ' + sectionTop);
+			console.log('Scrolly: ' + scrollY);
+			const sectionTopHeight = sectionTop + sectionHeight;
+			console.log('top+height: ' + sectionTopHeight);
 
-        // Now we loop through sections to get height, top and ID values for each
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 50;
-            var sectionId = current.getAttribute("id");
-			console.log('current');
-			console.log(current);
-			console.log('section id: '+sectionId);
-			console.log('section height: '+sectionHeight);
-			console.log('section top: '+sectionTop);
-			console.log('Scrolly: '+scrollY);
-			var sectionTopHeight = sectionTop + sectionHeight;
-			console.log('top+height: '+ sectionTopHeight);
-            if (
-                scrollY > sectionTop &&
-                scrollY <= sectionTop + sectionHeight
-            ) {
+			if (scrollY > sectionTop && scrollY <= sectionTopHeight) {
 				console.log('add execute');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 nav ul li a[href*=" + sectionId + "]").classList.add("active");
-            } else {
+				document.querySelector('.apps-scrollable-content-sections-nav-114 nav ul li a[href*="' + sectionId + '"]').classList.add('active');
+			} else {
 				console.log('delete execute');
-                document.querySelector(".apps-scrollable-content-sections-nav-114 nav ul li a[href*=" + sectionId + "]").classList.remove("active");
-            }
-        });
-    }
-
+				document.querySelector('.apps-scrollable-content-sections-nav-114 nav ul li a[href*="' + sectionId + '"]').classList.remove('active');
+			}
+		});
+	}
     // scrollable content sections = End
 
 

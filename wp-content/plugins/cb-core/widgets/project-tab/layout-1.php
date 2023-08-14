@@ -36,13 +36,23 @@
                         <button class="nav-link active" id="nav-tab1-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-tab1" type="button" role="tab" aria-controls="nav-tab1"
                             aria-selected="true">All Projects</button>
-                        <?php if (!empty($settings['cat_query'])): ?>
-                            <?php foreach ($settings['cat_query'] as $index => $cat_id): echo $cat_id; ?>
-                                <button class="nav-link" id="nav-tab<?php echo $index + 2; ?>-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-tab<?php echo $index + 2; ?>" type="button" role="tab"
-                                    aria-controls="nav-tab<?php echo $index + 2; ?>" aria-selected="false"><?php echo get_cat_name($cat_id); ?></button>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
+                            <?php if (!empty($settings['cat_query'])): ?>
+                                <?php foreach ($settings['cat_query'] as $index => $cat_id): 
+                                    $term_id = $cat_id; // Replace with the actual term ID you want to retrieve
+                                    $taxonomy = 'project_category'; // Replace with your custom taxonomy slug
+                                    
+                                    $term = get_term($term_id, $taxonomy);
+                                    
+                                    if (!is_wp_error($term) && $term) {
+                                        $term_name = $term->name;
+                                    ?>
+                                        <button class="nav-link" id="nav-tab<?php echo $index + 2; ?>-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-tab<?php echo $index + 2; ?>" type="button" role="tab"
+                                            aria-controls="nav-tab<?php echo $index + 2; ?>" aria-selected="false"><?php echo esc_html($term_name); ?></button>
+                                    <?php
+                                    }
+                                endforeach; ?>
+                            <?php endif; ?>
                     </div>
                 </nav>
             </div>

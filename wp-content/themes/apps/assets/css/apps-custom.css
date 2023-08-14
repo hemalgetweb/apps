@@ -50284,3 +50284,6 @@ div#player {
   .job_description .job_key li:before {
     display: none;
 }
+.job_summary .job_key li::before {
+    display: none;
+}

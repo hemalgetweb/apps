@@ -20,6 +20,7 @@
 			console.log('section id: '+sectionId);
 			console.log('section height: '+sectionHeight);
 			console.log('section top: '+sectionTop);
+			console.log('Scrolly: '+scrollY);
 			console.log('top+height: '+ sectionTop + sectionHeight);
             if (
                 scrollY > sectionTop &&

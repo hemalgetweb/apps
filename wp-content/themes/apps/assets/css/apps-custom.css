@@ -50176,3 +50176,111 @@ div#player {
         line-height: 1.4;
     }
 }
+/**
+    * Faysal vai css
+*/
+.process {
+    background-image: url("../img/process-bg.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 674px;
+  
+    @media (max-width: 767px) {
+      background-image: url("../img/process-mobile-bg.svg");
+      height: 1560px;
+      background-position: left 23px center;
+    }
+  }
+  
+  .process-item {
+    margin-top: -15px;
+    margin-bottom: 81px;
+  
+    @media (max-width: 767px) {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  .process-inner {
+    max-width: 255px;
+    width: 100%;
+    text-align: center;
+  
+    @media (max-width: 767px) {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+  .process-icon {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  
+  .process-m-icon {
+    display: none;
+  
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+  
+  .process-title {
+    color: #003959;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  
+    @media (max-width: 767px) {
+      text-align: left;
+    }
+  }
+  
+  .process-desc {
+    color: #1f516d;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+  
+    @media (max-width: 767px) {
+      text-align: left;
+    }
+  }
+  
+  .ml-auto {
+    margin-left: auto;
+  
+    @media (max-width: 767px) {
+      margin-left: unset;
+    }
+  }
+  
+  .mr-auto {
+    margin-right: auto;
+  
+    @media (max-width: 767px) {
+      margin-right: unset;
+    }
+  }
+  
+  
+  .h-500{
+    height: 500px;
+  }
+  .job_description .job_key li:before {
+    display: none;
+}

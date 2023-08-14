@@ -129,18 +129,18 @@
                     ?>
                 </div>
                 </div>
-            <?php if (!empty($settings['cat_query'])): ?>
-                <?php foreach($settings['cat_query'] as $index=>$category) :
-                $single_query_arg = array(
-                    'post_type' => 'project',
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'project_category',
-                            'field' => 'term_id',
-                            'terms' => $category,
+                <?php if (!empty($settings['cat_query'])): ?>
+                    <?php foreach($settings['cat_query'] as $index=>$category) :
+                    $single_query_arg = array(
+                        'post_type' => 'project',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'project_category',
+                                'field' => 'term_id',
+                                'terms' => $category,
+                            ),
                         ),
-                    ),
-                );
+                    );
 
                 $single_query_arg_query = new \WP_Query($single_query_arg);
                 ?>

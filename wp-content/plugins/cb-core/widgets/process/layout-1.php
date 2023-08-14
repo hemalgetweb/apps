@@ -13,7 +13,7 @@
                     $position_aos_fade = "fade-left";
                 }
                 $ml_class = '';
-                if($index % 3 == 0) {
+                if($index == 0 || $index == 3 || $index == 6) {
                     $ml_class = 'ml-auto';
                 } elseif($index == 2 || $index == 5 || $index == 8) {
                     $ml_class = 'mr-auto';

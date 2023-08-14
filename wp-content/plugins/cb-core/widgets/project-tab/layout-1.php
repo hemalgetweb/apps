@@ -136,7 +136,7 @@
                         'tax_query' => array(
                             array(
                                 'taxonomy' => 'project_category',
-                                'field' => 'term_id',
+                                'field' => 'tag_ID',
                                 'terms' => $category,
                             ),
                         ),

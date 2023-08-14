@@ -1,3 +1,4 @@
+
 body {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -249,7 +250,9 @@ article.postbox .postbox__thumb img {
 .sidebar-search-form input:focus::placeholder {
     opacity: 0;
 }
-
+section.job_post.section-padding .job_key li:before {
+    display: none;
+}
 .sidebar-search-form input:focus::-moz-placeholder {
     opacity: 0;
 }
@@ -50288,4 +50291,5 @@ div#player {
   .h-500 {
     height: 500px;
   }
+    
     

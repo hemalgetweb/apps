@@ -135,7 +135,7 @@
                     'post_type' => 'project',
                     'tax_query' => array(
                         array(
-                            'taxonomy' => 'category',
+                            'taxonomy' => 'project_category',
                             'field' => 'term_id',
                             'terms' => $category,
                         ),

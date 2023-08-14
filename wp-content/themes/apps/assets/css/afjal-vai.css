@@ -285,6 +285,7 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .btn,
+.price-btn,
 .elementor-button {
-    text-transform: math-auto !important;
+    text-transform: none !important;
 }

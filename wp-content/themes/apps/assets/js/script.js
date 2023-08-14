@@ -5,8 +5,8 @@
 
 ! function (e) {
 	// Get all sections that have an ID defined
-	e('.apps-scrollable-content-sections-nav-114').on('click', function() {
-		e('.apps-scrollable-content-sections-nav-114').removeClass('active');
+	e('.apps-scrollable-content-sections-nav-114 li a').on('click', function() {
+		e('.apps-scrollable-content-sections-nav-114 li a').removeClass('active');
 		e(this).addClass('active');
 	})
 	e(window).on("load", function () {

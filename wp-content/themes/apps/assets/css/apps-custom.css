@@ -50302,3 +50302,21 @@ div#player {
 }
 body.elementor-panel-loading #elementor-panel-state-loading {
 display: none !important;}
+
+.apps-scrollable-content-sections-nav-114 ul li a.active {
+    color: #26B5B5;
+}
+
+.apps-scrollable-content-sections-nav-114 ul li a {
+    position: relative;
+}
+
+.apps-scrollable-content-sections-nav-114 ul li a.active::before {
+    position: absolute;
+    left: -32px;
+    top: 0;
+    height: 100%;
+    background: #26B5B5;
+    width: 3px;
+    content: "";
+}

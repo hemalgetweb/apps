@@ -56,12 +56,10 @@
                         <div class="row row-cols-xxl-5">
                             <?php while ($all_wp_query->have_posts()):
                                 $all_wp_query->the_post();
-                                $post_type = 'project';
+                                the_title();
                                 $taxonomy = 'project_category';
                                 $categories = get_categories(array(
-                                    'taxonomy' => $taxonomy,
-                                    'orderby' => 'name', // You can change the ordering method
-                                    'order' => 'ASC',    // Change to 'DESC' if needed
+                                    'taxonomy' => $taxonomy
                                 ));
                                 $cat_name = '';
                                 $cat_id = '';

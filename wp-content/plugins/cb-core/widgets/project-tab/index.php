@@ -176,7 +176,7 @@ class CB_Core_ProjectTab extends Widget_Base
 			'post_type' => 'project',
 			'tax_query' => array(
 				array(
-					'taxonomy' => 'category',
+					'taxonomy' => 'project_category',
 					'field' => 'term_id',
 					'terms' => $cat,
 				),

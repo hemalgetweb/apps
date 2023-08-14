@@ -56,10 +56,13 @@
                         <div class="row row-cols-xxl-5">
                             <?php while ($all_wp_query->have_posts()):
                                 $all_wp_query->the_post();
-                                the_title();
+                                $post_type = 'project';
                                 $taxonomy = 'project_category';
                                 $categories = get_categories(array(
-                                    'taxonomy' => $taxonomy
+                                    'post_type' => $post_type,
+                                    'taxonomy' => $taxonomy,
+                                    'orderby' => 'name', // You can change the ordering method
+                                    'order' => 'ASC',    // Change to 'DESC' if needed
                                 ));
                                 $cat_name = '';
                                 $cat_id = '';
@@ -129,14 +132,14 @@
                 <?php if (!empty($settings['cat_query'])): ?>
                     <?php foreach($settings['cat_query'] as $index=>$category) :
                     $single_query_arg = array(
-                        'post_type' => 'project',
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'project_category',
-                                'field' => 'term_id',
-                                'terms' => $category,
-                            ),
-                        ),
+                        'post_type' => 'project'
+                        // 'tax_query' => array(
+                        //     array(
+                        //         'taxonomy' => 'project_category',
+                        //         'field' => 'term_id',
+                        //         'terms' => $category,
+                        //     ),
+                        // ),
                     );
 
                 $single_query_arg_query = new \WP_Query($single_query_arg);

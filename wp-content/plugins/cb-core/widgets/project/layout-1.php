@@ -30,65 +30,52 @@
     <div class="container">
         <div class="apps-project-wrapper-114 p-rel">
             <div class="swiper-container apps-project-active-114">
-                <?php if($wp_query->have_posts()) : ?>
+            <?php if ($wp_query->have_posts()) : ?>
                 <div class="swiper-wrapper">
-                    <?php 
+                    <?php
                     $post_type = 'project';
                     $taxonomy = 'project_category';
-                    while($wp_query->have_posts()) : $wp_query->the_post();
-                    $post_id = get_the_ID();
-                    $categories = get_categories(array(
-                        'post_type' => $post_type,
-                        'taxonomy' => $taxonomy,
-                        'orderby' => 'name', // You can change the ordering method
-                        'order' => 'ASC',    // Change to 'DESC' if needed
-                    ));
-                    $cat_name = '';
-                    $cat_id = '';
-                    $cat_link = '';
-                    if(!empty($categories)) {
-                        $cat_name = $categories[0]->name;
-                        $cat_id = $categories[0]->term_id;
-                        $cat_link = get_category_link( $cat_id );
-                    }
-                    $project_big_image = get_post_meta($post_id, 'project_image', true);
+                    while ($wp_query->have_posts()) : $wp_query->the_post();
+                        $post_id = get_the_ID();
+                        $categories = get_the_terms($post_id, $taxonomy); // Get the categories for the current post
+                        $project_big_image = get_post_meta($post_id, 'project_image', true);
                     ?>
-                    <div class="swiper-slide">
-                        <!-- project card -->
-                        <div class="apps-project-card-114">
-                            <?php if(has_post_thumbnail(get_the_ID())) : ?>
-                            <div class="apps-project-card-image-114">
-                                <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
-                            </div>
-                            <?php endif; ?>
-                            <div class="apps-project-card-description-wrapper-114"  data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>" >
-                                <div class="row">
-                                    <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                        <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
-                                        <?php
-                                        if ($categories && !is_wp_error($categories)) {
-                                            $first_category = reset($categories); // Get the first category
-                                    
-                                            if ($first_category) {
-                                                $cat_name = $first_category->name;
-                                                echo '<a href="#0" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
-                                            }
-                                        }
-                                    
-                                        ?>
+                        <div class="swiper-slide">
+                            <!-- project card -->
+                            <div class="apps-project-card-114">
+                                <?php if (has_post_thumbnail(get_the_ID())) : ?>
+                                    <div class="apps-project-card-image-114">
+                                        <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
                                     </div>
-                                    <div class="col-xxl-2 col-xl-2">
-                                        <div class="apps-project-card-action-icon-114 text-xl-end">
-                                            <button class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" loading="async" width="20" height="20" alt="project"></button>
+                                <?php endif; ?>
+                                <div class="apps-project-card-description-wrapper-114" data-url="<?php echo $project_big_image ? esc_url($project_big_image) : ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>">
+                                    <div class="row">
+                                        <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
+                                            <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image) : ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
+                                            <?php
+                                            if ($categories && !is_wp_error($categories)) {
+                                                $first_category = reset($categories); // Get the first category for the current post
+
+                                                if ($first_category) {
+                                                    $cat_name = $first_category->name;
+                                                    $cat_link = get_term_link($first_category, $taxonomy); // Get the category link
+                                                    echo '<a href="' . esc_url($cat_link) . '" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
+                                                }
+                                            }
+                                            ?>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2">
+                                            <div class="apps-project-card-action-icon-114 text-xl-end">
+                                                <button class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" loading="async" width="20" height="20" alt="project"></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     <?php endwhile; ?>
                 </div>
-                <?php endif; ?>
+            <?php endif; ?>
             </div>
             <div class="apps-project-pagination-wrapper-114">
                 <div class="apps-project-next-114">

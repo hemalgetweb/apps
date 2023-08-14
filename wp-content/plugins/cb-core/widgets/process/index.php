@@ -170,6 +170,30 @@ class CB_Core_Process extends Widget_Base
             ]
           ]
          );
+         $repeater->add_control(
+          'process_icon_sm',
+          [
+            'label'   => esc_html__( 'Process Icon SM', 'cb-core' ),
+            'type'    => \Elementor\Controls_Manager::MEDIA,
+              'default' => [
+                'url' => \Elementor\Utils::get_placeholder_image_src(),
+            ],
+            'condition' => [
+                'field_condition' => ['style-1']
+            ]
+          ]
+         );
+         $repeater->add_control(
+            'process_content',
+            [
+            'label'   => esc_html__( 'Process Content', 'cb-core' ),
+            'type'        => \Elementor\Controls_Manager::TEXTAREA,
+            'label_block' => true,
+            'condition' => [
+                'field_condition' => ['style-1']
+            ]
+            ]
+        );
          $this->add_control(
            'slides',
            [

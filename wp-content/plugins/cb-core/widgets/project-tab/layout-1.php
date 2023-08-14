@@ -148,7 +148,7 @@
                             array(
                                 'taxonomy' => 'project_category',
                                 'field'    => 'term_id',
-                                'terms'    => 29, // Replace with the term ID you want to query
+                                'terms'    => $category, // Replace with the term ID you want to query
                             ),
                         ),
                     );

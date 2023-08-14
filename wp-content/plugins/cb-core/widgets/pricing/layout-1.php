@@ -32,7 +32,7 @@ $pricing_box_height = $settings['pricing_box_height'] ? $settings['pricing_box_h
                         <?php endif; ?>
                     </h5>
                     <?php if (!empty($settings['pricing_btn_text'])): ?>
-                        <a href="<?php echo $settings['pricing_btn_url']['url'] ? esc_url($settings['pricing_btn_url']['url']) : ''; ?>"
+                        <a href="<?php echo $settings['pricing_btn_url']['url'] ? esc_url($settings['pricing_btn_url']['url']) : ''; ?>" target="_blank"
                             class="price-btn d-block w-100 fs-14 fw-bold text-clr-dark1 text-uppercase"><?php echo wp_kses_post($settings['pricing_btn_text']); ?> <span class="ps-2"><svg class="mb-1" width="11"
                                     height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path

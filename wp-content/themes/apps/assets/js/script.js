@@ -15,7 +15,8 @@
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             var sectionId = current.getAttribute("id");
-			console.log('current'+current);
+			console.log('current');
+			console.log(current);
 			console.log('section id: '+sectionId);
 			console.log('section height: '+sectionHeight);
 			console.log('section top: '+sectionTop);

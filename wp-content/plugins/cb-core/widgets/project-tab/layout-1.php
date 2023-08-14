@@ -59,7 +59,6 @@
                                 $post_type = 'project';
                                 $taxonomy = 'project_category';
                                 $categories = get_categories(array(
-                                    'post_type' => $post_type,
                                     'taxonomy' => $taxonomy,
                                     'orderby' => 'name', // You can change the ordering method
                                     'order' => 'ASC',    // Change to 'DESC' if needed
@@ -136,7 +135,7 @@
                         'tax_query' => array(
                             array(
                                 'taxonomy' => 'project_category',
-                                'field' => 'tag_ID',
+                                'field' => 'term_id',
                                 'terms' => $category,
                             ),
                         ),

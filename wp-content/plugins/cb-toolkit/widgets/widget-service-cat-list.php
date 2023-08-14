@@ -24,6 +24,7 @@ Class Latest_Services_Category_List_Widget extends WP_Widget{
 				<ul>
 					<?php 
 					$args = array (
+							'post_type' => 'post',
 							'taxonomy' => 'category', //empty string(''), false, 0 don't work, and return empty array
 							'orderby' => 'name',
 							'order' => $service_order,

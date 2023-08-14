@@ -17,7 +17,7 @@
                     $ml_class = 'ml-auto';
                 } elseif($index == 2 || $index == 5 || $index == 8) {
                     $ml_class = 'mr-auto';
-                } else {
+                } elseif($index == 1 || $index == 4 || $index == 7) {
                     $ml_class = 'text-center';
                 }
             ?>

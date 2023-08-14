@@ -21,7 +21,8 @@
 			console.log('section height: '+sectionHeight);
 			console.log('section top: '+sectionTop);
 			console.log('Scrolly: '+scrollY);
-			console.log('top+height: '+ sectionTop + sectionHeight);
+			var sectionTopHeight = sectionTop + sectionHeight;
+			console.log('top+height: '+ sectionTopHeight);
             if (
                 scrollY > sectionTop &&
                 scrollY <= sectionTop + sectionHeight

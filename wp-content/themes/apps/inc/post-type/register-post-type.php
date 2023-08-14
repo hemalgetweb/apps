@@ -52,11 +52,36 @@ function apps_custom_post_type_for_project() {
 		'capability_type'       => 'page',
 	);
 	register_post_type( 'project', $args );
-
 }
 add_action( 'init', 'apps_custom_post_type_for_project', 0 );
 
+function create_project_category_taxonomy() {
+	$labels = array(
+		'name'              => _x('Project Categories', 'taxonomy general name'),
+		'singular_name'     => _x('Project Category', 'taxonomy singular name'),
+		'search_items'      => __('Search Project Categories'),
+		'all_items'         => __('All Project Categories'),
+		'parent_item'       => __('Parent Project Category'),
+		'parent_item_colon' => __('Parent Project Category:'),
+		'edit_item'         => __('Edit Project Category'),
+		'update_item'       => __('Update Project Category'),
+		'add_new_item'      => __('Add New Project Category'),
+		'new_item_name'     => __('New Project Category Name'),
+		'menu_name'         => __('Project Categories')
+	);
 
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array('slug' => 'project-category'),
+	);
+
+	register_taxonomy('project_category', 'project', $args);
+}
+add_action("init", [$this, "create_project_category_taxonomy"], 10, 1);
 
 
 // Register Custom Post Type for Service

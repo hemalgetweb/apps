@@ -23,7 +23,7 @@
             ?>
             <div class="col-xl-4">
                 <div class="process-item aos-init aos-animate" data-aos="<?php echo $position_aos_fade; ?>">
-                    <div class="process-inner <?php echo esc_attr($ml_class); ?>>">
+                    <div class="process-inner <?php echo esc_attr($ml_class); ?>">
                         <div class="img-wrapper">
                         <?php if(!empty($slide['process_icon_sm']['url'])) : ?>
                             <img src="<?php echo $slide['process_icon_sm']['url']; ?>" class="process-m-icon" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon_sm'] ); ?>">

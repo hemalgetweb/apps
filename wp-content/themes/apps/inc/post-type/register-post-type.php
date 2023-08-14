@@ -36,7 +36,6 @@ function apps_custom_post_type_for_project() {
 		'description'           => __( 'Add your project', 'apps' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields', 'page-attributes', 'post-formats', 'excerpt' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,

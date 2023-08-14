@@ -50179,6 +50179,7 @@ div#player {
 /**
     * Faysal vai css
 */
+
 .process {
     background-image: url("../img/process-bg.svg");
     background-size: auto;
@@ -50217,6 +50218,13 @@ div#player {
       gap: 15px;
     }
   }
+  
+  .img-wrapper {
+    /* position: relative;
+    height: 68px;
+    width: 100%; */
+  }
+  
   .process-icon {
     @media (max-width: 767px) {
       display: none;
@@ -50277,13 +50285,7 @@ div#player {
     }
   }
   
-  
-  .h-500{
+  .h-500 {
     height: 500px;
   }
-  .job_description .job_key li:before {
-    display: none;
-}
-.job_summary .job_key li::before {
-    display: none;
-}
+    

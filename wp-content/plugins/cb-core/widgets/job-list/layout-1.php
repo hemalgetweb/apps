@@ -54,7 +54,7 @@
                                     <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#1F516D"/>
                                 </svg>
                             </span></a>
-                            <a href="<?php echo the_permalink(get_the_ID()); ?>" class="apps-btn-transparent-border-114"><?php echo __('view job details', 'cb-core'); ?> 
+                            <a href="<?php echo the_permalink(get_the_ID()); ?>" class="apps-btn-transparent-border-114"><?php echo __('View job details', 'cb-core'); ?> 
                                 <span>
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#1F516D"/>

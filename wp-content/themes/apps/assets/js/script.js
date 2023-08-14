@@ -180,5 +180,12 @@
          */
         e(".preloader").fadeOut(); 
         e('body').css({'overflow':'visible'});
+		AOS.init({
+			duration: 1500,
+			disable: function () {
+				var maxWidth = 800;
+				return window.innerWidth < maxWidth;
+			},
+		});
     });
 }(jQuery);

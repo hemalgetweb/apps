@@ -1,6 +1,6 @@
 // scrollable content sections
     // Get all sections that have an ID defined
-    const sections = document.querySelectorAll(".scrollable-question-area");
+    const sections = document.querySelectorAll("section[id]");
 
     // Add an event listener listening for scroll
     window.addEventListener("scroll", navHighlighter);

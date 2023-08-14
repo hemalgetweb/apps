@@ -176,7 +176,7 @@
                             <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="apps-project-tab-main-content-114 mb-30">
                                     <!-- project card -->
-                                    <div class="apps-project-card-114">
+                                    <div class="apps-project-card-114 apps-has-portfolio-popup" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">
                                         <?php if(has_post_thumbnail(get_the_ID())) : ?>
                                         <div class="apps-project-card-image-114">
                                             <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
@@ -185,7 +185,7 @@
                                         <div class="apps-project-card-description-wrapper-114">
                                             <div class="row">
                                                 <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                                    <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
+                                                    <h5 class="apps-project-card-title-114"><button class="apps-has-portfolio-popup"><?php echo get_the_title(); ?></button></h5>
                                                     <?php if(!empty($cat_name)) : ?>
                                                         <a href="#0" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
                                                     <?php endif; ?>

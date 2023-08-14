@@ -32,7 +32,7 @@
             <div class="swiper-container apps-project-active-114">
             <?php if ($wp_query->have_posts()) : ?>
                 <div class="swiper-wrapper">
-                    <?php
+                    <?php 
                     $post_type = 'project';
                     $taxonomy = 'project_category';
                     while ($wp_query->have_posts()) : $wp_query->the_post();

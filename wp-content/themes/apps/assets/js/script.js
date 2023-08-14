@@ -1,13 +1,14 @@
-    // Get all sections that have an ID defined
-	$('.apps-scrollable-content-sections-nav-114').on('click', function() {
-		$('.apps-scrollable-content-sections-nav-114').removeClass('active');
-		$(this).addClass('active');
-	})
+
 
 
 
 
 ! function (e) {
+	// Get all sections that have an ID defined
+	e('.apps-scrollable-content-sections-nav-114').on('click', function() {
+		e('.apps-scrollable-content-sections-nav-114').removeClass('active');
+		e(this).addClass('active');
+	})
 	e(window).on("load", function () {
 		e(".apps-has-portfolio-popup").on("click", function () {
 			var n = e(this).data("url"),

@@ -17,12 +17,26 @@
                 <div class="process-item aos-init aos-animate" data-aos="<?php echo $position_aos_fade; ?>">
                     <div class="process-inner ml-auto">
                     <div class="img-wrapper">
-                        <?php echo wp_get_attachment_image( $slide['process_icon']['id'], 'thumbnail', [
-                            'class' => 'process-m-icon'
-                        ] ); ?>
-                        <?php echo wp_get_attachment_image( $slide['process_icon_sm']['id'], 'thumbnail', [
-                            'class' => 'process-icon'
-                        ] ); ?>
+                        <?php
+                         $process_icon = $slide['process_icon'];
+                         $image_url = wp_get_attachment_image_url($process_icon, 'thumbnail');
+                         $image_alt = get_post_meta($process_icon, '_wp_attachment_image_alt', true);
+                         $image_class = 'process-m-icon';
+                         
+                         if ($image_url) {
+                             echo '<img src="' . esc_url($image_url) . '" alt="' . esc_attr($image_alt) . '" class="' . esc_attr($image_class) . '">';
+                         }
+                        ?>
+                        <?php
+                        $process_icon_sm = $slide['process_icon_sm'];
+                        $image_url = wp_get_attachment_image_url($process_icon_sm, 'thumbnail');
+                        $image_alt = get_post_meta($process_icon_sm, '_wp_attachment_image_alt', true);
+                        $image_class = 'process-icon';
+                        
+                        if ($image_url) {
+                            echo '<img src="' . esc_url($image_url) . '" alt="' . esc_attr($image_alt) . '" class="' . esc_attr($image_class) . '">';
+                        }
+                        ?>
                     </div>
                     <div>
                         <?php if(!empty($slide['process_title'])) : ?>

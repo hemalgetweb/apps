@@ -7,9 +7,11 @@
                 <div class="apps-scrollable-content-sections-nav-114 mb-50 mb-md-0">
                     <nav>
                         <ul>
-                            <?php foreach($settings['slides'] as $index=>$slide) : ?>
+                            <?php foreach($settings['slides'] as $index=>$slide) : 
+                                $active_class = $index == 0 ? 'active': '';
+                                ?>
                                 <?php if(!empty($slide['tab_heading'])) : ?>
-                                    <li><a href="#apps_panel_<?php echo esc_attr($index); ?>"><?php echo esc_html($slide['tab_heading']); ?></a></li>
+                                    <li><a class="<?php echo $active_class; ?>" href="#apps_panel_<?php echo esc_attr($index); ?>"><?php echo esc_html($slide['tab_heading']); ?></a></li>
                                 <?php endif; ?>
                             <?php endforeach; ?>
                         </ul>

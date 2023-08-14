@@ -37,7 +37,7 @@
                             data-bs-target="#nav-tab1" type="button" role="tab" aria-controls="nav-tab1"
                             aria-selected="true">All Projects</button>
                         <?php if (!empty($settings['cat_query'])): ?>
-                            <?php foreach ($settings['cat_query'] as $index => $cat_id): ?>
+                            <?php foreach ($settings['cat_query'] as $index => $cat_id): echo $cat_id; ?>
                                 <button class="nav-link" id="nav-tab<?php echo $index + 2; ?>-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-tab<?php echo $index + 2; ?>" type="button" role="tab"
                                     aria-controls="nav-tab<?php echo $index + 2; ?>" aria-selected="false"><?php echo get_cat_name($cat_id); ?></button>

@@ -81,7 +81,7 @@ function create_project_category_taxonomy() {
 
 	register_taxonomy('project_category', 'project', $args);
 }
-add_action("init", [$this, "create_project_category_taxonomy"], 10, 1);
+add_action("init", "create_project_category_taxonomy", 10, 1);
 
 
 // Register Custom Post Type for Service

@@ -58,6 +58,7 @@
                                 $all_wp_query->the_post();
                                 $post_type = 'project';
                                 $taxonomy = 'project_category';
+                                $post_id = get_the_ID();
                                 $categories = get_categories(array(
                                     'post_type' => $post_type,
                                     'taxonomy' => $taxonomy,

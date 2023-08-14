@@ -15,7 +15,11 @@
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             var sectionId = current.getAttribute("id");
+			console.log('current'+current);
 			console.log('section id: '+sectionId);
+			console.log('section height: '+sectionHeight);
+			console.log('section top: '+sectionTop);
+			console.log('top+height: '+ sectionTop + sectionHeight);
             if (
                 scrollY > sectionTop &&
                 scrollY <= sectionTop + sectionHeight

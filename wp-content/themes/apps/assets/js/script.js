@@ -1,33 +1,71 @@
-! function(e) {
-	e(window).on("load", function() {
-		e(".apps-has-portfolio-popup").on("click", function() {
+// scrollable content sections
+    // Get all sections that have an ID defined
+    const sections = document.querySelectorAll("section[id]");
+
+    // Add an event listener listening for scroll
+    window.addEventListener("scroll", navHighlighter);
+
+    function navHighlighter() {
+
+        // Get current scroll position
+        let scrollY = window.pageYOffset;
+
+        // Now we loop through sections to get height, top and ID values for each
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            sectionId = current.getAttribute("id");
+
+            /*
+            - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+            - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+            */
+            if (
+                scrollY > sectionTop &&
+                scrollY <= sectionTop + sectionHeight
+            ) {
+                document.querySelector(".apps-scrollable-content-sections-nav-114 a[href*=" + sectionId + "]").classList.add("active");
+            } else {
+                document.querySelector(".apps-scrollable-content-sections-nav-114 a[href*=" + sectionId + "]").classList.remove("active");
+            }
+        });
+    }
+
+    // scrollable content sections = End
+
+
+
+
+! function (e) {
+	e(window).on("load", function () {
+		e(".apps-has-portfolio-popup").on("click", function () {
 			var n = e(this).data("url"),
 				i = e(this).data("title"),
 				t = e(".apps-portfolio-moal-top-left-box .content .title"),
 				a = e(".apps-portfolio-modal .modal-content img");
 			t.text(i), a.attr("src", n)
 		})
-	}), e(window).on("load resize", function() {
-		1200 > e(window).width() && e("ul#menu-main-menu > li.has-mega-menu menu-item > a, ul#menu-main-menu > li.has-sub-menu menu-item > a").on("click", function(e) {
+	}), e(window).on("load resize", function () {
+		1200 > e(window).width() && e("ul#menu-main-menu > li.has-mega-menu menu-item > a, ul#menu-main-menu > li.has-sub-menu menu-item > a").on("click", function (e) {
 			e.preventDefault()
 		})
-	}), e(".navbar-toggler-icons.openMenu").on("click", function() {
+	}), e(".navbar-toggler-icons.openMenu").on("click", function () {
 		e("body").addClass("overflow-hidden")
-	}), e(".navbar-toggler-icons.closeMenu").on("click", function() {
+	}), e(".navbar-toggler-icons.closeMenu").on("click", function () {
 		e("body").removeClass("overflow-hidden")
-	}), e(window).scroll(function() {
+	}), e(window).scroll(function () {
 		e(window).scrollTop() >= 100 ? e("header").addClass("fixed-header") : e("header").removeClass("fixed-header")
-	}), e(document).ready(function() {
-		e(function() {
-			e(".mobileMenu").length && e(".navbar").on("click", ".navbarToggler", function(n) {
+	}), e(document).ready(function () {
+		e(function () {
+			e(".mobileMenu").length && e(".navbar").on("click", ".navbarToggler", function (n) {
 				n.preventDefault(), console.log("i am clicked"), e(this).closest(".navbar").find(".mobileMenu-wrapper").toggleClass("mobileMenu-action"), e(".menuAction").children(".openMenu").toggle(0), e(".menuAction").children(".closeMenu").toggle(0)
 			})
-		}), e(function() {
-			e(document).on("click", function(n) {
+		}), e(function () {
+			e(document).on("click", function (n) {
 				var i = e(n.target);
 				!0 !== e(".navbar-collapse").hasClass("show") || i.hasClass("navbar-toggler") || e(".navbar-toggler").click()
 			})
-		}), jQuery(".apps-header-bar-btn-114").on("click", function() {
+		}), jQuery(".apps-header-bar-btn-114").on("click", function () {
 			e(".apps-header-nav-menu-114").slideToggle()
 		})
 	});
@@ -39,21 +77,23 @@
 		for (let l of n) l.classList.remove("active");
 		t.classList.add("active")
 	});
-	e(".apps-has-mobile-menu-custom .nav-link").on("click", function() {
-		e(this).parents(".menu-item").find(".dropdown-menus").slideToggle(), e(this).parents(".menu-item").find(".dropdown-menus").toggleClass("d-block")
-	}), window.addEventListener("DOMContentLoaded", () => {
-		let e = new IntersectionObserver(e => {
-			e.forEach(e => {
-				let n = e.target.getAttribute("id");
-				e.intersectionRatio > 0 ? document.querySelector(`.apps-scrollable-content-sections-nav-114 nav li a[href="#${n}"]`).parentElement.classList.add("active") : document.querySelector(`nav li a[href="#${n}"]`).parentElement.classList.remove("active")
-			})
-		});
-		document.querySelectorAll("section[id]").forEach(n => {
-			e.observe(n)
-		})
-	});
-	let a = function(e, n) {
-		e.find(".apps-project-active-114").each(function() {
+	// e(".apps-has-mobile-menu-custom .nav-link").on("click", function () {
+	// 	e(this).parents(".menu-item").find(".dropdown-menus").slideToggle(), e(this).parents(".menu-item").find(".dropdown-menus").toggleClass("d-block")
+	// }), window.addEventListener("DOMContentLoaded", () => {
+	// 	let e = new IntersectionObserver(e => {
+	// 		e.forEach(e => {
+	// 			let n = e.target.getAttribute("id");
+	// 			e.intersectionRatio > 0 ? document.querySelector(`.apps-scrollable-content-sections-nav-114 nav li a[href="#${n}"]`).parentElement.classList.add("active") : document.querySelector(`nav li a[href="#${n}"]`).parentElement.classList.remove("active")
+	// 		})
+	// 	});
+	// 	document.querySelectorAll("section[id]").forEach(n => {
+	// 		e.observe(n)
+	// 	})
+	// });
+
+	
+	let a = function (e, n) {
+		e.find(".apps-project-active-114").each(function () {
 			new Swiper(".apps-project-active-114", {
 				slidesPerView: 3,
 				spaceBetween: 30,
@@ -81,8 +121,8 @@
 			})
 		})
 	};
-	var l = function(e, n) {
-			e.find(".dynamic-service-active").each(function() {
+	var l = function (e, n) {
+			e.find(".dynamic-service-active").each(function () {
 				new Swiper(".dynamic-service-active", {
 					slidesPerView: 4,
 					spaceBetween: 30,
@@ -122,8 +162,8 @@
 				})
 			})
 		},
-		o = function(e, n) {
-			e.find(".client-testimonial-active").each(function() {
+		o = function (e, n) {
+			e.find(".client-testimonial-active").each(function () {
 				new Swiper(".client-testimonial-active", {
 					slidesPerView: 2,
 					spaceBetween: 32,
@@ -163,9 +203,9 @@
 	function s(n) {
 		e(".apps-has-application-attached").text(n)
 	}
-	e(window).on("elementor/frontend/init", function() {
+	e(window).on("elementor/frontend/init", function () {
 		elementorFrontend.hooks.addAction("frontend/element_ready/cb-project.default", a), elementorFrontend.hooks.addAction("frontend/element_ready/cb-testimonial.default", o), elementorFrontend.hooks.addAction("frontend/element_ready/cb-dynamic-static-service.default", l)
-	}), e(function() {
+	}), e(function () {
 		e(".select2-init").length && e(".select2-init").select2({
 			width: "resolve"
 		})
@@ -174,12 +214,14 @@
 			t = i.files[0];
 		t ? s(t.name) : s("No file selected")
 	})
-    e(window).on('load', function() {
-        /**
-         * Preloader
-         */
-        e(".preloader").fadeOut(); 
-        e('body').css({'overflow':'visible'});
+	e(window).on('load', function () {
+		/**
+		 * Preloader
+		 */
+		e(".preloader").fadeOut();
+		e('body').css({
+			'overflow': 'visible'
+		});
 		AOS.init({
 			duration: 1500,
 			disable: function () {
@@ -187,5 +229,8 @@
 				return window.innerWidth < maxWidth;
 			},
 		});
-    });
+	});
 }(jQuery);
+
+
+

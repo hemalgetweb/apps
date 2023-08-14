@@ -58,8 +58,6 @@
                                 $all_wp_query->the_post();
                                 $post_type = 'project';
                                 $taxonomy = 'project_category';
-                                while($wp_query->have_posts()) : $wp_query->the_post();
-                                $post_id = get_the_ID();
                                 $categories = get_categories(array(
                                     'post_type' => $post_type,
                                     'taxonomy' => $taxonomy,
@@ -75,7 +73,6 @@
                                     $cat_link = get_category_link( $cat_id );
                                 }
                                 $project_big_image = get_post_meta($post_id, 'project_image', true);
-                    ?>
                                 ?>
                                 <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <div class="apps-project-tab-main-content-114 mb-30">

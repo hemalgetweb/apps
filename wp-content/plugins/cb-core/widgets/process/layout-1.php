@@ -29,12 +29,12 @@
                         ?>
                         <?php
                         $process_icon_sm = $slide['process_icon_sm'];
-                        $image_url = wp_get_attachment_image_url($process_icon_sm, 'thumbnail');
-                        $image_alt = get_post_meta($process_icon_sm, '_wp_attachment_image_alt', true);
-                        $image_class = 'process-icon';
+                        $image_url_sm = wp_get_attachment_image_url($process_icon_sm, 'thumbnail');
+                        $image_alt_sm = get_post_meta($process_icon_sm, '_wp_attachment_image_alt', true);
+                        $image_class_sm = 'process-icon';
                         
-                        if ($image_url) {
-                            echo '<img src="' . esc_url($image_url) . '" alt="' . esc_attr($image_alt) . '" class="' . esc_attr($image_class) . '">';
+                        if ($image_url_sm) {
+                            echo '<img src="' . esc_url($image_url_sm) . '" alt="' . esc_attr($image_alt_sm) . '" class="' . esc_attr($image_class_sm) . '">';
                         }
                         ?>
                     </div>

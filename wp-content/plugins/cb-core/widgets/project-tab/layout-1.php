@@ -151,6 +151,7 @@
                             <?php while($single_query_arg_query->have_posts()) : 
                                 $single_query_arg_query->the_post();
                                 $post_id = get_the_ID();
+                                echo $post_id;
                                 $categories = get_the_category($post_id);
                                 $cat_name = '';
                                 $cat_id = '';

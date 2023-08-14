@@ -50235,9 +50235,11 @@ div#player {
     display: none;
 }
 @media (max-width: 767px) {
-    .process-m-icon {
+    img.process-m-icon {
         display: block;
-   }
+        max-width: initial !important;
+        transform: translateX(-2px);
+    }
 }
 .process-title {
     color: #003959;

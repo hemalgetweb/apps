@@ -302,7 +302,17 @@ ul.dropdown-menus li.menu-item a::after {
     font-weight: 600;
 }
 
-.footer-widget .apps-footer-widget-contact-info-item-114 a, .footer-widget .apps-footer-widget-contact-info-item-114 span {
+.footer-widget .apps-footer-widget-contact-info-item-114 a,
+.footer-widget .apps-footer-widget-contact-info-item-114 span {
     font-size: 16px;
     font-weight: 600;
+}
+
+.blog-pots.section-padding.pt-218 {
+    padding-top: 116px;
+}
+
+.apps-blog-page-topbar-ajax-search-114 {
+    padding: 30px 0;
+    background-color: #fff;
 }

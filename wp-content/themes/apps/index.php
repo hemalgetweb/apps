@@ -135,8 +135,12 @@ $categories = get_categories(
 								<a href="<?php echo get_the_permalink(); ?>"
 									class="text-decoration-none fs-12 fw-bold text-clr-primary text-uppercase d-flex gap-2 align-items-center">
 									<?php echo esc_html__('Read more', 'apps'); ?>
-									<span class="ni fs-6 ni-arrow-right"></span>
+									<svg xmlns="http: //www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path d="M9 13.5L8.2035 12.7035L11.3438 9.5625H4.5V8.4375H11.3438L8.2035 5.2965L9 4.5L13.5 9L9 13.5Z"
+											fill="#00C7C7" />
+									</svg>
 								</a>
+
 							</div>
 						</div>
 					</div>

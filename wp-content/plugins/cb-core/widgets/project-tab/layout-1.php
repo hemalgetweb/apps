@@ -64,19 +64,31 @@
                 <div class="apps-project-tab-content-wrapper-main-114">
                     <?php if ($all_wp_query->have_posts()): ?>
                         <div class="row row-cols-xxl-5">
-                            <?php 
-                            $post_type = 'project';
-                            $taxonomy = 'project_category';
-                            while ($all_wp_query->have_posts()):
+                            <?php while ($all_wp_query->have_posts()):
                                 $all_wp_query->the_post();
+                                $post_type = 'project';
+                                $taxonomy = 'project_category';
                                 $post_id = get_the_ID();
-                                $categories = get_the_terms($post_id, $taxonomy);
+                                $categories = get_categories(array(
+                                    'post_type' => $post_type,
+                                    'taxonomy' => $taxonomy,
+                                    'orderby' => 'name', // You can change the ordering method
+                                    'order' => 'ASC',    // Change to 'DESC' if needed
+                                ));
+                                $cat_name = '';
+                                $cat_id = '';
+                                $cat_link = '';
+                                if(!empty($categories)) {
+                                    $cat_name = $categories[0]->name;
+                                    $cat_id = $categories[0]->term_id;
+                                    $cat_link = get_category_link( $cat_id );
+                                }
                                 $project_big_image = get_post_meta($post_id, 'project_image', true);
                                 ?>
                                 <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <div class="apps-project-tab-main-content-114 mb-30">
                                         <!-- project card -->
-                                        <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">
+                                        <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">>
                                             <?php if(has_post_thumbnail(get_the_ID())) : ?>
                                             <div class="apps-project-card-image-114">
                                                 <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
@@ -87,16 +99,16 @@
                                                     <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                                         <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
                                                         <?php
-                                                            if ($categories && !is_wp_error($categories)) {
-                                                                $first_category = reset($categories); // Get the first category for the current post
-
-                                                                if ($first_category) {
-                                                                    $cat_name = $first_category->name;
-                                                                    $cat_link = get_term_link($first_category, $taxonomy); // Get the category link
-                                                                    echo '<span class="apps-project-card-category-114">' . esc_html($cat_name) . '</span>';
-                                                                }
+                                                        if ($categories && !is_wp_error($categories)) {
+                                                            $first_category = reset($categories); // Get the first category
+                                                    
+                                                            if ($first_category) {
+                                                                $cat_name = $first_category->name;
+                                                                echo '<a href="#0" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
                                                             }
-                                                            ?>
+                                                        }
+                                                    
+                                                        ?>
                                                     </div>
                                                     <div class="col-xxl-2 col-xl-2">
                                                         <div class="apps-project-card-action-icon-114 text-xl-end">
@@ -147,14 +159,20 @@
                 <div class="tab-pane fade" id="nav-tab<?php echo $index+2; ?>" role="tabpanel" aria-labelledby="nav-tab1-tab">
                     <div class="apps-project-tab-content-wrapper-main-114">
                         <div class="row row-cols-xxl-5">
-                            <?php 
-                            $post_type = 'project';
-                            $taxonomy = 'project_category';
-                            while($single_query_arg_query->have_posts()) : 
+                            <?php while($single_query_arg_query->have_posts()) : 
+                                $single_query_arg_query->the_post();
                                 $post_id = get_the_ID();
-                                $categories = get_the_terms($post_id, $taxonomy);
+                                $categories = get_the_category($post_id);
+                                $cat_name = '';
+                                $cat_id = '';
+                                $cat_link = '';
+                                if(!empty($categories)) {
+                                    $cat_name = $categories[0]->name;
+                                    $cat_id = $categories[0]->term_id;
+                                    $cat_link = get_category_link( $cat_id );
+                                }
                                 $project_big_image = get_post_meta($post_id, 'project_image', true);
-                            ?>
+                                ?>
                             <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="apps-project-tab-main-content-114 mb-30">
                                     <!-- project card -->
@@ -168,17 +186,9 @@
                                             <div class="row">
                                                 <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                                     <h5 class="apps-project-card-title-114"><button class="apps-has-portfolio-popup"><?php echo get_the_title(); ?></button></h5>
-                                                    <?php
-                                                        if ($categories && !is_wp_error($categories)) {
-                                                            $first_category = reset($categories); // Get the first category for the current post
-
-                                                            if ($first_category) {
-                                                                $cat_name = $first_category->name;
-                                                                $cat_link = get_term_link($first_category, $taxonomy); // Get the category link
-                                                                echo '<span class="apps-project-card-category-114">' . esc_html($cat_name) . '</span>';
-                                                            }
-                                                        }
-                                                    ?>
+                                                    <?php if(!empty($cat_name)) : ?>
+                                                        <a href="#0" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
+                                                    <?php endif; ?>
                                                 </div>
                                                 <div class="col-xxl-2 col-xl-2">
                                                     <div class="apps-project-card-action-icon-114 text-xl-end">

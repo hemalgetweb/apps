@@ -348,8 +348,8 @@ ul.dropdown-menus li.menu-item a::after {
     line-height: 34px;
 }
 
-.single-blog .blog-img {
-    max-height: 200px;
+.single-blog .blog-img img {
+    max-height: 194px;
 }
 
 .single-blog .blog-intro p {

@@ -49495,6 +49495,7 @@ i {
 .apps-project-card-114 {
     border-radius: 7px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #home-filtered-blog-post-114 .single-blog .blog-title a:hover,
@@ -50321,4 +50322,9 @@ display: none !important;}
     background: #26B5B5;
     width: 3px;
     content: "";
+}
+@media (max-width: 767px) {
+    .apps-insta-logo img {
+        max-width: 40px;
+    }
 }

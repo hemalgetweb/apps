@@ -349,7 +349,7 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .single-blog .blog-img img {
-    max-height: 194px;
+    height: 194px;
 }
 
 .single-blog .blog-intro p {

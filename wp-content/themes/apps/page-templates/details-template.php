@@ -46,31 +46,6 @@
     </div>
   </div>
 
-  <!-- quote -->
-  <div class="client-testimonials-card d-flex flex-column justify-content-between bg-white radius-16">
-    <div class="ctc-top mb-5">
-      <h3 class="fs-28 fw-normal text-clr-dark2 mb-4">
-        Highly recommended digital <b>marketing agency</b> </h3>
-      <div class="client-said fs-5 text-clr-dark2">
-        <p>We have created a fun digital environment on our website with Wadi Al Bada IT Solutions direct involvement. I
-          am a working mom with little technical knowledge, but the outreach team took care of most of our marketing
-          needs and helped our idea to grow into a running business. I wish you all the best.</p>
-      </div>
-    </div>
-    <div class="ctc-bottom d-flex align-items-center gap-2">
-      <div class="client-img">
-        <img decoding="async" src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/Mask-group.svg"
-          title="Mask group" alt="Mask group">
-      </div>
-      <div class="client-info">
-        <h4 class="client-name fs-18 fw-bold text-clr-dark1 mb-0">
-          Jumana Al Darwish </h4>
-        <p class="client-designation fs-6 text-clr-dark3 fw-normal mb-0">
-          Founder — The Happy Box </p>
-      </div>
-    </div>
-  </div>
-  <!-- quote -end -->
 
 
   <!-- faq -->

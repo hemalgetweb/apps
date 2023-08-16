@@ -88,7 +88,7 @@
                                 <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <div class="apps-project-tab-main-content-114 mb-30">
                                         <!-- project card -->
-                                        <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">>
+                                        <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">
                                             <?php if(has_post_thumbnail(get_the_ID())) : ?>
                                             <div class="apps-project-card-image-114">
                                                 <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
@@ -140,8 +140,12 @@
                     ?>
                 </div>
                 </div>
-                <?php if (!empty($settings['cat_query'])): ?>
+                <?php if (!empty($settings['cat_query'])): 
+                    $post_type = 'project';
+                    $taxonomy = 'project_category';
+                    ?>
                     <?php foreach($settings['cat_query'] as $index=>$category) :
+                    
                     $single_query_arg = array(
                         'post_type' => 'project',
                             'tax_query' => array(
@@ -159,22 +163,25 @@
                 <div class="tab-pane fade" id="nav-tab<?php echo $index+2; ?>" role="tabpanel" aria-labelledby="nav-tab1-tab">
                     <div class="apps-project-tab-content-wrapper-main-114">
                         <div class="row row-cols-xxl-5">
-                            <?php while($single_query_arg_query->have_posts()) : 
+                            <?php
+                            $post_type = 'project';
+                            $taxonomy = 'project_category';
+                            while($single_query_arg_query->have_posts()) : 
                                 $single_query_arg_query->the_post();
                                 $post_id = get_the_ID();
-                                $categories = get_categories(array(
-                                    'post_type' => $post_type,
-                                    'taxonomy' => $taxonomy,
-                                    'orderby' => 'name', // You can change the ordering method
-                                    'order' => 'ASC',    // Change to 'DESC' if needed
-                                ));
-                                $cat_name = '';
-                                $cat_id = '';
-                                $cat_link = '';
-                                if(!empty($categories)) {
-                                    $cat_name = $categories[0]->name;
-                                    $cat_id = $categories[0]->term_id;
-                                    $cat_link = get_category_link( $cat_id );
+                                
+                                $categories = get_the_terms($post_id, $taxonomy);
+                            
+                                if (!empty($categories)) {
+                                    $category = $categories[0]; // Assuming you want the first category
+                                    $cat_name = $category->name;
+                                    $cat_id = $category->term_id;
+                                    $cat_link = get_term_link($cat_id, $taxonomy);
+                                } else {
+                                    // No categories found for this post
+                                    $cat_name = 'Uncategorized'; // Set a default value or leave empty
+                                    $cat_id = '';
+                                    $cat_link = '';
                                 }
                                 $project_big_image = get_post_meta($post_id, 'project_image', true);
                                 ?>

@@ -68,7 +68,7 @@ $categories = get_categories(
 			if ($query->have_posts()):
 				while ($query->have_posts()):
 					$query->the_post(); ?>
-					<div class="col-xl-4 col-sm-6 col-sm-6 mb-4">
+					<div class="col-xl-4 col-md-6 mb-4">
 						<div id="post-<?php the_ID(); ?>" <?php post_class('single-blog bg-white p-2 radius-6 box-shadow2'); ?>>
 							<?php if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())):
 								$att = get_post_thumbnail_id();

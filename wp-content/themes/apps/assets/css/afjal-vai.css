@@ -356,3 +356,15 @@ ul.dropdown-menus li.menu-item a::after {
     -webkit-box-orient: vertical;
     font-weight: 400;
 }
+
+.apps-blog-post-box-meta-114 span>span,
+.apps-blog-post-box-meta-114 .date {
+    color: #316785;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.apps-blog-post-box-meta-114 {
+    margin-bottom: 20px;
+}

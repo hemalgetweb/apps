@@ -59,7 +59,7 @@
                                                 if ($first_category) {
                                                     $cat_name = $first_category->name;
                                                     $cat_link = get_term_link($first_category, $taxonomy); // Get the category link
-                                                    echo '<a href="' . esc_url($cat_link) . '" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
+                                                    echo '<span class="apps-project-card-category-114">' . esc_html($cat_name) . '</span>';
                                                 }
                                             }
                                             ?>

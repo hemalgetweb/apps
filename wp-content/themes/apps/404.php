@@ -20,7 +20,7 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
 <!-- error area start -->
 <section class="apps-error-area-114 pt-165 pb-100">
    <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
          <div class="col-lg-6">
             <div class="apps-error-cotnent-114 ">
                <?php if(!empty($cbtoolkit_error_title)) : ?>

@@ -336,7 +336,7 @@ add_filter('walker_nav_menu_start_el', 'add_extra_menu_item', 10, 4);
 						</h3>
 						<div class="blog-intro fs-14 text-clr-dark2 mb-0">
 							<p class="">
-								<?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+								<?php echo wp_trim_words(get_the_excerpt(), 16); ?>
 							</p>
 						</div>
 					</div>

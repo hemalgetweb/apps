@@ -149,7 +149,12 @@ $categories = get_categories(
 			echo '</div>';
 			?>
 		</div>
-		<button id="loadMoreBtn">Load More</button>
+		<div class="text-center">
+			<button type="button" id="loadMoreBtn"
+				class="btn rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold">
+				Load More
+			</button>
+		</div>
 	</div>
 </section>
 <!--/ blog-pots -->

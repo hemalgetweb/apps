@@ -2441,6 +2441,22 @@ function cbtoolkit_404_fields($fields)
         'default'  => __('Back To Home', 'cb-toolkit'),
         'priority' => 10,
     ];
+    $fields[] = [
+        'type'     => 'text',
+        'settings' => 'cbtoolkit_error_page_second_btn_text',
+        'label'    => __('Second button text', 'cb-toolkit'),
+        'section'  => '404_page',
+        'default'  => __('Contact', 'cb-toolkit'),
+        'priority' => 10,
+    ];
+    $fields[] = [
+        'type'     => 'URL',
+        'settings' => 'cbtoolkit_error_page_second_btn_link',
+        'label'    => __('Second button link', 'cb-toolkit'),
+        'section'  => '404_page',
+        'default'  => __('https://wadialbadaitsolutions.ae/contact-us/', 'cb-toolkit'),
+        'priority' => 10,
+    ];
     return $fields;
 }
 add_filter('kirki/fields', 'cbtoolkit_404_fields');

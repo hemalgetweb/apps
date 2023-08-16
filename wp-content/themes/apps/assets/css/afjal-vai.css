@@ -381,3 +381,7 @@ ul.dropdown-menus li.menu-item a::after {
         margin: -59px 0 100px !important;
     }
 }
+
+.loadMoreBtn {
+    padding: 12px 30px;
+}

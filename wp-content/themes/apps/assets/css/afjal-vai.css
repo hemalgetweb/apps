@@ -382,6 +382,6 @@ ul.dropdown-menus li.menu-item a::after {
     }
 }
 
-.loadMoreBtn {
-    padding: 12px 30px;
+#loadMoreBtn {
+    padding: 12px 30px !important;
 }

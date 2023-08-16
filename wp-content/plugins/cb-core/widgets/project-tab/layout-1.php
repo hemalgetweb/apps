@@ -64,24 +64,23 @@
                 <div class="apps-project-tab-content-wrapper-main-114">
                     <?php if ($all_wp_query->have_posts()): ?>
                         <div class="row row-cols-xxl-5">
-                            <?php while ($all_wp_query->have_posts()):
+                            <?php
+                             $post_type = 'project';
+                             $taxonomy = 'project_category';
+                            while ($all_wp_query->have_posts()):
                                 $all_wp_query->the_post();
-                                $post_type = 'project';
-                                $taxonomy = 'project_category';
                                 $post_id = get_the_ID();
-                                $categories = get_categories(array(
-                                    'post_type' => $post_type,
-                                    'taxonomy' => $taxonomy,
-                                    'orderby' => 'name', // You can change the ordering method
-                                    'order' => 'ASC',    // Change to 'DESC' if needed
-                                ));
-                                $cat_name = '';
-                                $cat_id = '';
-                                $cat_link = '';
-                                if(!empty($categories)) {
-                                    $cat_name = $categories[0]->name;
-                                    $cat_id = $categories[0]->term_id;
-                                    $cat_link = get_category_link( $cat_id );
+                                $categories = get_the_terms($post_id, $taxonomy);
+                                if (!empty($categories)) {
+                                    $category = $categories[0]; // Assuming you want the first category
+                                    $cat_name = $category->name;
+                                    $cat_id = $category->term_id;
+                                    $cat_link = get_term_link($cat_id, $taxonomy);
+                                } else {
+                                    // No categories found for this post
+                                    $cat_name = 'Uncategorized'; // Set a default value or leave empty
+                                    $cat_id = '';
+                                    $cat_link = '';
                                 }
                                 $project_big_image = get_post_meta($post_id, 'project_image', true);
                                 ?>

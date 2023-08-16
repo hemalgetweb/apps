@@ -178,6 +178,10 @@ ul.dropdown-menus li.menu-item a::after {
         font-size: 38px;
         line-height: 1.3;
     }
+
+    .apps-blog-page-topbar-ajax-search-114 {
+        margin: -79px 0 100px;
+    }
 }
 
 @media (max-width: 768px) {

@@ -388,7 +388,10 @@ ul.dropdown-menus li.menu-item a::after {
     font-size: 16px !important;
 }
 
-section.apps-error-area-114 {
-    background: #003959;
+.apps-error-area-114 {
+    background: #003959 !important;
     text-align: start;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }

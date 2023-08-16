@@ -103,8 +103,7 @@ $categories = get_categories(
 										</a>
 									<?php endif; ?>
 									<h3 class="blog-title fs-18 lh-base fw-medium">
-										<a href="<?php echo get_the_permalink(); ?>"
-											class="text-decoration-none text-clr-dark1 text-capitalize">
+										<a href="<?php echo get_the_permalink(); ?>" class="text-decoration-none text-clr-dark1">
 											<?php echo wp_trim_words(get_the_title(get_the_ID()), 7); ?>
 										</a>
 									</h3>

@@ -350,6 +350,7 @@ ul.dropdown-menus li.menu-item a::after {
 
 .single-blog .blog-img img {
     height: 194px;
+    object-fit: cover;
 }
 
 .single-blog .blog-intro p {

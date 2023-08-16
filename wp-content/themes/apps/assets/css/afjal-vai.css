@@ -348,6 +348,10 @@ ul.dropdown-menus li.menu-item a::after {
     line-height: 34px;
 }
 
+.single-blog .blog-img {
+    max-height: 200px;
+}
+
 .single-blog .blog-intro p {
     overflow: hidden;
     display: -webkit-box;
@@ -367,4 +371,7 @@ ul.dropdown-menus li.menu-item a::after {
 
 .apps-blog-post-box-meta-114 {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px
 }

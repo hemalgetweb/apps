@@ -287,7 +287,6 @@ add_filter('walker_nav_menu_start_el', 'add_extra_menu_item', 10, 4);
  function apps_post_load_more() {
 	$ajaxposts = new WP_Query([
 	  'post_type' => 'post',
-	  'posts_per_page' => 6,
 	  'paged' => $_POST['paged'],
 	]);
   

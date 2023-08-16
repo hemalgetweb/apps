@@ -88,7 +88,7 @@
                                 <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <div class="apps-project-tab-main-content-114 mb-30">
                                         <!-- project card -->
-                                        <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">>
+                                        <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">
                                             <?php if(has_post_thumbnail(get_the_ID())) : ?>
                                             <div class="apps-project-card-image-114">
                                                 <?php the_post_thumbnail(get_the_ID(), 'full'); ?>

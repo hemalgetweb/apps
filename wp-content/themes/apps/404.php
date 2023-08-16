@@ -11,8 +11,8 @@
 get_header();
 
 $cbtoolkit_error_404_image = get_theme_mod('cbtoolkit_error_404_image', get_template_directory_uri() . '/assets/img/404-page-error-image.svg');
-$cbtoolkit_error_title = get_theme_mod('cbtoolkit_error_title', __('Oh no! This Page Not Found', 'apps'));
-$cbtoolkit_error_desc = get_theme_mod('cbtoolkit_error_desc', __('The page you are looking for might have been removed its name, changed or is temporary unavailable.', 'apps'));
+$cbtoolkit_error_title = get_theme_mod('cbtoolkit_error_title', __('Oops! Page not found', 'apps'));
+$cbtoolkit_error_desc = get_theme_mod('cbtoolkit_error_desc', __('The page you are looking for may have been renamed, changed, or is temporarily unavailable.', 'apps'));
 $cbtoolkit_error_link_text = get_theme_mod('cbtoolkit_error_link_text', __('Back To Home', 'apps'));
 $cbtoolkit_error_page_second_btn_text = get_theme_mod('cbtoolkit_error_page_second_btn_text', __('Contact', 'apps'));
 $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_second_btn_link', __('https://wadialbadaitsolutions.ae/contact-us/', 'apps'));
@@ -22,12 +22,12 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
    <div class="container">
       <div class="row">
          <div class="col-lg-6">
-            <div class="apps-error-cotnent-114">
+            <div class="apps-error-cotnent-114 ">
                <?php if(!empty($cbtoolkit_error_title)) : ?>
-                  <h4 class="title"><?php echo wp_kses_post($cbtoolkit_error_title); ?></h4>
+                  <h4 class="title text-start"><?php echo wp_kses_post($cbtoolkit_error_title); ?></h4>
                <?php endif; ?>
                <?php if(!empty($cbtoolkit_error_desc)) : ?>
-                  <p><?php echo wp_kses_post($cbtoolkit_error_desc); ?></p>
+                  <p class="text-start"><?php echo wp_kses_post($cbtoolkit_error_desc); ?></p>
                <?php endif; ?>
 
                   <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4">

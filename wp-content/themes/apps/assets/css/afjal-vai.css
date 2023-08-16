@@ -322,6 +322,11 @@ ul.dropdown-menus li.menu-item a::after {
     margin: -100px 0 100px;
 }
 
+.apps-blog-page-topbar-ajax-search-inner-114 {
+    display: flex;
+    align-items: center;
+}
+
 #search_blog_input {
     border: 0;
     padding: 0 15px;

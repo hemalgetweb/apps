@@ -350,6 +350,7 @@ ul.dropdown-menus li.menu-item a::after {
 
 .single-blog .blog-img img {
     height: 194px;
+    object-fit: cover;
 }
 
 .single-blog .blog-intro p {
@@ -385,4 +386,12 @@ ul.dropdown-menus li.menu-item a::after {
 #loadMoreBtn {
     padding: 12px 30px !important;
     font-size: 16px !important;
+}
+
+.apps-error-area-114 {
+    background: #003959 !important;
+    text-align: start;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }

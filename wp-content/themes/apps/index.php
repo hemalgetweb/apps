@@ -149,7 +149,7 @@ $categories = get_categories(
 			echo '</div>';
 			?>
 		</div>
-		<div class="text-center">
+		<div class="text-center mt-5">
 			<button type="button" id="loadMoreBtn"
 				class="btn rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold">
 				Load More

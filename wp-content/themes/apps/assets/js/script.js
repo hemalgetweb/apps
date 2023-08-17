@@ -64,7 +64,7 @@
 	// });
 
 	
-	let a = function (e, n) {
+	let ProjectDefault = function (e, n) {
 		e.find(".apps-project-active-114").each(function () {
 			new Swiper(".apps-project-active-114", {
 				slidesPerView: 3,
@@ -93,7 +93,46 @@
 			})
 		})
 	};
-	var l = function (e, n) {
+
+
+	// related-post-slider
+	new Swiper(".client-testimonial-active", {
+		slidesPerView: 2,
+		spaceBetween: 32,
+		loop: !0,
+		pagination: {
+			el: ".swiper-pagination11",
+			clickable: !0
+		},
+		navigation: {
+			nextEl: ".swiper-next",
+			prevEl: ".swiper-prev"
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			575: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			768: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			992: {
+				slidesPerView: 2
+			},
+			1200: {
+				slidesPerView: 3
+			}
+		}
+	})
+	// related-post-slider -End
+
+
+	var DynamiceStaticService = function (e, n) {
 			e.find(".dynamic-service-active").each(function () {
 				new Swiper(".dynamic-service-active", {
 					slidesPerView: 4,
@@ -134,7 +173,7 @@
 				})
 			})
 		},
-		o = function (e, n) {
+		Testionial = function (e, n) {
 			e.find(".client-testimonial-active").each(function () {
 				new Swiper(".client-testimonial-active", {
 					slidesPerView: 2,
@@ -176,7 +215,9 @@
 		e(".apps-has-application-attached").text(n)
 	}
 	e(window).on("elementor/frontend/init", function () {
-		elementorFrontend.hooks.addAction("frontend/element_ready/cb-project.default", a), elementorFrontend.hooks.addAction("frontend/element_ready/cb-testimonial.default", o), elementorFrontend.hooks.addAction("frontend/element_ready/cb-dynamic-static-service.default", l)
+		elementorFrontend.hooks.addAction("frontend/element_ready/cb-project.default", ProjectDefault),
+		elementorFrontend.hooks.addAction("frontend/element_ready/cb-testimonial.default", Testionial),
+		elementorFrontend.hooks.addAction("frontend/element_ready/cb-dynamic-static-service.default", DynamiceStaticService)
 	}), e(function () {
 		e(".select2-init").length && e(".select2-init").select2({
 			width: "resolve"

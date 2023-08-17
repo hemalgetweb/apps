@@ -32,7 +32,7 @@ if(!empty($category)) {
 		<div class="apps-blog-archive-banner-top-114">
 			<div class="container">
 				<div class="apps-blog-archive-banner-inner-114">
-					<div class="apps-blog-archive-banner-subtitle-group">
+					<div class="apps-blog-archive-banner-subtitle-group ">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/rect.svg" alt="image">
 						<span class="subtitle">
 							<?php

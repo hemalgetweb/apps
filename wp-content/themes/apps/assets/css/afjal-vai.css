@@ -500,7 +500,7 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .feature-top a span {
-    color: #316785;
+    color: #316785 !important;
     transition: all 100ms ease !important;
 }
 

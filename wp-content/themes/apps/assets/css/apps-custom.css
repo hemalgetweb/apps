@@ -50295,3 +50295,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     display: flex;
     align-items: baseline;
 }
+
+.section-header.apps-about-right-3-114 ul .expect-point {
+    align-items: baseline !important;
+}

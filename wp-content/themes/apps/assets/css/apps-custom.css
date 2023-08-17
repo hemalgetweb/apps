@@ -10986,14 +10986,11 @@ h5.apps-project-card-title-114 button {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 4px 10px;
     gap: 10px;
 }
 
-.apps-sidebar-category ul li {
-    border-radius: 4px;
-    border: 1px solid var(--dark-dark-3, #316785);
-}
+/* .apps-sidebar-category ul li {
+} */
 
 .apps-sidebar-category ul li a {
     text-decoration: none;
@@ -11006,6 +11003,10 @@ h5.apps-project-card-title-114 button {
     line-height: normal;
     letter-spacing: 1.8px;
     text-transform: uppercase;
+    padding: 4px 10px;
+    
+    border-radius: 4px;
+    border: 1px solid var(--dark-dark-3, #316785);
 }
 
 .apps-blog-page-topbar-select .select2-container {

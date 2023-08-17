@@ -434,9 +434,9 @@ ul.dropdown-menus li.menu-item a::after {
         padding: 14px 25px 14px 40px !important;
     }
     .btn-icon-back {
-        right: 22px !important;
+        left: 22px !important;
     }
     .back-to-home-btn:hover .btn-icon-back {
-        right: 18px !important;
+        left: 18px !important;
     }
 }

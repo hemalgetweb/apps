@@ -41,7 +41,7 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
                   <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4">
                            
                      <?php if(!empty($cbtoolkit_error_link_text)) : ?>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn position-relative rounded bg-btn back-to-home-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center">
 
                         <svg class="btn-icon-back position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M5 10L5.885 9.115L2.39583 5.625H10V4.375H2.39583L5.885 0.885L5 0L0 5L5 10Z" fill="#003959"/>

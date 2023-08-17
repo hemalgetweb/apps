@@ -166,9 +166,9 @@
 
 
 <!-- related-post -->
-<section class="project-area">
+<section class="related-post-area">
   <div class="container">
-    <div class="apps-project-wrapper-114 p-rel">
+    <div class="related-post-wrapper-114 p-rel">
       <div class="swiper-container related-post-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">

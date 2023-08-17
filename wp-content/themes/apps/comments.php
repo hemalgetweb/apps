@@ -17,7 +17,7 @@ if (have_comments()) :
         </nav>
         <?php
     endif;
-
+    comment_form();
 else : // If there are no comments yet
     if (comments_open()) :
         // Comment form

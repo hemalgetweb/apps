@@ -530,3 +530,7 @@ ul.dropdown-menus li.menu-item a::after {
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #00C7C7;
 }
+
+.apps-service-box-title-114 span {
+    color: #003959;
+}

@@ -19,7 +19,7 @@ Class CB_Toolkit_Widget_Post_Category_List extends WP_Widget{
      	<?php echo apply_filters( 'widget_title', $instance['title'] ); ?>
      	<?php echo $after_title; ?>
      	<?php endif; ?>
-		<div class="blog-sidebar-box-body p-30 px-30">
+		<div class="blog-sidebar-box-body">
 			<div class="apps-sidebar-category">
                 <ul class="recent-post architect-3 list-unstyled mb-0 bg-white">
 					<?php 

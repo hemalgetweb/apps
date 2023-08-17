@@ -31,8 +31,11 @@
                         <?php if(!empty($slide['process_icon_sm']['url'])) : ?>
                             <img src="<?php echo $slide['process_icon_sm']['url']; ?>" class="process-m-icon" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon_sm'] ); ?>">
                         <?php endif; ?>
+                        <?php if(!empty($slide['process_icon_tab']['url'])) : ?>
+                            <img src="<?php echo $slide['process_icon_tab']['url']; ?>" class="process-tab-icon" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon_tab'] ); ?>">
+                        <?php endif; ?>
                         <?php if(!empty($slide['process_icon']['url'])) : ?>
-                            <img src="<?php echo $slide['process_icon']['url']; ?>" class="process-icon" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon'] ); ?>">
+                            <img src="<?php echo $slide['process_icon']['url']; ?>" class="process-icon process-icon-none" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon'] ); ?>">
                         <?php endif; ?>
                     </div>
                     <div>

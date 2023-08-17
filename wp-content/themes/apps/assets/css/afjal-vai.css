@@ -420,3 +420,11 @@ ul.dropdown-menus li.menu-item a::after {
 .back-to-home-btn {
     padding: 14px 30px 14px 50px !important;
 }
+.btn-icon-back {
+    left: 27px;
+    transition: all 0.2s linear;
+}
+
+.back-to-home-btn:hover .btn-icon-back {
+    left: 22px;
+}

@@ -1,3 +1,4 @@
+
 body {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -248,10 +249,6 @@ article.postbox .postbox__thumb img {
 
 .sidebar-search-form input:focus::placeholder {
     opacity: 0;
-}
-
-section.job_post.section-padding .job_key li:before {
-    display: none;
 }
 
 .sidebar-search-form input:focus::-moz-placeholder {
@@ -6772,8 +6769,7 @@ ul.dropdown-menus li.menu-item a {
     margin-bottom: 20px;
 }
 
-.apps-service-box-content-wrap-114 .apps-service-box-title-114 a,
-.apps-service-box-content-wrap-114 .apps-service-box-title-114 span {
+.apps-service-box-content-wrap-114 .apps-service-box-title-114 a {
     font-size: 24px;
     line-height: 34px;
     color: #003959;
@@ -8346,14 +8342,6 @@ ul.dropdown-menus li.menu-item a {
 
 .apps-service-box-114 .apps-service-box-icon-114 {
     margin-bottom: 20px;
-}
-
-.apps-service-box-content-wrap-114 .apps-service-box-title-114 a {
-    font-size: 24px;
-    line-height: 34px;
-    color: #003959;
-    margin-bottom: 10px;
-    display: block;
 }
 
 .apps-service-box-content-wrap-114 p {
@@ -11375,7 +11363,7 @@ h5.apps-project-card-title-114 button:hover {
     transition: all .3s;
 }
 
-.apps-service-box-content-wrap-114 .apps-service-box-title-114 a:hover {
+.apps-service-box-content-wrap-114 .apps-service-box-title-114 span:hover {
     color: #1ae3e3;
 }
 
@@ -12000,7 +11988,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0;
+    width: 6px;
 }
 
 .apps-feature-list-box-3-114 ul li {
@@ -19774,7 +19762,21 @@ section.pricing .pricing-wrapper {
     margin-bottom: 0;
 }
 
-
+.about-section-content-5-114 ul li::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-image: url('https://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/subtitle-left-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .pb-40 {
     padding-bottom: 40px;
@@ -24093,15 +24095,6 @@ span.page-numbers.current {
     border: 1px solid #BADDF0;
 }
 
-body {
-    padding-right: 0 !important;
-    overflow-y: scroll !important;
-}
-
-body::-webkit-scrollbar {
-    width: 0;
-}
-
 .apps-feature-list-box-3-114 ul li {
     display: flex;
     align-items: center;
@@ -24388,6 +24381,7 @@ i {
 .apps-project-card-114 {
     border-radius: 7px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #home-filtered-blog-post-114 .single-blog .blog-title a:hover,
@@ -25001,6 +24995,12 @@ div#player {
     height: 389px;
 }
 
+.apps-blog-archive-banner-top-114 {
+    background: var(--dark-dark-1, #003959);
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
 .apps-blog-archive-banner-inner-114 .subtitle {
     color: var(--primary-primary, #00C7C7);
     font-size: 12px;
@@ -25013,6 +25013,14 @@ div#player {
     margin-right: 5px;
 }
 
+.apps-blog-archive-banner-inner-114 .title {
+    color: var(--dark-dark-1, #003959);
+    font-family: Cairo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.25em;
+}
 
 
 .apps-blog-archive-banner-inner-114 .author-left span {

@@ -10985,6 +10985,7 @@ h5.apps-project-card-title-114 button {
 .apps-sidebar-category ul {
     list-style: none;
     display: flex;
+    flex-wrap: nowrap;
     padding: 4px 10px;
     justify-content: center;
     align-items: center;

@@ -96,7 +96,7 @@ if(!empty($category)) {
 										<?php echo do_shortcode('[Sassy_Social_Share]') ?>
 									
                                     </div>
-									<?php get_template_part( 'post-formates/single-post/content', 'biography' ); ?>
+									<?php //get_template_part( 'post-formates/single-post/content', 'biography' ); ?>
                                 </div>
                             </div>
                         </div>

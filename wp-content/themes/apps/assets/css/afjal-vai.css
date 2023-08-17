@@ -488,7 +488,7 @@ ul.dropdown-menus li.menu-item a::after {
     transition: all 150ms linear;
 }
 
-.blog-area .blog-info > a:hover {
+.blog-area .blog-info > a:hover svg {
     margin-left: 5px !important;
 }
 .blog-area .blog-info > a:hover svg * {

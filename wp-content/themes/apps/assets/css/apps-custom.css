@@ -24997,9 +24997,13 @@ div#player {
 
 .apps-blog-archive-banner-top-114 {
     background: var(--dark-dark-1, #003959);
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 10px;
 }
+
+.apps-blog-archive-banner-subtitle-group {
+    padding-bottom: 20px;
+}
+
 
 .apps-blog-archive-banner-inner-114 .subtitle {
     color: var(--primary-primary, #00C7C7);
@@ -25020,44 +25024,49 @@ div#player {
     font-style: normal;
     font-weight: 900;
     line-height: 1.25em;
+    margin-bottom: 27px;
 }
 
 
 .apps-blog-archive-banner-inner-114 .author-left span {
-    color: var(--white, #FFF);
-    /* Headline/H5/SamiBold */
-    font-family: Cairo;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    /* 155.556% */
-}
-
-.apps-blog-archive-banner-inner-114 .author-right span {
-    color: var(--dark-dark-5, #A8E0FF);
+    color: var(--dark-dark-3, #316785);
     font-family: Cairo;
     font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
+    line-height: 1.83em;
+    padding-bottom: 3px;
+}
+
+.apps-blog-archive-banner-inner-114 .author-right span {
+    color: #316785;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.apps-blog-archive-banner-inner-114 .total-comments span {
+    color: #316785;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 5px;
 }
 
 .apps-blog-archive-banner-inner-114 .meta {
     display: flex;
-    grid-gap: 28px;
+    grid-gap: 15px;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .author-left img {
     width: 32px;
     border-radius: 50%;
-}
-
-.apps-blog-archive-banner-inner-114 .author-right svg {
-    margin-right: 12px;
 }
 
 .apps-blog-archive-banner-inner-114 .meta span {
@@ -25087,24 +25096,30 @@ div#player {
     background-size: auto;
     background-position: center 7px;
     background-repeat: no-repeat;
-}
-.process-item {
+  }
+  
+  
+  .process-item {
     margin-top: -15px;
     margin-bottom: 81px;
     height: 252px;
-}
-.process-inner {
+  }
+  
+  .process-inner {
     max-width: 255px;
     width: 100%;
     text-align: center;
-}
-.process-m-icon {
+  }
+  
+  .process-m-icon {
     display: none;
-}
-.process-tab-icon {
+  }
+  
+  .process-tab-icon{
     display: none;
-}
-.process-title {
+  }
+  
+  .process-title {
     color: #003959;
     text-align: center;
     font-family: Cairo;
@@ -25113,8 +25128,9 @@ div#player {
     line-height: 34px;
     margin-top: 20px;
     margin-bottom: 10px;
-}
-.process-desc {
+  }
+  
+  .process-desc {
     color: #1f516d;
     text-align: center;
     font-family: Cairo;
@@ -25123,96 +25139,125 @@ div#player {
     font-weight: 400;
     line-height: 24px;
     margin: 0 auto;
-}
-.margin-auto {
+  
+  }
+  
+  .margin-auto {
     margin: 0 auto;
-}
-.ml-auto {
+  }
+  
+  .ml-auto {
     margin-left: auto;
-}
-.mr-auto {
+  }
+  
+  .mr-auto {
     margin-right: auto;
-}
-@media (max-width: 767px) {
+  }
+  
+  
+  
+  @media (max-width: 767px) {
     .process {
-        background-image: url("../img/process-mobile-bg.svg");
-        background-size: 24px 100%;
-        background-position: 23px;
-   }
+      background-image: url("../img/process-mobile-bg.svg");
+      background-size: 24px 100%;
+      background-position: 23px;
+    }
+  
     .process-item {
-        margin-top: 10px;
-        margin-bottom: 0px;
-        height: unset;
-   }
+      margin-top: 10px;
+      margin-bottom: 0px;
+      height: unset;
+    }
+  
     .process-inner {
-        max-width: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 15px;
-   }
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
     .process-icon {
-        display: none;
-   }
+      display: none;
+    }
+  
     .process-m-icon {
-        display: block;
-   }
+      display: block;
+    }
+  
     .process-title {
-        text-align: left;
-   }
+      text-align: left;
+    }
+  
     .process-desc {
-        text-align: left;
-   }
-}
-@media (min-width: 768px) and (max-width: 991px) {
+      text-align: left;
+    }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 991px) {
     .process {
-        background-image: url("../img/process-tab-bg.svg");
-   }
+      background-image: url("../img/process-tab-bg.svg");
+    }
+  
     .process-item {
-        height: 246px;
-   }
-    .process-icon-none {
-        display: none;
-   }
-    .process-tab-icon {
-        display: inline-block;
-   }
+      height: 246px;
+    }
+  
+    .process-icon-none{
+      display: none;
+    }
+  
+    .process-tab-icon{
+      display: inline-block;
+    }
+  
     .margin-auto {
-        margin: unset;
-   }
+      margin: unset;
+    }
+  
     .ml-auto {
-        margin-left: unset;
-   }
+      margin-left: unset;
+    }
+  
     .mr-auto {
-        margin-right: unset;
-   }
+      margin-right: unset;
+    }
+  
     .m-left {
-        margin-left: auto !important;
-   }
+      margin-left: auto !important;
+    }
+  
     .m-right {
-        margin-right: auto !important;
-   }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
+      margin-right: auto !important;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
     .process {
-        background-image: url("../img/process-laptop-bg.svg");
-   }
-    .process-tab-icon {
-        display: inline-block;
-   }
-    .process-icon-none {
-        display: none;
-   }
+      background-image: url("../img/process-laptop-bg.svg");
+    }
+  
+    .process-tab-icon{
+      display: inline-block;
+    }
+  
+    .process-icon-none{
+      display: none;
+    }
+  
     .mr-auto {
-        margin-right: unset;
-        margin: 0 auto;
-   }
+      margin-right: unset;
+      margin: 0 auto;
+    }
+  
     .ml-auto {
-        margin-left: unset;
-        margin: 0 auto;
-   }
-}
+      margin-left: unset;
+      margin: 0 auto;
+    }
+  }
+  
 
 .h-500 {
     height: 500px;
@@ -25286,3 +25331,5 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: #50FF81; 
 }
+
+

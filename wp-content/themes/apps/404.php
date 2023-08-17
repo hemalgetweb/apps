@@ -72,7 +72,7 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
 
          <div class="col-lg-6">
             <?php if(!empty($cbtoolkit_error_404_image)) : ?>
-            <div class="apps-error-image-top-114">
+            <div class="apps-error-image-top-114 text-center">
                <img src="<?php echo esc_url($cbtoolkit_error_404_image); ?>" alt="<?php echo esc_attr__('Error image', 'apps'); ?>">
             </div>
             <?php endif; ?>

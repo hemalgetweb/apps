@@ -500,6 +500,6 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .feature-top a {
-    
+    color: #316785;
     transition: all 100ms ease !important;
 }

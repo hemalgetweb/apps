@@ -499,7 +499,8 @@ ul.dropdown-menus li.menu-item a::after {
     color: #1ae3e3;
 }
 
-.feature-top a {
+.feature-top a span {
     color: #316785;
     transition: all 100ms ease !important;
 }
+

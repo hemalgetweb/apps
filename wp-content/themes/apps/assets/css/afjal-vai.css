@@ -416,3 +416,7 @@ ul.dropdown-menus li.menu-item a::after {
         right: 18px !important;
     }
 }
+
+.back-to-home-btn {
+    padding: 14px 30px 14px 50px !important;
+}

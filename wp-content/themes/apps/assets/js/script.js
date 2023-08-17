@@ -96,17 +96,17 @@
 
 
 	// related-post-slider
-	new Swiper(".client-testimonial-active", {
+	new Swiper(".related-post-slider", {
 		slidesPerView: 2,
 		spaceBetween: 32,
 		loop: !0,
 		pagination: {
-			el: ".swiper-pagination11",
+			el: ".swiper-pagination113",
 			clickable: !0
 		},
 		navigation: {
-			nextEl: ".swiper-next",
-			prevEl: ".swiper-prev"
+			nextEl: ".swiper-next2",
+			prevEl: ".swiper-prev2"
 		},
 		breakpoints: {
 			320: {

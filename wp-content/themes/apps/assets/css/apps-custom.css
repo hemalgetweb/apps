@@ -44791,9 +44791,9 @@ section.pricing .pricing-wrapper {
 
 .about-section-content-5-114 ul li::before {
     content: "";
-    /* width: 5px;
-    height: 5px; */
-    background-image: url('https: //wadialbadaitsolutions.ae/wp-content/uploads/2023/08/bullet-icon.svg');
+    width: 9px;
+    height: 9px;
+    background-image: url('https: //wadialbadaitsolutions.ae/wp-content/uploads/2023/07/subtitle-left-icon.svg');
     background-repeat: no-repeat;
     background-size: 9px;
     display: inline-block;

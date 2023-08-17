@@ -169,7 +169,7 @@
 <section class="related-post-area">
   <div class="container">
     <div class="related-post-wrapper-114 p-rel">
-      <div class="swiper-container related-post-slider">
+      <div class="swiper-container apps-project-active-114">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
@@ -466,7 +466,7 @@
         </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
-      <div class="swiper-pagination113">
+      <div class="apps-project-paginate">
         <div class="swiper-next2" tabindex="0" role="button" aria-label="Next slide"
           aria-controls="swiper-wrapper-8e10ceba4dd67f76c">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

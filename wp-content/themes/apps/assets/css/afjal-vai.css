@@ -483,13 +483,17 @@ ul.dropdown-menus li.menu-item a::after {
     align-items: center;
     gap: 15px
 }
-.blog-area .apps-blog-post-box-meta-114 a svg {
+.blog-area .blog-info > a svg {
     transition: all 150ms ease;
 }
 
-.blog-area .apps-blog-post-box-meta-114 a:hover svg {
-    margin-left: 5px;
+.blog-area .blog-info > a:hover {
+    gap: 16px !important;
 }
-.blog-area .apps-blog-post-box-meta-114 a:hover svg * {
-    margin-left: 5px;
+.blog-area .blog-info > a:hover svg * {
+    fill: #1AE3E3 !important;
+}
+
+.blog-area .blog-title a:hover, .blog-area .section-tag:hover {
+    color: #1ae3e3;
 }

@@ -679,3 +679,65 @@ function disable_lazy_loading() {
 	add_filter( 'wp_lazy_loading_enabled', '__return_false' );
 }
 add_action('init', 'disable_lazy_loading');
+
+
+
+/**
+ * Change Comment attributes
+ */
+/** Comment title and desc change */
+function custom_comment_form_defaults($defaults) {
+    // Change the title
+    $defaults['title_reply'] = 'Write a comments';
+
+    // Customize the comment notes (optional)
+    $defaults['comment_notes_before'] = '<p class="comment-notes">Your email address will not be published. Required fields are marked *</p>';
+
+    return $defaults;
+}
+add_filter('comment_form_defaults', 'custom_comment_form_defaults');
+
+
+/**
+ * Comment field change
+ */
+function custom_comment_form_fields($fields) {
+    // Modify the email field label and placeholder
+    $fields['email'] = '<p class="comment-form-email">' .
+                       '<label for="email">' . __( 'Email address:', 'textdomain' ) . '</label> ' .
+                       '<input id="email" name="email" type="email" placeholder="Email address" required />' .
+                       '</p>';
+
+    // Modify the website field label and placeholder
+    $fields['url'] = '<p class="comment-form-url">' .
+                     '<label for="url">' .'Website link <span>(optional)</span>'. '</label> ' .
+                     '<input id="url" name="url" type="url" placeholder="Link here" />' .
+                     '</p>';
+
+    return $fields;
+}
+add_filter('comment_form_default_fields', 'custom_comment_form_fields');
+
+/**
+ * Comment position at last
+ */
+function apps_custom_comment_position_form_fields($fields) {
+    // Reorder the fields by modifying the array keys
+    $comment_field = $fields['comment'];
+    unset($fields['comment']);
+
+    // Add the comment field back at the end
+    $fields['comment'] = $comment_field;
+
+    return $fields;
+}
+add_filter('comment_form_fields', 'apps_custom_comment_position_form_fields');
+
+/**
+ * Change button label
+ */
+function apps_custom_comment_form_btn_label_defaults($defaults) {
+    $defaults['label_submit'] = 'Post comments';
+    return $defaults;
+}
+add_filter('comment_form_defaults', 'apps_custom_comment_form_btn_label_defaults');

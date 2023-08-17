@@ -484,11 +484,11 @@ ul.dropdown-menus li.menu-item a::after {
     align-items: center;
     gap: 15px
 }
-.blog-area .blog-info > a svg {
+.blog-info > a svg {
     transition: all 150ms linear;
 }
 
-.blog-area .blog-info > a:hover svg {
+.blog-info > a:hover svg {
     margin-left: 5px !important;
 }
 .blog-area .blog-info > a:hover svg * {

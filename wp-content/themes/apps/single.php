@@ -69,7 +69,7 @@ if(!empty($category)) {
 									</svg>
 									<span><?php echo get_the_date(); ?></span>
 								</div>
-								<div class="total-comments d-flex align-items-center gap-1">
+								<div class="total-comments d-flex align-items-center gap-2">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M0 14V1.3125C0 0.951562 0.128516 0.642579 0.385547 0.385547C0.642578 0.128516 0.951562 0 1.3125 0H12.6875C13.0484 0 13.3574 0.128516 13.6145 0.385547C13.8715 0.642579 14 0.951562 14 1.3125V10.0625C14 10.4234 13.8715 10.7324 13.6145 10.9895C13.3574 11.2465 13.0484 11.375 12.6875 11.375H2.625L0 14ZM2.07812 10.0625H12.6875V1.3125H1.3125V10.8281L2.07812 10.0625Z" fill="#316785"/></svg>
 										<span><?php echo get_comments_number(); ?> Comments</span>
 								</div>

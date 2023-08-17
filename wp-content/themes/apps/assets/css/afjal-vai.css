@@ -461,6 +461,7 @@ ul.dropdown-menus li.menu-item a::after {
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
+    transition: all 100ms ease !important;
 }
 .blog-area .blog-intro p {
     overflow: hidden;
@@ -496,4 +497,9 @@ ul.dropdown-menus li.menu-item a::after {
 
 .blog-area .blog-title a:hover, .blog-area .section-tag:hover {
     color: #1ae3e3;
+}
+
+.feature-top a {
+    
+    transition: all 100ms ease !important;
 }

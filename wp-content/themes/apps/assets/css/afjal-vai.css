@@ -394,5 +394,5 @@ ul.dropdown-menus li.menu-item a::after {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: left !important;
 }

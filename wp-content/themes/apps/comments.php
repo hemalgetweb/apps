@@ -31,32 +31,40 @@ endif;
 // Custom comment display function
 function custom_comment($comment, $args, $depth) {
     $GLOBALS['comment'] = $comment;
+    $comment_user_id = get_comment(get_comment_ID())->user_id;
+    $comment_user = get_userdata($comment_user_id);
+
+    if ($comment_user) {
+        $user_roles = $comment_user->roles;
+        $user_designation = ucfirst($user_roles[0]); // Use the first role as the designation
+    }
     ?>
     <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-        <div class="comment-author vcard">
-            <?php echo get_avatar($comment, 48); ?>
-            <cite class="fn"><?php comment_author_link(); ?></cite>
-        </div>
-        <?php if ($comment->comment_approved == '0') : ?>
-            <em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
-        <?php endif; ?>
-        <div class="comment-meta commentmetadata">
-            <a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
-                <?php printf('%1$s at %2$s', get_comment_date(), get_comment_time()); ?>
-            </a>
-            <?php edit_comment_link('Edit', '  ', ''); ?>
-        </div>
-        <div class="comment-text">
-            <?php comment_text(); ?>
-        </div>
-        <div class="reply">
-            <?php
-            comment_reply_link(array_merge($args, array(
-                'reply_text' => 'Reply',
-                'depth' => $depth,
-                'max_depth' => $args['max_depth']
-            )));
-            ?>
+
+        <div class="apps-comment-box-single-blog-114">
+            <div class="apps-comment-box-single-blog-image-114">
+                <?php echo get_avatar($comment, 48); ?>
+            </div>
+            <div class="apps-comment-box-single-blog-content-114">
+                <div class="apps-comment-meta-top-114">
+                    <h5 class="apps-comment-title-114"><?php comment_author_link(); ?></h5>
+                    <?php if (!empty($user_designation)) : ?>
+                        <span class="apps-comment-subtitle"><?php echo $user_designation; ?></span>
+                    <?php endif; ?>
+                </div>
+                <div class="apps-comment-content-main-114">
+                    <p><?php comment_text(); ?></p>
+                </div>
+                <div class="reply">
+                <?php
+                    comment_reply_link(array_merge($args, array(
+                        'reply_text' => '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"> <path d="M3.375 14.25V11.325C3.375 10.575 3.61875 9.95625 4.10625 9.46875C4.59375 8.98125 5.2125 8.7375 5.9625 8.7375H13.575L10.5187 11.7938L11.325 12.6L15.75 8.175L11.325 3.75L10.5187 4.55625L13.575 7.6125H5.9625C4.9 7.6125 4.01562 7.96563 3.30937 8.67188C2.60312 9.37813 2.25 10.2625 2.25 11.325V14.25H3.375Z" fill="#1F516D"/> </svg> Reply',
+                        'depth' => $depth,
+                        'max_depth' => $args['max_depth']
+                    )));
+                    ?>
+                </div>
+            </div>
         </div>
     </li>
     <?php

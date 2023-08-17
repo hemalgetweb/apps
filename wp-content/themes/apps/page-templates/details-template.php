@@ -166,8 +166,15 @@
 
 
 <!-- related-post -->
-<section class="related-post-area">
+<section class="related-post-area section-padding bg-clr-dark8">
   <div class="container">
+
+    <div class="apps-service-section-wrapper-114 text-center">
+      <h2 class="apps-service-section-title-114 fs-36">
+        Related Post
+      </h2>
+    </div>
+
     <div class="related-post-wrapper-114 p-rel">
       <div class="swiper-container related-post-slider">
         <div class="swiper-wrapper">
@@ -464,7 +471,7 @@
           </div>
 
         </div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+
       </div>
       <div class="swiper-pagination113 py-5 text-center">
         <div class="swiper-next25555">

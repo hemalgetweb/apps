@@ -512,11 +512,14 @@ ul.dropdown-menus li.menu-item a::after {
 .apps-blog-archive-banner-top-114 {
     background: #ffffff !important;
 }
-.blog-details-main-title {
-    color: var(--dark-dark-1, #003959);
+
+.blog-details .apps-blog-archive-banner-subtitle-group .subtitle {
+    color: var(--dark-dark-3, #316785);
     font-family: Cairo;
-    font-size: 48px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 900;
-    line-height: 1.25em;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
 }

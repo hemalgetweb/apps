@@ -1,5 +1,5 @@
 <section class="cb-process-area my-5">
-    <div class="container process">
+    <div class="container process overflow-hidden">
         <?php if(!empty($settings['slides'])) : ?>
         <div class="row">
             <?php

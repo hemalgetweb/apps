@@ -489,7 +489,7 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .blog-area .blog-info > a:hover {
-    gap: 12px !important;
+    gap: 13px !important;
 }
 .blog-area .blog-info > a:hover svg * {
     fill: #1AE3E3 !important;
@@ -502,5 +502,8 @@ ul.dropdown-menus li.menu-item a::after {
 .feature-top a span {
     color: #316785 !important;
     transition: all 100ms ease !important;
+}
+.feature-top a:hover span {
+    color: #1ae3e3 !important;
 }
 

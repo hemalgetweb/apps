@@ -19,7 +19,7 @@ Class Latest_Services_Category_List_Widget extends WP_Widget{
      	<?php echo apply_filters( 'widget_title', $instance['title'] ); ?>
      	<?php echo $after_title; ?>
      	<?php endif; ?>
-		<div class="blog-sidebar-box-body p-30 px-30">
+		<div class="blog-sidebar-box-body">
 			<div class="apps-sidebar-category">
 				<ul>
 					<?php 

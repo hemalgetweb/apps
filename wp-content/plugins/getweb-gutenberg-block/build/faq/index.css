@@ -19,7 +19,7 @@
 .accordion-item input.components-text-control__input:focus {
   border: 0;
   box-shadow: none;
-  outline: navajowhite;
+  outline: none;
 }
 
 .apps-accordion-wrapper-main-114 .components-base-control input {

@@ -263,6 +263,19 @@ class CB_Core_Hero extends Widget_Base
 			]
 		);
 		$this->add_control(
+			'see_pricing_btn_text',
+			[
+				'label' => esc_html__('Button text', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__('See our pricing', 'cb-core'),
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your button text here', 'cb-core'),
+				'condition' => [
+					'layout' => ['layout-2']
+				]
+			]
+		);
+		$this->add_control(
 			'btn_link2',
 			[
 				'label' => esc_html__('Button Link', 'textdomain'),
@@ -278,6 +291,25 @@ class CB_Core_Hero extends Widget_Base
 				'label_block' => true,
 				'condition' => [
 					'layout' => ['layout-1']
+				]
+			]
+		);
+		$this->add_control(
+			'see_pricing_btn_link2',
+			[
+				'label' => esc_html__('Button Link', 'textdomain'),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => esc_html__('https://your-link.com', 'cb-core'),
+				'options' => ['url', 'is_external', 'nofollow'],
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
+				'label_block' => true,
+				'condition' => [
+					'layout' => ['layout-2']
 				]
 			]
 		);

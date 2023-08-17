@@ -27,6 +27,11 @@ export default function Edit(props) {
 	updatedFaqs.push(newItem);
 	setAttributes({ faqs: updatedFaqs });
   };
+  const RemoveRow = () => {
+	const updatedFaqs = [...faqs];
+	updatedFaqs.pop();
+	setAttributes({ faqs: updatedFaqs });
+  };
   return (
     <div { ...useBlockProps() }>
       <div className="faq-area">
@@ -72,7 +77,8 @@ export default function Edit(props) {
               ))}
             </div>
 			
-			  <button className='btn btn-primary' onClick={AddRow}>Add Question</button>
+			  <button className='btn btn-primary me-2' onClick={AddRow}>Add Question</button>
+			  <button className='btn btn-danger' onClick={RemoveRow}>Remove Question</button>
           </div>
         </div>
       </div>

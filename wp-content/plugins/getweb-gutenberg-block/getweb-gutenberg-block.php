@@ -39,9 +39,9 @@ function getweb_create_block_category( $categories ) {
 add_filter( 'block_categories_all' , 'getweb_create_block_category' );
 
 function getweb_enqueue_scripts() {
-	wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', null, time(), false );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', null, time(), false );
 	wp_enqueue_style('apps-core', get_template_directory_uri() . '/assets/css/apps-core.css', null, time());
 	wp_enqueue_style('apps-custom', get_template_directory_uri() . '/assets/css/apps-custom.css', null, time());
-	wp_enqueue_script( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', array('jquery'), time(), true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), time(), true );
 }
 add_action("admin_enqueue_scripts", "getweb_enqueue_scripts");

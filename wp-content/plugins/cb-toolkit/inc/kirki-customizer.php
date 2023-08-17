@@ -2410,6 +2410,14 @@ function cbtoolkit_404_fields($fields)
 {
     // 404 settings
     $fields[] = [
+        'type'     => 'text',
+        'settings' => 'cbtoolkit_error_page_small_title',
+        'label'    => __('Small title', 'cb-toolkit'),
+        'section'  => '404_page',
+        'default'  => __('404', 'cb-toolkit'),
+        'priority' => 10,
+    ];
+    $fields[] = [
         'type'        => 'image',
         'settings'    => 'cbtoolkit_error_404_image',
         'description' => __('Upload Error Image.', 'cb-toolkit'),

@@ -10984,6 +10984,16 @@ h5.apps-project-card-title-114 button {
 
 .apps-sidebar-category ul {
     list-style: none;
+    display: flex;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.apps-sidebar-category ul li {
+    border-radius: 4px;
+    border: 1px solid var(--dark-dark-3, #316785);
 }
 
 .apps-sidebar-category ul li a {

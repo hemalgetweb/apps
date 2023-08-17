@@ -25000,6 +25000,10 @@ div#player {
     padding-top: 10px;
 }
 
+.apps-blog-archive-banner-subtitle-group {
+    padding-bottom: 20px;
+}
+
 .apps-blog-archive-banner-inner-114 .subtitle {
     color: var(--primary-primary, #00C7C7);
     font-size: 12px;

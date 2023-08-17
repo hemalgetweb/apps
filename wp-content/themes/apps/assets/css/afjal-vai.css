@@ -487,9 +487,9 @@ ul.dropdown-menus li.menu-item a::after {
     transition: all 150ms ease;
 }
 
-.blog-area .apps-blog-post-box-meta-114 a:hover svg {
-    margin-left: 5px !important;
+.blog-area .apps-blog-post-box-meta-114 a:hover {
+    gap: 17px !important;
 }
 .blog-area .apps-blog-post-box-meta-114 a:hover svg * {
-    fill: #1AE3E3 !important;
+    fill: red !important;
 }

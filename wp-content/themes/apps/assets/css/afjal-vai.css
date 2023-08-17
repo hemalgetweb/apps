@@ -408,3 +408,11 @@ ul.dropdown-menus li.menu-item a::after {
         margin-bottom: 32px !important;
     }
 }
+@media (max-width: 480px) {
+    .bg-btn .btn-icon {
+        right: 22px !important;
+    }
+    .bg-btn:hover .btn-icon, .bg-btn.active .btn-icon {
+        right: 18px !important;
+    }
+}

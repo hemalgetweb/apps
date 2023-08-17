@@ -527,3 +527,6 @@ ul.dropdown-menus li.menu-item a::after {
     margin-top: 50px;
 }
 
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #00C7C7;
+}

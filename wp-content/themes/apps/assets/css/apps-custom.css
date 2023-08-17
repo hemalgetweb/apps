@@ -25001,6 +25001,11 @@ div#player {
     height: 389px;
 }
 
+.apps-blog-archive-banner-top-114 {
+    background: var(--dark-dark-1, #003959);
+    padding: 40px 0;
+}
+
 .apps-blog-archive-banner-inner-114 .subtitle {
     color: var(--primary-primary, #00C7C7);
     font-size: 12px;
@@ -50029,8 +50034,8 @@ div#player {
 
 .apps-blog-archive-banner-top-114 {
     background: var(--dark-dark-1, #003959);
-    padding-top: 60px;
-    padding-bottom: 25px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .apps-blog-archive-banner-inner-114 .subtitle {

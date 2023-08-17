@@ -169,7 +169,7 @@
 <section class="related-post-area">
   <div class="container">
     <div class="related-post-wrapper-114 p-rel">
-      <div class="swiper-container apps-project-active-114">
+      <div class="swiper-container related-post-slider">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
@@ -466,15 +466,15 @@
         </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
-      <div class="apps-project-paginate">
-        <div class="swiper-next2" tabindex="0" role="button" aria-label="Next slide"
+      <div class="swiper-pagination113">
+        <div class="swiper-next25555" tabindex="0" role="button" aria-label="Next slide"
           aria-controls="swiper-wrapper-8e10ceba4dd67f76c">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 5L9.115 5.885L12.6042 9.375H5V10.625H12.6042L9.115 14.115L10 15L15 10L10 5Z" fill="#73A7C3">
             </path>
           </svg>
         </div>
-        <div class="swiper-prev2" tabindex="0" role="button" aria-label="Previous slide"
+        <div class="swiper-prev25555" tabindex="0" role="button" aria-label="Previous slide"
           aria-controls="swiper-wrapper-8e10ceba4dd67f76c">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 15L10.885 14.115L7.39583 10.625H15V9.375H7.39583L10.885 5.885L10 5L5 10L10 15Z" fill="#73A7C3">

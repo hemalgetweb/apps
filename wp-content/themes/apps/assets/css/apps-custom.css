@@ -25019,11 +25019,12 @@ div#player {
 }
 
 .apps-blog-archive-banner-inner-114 .title {
-    color: var(--white, #FFF);
+    color: var(--dark-dark-1, #003959);
+    font-family: Cairo;
     font-size: 48px;
-    font-weight: 600;
-    line-height: 60px;
-    /* 125% */
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.25em;
 }
 
 body {

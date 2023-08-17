@@ -10,6 +10,8 @@
 
 get_header();
 
+
+$cbtoolkit_error_page_small_title = get_theme_mod('cbtoolkit_error_page_small_title', __('404', 'apps'));
 $cbtoolkit_error_404_image = get_theme_mod('cbtoolkit_error_404_image', get_template_directory_uri() . '/assets/img/404-page-error-image.svg');
 $cbtoolkit_error_title = get_theme_mod('cbtoolkit_error_title', __('Oops! Page not found', 'apps'));
 $cbtoolkit_error_desc = get_theme_mod('cbtoolkit_error_desc', __('The page you are looking for may have been renamed, changed, or is temporarily unavailable.', 'apps'));
@@ -23,6 +25,12 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
       <div class="row align-items-center">
          <div class="col-lg-6">
             <div class="apps-error-cotnent-114 ">
+               <?php if(!empty($cbtoolkit_error_page_small_title)) : ?>
+                  <span class="section-tag fs-12 fw-bold text-uppercase text-clr-primary2 d-inline-flex gap-2 align-items-center mb-2 ">
+                     <img decoding="async" width="10" height="10" src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/subtitle-left-icon.svg" alt="icon" class="img-fluid">
+                     <?php echo wp_kses_post($cbtoolkit_error_page_small_title); ?>
+                  </span>
+               <?php endif; ?>
                <?php if(!empty($cbtoolkit_error_title)) : ?>
                   <h4 class="title text-start"><?php echo wp_kses_post($cbtoolkit_error_title); ?></h4>
                <?php endif; ?>

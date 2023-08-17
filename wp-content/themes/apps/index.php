@@ -87,7 +87,10 @@ $categories = get_categories(
 								}
 								?>
 								<div class="blog-img mb-2 rounded-top overflow-hidden">
-									<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>" class="img-fluid w-100">
+									<a href="<?php echo get_the_permalink(); ?>">
+										<img src="<?php echo esc_url($image_src); ?>" alt="<?php the_title_attribute(); ?>"
+											class="img-fluid w-100">
+									</a>
 								</div>
 							<?php endif; ?>
 							<div class="blog-info ">

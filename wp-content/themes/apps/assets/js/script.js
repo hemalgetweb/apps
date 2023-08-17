@@ -105,8 +105,8 @@
 			clickable: !0
 		},
 		navigation: {
-			nextEl: ".swiper-next2",
-			prevEl: ".swiper-prev2"
+			nextEl: ".swiper-next25555",
+			prevEl: ".swiper-prev25555"
 		},
 		breakpoints: {
 			320: {

@@ -405,6 +405,6 @@ ul.dropdown-menus li.menu-item a::after {
 @media (max-width: 576px) {
     .apps-error-area-114 p {
         font-size: 15px !important;
-        margin-bottom: 20px;
+        margin-bottom: 32px !important;
     }
 }

@@ -533,4 +533,5 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .apps-service-box-title-114 span {
     color: #003959;
+    transition: all 150ms linear;
 }

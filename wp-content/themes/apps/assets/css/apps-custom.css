@@ -11007,6 +11007,13 @@ h5.apps-project-card-title-114 button {
     
     border-radius: 4px;
     border: 1px solid var(--dark-dark-3, #316785);
+    transition: all 100ms linear;
+}
+
+.apps-sidebar-category ul li a:hover {
+    background: #00C7C7;
+    color: #003959;
+    border: 1px solid #00C7C7;
 }
 
 .apps-blog-page-topbar-select .select2-container {

@@ -44,7 +44,7 @@ if(!empty($category)) {
 							?>
 						</span>
 					</div>
-					<h4 class="title"><?php the_title(); ?></h4>
+					<h4 class="title blog-details-main-title"><?php the_title(); ?></h4>
 					<div class="meta">
 						<div class="author-left">
 							<?php

@@ -32,10 +32,10 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
                   </span>
                <?php endif; ?>
                <?php if(!empty($cbtoolkit_error_title)) : ?>
-                  <h4 class="title text-start"><?php echo wp_kses_post($cbtoolkit_error_title); ?></h4>
+                  <h4 class="title"><?php echo wp_kses_post($cbtoolkit_error_title); ?></h4>
                <?php endif; ?>
                <?php if(!empty($cbtoolkit_error_desc)) : ?>
-                  <p class="text-start"><?php echo wp_kses_post($cbtoolkit_error_desc); ?></p>
+                  <p class="section-intro fs-18 fw-normal text-clr-primary2 mb-5 "><?php echo wp_kses_post($cbtoolkit_error_desc); ?></p>
                <?php endif; ?>
 
                   <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4">

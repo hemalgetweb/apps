@@ -16,7 +16,7 @@
                         <p class="content"><?php echo wp_kses_post($settings['_description']); ?></p>
                     <?php endif; ?>
 
-                    <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 " data-wow-duration="0.200s"
+                    <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 mt-5" data-wow-duration="0.200s"
                         data-wow-delay="400ms">
                         <?php if (!empty($settings['see_pricing_btn_text'])):
                             if (!empty($settings['see_pricing_btn_link2']['url'])) {

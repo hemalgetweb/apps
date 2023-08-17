@@ -61,6 +61,13 @@ function Edit(props) {
       faqs: updatedFaqs
     });
   };
+  const RemoveRow = () => {
+    const updatedFaqs = [...faqs];
+    updatedFaqs.pop();
+    setAttributes({
+      faqs: updatedFaqs
+    });
+  };
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -104,9 +111,12 @@ function Edit(props) {
     value: faqs[index].answere,
     onChange: newContent => updateAnswere(index, newContent)
   })))))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "btn btn-primary",
+    className: "btn btn-primary me-2",
     onClick: AddRow
-  }, "Add Question")))));
+  }, "Add Question"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "btn btn-danger",
+    onClick: RemoveRow
+  }, "Remove Question")))));
 }
 
 /***/ }),

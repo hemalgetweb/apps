@@ -440,3 +440,9 @@ ul.dropdown-menus li.menu-item a::after {
         left: 18px !important;
     }
 }
+
+@media (max-width: 992px) {
+    .apps-insta-logo img {
+        max-width: 40px;
+    }
+}

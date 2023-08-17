@@ -1,9 +1,30 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
-.wp-block-create-block-getweb-gutenberg-block {
-	border: 1px dotted #f00;
+.dynamic-service-box-content-114 .title input {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #003959;
+    display: block;
+    margin-bottom: 10px;
 }
+.dynamic-service-box-content-114 input {
+	border: 0 !important;
+}
+.dynamic-service-box-content-114 textarea {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1F516D;
+    margin-bottom: 15px;
+}
+textarea {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+span.dynamic-service-read-more-btn-114 {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+span.dynamic-service-read-more-btn-114 input {flex: 0 0 auto !important;}

@@ -50286,3 +50286,16 @@ body.elementor-panel-loading #elementor-panel-state-loading {
         max-width: 40px;
     }
 }
+
+.seo-feature-item h5.fs-4 {
+    font-size: 18px !important;
+}
+
+.apps-about-right-114 ul li {
+    display: flex;
+    align-items: baseline;
+}
+
+.section-header.apps-about-right-3-114 ul .expect-point {
+    align-items: baseline !important;
+}

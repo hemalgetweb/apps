@@ -1,4 +1,3 @@
-
 body {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -250,9 +249,11 @@ article.postbox .postbox__thumb img {
 .sidebar-search-form input:focus::placeholder {
     opacity: 0;
 }
+
 section.job_post.section-padding .job_key li:before {
     display: none;
 }
+
 .sidebar-search-form input:focus::-moz-placeholder {
     opacity: 0;
 }
@@ -6771,7 +6772,8 @@ ul.dropdown-menus li.menu-item a {
     margin-bottom: 20px;
 }
 
-.apps-service-box-content-wrap-114 .apps-service-box-title-114 a, .apps-service-box-content-wrap-114 .apps-service-box-title-114 span {
+.apps-service-box-content-wrap-114 .apps-service-box-title-114 a,
+.apps-service-box-content-wrap-114 .apps-service-box-title-114 span {
     font-size: 24px;
     line-height: 34px;
     color: #003959;
@@ -7715,19 +7717,7 @@ footer.footer.bg-clr-deepDark {
     margin-bottom: 0;
 }
 
-.about-section-content-5-114 ul li::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .pb-40 {
     padding-bottom: 40px;
@@ -9025,19 +9015,7 @@ section.pricing .pricing-wrapper {
     margin-bottom: 0;
 }
 
-.about-section-content-5-114 ul li::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .pb-40 {
     padding-bottom: 40px;
@@ -19796,19 +19774,7 @@ section.pricing .pricing-wrapper {
     margin-bottom: 0;
 }
 
-.about-section-content-5-114 ul li::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .pb-40 {
     padding-bottom: 40px;
@@ -21170,19 +21136,7 @@ footer.footer.bg-clr-deepDark {
     margin-bottom: 0;
 }
 
-.about-section-content-5-114 ul li::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .pb-40 {
     padding-bottom: 40px;
@@ -24713,7 +24667,7 @@ i {
 }
 
 .apps-has-number-text-dubai-114:hover svg path {
-   fill: #003959;
+    fill: #003959;
     fill: #50ff81;
 }
 
@@ -25000,6 +24954,7 @@ div#mobileHeader .apps-header-call-number-114 {
 .apps-has-number-text-dubai-114:hover path {
     fill: #003959;
 }
+
 .apps-contact-us-border-114 hr {
     margin: 1.5px 0 !important;
 }
@@ -25011,17 +24966,21 @@ div#mobileHeader .apps-header-call-number-114 {
 .contact-left p.text-clr-primary2 {
     margin-bottom: 0;
 }
-.blog-content ul, .blog-content ol {
+
+.blog-content ul,
+.blog-content ol {
     padding-left: 25px;
 }
 
-.blog-content ul li, .blog-content ol li {
+.blog-content ul li,
+.blog-content ol li {
     color: var(--dark-dark-2, #1F516D);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 8px;
 }
+
 .apps-insta-logo img {
     max-width: 60px;
 }
@@ -25032,13 +24991,16 @@ div#mobileHeader .apps-header-call-number-114 {
     bottom: 30px;
     z-index: 999;
 }
+
 div#player {
     max-width: 100% !important;
 }
+
 .psot-details iframe {
     width: 100%;
     height: 389px;
 }
+
 .apps-blog-archive-banner-top-114 {
     background: var(--dark-dark-1, #003959);
     padding: 40px 0;
@@ -25060,8 +25022,10 @@ div#player {
     color: var(--white, #FFF);
     font-size: 48px;
     font-weight: 600;
-    line-height: 60px; /* 125% */
+    line-height: 60px;
+    /* 125% */
 }
+
 body {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -32776,19 +32740,7 @@ footer.footer.bg-clr-deepDark {
     margin-bottom: 0;
 }
 
-.about-section-content-5-114 ul li::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .pb-40 {
     padding-bottom: 40px;
@@ -34078,19 +34030,7 @@ section.pricing .pricing-wrapper {
     margin-bottom: 0;
 }
 
-.about-section-content-5-114 ul li::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .pb-40 {
     padding-bottom: 40px;
@@ -44851,9 +44791,11 @@ section.pricing .pricing-wrapper {
 
 .about-section-content-5-114 ul li::before {
     content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
+    /* width: 5px;
+    height: 5px; */
+    background-image: url('https: //wadialbadaitsolutions.ae/wp-content/uploads/2023/08/bullet-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 9px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
@@ -46223,19 +46165,7 @@ footer.footer.bg-clr-deepDark {
     margin-bottom: 0;
 }
 
-.about-section-content-5-114 ul li::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #1F516D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .pb-40 {
     padding-bottom: 40px;
@@ -49767,7 +49697,7 @@ i {
 }
 
 .apps-has-number-text-dubai-114:hover svg path {
-   fill: #003959;
+    fill: #003959;
     fill: #50ff81;
 }
 
@@ -50054,6 +49984,7 @@ div#mobileHeader .apps-header-call-number-114 {
 .apps-has-number-text-dubai-114:hover path {
     fill: #003959;
 }
+
 .apps-contact-us-border-114 hr {
     margin: 1.5px 0 !important;
 }
@@ -50065,17 +49996,21 @@ div#mobileHeader .apps-header-call-number-114 {
 .contact-left p.text-clr-primary2 {
     margin-bottom: 0;
 }
-.blog-content ul, .blog-content ol {
+
+.blog-content ul,
+.blog-content ol {
     padding-left: 25px;
 }
 
-.blog-content ul li, .blog-content ol li {
+.blog-content ul li,
+.blog-content ol li {
     color: var(--dark-dark-2, #1F516D);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 8px;
 }
+
 .apps-insta-logo img {
     max-width: 60px;
 }
@@ -50086,13 +50021,16 @@ div#mobileHeader .apps-header-call-number-114 {
     bottom: 30px;
     z-index: 999;
 }
+
 div#player {
     max-width: 100% !important;
 }
+
 .psot-details iframe {
     width: 100%;
     height: 389px;
 }
+
 .apps-blog-archive-banner-top-114 {
     background: var(--dark-dark-1, #003959);
     padding-top: 80px;
@@ -50116,24 +50054,26 @@ div#player {
     font-size: 48px;
     margin-bottom: 22px;
     font-weight: 600;
-    line-height: 60px; /* 125% */
+    line-height: 60px;
+    /* 125% */
 }
 
 .apps-blog-archive-banner-inner-114 .author-left span {
     color: var(--white, #FFF);
 
-/* Headline/H5/SamiBold */
+    /* Headline/H5/SamiBold */
     font-family: Cairo;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; /* 155.556% */
+    line-height: 28px;
+    /* 155.556% */
 }
 
 .apps-blog-archive-banner-inner-114 .author-right span {
     color: var(--dark-dark-5, #A8E0FF);
 
-/* Text/tag_sm */
+    /* Text/tag_sm */
     font-family: Cairo;
     font-size: 12px;
     font-style: normal;
@@ -50148,10 +50088,12 @@ div#player {
     grid-gap: 28px;
     flex-wrap: wrap;
 }
+
 .author-left img {
     width: 32px;
     border-radius: 50%;
 }
+
 .apps-blog-archive-banner-inner-114 .author-right svg {
     margin-right: 12px;
 }
@@ -50160,11 +50102,13 @@ div#player {
     display: inline-block;
     transform: translateY(2px);
 }
+
 @media (max-width: 1199px) {
     section.blog-details.section-padding {
         padding-top: 0 !important;
     }
 }
+
 @media (max-width: 767px) {
     .apps-blog-archive-banner-inner-114 .title {
         font-size: 32px;
@@ -50172,6 +50116,7 @@ div#player {
         line-height: 1.4;
     }
 }
+
 /**
     * Faysal vai css
 */
@@ -50181,28 +50126,33 @@ div#player {
     background-position: 0 7px;
     background-repeat: no-repeat;
 }
+
 @media (max-width: 767px) {
     .process {
         background-image: url("../img/process-mobile-bg.svg");
         height: 1560px;
         background-position: left 23px center;
-   }
+    }
 }
+
 .process-item {
     margin-top: -15px;
     margin-bottom: 81px;
 }
+
 @media (max-width: 767px) {
     .process-item {
         margin-top: 10px;
         margin-bottom: 0px;
-   }
+    }
 }
+
 .process-inner {
     max-width: 255px;
     width: 100%;
     text-align: center;
 }
+
 @media (max-width: 767px) {
     .process-inner {
         max-width: 100%;
@@ -50211,22 +50161,26 @@ div#player {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 15px;
-   }
+    }
 }
+
 .img-wrapper {
-   /* position: relative;
+    /* position: relative;
     height: 68px;
     width: 100%;
     */
 }
+
 @media (max-width: 767px) {
     .process-icon {
         display: none;
-   }
+    }
 }
+
 .process-m-icon {
     display: none;
 }
+
 @media (max-width: 767px) {
     img.process-m-icon {
         display: block;
@@ -50234,6 +50188,7 @@ div#player {
         transform: translateX(-2px);
     }
 }
+
 .process-title {
     color: #003959;
     text-align: center;
@@ -50244,11 +50199,13 @@ div#player {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 @media (max-width: 767px) {
     .process-title {
         text-align: left;
-   }
+    }
 }
+
 .process-desc {
     color: #1f516d;
     text-align: center;
@@ -50259,44 +50216,52 @@ div#player {
     line-height: 24px;
     margin: 0 auto;
 }
+
 @media (max-width: 767px) {
     .process-desc {
         text-align: left;
-   }
+    }
 }
+
 .ml-auto {
     margin-left: auto;
 }
+
 @media (max-width: 767px) {
     .ml-auto {
         margin-left: unset;
-   }
+    }
 }
+
 .mr-auto {
     margin-right: auto;
 }
+
 @media (max-width: 767px) {
     .mr-auto {
         margin-right: unset;
-   }
+    }
 }
+
 .h-500 {
     height: 500px;
 }
 
-    
+
 
 /**
     Hemal css
 */
-  @media (max-width: 575px) {
+@media (max-width: 575px) {
     div#mobileHeader .apps-header-call-number-114 {
         flex: 0 0 100%;
         text-align: center;
     }
 }
+
 body.elementor-panel-loading #elementor-panel-state-loading {
-display: none !important;}
+    display: none !important;
+}
 
 .apps-scrollable-content-sections-nav-114 ul li a.active {
     color: #26B5B5;
@@ -50315,6 +50280,7 @@ display: none !important;}
     width: 3px;
     content: "";
 }
+
 @media (max-width: 767px) {
     .apps-insta-logo img {
         max-width: 40px;

@@ -488,8 +488,8 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .blog-area .apps-blog-post-box-meta-114 a:hover svg {
-    margin-left: 5px;
+    margin-left: 5px !important;
 }
 .blog-area .apps-blog-post-box-meta-114 a:hover svg * {
-    margin-left: 5px;
+    fill: #1AE3E3 !important;
 }

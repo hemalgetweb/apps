@@ -503,4 +503,7 @@ ul.dropdown-menus li.menu-item a::after {
     color: #316785 !important;
     transition: all 100ms ease !important;
 }
+.feature-top a:hover span {
+    color: #1ae3e3 !important;
+}
 

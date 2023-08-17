@@ -48,11 +48,7 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 							<span class="post-title fs-14 fw-medium text-clr-dark1 mb-1 d-block">
 								<?php echo get_the_title(); ?>
 							</span>
-							<?php if(!empty($posted_time)) : ?>
-							<span class="post-time fs-12 fw-normal text-clr-dark3 mb-0 d-block">
-								<?php echo $posted_time; ?> ago
-							</span>
-							<?php endif; ?>
+							<p><?php echo get_the_excerpt(); ?></p>
 						</span>
 					</a>
 				</li>

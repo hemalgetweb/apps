@@ -25003,9 +25003,7 @@ div#player {
 .apps-blog-archive-banner-subtitle-group {
     padding-bottom: 20px;
 }
-.blog-details-main-title {
-    padding-bottom: 15px;
-}
+
 
 .apps-blog-archive-banner-inner-114 .subtitle {
     color: var(--primary-primary, #00C7C7);
@@ -25026,6 +25024,7 @@ div#player {
     font-style: normal;
     font-weight: 900;
     line-height: 1.25em;
+    margin-bottom: 15px;
 }
 
 

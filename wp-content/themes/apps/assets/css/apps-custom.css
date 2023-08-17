@@ -11012,7 +11012,7 @@ h5.apps-project-card-title-114 button {
 
 .apps-sidebar-category ul li a:hover {
     background: #00C7C7;
-    color: #003959;
+    color: #003959 !important;
     border: 1px solid #00C7C7;
 }
 
@@ -11109,7 +11109,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 }
 
 .apps-sidebar-category ul li a:hover {
-    color: #00C7C7;
+    color: #003959;
 }
 
 .sidebar-widget .recent-post li.recent-post-list .img-fluid {
@@ -23132,9 +23132,6 @@ h5.apps-project-card-title-114 button {
     color: #316785 !important;
 }
 
-.apps-sidebar-category ul li a:hover {
-    color: #00C7C7;
-}
 
 .sidebar-widget .recent-post li.recent-post-list .img-fluid {
     width: 67px;

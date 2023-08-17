@@ -541,6 +541,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .Sidebar #cb-services-category-list-4 {
     position: relative;
+    padding-bottom: 30px;
 }
 
 .Sidebar #cb-services-category-list-4::before {

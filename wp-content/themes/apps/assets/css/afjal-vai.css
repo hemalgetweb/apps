@@ -488,8 +488,12 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .blog-area .blog-info > a:hover {
-    gap: 17px !important;
+    gap: 16px !important;
 }
 .blog-area .blog-info > a:hover svg * {
-    fill: red !important;
+    fill: #1AE3E3 !important;
+}
+
+.blog-area .blog-title a:hover, .blog-area .section-tag:hover {
+    color: #1ae3e3;
 }

@@ -78,7 +78,7 @@ if(!empty($category)) {
 					</div>
                     <article class="articles">
                         <div class="psot-details">
-                            <div class="blog-info p-0 p-xl-3">
+                            <div class="blog-info">
 								<?php if(has_post_thumbnail(get_the_ID())): ?>
                                 <div class="blog-img mb-2 radius-6 overflow-hidden my-4">
 									<?php the_post_thumbnail(get_the_ID()); ?>

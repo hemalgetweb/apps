@@ -169,18 +169,15 @@
 <section class="project-area">
   <div class="container">
     <div class="apps-project-wrapper-114 p-rel">
-      <div class="swiper-container related-post-slider swiper-initialized swiper-horizontal">
-        <div class="swiper-wrapper" id="swiper-wrapper-8e10ceba4dd67f76c" aria-live="polite" style="cursor: grab;">
-
-          <div class="swiper-slide swiper-slide-active" style="width: 350px; margin-right: 30px;" role="group"
-            aria-label="1 / 20" data-swiper-slide-index="0">
+      <div class="swiper-container related-post-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <!-- related-blog-single -->
-            <div id="post-11111"
-              class="single-blog bg-white p-2 radius-6 box-shadow2 post-6729 post type-post status-publish format-standard has-post-thumbnail hentry category-social-media-marketing">
+            <div class="single-blog bg-white p-2 radius-6 box-shadow2">
               <div class="blog-img mb-2 rounded-top overflow-hidden">
                 <a href="https://wadialbadaitsolutions.ae/how-to-use-tiktok-for-business-in-dubai/">
                   <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/Tiktok_feature_image-1.webp"
-                    alt="How to Use TikTok for Business in Dubai?" class="img-fluid w-100">
+                    alt="img" class="img-fluid w-100">
                 </a>
               </div>
               <div class="blog-info ">
@@ -232,15 +229,13 @@
             </div>
             <!--/ related-blog-single -->
           </div>
-          <div class="swiper-slide swiper-slide-active" style="width: 350px; margin-right: 30px;" role="group"
-            aria-label="1 / 20" data-swiper-slide-index="0">
+          <div class="swiper-slide">
             <!-- related-blog-single -->
-            <div id="post-22222"
-              class="single-blog bg-white p-2 radius-6 box-shadow2 post-6729 post type-post status-publish format-standard has-post-thumbnail hentry category-social-media-marketing">
+            <div class="single-blog bg-white p-2 radius-6 box-shadow2">
               <div class="blog-img mb-2 rounded-top overflow-hidden">
                 <a href="https://wadialbadaitsolutions.ae/how-to-use-tiktok-for-business-in-dubai/">
                   <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/Tiktok_feature_image-1.webp"
-                    alt="How to Use TikTok for Business in Dubai?" class="img-fluid w-100">
+                    alt="img" class="img-fluid w-100">
                 </a>
               </div>
               <div class="blog-info ">
@@ -292,15 +287,13 @@
             </div>
             <!--/ related-blog-single -->
           </div>
-          <div class="swiper-slide swiper-slide-active" style="width: 350px; margin-right: 30px;" role="group"
-            aria-label="1 / 20" data-swiper-slide-index="0">
+          <div class="swiper-slide">
             <!-- related-blog-single -->
-            <div id="post-33333"
-              class="single-blog bg-white p-2 radius-6 box-shadow2 post-6729 post type-post status-publish format-standard has-post-thumbnail hentry category-social-media-marketing">
+            <div class="single-blog bg-white p-2 radius-6 box-shadow2">
               <div class="blog-img mb-2 rounded-top overflow-hidden">
                 <a href="https://wadialbadaitsolutions.ae/how-to-use-tiktok-for-business-in-dubai/">
                   <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/Tiktok_feature_image-1.webp"
-                    alt="How to Use TikTok for Business in Dubai?" class="img-fluid w-100">
+                    alt="img" class="img-fluid w-100">
                 </a>
               </div>
               <div class="blog-info ">
@@ -352,15 +345,13 @@
             </div>
             <!--/ related-blog-single -->
           </div>
-          <div class="swiper-slide swiper-slide-active" style="width: 350px; margin-right: 30px;" role="group"
-            aria-label="1 / 20" data-swiper-slide-index="0">
+          <div class="swiper-slide">
             <!-- related-blog-single -->
-            <div id="post-444444"
-              class="single-blog bg-white p-2 radius-6 box-shadow2 post-6729 post type-post status-publish format-standard has-post-thumbnail hentry category-social-media-marketing">
+            <div class="single-blog bg-white p-2 radius-6 box-shadow2">
               <div class="blog-img mb-2 rounded-top overflow-hidden">
                 <a href="https://wadialbadaitsolutions.ae/how-to-use-tiktok-for-business-in-dubai/">
                   <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/Tiktok_feature_image-1.webp"
-                    alt="How to Use TikTok for Business in Dubai?" class="img-fluid w-100">
+                    alt="img" class="img-fluid w-100">
                 </a>
               </div>
               <div class="blog-info ">
@@ -412,15 +403,13 @@
             </div>
             <!--/ related-blog-single -->
           </div>
-          <div class="swiper-slide swiper-slide-active" style="width: 350px; margin-right: 30px;" role="group"
-            aria-label="1 / 20" data-swiper-slide-index="0">
+          <div class="swiper-slide">
             <!-- related-blog-single -->
-            <div id="post-55555"
-              class="single-blog bg-white p-2 radius-6 box-shadow2 post-6729 post type-post status-publish format-standard has-post-thumbnail hentry category-social-media-marketing">
+            <div class="single-blog bg-white p-2 radius-6 box-shadow2">
               <div class="blog-img mb-2 rounded-top overflow-hidden">
                 <a href="https://wadialbadaitsolutions.ae/how-to-use-tiktok-for-business-in-dubai/">
                   <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/Tiktok_feature_image-1.webp"
-                    alt="How to Use TikTok for Business in Dubai?" class="img-fluid w-100">
+                    alt="img" class="img-fluid w-100">
                 </a>
               </div>
               <div class="blog-info ">

@@ -25332,4 +25332,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: #50FF81; 
 }
 
+.img-wrapper img.process-m-icon {
+    max-width: inherit;
+}
 

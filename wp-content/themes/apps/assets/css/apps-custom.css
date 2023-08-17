@@ -50053,7 +50053,6 @@ div#player {
 
 .apps-blog-archive-banner-inner-114 .author-left span {
     color: var(--white, #FFF);
-
     /* Headline/H5/SamiBold */
     font-family: Cairo;
     font-size: 18px;
@@ -50065,8 +50064,6 @@ div#player {
 
 .apps-blog-archive-banner-inner-114 .author-right span {
     color: var(--dark-dark-5, #A8E0FF);
-
-    /* Text/tag_sm */
     font-family: Cairo;
     font-size: 12px;
     font-style: normal;

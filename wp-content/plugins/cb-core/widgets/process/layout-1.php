@@ -1,29 +1,32 @@
-<section class="cb-process-area">
+<section class="cb-process-area my-5">
     <div class="container process">
         <?php if(!empty($settings['slides'])) : ?>
         <div class="row">
             <?php
                 foreach($settings['slides'] as $index => $slide) :
                 $position_aos_fade = "";
-                if($index <= 2 ) {
+                if($index == 1 || $index == 2 || $index == 3 || $index == 7 || $index == 8 || $index == 9) {
                     $position_aos_fade = "fade-right";
-                } elseif($index >= 3 && $index<= 5) {
-                    $position_aos_fade = "fade-left";
-                } elseif($index >= 6 && $index <= 8) {
+                } elseif($index == 1 || $index == 2 || $index == 3) {
                     $position_aos_fade = "fade-left";
                 }
                 $ml_class = '';
-                if($index == 0 || $index == 3 || $index == 6) {
-                    $ml_class = 'ml-auto';
-                } elseif($index == 2 || $index == 5 || $index == 8) {
-                    $ml_class = 'mr-auto';
-                } elseif($index == 1 || $index == 4 || $index == 7) {
-                    $ml_class = 'text-center';
+                $ml_auto_class = '';
+                $margin_auto = '';
+                if($index == 0 || $index == 2 || $index == 4 || $index == 6 || $index == 8) {
+                    $ml_class = 'm-left';
                 }
+                if($index == 0 || $index == 3 || $index == 6) {
+                    $ml_auto_class = 'ml-auto';
+                }
+                if($index == 1 || $index == 4 || $index == 7) {
+                    $margin_auto = 'margin-auto';
+                }
+
             ?>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-6">
                 <div class="process-item aos-init aos-animate" data-aos="<?php echo $position_aos_fade; ?>">
-                    <div class="process-inner <?php echo esc_attr($ml_class); ?>">
+                    <div class="process-inner <?php echo esc_attr($ml_class); ?> <?php echo esc_attr($ml_auto_class); ?> <?php echo esc_attr($margin_auto); ?>">
                         <div class="img-wrapper">
                         <?php if(!empty($slide['process_icon_sm']['url'])) : ?>
                             <img src="<?php echo $slide['process_icon_sm']['url']; ?>" class="process-m-icon" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon_sm'] ); ?>">
@@ -31,16 +34,6 @@
                         <?php if(!empty($slide['process_icon']['url'])) : ?>
                             <img src="<?php echo $slide['process_icon']['url']; ?>" class="process-icon" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon'] ); ?>">
                         <?php endif; ?>
-                        <?php
-                        $process_icon_sm = $slide['process_icon_sm'];
-                        $image_url_sm = wp_get_attachment_image_url($process_icon_sm, 'thumbnail');
-                        $image_alt_sm = get_post_meta($process_icon_sm, '_wp_attachment_image_alt', true);
-                        $image_class_sm = 'process-icon';
-                        
-                        if ($image_url_sm) {
-                            echo '<img src="' . esc_url($image_url_sm) . '" alt="' . esc_attr($image_alt_sm) . '" class="' . esc_attr($image_class_sm) . '">';
-                        }
-                        ?>
                     </div>
                     <div>
                         <?php if(!empty($slide['process_title'])) : ?>

@@ -25044,6 +25044,16 @@ div#player {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 5px;
+}
+.apps-blog-archive-banner-inner-114 .total-comments span {
+    color: #316785;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 5px;
 }
 
 .apps-blog-archive-banner-inner-114 .meta {
@@ -25055,10 +25065,6 @@ div#player {
 .author-left img {
     width: 32px;
     border-radius: 50%;
-}
-
-.apps-blog-archive-banner-inner-114 .author-right svg {
-    margin-right: 12px;
 }
 
 .apps-blog-archive-banner-inner-114 .meta span {

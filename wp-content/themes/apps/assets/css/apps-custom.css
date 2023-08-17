@@ -24152,7 +24152,9 @@ section.pricing.active .single-price .pricing-item {
 .contact-section-bg {
     background-color: #EBF8FF;
 }
-
+.row {
+    --bs-gutter-x: 30px;
+}
 .service-area .row {
     --bs-gutter-x: 1.75rem !important;
 }
@@ -24368,7 +24370,7 @@ i {
 }
 
 .container {
-    padding: 0 14px;
+    padding: 0 15px;
 }
 
 .apps-service-link-single-114 {

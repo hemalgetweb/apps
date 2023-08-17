@@ -23,7 +23,7 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
 <section class="apps-error-area-114 pt-165 pb-100">
    <div class="container">
       <div class="row align-items-center">
-         <div class="col-lg-6">
+         <div class="col-md-6">
             <div class="apps-error-cotnent-114 ">
                <?php if(!empty($cbtoolkit_error_page_small_title)) : ?>
                   <span class="section-tag fs-12 fw-bold text-uppercase text-clr-primary2 d-inline-flex gap-2 align-items-center mb-2 ">
@@ -70,9 +70,9 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
             </div>
          </div>
 
-         <div class="col-lg-6">
+         <div class="col-md-6">
             <?php if(!empty($cbtoolkit_error_404_image)) : ?>
-            <div class="apps-error-image-top-114 text-center">
+            <div class="apps-error-image-top-114 text-center mb-0">
                <img src="<?php echo esc_url($cbtoolkit_error_404_image); ?>" alt="<?php echo esc_attr__('Error image', 'apps'); ?>">
             </div>
             <?php endif; ?>

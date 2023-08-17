@@ -24997,6 +24997,7 @@ div#player {
 
 .apps-blog-archive-banner-top-114 {
     background: var(--dark-dark-1, #003959);
+    padding-top: 10px;
 }
 
 .apps-blog-archive-banner-inner-114 .subtitle {

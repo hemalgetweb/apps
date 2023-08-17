@@ -25061,6 +25061,7 @@ div#player {
     display: flex;
     grid-gap: 15px;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .author-left img {

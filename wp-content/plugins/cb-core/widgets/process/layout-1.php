@@ -6,42 +6,52 @@
                 foreach($settings['slides'] as $index => $slide) :
                 $position_aos_fade = "";
                 $inner_classes = '';
+                $process_icon_none = '';
                 switch($index) {
                     case 0:
                         $position_aos_fade = "fade-right";
                         $inner_classes = "ml-auto m-left";
+                        $process_icon_none = "";
                         break;
                     case 1:
                         $position_aos_fade = "fade-right";
                         $inner_classes = "margin-auto m-right";
+                        $process_icon_none = "";
                         break;
                     case 2:
                         $position_aos_fade = "fade-right";
                         $inner_classes = "mr-auto m-left";
+                        $process_icon_none = "process-icon-none";
                         break;
                     case 3:
                         $position_aos_fade = "fade-left";
                         $inner_classes = "ml-auto m-right";
+                        $process_icon_none = "";
                         break;
                     case 4:
                         $position_aos_fade = "fade-left";
                         $inner_classes = "margin-auto m-left";
+                        $process_icon_none = "process-icon-none";
                         break;
                     case 5:
                         $position_aos_fade = "fade-left";
                         $inner_classes = "mr-auto m-right";
+                        $process_icon_none = "process-icon-none";
                         break;
                     case 6:
                         $position_aos_fade = "fade-right";
                         $inner_classes = "ml-auto m-left";
+                        $process_icon_none = "process-icon-none";
                         break;
                     case 7:
                         $position_aos_fade = "fade-right";
                         $inner_classes = "margin-auto m-right";
+                        $process_icon_none = "process-icon-none";
                         break;
                     case 8:
                         $position_aos_fade = "fade-right";
                         $inner_classes = "mr-auto m-left";
+                        $process_icon_none = "";
                         break;
                 }
             ?>
@@ -56,7 +66,7 @@
                             <img src="<?php echo $slide['process_icon_tab']['url']; ?>" class="process-tab-icon" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon_tab'] ); ?>">
                         <?php endif; ?>
                         <?php if(!empty($slide['process_icon']['url'])) : ?>
-                            <img src="<?php echo $slide['process_icon']['url']; ?>" class="process-icon process-icon-none" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon'] ); ?>">
+                            <img src="<?php echo $slide['process_icon']['url']; ?>" class="process-icon <?php echo $process_icon_none; ?>" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon'] ); ?>">
                         <?php endif; ?>
                     </div>
                     <div>

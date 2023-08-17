@@ -483,13 +483,13 @@ ul.dropdown-menus li.menu-item a::after {
     align-items: center;
     gap: 15px
 }
-.blog-area .apps-blog-post-box-meta-114 a svg {
+.blog-area .blog-info > a svg {
     transition: all 150ms ease;
 }
 
-.blog-area .apps-blog-post-box-meta-114 a:hover {
+.blog-area .blog-info > a:hover {
     gap: 17px !important;
 }
-.blog-area .apps-blog-post-box-meta-114 a:hover svg * {
+.blog-area .blog-info > a:hover svg * {
     fill: red !important;
 }

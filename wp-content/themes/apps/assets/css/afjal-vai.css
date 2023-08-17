@@ -485,7 +485,7 @@ ul.dropdown-menus li.menu-item a::after {
     gap: 15px
 }
 .blog-area .blog-info > a svg {
-    transition: all 150ms ease;
+    transition: all 150ms linear;
 }
 
 .blog-area .blog-info > a:hover {

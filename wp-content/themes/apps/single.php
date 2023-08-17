@@ -71,7 +71,7 @@ if(!empty($category)) {
 				</div>
 			</div>
 		</div>
-        <div class="container mt-0 mt-xl-5 pt-0 pt-xl-4">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <article class="articles">
@@ -92,7 +92,7 @@ if(!empty($category)) {
                                             <?php echo esc_html__('Social media accounts', 'apps'); ?>
                                         </h4>
 										<?php echo do_shortcode('[Sassy_Social_Share]') ?>
-                                       
+									
                                     </div>
 									<?php get_template_part( 'post-formates/single-post/content', 'biography' ); ?>
                                 </div>

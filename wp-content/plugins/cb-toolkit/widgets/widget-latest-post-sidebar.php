@@ -48,7 +48,7 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 							<span class="post-title fs-14 fw-medium text-clr-dark1 mb-1 d-block">
 								<?php echo get_the_title(); ?>
 							</span>
-							<p><?php echo get_the_excerpt(); ?></p>
+							<p><?php echo wp_trim_words( get_the_excerpt(), 11 ); ?></p>
 						</span>
 					</a>
 				</li>

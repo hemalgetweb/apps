@@ -25241,3 +25241,9 @@ body::-webkit-scrollbar-thumb:hover {
     max-width: inherit;
 }
 
+
+@media (max-width: 767px) {
+    .img-wrapper img.process-m-icon {
+        margin-left: -3px;
+    }
+}

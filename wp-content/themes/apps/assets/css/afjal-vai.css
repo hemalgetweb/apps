@@ -541,7 +541,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .Sidebar #cb-services-category-list-4 {
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
 }
 
 .Sidebar #cb-services-category-list-4::before {
@@ -550,6 +550,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 100%;
     height: 5px;
     left: 0;
-    bottom: 0;
+    bottom: 2px;
     background: url('data:image/svg+xml,<svg width="350" height="5" viewBox="0 0 350 5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="1" fill="%23BADDF0"/><rect y="4" width="350" height="1" fill="%23BADDF0"/></svg>');
 }

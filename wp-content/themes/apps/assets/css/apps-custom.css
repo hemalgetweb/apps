@@ -11109,6 +11109,12 @@ form#mc4wp-form-1 input.form-control.subscribe {
     color: #003959;
 }
 
+.Sidebar .recent-post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .sidebar-widget .recent-post li.recent-post-list .img-fluid {
     width: 160px;
     height: 94px;
@@ -11154,6 +11160,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .recent-post-list a:hover .sidebar-recent-post-content {
     color: #316785 !important;
 }
+
 
 @media (max-width: 767px) {
     .apps-blog-page-topbar-select span.select2-selection {

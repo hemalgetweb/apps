@@ -25230,16 +25230,6 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 
 
-body::-webkit-scrollbar-track {
-  background: #00C7C7; 
-}
-body::-webkit-scrollbar-thumb {
-  background: #003959; 
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: #50FF81; 
-}
-
 .img-wrapper img.process-m-icon {
     max-width: inherit;
 }

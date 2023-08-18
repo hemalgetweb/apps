@@ -553,3 +553,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     bottom: 3px;
     background: url('data:image/svg+xml,<svg width="350" height="5" viewBox="0 0 350 5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="1" fill="%23BADDF0"/><rect y="4" width="350" height="1" fill="%23BADDF0"/></svg>');
 }
+
+body::-webkit-scrollbar-track {
+    background: #00C7C7; 
+}
+body::-webkit-scrollbar-thumb {
+    background: #003959; 
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #50FF81; 
+}

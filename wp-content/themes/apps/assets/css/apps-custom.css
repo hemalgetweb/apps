@@ -11115,7 +11115,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .single-blog-featured-img {
     margin-bottom: 25px;
 }
-.blog-content p {
+.blog-content p:not(.accordion-header) {
     color: #003959;
     font-family: Cairo;
     font-size: 20px;
@@ -11145,7 +11145,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     color: #00C7C7;
 }
 
-.blog-content h3 {
+.blog-content h3:not(.accordion-header) {
     color: #003959;
     font-size: 24px;
     font-style: normal;
@@ -11155,7 +11155,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     margin-bottom: 20px;
 }
 
-.blog-content h2 {
+.blog-content h2:not(.accordion-header) {
     color: #003959;
     font-size: 36px;
     font-style: normal;

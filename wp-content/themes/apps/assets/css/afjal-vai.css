@@ -817,3 +817,20 @@ body::-webkit-scrollbar-thumb:hover {
 .accordion-item .accordion-button {
     word-break: break-all;
 }
+@media (max-width: 575px) {
+    .apps-comment-box-single-blog-114 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .apps-comment-box-single-blog-image-114 {
+        margin: 0 auto;
+    }
+}
+.mt-93 {
+    margin-top: 93px;
+}
+@media (max-width: 767px) {
+    section.related-post-area.section-padding.bg-clr-dark8.mt-93 {
+        margin-top: 30px;
+    }
+}

@@ -149,7 +149,7 @@ $related_posts_query = new WP_Query($related_posts_args);
 
 <?php if ($related_posts_query->have_posts()) : ?>
 <!-- related-post -->
-<section class="related-post-area section-padding bg-clr-dark8">
+<section class="related-post-area section-padding bg-clr-dark8 mt-93">
     <div class="container">
         <div class="apps-service-section-wrapper-114 text-center mb-5">
             <h2 class="apps-service-section-title-114 fs-36">

@@ -10985,16 +10985,12 @@ h5.apps-project-card-title-114 button {
 .apps-sidebar-category ul {
     list-style: none;
     display: flex;
-    padding: 4px 10px;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.apps-sidebar-category ul li {
-    border-radius: 4px;
-    border: 1px solid var(--dark-dark-3, #316785);
-}
+/* .apps-sidebar-category ul li {
+} */
 
 .apps-sidebar-category ul li a {
     text-decoration: none;
@@ -11007,6 +11003,17 @@ h5.apps-project-card-title-114 button {
     line-height: normal;
     letter-spacing: 1.8px;
     text-transform: uppercase;
+    padding: 3px 10px;
+    
+    border-radius: 4px;
+    border: 1px solid var(--dark-dark-3, #316785);
+    transition: all 100ms linear;
+}
+
+.apps-sidebar-category ul li a:hover {
+    background: #00C7C7;
+    color: #003959 !important;
+    border: 1px solid #00C7C7;
 }
 
 .apps-blog-page-topbar-select .select2-container {
@@ -11102,7 +11109,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 }
 
 .apps-sidebar-category ul li a:hover {
-    color: #00C7C7;
+    color: #003959;
 }
 
 .sidebar-widget .recent-post li.recent-post-list .img-fluid {
@@ -23125,9 +23132,6 @@ h5.apps-project-card-title-114 button {
     color: #316785 !important;
 }
 
-.apps-sidebar-category ul li a:hover {
-    color: #00C7C7;
-}
 
 .sidebar-widget .recent-post li.recent-post-list .img-fluid {
     width: 67px;
@@ -25226,16 +25230,6 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 
 
-body::-webkit-scrollbar-track {
-  background: #00C7C7; 
-}
-body::-webkit-scrollbar-thumb {
-  background: #003959; 
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: #50FF81; 
-}
-
 .img-wrapper img.process-m-icon {
     max-width: inherit;
 }
@@ -25247,5 +25241,14 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .cb-process-area.my-5 {
         margin-top: 15px !important;
+    }
+}
+    .instruction-wrap .instruction-item::before, .instruction-wrap .instruction-item::after {
+        display: none;
+    }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .instruction-wrap .instruction-item:nth-child(2)::before, .instruction-wrap .instruction-item:nth-child(3)::before, .instruction-wrap .instruction-item:nth-child(4)::before {
+        display: none;
     }
 }

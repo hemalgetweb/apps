@@ -11122,7 +11122,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 }
 
 .cb-latest-posts-3 {
-    padding-top: 18px;
+    padding-top: 18px !important;
 }
 
 .sidebar-recent-post-title {

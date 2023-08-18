@@ -11127,7 +11127,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
     text-overflow: ellipsis;
     overflow: hidden;
-    display: -webkit-box;
+    display: -webkit-box !important;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
@@ -11146,7 +11146,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
     text-overflow: ellipsis;
     overflow: hidden;
-    display: -webkit-box;
+    display: -webkit-box !important;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;

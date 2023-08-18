@@ -25227,10 +25227,13 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     .img-wrapper img.process-m-icon {
         margin-left: -3px;
     }
+    .cb-process-area.my-5 {
+        margin-top: 15px !important;
+    }
+}
     .instruction-wrap .instruction-item::before, .instruction-wrap .instruction-item::after {
         display: none;
     }
-}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .instruction-wrap .instruction-item:nth-child(2)::before, .instruction-wrap .instruction-item:nth-child(3)::before, .instruction-wrap .instruction-item:nth-child(4)::before {

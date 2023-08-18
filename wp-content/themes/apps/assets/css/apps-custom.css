@@ -11119,6 +11119,11 @@ form#mc4wp-form-1 input.form-control.subscribe {
     width: 160px;
     height: 94px;
     object-fit: cover;
+    overflow: hidden;
+    transition: all 150ms linear;
+}
+.recent-post-list a:hover .img-fluid{
+    transform: scale(1.1);
 }
 
 #cb-latest-posts-3 {

@@ -11243,6 +11243,11 @@ blockquote p {
     font-style: normal;
     font-weight: 400;
     line-height: 1.66em;
+    margin-bottom: 20px !important;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0px !important;
 }
 
 blockquote p strong {
@@ -11251,7 +11256,6 @@ blockquote p strong {
     font-style: normal;
     font-weight: 700;
     line-height: 1.41em;
-    margin-bottom: 20px;
 }
 
 blockquote p:last-child {

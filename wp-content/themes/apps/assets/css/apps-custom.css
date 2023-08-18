@@ -11233,7 +11233,7 @@ body {
     /* Increment "my-sec-counter" by 1 */
     counter-increment: myr;
     content: "" counter(myr)" ";
-    left: 403px;
+    left: -30px;
     /* right: 0px; */
     position: absolute;
 }

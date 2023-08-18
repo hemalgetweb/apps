@@ -125,6 +125,7 @@ $categories = get_categories(
 										</svg>
 										<?php
 										$post_id = get_the_ID();
+										
 										$author_name = get_the_author_meta('display_name', get_post_field('post_author', $post_id));
 										?>
 										<span><?php echo $author_name; ?></span>

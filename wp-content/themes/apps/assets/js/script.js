@@ -111,15 +111,12 @@
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
-				spaceBetween: 0
 			},
 			575: {
 				slidesPerView: 1,
-				spaceBetween: 0
 			},
 			768: {
-				slidesPerView: 1,
-				spaceBetween: 0
+				slidesPerView: 2,
 			},
 			992: {
 				slidesPerView: 2

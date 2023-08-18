@@ -11178,6 +11178,25 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
 }
 
+.blog-content ul {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.blog-content ul li {
+    position: relative;
+}
+
+.blog-content ul li::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: -40px;
+    top: 0;
+    background: red;
+}
+
 
 
 #cb-latest-posts-3 {

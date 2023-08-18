@@ -11115,22 +11115,14 @@ form#mc4wp-form-1 input.form-control.subscribe {
     gap: 20px;
 }
 
-/* .sidebar-widget .recent-post li.recent-post-list .img-fluid {
-
+.sidebar-widget .recent-post li.recent-post-list .img-fluid {
+    width: 160px;
+    height: 94px;
     object-fit: cover;
     overflow: hidden;
     transition: all 150ms linear;
-} */
-.recent-post-featured-img {
-    width: 160px;
-    height: 94px;
-    transition: all 150ms linear;
-    overflow: hidden;
 }
 
-.recent-post-list a:hover .recent-post-featured-img .img-fluid{
-    transform: scale(1.1);
-}
 
 #cb-latest-posts-3 {
     padding-top: 18px;

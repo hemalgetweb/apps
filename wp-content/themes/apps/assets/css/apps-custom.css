@@ -2001,17 +2001,6 @@ p.comment-form-comment textarea {
     margin-bottom: 30px;
 }
 
-.comments-area p.form-submit input.submit {
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Poppins';
-    height: 50px;
-    background: var(--clr-theme-primary);
-    color: var(--clr-common-white);
-    padding: 0 48px;
-    border-radius: 3px;
-}
-
 .comments-area .comment-respond .comment-reply-title small {
     font-size: 18px;
 }
@@ -11172,8 +11161,8 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-weight: 900;
     line-height: 1.27em;
 
-    padding-top: 50px;
-    margin-top: 20px;
+    padding-top: 55px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -11185,7 +11174,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     left: 0;
     top: 0;
     background: url('data:image/svg+xml,<svg width="730" height="5" viewBox="0 0 730 5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="730" height="1" fill="%23BADDF0"/><rect y="4" width="730" height="1" fill="%23BADDF0"/></svg>');
-    
+
 }
 
 
@@ -14555,16 +14544,6 @@ p.comment-form-comment textarea {
     margin-bottom: 30px;
 }
 
-.comments-area p.form-submit input.submit {
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Poppins';
-    height: 50px;
-    background: var(--clr-theme-primary);
-    color: var(--clr-common-white);
-    padding: 0 48px;
-    border-radius: 3px;
-}
 
 .comments-area .comment-respond .comment-reply-title small {
     font-size: 18px;
@@ -25362,4 +25341,18 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 .related-post-wrapper-114.p-rel .swiper-wrapper {
     justify-content: center;
+}
+
+.comments-area p.form-submit input.submit {
+    border-radius: 4px;
+    background: var(--primary-primary, #00C7C7);
+    border: 0;
+    height: 54px;
+    padding: 0 30px;
+    color: var(--dark-dark-1, #003959);
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

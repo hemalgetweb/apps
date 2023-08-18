@@ -25350,11 +25350,14 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     background: var(--primary-primary, #00C7C7);
     border: 0;
     height: 54px;
-    padding: 0 30px;
+    padding: 0 55px 0 30px;
     color: var(--dark-dark-1, #003959);
     font-family: Cairo;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+.comments-area p.form-submit input.submit:focus {
+    border: 0 !important;
 }

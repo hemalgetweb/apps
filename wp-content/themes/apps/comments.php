@@ -3,7 +3,7 @@ if (have_comments()) :
     // Display comment list
     ?>
     <h3><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h3>
-    <ol class="comment-list">
+    <ol class="comment-list mb-30">
         <?php wp_list_comments('callback=custom_comment'); ?>
     </ol>
 

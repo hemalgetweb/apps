@@ -11230,11 +11230,11 @@ body {
     /* Increment "my-sec-counter" by 1 */
     counter-increment: myr;
     content: "ABCD" counter(myr)" ";
-    left: 200px;
-    right: 30%;
+    left: 0px;
+    right: 0px;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background: red;
 }
 

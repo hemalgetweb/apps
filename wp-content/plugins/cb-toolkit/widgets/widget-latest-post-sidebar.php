@@ -48,7 +48,7 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 							<h4 class="sidebar-recent-post-title d-block">
 								<?php echo get_the_title(); ?>
 							</h4>
-							<p><?php echo wp_trim_words( get_the_excerpt(), 11 ); ?></p>
+							<p class="sidebar-recent-post-content"><?php echo wp_trim_words( get_the_excerpt(), 11 ); ?></p>
 						</span>
 					</a>
 				</li>

@@ -11123,6 +11123,17 @@ form#mc4wp-form-1 input.form-control.subscribe {
     transition: all 150ms linear;
 }
 
+.single-blog-featured-img {
+    margin-bottom: 25px;
+}
+.blog-content p {
+    color: #003959;
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+}
 
 #cb-latest-posts-3 {
     padding-top: 18px;

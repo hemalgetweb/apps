@@ -11109,11 +11109,62 @@ form#mc4wp-form-1 input.form-control.subscribe {
     color: #003959;
 }
 
+.Sidebar .recent-post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .sidebar-widget .recent-post li.recent-post-list .img-fluid {
     width: 160px;
     height: 94px;
     object-fit: cover;
 }
+
+#cb-latest-posts-3 {
+    padding-top: 18px;
+}
+
+.sidebar-recent-post-title {
+    color: #003959;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+    transition: all 150ms linear;
+    margin-bottom: 2px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.recent-post-list a:hover .sidebar-recent-post-title {
+    color: #00C7C7;
+}
+.sidebar-recent-post-content {
+    color: #316785;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.83em;
+    margin-bottom: 0px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.recent-post-list a:hover .sidebar-recent-post-content {
+    color: #316785 !important;
+}
+
 
 @media (max-width: 767px) {
     .apps-blog-page-topbar-select span.select2-selection {

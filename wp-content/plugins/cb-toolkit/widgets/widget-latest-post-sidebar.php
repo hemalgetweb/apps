@@ -44,7 +44,9 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 				<li class="recent-post-list">
 					<a href="<?php echo esc_url(get_the_permalink());?>" class="text-decoration-none d-flex gap-3 align-items-center">
 						
-						<img src="<?php print esc_url( get_the_post_thumbnail_url( get_the_ID(), 'full' ) );?>" alt="<?php echo esc_attr($image_alt); ?>" class="img-fluid flex-shrink-0">
+						<div class="">
+							<img src="<?php print esc_url( get_the_post_thumbnail_url( get_the_ID(), 'full' ) );?>" alt="<?php echo esc_attr($image_alt); ?>" class="img-fluid flex-shrink-0">
+						</div>
 						
 						<span class="recent-post-content">
 							<h4 class="sidebar-recent-post-title d-block">

@@ -572,3 +572,43 @@ ul.dropdown-menus li.menu-item a::after {
         position: static;
     }
 }
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #00C7C7;
+}
+
+.apps-service-box-title-114 span {
+    color: #003959;
+    transition: all 150ms linear;
+}
+
+.Sidebar .widget-title {
+    padding-bottom: 20px;
+}
+
+.Sidebar #cb-services-category-list-4 {
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.Sidebar #cb-services-category-list-4::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 3px;
+    background: url('data:image/svg+xml,<svg width="350" height="5" viewBox="0 0 350 5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="1" fill="%23BADDF0"/><rect y="4" width="350" height="1" fill="%23BADDF0"/></svg>');
+}
+
+body::-webkit-scrollbar-track {
+    background: #00C7C7;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #003959;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #50FF81;
+}

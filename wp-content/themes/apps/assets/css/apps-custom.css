@@ -11178,6 +11178,74 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
 }
 
+.blog-content ul {
+    list-style: none !important;
+    padding-left: 40px !important;
+    margin-block: 25px 50px;
+}
+
+.blog-content ul li {
+    position: relative;
+}
+
+.blog-content ul li::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: -40px;
+    top: 0;
+    background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5338 20C12.609 18.4416 11.0977 16.9377 10 15.4883C11.188 13.8987 12.6992 12.4026 14.5338 11C16.1729 12.2623 17.6617 13.7584 19 15.4883C18.4135 16.2364 17.6992 17.0312 16.8571 17.8727C16.015 18.7143 15.2406 19.4234 14.5338 20Z" fill="url(%23paint0_linear_6047_109238)"/><defs><linearGradient id="paint0_linear_6047_109238" x1="14.5" y1="11" x2="14.5" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="%2300C7C7"/><stop offset="1" stop-color="%2350FF81"/></linearGradient></defs></svg>');
+}
+
+
+/* .blog-content ol {
+    padding-left: 40px !important;
+    margin-block: 25px 50px;
+}
+.blog-content ol li {
+    position: relative;
+}
+.blog-content ol li::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_6045_109175)"><path d="M15.1128 30C8.69674 24.8052 3.65915 19.7922 0 14.961C3.9599 9.66234 8.99749 4.67532 15.1128 0C20.5764 4.20779 25.5388 9.19481 30 14.961C28.0451 17.4545 25.6642 20.1039 22.8571 22.9091C20.0501 25.7143 17.4687 28.0779 15.1128 30Z" fill="url(%23paint0_linear_6045_109175)"/></g><defs><linearGradient id="paint0_linear_6045_109175" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="%2300C7C7"/><stop offset="1" stop-color="%2350FF81"/></linearGradient><clipPath id="clip0_6045_109175"><rect width="30" height="30" fill="white"/></clipPath></defs></svg>');
+} */
+
+body {
+    /* Set "my-sec-counter" to 0 */
+    counter-reset: myr;
+}
+.blog-content ol {
+    list-style: none !important;
+    padding-left: 40px !important;
+    margin-block: 25px 50px;
+}
+
+.blog-content ol li::before {
+    /* Increment "my-sec-counter" by 1 */
+    counter-increment: myr;
+    content: "" counter(myr)" ";
+    left: 403px;
+    /* right: 0px; */
+    position: absolute;
+}
+
+.blog-content ol li::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_6045_109175)"><path d="M15.1128 30C8.69674 24.8052 3.65915 19.7922 0 14.961C3.9599 9.66234 8.99749 4.67532 15.1128 0C20.5764 4.20779 25.5388 9.19481 30 14.961C28.0451 17.4545 25.6642 20.1039 22.8571 22.9091C20.0501 25.7143 17.4687 28.0779 15.1128 30Z" fill="url(%23paint0_linear_6045_109175)"/></g><defs><linearGradient id="paint0_linear_6045_109175" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="%2300C7C7"/><stop offset="1" stop-color="%2350FF81"/></linearGradient><clipPath id="clip0_6045_109175"><rect width="30" height="30" fill="white"/></clipPath></defs></svg>');
+    left: 0;
+    top: 0;
+
+}
+
 
 
 #cb-latest-posts-3 {

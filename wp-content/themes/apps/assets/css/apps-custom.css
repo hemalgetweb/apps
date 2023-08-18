@@ -25302,3 +25302,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
         display: none;
     }
 }
+
+.related-post-wrapper-114.p-rel .swiper-wrapper {
+    justify-content: center;
+}

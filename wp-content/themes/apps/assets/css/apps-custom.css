@@ -11126,6 +11126,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
     line-height: 1.5em;
     transition: all 150ms linear;
     margin-bottom: 2px;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .recent-post-list a:hover .sidebar-recent-post-title {
     color: #00C7C7;
@@ -11140,6 +11143,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-weight: 500;
     line-height: 1.83em;
     margin-bottom: 0px;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .recent-post-list a:hover .sidebar-recent-post-content {
     color: #316785 !important;

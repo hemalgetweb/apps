@@ -99,10 +99,10 @@
 	new Swiper(".related-post-slider", {
 		slidesPerView: 2,
 		spaceBetween: 32,
-		loop: !0,
+		loop: true,
 		pagination: {
 			el: ".swiper-pagination113",
-			clickable: !0
+			clickable: true
 		},
 		navigation: {
 			nextEl: ".swiper-next25555",
@@ -124,8 +124,28 @@
 			1200: {
 				slidesPerView: 3
 			}
+		},
+		on: {
+			init: function () {
+				if (this.slides.length > 3) {
+					document.querySelector('.swiper-next25555').style.display = 'block';
+					document.querySelector('.swiper-prev25555').style.display = 'block';
+				} else {
+					document.querySelector('.swiper-next25555').style.display = 'none';
+					document.querySelector('.swiper-prev25555').style.display = 'none';
+				}
+			},
+			resize: function () {
+				if (this.slides.length > 3) {
+					document.querySelector('.swiper-next25555').style.display = 'block';
+					document.querySelector('.swiper-prev25555').style.display = 'block';
+				} else {
+					document.querySelector('.swiper-next25555').style.display = 'none';
+					document.querySelector('.swiper-prev25555').style.display = 'none';
+				}
+			}
 		}
-	})
+	});
 	// related-post-slider -End
 
 

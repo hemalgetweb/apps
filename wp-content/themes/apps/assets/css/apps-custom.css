@@ -25243,3 +25243,9 @@ body.elementor-panel-loading #elementor-panel-state-loading {
         display: none;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .instruction-wrap .instruction-item:nth-child(2)::before, .instruction-wrap .instruction-item:nth-child(3)::before, .instruction-wrap .instruction-item:nth-child(4)::before {
+        display: none;
+    }
+}

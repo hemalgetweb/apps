@@ -3,7 +3,7 @@ if (have_comments()) :
     // Display comment list
     ?>
     <h3><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></h3>
-    <ol class="comment-list">
+    <ol class="comment-list mb-30">
         <?php wp_list_comments('callback=custom_comment'); ?>
     </ol>
 
@@ -43,7 +43,7 @@ function custom_comment($comment, $args, $depth) {
 
         <div class="apps-comment-box-single-blog-114">
             <div class="apps-comment-box-single-blog-image-114">
-                <?php echo get_avatar($comment, 48); ?>
+                <?php echo get_avatar($comment, 73); ?>
             </div>
             <div class="apps-comment-box-single-blog-content-114">
                 <div class="apps-comment-meta-top-114">
@@ -53,7 +53,7 @@ function custom_comment($comment, $args, $depth) {
                     <?php endif; ?>
                 </div>
                 <div class="apps-comment-content-main-114">
-                    <p><?php comment_text(); ?></p>
+                    <?php comment_text(); ?>
                 </div>
                 <div class="reply">
                 <?php

@@ -142,7 +142,7 @@ function apps_widgets_init()
 			'name' => esc_html__('Blog Sidebar', 'apps'),
 			'id' => 'blog-sidebar',
 			'description' => esc_html__('Add Blog Sidebar.', 'apps'),
-			'before_widget' => '<section id="%1$s" class="apps-custom-blog-sidebar-1 sidebar-widget radius-6 overflow-hidden mb-4 %2$s">',
+			'before_widget' => '<section id="%1$s" class="apps-custom-blog-sidebar-1 sidebar-widget overflow-hidden %2$s">',
 			'after_widget' => '</section>',
 			'before_title' => '<h5 class="widget-title fs-4 fw-semi-bold mb-0">',
 			'after_title' => '</h5>',

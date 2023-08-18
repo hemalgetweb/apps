@@ -41,14 +41,16 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 					$image_alt = get_post_meta(get_the_ID() , '_wp_attachment_image_alt', true);
 					$posted_time = human_time_diff(get_the_time ( 'U' ), current_time( 'timestamp' ) );
 				?>
-				<li class="recent-post-list my-3 px-4">
+				<li class="recent-post-list">
 					<a href="<?php echo esc_url(get_the_permalink());?>" class="text-decoration-none d-flex gap-3 align-items-center">
+						
 						<img src="<?php print esc_url( get_the_post_thumbnail_url( get_the_ID(), 'full' ) );?>" alt="<?php echo esc_attr($image_alt); ?>" class="img-fluid flex-shrink-0">
+						
 						<span class="recent-post-content">
-							<span class="post-title fs-14 fw-medium text-clr-dark1 mb-1 d-block">
+							<h4 class="sidebar-recent-post-title d-block">
 								<?php echo get_the_title(); ?>
-							</span>
-							<p><?php echo wp_trim_words( get_the_excerpt(), 11 ); ?></p>
+							</h4>
+							<p class="sidebar-recent-post-content"><?php echo wp_trim_words( get_the_excerpt(), 11 ); ?></p>
 						</span>
 					</a>
 				</li>

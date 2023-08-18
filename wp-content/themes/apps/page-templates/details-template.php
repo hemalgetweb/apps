@@ -159,8 +159,6 @@
     </div>
   </div>
   <!-- faq -end -->
-
-
 </div>
 
 
@@ -169,7 +167,7 @@
 <section class="related-post-area section-padding bg-clr-dark8">
   <div class="container">
 
-    <div class="apps-service-section-wrapper-114 text-center">
+    <div class="apps-service-section-wrapper-114 text-center mb-5">
       <h2 class="apps-service-section-title-114 fs-36">
         Related Post
       </h2>
@@ -473,20 +471,26 @@
         </div>
 
       </div>
-      <div class="swiper-pagination113 py-5 text-center">
-        <div class="swiper-next25555">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 5L9.115 5.885L12.6042 9.375H5V10.625H12.6042L9.115 14.115L10 15L15 10L10 5Z" fill="#73A7C3">
-            </path>
-          </svg>
-        </div>
-        <div class="swiper-prev25555">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 15L10.885 14.115L7.39583 10.625H15V9.375H7.39583L10.885 5.885L10 5L5 10L10 15Z" fill="#73A7C3">
-            </path>
-          </svg>
+
+
+      <!-- swiper-control -->
+      <div class="swiper-control">
+        <div class="swiper-pagination113 d-none"></div>
+        <div class="related-post-arrow">
+          <button type="button" class="swiper-prev swiper-prev25555 swiper-arrow border-0">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 10L5.885 9.115L2.39583 5.625H10V4.375H2.39583L5.885 0.885L5 0L0 5L5 10Z" fill="#73A7C3" />
+            </svg>
+          </button>
+          <button type="button" class="swiper-next swiper-next25555 swiper-arrow border-0">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 0L4.115 0.885L7.60417 4.375L0 4.375L0 5.625L7.60417 5.625L4.115 9.115L5 10L10 5L5 0Z"
+                fill="#73A7C3" />
+            </svg>
+          </button>
         </div>
       </div>
+      <!--/ swiper-control -->
     </div>
   </div>
 </section>

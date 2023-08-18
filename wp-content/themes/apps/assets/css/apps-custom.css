@@ -2001,17 +2001,6 @@ p.comment-form-comment textarea {
     margin-bottom: 30px;
 }
 
-.comments-area p.form-submit input.submit {
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Poppins';
-    height: 50px;
-    background: var(--clr-theme-primary);
-    color: var(--clr-common-white);
-    padding: 0 48px;
-    border-radius: 3px;
-}
-
 .comments-area .comment-respond .comment-reply-title small {
     font-size: 18px;
 }
@@ -6704,9 +6693,6 @@ span.authure-name a {
     font-family: "Font awesome 6 pro";
 }
 
-.sidebar-widget .recent-post li.recent-post-list .img-fluid {
-    width: 67px;
-}
 
 
 ul.dropdown-menus li.menu-item a:hover {
@@ -11083,7 +11069,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-style: normal;
     font-weight: 700;
     line-height: 1.41em;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .recent-post-list .post-title {
@@ -11112,12 +11098,152 @@ form#mc4wp-form-1 input.form-control.subscribe {
     color: #003959;
 }
 
-.sidebar-widget .recent-post li.recent-post-list .img-fluid {
-    width: 67px;
-    height: 67px;
-    border-radius: 6px;
-    object-fit: cover;
+.Sidebar .recent-post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.sidebar-widget .recent-post li.recent-post-list .img-fluid {
+    width: 160px;
+    height: 94px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 150ms linear;
+}
+
+.single-blog-featured-img {
+    margin-bottom: 25px;
+}
+.blog-content p:not(.accordion-header) {
+    color: #003959;
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+
+.blog-content p strong {
+    color: #003959;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.blog-content p a {
+    color: #00A1A1;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    transition: all 100ms linear;
+}
+
+.blog-content p a:hover {
+    color: #00C7C7;
+}
+
+.blog-content h3:not(.accordion-header) {
+    color: #003959;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41em;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-content h2:not(.accordion-header) {
+    color: #003959;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.27em;
+
+    padding-top: 55px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.blog-content h2:not(.accordion-header)::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: url('data:image/svg+xml,<svg width="730" height="5" viewBox="0 0 730 5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="730" height="1" fill="%23BADDF0"/><rect y="4" width="730" height="1" fill="%23BADDF0"/></svg>');
+
+}
+
+.blog-content ul {
+    list-style: none !important;
+    padding-left: 40px !important;
+    margin-block: 25px 50px;
+}
+
+.blog-content ul li {
+    position: relative;
+}
+
+.blog-content ul li::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: -40px;
+    top: 0;
+    background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5338 20C12.609 18.4416 11.0977 16.9377 10 15.4883C11.188 13.8987 12.6992 12.4026 14.5338 11C16.1729 12.2623 17.6617 13.7584 19 15.4883C18.4135 16.2364 17.6992 17.0312 16.8571 17.8727C16.015 18.7143 15.2406 19.4234 14.5338 20Z" fill="url(%23paint0_linear_6047_109238)"/><defs><linearGradient id="paint0_linear_6047_109238" x1="14.5" y1="11" x2="14.5" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="%2300C7C7"/><stop offset="1" stop-color="%2350FF81"/></linearGradient></defs></svg>');
+}
+
+
+
+#cb-latest-posts-3 {
+    padding-top: 18px;
+}
+
+.sidebar-recent-post-title {
+    color: #003959;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+    transition: all 150ms linear;
+    margin-bottom: 2px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.recent-post-list a:hover .sidebar-recent-post-title {
+    color: #00C7C7;
+}
+.sidebar-recent-post-content {
+    color: #316785;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.83em;
+    margin-bottom: 0px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.recent-post-list a:hover .sidebar-recent-post-content {
+    color: #316785 !important;
+}
+
 
 @media (max-width: 767px) {
     .apps-blog-page-topbar-select span.select2-selection {
@@ -14440,16 +14566,6 @@ p.comment-form-comment textarea {
     margin-bottom: 30px;
 }
 
-.comments-area p.form-submit input.submit {
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Poppins';
-    height: 50px;
-    background: var(--clr-theme-primary);
-    color: var(--clr-common-white);
-    padding: 0 48px;
-    border-radius: 3px;
-}
 
 .comments-area .comment-respond .comment-reply-title small {
     font-size: 18px;
@@ -23132,14 +23248,6 @@ h5.apps-project-card-title-114 button {
     color: #316785 !important;
 }
 
-
-.sidebar-widget .recent-post li.recent-post-list .img-fluid {
-    width: 67px;
-    height: 67px;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
 @media (max-width: 767px) {
     .apps-blog-page-topbar-select span.select2-selection {
         margin-bottom: 25px;
@@ -25251,4 +25359,25 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     .instruction-wrap .instruction-item:nth-child(2)::before, .instruction-wrap .instruction-item:nth-child(3)::before, .instruction-wrap .instruction-item:nth-child(4)::before {
         display: none;
     }
+}
+
+.related-post-wrapper-114.p-rel .swiper-wrapper {
+    justify-content: center;
+}
+
+.comments-area p.form-submit input.submit {
+    border-radius: 4px;
+    background: var(--primary-primary, #00C7C7);
+    border: 0;
+    height: 54px;
+    padding: 0 55px 0 30px;
+    color: var(--dark-dark-1, #003959);
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.comments-area p.form-submit input.submit:focus {
+    border: 0 !important;
 }

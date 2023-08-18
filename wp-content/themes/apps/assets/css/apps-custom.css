@@ -11080,7 +11080,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-style: normal;
     font-weight: 700;
     line-height: 1.41em;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .recent-post-list .post-title {
@@ -11135,6 +11135,31 @@ form#mc4wp-form-1 input.form-control.subscribe {
     line-height: 1.5em;
     margin-bottom: 30px;
 }
+
+.blog-content p strong {
+    color: #003959;
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.blog-content p strong a {
+    color: #00A1A1;
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-decoration-line: underline;
+    transition: all 150ms linear;
+}
+
+.blog-content p strong a:hover {
+    color: 00C7C7;
+}
+
 
 #cb-latest-posts-3 {
     padding-top: 18px;

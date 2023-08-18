@@ -45,7 +45,7 @@ Class Latest_posts_sidebar_Widget extends WP_Widget {
 					<a href="<?php echo esc_url(get_the_permalink());?>" class="text-decoration-none d-flex gap-3 align-items-center">
 						<img src="<?php print esc_url( get_the_post_thumbnail_url( get_the_ID(), 'full' ) );?>" alt="<?php echo esc_attr($image_alt); ?>" class="img-fluid flex-shrink-0">
 						<span class="recent-post-content">
-							<h4 class="post-title fs-14 fw-medium text-clr-dark1 mb-1 d-block">
+							<h4 class="sidebar-recent-post-title d-block">
 								<?php echo get_the_title(); ?>
 							</h4>
 							<p><?php echo wp_trim_words( get_the_excerpt(), 11 ); ?></p>

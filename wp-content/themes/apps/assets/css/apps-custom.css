@@ -11116,9 +11116,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
 }
 
 .sidebar-recent-post-title {
-    overflow: hidden;
     color: #003959;
-    text-overflow: ellipsis;
     font-family: Cairo;
     font-size: 16px;
     font-style: normal;
@@ -11126,9 +11124,11 @@ form#mc4wp-form-1 input.form-control.subscribe {
     line-height: 1.5em;
     transition: all 150ms linear;
     margin-bottom: 2px;
-    display: -webkit-box !important;
+
+    display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 .recent-post-list a:hover .sidebar-recent-post-title {
     color: #00C7C7;

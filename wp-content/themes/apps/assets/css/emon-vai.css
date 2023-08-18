@@ -1,8 +1,5 @@
-
-
-
 /*  work progressbar */
-.wadi-work-process-item .process-item-title{
+.wadi-work-process-item .process-item-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -10,13 +7,15 @@
     color: #003959;
     margin: 15px 0;
 }
-.wadi-work-process-item .process-item-pra{
+
+.wadi-work-process-item .process-item-pra {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     color: #1F516D;
 }
+
 /* / work progressbar */
 
 
@@ -27,24 +26,30 @@
 /* all btn update css */
 
 
-.bg-btn{
+.bg-btn {
     background-color: #00C7C7;
 }
-.bg-btn:hover, .bg-btn.active {
+
+.bg-btn:hover,
+.bg-btn.active {
     background-color: #00E2E2 !important;
     color: #003959;
 }
-.bg-btn:hover .btn-icon, .bg-btn.active .btn-icon {
+
+.bg-btn:hover .btn-icon,
+.bg-btn.active .btn-icon {
     right: 22px;
 }
 
-.bg-btn.btn-secondary{
+.bg-btn.btn-secondary {
     background-color: #50FF81;
 }
+
 .bg-btn.btn-secondary:hover {
     background-color: #68FF92 !important;
     color: #003959;
 }
+
 .apps-has-number-text-dubai-114:hover svg path {
     fill: #003959 !important;
 }
@@ -52,13 +57,134 @@
 .button-arrow-left-icon:hover {
     background-color: #00E2E2 !important;
 }
+
 .apps-btn-primary-114:hover {
     background-color: #00E2E2 !important;
 }
+
 .apps-btn-transparent-border-114:hover {
     background-color: #00E2E2 !important;
     color: #003959;
 }
+
 /* / all btn update css  */
 
 
+
+/* wb-process css  */
+.wb-process {
+    padding-top: 200px;
+}
+
+.wb-process .wb-process-bg {
+    background-image: url(../img/process-bg1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 22px;
+    background-size: contain;
+}
+
+@media (max-width:991px) {
+    .wb-process .wb-process-bg {
+        background-image: url(../img/process-bg-2.svg);
+    }
+}
+
+@media (max-width:767px) {
+    .wb-process .wb-process-bg {
+        background-image: url(../img/process-bg3.svg);
+        background-repeat: no-repeat;
+        background-position: left 12px top -2px;
+    background-size: contain;
+    }
+    .wb-process .wb-process-item .process-title {
+        margin-top: 25px !important;
+    }
+}
+@media (max-width:469px) {
+    .wb-process .wb-process-bg {
+        background-image: url(../img/process-bg3.svg);
+        background-position: left 14px top -2px;
+    }
+}
+@media (max-width:469px) {
+    .wb-process .wb-process-item img {
+        min-width: 57px;
+    }
+    .wb-process .wb-process-item .process-title {
+        margin-top: 40px !important;
+    }
+}
+
+.wb-process .wb-process-wrap {
+    display: flex;
+    column-gap: 77px;
+    row-gap: 70px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 920px;
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width:1201px) and (max-width:1400px) {
+    .wb-process .wb-process-wrap {
+        row-gap: 71px;
+    }
+}
+@media (max-width:1200px) {
+    .wb-process .wb-process-wrap {
+        column-gap: 15px;
+        row-gap: 16px;
+        max-width: 832px;
+    }
+}
+
+@media (max-width:991px) {
+    .wb-process .wb-process-wrap {
+        row-gap: 57px;
+    }
+}
+
+@media (max-width:991px) {
+    .wb-process .wb-process-wrap {
+        max-width: 545px;
+    }
+}
+
+@media (max-width:767px) {
+    .wb-process .wb-process-item {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .wb-process .wb-process-wrap .wb-process-item {
+        max-width: 100% !important;
+        width: 100%;
+        text-align: start !important;
+    }
+
+    .wb-process .wb-process-wrap {
+        row-gap: 15px;
+    }
+}
+
+.wb-process .wb-process-wrap .wb-process-item {
+    max-width: 255px;
+    width: 100%;
+    text-align: center;
+}
+.wb-process .wb-process-wrap .wb-process-item .process-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+}
+.wb-process .wb-process-wrap .wb-process-item .process-pra {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* / awb-process css  */

@@ -11125,6 +11125,8 @@ form#mc4wp-form-1 input.form-control.subscribe {
     transition: all 150ms linear;
     margin-bottom: 2px;
 
+    text-overflow: ellipsis;
+    overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
@@ -11134,18 +11136,20 @@ form#mc4wp-form-1 input.form-control.subscribe {
     color: #00C7C7;
 }
 .sidebar-recent-post-content {
-    overflow: hidden;
     color: #316785;
-    text-overflow: ellipsis;
     font-family: Cairo;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.83em;
     margin-bottom: 0px;
-    display: -webkit-box !important;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 .recent-post-list a:hover .sidebar-recent-post-content {
     color: #316785 !important;

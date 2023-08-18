@@ -25245,4 +25245,7 @@ body::-webkit-scrollbar-thumb:hover {
     .img-wrapper img.process-m-icon {
         margin-left: -3px;
     }
+    .cb-process-area.my-5 {
+        margin-top: 15px !important;
+    }
 }

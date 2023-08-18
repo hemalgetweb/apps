@@ -11247,6 +11247,7 @@ body {
     background: #ffffff;
     position: relative;
     border-radius: 16px;
+    margin-left: 31px;
 }
 
 .blog-content blockquote::after {

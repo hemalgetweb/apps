@@ -11214,7 +11214,7 @@ body {
 }
 
 .blog-content ol li {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     color: #1F516D;
     font-family: Cairo;
     font-size: 18px;
@@ -11228,7 +11228,6 @@ body {
     counter-increment: myr;
     content: "" counter(myr)" ";
     left: -31px;
-    top: 2px;
     position: absolute;
     z-index: 99;
 }

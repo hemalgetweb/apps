@@ -102,14 +102,14 @@ $related_posts_query = new WP_Query($related_posts_args);
                     <div class="psot-details">
                         <div class="blog-info">
                             <?php if(has_post_thumbnail(get_the_ID())): ?>
-                            <div class="blog-img mb-2 radius-6 overflow-hidden my-4">
+                            <div class="single-blog-featured-img overflow-hidden">
                                 <?php the_post_thumbnail(get_the_ID()); ?>
                             </div>
                             <?php endif; ?>
-                            <div class="blog-content my-4 pt-3">
+                            <div class="blog-content">
                                 <?php the_content(); ?>
                             </div>
-                            <div class="blog-bottom my-4 pt-3">
+                            <div class="blog-bottom">
                                 <div
                                     class="blog-bottom-box d-flex flex-wrap gap-4 justify-content-center justify-content-xl-between align-items-center radius-12 p-4 mb-4">
                                     <h4 class="fs-5 fw-bold text-clr-dark1 mb-0">

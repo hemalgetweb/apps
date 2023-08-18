@@ -11140,6 +11140,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-weight: 700;
     line-height: 1.41em;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .blog-content h2 {
@@ -11154,7 +11155,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     position: relative;
 }
 
-.blog-content h2::before {
+.blog-content h2:not(.accordion-header)::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -11164,6 +11165,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     background: url('data:image/svg+xml,<svg width="730" height="5" viewBox="0 0 730 5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="730" height="1" fill="%23BADDF0"/><rect y="4" width="730" height="1" fill="%23BADDF0"/></svg>');
 
 }
+
 
 
 #cb-latest-posts-3 {

@@ -11230,8 +11230,8 @@ body {
     /* Increment "my-sec-counter" by 1 */
     counter-increment: myr;
     content: "" counter(myr)" ";
-    left: 0px;
-    right: 0px;
+    /* left: 0px;
+    right: 0px; */
     position: absolute;
     width: 30px;
     height: 30px;

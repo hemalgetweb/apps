@@ -11264,10 +11264,10 @@ body {
 .blog-content blockquote::before {
     content: "";
     position: absolute;
-    background: url('data:image/svg+xml,<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.3633 15.1025L31.4045 23.4363H41.1445V36.9775H27.602V23.2275L31.457 15.1025H35.3633Z" fill="%2300C7C7"/><path d="M16.7188 15.1025L12.76 23.4363H22.5V36.9775H8.9575V23.2275L12.8125 15.1025H16.7188Z" fill="%2350FF81"/></svg>');
+    background: url('data:image/svg+xml,<svg width="63" height="61" viewBox="0 0 63 61" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.7368 61C18.2632 50.4372 7.68421 40.2442 0 30.4208C8.31579 19.6468 18.8947 9.50649 31.7368 0C43.2105 8.55584 53.6316 18.6961 63 30.4208C58.8947 35.4909 53.8947 40.8779 48 46.5818C42.1053 52.2857 36.6842 57.0918 31.7368 61Z" fill="white"/><path d="M41.3633 20.1025L37.4045 28.4363H47.1445V41.9775H33.602V28.2275L37.457 20.1025H41.3633Z" fill="%2300C7C7"/><path d="M22.7188 20.1025L18.76 28.4363H28.5V41.9775H14.9575V28.2275L18.8125 20.1025H22.7188Z" fill="%2350FF81"/></svg>');
     z-index: 5;
-    width: 50px;
-    height: 50px;
+    width: 63px;
+    height: 61px;
     left: calc(0% - 25px);
     
 }

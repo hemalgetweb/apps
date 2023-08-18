@@ -776,3 +776,38 @@ body::-webkit-scrollbar-thumb:hover {
 .apps-comment-114 .comments-area .comment-form>p.form-submit {
     margin-top: 3px;
 }
+
+@media (max-width: 767px) {
+    .apps-comment-114 .comments-area>ol.comment-list .children {
+        padding-left: 0;
+    }
+}
+.apps-comment-114 .comments-area .comment-form>p.comment-form-author, .apps-comment-114 .comments-area .comment-form>p.comment-form-email {
+    width: calc(50% - 15px);
+    display: inline-block;
+    margin: 0 0;
+}
+
+.apps-comment-114 .comments-area .comment-form>p.comment-form-author {
+    margin-right: 15px;
+}
+
+.apps-comment-114 .comments-area .comment-form>p.comment-form-email {
+    margin-left: 11px;
+}
+
+.apps-comment-114 .comments-area form.comment-form label {
+    color: var(--dark-dark-1, #003959);
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.apps-comment-114 input:focus, .apps-comment-114 textarea:focus {
+    border: 1px solid var(--dark-dark-1, #003959) !important;
+}
+.apps-comment-114 .comments-area .comment-form>p:not(.comment-notes) {
+    margin-bottom: 20px;
+}

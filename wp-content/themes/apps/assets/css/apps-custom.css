@@ -25239,4 +25239,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     .img-wrapper img.process-m-icon {
         margin-left: -3px;
     }
+    .instruction-wrap .instruction-item::before, .instruction-wrap .instruction-item::after {
+        display: none;
+    }
 }

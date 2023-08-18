@@ -11203,6 +11203,9 @@ form#mc4wp-form-1 input.form-control.subscribe {
     padding-left: 40px !important;
     margin-block: 25px 50px;
 }
+..blog-content ol li {
+    position: relative;
+}
 .blog-content ol li::before {
     position: absolute;
     content: '';

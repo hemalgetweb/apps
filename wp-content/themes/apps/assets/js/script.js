@@ -156,8 +156,6 @@
 				new Swiper(".dynamic-service-active", {
 					slidesPerView: 4,
 					spaceBetween: 30,
-					allowTouchMove: !1,
-					loop: !1,
 					pagination: {
 						el: ".dynamic-pagination",
 						clickable: !0

@@ -6704,9 +6704,6 @@ span.authure-name a {
     font-family: "Font awesome 6 pro";
 }
 
-.sidebar-widget .recent-post li.recent-post-list .img-fluid {
-    width: 67px;
-}
 
 
 ul.dropdown-menus li.menu-item a:hover {
@@ -11113,9 +11110,8 @@ form#mc4wp-form-1 input.form-control.subscribe {
 }
 
 .sidebar-widget .recent-post li.recent-post-list .img-fluid {
-    width: 67px;
-    height: 67px;
-    border-radius: 6px;
+    width: 160px;
+    height: 94px;
     object-fit: cover;
 }
 
@@ -23130,14 +23126,6 @@ h5.apps-project-card-title-114 button {
 #cb-widget-post-list-2 a {
     font-weight: 700 !important;
     color: #316785 !important;
-}
-
-
-.sidebar-widget .recent-post li.recent-post-list .img-fluid {
-    width: 67px;
-    height: 67px;
-    border-radius: 6px;
-    object-fit: cover;
 }
 
 @media (max-width: 767px) {

@@ -11261,6 +11261,19 @@ body {
     border-radius: 16px;
 }
 
+.blog-content blockquote::before {
+    content: "";
+    position: absolute;
+    background: url('data:image/svg+xml,<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.3633 15.1025L31.4045 23.4363H41.1445V36.9775H27.602V23.2275L31.457 15.1025H35.3633Z" fill="%2300C7C7"/><path d="M16.7188 15.1025L12.76 23.4363H22.5V36.9775H8.9575V23.2275L12.8125 15.1025H16.7188Z" fill="%2350FF81"/></svg>');
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    left: calc(0% - 25px);
+    
+}
+
+
+
 
 
 #cb-latest-posts-3 {

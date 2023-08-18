@@ -150,7 +150,41 @@
 	});
 	// related-post-slider -End
 
-
+	new Swiper(".dynamic-service-active", {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		pagination: {
+			el: ".dynamic-pagination",
+			clickable: !0
+		},
+		navigation: {
+			nextEl: ".dynamic-next",
+			prevEl: ".dynamic-prev"
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			575: {
+				spaceBetween: 0,
+				slidesPerView: 1
+			},
+			768: {
+				slidesPerView: 2
+			},
+			992: {
+				slidesPerView: 3
+			},
+			1200: {
+				spaceBetween: 30,
+				slidesPerView: 3
+			},
+			1400: {
+				slidesPerView: 4
+			}
+		}
+	})
 	var DynamiceStaticService = function (e, n) {
 			e.find(".dynamic-service-active").each(function () {
 				new Swiper(".dynamic-service-active", {

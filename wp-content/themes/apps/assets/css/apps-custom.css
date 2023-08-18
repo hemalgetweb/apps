@@ -11233,9 +11233,17 @@ body {
     left: 403px;
     /* right: 0px; */
     position: absolute;
+}
+
+.blog-content ol li::after {
+    position: absolute;
+    content: '';
     width: 30px;
     height: 30px;
     background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_6045_109175)"><path d="M15.1128 30C8.69674 24.8052 3.65915 19.7922 0 14.961C3.9599 9.66234 8.99749 4.67532 15.1128 0C20.5764 4.20779 25.5388 9.19481 30 14.961C28.0451 17.4545 25.6642 20.1039 22.8571 22.9091C20.0501 25.7143 17.4687 28.0779 15.1128 30Z" fill="url(%23paint0_linear_6045_109175)"/></g><defs><linearGradient id="paint0_linear_6045_109175" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="%2300C7C7"/><stop offset="1" stop-color="%2350FF81"/></linearGradient><clipPath id="clip0_6045_109175"><rect width="30" height="30" fill="white"/></clipPath></defs></svg>');
+    left: 0;
+    top: 0;
+
 }
 
 

@@ -11243,6 +11243,24 @@ body {
     z-index: 8;
 }
 
+.blog-content blockquote {
+    background: #ffffff;
+    position: relative;
+    border-radius: 16px;
+}
+
+.blog-content blockquote::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #00C7C7 0%, rgba(80, 255, 129, 0.50) 100%);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    left: calc(0% - 2px);
+    top: calc(0% - 2px);
+    z-index: -1;
+    border-radius: 16px;
+}
+
 
 
 #cb-latest-posts-3 {

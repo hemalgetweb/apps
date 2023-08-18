@@ -11125,6 +11125,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-weight: 700;
     line-height: 1.5em;
     transition: all 150ms linear;
+    margin-bottom: 2px;
 }
 .recent-post-list a:hover .sidebar-recent-post-title {
     color: #00C7C7;
@@ -11138,6 +11139,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-style: normal;
     font-weight: 500;
     line-height: 1.83em;
+    margin-bottom: 0px;
 }
 .recent-post-list a:hover .sidebar-recent-post-content {
     color: #316785 !important;

@@ -11229,7 +11229,7 @@ body {
 .blog-content ol li::before {
     /* Increment "my-sec-counter" by 1 */
     counter-increment: myr;
-    content: "ABCD" counter(myr)" ";
+    content: "" counter(myr)" ";
     left: 0px;
     right: 0px;
     position: absolute;

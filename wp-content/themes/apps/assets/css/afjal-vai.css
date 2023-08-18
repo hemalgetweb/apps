@@ -402,17 +402,21 @@ ul.dropdown-menus li.menu-item a::after {
         font-size: 16px !important;
     }
 }
+
 @media (max-width: 576px) {
     .apps-error-area-114 p {
         font-size: 15px !important;
         margin-bottom: 32px !important;
     }
 }
+
 @media (max-width: 480px) {
     .bg-btn .btn-icon {
         right: 22px !important;
     }
-    .bg-btn:hover .btn-icon, .bg-btn.active .btn-icon {
+
+    .bg-btn:hover .btn-icon,
+    .bg-btn.active .btn-icon {
         right: 18px !important;
     }
 }
@@ -420,6 +424,7 @@ ul.dropdown-menus li.menu-item a::after {
 .back-to-home-btn {
     padding: 14px 30px 14px 50px !important;
 }
+
 .btn-icon-back {
     left: 27px;
     transition: all 0.2s linear;
@@ -433,9 +438,11 @@ ul.dropdown-menus li.menu-item a::after {
     .back-to-home-btn {
         padding: 14px 25px 14px 40px !important;
     }
+
     .btn-icon-back {
         left: 22px !important;
     }
+
     .back-to-home-btn:hover .btn-icon-back {
         left: 18px !important;
     }
@@ -450,6 +457,7 @@ ul.dropdown-menus li.menu-item a::after {
 .blog-area .blog-info {
     padding: 15px;
 }
+
 .blog-area .blog-title a {
     font-weight: 400;
     line-height: 34px;
@@ -463,6 +471,7 @@ ul.dropdown-menus li.menu-item a::after {
     -webkit-box-orient: vertical;
     transition: all 100ms ease !important;
 }
+
 .blog-area .blog-intro p {
     overflow: hidden;
     display: -webkit-box;
@@ -471,6 +480,7 @@ ul.dropdown-menus li.menu-item a::after {
     -webkit-box-orient: vertical;
     font-weight: 400;
 }
+
 .blog-area .apps-blog-post-box-meta-114 span>span,
 .blog-area .apps-blog-post-box-meta-114 .date {
     color: #316785;
@@ -478,24 +488,28 @@ ul.dropdown-menus li.menu-item a::after {
     font-weight: 500;
     line-height: 22px;
 }
+
 .blog-area .apps-blog-post-box-meta-114 {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 15px
 }
-.blog-info > a svg {
+
+.blog-info>a svg {
     transition: all 150ms linear;
 }
 
-.blog-info > a:hover svg {
+.blog-info>a:hover svg {
     margin-left: 5px !important;
 }
-.blog-area .blog-info > a:hover svg * {
+
+.blog-area .blog-info>a:hover svg * {
     fill: #1AE3E3 !important;
 }
 
-.blog-area .blog-title a:hover, .blog-area .section-tag:hover {
+.blog-area .blog-title a:hover,
+.blog-area .section-tag:hover {
     color: #1ae3e3;
 }
 
@@ -503,6 +517,7 @@ ul.dropdown-menus li.menu-item a::after {
     color: #316785 !important;
     transition: all 100ms ease !important;
 }
+
 .feature-top a:hover span {
     color: #1ae3e3 !important;
 }
@@ -523,8 +538,39 @@ ul.dropdown-menus li.menu-item a::after {
     letter-spacing: 1.8px;
     text-transform: uppercase;
 }
+
 .blog-details {
     margin-top: 50px;
+}
+
+/* 18/08/2023 */
+.related-post-wrapper-114 .swiper-pagination113.py-5.text-center.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+}
+
+.related-post-slider .single-blog .blog-info {
+    padding: 15px;
+}
+
+.related-post-slider .swiper-slide {
+    padding: 0 0 30px;
+}
+
+.related-post-slider .single-blog.box-shadow2 {
+    box-shadow: 0px 5px 20px rgba(0, 60, 79, 0.1);
+}
+
+@media (max-width: 1200px) {
+    .related-post-arrow {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .related-post-arrow .swiper-arrow {
+        position: static;
+    }
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -539,6 +585,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .Sidebar .widget-title {
     padding-bottom: 20px;
 }
+
 .Sidebar #cb-services-category-list-4 {
     position: relative;
     padding-bottom: 35px;
@@ -555,11 +602,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 body::-webkit-scrollbar-track {
-    background: #00C7C7; 
+    background: #00C7C7;
 }
+
 body::-webkit-scrollbar-thumb {
-    background: #003959; 
+    background: #003959;
 }
+
 body::-webkit-scrollbar-thumb:hover {
-    background: #50FF81; 
+    background: #50FF81;
 }

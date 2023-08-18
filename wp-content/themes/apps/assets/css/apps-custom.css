@@ -2614,43 +2614,6 @@ footer ul,
     list-style: none;
 }
 
-blockquote p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 16px;
-}
-
-blockquote p:last-child {
-    margin-bottom: 0;
-}
-
-blockquote p cite {
-    font-size: 18px;
-    display: block;
-    margin-top: 10px;
-    font-style: inherit;
-    font-weight: 700;
-}
-
-blockquote cite::before {
-    content: "";
-    font-size: 28px;
-    color: #0063d1;
-    padding-bottom: 0px;
-    display: inline-block;
-    background: #0063d1;
-    height: 2px;
-    width: 40px;
-    font-weight: 400;
-    text-align: center;
-    top: -4px;
-    margin-right: 10px;
-    position: relative;
-}
-
-blockquote cite>a {
-    color: #0063d1;
-}
 
 .comments-box blockquote {
     background: #fff;
@@ -11274,6 +11237,27 @@ body {
 }
 
 
+blockquote p {
+    color: #1F516D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66em;
+}
+
+blockquote p strong {
+    color: #1F516D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41em;
+    margin-bottom: 20px;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
 
 
 
@@ -15257,44 +15241,6 @@ footer ul,
     list-style: none;
 }
 
-blockquote p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 16px;
-}
-
-blockquote p:last-child {
-    margin-bottom: 0;
-}
-
-blockquote p cite {
-    font-size: 18px;
-    display: block;
-    margin-top: 10px;
-    font-style: inherit;
-    font-weight: 700;
-}
-
-blockquote cite::before {
-    content: "";
-    font-size: 28px;
-    color: #0063d1;
-    padding-bottom: 0px;
-    display: inline-block;
-    background: #0063d1;
-    height: 2px;
-    width: 40px;
-    font-weight: 400;
-    text-align: center;
-    top: -4px;
-    margin-right: 10px;
-    position: relative;
-}
-
-blockquote cite>a {
-    color: #0063d1;
-}
-
 .comments-box blockquote {
     background: #fff;
 }
@@ -17882,16 +17828,6 @@ blockquote.has-text-color.has-very-dark-gray-color {
     }
 }
 
-blockquote {
-    margin: 35px 0px;
-    padding: 40px;
-    position: relative;
-    background: #f3f3f3;
-    font-style: normal;
-    text-align: left;
-    clear: both;
-    font-weight: 400;
-}
 
 .comment-list-item.d-flex>img {
     max-height: 60px;
@@ -17986,7 +17922,7 @@ blockquote {
 @media (max-width: 767px) {
     blockquote {
         margin: 0;
-        padding: 30px;
+        padding: 20px;
     }
 }
 

@@ -11145,7 +11145,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     line-height: 1.5em;
 }
 
-.blog-content p strong a {
+.blog-content p a {
     color: #00A1A1;
     font-family: Cairo;
     font-size: 20px;
@@ -11156,7 +11156,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     transition: all 150ms linear;
 }
 
-.blog-content p strong a:hover {
+.blog-content p a:hover {
     color: 00C7C7;
 }
 

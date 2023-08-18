@@ -834,3 +834,6 @@ body::-webkit-scrollbar-thumb:hover {
         margin-top: 30px;
     }
 }
+.apps-has-process-space .container.process {
+    padding-bottom: 31px;
+}

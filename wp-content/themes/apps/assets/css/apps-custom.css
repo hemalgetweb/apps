@@ -11220,6 +11220,9 @@ body {
     /* Set "my-sec-counter" to 0 */
     counter-reset: myr;
 }
+.blog-content ol li {
+    position: relative;
+}
 .blog-content ol {
     list-style: none !important;
     padding-left: 40px !important;

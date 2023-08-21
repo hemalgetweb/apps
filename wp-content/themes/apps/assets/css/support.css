@@ -231,6 +231,7 @@
 
 .job_summary .job_key {
     list-style: none !important;
+    padding-left: 0 !important;
 }
 .job_summary .job_key li::after {
     display: none !important;

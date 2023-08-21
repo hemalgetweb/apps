@@ -283,7 +283,9 @@
 }
 
 .file-uploads .attach-file {
-    border: 1px dashed rgba(76, 77, 84, .5);
+    border: 1px dashed #003C4F;
+    padding-block: 40px !important;
+    background-color: #f2f2f2;
 }
 
 .file-uploads .attach-text {

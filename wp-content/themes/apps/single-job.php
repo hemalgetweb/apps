@@ -54,11 +54,23 @@ if($get_selected_page_from_settings) {
       </div>
       <div class="col-lg-4">
         <div class="job_summary p-4 radius-6">
-          <h3 class="fs-4 text-clr-dark1 fw-semi-bold mb-4">
+          <h3 class="fs-4 text-clr-dark1 fw-semi-bold mb-3">
             <?php echo esc_html__('Job Summary', 'apps'); ?>
           </h3>
 
-          <ul class="job_key ps-4 mb-4">
+          <div class="btn-wrap mb-4" data-wow-duration="0.200s" data-wow-delay="400ms">
+            <a class="job-list-apply-btn btn rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center w-100 text-center d-flex justify-content-center"
+              href="<?php echo esc_url($url); ?>">
+              Apply now
+              <svg class="btn-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003C4F">
+                </path>
+              </svg>
+            </a>
+          </div>
+
+          <ul class="job_key ps-4">
             <li class="mb-3">
               <?php echo wp_kses_post('<span>Position</span> <br> ', 'apps'); ?>
               <?php if(!empty($position)) : ?>
@@ -66,7 +78,7 @@ if($get_selected_page_from_settings) {
               <?php endif; ?>
             </li>
             <li class="mb-3">
-            <?php echo wp_kses_post('<span>Employment</span> Type <br> ', 'apps'); ?>
+            <?php echo wp_kses_post('<span>Employment</span> <br> ', 'apps'); ?>
               <?php if(!empty($job_duration)) : ?>
                 <?php echo esc_html($job_duration); ?>
               <?php endif; ?>
@@ -92,18 +104,6 @@ if($get_selected_page_from_settings) {
               <?php endif; ?>
             </li>
           </ul>
-
-          <div class="btn-wrap" data-wow-duration="0.200s" data-wow-delay="400ms">
-            <a class="job-list-apply-btn btn rounded bg-btn text-uppercase border-0 bg-clr-extraLight text-clr-dark1 fs-14 fw-bold d-flex gap-2 align-items-center w-100 text-center d-flex justify-content-center"
-              href="<?php echo esc_url($url); ?>">
-              Apply now
-              <svg class="btn-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003C4F">
-                </path>
-              </svg>
-            </a>
-          </div>
         </div>
       </div>
     </div>

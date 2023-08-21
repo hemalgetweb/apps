@@ -206,6 +206,8 @@
     left: 0;
 }
 
+
+
 .job_key li {
     position: relative;
 }
@@ -225,6 +227,13 @@
     left: -18px;
     top: 14px;
     transform: translateY(-50%);
+}
+
+.job_summary .job_key {
+    list-style: none !important;
+}
+.job_summary .job_key li::after {
+    display: none !important;
 }
 
 .job_summary {

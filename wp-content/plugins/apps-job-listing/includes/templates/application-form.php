@@ -85,8 +85,7 @@ FORM_HANDLER\updateApplicationFormOptions();
                 </label>
                 <div class="phone-wrap border d-flex align-items-center overflow-hidden bg-white">
                   <select class="select2-init form-select text-clr-dark2 fs-14 border-0 py-0 px-2 bg-transparent" required>
-                    <option value="" selected>Selecct Country</option>
-                    <option value="88">BD (+88)</option>
+                    <option value="88" selected>BD (+88)</option>
                     <option value="213">DZ (+213)</option>
                     <option value="376">AD (+376)</option>
                     <option value="1268">AG (+1268)</option>
@@ -110,8 +109,7 @@ FORM_HANDLER\updateApplicationFormOptions();
               <div class="mb-4">
                 <label for="application_user_country" class="form-label fs-14 fw-bold text-clr-dark2">Country</label>
                 <select required class="select2-init form-select fs-14 text-clr-dark2 form-field mb-4" name="application_user_country" id="application_user_country">
-                <option value="" selected>Selecct Country</option>
-                  <option value="1">Bangladesh</option>
+                  <option value="1" selected>Bangladesh</option>
                   <option value="2">Pakistan</option>
                   <option value="3">India</option>
                   <option value="4">USA</option>

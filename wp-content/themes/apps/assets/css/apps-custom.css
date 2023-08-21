@@ -11173,6 +11173,12 @@ form#mc4wp-form-1 input.form-control.subscribe {
     position: relative;
 }
 
+.blog-content ul li h3 {
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+
 .blog-content ul li::before {
     position: absolute;
     content: "";

@@ -876,6 +876,21 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
+.job_key li::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-image: url(https://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/subtitle-left-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: absolute;
+    left: -18px;
+    top: 17px;
+    transform: translateY(-50%);
+}
 /* Job Application form - /End */
 
 
@@ -921,3 +936,4 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Case studies details -/End */
+

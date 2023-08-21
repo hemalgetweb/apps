@@ -413,3 +413,10 @@
 .footer .footer-widget-area .footer-widget ul.nav li a:focus {
     color: #fff;
 }
+
+.job-list-apply-btn svg {
+    transition: all 200ms linear;
+}
+.job-list-apply-btn:hover svg {
+    margin-left: 5px;
+}

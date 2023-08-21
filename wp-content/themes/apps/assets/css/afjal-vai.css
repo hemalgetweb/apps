@@ -837,3 +837,80 @@ body::-webkit-scrollbar-thumb:hover {
 .apps-has-process-space .container.process {
     padding-bottom: 31px;
 }
+
+/* Job Application form - /Start */
+
+
+
+.select2-results__options {
+    scrollbar-width: auto;
+    scrollbar-color: #003959 #ffffff;
+}
+.select2-results__options::-webkit-scrollbar {
+    width: 6px;
+}
+
+.select2-results__options::-webkit-scrollbar-track {
+    background: #66666636;
+}
+.select2-results__options::-webkit-scrollbar-thumb {
+    background-color: #003959;
+    border-radius: 10px;
+}
+
+.select2-results__options li {
+    color: #003959;
+    transition: all 100ms linear;
+}
+.select2-results__options li:hover {
+    background: #003959;
+    color: #ffffff;
+}
+
+
+
+/* Job Application form - /End */
+
+
+
+
+
+
+
+
+/* Case studies details -/Start */
+.case-studies-details-wrap {
+    background: rgba(0, 57, 89, 0.97);
+    font-family: Cairo;
+}
+.cs-details-header {
+    padding-top: 100px;
+}
+.back-to-case-studies-btn {
+    color: #00C7C7;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 200ms linear;
+    position: relative;
+    padding-left: 21px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-case-studies-btn::before {
+    position: absolute;
+    content: '';
+    left: -3px;
+    top: calc(100% - 22px);
+    width: 18px;
+    height: 18px;
+    background: url('data:image/svg+xml, <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 4.5L9.7965 5.2965L6.65625 8.4375H13.5V9.5625H6.65625L9.7965 12.7035L9 13.5L4.5 9L9 4.5Z" fill="%2300C7C7"/></svg>');
+}
+.back-to-case-studies-btn:hover {
+    color: #00E2E2;
+}
+
+/* Case studies details -/End */

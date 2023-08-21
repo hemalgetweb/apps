@@ -11141,6 +11141,28 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
 }
 
+.blog-content h4 {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 900;
+    color: #003959;
+    padding-block: 15px;
+}
+.blog-content h5 {
+    font-size: 18px;
+    line-height: 1.55em;
+    font-weight: 900;
+    color: #003959;
+    padding-block: 15px;
+}
+.blog-content h6 {
+    font-size: 16px;
+    line-height: 1.625em;
+    font-weight: 900;
+    color: #003959;
+    padding-block: 15px;
+}
+
 .blog-content ul {
     list-style: none !important;
     padding-left: 40px !important;
@@ -25396,4 +25418,24 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 }
 .comments-area p.form-submit input.submit:focus {
     border: 0 !important;
+}
+
+
+.comments-area p.form-submit {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px !important;
+}
+.comments-area p.form-submit input.submit {
+    margin-top: 0px !important;
+}
+
+.comments-area p.form-submit::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    right: 28px;
+    top: calc(50% - 10px);
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 15L9.115 14.115L12.6042 10.625H5V9.375H12.6042L9.115 5.885L10 5L15 10L10 15Z" fill="%23003959"/></svg>');
 }

@@ -177,7 +177,9 @@
 
 .job_key li {
     position: relative;
-        color: #316785;
+    color: #316785;
+}
+.job_key li span {
     font-family: Cairo;
     font-size: 12px;
     font-style: normal;
@@ -185,6 +187,7 @@
     line-height: normal;
     letter-spacing: 1.8px;
     text-transform: uppercase;
+    color: #316785;
 }
 
 .job_key li:before {

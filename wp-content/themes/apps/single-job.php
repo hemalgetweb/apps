@@ -60,31 +60,31 @@ if($get_selected_page_from_settings) {
 
           <ul class="job_key ps-4 mb-4">
             <li class="mb-3">
-              <?php echo wp_kses_post('Position <br> ', 'apps'); ?>
+              <?php echo wp_kses_post('<span>Position</span> <br> ', 'apps'); ?>
               <?php if(!empty($position)) : ?>
                 <?php echo esc_html($position); ?>
               <?php endif; ?>
             </li>
             <li class="mb-3">
-            <?php echo wp_kses_post('Employment Type <br> ', 'apps'); ?>
+            <?php echo wp_kses_post('<span>Employment</span> Type <br> ', 'apps'); ?>
               <?php if(!empty($job_duration)) : ?>
                 <?php echo esc_html($job_duration); ?>
               <?php endif; ?>
             </li>
             <li class="mb-3">
-            <?php echo wp_kses_post('Industry <br>  ', 'apps'); ?>
+            <?php echo wp_kses_post('<span>Industry</span> <br>  ', 'apps'); ?>
             <?php if(!empty($company_tagline)) : ?>
               <?php echo esc_html($company_tagline); ?>
             <?php endif; ?>
             </li>
             <li class="mb-3">
-              <?php echo wp_kses_post('Experience <br> ', 'apps'); ?>
+              <?php echo wp_kses_post('<span>Experience</span> <br> ', 'apps'); ?>
               <?php if(!empty($expected_experience)) : ?>
                 <?php echo esc_html($expected_experience); ?>
               <?php endif; ?>
             </li>
             <li class="mb-3">
-              Remote Friendly <br> 
+              <span>Remote Friendly</span> <br> 
               <?php if('Remote Friendly' == $job_type) : ?>
                 <?php echo __('Yes', 'apps'); ?>
                 <?php else: ?>

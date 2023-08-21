@@ -859,12 +859,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .select2-results__options li {
-    color: #003959;
-    transition: all 100ms linear;
-}
+    color: #003959 !important;
+    transition: all 100ms linear !important;
+} 
 .select2-results__options li:hover {
-    background: #003959;
-    color: #ffffff;
+    background: #003959 !important;
+    color: #ffffff !important;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background: #003959 !important;
+    color: #ffffff !important;
 }
 
 

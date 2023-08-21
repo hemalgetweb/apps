@@ -11081,10 +11081,10 @@ form#mc4wp-form-1 input.form-control.subscribe {
 .blog-content p:not(.accordion-header) {
     color: #003959;
     font-family: Cairo;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.66em;
     margin-bottom: 30px;
 }
 
@@ -11185,7 +11185,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     width: 30px;
     height: 30px;
     left: -40px;
-    top: 0;
+    top: 2px;
     background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5338 20C12.609 18.4416 11.0977 16.9377 10 15.4883C11.188 13.8987 12.6992 12.4026 14.5338 11C16.1729 12.2623 17.6617 13.7584 19 15.4883C18.4135 16.2364 17.6992 17.0312 16.8571 17.8727C16.015 18.7143 15.2406 19.4234 14.5338 20Z" fill="url(%23paint0_linear_6047_109238)"/><defs><linearGradient id="paint0_linear_6047_109238" x1="14.5" y1="11" x2="14.5" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="%2300C7C7"/><stop offset="1" stop-color="%2350FF81"/></linearGradient></defs></svg>');
 }
 

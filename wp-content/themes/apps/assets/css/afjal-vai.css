@@ -860,7 +860,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .select2-results__options li {
     color: #003959 !important;
-    transition: all 100ms linear !important;
+    transition: all 50ms linear !important;
 } 
 .select2-results__options li:hover {
     background: #003959 !important;
@@ -870,7 +870,10 @@ body::-webkit-scrollbar-thumb:hover {
     background: #003959 !important;
     color: #ffffff !important;
 }
-
+.select2-container--default .select2-results__option--selected {
+    background: #00C7C7 !important;
+    color: #003959 !important;
+}
 
 
 /* Job Application form - /End */

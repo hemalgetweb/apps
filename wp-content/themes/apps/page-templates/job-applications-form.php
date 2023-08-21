@@ -20,7 +20,7 @@
       <form action="#" method="post" class="application-form">
         <div class="row">
           <div class="col-12">
-            <label for="jobTitle" class="form-label fs-14 fw-bold text-clr-dark2">Job Title *</label>
+            <label for="jobTitle" class="form-label">Job Title *</label>
             <select class="form-select fs-14 text-clr-dark2 form-field mb-4" id="jobTitle">
               <option selected>Backend Developer</option>
               <option value="1">Front End Developer</option>
@@ -34,19 +34,19 @@
           </div>
           <div class="col-md-6">
             <div class="mb-4">
-              <label for="fName" class="form-label fs-14 fw-bold text-clr-dark2">First Name *</label>
+              <label for="fName" class="form-label">First Name *</label>
               <input type="text" class="form-control form-field" id="fName" placeholder="Enter your first name">
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-4 pb-2">
-              <label for="lName" class="form-label fs-14 fw-bold text-clr-dark2">Last Name</label>
+              <label for="lName" class="form-label">Last Name</label>
               <input type="text" class="form-control form-field" id="lName" placeholder="Enter your last name">
             </div>
           </div>
           <div class="col-12">
             <div class="country-code mb-4">
-              <label for="pNumber" class="form-label fs-14 fw-bold text-clr-dark2">
+              <label for="pNumber" class="form-label">
                 Contact Number
               </label>
               <div class="phone-wrap border d-flex align-items-center overflow-hidden bg-white">
@@ -67,13 +67,13 @@
           </div>
           <div class="col-md-6">
             <div class="mb-4">
-              <label for="Email" class="form-label fs-14 fw-bold text-clr-dark2">Email</label>
+              <label for="Email" class="form-label">Email</label>
               <input type="email" class="form-control form-field" id="Email" placeholder="Enter your email">
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-4">
-              <label for="Country" class="form-label fs-14 fw-bold text-clr-dark2">Country</label>
+              <label for="Country" class="form-label">Country</label>
               <select class="form-select fs-14 text-clr-dark2 form-field mb-4 select2-init" id="Country">
                 <option selected>Bangladesh</option>
                 <option value=" 1">Pakistan</option>
@@ -86,7 +86,7 @@
           </div>
           <div class="col-12">
             <div class="file-uploads">
-              <label for="upload-file" class="form-label fs-14 fw-bold text-clr-dark2 d-block">
+              <label for="upload-file" class="form-label d-block">
                 CV upload
                 <input type="file" id="upload-file" class="d-none">
                 <span class="attach-file d-block p-3 bg-white rounded-4 mt-2 text-center">

@@ -285,7 +285,7 @@
 .file-uploads .attach-file {
     border: 1px dashed #003C4F;
     padding-block: 40px !important;
-    background-color: #f2f2f2;
+    background-color: #f4f4f4 !important;
 }
 
 .file-uploads .attach-text {

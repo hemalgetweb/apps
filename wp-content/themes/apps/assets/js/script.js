@@ -99,10 +99,10 @@
 	new Swiper(".related-post-slider", {
 		slidesPerView: 2,
 		spaceBetween: 32,
-		loop: !0,
+		loop: true,
 		pagination: {
 			el: ".swiper-pagination113",
-			clickable: !0
+			clickable: true
 		},
 		navigation: {
 			nextEl: ".swiper-next25555",
@@ -111,8 +111,10 @@
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
+				spaceBetween: 0
 			},
 			575: {
+				spaceBetween: 0,
 				slidesPerView: 1,
 			},
 			768: {
@@ -124,8 +126,28 @@
 			1200: {
 				slidesPerView: 3
 			}
+		},
+		on: {
+			init: function () {
+				if (this.slides.length > 3) {
+					document.querySelector('.swiper-next25555').style.display = 'block';
+					document.querySelector('.swiper-prev25555').style.display = 'block';
+				} else {
+					document.querySelector('.swiper-next25555').style.display = 'none';
+					document.querySelector('.swiper-prev25555').style.display = 'none';
+				}
+			},
+			resize: function () {
+				if (this.slides.length > 3) {
+					document.querySelector('.swiper-next25555').style.display = 'block';
+					document.querySelector('.swiper-prev25555').style.display = 'block';
+				} else {
+					document.querySelector('.swiper-next25555').style.display = 'none';
+					document.querySelector('.swiper-prev25555').style.display = 'none';
+				}
+			}
 		}
-	})
+	});
 	// related-post-slider -End
 
 
@@ -134,8 +156,6 @@
 				new Swiper(".dynamic-service-active", {
 					slidesPerView: 4,
 					spaceBetween: 30,
-					allowTouchMove: !1,
-					loop: !1,
 					pagination: {
 						el: ".dynamic-pagination",
 						clickable: !0
@@ -150,6 +170,7 @@
 							spaceBetween: 0
 						},
 						575: {
+							spaceBetween: 0,
 							slidesPerView: 1
 						},
 						768: {
@@ -160,7 +181,6 @@
 						},
 						1200: {
 							spaceBetween: 30,
-							slidesPerView: 3,
 							slidesPerView: 3
 						},
 						1400: {

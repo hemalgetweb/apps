@@ -20,8 +20,7 @@ export default function save(props) {
   const { faqs } = attributes;
 	return (
 		<div { ...useBlockProps.save() }>
-			<div className="faq-area">
-				<div className="container">
+			<div className="faq-area pt-30">
 				<div className="apps-accordion-wrapper-main-114">
 					<div className="accordion accordion-flush" id="questionAccordion-213432">
 					{faqs.map((item, index) => (
@@ -56,7 +55,6 @@ export default function save(props) {
 						</div>
 					))}
 					</div>
-				</div>
 				</div>
 			</div>
 		</div>

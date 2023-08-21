@@ -177,6 +177,23 @@
 
 .job_key li {
     position: relative;
+    color: #003959;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.62em;
+}
+
+.job_key li span {
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #316785;
 }
 
 .job_key li:before {
@@ -193,14 +210,21 @@
     position: relative;
 }
 
+
 .job_key li::after {
     content: "";
+    width: 9px;
+    height: 9px;
+    background-image: url(https://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/subtitle-left-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
     position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: #1F516D;
+    left: -18px;
     top: 14px;
-    left: -15px;
+    transform: translateY(-50%);
 }
 
 .job_summary {
@@ -210,13 +234,22 @@
     left: 0;
 }
 
-.application-form .form-field {
-    border-radius: 50px;
-    padding: 10px 25px;
+.application-form .form-field,
+.application-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #AECBD3;
+    height: 44px;
+    transition: all 200ms linear;
 }
 
-.application-form .phone-wrap {
-    border-radius: 50px;
+.application-form .form-field:focus,
+.application-form .form-control:focus {
+    border: 1px solid #003C4F;
+}
+
+.application-form .form-field::placeholder,
+.application-form .form-control::placeholder {
+    color: #003C4F;
 }
 
 .phone-wrap select {
@@ -246,17 +279,22 @@
 
 .application-form .form-field::placeholder,
 .application-form .form-control::placeholder {
-    font-weight: 600;
-    color: #003959 !important;
+    color: #6A96A4 !important;
+    font-family: Cairo;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 1.62em !important;
 }
 
-.select2-container--default .select2-selection--single {
-    border: 1px solid #ced4da;
-    border-radius: 50px !important;
+.select2-container--default .select2-selection--single,
+.application-form .phone-wrap {
+    border-radius: 4px;
+    border: 1px solid #AECBD3;
 }
 
 .select2-container .select2-selection--single {
-    height: 46px;
+    height: 44px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -280,15 +318,34 @@
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 45px;
-    right: 10px;
-    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="fi-rs-angle-down" clip-path="url(%23clip0_4003_22382)"><g id="01 align center"><path id="Vector" d="M22.5859 5.92896L12.7069 15.808C12.5167 15.9904 12.2634 16.0923 11.9999 16.0923C11.7363 16.0923 11.483 15.9904 11.2929 15.808L1.41986 5.93396L0.00585938 7.34796L9.87886 17.222C10.4507 17.767 11.2104 18.071 12.0004 18.071C12.7903 18.071 13.55 17.767 14.1219 17.222L23.9999 7.34296L22.5859 5.92896Z" fill="%23374957"/></g></g><defs><clipPath id="clip0_4003_22382"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');
-    background-size: 12px;
+    right: 20px;
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12L6 8H14L10 12Z" fill="%236A96A4"/></svg>');
+    background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     display: none;
+}
+
+.job-application-form .form-label {
+    color: #003C4F;
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.job-application-form .form-select {
+    color: #003C4F;
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 5px;
 }
 
 @media (min-width: 991px) {
@@ -373,3 +430,4 @@
 .footer .footer-widget-area .footer-widget ul.nav li a:focus {
     color: #fff;
 }
+

@@ -10,32 +10,31 @@ export default function Edit(props) {
     const updatedFaqs = [...faqs];
     updatedFaqs[index].question = newContent;
     setAttributes({ faqs: updatedFaqs });
-	setIndexNumber(index);
+    setIndexNumber(index);
   };
   const updateAnswere = (index, newContent) => {
     const updatedFaqs = [...faqs];
     updatedFaqs[index].answere = newContent;
     setAttributes({ faqs: updatedFaqs });
-	setIndexNumber(index);
+    setIndexNumber(index);
   };
   const AddRow = () => {
-	const updatedFaqs = [...faqs];
-	const newItem = {
-	  question: 'Add Question',
-	  answere: 'Add answer',
-	};
-	updatedFaqs.push(newItem);
-	setAttributes({ faqs: updatedFaqs });
+    const updatedFaqs = [...faqs];
+    const newItem = {
+      question: 'Add Question',
+      answere: 'Add answer',
+    };
+    updatedFaqs.push(newItem);
+    setAttributes({ faqs: updatedFaqs });
   };
   const RemoveRow = () => {
-	const updatedFaqs = [...faqs];
-	updatedFaqs.pop();
-	setAttributes({ faqs: updatedFaqs });
+    const updatedFaqs = [...faqs];
+    updatedFaqs.pop();
+    setAttributes({ faqs: updatedFaqs });
   };
   return (
-    <div { ...useBlockProps() }>
-      <div className="faq-area">
-        <div className="container">
+    <div {...useBlockProps()}>
+      <div className="faq-area faq-area pt-30">
           <div className="apps-accordion-wrapper-main-114">
             <div className="accordion accordion-flush" id="questionAccordion-213432">
               {faqs.map((item, index) => (
@@ -48,11 +47,11 @@ export default function Edit(props) {
                       data-bs-target={`#collapse_213432-${index}`}
                       aria-expanded="false"
                     >
-                      <span className="apps-question-q-114">Q</span> 
-					  <TextControl
-						value={faqs[index].question}
-						onChange={newContent => updateQuestion(index, newContent)}
-					 />
+                      <span className="apps-question-q-114">Q</span>
+                      <TextControl
+                        value={faqs[index].question}
+                        onChange={newContent => updateQuestion(index, newContent)}
+                      />
                     </button>
                   </h2>
                   <div
@@ -65,22 +64,21 @@ export default function Edit(props) {
                       <span className="apps-answere-a-114 mt-1">A</span>
                       <div className="apps-content">
                         <p>
-						<TextControl
-							value={faqs[index].answere}
-							onChange={newContent => updateAnswere(index, newContent)}
-						/>
-						</p>
+                          <TextControl
+                            value={faqs[index].answere}
+                            onChange={newContent => updateAnswere(index, newContent)}
+                          />
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-			
-			  <button className='btn btn-primary me-2' onClick={AddRow}>Add Question</button>
-			  <button className='btn btn-danger' onClick={RemoveRow}>Remove Question</button>
+
+            <button className='btn btn-primary me-2' onClick={AddRow}>Add Question</button>
+            <button className='btn btn-danger' onClick={RemoveRow}>Remove Question</button>
           </div>
-        </div>
       </div>
     </div>
   );

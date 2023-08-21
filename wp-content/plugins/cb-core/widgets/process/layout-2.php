@@ -1,12 +1,3 @@
-<?php
-/**
- * Template Name: Process template by emon vai
- */
-get_header();
-
-?>
-
-
 <div class="wb-process">
     <div class="container">
         <div class="wb-process-bg">
@@ -26,7 +17,7 @@ get_header();
                     </div>
                 </div>
                 <div class="wb-process-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
                         class="img-fluid d-none d-md-block mx-auto">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process-mobile.svg" alt="bar icon"
                         class="img-fluid d-md-none d-inline-flex">
@@ -40,7 +31,7 @@ get_header();
                     </div>
                 </div>
                 <div class="wb-process-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
                         class="img-fluid d-none d-md-block mx-auto">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process-mobile.svg" alt="bar icon"
                         class="img-fluid d-md-none d-inline-flex">
@@ -54,7 +45,7 @@ get_header();
                     </div>
                 </div>
                 <div class="wb-process-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
                         class="img-fluid d-none d-md-block mx-auto">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process-mobile.svg" alt="bar icon"
                         class="img-fluid d-md-none d-inline-flex">
@@ -68,7 +59,7 @@ get_header();
                     </div>
                 </div>
                 <div class="wb-process-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
                         class="img-fluid d-none d-md-block mx-auto">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process-mobile.svg" alt="bar icon"
                         class="img-fluid d-md-none d-inline-flex">
@@ -99,6 +90,3 @@ get_header();
         </div>
     </div>
 </div>
-
-
-get_footer();

@@ -210,14 +210,13 @@
     left: 0;
 }
 
-.application-form .form-field {
+.application-form .form-field,
+.application-form .form-control {
     border-radius: 4px;
     border: 1px solid #AECBD3;
+    height: 44px;
 }
 
-.application-form .phone-wrap {
-    border-radius: 50px;
-}
 
 .phone-wrap select {
     max-width: 120px;
@@ -254,7 +253,8 @@
     line-height: 1.62em !important;
 }
 
-.select2-container--default .select2-selection--single {
+.select2-container--default .select2-selection--single,
+.application-form .phone-wrap {
     border-radius: 4px;
     border: 1px solid #AECBD3;
 }

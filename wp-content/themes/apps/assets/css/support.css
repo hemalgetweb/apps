@@ -177,6 +177,14 @@
 
 .job_key li {
     position: relative;
+        color: #316785;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
 }
 
 .job_key li:before {
@@ -414,9 +422,3 @@
     color: #fff;
 }
 
-.job-list-apply-btn svg {
-    transition: all 200ms linear;
-}
-.job-list-apply-btn:hover svg {
-    margin-left: 5px;
-} 

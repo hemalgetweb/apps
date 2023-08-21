@@ -11174,8 +11174,8 @@ form#mc4wp-form-1 input.form-control.subscribe {
 }
 
 .blog-content ul li h3 {
-    padding-top: 0;
-    margin-bottom: 0;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 

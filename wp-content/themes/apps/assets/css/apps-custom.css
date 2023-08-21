@@ -25422,20 +25422,27 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 
 .comments-area p.form-submit {
-    position: relative !important;
-    display: inline-block !important;
-    margin-top: 20px !important;
+    position: relative;
+    display: inline-block;
+    margin-top: 5px !important;
+    transition: all 200ms linear;
+    background-color: #00E2E2 !important;
 }
 .comments-area p.form-submit input.submit {
-    margin-top: 0px !important;
+    margin-top: 0px !;
 }
 
 .comments-area p.form-submit::after {
-    position: absolute !important;
-    content: "" !important;
-    width: 20px !important;
-    height: 20px !important;
-    right: 28px !important;
-    top: calc(50% - 10px) !important;
-    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 15L9.115 14.115L12.6042 10.625H5V9.375H12.6042L9.115 5.885L10 5L15 10L10 15Z" fill="%23003959"/></svg>') !important;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    right: 28px;
+    top: calc(50% - 10px);
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 15L9.115 14.115L12.6042 10.625H5V9.375H12.6042L9.115 5.885L10 5L15 10L10 15Z" fill="%23003959"/></svg>');
+    transition: all 200ms linear;
+}
+
+.comments-area p.form-submit:hover::after {
+    right: 23px;
 }

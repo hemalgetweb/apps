@@ -25231,6 +25231,9 @@ div#player {
     .process {
       background-image: url("../img/process-tab-bg.svg");
     }
+    .process-layout-3 {
+        background-image: url("../img/process-layout-3-bg-tab.svg");
+      }
   
     .process-item {
       height: 246px;
@@ -25268,6 +25271,9 @@ div#player {
   @media (min-width: 992px) and (max-width: 1200px) {
     .process {
       background-image: url("../img/process-laptop-bg.svg");
+    }
+    .process-layout-3 {
+        background-image: url("../img/process-layout-3-bg-laptop.svg");
     }
   
     .process-tab-icon{

@@ -331,7 +331,10 @@
     border-radius: 0px !important;
     top: 32px;
     border: 1px solid #AECBD3;
+    top: 10px !important;
 }
+
+
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
     border-radius: 4px;

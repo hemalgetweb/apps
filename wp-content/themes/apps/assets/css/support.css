@@ -283,13 +283,19 @@
 }
 
 .file-uploads .attach-file {
-    border-radius: 4px;
-    border: 1.5px dashed var(--primary-primary, #00C7C7);
-    background: rgba(0, 199, 199, 0.10);
+    padding-block: 40px !important;    
+    border-radius: 4px !important;
+    border: 2px dashed #00C7C7;
+    background: rgba(0, 199, 199, 0.10) !important;
 }
 
 .file-uploads .attach-text {
-    color: #8d8f98;
+    color: #6A96A4;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.62em;
 }
 
 .application-form .form-field:focus,

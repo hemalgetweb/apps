@@ -119,7 +119,8 @@ class CB_Core_Process extends Widget_Base
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => [
                     'layout-1' => __('Layout 1', 'cb-core'),
-                    'layout-2' => __('Layout 2', 'cb-core')
+                    'layout-2' => __('Layout 2', 'cb-core'),
+                    'layout-3' => __('Layout 3', 'cb-core')
                 ],
                 'default' => 'layout-1',
                 'toggle' => true,
@@ -142,7 +143,8 @@ class CB_Core_Process extends Widget_Base
             'type' => \Elementor\Controls_Manager::SELECT,
             'options' => [
               'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
-              'style-2'  => esc_html__( 'Style 2', 'cb-core' )
+              'style-2'  => esc_html__( 'Style 2', 'cb-core' ),
+              'style-3'  => esc_html__( 'Style 3', 'cb-core' )
             ],
             'default' => 'style-1',
           ]
@@ -155,7 +157,7 @@ class CB_Core_Process extends Widget_Base
               'default'     => esc_html__( 'Detailed Consultation', 'cb-core' ),
               'label_block' => true,
               'condition' => [
-                  'field_condition' => ['style-1', 'style-2']
+                  'field_condition' => ['style-1', 'style-2', 'style-3']
               ]
             ]
           );
@@ -168,7 +170,7 @@ class CB_Core_Process extends Widget_Base
                   'url' => \Elementor\Utils::get_placeholder_image_src(),
               ],
               'condition' => [
-                  'field_condition' => ['style-1', 'style-2']
+                  'field_condition' => ['style-1', 'style-2', 'style-3']
               ]
             ]
           );
@@ -181,7 +183,7 @@ class CB_Core_Process extends Widget_Base
                   'url' => \Elementor\Utils::get_placeholder_image_src(),
               ],
               'condition' => [
-                  'field_condition' => ['style-1']
+                  'field_condition' => ['style-1', 'style-2', 'style-3']
               ]
             ]
           );
@@ -194,7 +196,7 @@ class CB_Core_Process extends Widget_Base
                   'url' => \Elementor\Utils::get_placeholder_image_src(),
               ],
               'condition' => [
-                  'field_condition' => ['style-1', 'style-2']
+                  'field_condition' => ['style-1', 'style-2', 'style-3']
               ]
             ]
           );
@@ -206,7 +208,7 @@ class CB_Core_Process extends Widget_Base
             'type'        => \Elementor\Controls_Manager::TEXTAREA,
             'label_block' => true,
             'condition' => [
-                'field_condition' => ['style-1', 'style-2']
+                'field_condition' => ['style-1', 'style-2', 'style-3']
             ]
             ]
           );

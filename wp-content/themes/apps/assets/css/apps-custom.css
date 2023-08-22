@@ -25190,9 +25190,9 @@ div#player {
   
   @media (max-width: 767px) {
     .process {
-      background-image: url("../img/process-mobile-bg.svg");
-      background-size: 24px 100%;
-      background-position: 23px;
+        background-image: url("../img/process-mobile-bg.svg");
+        background-size: 24px 100%;
+        background-position: 23px;
     }
 
     .process-layout-3 {

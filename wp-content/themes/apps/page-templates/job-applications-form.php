@@ -101,7 +101,7 @@
                   </span>
                 </span>
               </label>
-              <p class="fs-12 mb-4 pb-3">
+              <p class="fs-14 mb-4 pb-3">
                 Allowed formates are .jpg, .jpeg, .png, .gif, .docx, .doc, .pdf and maximum size 10MB
               </p>
               <div class="btn-wrap text-center">

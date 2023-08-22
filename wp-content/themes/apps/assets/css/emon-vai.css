@@ -78,7 +78,7 @@
     background-image: url(../img/process-bg1.svg);
     background-repeat: no-repeat;
     background-position: left 11px top 0px;
-    background-size: auto;
+    background-size: contain;
 }
 
 @media (max-width:991px) {
@@ -92,7 +92,7 @@
         background-image: url(../img/process-bg3.svg);
         background-repeat: no-repeat;
         background-position: left 13px top 0px;
-        background-size: auto;
+        background-size: contain;
     }
     .wb-process .wb-process-item .process-title {
         margin-top: 25px !important;
@@ -102,7 +102,7 @@
     .wb-process .wb-process-bg {
         background-image: url(../img/process-bg3.svg);
         background-position: left 16px top 4px;
-        background-size: auto;
+        background-size: contain;
     }
 }
 @media (max-width:469px) {

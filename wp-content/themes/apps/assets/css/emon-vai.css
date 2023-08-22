@@ -101,12 +101,14 @@
 @media (max-width:469px) {
     .wb-process .wb-process-bg {
         background-image: url(../img/process-bg3.svg);
-        background-position: left 14px top -2px;
+        background-position: left 16px top 4px;
+        background-size: auto;
     }
 }
 @media (max-width:469px) {
     .wb-process .wb-process-item img {
         min-width: 57px;
+        margin-top: 15px;
     }
     .wb-process .wb-process-item .process-title {
         margin-top: 40px !important;

@@ -386,6 +386,10 @@
 
 input#application_user_contact {
     border-left: 1px solid #AECBD3 !important;
+    transition: all 200ms linear;
+}
+input#application_user_contact:focus {
+    border: 1px solid #003C4F !important;
 }
 
 @media (min-width: 991px) {

@@ -211,13 +211,13 @@
 
 @media (max-width: 992px) {
     .wb-process .wb-process-wrap .wb-process-item {
-        min-height: 227px;
+        min-height: 247px;
     }
 }
 
 @media (max-width: 768px) {
     .wb-process .wb-process-wrap .wb-process-item {
-        min-height: 247px !important;
+        min-height: 0px !important;
     }
 }
 

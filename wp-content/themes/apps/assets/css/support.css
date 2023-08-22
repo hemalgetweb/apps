@@ -206,6 +206,8 @@
     left: 0;
 }
 
+
+
 .job_key li {
     position: relative;
 }
@@ -227,6 +229,14 @@
     transform: translateY(-50%);
 }
 
+.job_summary .job_key {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+.job_summary .job_key li::after {
+    display: none !important;
+}
+
 .job_summary {
     box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);
     position: sticky;
@@ -235,21 +245,30 @@
 }
 
 .application-form .form-field,
-.application-form .form-control {
+.application-form .form-control,
+.application-form .phone-wrap {
     border-radius: 4px;
     border: 1px solid #AECBD3;
     height: 44px;
+    transition: all 200ms linear;
+    color: #003C4F !important;
+}
+.application-form .phone-wrap{
+    border-radius: 4px;
+    border: 1px solid #AECBD3 !important;
+    height: 44px !important;
     transition: all 200ms linear;
 }
 
 .application-form .form-field:focus,
 .application-form .form-control:focus {
     border: 1px solid #003C4F;
+    color: #003C4F;
 }
 
 .application-form .form-field::placeholder,
 .application-form .form-control::placeholder {
-    color: #003C4F;
+    color: #6A96A4;
 }
 
 .phone-wrap select {
@@ -264,7 +283,9 @@
 }
 
 .file-uploads .attach-file {
-    border: 1px dashed rgba(76, 77, 84, .5);
+    border: 1px dashed #003C4F;
+    padding-block: 40px !important;
+    background-color: #f4f4f4 !important;
 }
 
 .file-uploads .attach-text {
@@ -289,8 +310,8 @@
 
 .select2-container--default .select2-selection--single,
 .application-form .phone-wrap {
-    border-radius: 4px;
-    border: 1px solid #AECBD3;
+    border-radius: 4px !important;
+    border: 1px solid #AECBD3 !important;
 }
 
 .select2-container .select2-selection--single {
@@ -306,15 +327,25 @@
 }
 
 .select2-dropdown {
-    border: 1px solid #ced4da;
     padding: 10px;
-    border-radius: 20px !important;
-    top: 32px
+    border-radius: 0px !important;
+    top: 32px;
+    border: 1px solid #AECBD3;
 }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-    border: 1px solid #ced4da;
+    border-radius: 4px;
+    border: 1px solid #AECBD3;
+    color: #003C4F;
 }
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+    border: 1px solid #003C4F;
+    color: #003C4F;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field::placeholder {
+    color: #6A96A4;
+}
+
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 45px;

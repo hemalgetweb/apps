@@ -25195,11 +25195,11 @@ div#player {
         background-position: 23px;
     }
 
-    .process.process-layout-3 {
+    /* .process.process-layout-3 {
         background-image: url("../img/process-layout-3-bg-tab.svg") !important;
         background-size: 24px 100%;
         background-position: 23px;
-    }
+    } */
   
     .process-item {
       margin-top: 10px;

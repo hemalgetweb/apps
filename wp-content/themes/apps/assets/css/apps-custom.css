@@ -25123,7 +25123,7 @@ div#player {
     * Faysal vai css
 */
 .process,
-.process-layout-3 {
+.process.process-layout-3 {
     background-image: url("../img/process-bg.svg");
     background-size: auto;
     background-position: center 7px;
@@ -25195,8 +25195,8 @@ div#player {
         background-position: 23px;
     }
 
-    .process-layout-3 {
-        background-image: url("../img/process-layout-3-bg-tab.svg");
+    .process.process-layout-3 {
+        background-image: url("../img/process-layout-3-bg-tab.svg") !important;
         background-size: 24px 100%;
         background-position: 23px;
     }
@@ -25238,8 +25238,8 @@ div#player {
     .process {
       background-image: url("../img/process-tab-bg.svg");
     }
-    .process-layout-3 {
-        background-image: url("../img/process-layout-3-bg-tab.svg");
+    .process.process-layout-3 {
+        background-image: url("../img/process-layout-3-bg-tab.svg") !important;
     }
   
     .process-item {
@@ -25279,8 +25279,8 @@ div#player {
     .process {
       background-image: url("../img/process-laptop-bg.svg");
     }
-    .process-layout-3 {
-        background-image: url("../img/process-layout-3-bg-laptop.svg");
+    .process.process-layout-3 {
+        background-image: url("../img/process-layout-3-bg-laptop.svg") !important;
     }
   
     .process-tab-icon{

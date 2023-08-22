@@ -33,6 +33,10 @@
                             <?php if (!empty($slide['process_icon']['url'])) : ?>
                                 <img src="<?php echo $slide['process_icon']['url']; ?>" alt="<?php echo  \Elementor\Control_Media::get_image_alt($slide['process_icon']); ?>" class="img-fluid d-none d-md-block mx-auto <?php echo $process_icon_none; ?>">
                             <?php endif; ?>
+                            
+                            <?php if(!empty($slide['process_icon_tab']['url'])) : ?>
+                                <img src="<?php echo $slide['process_icon_tab']['url']; ?>" class="img-fluid d-md-inline-flex d-lg-none d-none" alt="<?php echo  \Elementor\Control_Media::get_image_alt( $slide['process_icon_tab'] ); ?>">
+                            <?php endif; ?>
 
                             <?php if (!empty($slide['process_icon_sm']['url'])) : ?>
                                 <img src="<?php echo $slide['process_icon_sm']['url']; ?>" alt="<?php echo  \Elementor\Control_Media::get_image_alt($slide['process_icon_sm']); ?>" class="img-fluid d-md-none d-inline-flex">
@@ -51,8 +55,27 @@
                             </div>
                         </div>
                     <?php endforeach; ?>
+
+                    
+                        <div class="wb-process-item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process1.svg" alt="bar icon"
+                                class="img-fluid d-none d-md-block mx-auto">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/process-mobile-1.svg"
+                                alt="bar icon" class="img-fluid d-md-none d-inline-flex">
+
+                            <div>
+                                <h3 class="process-title fw-bold text-clr-dark1 mt-3 mb-2">Strategy Planning</h3>
+                                <p class=" text-clr-dark2 process-pra">Once we know more about your business, audience,
+                                    industry,
+                                    competition,
+                                    and your current social presence and performance, we create a strategy unique to your
+                                    marketing goal
+                                </p>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
 <?php endif; ?>
+

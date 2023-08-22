@@ -129,6 +129,9 @@
     .wb-process .wb-process-wrap {
         row-gap: 71px;
     }
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 302px;
+    }
 }
 @media (max-width:1200px) {
     .wb-process .wb-process-wrap {
@@ -137,7 +140,7 @@
         max-width: 832px;
     }
     .wb-process .wb-process-wrap .wb-process-item {
-        min-height: 302px;
+        min-height: 250px;
     }
 }
 

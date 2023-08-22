@@ -91,7 +91,7 @@
                 <input type="file" id="upload-file" class="d-none">
                 <span class="attach-file d-block p-3 bg-white rounded-4 mt-2 text-center">
                   <span class="attach-text fw-normal">
-                    <span class="text-clr-dark1">
+                    <span class="">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.25 16.175V6.9L8.25 9.9L7.175 8.825L12 4L16.825 8.825L15.75 9.9L12.75 6.9V16.175H11.25ZM5.5 20C5.1 20 4.75 19.85 4.45 19.55C4.15 19.25 4 18.9 4 18.5V14.925H5.5V18.5H18.5V14.925H20V18.5C20 18.9 19.85 19.25 19.55 19.55C19.25 19.85 18.9 20 18.5 20H5.5Z" fill="#00C7C7"/>
                       </svg>

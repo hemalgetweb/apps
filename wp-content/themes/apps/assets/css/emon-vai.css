@@ -77,8 +77,8 @@
 .wb-process .wb-process-bg {
     background-image: url(../img/process-bg1.svg);
     background-repeat: no-repeat;
-    background-position: left 0 top 22px;
-    background-size: contain;
+    background-position: left 11px top 0px;
+    background-size: auto;
 }
 
 @media (max-width:991px) {
@@ -205,19 +205,19 @@
 
 @media (max-width: 1200px) {
     .wb-process .wb-process-wrap .wb-process-item {
-        min-height: 302px;
+        min-height: 249px;
     }
 }
 
 @media (max-width: 992px) {
     .wb-process .wb-process-wrap .wb-process-item {
-        min-height: 250px;
+        min-height: 247px;
     }
 }
 
 @media (max-width: 768px) {
     .wb-process .wb-process-wrap .wb-process-item {
-        min-height: 247px;
+        min-height: 0px !important;
     }
 }
 

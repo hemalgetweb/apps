@@ -55,7 +55,7 @@
                         break;
                 }
             ?>
-            <div class="col-xxl-4 col-md-6">
+            <div class="col-xl-4 col-md-6">
                 <div class="process-item" data-aos="<?php echo $position_aos_fade; ?>">
                     <div class="process-inner <?php echo esc_attr($inner_classes); ?>">
                         <div class="img-wrapper">

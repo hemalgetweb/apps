@@ -126,18 +126,11 @@ FORM_HANDLER\updateApplicationFormOptions();
                   <span class="attach-file d-block p-3 bg-white rounded-4 mt-2 text-center">
                     <span class="attach-text fw-normal">
                       <span>
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_4003_25084)">
-                            <path d="M6.14963 2.521L6.16305 11.0837H7.91305L7.89963 2.5315L9.51197 4.14208L10.7492 2.90425L8.46313 0.619915C8.27355 0.430306 8.04846 0.2799 7.80074 0.177283C7.55302 0.0746668 7.28752 0.0218506 7.01938 0.0218506C6.75125 0.0218506 6.48574 0.0746668 6.23802 0.177283C5.9903 0.2799 5.76522 0.430306 5.57563 0.619915L3.28955 2.906L4.5268 4.14208L6.14963 2.521Z" fill="#003C4F"/>
-                            <path d="M12.25 9.33301V12.2497H1.75V9.33301H0V12.2497C0 12.7138 0.184374 13.1589 0.512563 13.4871C0.840752 13.8153 1.28587 13.9997 1.75 13.9997H12.25C12.7141 13.9997 13.1592 13.8153 13.4874 13.4871C13.8156 13.1589 14 12.7138 14 12.2497V9.33301H12.25Z" fill="#003C4F"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_4003_25084">
-                            <rect width="14" height="14" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                        </span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.25 16.175V6.9L8.25 9.9L7.175 8.825L12 4L16.825 8.825L15.75 9.9L12.75 6.9V16.175H11.25ZM5.5 20C5.1 20 4.75 19.85 4.45 19.55C4.15 19.25 4 18.9 4 18.5V14.925H5.5V18.5H18.5V14.925H20V18.5C20 18.9 19.85 19.25 19.55 19.55C19.25 19.85 18.9 20 18.5 20H5.5Z" fill="#00C7C7"/>
+                        </svg>
+                      </span>
+
                       <span class="apps-has-application-attached">Attach your file</span>
                     </span>
                   </span>

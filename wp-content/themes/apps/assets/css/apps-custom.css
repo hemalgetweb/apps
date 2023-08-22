@@ -25377,7 +25377,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
         margin-bottom: 0px !important;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .cb-process-area .col-xl-4:nth-child(7) .process-item {
         margin-bottom: 0px !important;
     }

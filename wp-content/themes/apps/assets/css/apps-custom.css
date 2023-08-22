@@ -25277,13 +25277,12 @@ div#player {
   }
   
   @media (min-width: 992px) and (max-width: 1200px) {
-    .process,
-    .process.process-layout-3 {
+    .process {
       background-image: url("../img/process-laptop-bg.svg");
     }
-    /* .process.process-layout-3 {
-        background-image: url("../img/process-layout-3-bg-laptop.svg") !important;
-    } */
+    .process.process-layout-3 {
+        background-image: url("../img/process-bg.svg") !important;
+    }
   
     .process-tab-icon{
       display: inline-block;

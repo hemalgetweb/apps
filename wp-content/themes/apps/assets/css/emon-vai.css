@@ -91,8 +91,8 @@
     .wb-process .wb-process-bg {
         background-image: url(../img/process-bg3.svg);
         background-repeat: no-repeat;
-        background-position: left 12px top -2px;
-    background-size: contain;
+        background-position: left 13px top 0px;
+        background-size: auto;
     }
     .wb-process .wb-process-item .process-title {
         margin-top: 25px !important;

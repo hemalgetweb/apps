@@ -388,7 +388,8 @@ input#application_user_contact {
     border-left: 1px solid #AECBD3 !important;
     transition: all 200ms linear;
 }
-input#application_user_contact:focus {
+input#application_user_contact:focus,
+input#application_user_contact:focus .select2-container--default .select2-selection--single, .application-form .phone-wrap{
     border: 1px solid #003C4F !important;
 }
 

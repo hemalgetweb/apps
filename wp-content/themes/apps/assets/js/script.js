@@ -95,6 +95,43 @@
 	};
 
 
+
+	// case-studies-project-slider-active
+			new Swiper(".case-studies-project-slider-active", {
+				slidesPerView: 4,
+				spaceBetween: 30,
+				loop: !0,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				centeredSlides: true,
+				grabCursor: !0,
+				pagination: {
+					el: ".apps-project-paginate",
+					clickable: !0
+				},
+				navigation: {
+					nextEl: ".case-project-next-114",
+					prevEl: ".case-project-prev-114"
+				},
+				breakpoints: {
+					320: {
+						slidesPerView: 2
+					},
+					767: {
+						slidesPerView: 2
+					},
+					991: {
+						slidesPerView: 3
+					},
+					1200: {
+						slidesPerView: 4
+					}
+				}
+			})
+
+
 	// related-post-slider
 	new Swiper(".related-post-slider", {
 		slidesPerView: 2,

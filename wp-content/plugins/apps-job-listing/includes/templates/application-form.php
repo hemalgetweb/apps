@@ -40,7 +40,7 @@ FORM_HANDLER\updateApplicationFormOptions();
           Job application form
         </h2>
         <p class="text-clr-dark2">
-          Working with our clients’ point of contact to build low and high-fidelity website wireframes that utilize the
+          Working with our clients’ point of contact to build low and high-fidelity website wireframes that utilize the <br class="d-none d-lg-block">
           most effective strategies and remain within the goals of our client.
         </p>
       </div>

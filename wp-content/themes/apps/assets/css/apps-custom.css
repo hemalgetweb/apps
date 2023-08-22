@@ -25357,6 +25357,9 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     max-width: inherit;
 }
 
+.cb-process-area .col-xl-4:nth-child(7) .process-item {
+    margin-bottom: 0px !important;
+}
 
 @media (max-width: 767px) {
     .img-wrapper img.process-m-icon {

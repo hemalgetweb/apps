@@ -25194,6 +25194,12 @@ div#player {
       background-size: 24px 100%;
       background-position: 23px;
     }
+
+    .process-layout-3 {
+        background-image: url("../img/process-layout-3-bg-tab.svg");
+        background-size: 24px 100%;
+        background-position: 23px;
+    }
   
     .process-item {
       margin-top: 10px;

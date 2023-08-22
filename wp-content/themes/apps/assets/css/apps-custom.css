@@ -25366,6 +25366,19 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 .cb-process-area .col-xl-4:nth-child(9) .process-item {
     margin-bottom: 0px !important;
 }
+@media (max-width: 1200px) {
+    .cb-process-area .col-xl-4:nth-child(7) .process-item {
+        margin-bottom: 81px !important;
+    }
+    .cb-process-area .col-xl-4:nth-child(8) .process-item {
+        margin-bottom: 81px !important;
+    }
+    .cb-process-area .col-xl-4:nth-child(9) .process-item {
+        margin-bottom: 0px !important;
+    }
+}
+
+
 
 @media (max-width: 767px) {
     .img-wrapper img.process-m-icon {

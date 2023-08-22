@@ -135,69 +135,69 @@ class CB_Core_Process extends Widget_Base
         $repeater = new \Elementor\Repeater();
         
         $repeater->add_control(
-         'field_condition',
-         [
-           'label'   => esc_html__( 'Field Condition', 'cb-core' ),
-           'type' => \Elementor\Controls_Manager::SELECT,
-           'options' => [
-             'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
-           ],
-           'default' => 'style-1',
-         ]
+          'field_condition',
+          [
+            'label'   => esc_html__( 'Field Condition', 'cb-core' ),
+            'type' => \Elementor\Controls_Manager::SELECT,
+            'options' => [
+              'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+            ],
+            'default' => 'style-1',
+          ]
         );
-         $repeater->add_control(
-         'process_title',
-           [
-             'label'   => esc_html__( 'Process Title', 'cb-core' ),
-             'type'        => \Elementor\Controls_Manager::TEXT,
-             'default'     => esc_html__( 'Detailed Consultation', 'cb-core' ),
-             'label_block' => true,
-             'condition' => [
-                'field_condition' => ['style-1']
-             ]
-           ]
-         );
-         $repeater->add_control(
+          $repeater->add_control(
+          'process_title',
+            [
+              'label'   => esc_html__( 'Process Title', 'cb-core' ),
+              'type'        => \Elementor\Controls_Manager::TEXT,
+              'default'     => esc_html__( 'Detailed Consultation', 'cb-core' ),
+              'label_block' => true,
+              'condition' => [
+                  'field_condition' => ['style-1']
+              ]
+            ]
+          );
+          $repeater->add_control(
           'process_icon',
-          [
-            'label'   => esc_html__( 'Process Icon', 'cb-core' ),
-            'type'    => \Elementor\Controls_Manager::MEDIA,
-              'default' => [
-                'url' => \Elementor\Utils::get_placeholder_image_src(),
-            ],
-            'condition' => [
-                'field_condition' => ['style-1']
+            [
+              'label'   => esc_html__( 'Process Icon', 'cb-core' ),
+              'type'    => \Elementor\Controls_Manager::MEDIA,
+                'default' => [
+                  'url' => \Elementor\Utils::get_placeholder_image_src(),
+              ],
+              'condition' => [
+                  'field_condition' => ['style-1']
+              ]
             ]
-          ]
-         );
-         $repeater->add_control(
-          'process_icon_tab',
-          [
-            'label'   => esc_html__( 'Process Icon Tab', 'cb-core' ),
-            'type'    => \Elementor\Controls_Manager::MEDIA,
-              'default' => [
-                'url' => \Elementor\Utils::get_placeholder_image_src(),
-            ],
-            'condition' => [
-                'field_condition' => ['style-1']
+          );
+          $repeater->add_control(
+            'process_icon_tab',
+            [
+              'label'   => esc_html__( 'Process Icon Tab', 'cb-core' ),
+              'type'    => \Elementor\Controls_Manager::MEDIA,
+                'default' => [
+                  'url' => \Elementor\Utils::get_placeholder_image_src(),
+              ],
+              'condition' => [
+                  'field_condition' => ['style-1']
+              ]
             ]
-          ]
-         );
-         $repeater->add_control(
+          );
+          $repeater->add_control(
           'process_icon_sm',
-          [
-            'label'   => esc_html__( 'Process Icon SM', 'cb-core' ),
-            'type'    => \Elementor\Controls_Manager::MEDIA,
-              'default' => [
-                'url' => \Elementor\Utils::get_placeholder_image_src(),
-            ],
-            'condition' => [
-                'field_condition' => ['style-1']
+            [
+              'label'   => esc_html__( 'Process Icon SM', 'cb-core' ),
+              'type'    => \Elementor\Controls_Manager::MEDIA,
+                'default' => [
+                  'url' => \Elementor\Utils::get_placeholder_image_src(),
+              ],
+              'condition' => [
+                  'field_condition' => ['style-1']
+              ]
             ]
-          ]
-         );
-         
-         $repeater->add_control(
+          );
+        
+          $repeater->add_control(
             'process_content',
             [
             'label'   => esc_html__( 'Process Content', 'cb-core' ),
@@ -207,23 +207,23 @@ class CB_Core_Process extends Widget_Base
                 'field_condition' => ['style-1']
             ]
             ]
-        );
-         $this->add_control(
-           'slides',
-           [
-             'label'       => esc_html__( 'slides', 'cb-core' ),
-             'type'        => \Elementor\Controls_Manager::REPEATER,
-             'fields'      => $repeater->get_controls(),
-             'default'     => [
-               [
-                 'process_title'   => esc_html__( 'Detailed Consultation', 'cb-core' ),
-               ],
-             ],
-             'title_field' => '{{{ process_title }}}',
-           ]
-         );
+          );
+          $this->add_control(
+            'slides',
+            [
+              'label'       => esc_html__( 'slides', 'cb-core' ),
+              'type'        => \Elementor\Controls_Manager::REPEATER,
+              'fields'      => $repeater->get_controls(),
+              'default'     => [
+                [
+                  'process_title'   => esc_html__( 'Detailed Consultation', 'cb-core' ),
+                ],
+              ],
+              'title_field' => '{{{ process_title }}}',
+            ]
+          );
         $this->end_controls_section();
-       
+      
         $this->start_controls_section(
             'section_style',
             [

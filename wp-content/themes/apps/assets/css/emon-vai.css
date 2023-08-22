@@ -200,14 +200,6 @@
 
 
 
-
-
-
-
-@media (max-width: 1400px) {
-
-}
-
 @media (max-width: 1200px) {
     .wb-process .wb-process-wrap .wb-process-item {
         min-height: 302px;
@@ -227,7 +219,9 @@
 }
 
 @media (max-width: 576px) {
-
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 0px !important;
+    }
 }
 
 

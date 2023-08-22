@@ -49,7 +49,7 @@
               <label for="pNumber" class="form-label">
                 Contact Number
               </label>
-              <div class="phone-wrap border d-flex align-items-center overflow-hidden bg-white">
+              <div class="phone-wrap border d-flex align-items-center overflow-hidden bg-white phoneNumber-select">
                 <select class="form-select text-clr-dark2 fs-14 border-0 py-0 px-2 bg-transparent">
                   <option selected>BD(+88)</option>
                   <option value="1">DZ (+213)</option>

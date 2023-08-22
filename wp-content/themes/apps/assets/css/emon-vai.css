@@ -136,6 +136,9 @@
         row-gap: 16px;
         max-width: 832px;
     }
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 302px;
+    }
 }
 
 @media (max-width:991px) {
@@ -147,6 +150,9 @@
 @media (max-width:991px) {
     .wb-process .wb-process-wrap {
         max-width: 545px;
+    }
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 247px;
     }
 }
 

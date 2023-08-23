@@ -9,6 +9,16 @@
             e(this).addClass("active");
         }
     );
+    e(".navbar").on("click", ".navbarToggler", function (n) {
+        n.preventDefault(),
+            console.log("i am clicked"),
+            e(this)
+                .closest(".navbar")
+                .find(".mobileMenu-wrapper")
+                .toggleClass("mobileMenu-action"),
+            e(".menuAction").children(".openMenu").toggle(0),
+            e(".menuAction").children(".closeMenu").toggle(0);
+    });
     e(window).on("load", function () {
         e(".apps-has-portfolio-popup").on("click", function () {
             var n = e(this).data("url"),
@@ -27,10 +37,8 @@
                 });
         }),
         e(".navbar-toggler-icons.openMenu").on("click", function () {
-            e("body").addClass("overflow-hidden");
         }),
         e(".navbar-toggler-icons.closeMenu").on("click", function () {
-            e("body").removeClass("overflow-hidden");
         }),
         e(window).scroll(function () {
             e(window).scrollTop() >= 100
@@ -293,9 +301,7 @@
 			e.preventDefault()
 		})
 	}), e(".navbar-toggler-icons.openMenu").on("click", function () {
-		e("body").addClass("overflow-hidden")
 	}), e(".navbar-toggler-icons.closeMenu").on("click", function () {
-		e("body").removeClass("overflow-hidden")
 	}), e(window).scroll(function () {
 		e(window).scrollTop() >= 100 ? e("header").addClass("fixed-header") : e("header").removeClass("fixed-header")
 	}), e(document).ready(function () {

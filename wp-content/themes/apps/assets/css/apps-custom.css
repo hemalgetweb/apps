@@ -20905,7 +20905,7 @@ section.pricing .pricing-wrapper {
 .apps-project-prev-114:hover i,
 .apps-project-next-114:hover i {
     color: #003959;
-    
+
 }
 
 
@@ -25384,6 +25384,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 .instruction-wrap .instruction-item:first-child::before {
     opacity: 0;
 }
+
 .instruction-wrap .instruction-item:nth-child(5)::after {
     opacity: 0;
 }
@@ -25506,21 +25507,27 @@ section.dynamic-service-area .swiper-wrapper {
     background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
     transform: translateY(-6px);
 }
-.apps-project-card-description-wrapper-114{
+
+.apps-project-card-description-wrapper-114 {
     background-color: #fff;
 }
 
 
 
-.single-blog-card-wrap{
+.single-blog-card-wrap {
     border-radius: 0.375rem !important;
     background: var(--white, #FFF) !important;
     box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10) !important;
     padding: 1px !important;
     transition: .3s all linear !important;
 }
-.single-blog-card-wrap:hover{
+
+.single-blog-card-wrap:hover {
     box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
     background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
     transform: translateY(-6px);
+}
+
+.single-blog-card-wrap .blog-info {
+    background-color: #fff;
 }

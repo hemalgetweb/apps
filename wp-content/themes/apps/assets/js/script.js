@@ -205,7 +205,7 @@
             e.find(".dynamic-service-active").each(function () {
                 new Swiper(".dynamic-service-active", {
                     slidesPerView: 4,
-                    autoPlay: true,
+                    loop: true,
                     spaceBetween: 30,
                     pagination: {
                         el: ".dynamic-pagination",

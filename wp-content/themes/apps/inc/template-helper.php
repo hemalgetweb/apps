@@ -1150,11 +1150,11 @@ function apps_sidebar_mobile_menu_1()
             <div class="mobileMenu-container">
                 <div class="mobileMenu-header d-flex align-items-center gap-4 justify-content-between">
                     <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
-                        <img width="70" height="30" src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-logo.svg" alt="logo" class="img-fluid">
+                        <img width="70" height="30" src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/new-logo-wadi-al-bada-mob.svg" alt="logo" class="img-fluid">
                     </a>
                     <div class="navbarToggler  border-0 text-decoration-none">
                         <div class="menuAction">
-                            <a href="#" class="navbar-toggler-icons openMenu">
+                            <a href="#" class="navbar-toggler-icons o<?php echo get_template_directory_uri(); ?>/assets/img/mobile-logo.svgpenMenu">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu.svg" alt="bar icon" class="img-fluid">
                             </a>
                             <a href="#" class="navbar-toggler-icons closeMenu">

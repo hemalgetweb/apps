@@ -219,10 +219,18 @@
                         320: {
                             slidesPerView: 1,
                             spaceBetween: 0,
+                             autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false
+                          }
                         },
                         575: {
                             spaceBetween: 0,
                             slidesPerView: 1,
+                             autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false
+                              }
                         },
                         768: {
                             slidesPerView: 2,

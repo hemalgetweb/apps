@@ -25531,3 +25531,9 @@ section.dynamic-service-area .swiper-wrapper {
 .single-blog-card-wrap .blog-info {
     background-color: #fff;
 }
+.single-blog-card-wrap .blog-img {
+   margin-bottom: 0 !important;
+}
+.single-blog-card-wrap .section-tag {
+  padding-top: 6px;
+}

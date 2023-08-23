@@ -25502,7 +25502,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     z-index: 77;
 }
 .dynamic-service-box-114::after {
-    content: "";
+    /* content: "";
     position: absolute;
     width: calc(100% + 2px);
     height: calc(100% + 2px);
@@ -25517,17 +25517,17 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     opacity: 0;
     transition: .3s all linear;
     visibility: hidden;
-    z-index: -44;
+    z-index: -44; */
 }
 
-.dynamic-service-box-114:hover {
+/* .dynamic-service-box-114:hover {
     transform: translateY(-6px);
 }
 
 .dynamic-service-box-114:hover::after {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 .dynamic-service-active {
     padding: 0 10px;
@@ -25535,4 +25535,20 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 section.dynamic-service-area .swiper-wrapper {
     padding-top: 10px;
+}
+
+
+
+
+
+.service-box-card-wrap{
+    padding: 1px;
+    background: transparent;
+    border-radius: 6px;
+    
+}
+.service-box-card-wrap:hover{
+    background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%);
+    
+
 }

@@ -25509,8 +25509,8 @@ section.dynamic-service-area .swiper-wrapper {
 .social-media-services-box{
 background-color: transparent;
 padding: 1px;
-border-radius: 0.375rem;
-box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10);
+border-radius: 0.375rem !important;
+box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10) !important;
 transition: .3s all linear;
 cursor: pointer;
 margin-bottom: 30px;

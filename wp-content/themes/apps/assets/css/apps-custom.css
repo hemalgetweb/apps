@@ -7210,6 +7210,7 @@ section.pricing .pricing-wrapper {
 
 .swiper-container.apps-project-active-114 {
     padding-bottom: 50px;
+    padding-top: 10px;
 }
 
 .apps-scrollable-content-sections-nav-114 {
@@ -8646,9 +8647,7 @@ section.pricing .pricing-wrapper {
     ;
 }
 
-.swiper-container.apps-project-active-114 {
-    padding-bottom: 50px;
-}
+
 
 .apps-scrollable-content-sections-nav-114 {
     position: sticky;
@@ -11472,10 +11471,6 @@ h5.apps-project-card-title-114 button:hover {
 
 .apps-project-card-114 .apps-project-card-image-114 img {
     transition: all .3s;
-}
-
-.apps-project-card-114:hover .apps-project-card-image-114 img {
-    transform: scale(1.06);
 }
 
 .instruction-wrap .instruction-item:hover img {
@@ -19624,9 +19619,7 @@ section.pricing .pricing-wrapper {
     ;
 }
 
-.swiper-container.apps-project-active-114 {
-    padding-bottom: 50px;
-}
+
 
 .apps-scrollable-content-sections-nav-114 {
     position: sticky;
@@ -20910,12 +20903,9 @@ section.pricing .pricing-wrapper {
 .apps-project-prev-114:hover i,
 .apps-project-next-114:hover i {
     color: #003959;
-    ;
+    
 }
 
-.swiper-container.apps-project-active-114 {
-    padding-bottom: 50px;
-}
 
 .apps-scrollable-content-sections-nav-114 {
     position: sticky;
@@ -23393,9 +23383,7 @@ h5.apps-project-card-title-114 button:hover {
     transition: all .3s;
 }
 
-.apps-project-card-114:hover .apps-project-card-image-114 img {
-    transform: scale(1.06);
-}
+
 
 
 .apps-service-box-2-114 .apps-service-box-icon-2-114 img {
@@ -25391,6 +25379,10 @@ body.elementor-panel-loading #elementor-panel-state-loading {
     display: block;
 }
 
+.instruction-wrap .instruction-item:first-child::before {
+    opacity: 0;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 
     .instruction-wrap .instruction-item:nth-child(2)::before,
@@ -25509,3 +25501,7 @@ section.dynamic-service-area .swiper-wrapper {
     background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
     transform: translateY(-6px);
 }
+.apps-project-card-description-wrapper-114{
+    background-color: #fff;
+}
+

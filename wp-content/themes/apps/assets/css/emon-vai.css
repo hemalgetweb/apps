@@ -101,12 +101,14 @@
 @media (max-width:469px) {
     .wb-process .wb-process-bg {
         background-image: url(../img/process-bg3.svg);
-        background-position: left 14px top -2px;
+        background-position: left 16px top 4px;
+        background-size: auto;
     }
 }
 @media (max-width:469px) {
     .wb-process .wb-process-item img {
         min-width: 57px;
+        margin-top: 15px;
     }
     .wb-process .wb-process-item .process-title {
         margin-top: 40px !important;
@@ -172,6 +174,7 @@
     max-width: 255px;
     width: 100%;
     text-align: center;
+    min-height: 247px;
 }
 .wb-process .wb-process-wrap .wb-process-item .process-title {
     font-size: 24px;
@@ -184,5 +187,45 @@
     font-style: normal;
     font-weight: 400;
 }
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1400px) {
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 247px;
+    }
+} */
+
+
+@media (max-width: 1200px) {
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 249px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 247px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 0px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .wb-process .wb-process-wrap .wb-process-item {
+        min-height: 0px !important;
+    }
+}
+
 
 /* / awb-process css  */

@@ -25500,4 +25500,12 @@ section.dynamic-service-area .swiper-wrapper {
     border-radius: 0.375rem;
     background: var(--white, #FFF);
     box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10);
+    padding: 1px;
+    transition: .3s all linear;
+}
+
+.apps-project-card-114:hover {
+    box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
+    background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
+    transform: translateY(-6px);
 }

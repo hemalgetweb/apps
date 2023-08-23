@@ -4,7 +4,39 @@
 
 ?>
 <?php get_header(); 
-
+$project_overview = function_exists("get_field") ? get_field("project_overview"): '';
+$project_objective = function_exists("get_field") ? get_field("project_objective"): '';
+$process_1 = function_exists("get_field") ? get_field("process_1"): '';
+$process_01_title = $process_1 ? $process_1['process_01_title']: '';
+$process_01_sub_title = $process_1 ? $process_1['process_01_sub_title']: '';
+$process_01_description = $process_1 ? $process_1['process_01_description']: '';
+$process_01_image = $process_1 ? $process_1['process_01_image']: '';
+$process_2 = function_exists("get_field") ? get_field("process_2"): '';
+$process_02_title = $process_2 ? $process_2['process_02_title']: '';
+$process_02_sub_title = $process_2 ? $process_2['process_02_sub_title']: '';
+$process_2_description = $process_2 ? $process_2['process_2_description']: '';
+$process_2_image = $process_2 ? $process_2['process_2_image']: '';
+$process_3 = function_exists("get_field") ? get_field("process_3"): '';
+$process_03_title = $process_3 ? $process_3['process_03_title']: '';
+$process_3_subtitle = $process_3 ? $process_3['process_3_subtitle']: '';
+$process_3_description = $process_3 ? $process_3['process_3_description']: '';
+$process_3_image = $process_3 ? $process_3['process_3_image']: '';
+$process_4 = function_exists("get_field") ? get_field("process_4"): '';
+$process_4_title = $process_4 ? $process_4['process_4_title']: '';
+$process_4_subtitle = $process_4 ? $process_4['process_4_subtitle']: '';
+$process_4_description = $process_4 ? $process_4['process_4_description']: '';
+$process_4_image = $process_4 ? $process_4['process_4_image']: '';
+$process_5 = function_exists("get_field") ? get_field("process_5"): '';
+$process_5_title = $process_5 ? $process_5['process_5_title']: '';
+$process_5_subtitle = $process_5 ? $process_5['process_5_subtitle']: '';
+$process_5_description = $process_5 ? $process_5['process_5_description']: '';
+$process_5_image_1 = $process_5 ? $process_5['process_5_image_1']: '';
+$process_5_image_2 = $process_5 ? $process_5['process_5_image_2']: '';
+$process_6 = function_exists("get_field") ? get_field("process_6"): '';
+$process_6_subtitle = $process_6 ? $process_6['process_6_subtitle']: '';
+$process_6_title = $process_6 ? $process_6['process_6_title']: '';
+$process_6_content = $process_6 ? $process_6['process_6_content']: '';
+$process_gallery_images = function_exists("get_field") ? get_field("process_gallery_images"): '';
 ?>
 
 
@@ -22,15 +54,14 @@
           Case studies
         </a>
         <h1 class="fs-48 fw-medium text-white mb-0 mt-2 pb-3">
-          <?php echo wp_kses_post(get_the_title(    )); ?>
+          <?php echo wp_kses_post(get_the_title()); ?>
         </h1>
         <p class="ah-intro">
-          At Wadi Al Bada, we pride ourselves on our values of being client-focused, dependable, and adaptable.
+          <?php echo get_the_excerpt(); ?>
         </p>
 
         <div class="case-detail-thumb">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-thumbnail.png" class="img-fluid"
-            alt="case thumbnail">
+          <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
         </div>
       </div>
     </div>
@@ -49,23 +80,7 @@
           <h3 class="mb-3 fs-36">
             Overview
           </h3>
-          <p>
-            Eleia is your automated personal financial assistant and budget tracker designed to help you have a
-            healthier relationship with your money.
-          </p>
-          <p>
-            Ofspace team helped Eleia get modern design solutions & a better experience. We helped Eleia to get their
-            Branding identity, Mobile app & Website design.
-          </p>
-          <p>
-            We worked with Eleia team to create a brand identity system that would distinguish their unique industry
-            category of a holistic, philosophic, and human-focused platform to provide strategic recommendations that
-            lead to design improvements and an enhanced user experience.
-          </p>
-          <p>
-            Understanding Eleia business and it's targeted audience we created modern and effortless design solutions
-            for Eleia.
-          </p>
+          <?php echo wp_kses_post($project_overview); ?>
         </div>
       </div>
       <div class="col-md-6 mb-4 mb-md-0">
@@ -73,33 +88,7 @@
           <h3 class="mb-3 fs-36">
             Objective
           </h3>
-          <p>
-            Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses
-            racines Hampden-Sydney College, en Virginie, s'est intéressé.
-          </p>
-          <ul class="job_key ms-3 mt-4 mb-0">
-            <li class="ms-3">
-              Excepteur sint occaecat cupidatat
-            </li>
-            <li class="ms-3">
-              Duis aute irure dolor in reprehenderit in voluptate
-            </li>
-            <li class="ms-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </li>
-            <li class="ms-3">
-              Excepteur sint occaecat cupidatat
-            </li>
-            <li class="ms-3">
-              Recruiting is very much a team effort that involves numerous stakeholders
-            </li>
-            <li class="ms-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </li>
-            <li class="ms-3">
-              Dolor in reprehenderit in voluptate
-            </li>
-          </ul>
+          <?php echo wp_kses_post($project_objective); ?>
         </div>
       </div>
     </div>
@@ -109,114 +98,165 @@
 
 
 
-<!-- case-studies-process-01 -->
 <section class="case-studies-process-01 process-bg-dark section-padding">
   <div class="container">
     <div class="text-center pb-4">
+        <?php if(!empty($process_01_sub_title)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
-        Process 01
+        <?php echo esc_html($process_01_sub_title); ?>
       </span>
+      <?php endif; ?>
+      <?php if(!empty($process_01_title)) : ?>
       <h2 class="apps-service-section-title-114 text-white">
-        Project Research
+      <?php echo esc_html($process_01_title); ?>
       </h2>
+      <?php endif; ?>
+      <?php if(!empty($process_01_description)) : ?>
       <p class="intro text-clr-dark-5-new fs-18">
-        Simply, a multi-layout Framer template, is a visually stunning and thoughtfully designed solution <br
-          class="d-none d-lg-inline"> tailored to
-        meet the specific needs of software-as-a-service (SaaS) businesses.
+      <?php echo wp_kses_post($process_01_description); ?>
       </p>
+      <?php endif; ?>
     </div>
+    <?php if(!empty($process_01_image)) : ?>
     <div class="process-img">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/img/research.png" alt="research" class="img-fluid">
+      <img src="<?php echo esc_url($process_01_image); ?>" alt="research" class="img-fluid">
+    </div>
+    <?php endif; ?>
+  </div>
+</section>
+<section class="case-studies-process-01 section-padding bg-white">
+  <div class="container">
+    <div class="text-center pb-4">
+        <?php if(!empty($process_02_sub_title)) : ?>
+        <span class="apps-service-section-subtitle-114 text-clr-dark-new3">
+            <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
+            <?php echo wp_kses_post($process_02_sub_title); ?>
+        </span>
+        <?php endif; ?>
+        <?php if(!empty($process_02_title)) : ?>
+      <h2 class="apps-service-section-title-114 text-clr-dark-new">
+      <?php echo wp_kses_post($process_02_title); ?>
+      </h2>
+      <?php endif; ?>
+      <?php if(!empty($process_2_description)) : ?>
+      <p class="intro  text-clr-dark-new2 fs-18">
+      <?php echo wp_kses_post($process_2_description); ?>
+      </p>
+      <?php endif; ?>
+    </div>
+    <?php if(!empty($process_2_image)) : ?>
+    <div class="process-img">
+      <img src="<?php echo esc_url($process_2_image); ?>" alt="research" class="img-fluid">
+    </div>
+    <?php endif; ?>
     </div>
   </div>
 </section>
-<!-- case-studies-process-01 -end -->
-
 
 
 <!-- case-studies-process-02 -->
 <section class="case-studies-process-01 process-bg-light section-padding">
   <div class="container">
     <div class="text-center pb-4">
+    <?php if(!empty($process_3_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
-        Process 02
+        <?php echo wp_kses_post($process_3_subtitle); ?>
       </span>
-      <h2 class="apps-service-section-title-114 text-clr-dark-new">
-        User Flow Diagram
-      </h2>
+      <?php endif; ?>
+      <?php if(!empty($process_03_title)) : ?>
+        <h2 class="apps-service-section-title-114 text-clr-dark-new">
+        <?php echo wp_kses_post($process_03_title); ?>
+        </h2>
+        <?php endif; ?>
+    <?php if(!empty($process_3_description)) : ?>
       <p class="intro  text-clr-dark-new2 fs-18">
-        Understanding Eleia business and it's targeted audience we created modern and effortless <br
-          class="d-none d-lg-inline"> design solutions for
-        Eleia.
+        <?php echo wp_kses_post($process_3_description); ?>
       </p>
+    <?php endif; ?>
     </div>
+    <?php if(!empty($process_3_image)) : ?>
     <div class="process-img">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/img/user-flow8.png" alt="research" class="img-fluid">
+      <img src="<?php echo esc_url($process_3_image); ?>" alt="research" class="img-fluid">
     </div>
+    <?php endif; ?>
   </div>
 </section>
 <!-- case-studies-process-02 -end -->
-
-
 <!-- case-studies-process-03 -->
 <section class="case-studies-process-01 section-padding bg-white">
   <div class="container">
     <div class="text-center pb-4">
+    <?php if(!empty($process_4_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-dark-new3">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
-        Process 03
+        <?php echo wp_kses_post($process_4_subtitle); ?>
       </span>
+      <?php endif; ?>
+      <?php if(!empty($process_4_title)) : ?>
       <h2 class="apps-service-section-title-114 text-clr-dark-new">
-        Wireframe
+      <?php echo wp_kses_post($process_4_title); ?>
       </h2>
+      <?php endif; ?>
+      <?php if(!empty($process_4_description)) : ?>
       <p class="intro  text-clr-dark-new2 fs-18">
-        Understanding Eleia business and it's targeted audience we created modern and effortless <br
-          class="d-none d-lg-inline"> design solutions for
-        Eleia.
+      <?php echo wp_kses_post($process_4_description); ?>
       </p>
+      <?php endif; ?>
     </div>
+    <?php if(!empty($process_4_image)) : ?>
     <div class="process-img">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/img/wireframe.png" alt="research" class="img-fluid">
+      <img src="<?php echo esc_url($process_4_image); ?>" alt="research" class="img-fluid">
     </div>
+    <?php endif; ?>
   </div>
 </section>
 <!-- case-studies-process-03 -end -->
 
 
+
+
 <!-- case-studies-process-02 -->
 <section class="case-studies-process-01 process-bg-light section-padding">
   <div class="container">
     <div class="text-center pb-4">
+    <?php if(!empty($process_5_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
-        Process 04
+        <?php echo wp_kses_post($process_5_subtitle); ?>
       </span>
+      <?php endif; ?>
+      <?php if(!empty($process_5_title)) : ?>
       <h2 class="apps-service-section-title-114 text-clr-dark-new">
-        Style Guide
+      <?php echo wp_kses_post($process_5_title); ?>
       </h2>
+      <?php endif; ?>
+      <?php if(!empty($process_5_description)) : ?>
       <p class="intro  text-clr-dark-new2 fs-18">
-        Supported substance consolidates parts of web based promoting and substance showcasing. <br
-          class="d-none d-lg-inline"> It includes making
-        substance, for example, a blog entry or video and paying for its consideration.
+      <?php echo wp_kses_post($process_5_description); ?>
       </p>
+      <?php endif; ?>
     </div>
 
     <div class="row">
+    <?php if(!empty($process_5_image_1)) : ?>
       <div class="col-md-6 mb-4 mb-md-0">
         <div class="process-img">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/style-guide-1.png" alt="style"
+          <img src="<?php echo esc_url($process_5_image_1); ?>" alt="style"
             class="img-fluid">
         </div>
-      </div>
+    </div>
+    <?php endif; ?>
+    <?php if(!empty($process_5_image_2)) : ?>
       <div class="col-md-6 mb-4 mb-md-0">
         <div class="process-img">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/style-guide-2.png" alt="style"
+          <img src="<?php echo esc_url($process_5_image_2); ?>" alt="style"
             class="img-fluid">
         </div>
       </div>
     </div>
+    <?php endif; ?>
   </div>
 </section>
 <!-- case-studies-process-02 -end -->
@@ -228,119 +268,37 @@
 <section class="case-studies-project-demo section-padding">
   <div class="apps-project-wrapper-114 p-rel">
     <div class="text-center pb-4">
+    <?php if(!empty($process_6_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
-        Process 05
+        <?php echo wp_kses_post($process_6_subtitle); ?>
       </span>
+      <?php endif; ?>
+      <?php if(!empty($process_6_title)) : ?>
       <h2 class="apps-service-section-title-114 text-clr-dark-new">
-        Visual Design
+      <?php echo wp_kses_post($process_6_title); ?>
       </h2>
+      <?php endif; ?>
+      <?php if(!empty($process_6_content)) : ?>
       <p class="intro  text-clr-dark-new2 fs-18">
-        We created static posts, dynamic content, and instant experiences on Facebook to promote the properties <br
-          class="d-none d-lg-inline"> and the
-        virtual expo website to the audience. We incorporated CTA ads that directly took people to the <br
-          class="d-none d-lg-inline"> virtual property
-        expo’s landing page.
+        <?php echo wp_kses_post($process_6_content); ?>
       </p>
+      <?php endif; ?>
     </div>
+    <?php if(!empty($process_gallery_images)) : ?>
     <div class="swiper-container case-studies-project-slider-active">
       <div class="swiper-wrapper">
+        <?php foreach($process_gallery_images as $index=>$image) : ?>
         <div class="swiper-slide">
           <!-- project card -->
           <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img1.png"
+            <img src="<?php echo esc_url($image['full_image_url']); ?>"
               alt="project image" class="img-fluid">
           </div>
           <!-- project card -end -->
         </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img2.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img1.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img2.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
-        <div class="swiper-slide">
-          <!-- project card -->
-          <div class="apps-project-card-114">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
-              alt="project image" class="img-fluid">
-          </div>
-          <!-- project card -end -->
-        </div>
+        <?php endforeach; ?>
+        
       </div>
     </div>
 
@@ -362,13 +320,10 @@
       </div>
     </div>
     <!--/ swiper-control -->
+    <?php endif; ?>
   </div>
 </section>
 <!-- case-studies-project-demo end -->
-
-
-
-
 <!-- case-result -->
 <section class="case-result section-padding">
   <div class="container">
@@ -398,12 +353,6 @@
   </div>
 </section>
 <!--/ case-result -->
-
-
-
-
-
-
-
+<?php the_content(); ?>
 <?php
 get_footer();

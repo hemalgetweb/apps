@@ -25417,7 +25417,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 @media (max-width: 1200px){
     .apps-hero-content-wrapper-114.mb-50.mb-lg-0 {
-       margin-bottom: 10px !important;
+       margin-bottom: 20px !important;
    }
 }
 
@@ -25488,9 +25488,14 @@ section.dynamic-service-area .swiper-wrapper {
 
 .single-blog-card-wrap .blog-info {
     background-color: #fff;
+    border-radius:  0 0 0.375rem 0.375rem !important;
 }
+
+
+
 .single-blog-card-wrap .blog-img {
    margin-bottom: 0 !important;
+   border-radius: 0.375rem 0.375rem 0 0;
 }
 .single-blog-card-wrap .section-tag {
   padding-top: 6px;

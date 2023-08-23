@@ -11827,9 +11827,7 @@ a.apps-errror-btn-114 i {
 }
 
 
-.apps-project-card-114 {
-    box-shadow: 0px 0px 20px rgba(0, 60, 79, 0.1) !important;
-}
+
 
 .tech-stack-box-icon-single-114 .icon {
     max-width: 100% !important;
@@ -12495,10 +12493,7 @@ i {
     padding-right: 40px;
 }
 
-.apps-project-card-114 {
-    border-radius: 7px;
-    overflow: hidden;
-}
+
 
 #home-filtered-blog-post-114 .single-blog .blog-title a:hover,
 #home-filtered-blog-post-114 .single-blog .section-tag:hover {
@@ -19568,11 +19563,7 @@ section.pricing .pricing-wrapper {
     color: #316785;
 }
 
-.apps-project-card-114 {
-    background: #FFFFFF;
-    box-shadow: 0px 20px 40px rgba(0, 60, 79, 0.1);
-    border-radius: 6px;
-}
+
 
 .apps-project-card-description-wrapper-114 {
     padding: 28px 30px;
@@ -20864,11 +20855,6 @@ section.pricing .pricing-wrapper {
     color: #316785;
 }
 
-.apps-project-card-114 {
-    background: #FFFFFF;
-    box-shadow: 0px 20px 40px rgba(0, 60, 79, 0.1);
-    border-radius: 6px;
-}
 
 .apps-project-card-description-wrapper-114 {
     padding: 28px 21px;
@@ -23744,9 +23730,6 @@ a.apps-errror-btn-114 i {
 }
 
 
-.apps-project-card-114 {
-    box-shadow: 0px 0px 20px rgba(0, 60, 79, 0.1) !important;
-}
 
 .tech-stack-box-icon-single-114 .icon {
     max-width: 100% !important;
@@ -24390,11 +24373,7 @@ i {
     padding-right: 40px;
 }
 
-.apps-project-card-114 {
-    border-radius: 7px;
-    overflow: hidden;
-    cursor: pointer;
-}
+
 
 #home-filtered-blog-post-114 .single-blog .blog-title a:hover,
 #home-filtered-blog-post-114 .single-blog .section-tag:hover {
@@ -25409,7 +25388,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 .instruction-wrap .instruction-item::before,
 .instruction-wrap .instruction-item::after {
-    display: none;
+    display: block;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -25501,7 +25480,6 @@ section.dynamic-service-area .swiper-wrapper {
 .service-box-card-wrap {
     padding: 1px;
     background: #fff;
-    border-radius: 6px;
     transition: .3s all linear;
     border-radius: 0.375rem;
 
@@ -25514,4 +25492,12 @@ section.dynamic-service-area .swiper-wrapper {
 
 .service-box-card-wrap:hover .dynamic-service-box-114 {
     box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
+}
+
+.apps-project-card-114 {
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    background: var(--white, #FFF);
+    box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10);
 }

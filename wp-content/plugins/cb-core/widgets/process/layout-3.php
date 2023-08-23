@@ -1,5 +1,5 @@
 <section class="cb-process-area mt-3 pt-1">
-    <div class="container process">
+    <div class="container process process-layout-3">
         <?php if(!empty($settings['slides'])) : ?>
         <div class="row">
             <?php

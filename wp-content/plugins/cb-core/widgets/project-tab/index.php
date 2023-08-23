@@ -170,7 +170,7 @@ class CB_Core_ProjectTab extends Widget_Base
 		$cat = $settings['cat_query'];
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // Get the current page number.
 
-		$posts_per_page = 6; // Number of posts to display per page.
+		$posts_per_page = 10; // Number of posts to display per page.
 		$query_args = array(
 			'post_type' => 'project',
 			'tax_query' => array(

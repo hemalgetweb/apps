@@ -27,10 +27,8 @@
                 });
         }),
         e(".navbar-toggler-icons.openMenu").on("click", function () {
-            e("body").addClass("overflow-hidden");
         }),
         e(".navbar-toggler-icons.closeMenu").on("click", function () {
-            e("body").removeClass("overflow-hidden");
         }),
         e(window).scroll(function () {
             e(window).scrollTop() >= 100

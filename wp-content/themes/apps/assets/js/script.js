@@ -104,7 +104,7 @@
             new Swiper(".apps-project-active-114", {
                 slidesPerView: 3,
                 spaceBetween: 30,
-                loop: !0,
+                loop: true,
                 grabCursor: !0,
                 pagination: {
                     el: ".apps-project-paginate",
@@ -254,7 +254,7 @@
                 new Swiper(".client-testimonial-active", {
                     slidesPerView: 2,
                     spaceBetween: 32,
-                    loop: !0,
+                    loop: true,
                     pagination: {
                         el: ".swiper-pagination11",
                         clickable: !0,
@@ -355,7 +355,7 @@
 			new Swiper(".apps-project-active-114", {
 				slidesPerView: 3,
 				spaceBetween: 30,
-				loop: !0,
+				loop: true,
 				grabCursor: !0,
 				pagination: {
 					el: ".apps-project-paginate",
@@ -386,7 +386,7 @@
 			new Swiper(".case-studies-project-slider-active", {
 				slidesPerView: 4,
 				spaceBetween: 30,
-				loop: !0,
+				loop: true,
 				autoplay: {
 					delay: 2500,
 					disableOnInteraction: false,
@@ -479,7 +479,7 @@
 				new Swiper(".client-testimonial-active", {
 					slidesPerView: 2,
 					spaceBetween: 32,
-					loop: !0,
+					loop: true,
 					pagination: {
 						el: ".swiper-pagination11",
 						clickable: !0

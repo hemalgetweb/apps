@@ -25501,15 +25501,16 @@ section.dynamic-service-area .swiper-wrapper {
 }
 
 .apps-service-box-2-114{
-    border-radius: 0.375rem;
-    background: var(--white, #FFF);
-    box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10);
     padding: 30px;
-    transition: .3s all linear;
+   
 }
 .social-media-services-box{
 background-color: transparent;
 padding: 1px;
+border-radius: 0.375rem;
+background: var(--white, #FFF);
+box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10);
+transition: .3s all linear;
 }
 .social-media-services-box:hover {
     box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;

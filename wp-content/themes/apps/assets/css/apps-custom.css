@@ -24944,7 +24944,7 @@ div#mobileHeader .apps-header-call-number-114 {
 
 .footer-widget .apps-footer-widget-contact-info-item-114 {
     overflow: hidden;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
 }
 
 .footer-widget .apps-footer-widget-all-social-list-114 a:not(:last-child) {
@@ -24959,7 +24959,7 @@ div#mobileHeader .apps-header-call-number-114 {
     }
 
     .footer-widget .apps-footer-widget-contact-info-item-114 {
-        margin-bottom: 19px;
+        margin-bottom: 0px;
     }
 }
 

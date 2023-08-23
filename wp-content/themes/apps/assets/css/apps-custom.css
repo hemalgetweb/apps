@@ -7263,9 +7263,7 @@ section.pricing .pricing-wrapper {
     color: #003959;
 }
 
-.apps-project-card-image-114 img {
-    width: 100%;
-}
+
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     .apps-project-next-114 {
@@ -25511,9 +25509,15 @@ padding: 1px;
 border-radius: 0.375rem;
 box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10);
 transition: .3s all linear;
+cursor: pointer;
 }
 .social-media-services-box:hover {
     box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
     background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
     transform: translateY(-6px);
+}
+
+.apps-project-card-image-114 img {
+    width: 100%;
+    border-radius: 0.375rem 0.375rem 0 0 !important;
 }

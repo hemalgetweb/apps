@@ -8131,11 +8131,6 @@ img {
     }
 }
 
-@media (max-width: 1199px) {
-    .navbar-right.btn-wrap {
-        margin-bottom: 60px;
-    }
-}
 
 
 
@@ -20373,11 +20368,6 @@ img {
     }
 }
 
-@media (max-width: 1199px) {
-    .navbar-right.btn-wrap {
-        margin-bottom: 60px;
-    }
-}
 
 
 
@@ -25425,6 +25415,12 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 }
 
+@media (max-width: 1200px){
+    .apps-hero-content-wrapper-114.mb-50.mb-lg-0 {
+       margin-bottom: 10px !important;
+   }
+}
+
 section.dynamic-service-area .swiper-wrapper {
     padding-top: 10px;
 }
@@ -25464,6 +25460,8 @@ section.dynamic-service-area .swiper-wrapper {
 
 .apps-project-card-description-wrapper-114 {
     background-color: #fff;
+    border-radius:  0 0 0.375rem 0.375rem !important;
+
 }
 
 @media (max-width: 1200px){

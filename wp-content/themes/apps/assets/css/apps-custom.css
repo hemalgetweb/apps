@@ -25384,6 +25384,9 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 .instruction-wrap .instruction-item:first-child::before {
     opacity: 0;
 }
+.instruction-wrap .instruction-item:nth-child(5)::after {
+    opacity: 0;
+}
 
 .instruction-wrap .instruction-item {
     padding: 0;
@@ -25511,3 +25514,8 @@ section.dynamic-service-area .swiper-wrapper {
     background-color: #fff;
 }
 
+
+
+.single-blog-card-wrap{
+
+}

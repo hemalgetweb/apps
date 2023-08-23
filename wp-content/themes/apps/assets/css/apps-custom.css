@@ -7211,6 +7211,8 @@ section.pricing .pricing-wrapper {
 .swiper-container.apps-project-active-114 {
     padding-bottom: 50px;
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .apps-scrollable-content-sections-nav-114 {
@@ -25381,6 +25383,10 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 .instruction-wrap .instruction-item:first-child::before {
     opacity: 0;
+}
+
+.instruction-wrap .instruction-item {
+    padding: 0;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

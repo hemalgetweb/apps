@@ -16,13 +16,13 @@
                         <p class="content"><?php echo wp_kses_post($settings['_description']); ?></p>
                     <?php endif; ?>
 
-                    <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 mt-5" data-wow-duration="0.200s"
-                        data-wow-delay="400ms">
-                        <?php if (!empty($settings['see_pricing_btn_text'])):
-                            if (!empty($settings['see_pricing_btn_link2']['url'])) {
-                                $this->add_link_attributes('see_pricing_btn_link2', $settings['see_pricing_btn_link2']);
-                            }
-                            ?>
+                    <?php if (!empty($settings['see_pricing_btn_text'])):
+                        if (!empty($settings['see_pricing_btn_link2']['url'])) {
+                            $this->add_link_attributes('see_pricing_btn_link2', $settings['see_pricing_btn_link2']);
+                        }
+                        ?>
+                        <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 mt-5" data-wow-duration="0.200s"
+                            data-wow-delay="400ms">
                             <a class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
                                 <?php echo $this->get_render_attribute_string('see_pricing_btn_link2'); ?>>
                                 <?php echo cb_core_kses_basic($settings['see_pricing_btn_text']); ?>
@@ -32,8 +32,8 @@
                                         fill="#003C4F" />
                                 </svg>
                             </a>
-                        <?php endif; ?>
-                    </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 text-center">

@@ -12215,11 +12215,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
-    .apps-service-box-114 {
-        min-height: 400px !important;
-    }
-}
+
 
 .uiux-style .our-strategy .strategy-item {
     box-shadow: none !important;
@@ -24059,7 +24055,7 @@ span.page-numbers.current {
 
 @media (min-width: 575px) and (max-width: 767px) {
     .apps-service-box-114 {
-        min-height: 400px !important;
+        min-height: 320px !important;
     }
 }
 

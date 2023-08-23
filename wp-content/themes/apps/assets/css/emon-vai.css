@@ -229,3 +229,10 @@
 
 
 /* / awb-process css  */
+
+.apps-footer-widget-all-social-list-114 a svg *{
+    transition: all 100ms linear;
+}
+.apps-footer-widget-all-social-list-114 a:hover svg * {
+    fill: #ffffff;
+}

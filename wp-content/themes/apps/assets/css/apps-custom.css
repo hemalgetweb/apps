@@ -25474,10 +25474,6 @@ section.dynamic-service-area .swiper-wrapper {
     padding-top: 10px;
 }
 
-
-
-
-
 .service-box-card-wrap {
     padding: 1px;
     background: #fff;
@@ -25517,5 +25513,14 @@ section.dynamic-service-area .swiper-wrapper {
 
 
 .single-blog-card-wrap{
-
+    border-radius: 0.375rem !important;
+    background: var(--white, #FFF) !important;
+    box-shadow: 0px 20px 30px 0px rgba(0, 57, 89, 0.10) !important;
+    padding: 1px !important;
+    transition: .3s all linear !important;
+}
+.single-blog-card-wrap:hover{
+    box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
+    background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
+    transform: translateY(-6px);
 }

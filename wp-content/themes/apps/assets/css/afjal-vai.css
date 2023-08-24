@@ -1163,4 +1163,6 @@ body::-webkit-scrollbar-thumb:hover {
 .row.gap30px {
     --bs-gutter-y: 30px;
 }
-
+.apps-service-section-wrapper-114 .intro br {
+    display: none;
+}

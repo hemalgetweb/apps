@@ -518,6 +518,7 @@ ul.dropdown-menus li.menu-item a::after {
 .feature-top a span {
     color: #316785 !important;
     transition: all 100ms ease !important;
+    letter-spacing: 1.8px !important;
 }
 
 .feature-top a:hover span {
@@ -1157,4 +1158,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .banner-info .section-tag {
     letter-spacing: 1.8px;
+}
+
+@media (max-width: 1200px) {
+    .row.rowgap-30 {
+        gap: 30px;
+    }
 }

@@ -75,18 +75,6 @@
                     <?php endwhile; ?>
             <?php endif; ?>
             </div>
-            <div class="apps-project-pagination-wrapper-114">
-                <div class="apps-project-next-114">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 5L9.115 5.885L12.6042 9.375H5V10.625H12.6042L9.115 14.115L10 15L15 10L10 5Z" fill="#73A7C3"/>
-                    </svg>
-                </div>
-                <div class="apps-project-prev-114">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 15L10.885 14.115L7.39583 10.625H15V9.375H7.39583L10.885 5.885L10 5L5 10L10 15Z" fill="#73A7C3"/>
-                    </svg>
-                </div>
-            </div>
         </div>
     </div>
 </section>

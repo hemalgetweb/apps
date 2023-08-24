@@ -6920,10 +6920,6 @@ ul.dropdown-menus li.menu-item a {
     margin-bottom: 0;
 }
 
-.apps-hero-svg-114 {
-    display: inline-block;
-    transform: translateX(90px);
-}
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     div.apps-hero-svg-114 img {
@@ -8333,46 +8329,6 @@ ul.dropdown-menus li.menu-item a {
     line-height: 30px;
     color: #A8E0FF;
     margin-bottom: 0;
-}
-
-.apps-hero-svg-114 {
-    display: inline-block;
-    transform: translateX(90px);
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-    div.apps-hero-svg-114 img {
-        max-width: 390px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(10px);
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .apps-hero-content-wrapper-114 .title {
-        font-size: 38px;
-        line-height: 1.4;
-    }
-
-    div.apps-hero-svg-114 img {
-        max-width: 330px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(30px);
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    div.apps-hero-svg-114 img {
-        max-width: 420px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(0);
-    }
 }
 
 @media (max-width: 767px) {
@@ -19261,77 +19217,6 @@ img {
     display: block;
 }
 
-.apps-hero-content-wrapper-114 .title {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-}
-
-.apps-hero-content-wrapper-114 .content {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #A8E0FF;
-    margin-bottom: 0;
-}
-
-.apps-hero-svg-114 {
-    display: inline-block;
-    transform: translateX(90px);
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-    div.apps-hero-svg-114 img {
-        max-width: 390px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(10px);
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .apps-hero-content-wrapper-114 .title {
-        font-size: 38px;
-        line-height: 1.4;
-    }
-
-    div.apps-hero-svg-114 img {
-        max-width: 330px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(30px);
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    div.apps-hero-svg-114 img {
-        max-width: 420px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(0);
-    }
-}
-
-@media (max-width: 767px) {
-    .apps-hero-svg-114 {
-        transform: translateX(0);
-    }
-
-    div.apps-hero-svg-114 img {
-        max-width: 200px;
-    }
-
-    .apps-hero-content-wrapper-114 .title {
-        font-size: 29px;
-        line-height: 1.5;
-    }
-}
-
 .tech-stack-box-icon-single-114:last-child {
     margin-right: 0;
 }
@@ -20500,92 +20385,6 @@ ul.dropdown-menus li.menu-item a {
     margin-bottom: 15px;
 }
 
-.apps-brand-grid-item-114 {
-    border: 1px solid #D2ECFA;
-    padding-bottom: 30px;
-}
-
-.apps-hero-content-wrapper-114 .subtitle {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 22px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #00C7C7;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.apps-hero-content-wrapper-114 .title {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-}
-
-.apps-hero-content-wrapper-114 .content {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #A8E0FF;
-    margin-bottom: 0;
-}
-
-.apps-hero-svg-114 {
-    display: inline-block;
-    transform: translateX(90px);
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-    div.apps-hero-svg-114 img {
-        max-width: 390px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(10px);
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .apps-hero-content-wrapper-114 .title {
-        font-size: 38px;
-        line-height: 1.4;
-    }
-
-    div.apps-hero-svg-114 img {
-        max-width: 330px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(30px);
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    div.apps-hero-svg-114 img {
-        max-width: 420px;
-    }
-
-    .apps-hero-svg-114 {
-        transform: translateX(0);
-    }
-}
-
-@media (max-width: 767px) {
-    .apps-hero-svg-114 {
-        transform: translateX(0);
-    }
-
-    div.apps-hero-svg-114 img {
-        max-width: 100%;
-    }
-
-    .apps-hero-content-wrapper-114 .title {
-        font-size: 29px;
-        line-height: 1.5;
-    }
-}
 
 .tech-stack-box-icon-single-114 {
     display: inline-block;

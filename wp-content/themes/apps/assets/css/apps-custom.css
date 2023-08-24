@@ -10985,6 +10985,10 @@ form#mc4wp-form-1 input.form-control.subscribe {
     margin-bottom: 22px;
 }
 
+.recent-post-list {
+    padding-top: 1px;
+}
+
 .recent-post-list .post-title {
     overflow: hidden;
     display: -webkit-box;

@@ -25545,3 +25545,8 @@ section.dynamic-service-area .swiper-wrapper {
     background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
     transform: translateY(-6px);
 }
+
+
+.banner .banner-wrapper .section-intro{
+    margin-bottom: 40px;
+}

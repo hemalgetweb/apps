@@ -1154,7 +1154,7 @@ function apps_sidebar_mobile_menu_1()
                     </a>
                     <div class="navbarToggler  border-0 text-decoration-none">
                         <div class="menuAction">
-                            <a href="#" class="navbar-toggler-icons o<?php echo get_template_directory_uri(); ?>/assets/img/mobile-logo.svgpenMenu">
+                            <a href="#" class="navbar-toggler-icons openMenu">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu.svg" alt="bar icon" class="img-fluid">
                             </a>
                             <a href="#" class="navbar-toggler-icons closeMenu">

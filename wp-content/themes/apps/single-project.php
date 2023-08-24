@@ -127,6 +127,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
     <?php endif; ?>
   </div>
 </section>
+
 <section class="case-studies-process-01 section-padding bg-white">
   <div class="container">
     <div class="text-center pb-4 case-studies-process-content-wrap">
@@ -137,13 +138,13 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
         </span>
         <?php endif; ?>
         <?php if(!empty($process_02_title)) : ?>
-      <h2 class="apps-service-section-title-114 text-clr-dark-new">
-      <?php echo wp_kses_post($process_02_title); ?>
-      </h2>
-      <?php endif; ?>
+          <h2 class="apps-service-section-title-114 text-clr-dark-new">
+            <?php echo wp_kses_post($process_02_title); ?>
+          </h2>
+        <?php endif; ?>
       <?php if(!empty($process_2_description)) : ?>
-        <div class="intro  text-clr-dark-new2 fs-18">
-        <?php echo wp_kses_post($process_2_description); ?>
+        <div class="intro text-clr-dark-new2 fs-18">
+          <?php echo wp_kses_post($process_2_description); ?>
         </div>
       <?php endif; ?>
     </div>

@@ -29,7 +29,7 @@
 <section class="project-area">
     <div class="container">
         <div class="apps-project-wrapper-114 p-rel">
-            <div class="row">
+            <div class="row gap30px">
             <?php if ($wp_query->have_posts()) : ?>
                     <?php 
                     $post_type = 'project';
@@ -39,7 +39,7 @@
                         $categories = get_the_terms($post_id, $taxonomy); // Get the categories for the current post
                         $project_big_image = get_post_meta($post_id, 'project_image', true);
                     ?>
-                        <div class="col-xl-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-xl-4 col-md-6 col-sm-12">
                             <!-- project card -->
                             <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">
                                 <?php if (has_post_thumbnail(get_the_ID())) : ?>

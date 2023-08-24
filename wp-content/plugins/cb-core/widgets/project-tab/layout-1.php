@@ -64,7 +64,10 @@
                                             <div class="apps-project-card-description-wrapper-114">
                                                 <div class="row">
                                                     <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                                        <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image) : ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
+                                                        <div class="apps-project-card-title-114">
+                                                            <?php echo get_the_title(); ?>
+                                                        </div>
+
                                                         <?php
                                                         if ($categories && !is_wp_error($categories)) {
                                                             $first_category = reset($categories); // Get the first category

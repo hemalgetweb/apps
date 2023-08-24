@@ -149,7 +149,7 @@ class CB_Core_Project extends Widget_Base
 			[
 				'label' => __('Category', 'cb-core'),
 				'type' => Controls_Manager::SELECT2,
-				'options' => apps_drop_cat('category', 'project'),
+				'options' => apps_drop_cat('project_category', 'project'),
 				'multiple' => true,
 				'label_block' => true,
 				'condition' => [
@@ -175,7 +175,7 @@ class CB_Core_Project extends Widget_Base
 			[
 				'label' => __('Posts Per Page', 'cb-core'),
 				'type' => Controls_Manager::NUMBER,
-				'default' => 8,
+				'default' => 3,
 			]
 		);
 
@@ -215,7 +215,7 @@ class CB_Core_Project extends Widget_Base
 				'posts_per_page' => $per_page,
 				'tax_query' => array(
 					array(
-						'taxonomy' => 'category',
+						'taxonomy' => 'project_category',
 						'field' => 'term_id',
 						'terms' => $cat,
 					),

@@ -456,7 +456,8 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .blog-area .blog-info {
-    padding: 15px;
+    padding-inline: 30px;
+    padding-block: 20px 30px;
 }
 
 .blog-area .blog-title a {
@@ -517,6 +518,7 @@ ul.dropdown-menus li.menu-item a::after {
 .feature-top a span {
     color: #316785 !important;
     transition: all 100ms ease !important;
+    letter-spacing: 1.8px !important;
 }
 
 .feature-top a:hover span {
@@ -1149,6 +1151,15 @@ body::-webkit-scrollbar-thumb:hover {
     margin-inline: auto;
     max-width: 730px;
 }
-.case-studies-process-content-wrap 
+.case-studies-process-content-wrap div.intro {
+    margin-bottom: 20px;
+}
 /* case studies details - style -end */
 
+.banner-info .section-tag {
+    letter-spacing: 1.8px;
+}
+
+.row.gap30px {
+    --bs-gutter-y: 30px;
+}

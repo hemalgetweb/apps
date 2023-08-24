@@ -29,9 +29,8 @@
 <section class="project-area">
     <div class="container">
         <div class="apps-project-wrapper-114 p-rel">
-            <div class="swiper-container apps-project-active-114">
+            <div class="row gap30px">
             <?php if ($wp_query->have_posts()) : ?>
-                <div class="swiper-wrapper">
                     <?php 
                     $post_type = 'project';
                     $taxonomy = 'project_category';
@@ -40,7 +39,7 @@
                         $categories = get_the_terms($post_id, $taxonomy); // Get the categories for the current post
                         $project_big_image = get_post_meta($post_id, 'project_image', true);
                     ?>
-                        <div class="swiper-slide">
+                        <div class="col-xl-4 col-md-6 col-sm-12">
                             <!-- project card -->
                             <div class="apps-project-card-114 apps-has-portfolio-popup cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image): ''; ?>" data-title="<?php echo get_the_title(); ?>">
                                 <?php if (has_post_thumbnail(get_the_ID())) : ?>
@@ -74,20 +73,7 @@
                             </div>
                         </div>
                     <?php endwhile; ?>
-                </div>
             <?php endif; ?>
-            </div>
-            <div class="apps-project-pagination-wrapper-114">
-                <div class="apps-project-next-114">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 5L9.115 5.885L12.6042 9.375H5V10.625H12.6042L9.115 14.115L10 15L15 10L10 5Z" fill="#73A7C3"/>
-                    </svg>
-                </div>
-                <div class="apps-project-prev-114">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 15L10.885 14.115L7.39583 10.625H15V9.375H7.39583L10.885 5.885L10 5L5 10L10 15Z" fill="#73A7C3"/>
-                    </svg>
-                </div>
             </div>
         </div>
     </div>

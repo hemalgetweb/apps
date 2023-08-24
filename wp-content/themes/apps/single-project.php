@@ -115,9 +115,9 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
       </h2>
       <?php endif; ?>
       <?php if(!empty($process_01_description)) : ?>
-        <p class="intro text-clr-dark-5-new fs-18">
+        <div class="intro text-clr-dark-5-new fs-18">
           <?php echo esc_html($process_01_description); ?>
-        </p>
+        </div>
       <?php endif; ?>
     </div>
     <?php if(!empty($process_01_image)) : ?>

@@ -21,7 +21,7 @@
                             </h1>
                         <?php endif; ?>
 
-                        <div class="section-intro fs-18 fw-normal text-clr-primary2 mb-5 ">
+                        <div class="section-intro fs-18 fw-normal text-clr-primary2 ">
                             <?php if (!empty($settings['bannerIntro'])): ?>
                                 <p>
                                     <?php echo cb_core_kses_basic($settings['bannerIntro']); ?>

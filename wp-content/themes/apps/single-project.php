@@ -116,7 +116,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
       <?php endif; ?>
       <?php if(!empty($process_01_description)) : ?>
         <div class="intro text-clr-dark-5-new fs-18">
-          <?php echo esc_html($process_01_description); ?>
+          <?php echo wp_kses_post($process_01_description); ?>
         </div>
       <?php endif; ?>
     </div>

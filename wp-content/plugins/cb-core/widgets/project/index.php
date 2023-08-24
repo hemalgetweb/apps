@@ -179,6 +179,35 @@ class CB_Core_Project extends Widget_Base
 			]
 		);
 
+		
+		$this->add_control(
+			'view_all_case_studies_btn_text',
+			[
+				'label' => esc_html__('Button text', 'cb-core'),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__('See our pricing', 'cb-core'),
+				'label_block' => true,
+				'placeholder' => esc_html__('Type your button text here', 'cb-core')
+			]
+		);
+		
+		$this->add_control(
+			'view_all_case_studies_btn',
+			[
+				'label' => esc_html__('Button Link', 'textdomain'),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => esc_html__('https://your-link.com', 'cb-core'),
+				'options' => ['url', 'is_external', 'nofollow'],
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
+				'label_block' => true
+			]
+		);
+
 		$this->end_controls_section();
 		$this->start_controls_section(
 			'section_style',

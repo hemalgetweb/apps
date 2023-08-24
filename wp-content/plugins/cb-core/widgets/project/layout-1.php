@@ -71,6 +71,27 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="row">
+                                        <?php if (!empty($settings['view_all_case_studies_btn_text'])):
+                                            if (!empty($settings['view_all_case_studies_btn']['url'])) {
+                                                $this->add_link_attributes('view_all_case_studies_btn', $settings['view_all_case_studies_btn']);
+                                            }
+                                            ?>
+                                            <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 mt-5" data-wow-duration="0.200s"
+                                                data-wow-delay="400ms">
+                                                <a class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
+                                                    <?php echo $this->get_render_attribute_string('view_all_case_studies_btn'); ?>>
+                                                    <?php echo cb_core_kses_basic($settings['view_all_case_studies_btn_text']); ?>
+                                                    <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z"
+                                                            fill="#003C4F" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>

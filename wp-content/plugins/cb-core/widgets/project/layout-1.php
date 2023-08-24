@@ -50,7 +50,9 @@
                                 <div class="apps-project-card-description-wrapper-114" data-url="<?php echo $project_big_image ? esc_url($project_big_image) : ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>">
                                     <div class="row">
                                         <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                            <h5 class="apps-project-card-title-114"><button data-bs-toggle="modal" data-bs-target="#modal_for_project" data-url="<?php echo $project_big_image ? esc_url($project_big_image) : ''; ?>" class="apps-has-portfolio-popup" data-title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></button></h5>
+                                            <a href="<?php echo get_the_permalink(); ?>" class="apps-project-card-title-114">
+                                                <?php echo get_the_title(); ?>
+                                            </a>
                                             <?php
                                             if ($categories && !is_wp_error($categories)) {
                                                 $first_category = reset($categories); // Get the first category for the current post
@@ -58,7 +60,7 @@
                                                 if ($first_category) {
                                                     $cat_name = $first_category->name;
                                                     $cat_link = get_term_link($first_category, $taxonomy); // Get the category link
-                                                    echo '<span class="apps-project-card-category-114">' . esc_html($cat_name) . '</span>';
+                                                    echo '<div class="apps-project-card-category-114">' . esc_html($cat_name) . '</div>';
                                                 }
                                             }
                                             ?>

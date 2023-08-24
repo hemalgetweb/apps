@@ -9321,14 +9321,7 @@ li.apps-about-layout-6-list-114 img {
     margin-bottom: 15px;
 }
 
-.dynamic-service-read-more-btn-114 {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 22px;
-    text-transform: uppercase;
-    display: inline-block;
-    color: #00C7C7;
-}
+
 
 .dynamic-service-read-more-btn-114 i {
     font-weight: 400;
@@ -21417,15 +21410,14 @@ li.apps-about-layout-6-list-114 img {
     margin-bottom: 15px;
 }
 
+
 .dynamic-service-read-more-btn-114 {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
-    text-transform: uppercase;
     display: inline-block;
     color: #00C7C7;
 }
-
 .dynamic-service-read-more-btn-114 i {
     font-weight: 400;
     margin-left: 4px;

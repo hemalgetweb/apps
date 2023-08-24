@@ -553,10 +553,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     transition: all 150ms linear;
 }
 
-.Sidebar .widget-title {
-    padding-bottom: 20px;
-}
-
 .Sidebar #cb-services-category-list-4 {
     position: relative;
     padding-bottom: 38px;

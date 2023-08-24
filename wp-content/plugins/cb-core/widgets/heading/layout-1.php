@@ -4,7 +4,7 @@ $enable_container_class = $settings['enable_container'] ? 'container' : 'apps-ha
 ?>
 <div class="<?php echo $enable_container_class; ?>">
     <div class="row">
-        <div class="col-xxl-12">
+        <div class="col-lg-8 offset-lg-2">
             <div class="apps-service-section-wrapper-114 text-<?php echo esc_attr($alignment); ?>">
                 <?php if (!empty($settings['heading_subtitle'])): ?>
                     <span class="apps-service-section-subtitle-114">

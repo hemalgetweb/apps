@@ -102,7 +102,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
 
 <section class="case-studies-process-01 process-bg-dark section-padding">
   <div class="container">
-    <div class="text-center pb-4">
+    <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if(!empty($process_01_sub_title)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
@@ -115,9 +115,9 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
       </h2>
       <?php endif; ?>
       <?php if(!empty($process_01_description)) : ?>
-      <p class="intro text-clr-dark-5-new fs-18">
-      <?php echo wp_kses_post($process_01_description); ?>
-      </p>
+        <p class="intro text-clr-dark-5-new fs-18">
+          <?php echo esc_html($process_01_description); ?>
+        </p>
       <?php endif; ?>
     </div>
     <?php if(!empty($process_01_image)) : ?>

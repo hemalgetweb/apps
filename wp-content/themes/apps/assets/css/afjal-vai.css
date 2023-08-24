@@ -1137,4 +1137,18 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+.case-detail-thumb img {
+    width: 100%;
+}
+
+.case-studies-sec1-content-wrap {
+    margin-inline: auto;
+    max-width: 900px;
+}
+.case-studies-process-content-wrap {
+    margin-inline: auto;
+    max-width: 730px;
+}
+.case-studies-process-content-wrap 
 /* case studies details - style -end */
+

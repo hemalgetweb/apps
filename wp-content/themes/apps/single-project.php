@@ -45,23 +45,25 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
   <div class="container">
     <div class="case-studies-after-header">
       <div class="case-studies-sec1-content text-center">
-        <a href="<?php echo home_url( '/project' ); ?>" class="tagline text-decoration-none fw-bold position-relative">
-          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-            fill="none">
-            <path d="M9 4.5L9.7965 5.2965L6.65625 8.4375H13.5V9.5625H6.65625L9.7965 12.7035L9 13.5L4.5 9L9 4.5Z"
-              fill="#00C7C7" />
-          </svg>
-          Case studies
-        </a>
-        <h1 class="fs-48 fw-medium text-white mb-0 mt-2 pb-3">
-          <?php echo wp_kses_post(get_the_title()); ?>
-        </h1>
-        <p class="ah-intro">
-          <?php echo get_the_excerpt(); ?>
-        </p>
+        <div class="case-studies-sec1-content-wrap">
+          <a href="<?php echo home_url( '/project' ); ?>" class="tagline text-decoration-none fw-bold position-relative">
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+              fill="none">
+              <path d="M9 4.5L9.7965 5.2965L6.65625 8.4375H13.5V9.5625H6.65625L9.7965 12.7035L9 13.5L4.5 9L9 4.5Z"
+                fill="#00C7C7" />
+            </svg>
+            Case studies
+          </a>
+          <h1 class="fs-48 fw-medium text-white mb-0 mt-2 pb-3">
+            <?php echo wp_kses_post(get_the_title()); ?>
+          </h1>
+          <p class="ah-intro">
+            <?php echo get_the_excerpt(); ?>
+          </p>
+        </div>
 
         <div class="case-detail-thumb">
-          <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
+          <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>">
         </div>
       </div>
     </div>
@@ -100,7 +102,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
 
 <section class="case-studies-process-01 process-bg-dark section-padding">
   <div class="container">
-    <div class="text-center pb-4">
+    <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if(!empty($process_01_sub_title)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
@@ -113,9 +115,9 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
       </h2>
       <?php endif; ?>
       <?php if(!empty($process_01_description)) : ?>
-      <p class="intro text-clr-dark-5-new fs-18">
-      <?php echo wp_kses_post($process_01_description); ?>
-      </p>
+        <div class="intro text-clr-dark-5-new fs-18">
+          <?php echo wp_kses_post($process_01_description); ?>
+        </div>
       <?php endif; ?>
     </div>
     <?php if(!empty($process_01_image)) : ?>
@@ -125,9 +127,10 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
     <?php endif; ?>
   </div>
 </section>
+
 <section class="case-studies-process-01 section-padding bg-white">
   <div class="container">
-    <div class="text-center pb-4">
+    <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if(!empty($process_02_sub_title)) : ?>
         <span class="apps-service-section-subtitle-114 text-clr-dark-new3">
             <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
@@ -135,14 +138,14 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
         </span>
         <?php endif; ?>
         <?php if(!empty($process_02_title)) : ?>
-      <h2 class="apps-service-section-title-114 text-clr-dark-new">
-      <?php echo wp_kses_post($process_02_title); ?>
-      </h2>
-      <?php endif; ?>
+          <h2 class="apps-service-section-title-114 text-clr-dark-new">
+            <?php echo wp_kses_post($process_02_title); ?>
+          </h2>
+        <?php endif; ?>
       <?php if(!empty($process_2_description)) : ?>
-      <p class="intro  text-clr-dark-new2 fs-18">
-      <?php echo wp_kses_post($process_2_description); ?>
-      </p>
+        <div class="intro text-clr-dark-new2 fs-18">
+          <?php echo wp_kses_post($process_2_description); ?>
+        </div>
       <?php endif; ?>
     </div>
     <?php if(!empty($process_2_image)) : ?>
@@ -158,7 +161,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
 <!-- case-studies-process-02 -->
 <section class="case-studies-process-01 process-bg-light section-padding">
   <div class="container">
-    <div class="text-center pb-4">
+    <div class="text-center pb-4 case-studies-process-content-wrap">
     <?php if(!empty($process_3_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
@@ -170,11 +173,11 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
         <?php echo wp_kses_post($process_03_title); ?>
         </h2>
         <?php endif; ?>
-    <?php if(!empty($process_3_description)) : ?>
-      <p class="intro  text-clr-dark-new2 fs-18">
-        <?php echo wp_kses_post($process_3_description); ?>
-      </p>
-    <?php endif; ?>
+      <?php if(!empty($process_3_description)) : ?>
+        <div class="intro  text-clr-dark-new2 fs-18">
+          <?php echo wp_kses_post($process_3_description); ?>
+        </div>
+      <?php endif; ?>
     </div>
     <?php if(!empty($process_3_image)) : ?>
     <div class="process-img">
@@ -187,7 +190,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
 <!-- case-studies-process-03 -->
 <section class="case-studies-process-01 section-padding bg-white">
   <div class="container">
-    <div class="text-center pb-4">
+    <div class="text-center pb-4 case-studies-process-content-wrap">
     <?php if(!empty($process_4_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-dark-new3">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
@@ -220,7 +223,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
 <!-- case-studies-process-02 -->
 <section class="case-studies-process-01 process-bg-light section-padding">
   <div class="container">
-    <div class="text-center pb-4">
+    <div class="text-center pb-4 case-studies-process-content-wrap">
     <?php if(!empty($process_5_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
@@ -267,7 +270,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
 <!-- case-studies-project-demo -->
 <section class="case-studies-project-demo section-padding">
   <div class="apps-project-wrapper-114 p-rel">
-    <div class="text-center pb-4">
+    <div class="text-center pb-4 case-studies-process-content-wrap">
     <?php if(!empty($process_6_subtitle)) : ?>
       <span class="apps-service-section-subtitle-114 text-clr-primary-new">
         <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">

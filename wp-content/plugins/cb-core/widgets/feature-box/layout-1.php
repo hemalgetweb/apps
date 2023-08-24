@@ -1,3 +1,4 @@
+<div class="wb-app-feature-123-box">
 <div class="apps-feature-list-box-4-114 mb-30">
     <div class="apps-feature-list-content-top-wrapper-4-114"
         style="min-height: <?php echo $settings['content_min_height'] ? $settings['content_min_height'] . 'px' : ''; ?>">
@@ -27,4 +28,5 @@
             </ul>
         </div>
     <?php endif; ?>
+</div>
 </div>

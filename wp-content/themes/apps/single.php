@@ -101,9 +101,9 @@ $related_posts_query = new WP_Query($related_posts_args);
                 <article class="articles">
                     <div class="psot-details">
                         <div class="blog-info">
-                            <?php if(has_post_thumbnail(get_the_ID())): ?>
+                            <?php if(get_the_post_thumbnail_url(get_the_ID())): ?>
                             <div class="single-blog-featured-img overflow-hidden">
-                                <?php the_post_thumbnail(get_the_ID()); ?>
+                                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>">
                             </div>
                             <?php endif; ?>
                             <div class="blog-content">

@@ -62,27 +62,30 @@
                                                 </div>
                                             <?php endif; ?>
                                             <div class="apps-project-card-description-wrapper-114">
+                                                
                                                 <div class="row">
-                                                    <a href="<?php echo get_the_permalink(); ?>" class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                                        <div class="apps-project-card-title-114">
-                                                            <?php echo get_the_title(); ?>
-                                                        </div>
+                                                    <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
+                                                        <a href="<?php echo get_the_permalink(); ?>">
+                                                            <div class="apps-project-card-title-114">
+                                                                <?php echo get_the_title(); ?>
+                                                            </div>
 
-                                                        <?php
-                                                        if ($categories && !is_wp_error($categories)) {
-                                                            $first_category = reset($categories); // Get the first category
+                                                            <?php
+                                                            if ($categories && !is_wp_error($categories)) {
+                                                                $first_category = reset($categories); // Get the first category
 
-                                                            if ($first_category) {
-                                                                $cat_name = $first_category->name;
-                                                                echo '<a href="#0" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
+                                                                if ($first_category) {
+                                                                    $cat_name = $first_category->name;
+                                                                    echo '<a href="#0" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
+                                                                }
                                                             }
-                                                        }
+                                                            ?>
 
-                                                        ?>
-                                                    </a>
+                                                        </a>
+                                                    </div>
                                                     <div class="col-xxl-2 col-xl-2">
                                                         <div class="apps-project-card-action-icon-114 text-xl-end">
-                                                            <button class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" loading="async" width="20" height="20" alt="project"></button>
+                                                            <button><img loading="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt="project"></button>
                                                         </div>
                                                     </div>
                                                 </div>

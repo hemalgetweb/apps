@@ -142,9 +142,9 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
       </h2>
       <?php endif; ?>
       <?php if(!empty($process_2_description)) : ?>
-        <p class="intro  text-clr-dark-new2 fs-18">
+        <div class="intro  text-clr-dark-new2 fs-18">
         <?php echo wp_kses_post($process_2_description); ?>
-        </p>
+        </div>
       <?php endif; ?>
     </div>
     <?php if(!empty($process_2_image)) : ?>
@@ -172,11 +172,11 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
         <?php echo wp_kses_post($process_03_title); ?>
         </h2>
         <?php endif; ?>
-    <?php if(!empty($process_3_description)) : ?>
-      <div class="intro  text-clr-dark-new2 fs-18">
-        <?php echo wp_kses_post($process_3_description); ?>
-      </div>
-    <?php endif; ?>
+      <?php if(!empty($process_3_description)) : ?>
+        <div class="intro  text-clr-dark-new2 fs-18">
+          <?php echo wp_kses_post($process_3_description); ?>
+        </div>
+      <?php endif; ?>
     </div>
     <?php if(!empty($process_3_image)) : ?>
     <div class="process-img">

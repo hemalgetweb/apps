@@ -7114,6 +7114,11 @@ section.pricing .pricing-wrapper {
     font-size: 18px;
     line-height: 28px;
     color: #003959;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .apps-project-card-title-114 button {
@@ -8483,14 +8488,6 @@ section.pricing .pricing-wrapper {
     overflow-x: inherit;
 }
 
-.apps-project-card-title-114 {
-    font-weight: 500;
-    margin-bottom: 2px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #003959;
-}
-
 .apps-project-card-title-114 a {
     color: inherit;
 }
@@ -9324,14 +9321,7 @@ li.apps-about-layout-6-list-114 img {
     margin-bottom: 15px;
 }
 
-.dynamic-service-read-more-btn-114 {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 22px;
-    text-transform: uppercase;
-    display: inline-block;
-    color: #00C7C7;
-}
+
 
 .dynamic-service-read-more-btn-114 i {
     font-weight: 400;
@@ -19354,14 +19344,6 @@ section.pricing .pricing-wrapper {
     overflow-x: inherit;
 }
 
-.apps-project-card-title-114 {
-    font-weight: 500;
-    margin-bottom: 2px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #003959;
-}
-
 .apps-project-card-title-114 button {
     color: inherit;
     border: 0;
@@ -20528,14 +20510,6 @@ section.pricing .pricing-wrapper {
     overflow-x: inherit;
 }
 
-.apps-project-card-title-114 {
-    font-weight: 500;
-    margin-bottom: 2px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #003959;
-}
-
 .apps-project-card-title-114 a {
     color: inherit;
 }
@@ -21436,15 +21410,14 @@ li.apps-about-layout-6-list-114 img {
     margin-bottom: 15px;
 }
 
+
 .dynamic-service-read-more-btn-114 {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
-    text-transform: uppercase;
     display: inline-block;
     color: #00C7C7;
 }
-
 .dynamic-service-read-more-btn-114 i {
     font-weight: 400;
     margin-left: 4px;
@@ -25313,3 +25286,6 @@ section.dynamic-service-area .swiper-wrapper {
     color: #00C7C7;
 }
 
+.home-about-style .apps-service-section-title-114 {
+    margin-bottom: 20px;
+}

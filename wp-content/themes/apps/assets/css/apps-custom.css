@@ -6591,13 +6591,9 @@ img {
     margin-bottom: 33px;
 }
 
-.footer-widget ul li a:hover {
-    color: #fff;
-}
 
-.footer-widget ul li a:hover {
-    color: #fff;
-}
+
+
 
 .footer-widget ul li a::before {
     content: ">";
@@ -8138,14 +8134,6 @@ img {
 
 
 
-
-.footer-widget ul li a:hover {
-    color: #fff;
-}
-
-.footer-widget ul li a:hover {
-    color: #fff;
-}
 
 .footer-widget ul li a::before {
     content: ">";
@@ -9996,7 +9984,7 @@ section.apps-mega-menu.mega-menu-only {
 
 .footer .footer-widget-area .footer-widget ul li a:hover,
 .footer .footer-widget-area .footer-widget ul li a:focus {
-    color: #fff;
+    color: #00C7C7 !important;
 }
 
 .menu-footer-social-container li {
@@ -10870,7 +10858,7 @@ h5.apps-project-card-title-114 button {
 }
 
 .footer-widget ul li a:hover {
-    color: #fff !important;
+    color: #00C7C7 !important;
 }
 
 .pt-300 {
@@ -10987,6 +10975,10 @@ form#mc4wp-form-1 input.form-control.subscribe {
 
 .recent-post-list {
     padding-top: 1px;
+}
+
+.current-menu-item a {
+    color: var(--main-extra-light) !important;
 }
 
 .recent-post-list .post-title {
@@ -20358,14 +20350,6 @@ img {
 
 
 
-.footer-widget ul li a:hover {
-    color: #fff;
-}
-
-.footer-widget ul li a:hover {
-    color: #fff;
-}
-
 .footer-widget ul li a::before {
     content: ">";
     margin-right: 9px;
@@ -23147,9 +23131,7 @@ h5.apps-project-card-title-114 button {
     color: #A8E0FF !important;
 }
 
-.footer-widget ul li a:hover {
-    color: #fff !important;
-}
+
 
 .pt-300 {
     padding-top: 300px;
@@ -25540,4 +25522,9 @@ section.dynamic-service-area .swiper-wrapper {
     box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
     background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
     transform: translateY(-6px);
+}
+
+
+.banner .banner-wrapper .section-intro{
+    margin-bottom: 40px;
 }

@@ -456,7 +456,8 @@ ul.dropdown-menus li.menu-item a::after {
 }
 
 .blog-area .blog-info {
-    padding: 15px;
+    padding-inline: 30px;
+    padding-block: 20px 30px;
 }
 
 .blog-area .blog-title a {
@@ -1137,4 +1138,20 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+.case-detail-thumb img {
+    width: 100%;
+}
+
+.case-studies-sec1-content-wrap {
+    margin-inline: auto;
+    max-width: 900px;
+}
+.case-studies-process-content-wrap {
+    margin-inline: auto;
+    max-width: 730px;
+}
+.case-studies-process-content-wrap div.intro {
+    margin-bottom: 20px;
+}
 /* case studies details - style -end */
+

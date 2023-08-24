@@ -50,7 +50,7 @@ EOD;
         <?php endif; ?>
         <?php if (!empty($cbtoolkit_copyright_1)): ?>
             <div class="copyright d-flex flex-column flex-sm-row justify-content-center py-3">
-                <p class="m-0 text-clr-dark5 fw-normal fs-6 text-center">
+                <p class="m-0 text-clr-dark5 fw-normal fs-14 text-center">
                     <?php echo esc_html($cbtoolkit_copyright_1); ?>
                 </p>
             </div>

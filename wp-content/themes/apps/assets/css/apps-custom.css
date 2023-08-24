@@ -7114,6 +7114,11 @@ section.pricing .pricing-wrapper {
     font-size: 18px;
     line-height: 28px;
     color: #003959;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .apps-project-card-title-114 button {
@@ -8481,14 +8486,6 @@ ul.dropdown-menus li.menu-item a {
 
 section.pricing .pricing-wrapper {
     overflow-x: inherit;
-}
-
-.apps-project-card-title-114 {
-    font-weight: 500;
-    margin-bottom: 2px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #003959;
 }
 
 .apps-project-card-title-114 a {
@@ -19354,14 +19351,6 @@ section.pricing .pricing-wrapper {
     overflow-x: inherit;
 }
 
-.apps-project-card-title-114 {
-    font-weight: 500;
-    margin-bottom: 2px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #003959;
-}
-
 .apps-project-card-title-114 button {
     color: inherit;
     border: 0;
@@ -20526,14 +20515,6 @@ ul.dropdown-menus li.menu-item a {
 
 section.pricing .pricing-wrapper {
     overflow-x: inherit;
-}
-
-.apps-project-card-title-114 {
-    font-weight: 500;
-    margin-bottom: 2px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #003959;
 }
 
 .apps-project-card-title-114 a {

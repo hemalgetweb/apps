@@ -1155,3 +1155,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /* case studies details - style -end */
 
+.banner-info .section-tag {
+    letter-spacing: 1.8px;
+}

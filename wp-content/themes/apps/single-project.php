@@ -45,20 +45,22 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
   <div class="container">
     <div class="case-studies-after-header">
       <div class="case-studies-sec1-content text-center">
-        <a href="<?php echo home_url( '/project' ); ?>" class="tagline text-decoration-none fw-bold position-relative">
-          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-            fill="none">
-            <path d="M9 4.5L9.7965 5.2965L6.65625 8.4375H13.5V9.5625H6.65625L9.7965 12.7035L9 13.5L4.5 9L9 4.5Z"
-              fill="#00C7C7" />
-          </svg>
-          Case studies
-        </a>
-        <h1 class="fs-48 fw-medium text-white mb-0 mt-2 pb-3">
-          <?php echo wp_kses_post(get_the_title()); ?>
-        </h1>
-        <p class="ah-intro">
-          <?php echo get_the_excerpt(); ?>
-        </p> 
+        <div class="case-studies-sec1-content-wrap">
+          <a href="<?php echo home_url( '/project' ); ?>" class="tagline text-decoration-none fw-bold position-relative">
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+              fill="none">
+              <path d="M9 4.5L9.7965 5.2965L6.65625 8.4375H13.5V9.5625H6.65625L9.7965 12.7035L9 13.5L4.5 9L9 4.5Z"
+                fill="#00C7C7" />
+            </svg>
+            Case studies
+          </a>
+          <h1 class="fs-48 fw-medium text-white mb-0 mt-2 pb-3">
+            <?php echo wp_kses_post(get_the_title()); ?>
+          </h1>
+          <p class="ah-intro">
+            <?php echo get_the_excerpt(); ?>
+          </p>
+        </div>
 
         <div class="case-detail-thumb">
           <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>">

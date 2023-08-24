@@ -11002,7 +11002,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-weight: 700;
     line-height: 1.41em;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .blog-content h2:not(.accordion-header) {
@@ -11011,7 +11011,7 @@ form#mc4wp-form-1 input.form-control.subscribe {
     font-style: normal;
     font-weight: 900;
     line-height: 1.27em;
-
+    margin-bottom: 25px;
     padding-top: 55px;
     margin-top: 50px;
     position: relative;

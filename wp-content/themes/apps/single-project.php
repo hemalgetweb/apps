@@ -58,10 +58,10 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
         </h1>
         <p class="ah-intro">
           <?php echo get_the_excerpt(); ?>
-        </p>
+        </p> 
 
         <div class="case-detail-thumb">
-          <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
+          <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>">
         </div>
       </div>
     </div>

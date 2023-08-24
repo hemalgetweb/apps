@@ -84,7 +84,7 @@
                         $this->add_link_attributes('view_all_case_studies_btn', $settings['view_all_case_studies_btn']);
                     }
                     ?>
-                    <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 mt-5" data-wow-duration="0.200s"
+                    <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 mt-5 justify-content-center" data-wow-duration="0.200s"
                         data-wow-delay="400ms">
                         <a class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
                             <?php echo $this->get_render_attribute_string('view_all_case_studies_btn'); ?>>

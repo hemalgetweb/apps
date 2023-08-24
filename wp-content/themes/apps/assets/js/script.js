@@ -99,35 +99,6 @@
     // 	})
     // });
 
-    let ProjectDefault = function (e, n) {
-        e.find(".apps-project-active-114").each(function () {
-            new Swiper(".apps-project-active-114", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                loop: true,
-                grabCursor: !0,
-                pagination: {
-                    el: ".apps-project-paginate",
-                    clickable: !0,
-                },
-                navigation: {
-                    nextEl: ".apps-project-next-114",
-                    prevEl: ".apps-project-prev-114",
-                },
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
-                    },
-                    767: {
-                        slidesPerView: 2,
-                    },
-                    1200: {
-                        slidesPerView: 3,
-                    },
-                },
-            });
-        });
-    };
 
     let cbProcess = function (e) {
         AOS.init({
@@ -349,36 +320,6 @@
 	// 	})
 	// });
 
-	
-	let ProjectDefault = function (e, n) {
-		e.find(".apps-project-active-114").each(function () {
-			new Swiper(".apps-project-active-114", {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				loop: true,
-				grabCursor: !0,
-				pagination: {
-					el: ".apps-project-paginate",
-					clickable: !0
-				},
-				navigation: {
-					nextEl: ".apps-project-next-114",
-					prevEl: ".apps-project-prev-114"
-				},
-				breakpoints: {
-					320: {
-						slidesPerView: 1
-					},
-					767: {
-						slidesPerView: 2
-					},
-					1200: {
-						slidesPerView: 3
-					}
-				}
-			})
-		})
-	};
 
 
 
@@ -516,7 +457,6 @@
 		e(".apps-has-application-attached").text(n)
 	}
 	e(window).on("elementor/frontend/init", function () {
-		elementorFrontend.hooks.addAction("frontend/element_ready/cb-project.default", ProjectDefault),
 		elementorFrontend.hooks.addAction("frontend/element_ready/cb-testimonial.default", Testionial),
 		elementorFrontend.hooks.addAction("frontend/element_ready/cb-dynamic-static-service.default", DynamiceStaticService)
 	}), e(function () {
@@ -550,21 +490,17 @@
 
     e(window).on("elementor/frontend/init", function () {
         elementorFrontend.hooks.addAction(
-            "frontend/element_ready/cb-project.default",
-            ProjectDefault
+            "frontend/element_ready/cb-process.default",
+            cbProcess
         ),
-            elementorFrontend.hooks.addAction(
-                "frontend/element_ready/cb-process.default",
-                cbProcess
-            ),
-            elementorFrontend.hooks.addAction(
-                "frontend/element_ready/cb-testimonial.default",
-                Testionial
-            ),
-            elementorFrontend.hooks.addAction(
-                "frontend/element_ready/cb-dynamic-static-service.default",
-                DynamiceStaticService
-            );
+        elementorFrontend.hooks.addAction(
+            "frontend/element_ready/cb-testimonial.default",
+            Testionial
+        ),
+        elementorFrontend.hooks.addAction(
+            "frontend/element_ready/cb-dynamic-static-service.default",
+            DynamiceStaticService
+        );
     }),
         e(function () {
             e(".select2-init").length &&

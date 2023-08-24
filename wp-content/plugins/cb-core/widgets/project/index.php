@@ -175,7 +175,7 @@ class CB_Core_Project extends Widget_Base
 			[
 				'label' => __('Posts Per Page', 'cb-core'),
 				'type' => Controls_Manager::NUMBER,
-				'default' => 8,
+				'default' => 3,
 			]
 		);
 

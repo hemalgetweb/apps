@@ -55,13 +55,13 @@
                                 <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12">
                                     <div class="apps-project-tab-main-content-114 mb-30">
                                         <!-- project card -->
-                                        <a href="<?php echo get_the_permalink(); ?>" class="apps-project-card-114">
+                                        <div class="apps-project-card-114">
                                             <?php if (has_post_thumbnail(get_the_ID())) : ?>
                                                 <div class="apps-project-card-image-114">
                                                     <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
                                                 </div>
                                             <?php endif; ?>
-                                            <div class="apps-project-card-description-wrapper-114">
+                                            <a href="<?php echo get_the_permalink(); ?>" class="apps-project-card-description-wrapper-114">
                                                 <div class="row">
                                                     <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                                         <div class="apps-project-card-title-114">
@@ -86,8 +86,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             <?php endwhile;
@@ -159,7 +159,7 @@
                                         <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div class="apps-project-tab-main-content-114 mb-30">
                                                 <!-- project card -->
-                                                <a href="<?php echo get_the_permalink(); ?>" class="apps-project-card-114">
+                                                <div class="apps-project-card-114">
                                                     <?php if (has_post_thumbnail(get_the_ID())) : ?>
                                                         <div class="apps-project-card-image-114">
                                                             <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
@@ -184,7 +184,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
                                             </div>
                                         </div>
                                     <?php endwhile;

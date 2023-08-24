@@ -1149,6 +1149,8 @@ body::-webkit-scrollbar-thumb:hover {
     margin-inline: auto;
     max-width: 730px;
 }
-.case-studies-process-content-wrap 
+.case-studies-process-content-wrap div.intro {
+    margin-bottom: 15px;
+}
 /* case studies details - style -end */
 

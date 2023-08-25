@@ -25298,3 +25298,13 @@ section.dynamic-service-area .swiper-wrapper {
 .wb-core-value-123 .social-media-services-box .apps-service-box-2-114  {
     min-height: 250px;
 }
+
+@media (max-width: 575px) {
+    .wb-core-value-123 .social-media-services-box .apps-service-box-2-114  {
+        min-height: auto !important;
+    }
+    .wb-core-value-123 .social-media-services-box{
+        min-height: auto !important;
+    }
+    
+}

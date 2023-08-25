@@ -724,19 +724,36 @@ function custom_comment_form_fields($fields) {
                        '<label for="email">' . __( 'Email address:', 'textdomain' ) . '</label> ' .
                        '<input id="email" name="email" type="email" placeholder="Email address" required />' .
                        '</p>';
- 	$fields['author'] = '<input type="text" id="author" name="author" placeholder="Your Name" size="22" required />';
 
     // Modify the website field label and placeholder
     $fields['url'] = '<p class="comment-form-url">' .
                      '<label for="url">' .'Website link <span>(optional)</span>'. '</label> ' .
                      '<input id="url" name="url" type="url" placeholder="Link here" />' .
                      '</p>';
-    $fields['comment_field'] = '<p class="comment-form-comment"><label for="comment">' . _x('Comment', 'noun') . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="Type your feedback"></textarea>';
-
 
     return $fields;
 }
 add_filter('comment_form_default_fields', 'custom_comment_form_fields');
+
+
+function add_comment_author_placeholder($author_field) {
+    $author_field = str_replace('name="author"', 'name="author" placeholder="Your Name"', $author_field);
+    return $author_field;
+}
+add_filter('comment_form_field_author', 'add_comment_author_placeholder');
+function add_comment_textarea_placeholder_js() {
+    if (is_single()) { // Check if it's a single post
+        echo '
+        <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $("#comment").attr("placeholder", "Type your feedback");
+        });
+        </script>';
+    }
+}
+add_action('wp_footer', 'add_comment_textarea_placeholder_js');
+
+
 
 /**
  * Comment position at last

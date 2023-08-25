@@ -615,7 +615,7 @@ to{stroke-dashoffset:100%}
 .swiper-slide .current-job-item,.swiper-slide .item-slide,.swiper-slide .plans,.swiper-slide .portfolio,.swiper-slide .review-item{margin:15px;overflow:hidden}
 .swiper-pagination .swiper-pagination-bullet{width:10px;height:10px;background-color:var(--dark3)}
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:var(--main-extra-light)}
-/* .dynamic-service-box-content-114 p{min-height:144px} */
+.dynamic-service-box-content-114 p{min-height:144px}
 @-webkit-keyframes animated-slide-sm{
 0%{-webkit-transform:translateX(0);transform:translateX(0)}
 100%{-webkit-transform:translateX(calc(-228px * 5));transform:translateX(calc(-228px * 5))}

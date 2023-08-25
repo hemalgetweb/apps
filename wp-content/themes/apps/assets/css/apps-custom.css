@@ -25098,7 +25098,7 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 
 .dynamic-service-box-114 {
-    padding: 40px 30px;
+    padding: 30px;
     border-radius: 0.375rem !important;
     background: var(--white, #FFF) !important;
     box-shadow: 0px 15px 20px 0px rgba(0, 57, 89, 0.10) !important;
@@ -25355,3 +25355,10 @@ section.dynamic-service-area .swiper-wrapper {
 .wb-seo-feature-item-123:hover .seo-feature-item {
     box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
 }
+
+@media (max-width:991px) {
+    .smm-social-media-services-wrap .dynamic-service-box-114{
+        height: auto !important;
+    }
+}
+

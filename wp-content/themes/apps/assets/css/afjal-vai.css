@@ -749,7 +749,7 @@ body::-webkit-scrollbar-thumb:hover {
     background: var(--white, #FFF);
     box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);
     margin: 0;
-    padding: 30px 40px;
+    padding: 40px;
 }
 
 .apps-comment-114 .comment-respond .comment-reply-title {
@@ -778,8 +778,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .apps-comment-114 textarea {
-    border-radius: 4px;
-    border: 1px solid var(--dark-dark-5, #AECBD3);
+    border-radius: 4px !important;
+    border: 1px solid #AECBD3 !important;
+    max-height: 114px;
 }
 
 .apps-comment-114 textarea::placeholder {

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="banner-wrapper d-flex flex-column justify-content-between pb-4">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-7 col-sm-8">
+                <div class="col-lg-6 col-md-7 col-sm-9">
                     <div class="banner-info mb-5 mb-lg-0">
                         <?php if (!empty($settings['subtitle'])): ?>
                             <span

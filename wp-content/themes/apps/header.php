@@ -26,7 +26,7 @@ $body_background_color = function_exists( 'get_field' ) ? get_field( 'body_backg
 		<!-- preloader and scroll up added based on customizer -->
 		<?php if($cbtoolkit_preloader) : ?>
 			<!-- preloader -->
-			<!-- <div class="preloader">
+			<div class="preloader">
 				<div class="loader-bg">
 					<svg role="img" aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00" class="smiley" viewBox="0 0 128 128" width="128px" height="128px">
 						<defs>
@@ -60,7 +60,7 @@ $body_background_color = function_exists( 'get_field' ) ? get_field( 'body_backg
 						</g>
 					</svg>
 				</div>
-			</div> -->
+			</div>
 			<!-- /preloader -->
 
 		<?php endif; ?>

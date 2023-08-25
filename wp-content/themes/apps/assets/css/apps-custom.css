@@ -11465,9 +11465,7 @@ h5.apps-project-card-title-114 button:hover {
     transform: translateY(-7px);
 }
 
-.seo-case-studies-item .seo-feature-item:hover {
-    transform: translateY(-10px);
-}
+
 
 .seo-case-studies-item .seo-feature-item {
     transition: all .3s;
@@ -23105,10 +23103,6 @@ h5.apps-project-card-title-114 button:hover {
 
 .apps-feature-list-content-bottom-wrapper-4-114 ul li:hover img {
     transform: translateY(-7px);
-}
-
-.seo-case-studies-item .seo-feature-item:hover {
-    transform: translateY(-10px);
 }
 
 .seo-case-studies-item .seo-feature-item {

@@ -23,7 +23,7 @@
                         ?>
                         <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 mt-5" data-wow-duration="0.200s"
                             data-wow-delay="400ms">
-                            <a class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
+                            <a class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-6 fw-bold d-flex align-items-center"
                                 <?php echo $this->get_render_attribute_string('see_pricing_btn_link2'); ?>>
                                 <?php echo cb_core_kses_basic($settings['see_pricing_btn_text']); ?>
                                 <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10"

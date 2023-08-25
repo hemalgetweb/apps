@@ -715,7 +715,7 @@ function apps_add_specific_menu_location_atts($atts, $item, $args)
     // check if the item is in the primary menu
     if ($args->theme_location == 'main-menu') {
         // add the desired attributes:
-        $atts['class'] = 'nav-link nav-link fs-14 fw-bold text-uppercase text-clr-primary2';
+        $atts['class'] = 'nav-link nav-link fs-14 fw-bold text-uppercase nav-menu-single-item';
     }
     return $atts;
 }

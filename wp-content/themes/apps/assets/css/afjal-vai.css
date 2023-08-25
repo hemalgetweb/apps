@@ -1158,6 +1158,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .banner-info .section-tag {
     letter-spacing: 1.8px;
+    color: #00C7C7 !important;
 }
 
 .row.gap30px {
@@ -1167,4 +1168,14 @@ body::-webkit-scrollbar-thumb:hover {
 .apps-service-section-wrapper-114 .apps-service-section-title-114 br {
     display: none;
 }
-
+.nav-menu-single-item {
+    color: #A8E0FF;
+}
+.banner-img.home-page-banner-bg {
+    bottom: 90px;
+}
+@media (max-width: 991px) {
+    .banner-img.home-page-banner-bg {
+        bottom: 70px;
+    }
+}

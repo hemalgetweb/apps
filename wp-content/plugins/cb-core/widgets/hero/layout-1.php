@@ -7,7 +7,7 @@
                     <div class="banner-info mb-5 mb-lg-0">
                         <?php if (!empty($settings['subtitle'])): ?>
                             <span
-                                class="section-tag fs-12 fw-bold text-uppercase text-clr-primary2 d-inline-flex gap-2 align-items-center mb-2 ">
+                                class="section-tag fs-12 fw-bold text-uppercase d-inline-flex gap-2 align-items-center mb-2 ">
                                 <img width="10" height="10" src="<?php echo esc_url($settings['subtitle_image']['url']); ?>" alt="icon"
                                     class="img-fluid">
                                 <?php echo cb_core_kses_basic($settings['subtitle']); ?>

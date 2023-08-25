@@ -1185,6 +1185,6 @@ body::-webkit-scrollbar-thumb:hover {
 .home-about-style .elementor-widget-heading {
     margin-bottom: 20px !important;
 }
-.dynamic-service-wrapper-114-layout-2 {
+.dynamic-service-wrapper-114-layout-2 .row {
     --bs-gutter-y: 30px ;
 }

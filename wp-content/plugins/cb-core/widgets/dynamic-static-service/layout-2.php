@@ -37,16 +37,6 @@ if($settings['card_height']) {
                 </div>
                 <?php endforeach; ?>
             </div>
-            <div class="dynamic-slider-paginations">
-                <div class="dynamic-prev"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 10L5.885 9.115L2.39583 5.625H10V4.375H2.39583L5.885 0.885L5 0L0 5L5 10Z" fill="#73A7C3"/>
-</svg>
-</div>
-                <div class="dynamic-next"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#73A7C3"/>
-</svg>
-</div>
-            </div>
         </div>
         <?php endif; ?>
     </div>

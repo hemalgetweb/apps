@@ -606,7 +606,7 @@ to{stroke-dashoffset:100%}
 @media (max-width:1024px){
 .swiper-prev{left:-15px}
 }
-.swiper-arrow{top:40%;position:absolute;width:50px;height:50px;border-radius:50%;margin-top:0;border:1px solid var(--dark5)!important;background-color:var(--dark7);-webkit-transition:all .2s linear;transition:all .2s linear;z-index:10}
+.swiper-arrow{top:40%;position:absolute;width:54px;height:54px;border-radius:50%;margin-top:0;border:1px solid var(--dark5)!important;background-color:var(--dark7);-webkit-transition:all .2s linear;transition:all .2s linear;z-index:10}
 .swiper-arrow:hover{background-color:var(--main-extra-light);border-color:var(--main-extra-light)!important}
 .swiper-slide .current-job-item,.swiper-slide .item-slide,.swiper-slide .plans,.swiper-slide .portfolio,.swiper-slide .review-item{margin:15px;overflow:hidden}
 .swiper-pagination .swiper-pagination-bullet{width:10px;height:10px;background-color:var(--dark3)}

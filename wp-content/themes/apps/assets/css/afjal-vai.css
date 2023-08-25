@@ -1174,3 +1174,8 @@ body::-webkit-scrollbar-thumb:hover {
 .banner-img.home-page-banner-bg {
     bottom: 90px;
 }
+@media (max-width: 991px) {
+    .banner-img.home-page-banner-bg {
+        bottom: 70px;
+    }
+}

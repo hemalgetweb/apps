@@ -123,6 +123,14 @@ $related_posts_query = new WP_Query($related_posts_args);
                         </div>
                     </div>
                 </article>
+                
+                <div class="apps-comment-114">
+                    <div class="comments-area">
+                        <?php 
+							comments_template();
+							?>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-4">
                 <div class="Sidebar mt-3">
@@ -131,15 +139,6 @@ $related_posts_query = new WP_Query($related_posts_args);
                     <?php dynamic_sidebar( 'blog-sidebar' ); ?>
                     <?php } ?>
                     <?php endif; ?>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="apps-comment-114">
-                    <div class="comments-area">
-                        <?php 
-							comments_template();
-							?>
-                    </div>
                 </div>
             </div>
         </div>

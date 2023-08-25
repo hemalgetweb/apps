@@ -745,15 +745,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .apps-comment-114 .comment-respond {
-    border-radius: 6px;
-    background: var(--white, #FFF);
-    box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10);
+    border-radius: 6px !important;
+    background: var(--white, #FFF) !important;
+    box-shadow: 0px 10px 30px 0px rgba(0, 57, 89, 0.10) !important;
     margin: 0;
-    padding: 30px 40px;
+    padding: 40px;
 }
 
 .apps-comment-114 .comment-respond .comment-reply-title {
-    color: var(--dark-dark-1, #003959);
+    color: #003959 !important;
     font-family: Cairo;
     font-size: 36px;
     font-style: normal;
@@ -778,17 +778,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .apps-comment-114 textarea {
-    border-radius: 4px;
-    border: 1px solid var(--dark-dark-5, #AECBD3);
+    border-radius: 4px !important;
+    border: 1px solid #AECBD3 !important;
+    max-height: 114px;
+    transition: all 150ms linear;
 }
 
 .apps-comment-114 textarea::placeholder {
-    color: var(--dark-dark-4, #6A96A4);
+    color: #6A96A4 !important;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
+    line-height: 1.62em;
 }
 
 .apps-comment-114 .comments-area .comment-form>p.form-submit {
@@ -1184,4 +1185,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .home-about-style .elementor-widget-heading {
     margin-bottom: 20px !important;
+}
+.dynamic-service-wrapper-114-layout-2 .row {
+    --bs-gutter-y: 30px ;
 }

@@ -76,12 +76,13 @@
 
 .instruction-wrap .instruction-item::after {
     content: "";
-    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.03) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
     position: absolute;
     width: 100%;
     height: 1px;
     left: 0;
     right: 0;
+    opacity: .2;
 }
 
 @media (min-width: 992px) {
@@ -109,8 +110,9 @@
     width: 1px;
     position: absolute;
     top: 24px;
+    opacity: .2;
     bottom: 29px;
-    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.03) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
 }
 
 @media (min-width: 992px) {

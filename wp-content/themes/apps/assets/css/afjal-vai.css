@@ -781,6 +781,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 4px !important;
     border: 1px solid #AECBD3 !important;
     max-height: 114px;
+    transition: all 150ms linear;
 }
 
 .apps-comment-114 textarea::placeholder {
@@ -788,8 +789,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
+    line-height: 1.62em;
 }
 
 .apps-comment-114 .comments-area .comment-form>p.form-submit {

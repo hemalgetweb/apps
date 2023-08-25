@@ -25275,3 +25275,19 @@ section.dynamic-service-area .swiper-wrapper {
 .home-about-style .apps-service-section-title-114 {
     margin-bottom: 20px;
 }
+.apps-has-custom-service-layout-114 .apps-service-box-icon-2-114 {
+    margin-right: 11px;
+    float: left;
+}
+
+.apps-has-custom-service-layout-114 .apps-service-box-content-2-114 {
+    overflow: hidden;
+}
+
+.apps-has-custom-service-layout-114 .apps-service-box-content-2-114 .title {
+    min-height: auto;
+}
+.apps-has-custom-service-layout-114 .apps-service-box-2-114 {
+    padding: 30px 20px;
+    padding-bottom: 40px;
+}

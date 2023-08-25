@@ -25358,7 +25358,7 @@ section.dynamic-service-area .swiper-wrapper {
 
 @media (max-width:991px) {
     .smm-social-media-services-wrap .dynamic-service-box-114{
-        height: auto !important;
+        min-height: auto !important;
     }
 }
 

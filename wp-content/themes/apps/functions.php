@@ -724,6 +724,7 @@ function custom_comment_form_fields($fields) {
                        '<label for="email">' . __( 'Email address:', 'textdomain' ) . '</label> ' .
                        '<input id="email" name="email" type="email" placeholder="Email address" required />' .
                        '</p>';
+ 	$fields['author'] = '<input type="text" id="author" name="author" placeholder="Your Name" size="22" required />';
 
     // Modify the website field label and placeholder
     $fields['url'] = '<p class="comment-form-url">' .

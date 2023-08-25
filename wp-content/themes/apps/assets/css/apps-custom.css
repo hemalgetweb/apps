@@ -14548,6 +14548,11 @@ p.comment-form-comment textarea {
     font-weight: 400;
     line-height: 1.62em;
 }
+.comments-area form.comment-form input[type="text"],
+.comments-area form.comment-form input[type="email"],
+.comments-area form.comment-form input[type="url"]:focus {
+    border: 1px solid #003C4F;
+}
 
 .comments-area .comment-form>p:not(.comment-notes) {
     font-size: 14px;

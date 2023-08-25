@@ -14551,7 +14551,7 @@ p.comment-form-comment textarea {
 .comments-area form.comment-form input[type="text"],
 .comments-area form.comment-form input[type="email"],
 .comments-area form.comment-form input[type="url"]:focus {
-    border: 1px solid #003C4F;
+    border: 1px solid #003C4F !important;
 }
 
 .comments-area .comment-form>p:not(.comment-notes) {

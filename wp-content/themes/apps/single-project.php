@@ -337,35 +337,6 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
   </div>
 </section>
 <!-- case-studies-project-demo end -->
-<!-- case-result -->
-<section class="case-result section-padding">
-  <div class="container">
-    <div class="result-content">
-      <h2 class="fs-36 fw-medium text-white mb-4">
-        The Result
-      </h2>
-      <p class="text-clr-dark-5-new fs-18 fw-normal mb-4">
-        Supported substance consolidates parts of web based promoting and substance showcasing. It includes making
-        substance, for example, a blog entry or video and paying for its consideration on a site that routinely
-        distributes comparative substance. A piece of supported substance will seem to be like the remainder of the
-        substance on the site yet will incorporate some sign that it’s supported. With execution showcasing, you would
-        pay a pre-decided aps on your supported article navigates to your site from the article.
-      </p>
-
-      <div class="navbar-right btn-wrap d-flex flex-wrap gap-3 gap-lg-4 " data-wow-duration="0.200s"
-        data-wow-delay="400ms">
-        <a class="btn position-relative rounded bg-btn text-uppercase border-0 text-clr-dark1 fs-14 fw-bold d-flex align-items-center"
-          href="https://wadialbadaitsolutions.ae/contact-us/" target="_blank" rel="nofollow">
-          Contact us <svg class="btn-icon position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#003C4F"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<!--/ case-result -->
 <?php the_content(); ?>
 <?php
 get_footer();

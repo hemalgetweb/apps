@@ -14549,9 +14549,7 @@ p.comment-form-comment textarea {
     line-height: 1.62em;
 }
 
-.comments-area form.comment-form input[type="text"],
-.comments-area form.comment-form input[type="email"],
-.comments-area form.comment-form input[type="url"] ::placeholder {
+.comments-area form.comment-form input::placeholder {
     color: #6A96A4;
     font-size: 16px;
     font-weight: 400;

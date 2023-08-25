@@ -9,7 +9,7 @@ if($settings['card_height']) {
 <section class="dynamic-service-area">
     <div class="container"> 
         <?php if(!empty($settings['slides'])) : ?>
-        <div class="dynamic-service-wrapper-114">
+        <div class="dynamic-service-wrapper-114 dynamic-service-wrapper-114-layout-2">
             <div class="row">
                 <?php foreach($settings['slides'] as $slide) : ?>
                 <!-- single slide -->

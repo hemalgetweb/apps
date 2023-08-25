@@ -118,7 +118,8 @@ class CB_Core_Dynamic_Static_Service extends Widget_Base
 				'label' => __('Layout', 'cb-core'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'layout-1' => __('Layout 1', 'cb-core')
+					'layout-1' => __('Layout 1', 'cb-core'),
+					'layout-2' => __('Layout 2', 'cb-core')
 				],
 				'default' => 'layout-1',
 				'toggle' => true,
@@ -148,7 +149,7 @@ class CB_Core_Dynamic_Static_Service extends Widget_Base
 		   'label'   => esc_html__( 'Card Height', 'cb-core' ),
 		   'type'    => \Elementor\Controls_Manager::NUMBER,
 		   'condition' => [
-			'layout' => ['layout-1']
+			'layout' => ['layout-1', 'layout-2']
 		   ]
 		 ]
 		);
@@ -162,6 +163,7 @@ class CB_Core_Dynamic_Static_Service extends Widget_Base
             'type' => \Elementor\Controls_Manager::SELECT,
             'options' => [
                 'style-1'  => esc_html__( 'Style 1', 'cb-core' ),
+                'style-2'  => esc_html__( 'Style 2', 'cb-core' ),
             ],
             'default' => 'style-1',
             ]
@@ -176,7 +178,7 @@ class CB_Core_Dynamic_Static_Service extends Widget_Base
                'url' => \Elementor\Utils::get_placeholder_image_src(),
            ],
            'condition' => [
-            'field_condition' => ['style-1']
+            'field_condition' => ['style-1', 'style-2']
            ]
          ]
         );
@@ -187,7 +189,7 @@ class CB_Core_Dynamic_Static_Service extends Widget_Base
             'type'        => \Elementor\Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'Service Title', 'cb-core' ),
             'condition' => [
-                'field_condition' => ['style-1']
+                'field_condition' => ['style-1', 'style-2']
             ]
          ]
         );
@@ -205,7 +207,7 @@ class CB_Core_Dynamic_Static_Service extends Widget_Base
              'placeholder' => esc_html__( 'Service Title Link', 'cb-core' ),
              'label_block' => true,
              'condition' => [
-                'field_condition' => ['style-1']
+                'field_condition' => ['style-1', 'style-2']
             ]
            ]
          );

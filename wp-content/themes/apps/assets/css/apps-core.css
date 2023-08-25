@@ -602,7 +602,7 @@ to{stroke-dashoffset:100%}
 }
 .swiper-prev{left:-70px}
 @media (max-width:1400px){
-.swiper-prev{left:-40px}
+.swiper-prev{left:-40px !important}
 }
 @media (max-width:1300px){
 .swiper-prev{left:-25px}

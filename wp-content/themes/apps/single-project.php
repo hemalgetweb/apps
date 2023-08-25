@@ -22,10 +22,10 @@ $process_3_subtitle = $process_3 ? $process_3['process_3_subtitle']: '';
 $process_3_description = $process_3 ? $process_3['process_3_description']: '';
 $process_3_image = $process_3 ? $process_3['process_3_image']: '';
 $process_4 = function_exists("get_field") ? get_field("process_4"): '';
+$process_4_gallery = function_exists("get_field") ? get_field("process_4_gallery"): '';
 $process_4_title = $process_4 ? $process_4['process_4_title']: '';
 $process_4_subtitle = $process_4 ? $process_4['process_4_subtitle']: '';
 $process_4_description = $process_4 ? $process_4['process_4_description']: '';
-$process_4_image = $process_4 ? $process_4['process_4_image']: '';
 $process_5 = function_exists("get_field") ? get_field("process_5"): '';
 $process_5_title = $process_5 ? $process_5['process_5_title']: '';
 $process_5_subtitle = $process_5 ? $process_5['process_5_subtitle']: '';
@@ -208,9 +208,19 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
       </div>
       <?php endif; ?>
     </div>
-    <?php if(!empty($process_4_image)) : ?>
-    <div class="process-img">
-      <img src="<?php echo esc_url($process_4_image); ?>" alt="research" class="img-fluid">
+    <?php if(!empty($process_4_gallery)) : ?>
+      <div class="row">
+        <?php 
+        $total_post_count = count($process_4_gallery);
+        foreach($process_4_gallery as $index => $gallery) : 
+            $col_class = $total_post_count == 1 ? 'col-12': 'col-xxl-6 mb-30 col-xl-6 col-lg-6 col-md-12 col-12';
+          ?>
+          <div class="<?php echo $col_class; ?>">
+            <div class="process-img">
+              <img src="<?php echo $gallery['full_image_url']; ?>" alt="research" class="img-fluid">
+            </div>
+          </div>
+        <?php endforeach; ?>
     </div>
     <?php endif; ?>
   </div>

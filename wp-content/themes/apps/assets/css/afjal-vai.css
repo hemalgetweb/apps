@@ -778,8 +778,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .apps-comment-114 textarea {
-    border-radius: 4px;
-    border: 1px solid #AECBD3;
+    border-radius: 4px !important;
+    border: 1px solid #AECBD3 !important;
     max-height: 114px;
 }
 

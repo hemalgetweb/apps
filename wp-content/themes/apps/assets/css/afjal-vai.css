@@ -1167,7 +1167,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .apps-service-section-wrapper-114 .intro br,
 .apps-service-section-wrapper-114 .apps-service-section-title-114 br {
-    display: none;
+    display: none !important;
 }
 .nav-menu-single-item {
     color: #A8E0FF;

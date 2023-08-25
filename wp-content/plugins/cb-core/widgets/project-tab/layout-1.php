@@ -52,46 +52,36 @@
                                 }
                                 $project_big_image = get_post_meta($post_id, 'project_image', true);
                             ?>
-                                <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                    <div class="apps-project-tab-main-content-114 mb-30">
-                                        <!-- project card -->
-                                        <div class="apps-project-card-114">
-                                            <?php if (has_post_thumbnail(get_the_ID())) : ?>
-                                                <div class="apps-project-card-image-114">
-                                                    <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
-                                                </div>
-                                            <?php endif; ?>
-                                            <div class="apps-project-card-description-wrapper-114">
-                                                
-                                                <div class="row">
-                                                    <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
-                                                        <a href="<?php echo get_the_permalink(); ?>">
+                               <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <a href="<?php echo get_the_permalink(); ?>">
+                                        <div class="apps-project-tab-main-content-114 mb-30">
+                                            <!-- project card -->
+                                            <div class="apps-project-card-114">
+                                                <?php if (has_post_thumbnail(get_the_ID())) : ?>
+                                                    <div class="apps-project-card-image-114">
+                                                        <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
+                                                    </div>
+                                                <?php endif; ?>
+                                                <div class="apps-project-card-description-wrapper-114">
+                                                    <div class="row">
+                                                        <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                                             <div class="apps-project-card-title-114">
                                                                 <?php echo get_the_title(); ?>
                                                             </div>
-
-                                                            <?php
-                                                            if ($categories && !is_wp_error($categories)) {
-                                                                $first_category = reset($categories); // Get the first category
-
-                                                                if ($first_category) {
-                                                                    $cat_name = $first_category->name;
-                                                                    echo '<a href="#0" class="apps-project-card-category-114">' . esc_html($cat_name) . '</a>';
-                                                                }
-                                                            }
-                                                            ?>
-
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-xxl-2 col-xl-2">
-                                                        <div class="apps-project-card-action-icon-114 text-xl-end">
-                                                            <button><img loading="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt="project"></button>
+                                                            <?php if (!empty($cat_name)) : ?>
+                                                                <a href="#0" class="apps-project-card-category-114"><?php echo esc_html($cat_name) ?></a>
+                                                            <?php endif; ?>
+                                                        </div>
+                                                        <div class="col-xxl-2 col-xl-2">
+                                                            <div class="apps-project-card-action-icon-114 text-xl-end">
+                                                                <button><img loading="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" alt="project"></button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             <?php endwhile;
                             wp_reset_query(); ?>

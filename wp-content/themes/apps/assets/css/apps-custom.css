@@ -11377,9 +11377,7 @@ h5.apps-project-card-title-114 button:hover {
 }
 
 
-.apps-service-box-2-114:hover .apps-service-box-icon-2-114 img {
-    transform: rotateY(180deg)
-}
+
 
 .apps-service-box-2-114 .apps-service-box-icon-2-114 img {
     transition: all .3s;
@@ -21389,15 +21387,6 @@ li.apps-about-layout-6-list-114 img {
 }
 
 
-.dynamic-service-box-content-114 .title {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-    color: #003959;
-    display: block;
-    margin-bottom: 10px;
-}
-
 .dynamic-service-box-content-114 .title a {
     color: inherit;
 }
@@ -24194,7 +24183,7 @@ i {
     left: -51px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     .apps-has-client-testimonial-slide-arrow-114 .client-testimonial-active {
         padding-left: 0;
     }

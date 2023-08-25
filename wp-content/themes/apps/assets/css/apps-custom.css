@@ -24185,7 +24185,7 @@ i {
     left: -51px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     .apps-has-client-testimonial-slide-arrow-114 .client-testimonial-active {
         padding-left: 0;
     }

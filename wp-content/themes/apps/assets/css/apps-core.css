@@ -590,6 +590,10 @@ to{stroke-dashoffset:100%}
 @media (max-width:1400px){
 .swiper-next{right:-40px}
 }
+@media (max-width:1400px){
+.Client-Testimonials .swiper-next{right:-40px !important;}
+}
+
 @media (max-width:1300px){
 .swiper-next{right:-25px}
 }

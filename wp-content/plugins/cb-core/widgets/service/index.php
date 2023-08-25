@@ -189,7 +189,7 @@ class CB_Core_Service extends Widget_Base
 					'style-1' => __('Style 1', 'cb-core'),
 					'style-2' => __('Style 2', 'cb-core'),
 					'style-3' => __('Style 3', 'cb-core'),
-					'style-4' => __('Style 3', 'cb-core')
+					'style-4' => __('Style 4', 'cb-core')
 				],
 			]
 		);

@@ -1179,3 +1179,9 @@ body::-webkit-scrollbar-thumb:hover {
         bottom: 70px;
     }
 }
+.col-12 .process-img img {
+    width: 100%;
+}
+.home-about-style .elementor-widget-heading {
+    margin-bottom: 20px !important;
+}

@@ -731,7 +731,7 @@ function custom_comment_form_fields($fields) {
                      '<label for="url">' .'Website link <span>(optional)</span>'. '</label> ' .
                      '<input id="url" name="url" type="url" placeholder="Link here" />' .
                      '</p>';
-    $fields['comment_field'] = '<p class="comment-form-comment"><label for="comment">' . _x('Comment', 'noun') . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="Type your feedback"></textarea
+    $fields['comment_field'] = '<p class="comment-form-comment"><label for="comment">' . _x('Comment', 'noun') . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="Type your feedback"></textarea>';
 
 
     return $fields;

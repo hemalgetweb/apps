@@ -735,6 +735,26 @@ function custom_comment_form_fields($fields) {
 }
 add_filter('comment_form_default_fields', 'custom_comment_form_fields');
 
+
+function add_comment_author_placeholder($author_field) {
+    $author_field = str_replace('name="author"', 'name="author" placeholder="Your Name"', $author_field);
+    return $author_field;
+}
+add_filter('comment_form_field_author', 'add_comment_author_placeholder');
+function add_comment_textarea_placeholder_js() {
+    if (is_single()) { // Check if it's a single post
+        echo '
+        <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $("#comment").attr("placeholder", "Type your feedback");
+        });
+        </script>';
+    }
+}
+add_action('wp_footer', 'add_comment_textarea_placeholder_js');
+
+
+
 /**
  * Comment position at last
  */

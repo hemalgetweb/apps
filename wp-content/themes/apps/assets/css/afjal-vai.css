@@ -1171,3 +1171,17 @@ body::-webkit-scrollbar-thumb:hover {
 .nav-menu-single-item {
     color: #A8E0FF;
 }
+.banner-img.home-page-banner-bg {
+    bottom: 90px;
+}
+@media (max-width: 991px) {
+    .banner-img.home-page-banner-bg {
+        bottom: 70px;
+    }
+}
+.col-12 .process-img img {
+    width: 100%;
+}
+.home-about-style .elementor-widget-heading {
+    margin-bottom: 20px !important;
+}

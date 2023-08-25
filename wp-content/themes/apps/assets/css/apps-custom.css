@@ -11377,9 +11377,7 @@ h5.apps-project-card-title-114 button:hover {
 }
 
 
-.apps-service-box-2-114:hover .apps-service-box-icon-2-114 img {
-    transform: rotateY(180deg)
-}
+
 
 .apps-service-box-2-114 .apps-service-box-icon-2-114 img {
     transition: all .3s;

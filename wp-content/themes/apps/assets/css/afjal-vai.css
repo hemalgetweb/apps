@@ -1198,3 +1198,6 @@ body::-webkit-scrollbar-thumb:hover {
 .comment-form .logged-in-as a:hover {
     color: #00C7C7 !important;
 }
+.case-studies-after-header .case-detail-thumb img {
+    border-radius: 6px 6px 0 0;
+}

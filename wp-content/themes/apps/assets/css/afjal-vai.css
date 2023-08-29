@@ -1189,3 +1189,12 @@ body::-webkit-scrollbar-thumb:hover {
 .dynamic-service-wrapper-114-layout-2 .row {
     --bs-gutter-y: 30px ;
 }
+
+.comment-form .logged-in-as a {
+    color: #00A1A1 !important;
+    font-size: 16px !important;
+    text-decoration: underline !important;
+}
+.comment-form .logged-in-as a:hover {
+    color: #00C7C7 !important;
+}

@@ -109,69 +109,6 @@
             },
         });
     };
-    // related-post-slider
-    new Swiper(".related-post-slider", {
-        slidesPerView: 2,
-        spaceBetween: 32,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination113",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-next25555",
-            prevEl: ".swiper-prev25555",
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-            },
-            575: {
-                spaceBetween: 0,
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            992: {
-                slidesPerView: 2,
-            },
-            1200: {
-                slidesPerView: 3,
-            },
-        },
-        on: {
-            init: function () {
-                if (this.slides.length > 3) {
-                    document.querySelector(".swiper-next25555").style.display =
-                        "block";
-                    document.querySelector(".swiper-prev25555").style.display =
-                        "block";
-                } else {
-                    document.querySelector(".swiper-next25555").style.display =
-                        "none";
-                    document.querySelector(".swiper-prev25555").style.display =
-                        "none";
-                }
-            },
-            resize: function () {
-                if (this.slides.length > 3) {
-                    document.querySelector(".swiper-next25555").style.display =
-                        "block";
-                    document.querySelector(".swiper-prev25555").style.display =
-                        "block";
-                } else {
-                    document.querySelector(".swiper-next25555").style.display =
-                        "none";
-                    document.querySelector(".swiper-prev25555").style.display =
-                        "none";
-                }
-            },
-        },
-    });
-    // related-post-slider -End
-
     var DynamiceStaticService = function (e, n) {
             e.find(".dynamic-service-active").each(function () {
                 new Swiper(".dynamic-service-active", {
@@ -360,58 +297,32 @@
 
 
 	// related-post-slider
-	new Swiper(".related-post-slider", {
-		slidesPerView: 2,
-		spaceBetween: 32,
-		loop: true,
-		pagination: {
-			el: ".swiper-pagination113",
-			clickable: true
-		},
-		navigation: {
-			nextEl: ".swiper-next25555",
-			prevEl: ".swiper-prev25555"
-		},
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 0
-			},
-			575: {
-				spaceBetween: 0,
-				slidesPerView: 1,
-			},
-			768: {
-				slidesPerView: 2,
-			},
-			992: {
-				slidesPerView: 2
-			},
-			1200: {
-				slidesPerView: 3
-			}
-		},
-		on: {
-			init: function () {
-				if (this.slides.length > 3) {
-					document.querySelector('.swiper-next25555').style.display = 'block';
-					document.querySelector('.swiper-prev25555').style.display = 'block';
-				} else {
-					document.querySelector('.swiper-next25555').style.display = 'none';
-					document.querySelector('.swiper-prev25555').style.display = 'none';
-				}
-			},
-			resize: function () {
-				if (this.slides.length > 3) {
-					document.querySelector('.swiper-next25555').style.display = 'block';
-					document.querySelector('.swiper-prev25555').style.display = 'block';
-				} else {
-					document.querySelector('.swiper-next25555').style.display = 'none';
-					document.querySelector('.swiper-prev25555').style.display = 'none';
-				}
-			}
-		}
-	});
+    $('.related-post-slider').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:true,
+        items: 3,
+        responsive:{
+            0:{
+                items:1
+            },
+            320:{
+                items:1
+            },
+            575:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:2
+            },
+            1200:{
+                items:3
+            },
+        }
+    })
 	// related-post-slider -End
 
 

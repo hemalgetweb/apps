@@ -33,7 +33,7 @@ $current_post_categories = wp_get_post_categories($current_post_id);
 $related_posts_args = array(
 	'category__in' => $current_post_categories,
 	'post__not_in' => array($current_post_id),
-	'posts_per_page' => 3, // You can adjust the number of related posts to display
+	'posts_per_page' => -1, // You can adjust the number of related posts to display
 	'orderby' => 'rand',   // You can change the order of related posts
 );
 

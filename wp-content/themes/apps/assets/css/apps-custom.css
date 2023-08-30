@@ -12671,21 +12671,14 @@ section.dynamic-service-area .swiper-wrapper {
 .wb-core-value-123 .social-media-services-box .apps-service-box-2-114 {
     min-height: 250px;
 }
-
 @media (max-width: 575px) {
     .wb-core-value-123 .social-media-services-box .apps-service-box-2-114 {
         min-height: auto !important;
     }
-
     .wb-core-value-123 .social-media-services-box {
         min-height: auto !important;
     }
-
 }
-
-
-
-
 .seo-feature-item {
     padding: 30px;
     border-radius: 0.375rem !important;
@@ -12699,9 +12692,7 @@ section.dynamic-service-area .swiper-wrapper {
     background: #fff;
     transition: .3s all linear;
     border-radius: 0.375rem;
-
 }
-
 .wb-seo-feature-item-123:hover {
     background: linear-gradient(180deg, #00C7C7 0%, #50FF81 100%) !important;
     transform: translateY(-6px);
@@ -12710,10 +12701,8 @@ section.dynamic-service-area .swiper-wrapper {
 .wb-seo-feature-item-123:hover .seo-feature-item {
     box-shadow: 0px 30px 20px 0px rgba(0, 57, 89, 0.20) !important;
 }
-
 @media (max-width:767px) {
     .smm-social-media-services-wrap .dynamic-service-box-114{
         min-height: auto !important;
     }
 }
-

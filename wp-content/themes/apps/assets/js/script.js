@@ -243,21 +243,6 @@
 		for (let l of n) l.classList.remove("active");
 		t.classList.add("active")
 	});
-	// e(".apps-has-mobile-menu-custom .nav-link").on("click", function () {
-	// 	e(this).parents(".menu-item").find(".dropdown-menus").slideToggle(), e(this).parents(".menu-item").find(".dropdown-menus").toggleClass("d-block")
-	// }), window.addEventListener("DOMContentLoaded", () => {
-	// 	let e = new IntersectionObserver(e => {
-	// 		e.forEach(e => {
-	// 			let n = e.target.getAttribute("id");
-	// 			e.intersectionRatio > 0 ? document.querySelector(`.apps-scrollable-content-sections-nav-114 nav li a[href="#${n}"]`).parentElement.classList.add("active") : document.querySelector(`nav li a[href="#${n}"]`).parentElement.classList.remove("active")
-	// 		})
-	// 	});
-	// 	document.querySelectorAll("section[id]").forEach(n => {
-	// 		e.observe(n)
-	// 	})
-	// });
-
-
 
 
 	// case-studies-project-slider-active
@@ -297,7 +282,7 @@
 
 
 	// related-post-slider
-    $('.related-post-slider').owlCarousel({
+    e('.related-post-slider').owlCarousel({
         loop:true,
         margin:30,
         nav:true,

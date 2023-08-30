@@ -41,8 +41,6 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
 ?>
 
 
-<div class="wab-single-project-wrap">
-
   <!-- case-studies-sec1 -->
   <section class="case-studies-sec1">
     <div class="container">
@@ -163,7 +161,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
     <div class="container">
       <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if (!empty($process_3_subtitle)) : ?>
-          <span class="apps-service-section-subtitle-114 text-clr-primary-new">
+          <span class="apps-service-section-subtitle-114 text-color-dark-3">
             <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
             <?php echo wp_kses_post($process_3_subtitle); ?>
           </span>
@@ -222,7 +220,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
     <div class="container">
       <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if (!empty($process_5_subtitle)) : ?>
-          <span class="apps-service-section-subtitle-114 text-clr-primary-new">
+          <span class="apps-service-section-subtitle-114 text-color-dark-3">
             <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
             <?php echo wp_kses_post($process_5_subtitle); ?>
           </span>
@@ -262,7 +260,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
     <div class="apps-project-wrapper-114 p-rel">
       <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if (!empty($process_6_subtitle)) : ?>
-          <span class="apps-service-section-subtitle-114 text-clr-primary-new">
+          <span class="apps-service-section-subtitle-114 text-color-dark-3">
             <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" alt="service">
             <?php echo wp_kses_post($process_6_subtitle); ?>
           </span>
@@ -314,8 +312,6 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
     </div>
   </section>
   <!--  case-studies-process-06 -->
-
-</div>
 
 <!-- case-studies-project-demo end -->
 <?php the_content(); ?>

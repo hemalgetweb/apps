@@ -204,18 +204,18 @@ function apps_scripts()
 	wp_enqueue_style('bootstrap', apps_THEME_CSS_DIR . 'bootstrap.min.css');
 	wp_enqueue_style('swiper', apps_THEME_CSS_DIR . 'swiper.min.css', null, '10.0');
 	wp_enqueue_style('select2', apps_THEME_CSS_DIR . 'select2.min.css', null, time());
+	wp_enqueue_style('owl-carousel', apps_THEME_CSS_DIR . 'owl.carousel.css', null, time());
 	wp_enqueue_style('aos', apps_THEME_CSS_DIR . 'aos.min.css', null, time());
 	wp_enqueue_style('apps-core', apps_THEME_CSS_DIR . 'apps-core.css', null, time());
 	wp_enqueue_style('support', apps_THEME_CSS_DIR . 'support.css', null, time());
-	// wp_enqueue_style('apps-ashique-vai', apps_THEME_CSS_DIR . 'ashique-vai.css', null, time());
 	wp_enqueue_style('apps-custom', apps_THEME_CSS_DIR . 'apps-custom.css', null, time());
 	wp_enqueue_style('apps-afjal-vai', apps_THEME_CSS_DIR . 'afjal-vai.css', null, time());
 	wp_enqueue_style('apps-emon-vai', apps_THEME_CSS_DIR . 'emon-vai.css', null, time());
-	// wp_enqueue_style('apps-unit', apps_THEME_CSS_DIR . 'apps-unit.css', null, time());
 
 	// all js
 	wp_enqueue_script('bootstrap', APPS_THEME_JS_DIR . 'bootstrap.bundle.min.js', ['jquery'], '', true);
 	wp_enqueue_script('select2', APPS_THEME_JS_DIR . 'select2.min.js', ['jquery'], '', true);
+	wp_enqueue_script('owl-carousel', APPS_THEME_JS_DIR . 'owl.carousel.js', ['jquery'], '', true);
 	wp_enqueue_script('swiper', APPS_THEME_JS_DIR . 'swiper.min.js', ['jquery'], '10.0', true);
 	wp_enqueue_script('aos', APPS_THEME_JS_DIR . 'aos.min.js', ['jquery'], '10.0', true);
 	wp_enqueue_script('apps-ajax-script', APPS_THEME_JS_DIR . 'apps-ajax-handle.js', ['jquery'], time(), true);

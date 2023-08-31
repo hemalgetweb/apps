@@ -12202,3 +12202,24 @@ section.dynamic-service-area .swiper-wrapper {
 .text-color-dark-3 {
     color: #316785
 }
+
+.new-box-shadow-wrapper {
+    padding: 1px;
+    background: #fff;
+    transition: .3s all linear;
+    border-radius: .375rem
+}
+.new-box-shadow-wrapper:hover {
+    background: linear-gradient(180deg, #00c7c7 0, #50ff81 100%) !important;
+    transform: translateY(-6px)
+}
+.new-box-shadow-wrapper:hover .new-box-shadow-inner {
+    box-shadow: 0 30px 20px 0 rgba(0, 57, 89, .2) !important
+}
+.new-box-shadow-inner {
+    padding: 30px;
+    border-radius: .375rem !important;
+    background: var(--white, #fff) !important;
+    box-shadow: 0 15px 20px 0 rgba(0, 57, 89, .1) !important;
+    transition: .3s all linear
+}

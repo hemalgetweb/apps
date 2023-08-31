@@ -12210,6 +12210,10 @@ section.dynamic-service-area .swiper-wrapper {
     margin-bottom: 20px;
 }
 
+.apps-category-area {
+    --bs-gutter-y: 30px;
+}
+
 .new-box-shadow-wrapper {
     padding: 1px;
     background: #fff;

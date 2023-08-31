@@ -1,7 +1,7 @@
 <?php $box_min_height = $settings['box_min_height']; ?>
 <?php $enable_box_shadow_effect = $settings['enable_box_shadow_effect']; ?>
 <!-- service area start -->
-<section class="service-area <?php echo $enable_box_shadow_effect ? __('apps-has-shadow-effect-114') : ''; ?>">
+<section class="service-area box-shadow-service-area-layout-5 <?php echo $enable_box_shadow_effect ? __('apps-has-shadow-effect-114') : ''; ?>">
     <div class="container">
         <?php if (!empty($settings['slides'])) : ?>
             <div class="row justify-content-center">

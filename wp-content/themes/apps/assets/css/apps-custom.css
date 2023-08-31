@@ -12203,6 +12203,10 @@ section.dynamic-service-area .swiper-wrapper {
     color: #316785
 }
 
+.box-shadow-service-area-layout-5 .row {
+    --bs-gutter-y: 30px;
+}
+
 .new-box-shadow-wrapper {
     padding: 1px;
     background: #fff;

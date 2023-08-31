@@ -140,7 +140,7 @@ class CB_Core_Service extends Widget_Base
 			[
 				'label' => esc_html__( 'Box Min Height', 'cb-core' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
-				'min' => 200,
+				'min' => 100,
 				'max' => 600,
 				'step' => 40,
                 'condition' => [

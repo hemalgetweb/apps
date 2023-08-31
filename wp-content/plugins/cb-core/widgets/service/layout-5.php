@@ -10,7 +10,7 @@
                     
                         <a class="new-box-shadow-wrapper d-block text-decoration-none" href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']) : ''; ?>">
                             <div class="new-box-shadow-inner">
-                                <div class=" mb-30" style="min-height: <?php echo $box_min_height ? $box_min_height . 'px' : ''; ?>">
+                                <div class="" style="min-height: <?php echo $box_min_height ? $box_min_height . 'px' : ''; ?>">
                                     <?php if (!empty($slide['service_image']['url'])) : ?>
                                         <div class="apps-service-box-icon-114">
                                             <img src="<?php echo esc_url($slide['service_image']['url']); ?>" alt="service">

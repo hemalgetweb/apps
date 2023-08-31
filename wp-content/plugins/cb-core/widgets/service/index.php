@@ -144,7 +144,7 @@ class CB_Core_Service extends Widget_Base
 				'max' => 600,
 				'step' => 40,
                 'condition' => [
-                    'layout' => ['layout-1', 'layout-2']
+                    'layout' => ['layout-1', 'layout-2', 'layout-5']
                 ]
 			]
 		);

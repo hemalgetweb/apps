@@ -7,9 +7,9 @@
             <div class="row justify-content-center">
                 <?php foreach ($settings['slides'] as $slide) : ?>
                     <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6">
-                        <div class="service-box-card-wrap">
-                            <a class="apps-service-box-114" href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']) : ''; ?>">
-
+                     
+                            <a class="social-media-services-box" href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']) : ''; ?>">
+                            <div class="apps-service-box-2-114">
                                 <div class=" mb-30" style="min-height: <?php echo $box_min_height ? $box_min_height . 'px' : ''; ?>">
                                     <?php if (!empty($slide['service_image']['url'])) : ?>
                                         <div class="apps-service-box-icon-114">
@@ -27,8 +27,8 @@
                                         <?php endif; ?>
                                     </div>
                                 </div>
-                            </a>
                         </div>
+                            </a>
 
                     </div>
                 <?php endforeach; ?>

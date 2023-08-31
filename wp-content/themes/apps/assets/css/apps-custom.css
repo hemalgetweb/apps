@@ -12206,6 +12206,9 @@ section.dynamic-service-area .swiper-wrapper {
 .box-shadow-service-area-layout-5 .row {
     --bs-gutter-y: 30px;
 }
+.box-shadow-service-area-layout-5 .new-box-shadow-inner .apps-service-box-icon-114 {
+    margin-bottom: 20px;
+}
 
 .new-box-shadow-wrapper {
     padding: 1px;

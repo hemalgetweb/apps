@@ -12210,7 +12210,7 @@ section.dynamic-service-area .swiper-wrapper {
     margin-bottom: 20px;
 }
 
-.apps-category-area {
+.apps-category-area .row {
     --bs-gutter-y: 30px;
 }
 

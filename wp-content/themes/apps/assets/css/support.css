@@ -70,7 +70,7 @@
 
 @media (min-width: 992px) {
     .instruction-wrap .instruction-item:first-child::after {
-        opacity: 1 !important;
+        opacity: .1 !important;
     }
 }
 

@@ -445,6 +445,13 @@ input#application_user_contact {
 
 .statement-info p {
     color: #A8E0FF !important;
+    font-size: 18px !important;
+    line-height: 1.5em !important;
+    font-weight: 400 !important;
+}
+.statement-info p strong {
+    font-size: 20px !important;
+    font-weight: 900 !important;
 }
 
 .footer {

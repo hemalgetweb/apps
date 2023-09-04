@@ -11006,9 +11006,9 @@ i {
 .strategy-item .icon img {
     max-width: 48px;
     margin-bottom: 8px;
-    -ms-transform: scale(1.02); /* IE 9 */
-    -webkit-transform: scale(1.02); /* Safari 3-8 */
-    transform: scale(1.02);
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03);
 }
 
 .about-section-content-5-114 ul li::before {

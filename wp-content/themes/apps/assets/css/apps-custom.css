@@ -12242,3 +12242,6 @@ section.dynamic-service-area .swiper-wrapper {
 .contact-form .form-wrapper .wpcf7 .row {
     --bs-gutter-x: 20px !important;
 } 
+.contact-form .form-wrapper .wpcf7 .row .mb-4{
+    margin-bottom: 20px !important;
+} 

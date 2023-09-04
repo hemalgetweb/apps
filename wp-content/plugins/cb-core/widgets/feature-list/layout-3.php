@@ -14,7 +14,7 @@ $enable_box_hover_shadow = $settings['enable_box_hover_shadow'];
                     if ($feature_lists) {
                         $feature_arr = explode("\n", $feature_lists);
                     }
-                    if ($settings['feature_list_link']['url']) {
+                    if ($slide['feature_list_link']['url']) {
                         $feature_link_url = $slide['service_title_link']['url'];
                         $feature_start_class = '<a class="new-box-shadow-wrapper d-block text-decoration-none" href=' . $slide['service_title_link']['url'] . '>';
                         $feature_end_class = '</a>';

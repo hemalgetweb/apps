@@ -126,7 +126,7 @@ ul.dropdown-menus li.menu-item a::after{transition:all 50ms ease;right:15px}
 .blog-info>a svg{transition:all 150ms linear}
 .blog-info>a:hover svg{margin-left:5px!important}
 .blog-area .blog-info>a:hover svg *{fill:#00c7c7!important}
-.blog-area .blog-title a:hover,.blog-area .section-tag:hover{color:#1ae3e3}
+.blog-area .blog-title a:hover,.blog-area .section-tag:hover{color:#00c7c7}
 .feature-top a span{color:#316785!important;transition:all .1s ease!important;letter-spacing:1.8px!important}
 .feature-top a:hover span{color:#1ae3e3!important}
 .apps-blog-archive-banner-top-114{background:#fff!important}

@@ -19,7 +19,7 @@ $enable_box_hover_shadow = $settings['enable_box_hover_shadow'];
                         $feature_start_class = '<a class="new-box-shadow-wrapper d-block text-decoration-none" href=' . $slide['feature_list_link']['url'] . '>';
                         $feature_end_class = '</a>';
                     } else {
-                        $feature_start_class = '<div>';
+                        $feature_start_class = '<div class="new-box-shadow-wrapper d-block">';
                         $feature_end_class = '</div>';
                     }
                 ?>

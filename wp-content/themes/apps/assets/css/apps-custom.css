@@ -12238,3 +12238,7 @@ section.dynamic-service-area .swiper-wrapper {
     box-shadow: 0 15px 20px 0 rgba(0, 57, 89, .1) !important;
     transition: .3s all linear
 }
+
+.contact-form .form-wrapper .wpcf7 .row {
+    --bs-gutter-x: 20px !important;
+} 

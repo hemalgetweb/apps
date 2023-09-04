@@ -11999,7 +11999,7 @@ section.dynamic-service-area .swiper-wrapper {
 }
 
 .apps-project-card-114:hover {
-    box-shadow: 0 30px 20px 0 rgba(0, 57, 89, .2) !important;
+    box-shadow: 0px 30px 30px 0px rgba(0, 57, 89, 0.20) !important;
     background: linear-gradient(180deg, #00c7c7 0, #50ff81 100%) !important;
     transform: translateY(-6px)
 }

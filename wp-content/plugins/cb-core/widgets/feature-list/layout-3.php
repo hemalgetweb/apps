@@ -15,8 +15,8 @@ $enable_box_hover_shadow = $settings['enable_box_hover_shadow'];
                         $feature_arr = explode("\n", $feature_lists);
                     }
                     if ($slide['feature_list_link']['url']) {
-                        $feature_link_url = $slide['service_title_link']['url'];
-                        $feature_start_class = '<a class="new-box-shadow-wrapper d-block text-decoration-none" href=' . $slide['service_title_link']['url'] . '>';
+                        $feature_list_link = $slide['feature_list_link']['url'];
+                        $feature_start_class = '<a class="new-box-shadow-wrapper d-block text-decoration-none" href=' . $slide['feature_list_link']['url'] . '>';
                         $feature_end_class = '</a>';
                     } else {
                         $feature_start_class = '<div>';

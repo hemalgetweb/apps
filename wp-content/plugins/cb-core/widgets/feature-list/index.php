@@ -135,29 +135,29 @@ class CB_Core_Feature_List extends Widget_Base
 			]
 		);
 		$this->add_control(
-		 'min_box_height',
-		 [
-		   'label'   => esc_html__( 'Min Box Height', 'cb-core' ),
-		   'type'    => \Elementor\Controls_Manager::NUMBER,
-		   'min'     => 150,
-		   'max'     => 700,
-		   'condition' => [
-			'layout' => ['layout-3']
-		   ]
-		 ]
+			'min_box_height',
+			[
+				'label'   => esc_html__('Min Box Height', 'cb-core'),
+				'type'    => \Elementor\Controls_Manager::NUMBER,
+				'min'     => 150,
+				'max'     => 700,
+				'condition' => [
+					'layout' => ['layout-3']
+				]
+			]
 		);
 		$this->add_control(
-		 'enable_box_hover_shadow',
-		 [
-		   'label'        => esc_html__( 'Enable box hover shadow?', 'cb-core' ),
-		   'type'         => \Elementor\Controls_Manager::SWITCHER,
-		   'label_on'     => esc_html__( 'On', 'cb-core' ),
-		   'label_off'    => esc_html__( 'Off', 'cb-core' ),
-		   'return_value' => 'yes',
-		   'condition' => [
-			'layout' => ['layout-3']
-		   ]
-		 ]
+			'enable_box_hover_shadow',
+			[
+				'label'        => esc_html__('Enable box hover shadow?', 'cb-core'),
+				'type'         => \Elementor\Controls_Manager::SWITCHER,
+				'label_on'     => esc_html__('On', 'cb-core'),
+				'label_off'    => esc_html__('Off', 'cb-core'),
+				'return_value' => 'yes',
+				'condition' => [
+					'layout' => ['layout-3']
+				]
+			]
 		);
 		$repeater = new Repeater();
 		$repeater->add_control(
@@ -214,17 +214,33 @@ class CB_Core_Feature_List extends Widget_Base
 			]
 		);
 		$repeater->add_control(
-		 'feature_lists',
-		 [
-		   'label'       => esc_html__( 'Feature Lists ( enter for seperate )', 'cb-core' ),
-		   'type'        => \Elementor\Controls_Manager::TEXTAREA,
-		   'rows'        => 10,
-		   'default'     => esc_html__( 'Default Text', 'cb-core' ),
-		   'placeholder' => esc_html__( 'Placeholder Text', 'cb-core' ),
-		   'condition' => ['field_condition' => ['style-3']]
-		 ]
+			'feature_list_link',
+			[
+				'label'   => esc_html__('Feature List Link', 'cb-core'),
+				'type'        => \Elementor\Controls_Manager::URL,
+				'default'     => [
+					'url'               => '#',
+					'is_external'       => true,
+					'nofollow'          => true,
+					'custom_attributes' => '',
+				],
+				'placeholder' => esc_html__('Placeholder Text', 'cb-core'),
+				'label_block' => true,
+				'condition' => ['field_condition' => ['style-3']]
+			]
 		);
-		
+		$repeater->add_control(
+			'feature_lists',
+			[
+				'label'       => esc_html__('Feature Lists ( enter for seperate )', 'cb-core'),
+				'type'        => \Elementor\Controls_Manager::TEXTAREA,
+				'rows'        => 10,
+				'default'     => esc_html__('Default Text', 'cb-core'),
+				'placeholder' => esc_html__('Placeholder Text', 'cb-core'),
+				'condition' => ['field_condition' => ['style-3']]
+			]
+		);
+
 		$repeater->add_control(
 			'strategy_icon',
 			[

@@ -12004,6 +12004,10 @@ section.dynamic-service-area .swiper-wrapper {
     transform: translateY(-6px)
 }
 
+.apps-project-card-114:hover .apps-project-card-description-wrapper-114 .apps-project-card-title-114 {
+    color: #00C7C7 !important;
+}
+
 .apps-project-card-description-wrapper-114 {
     background-color: #fff;
     border-radius: 0 0 .375rem .375rem !important

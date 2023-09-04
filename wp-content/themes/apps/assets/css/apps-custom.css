@@ -11004,11 +11004,11 @@ i {
 }
 
 .strategy-item .icon img {
-    max-width: 48px;
+    max-width: 36px;
     margin-bottom: 8px;
-    -ms-transform: scale(1.03); /* IE 9 */
-    -webkit-transform: scale(1.03); /* Safari 3-8 */
-    transform: scale(1.03);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 
 .about-section-content-5-114 ul li::before {

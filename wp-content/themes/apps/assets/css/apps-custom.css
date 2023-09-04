@@ -12244,4 +12244,7 @@ section.dynamic-service-area .swiper-wrapper {
 } 
 .contact-form .form-wrapper .wpcf7 .row .mb-4{
     margin-bottom: 20px !important;
-} 
+}
+.about-page-our-storoy .about-area .row {
+    align-items: center !important;
+}

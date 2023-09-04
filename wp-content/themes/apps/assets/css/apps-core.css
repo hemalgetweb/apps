@@ -539,7 +539,7 @@ to{stroke-dashoffset:100%}
 .overview .strategy-item .number{font-size:45px}
 }
 .overview .strategy-item:hover .icon{background-color:var(--dark8)!important}
-.overview .strategy-item:hover .icon img{-webkit-transform:scale(1.1);transform:scale(1.1)}
+.overview .strategy-item:hover .icon img{-webkit-transform:scale(1.3);transform:scale(1.3)}
 .case-details-banner{min-height:510px}
 @media (max-width:991px){
 .case-details-banner{min-height:340px}

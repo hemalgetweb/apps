@@ -12252,3 +12252,6 @@ section.dynamic-service-area .swiper-wrapper {
 .about-page-our-storoy .about-area .row {
     align-items: center !important;
 }
+.form-control::placeholder {
+    font-size: 16px !important;
+}

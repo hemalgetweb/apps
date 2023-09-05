@@ -12254,4 +12254,5 @@ section.dynamic-service-area .swiper-wrapper {
 }
 .form-control::placeholder {
     font-size: 16px !important;
+    color: #6A96A4 !important;
 }

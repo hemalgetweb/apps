@@ -452,6 +452,9 @@ to{stroke-dashoffset:100%}
 .common-gd-bg{background:-webkit-gradient(linear,left top,left bottom,from(#ecf4f5),to(rgba(236,244,245,0)));background:linear-gradient(180deg,#ecf4f5 0,rgba(236,244,245,0) 100%)}
 .pricing .pricing-wrapper .pricing-item{padding:30px 23px;background:#fff;border:1px solid #aecbd3;-webkit-box-shadow:0 20px 30px rgba(0,60,79,.03);box-shadow:0 20px 30px rgba(0,60,79,.03);-webkit-transition:.2s all linear;transition:.2s all linear}
 .pricing .pricing-wrapper .pricing-item:hover{border-color:#26b5b5}
+.pricing .pricing-wrapper .pricing-item .pricing-feature ul li:last-child{
+    margin-bottom: 0px !important;
+}
 .pricing .pricing-wrapper .pricing-item .pricing-feature ul li img{margin-top:8px}
 .pricing .pricing-wrapper .pricing-item .pricing-count .price-btn{border:1px solid #aecbd3;border-radius:4px;height:44px;padding:9px 20px;background-color:#fff;-webkit-transition:.2s all linear;transition:.2s all linear}
 .pricing .pricing-wrapper .pricing-item .pricing-count .price-btn svg *{fill:#003c4f;-webkit-transition:.2s all linear;transition:.2s all linear}

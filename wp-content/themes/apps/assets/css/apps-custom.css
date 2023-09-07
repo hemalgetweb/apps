@@ -12228,6 +12228,10 @@ section.dynamic-service-area .swiper-wrapper {
 .apps-category-area .row {
     --bs-gutter-y: 30px;
 }
+.apps-category-grid-category-wrapper .row {    
+    --bs-gutter-y: 20px;
+    --bs-gutter-x: 20px;
+}
 
 .new-box-shadow-wrapper {
     padding: 1px;

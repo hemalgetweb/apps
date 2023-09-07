@@ -79,3 +79,6 @@
 .apps-blog-main-cards .single-blog .blog-img a img{
     border-radius: 6px;
 }
+.seo-case-studies-wrap .seo-feature .seo-feature-top{
+    border-bottom: 1px solid #D2ECFA !important;
+}

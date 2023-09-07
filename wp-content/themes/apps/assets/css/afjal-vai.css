@@ -279,3 +279,6 @@ section.related-post-area.section-padding.bg-clr-dark8.mt-93{margin-top:30px}
 .terms-condition-page .elementor-widget-container p {
     margin-bottom: 20px !important;
 }
+.case-studies-process-style-guide .row {
+    --bs-gutter-y: 30px;
+}

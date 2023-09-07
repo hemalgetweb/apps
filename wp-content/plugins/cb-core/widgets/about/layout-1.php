@@ -20,7 +20,7 @@
                         <p><?php echo wp_kses_post($settings['about_desc']); ?></p>
                         <?php endif; ?>
                         <?php if(!empty($settings['slides'])) : ?>
-                        <ul>
+                        <ul class="apps-about-section-114-list-wrap">
                             <?php foreach($settings['slides'] as $slide) :
                                 $this->add_render_attribute( 'list_item_image', 'src', $slide['list_item_image']['url'] );
                                 $this->add_render_attribute( 'list_item_image', 'alt', \Elementor\Control_Media::get_image_alt( $slide['list_item_image'] ) );

@@ -40,7 +40,13 @@
                                     </div>
                                     <div class="col-xxl-2 col-xl-2">
                                         <div class="apps-project-card-action-icon-114 text-xl-end">
-                                            <button class="apps-has-portfolio-popup"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" loading="async" width="20" height="20" alt="project"></button>
+                                            <button class="apps-has-portfolio-popup">
+                                                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-top-right.svg" loading="async" width="20" height="20" alt="project"> -->
+
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.06199 14.707L4.29199 13.937L12.938 5.29103H5.20799V4.20703H14.792V13.791H13.708V6.06103L5.06199 14.707Z" fill="#73A7C3"/>
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

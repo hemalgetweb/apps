@@ -8,15 +8,17 @@ $box_height = $settings['box_height'] ?? $settings['box_height'];
             <div class="row row-cols-xxl-5 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-12">
                 <?php foreach($settings['slides'] as $slide) : ?>
                 <div class="col-12">
-                    <div class="apps-category-grid-item-single-114" style="min-height: <?php echo $box_height ?>px;">
-                        <div class="icon">
-                            <?php echo wp_get_attachment_image( $slide['category_image']['id'], 'thumbnail' );; ?>
+                    <div class="new-box-shadow-wrapper">
+                        <div class="apps-category-grid-item-single-114" style="min-height: <?php echo $box_height ?>px;">
+                            <div class="icon">
+                                <?php echo wp_get_attachment_image( $slide['category_image']['id'], 'thumbnail' );; ?>
+                            </div>
+                            <?php if(!empty($slide['category_label'])) : ?>
+                            <div class="content">
+                                <h5 class="title"><?php echo esc_html($slide['category_label']); ?></h5>
+                            </div>
+                            <?php endif; ?>
                         </div>
-                        <?php if(!empty($slide['category_label'])) : ?>
-                        <div class="content">
-                            <h5 class="title"><?php echo esc_html($slide['category_label']); ?></h5>
-                        </div>
-                        <?php endif; ?>
                     </div>
                 </div>
                 <?php endforeach; ?>

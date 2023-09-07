@@ -270,7 +270,7 @@ section.related-post-area.section-padding.bg-clr-dark8.mt-93{margin-top:30px}
 .apps-project-card-114:hover .apps-project-card-description-wrapper-114 .apps-project-card-action-icon-114 .apps-has-portfolio-popup svg * {
     fill: #00c7c7;
 }
-.tac-contact-link a {
+.tac-contact-link a:hover {
     color: #00c7c7 !important;
 }
 .terms-condition-page .elementor-widget {

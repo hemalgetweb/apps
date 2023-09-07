@@ -71,3 +71,11 @@
 .blog-area .blog-img a img{
     border-radius: 6px;
 }
+
+.apps-blog-main-cards .single-blog .blog-img{
+    padding: 10px 10px 0 10px;
+    background-color: #fff;
+}
+.apps-blog-main-cards .single-blog .blog-img a img{
+    border-radius: 6px;
+}

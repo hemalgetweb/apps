@@ -276,3 +276,6 @@ section.related-post-area.section-padding.bg-clr-dark8.mt-93{margin-top:30px}
 .terms-condition-page .elementor-widget {
     margin-bottom: 0 !important;
 }
+.terms-condition-page .elementor-widget-container p {
+    margin-bottom: 20px !important;
+}

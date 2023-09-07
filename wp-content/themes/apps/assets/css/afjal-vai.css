@@ -273,3 +273,6 @@ section.related-post-area.section-padding.bg-clr-dark8.mt-93{margin-top:30px}
 .tac-contact-link a {
     color: #00c7c7 !important;
 }
+.terms-condition-page .elementor-widget {
+    margin-bottom: 0 !important;
+}

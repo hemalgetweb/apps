@@ -186,7 +186,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
   </section>
   <!-- case-studies-process-03 -end -->
   <!-- case-studies-process-04 -->
-  <section class="case-studies-process-01 section-padding case-studies-process-wireframe">
+  <section class="case-studies-process-01 section-padding bg-white">
     <div class="container">
       <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if (!empty($process_4_subtitle)) : ?>

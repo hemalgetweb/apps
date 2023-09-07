@@ -60,3 +60,11 @@
 .apps-footer-widget-all-social-list-114 a svg *{transition:all .1s linear}
 .apps-footer-widget-all-social-list-114 a:hover svg *{fill:#00c7c7}
 .single-blog-featured-img img{width:100%;height:auto}
+
+
+
+.blog-area .blog-img{
+    padding: 10px 10px 0 10px;
+    background-color: #fff;
+    border-radius: 6px;
+}

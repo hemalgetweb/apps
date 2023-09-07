@@ -20,7 +20,7 @@
                                     <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
                                 </div>
                             <?php endif; ?>
-                            <div class="apps-project-card-description-wrapper-114" data-url="<?php echo $project_big_image ? esc_url($project_big_image) : ''; ?>" data-bs-toggle="modal" data-bs-target="#modal_for_project" data-title="<?php echo get_the_title(); ?>">
+                            <div class="apps-project-card-description-wrapper-114" data-url="<?php echo $project_big_image ? esc_url($project_big_image) : ''; ?>">
                                 <div class="row">
                                     <div class="col-xxl-10 col-xl-10 mb-30 mb-xl-0">
                                         <a href="<?php echo get_the_permalink(); ?>" class="apps-project-card-title-114">

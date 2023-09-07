@@ -216,7 +216,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
   <!-- case-studies-process-04 -end -->
 
   <!-- case-studies-process-05 -->
-  <section class="case-studies-process-01 process-bg-light section-padding">
+  <section class="case-studies-process-01 process-bg-light section-padding case-studies-process-style-guide">
     <div class="container">
       <div class="text-center pb-4 case-studies-process-content-wrap">
         <?php if (!empty($process_5_subtitle)) : ?>
@@ -241,7 +241,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
           <?php
           $total_post_count = count($process_5_gallery);
           foreach ($process_5_gallery as $index => $gallery) :
-            $col_class = $total_post_count == 1 ? 'col-12' : 'col-xxl-6 mb-30 col-xl-6 col-lg-6 col-md-12 col-12';
+            $col_class = $total_post_count == 1 ? 'col-12' : 'col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12';
           ?>
             <div class="<?php echo $col_class; ?>">
               <div class="process-img">

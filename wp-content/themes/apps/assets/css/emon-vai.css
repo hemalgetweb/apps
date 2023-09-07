@@ -66,5 +66,8 @@
 .blog-area .blog-img{
     padding: 10px 10px 0 10px;
     background-color: #fff;
+   
+}
+.blog-area .blog-img a img{
     border-radius: 6px;
 }

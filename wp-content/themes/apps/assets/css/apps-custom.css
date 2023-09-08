@@ -7968,7 +7968,7 @@ img {
 .dynamic-slider-paginations>.dynamic-prev {
     position: absolute;
     left: -73px;
-    background-color: #fff;
+    background-color: transparent;
     z-index: 99;
     top: 50%;
     transform: translateY(-50%)

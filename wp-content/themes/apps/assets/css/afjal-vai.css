@@ -282,3 +282,6 @@ section.related-post-area.section-padding.bg-clr-dark8.mt-93{margin-top:30px}
 .case-studies-process-style-guide .row {
     --bs-gutter-y: 30px;
 }
+.our-strategy .col-xl-4:last-child .strategy-item::before {
+    display: none;
+}

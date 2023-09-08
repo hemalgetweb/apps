@@ -25,7 +25,7 @@ $enable_box_hover_shadow = $settings['enable_box_hover_shadow'];
                 ?>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                         <?php echo wp_kses_post($feature_start_class); ?>
-                        <div class="apps-feature-list-box-3-114 mb-30 new-box-shadow-inner" style="min-height: <?php echo $min_box_height ? $min_box_height . 'px' : ''; ?>">
+                        <div class="apps-feature-list-box-3-114 new-box-shadow-inner" style="min-height: <?php echo $min_box_height ? $min_box_height . 'px' : ''; ?>">
                             <?php if (!empty($slide['feature_title'])) : ?>
                                 <h5 class="apps-feature-list-box-3-title-114">
                                     <?php echo cb_core_kses_basic($slide['feature_title']); ?></h5>

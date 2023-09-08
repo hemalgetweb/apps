@@ -7977,7 +7977,7 @@ img {
 .dynamic-slider-paginations>.dynamic-next {
     position: absolute;
     z-index: 99;
-    background-color: #fff;
+    background-color: transparent;
     right: -73px;
     top: 50%;
     transform: translateY(-50%)

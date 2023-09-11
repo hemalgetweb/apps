@@ -282,7 +282,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
             <?php foreach ($process_gallery_images as $index => $image) : ?>
               <div class="swiper-slide">
                 <!-- project card -->
-                <div class="apps-project-card-114">
+                <div class="">
                   <img src="<?php echo esc_url($image['full_image_url']); ?>" alt="project image" class="img-fluid">
                 </div>
                 <!-- project card -end -->

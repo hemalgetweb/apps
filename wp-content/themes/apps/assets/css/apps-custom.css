@@ -12280,3 +12280,7 @@ section.dynamic-service-area .swiper-wrapper {
 .case-studies-project-demo .swiper-wrapper{
     cursor: initial !important;
 }
+
+.case-studies-sec2-card .p-4{
+padding: 40px 35px 40px 35px !important;
+}

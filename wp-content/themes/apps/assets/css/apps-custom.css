@@ -9972,9 +9972,9 @@ h5.apps-project-card-title-114 button:hover {
     transition: all .3s
 }
 
-.feature-list-area .apps-feature-list-box-3-114:hover {
+/* .feature-list-area .apps-feature-list-box-3-114:hover {
     transform: translateY(-15px)
-}
+} */
 
 .pricing .pricing-wrapper .pricing-item .pricing-count .price-btn:hover {
     border-color: transparent

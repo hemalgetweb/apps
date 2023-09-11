@@ -245,7 +245,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img1.png"
               alt="project image" class="img-fluid">
           </div>
@@ -253,7 +253,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
               alt="project image" class="img-fluid">
           </div>
@@ -261,7 +261,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
               alt="project image" class="img-fluid">
           </div>
@@ -269,7 +269,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img2.png"
               alt="project image" class="img-fluid">
           </div>
@@ -277,7 +277,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
               alt="project image" class="img-fluid">
           </div>
@@ -285,7 +285,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
               alt="project image" class="img-fluid">
           </div>
@@ -293,7 +293,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img1.png"
               alt="project image" class="img-fluid">
           </div>
@@ -301,7 +301,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
               alt="project image" class="img-fluid">
           </div>
@@ -309,7 +309,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
               alt="project image" class="img-fluid">
           </div>
@@ -317,7 +317,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img2.png"
               alt="project image" class="img-fluid">
           </div>
@@ -325,7 +325,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img3.png"
               alt="project image" class="img-fluid">
           </div>
@@ -333,7 +333,7 @@
         </div>
         <div class="swiper-slide">
           <!-- project card -->
-          <div class="apps-project-card-114">
+          <div class="">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/case-studies-project-img4.png"
               alt="project image" class="img-fluid">
           </div>

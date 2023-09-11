@@ -12276,3 +12276,7 @@ section.dynamic-service-area .swiper-wrapper {
 .mobileMenu-wrapper .apps-has-number-text-dubai-114 svg *{
     fill: #003959 !important;
 }
+
+.case-studies-project-demo .swiper-wrapper{
+    cursor: initial !important;
+}

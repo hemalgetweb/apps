@@ -12267,3 +12267,8 @@ section.dynamic-service-area .swiper-wrapper {
     font-size: 16px !important;
     color: #6A96A4 !important;
 }
+
+
+.feature-list-area .new-box-shadow-wrapper {
+    margin-bottom: 30px;
+}

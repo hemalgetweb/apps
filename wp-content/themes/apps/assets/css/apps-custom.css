@@ -12272,3 +12272,7 @@ section.dynamic-service-area .swiper-wrapper {
 .feature-list-area .new-box-shadow-wrapper {
     margin-bottom: 30px;
 }
+
+.mobileMenu-wrapper .apps-has-number-text-dubai-114 svg *{
+    fill: #003959 !important;
+}

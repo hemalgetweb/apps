@@ -33,7 +33,7 @@ if($settings['card_height']) {
                                 <?php endif; ?>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <?php endforeach; ?>
             </div>

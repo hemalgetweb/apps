@@ -150,7 +150,7 @@ $related_posts_query = new WP_Query($related_posts_args);
 <!-- related-post -->
 <section class="related-post-area section-padding bg-clr-dark8">
     <div class="container">
-        <div class="apps-service-section-wrapper-114 text-center mb-5">
+        <div class="apps-service-section-wrapper-114 text-center mb-1">
             <h2 class="apps-service-section-title-114 fs-36">
                 Related Post
             </h2>

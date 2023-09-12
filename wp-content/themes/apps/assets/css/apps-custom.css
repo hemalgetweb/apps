@@ -11821,7 +11821,8 @@ body.elementor-panel-loading #elementor-panel-state-loading {
 
 .apps-about-right-114 ul li {
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding-right: 30px;
 }
 
 .section-header.apps-about-right-3-114 ul .expect-point {

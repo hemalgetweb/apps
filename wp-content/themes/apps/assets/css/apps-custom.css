@@ -6931,7 +6931,7 @@ section.pricing .pricing-wrapper {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #1f516d
 }
 
@@ -12288,4 +12288,8 @@ padding: 40px 35px 40px 35px !important;
 
 .apps-blog-main-cards .mb-4 {
     margin-bottom: 30px !important;
+}
+
+.wb-scrollable-faq-wrap .apps-panel{
+    margin-bottom: 30px;
 }

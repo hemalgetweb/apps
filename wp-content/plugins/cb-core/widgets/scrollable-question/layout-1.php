@@ -21,7 +21,7 @@
             </div>
             <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-8">
                 <?php if(!empty($settings['slides'])) : ?>
-                <div class="apps-scrollable-content-content-114">
+                <div class="apps-scrollable-content-content-114 wb-scrollable-faq-wrap">
                     <?php foreach($settings['slides'] as $index=>$slide) : ?>
                     <section class="apps-panel" id="apps_panel_<?php echo esc_attr($index); ?>">
                         <?php echo wp_kses_post($slide['tab_content']); ?>

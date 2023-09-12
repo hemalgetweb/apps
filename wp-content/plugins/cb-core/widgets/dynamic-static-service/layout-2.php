@@ -14,7 +14,7 @@ if($settings['card_height']) {
                 <?php foreach($settings['slides'] as $slide) : ?>
                 <!-- single slide -->
                 <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <a class="service-box-card-wrap d-block" href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']): ''; ?>">
+                    <div class="service-box-card-wrap d-block">
                         <div class="dynamic-service-box-114" style="min-height: <?php echo $card_height ? $card_height. ';': ' ;'; ?> <?php echo $card_hide_border ? 'border: 0; box-shadow: 0px 20px 40px 0px rgba(0, 57, 89, 0.10);': ' ;'; ?>">
                             <div class="dynamic-service-box-img-114">
                                 <?php echo wp_get_attachment_image( $slide['service_image']['id'], 'full' ); ?>

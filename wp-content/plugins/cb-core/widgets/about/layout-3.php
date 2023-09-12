@@ -10,8 +10,8 @@
             <div class="col-xxl-6 col-xl-6 col-lg-7 p-0">
                 <div class="section-header apps-about-right-3-114">
                     <?php if (!empty($settings['about_subtitle'])): ?>
-                        <div class="title-hints d-flex align-items-center gap-2 ">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg"
+                        <div class="title-hints d-flex align-items-center gap-1 ">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-spinner.png"
                                 class="img-fluid" alt="icon">
                             <h6 class="fs-12 fw-bold ls-1 text-clr-dark2 text-uppercase m-2">
                                 <?php echo esc_html($settings['about_subtitle']); ?>

@@ -7878,7 +7878,7 @@ img {
 }
 
 .apps-has-box-hover-shadow .apps-feature-list-box-3-114 {
-    border: 1px solid #baddf0;
+    /* border: 1px solid #baddf0; */
     box-shadow: none;
     transition: all .3s
 }

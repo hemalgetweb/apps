@@ -9042,7 +9042,9 @@ header#header {
 
 .apps-scrollable-content-content-114 .apps-panel .count {
     float: left;
-    margin-right: 8px
+    margin-right: 8px;
+    margin-top: 2px;
+    color: #003959;
 }
 
 @media (min-width:1200px) and (max-width:1399px) {

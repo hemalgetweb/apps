@@ -12125,7 +12125,8 @@ section.dynamic-service-area .swiper-wrapper {
 }
 
 .banner .banner-wrapper .section-intro {
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    font-size:18px;
 }
 
 .apps-footer-widget-contact-info-item-114 .content a {

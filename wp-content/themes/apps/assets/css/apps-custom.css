@@ -12299,3 +12299,9 @@ padding: 40px 35px 40px 35px !important;
 .new-box-shadow-wrapper .apps-service-box-icon-114 .apps-service-box-content-wrap-114 h5{
     margin-bottom: 10px !important;
 }
+.comment-respond .comment-form .comment-notes{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1F516D;
+}

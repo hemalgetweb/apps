@@ -2,12 +2,12 @@
 <section class="about-area">
     <div class="container">
         <div class="row">
-            <div class="col-xxl-6 col-xl-6 col-lg-5 text-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-5 text-center p-0">
                 <div class="apps-about-left-3-114 mb-30 mb-lg-0">
                     <?php echo wp_get_attachment_image($settings['about_image']['id'], 'full'); ?>
                 </div>
             </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-7">
+            <div class="col-xxl-6 col-xl-6 col-lg-7 p-0">
                 <div class="section-header apps-about-right-3-114">
                     <?php if (!empty($settings['about_subtitle'])): ?>
                         <div class="title-hints d-flex align-items-center gap-2 ">

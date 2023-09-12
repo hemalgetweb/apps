@@ -8,7 +8,7 @@
                 <?php foreach ($settings['slides'] as $slide) : ?>
                     <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6">
                     
-                        <a class="new-box-shadow-wrapper d-block text-decoration-none" href="<?php echo $slide['service_title_link']['url'] ? esc_url($slide['service_title_link']['url']) : ''; ?>">
+                        <div class="new-box-shadow-wrapper d-block">
                             <div class="new-box-shadow-inner">
                                 <div class="" style="min-height: <?php echo $box_min_height ? $box_min_height . 'px' : ''; ?>">
                                     <?php if (!empty($slide['service_image']['url'])) : ?>
@@ -28,7 +28,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
 
                     </div>
                 <?php endforeach; ?>

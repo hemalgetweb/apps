@@ -589,7 +589,7 @@ to{stroke-dashoffset:100%}
 .employee-review-wrap{background:url(../img/employee-reviews-bg.jpg);background-repeat:no-repeat;background-size:cover}
 .swiper_wrap{height:100%;width:100%;position:relative;display:block;text-align:left}
 .swiper-container{overflow:hidden}
-.swiper-next{right:-70px}
+.swiper-next{right:-84px}
 @media (max-width:1400px){
 .swiper-next{right:-40px}
 }

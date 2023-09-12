@@ -61,7 +61,7 @@ ul.dropdown-menus li.menu-item a::after{transition:all 50ms ease;right:15px}
 .blog-content p{font-size:18px!important}
 }
 .blog-subscription-field{height:50px!important}
-.apps-about-right-114 p{margin-bottom:0}
+.apps-about-right-114 p{margin-bottom:24px;}
 .apps-service-link-wrap-114 a{display:inline-flex;justify-content:center;align-items:center;gap:5px}
 .apps-project-next-114,.apps-project-prev-114,.dynamic-next,.dynamic-prev,.swiper-arrow{display:flex;align-items:center;justify-content:center;transition:all .2s ease}
 .apps-project-next-114:hover svg *,.apps-project-prev-114:hover svg *{fill:#003959}

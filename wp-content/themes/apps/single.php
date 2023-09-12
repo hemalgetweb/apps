@@ -163,7 +163,7 @@ $related_posts_query = new WP_Query($related_posts_args);
 					?>
                     <div class="blog-single-slide">
                         <!-- related-blog-single -->
-                        <div class="single-blog bg-white p-2 radius-6 box-shadow2">
+                        <div class="single-blog single-blog-card-wrap bg-white p-2 radius-6 box-shadow2">
                             <div class="blog-img mb-2 rounded-top overflow-hidden">
                                 <a href="<?php the_permalink(get_the_ID()); ?>">
 									<img src="<?php echo get_the_post_thumbnail_url( get_The_ID(), 'full' ); ?>" alt="Blog Image">

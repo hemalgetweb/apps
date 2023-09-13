@@ -9977,7 +9977,7 @@ h5.apps-project-card-title-114 button:hover {
 }
 
 .apps-brand-grid-item-114:hover .thumb {
-    transform: rotateY(180deg)
+    transform: scale(.9);
 }
 
 .feature-list-area .apps-feature-list-box-3-114 {

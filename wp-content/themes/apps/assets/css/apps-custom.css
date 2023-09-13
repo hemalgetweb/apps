@@ -8921,10 +8921,10 @@ section.tab-project>.container.container-tab-project-114 {
 
 .apps-tab-faq-left-114 .nav-tabs .nav-link::before {
     position: absolute;
-    left: -1px;
+    left: -2px;
     top: 0;
     height: 100%;
-    width: 1px;
+    width: 3px;
     background: #26b5b5;
     content: "";
     transition: all.3s;

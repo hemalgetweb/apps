@@ -255,7 +255,7 @@ a:hover{color:#00C7C7}
 }
 #contact .form-wrapper .form-control{height:44px;-webkit-box-shadow:none;box-shadow:none;padding: 0.375rem 1.25rem; border-color:var(--dark5);-webkit-columns:var(--dark1);columns:var(--dark1)}
 #contact .form-wrapper .form-control:focus{border-color:var(--dark1)!important}
-#contact .form-wrapper .form-control {border-color:var(--dark1)!important}
+#contact .form-wrapper .form-control {border-color: #AECBD3!important}
 #contact .form-wrapper .text-area textarea{min-height:114px}
 #contact .form-wrapper .btn-sub{padding:14px 30px}
 #contact .form-wrapper .btn-sub:hover{background:var(--main-extra-light);color:var(--dark1)}

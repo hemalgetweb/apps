@@ -246,7 +246,7 @@
 
 
 	// case-studies-project-slider-active
-    var caseStudy = e('.case-studies-project-slider-active').owlCarousel({
+    e('.case-studies-project-slider-active').owlCarousel({
         loop: true,
         margin: 30,
         nav: true,

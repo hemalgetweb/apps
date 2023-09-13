@@ -253,7 +253,7 @@ a:hover{color:#00C7C7}
 @media (max-width:575px){
 #contact .contact-wrapper{padding:50px 10px 0}
 }
-#contact .form-wrapper .form-control{height:44px;-webkit-box-shadow:none;box-shadow:none;border-color:var(--dark5);-webkit-columns:var(--dark1);columns:var(--dark1)}
+#contact .form-wrapper .form-control{height:44px;-webkit-box-shadow:none;box-shadow:none;padding: 0.375rem 1.25rem; border-color:var(--dark5);-webkit-columns:var(--dark1);columns:var(--dark1)}
 #contact .form-wrapper .form-control:focus{border-color:var(--dark1)!important}
 #contact .form-wrapper .text-area textarea{min-height:114px}
 #contact .form-wrapper .btn-sub{padding:14px 30px}

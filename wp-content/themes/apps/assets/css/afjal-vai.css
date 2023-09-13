@@ -285,3 +285,6 @@ section.related-post-area.section-padding.bg-clr-dark8.mt-93{margin-top:30px}
 .our-strategy .col-xl-4:last-child .strategy-item::before {
     display: none;
 }
+.new-box-shadow-inner .apps-service-box-title-114 span:hover {
+	color: #003959;
+}

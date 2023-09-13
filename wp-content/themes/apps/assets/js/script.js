@@ -246,7 +246,7 @@
 
 
 	// case-studies-project-slider-active
-    e('.case-studies-project-slider-active').owlCarousel({
+    var caseStudy = e('.case-studies-project-slider-active').owlCarousel({
         loop: true,
         margin: 30,
         nav: true,
@@ -276,6 +276,14 @@
             },
         }
     });
+    $(".case-project-next-114").click(function () {
+        caseStudy.trigger('owl.next');
+    });
+   
+    $(".case-project-prev-114").click(function () {
+        caseStudy.trigger('owl.prev');
+    });
+    caseStudy.trigger('owl.play', false);
 	// related-post-slider
     e('.related-post-slider').owlCarousel({
         loop:true,

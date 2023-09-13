@@ -6477,7 +6477,9 @@ ul.dropdown-menus li.menu-item a {
 
 .apps-brand-grid-item-114 {
     border: 1px solid #d2ecfa;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 
 .apps-brand-grid-wrapper-114 .apps-brand-grid-item-114:nth-child(1),
@@ -6974,7 +6976,7 @@ section.pricing .pricing-wrapper {
     padding: 0;
     box-shadow: none;
     margin-bottom: 0;
-    padding-right: 21px;
+    padding-right: 30px;
     color: #003959;
     position: relative
 }
@@ -8919,10 +8921,10 @@ section.tab-project>.container.container-tab-project-114 {
 
 .apps-tab-faq-left-114 .nav-tabs .nav-link::before {
     position: absolute;
-    left: -1px;
+    left: -2px;
     top: 0;
     height: 100%;
-    width: 1px;
+    width: 3px;
     background: #26b5b5;
     content: "";
     transition: all.3s;
@@ -9316,6 +9318,13 @@ h5.apps-project-card-title-114 button {
     border-color: #003c4f
 }
 
+.contact-us-form .contact-header p.text-clr-dark2{
+    color: #335E6B !important;
+}
+
+.btn-wrap p{
+    margin-bottom: 0px !important;
+}
 .accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li {
     margin-bottom: 8px;
     padding-left: 13px;
@@ -9968,7 +9977,7 @@ h5.apps-project-card-title-114 button:hover {
 }
 
 .apps-brand-grid-item-114:hover .thumb {
-    transform: rotateY(180deg)
+    transform: scale(.9);
 }
 
 .feature-list-area .apps-feature-list-box-3-114 {
@@ -12307,4 +12316,7 @@ padding: 40px 35px 40px 35px !important;
 
 .related-post-area .related-post-wrapper-114 .owl-stage-outer{
     padding: 50px 0;
+}
+.job-list-area .row {
+    --bs-gutter-y: 30px;
 }

@@ -27,7 +27,7 @@ if ($cbblog_layout == 'right-sidebar') {
 	$blog_column = 8;
 }
 ?>
-
+<?php the_content(); ?>
 <main id="home-filtered-blog-post-114"
 	class="apps-blog-page-area pt-215 pb-100 <?php echo esc_attr($sidebar_class); ?>">
 	<div class="container">

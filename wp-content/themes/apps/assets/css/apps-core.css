@@ -646,3 +646,7 @@ section.job-application-form .form-wrapper .form-header{max-width:890px;margin:0
 #contact .form-wrapper .select-menu{
     background-position: 91% 51% !important; 
 }
+
+.wpcf7-form-control{
+    padding: 0.375rem 1.25rem;
+}

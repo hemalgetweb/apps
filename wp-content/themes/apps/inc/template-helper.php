@@ -203,6 +203,34 @@ function apps_header_logo_1()
     ?>
 <?php
 }
+
+function apps_header_logo_1_updated()
+{
+?>
+    <?php
+    $logo_image1 = get_theme_mod('logo_image1', get_template_directory_uri() . '/assets/img/logo.png');
+    $logo_text1 = get_theme_mod('logo_text1', __('apps', 'apps'));
+    $cbtoolkit_header_main_logoset_3 = get_theme_mod('cbtoolkit_header_main_logoset_3', __('image', 'apps'));
+    ?>
+
+    <?php
+    if (has_custom_logo()) {
+        the_custom_logo();
+    } else {
+        if ($cbtoolkit_header_main_logoset_3 == 'image') {
+            if (!empty($logo_image1)) : ?>
+                <img src="<?php echo esc_url($logo_image1) ?>" alt="<?php echo esc_attr__('apps', 'apps'); ?>" class="img-fluid">
+            <?php endif;
+        } else { ?>
+            <?php if (!empty($logo_text1)) : ?>
+                <span><?php echo esc_html($logo_text1); ?></span>
+            <?php endif; ?>
+    <?php
+        }
+    }
+    ?>
+<?php
+}
 function apps_header_logo_2()
 {
 ?>

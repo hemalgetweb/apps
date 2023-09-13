@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-xl py-3">
         <div class="container-fluid align-items-center">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">
-                <?php apps_header_logo_1(); ?>
+                <?php apps_header_logo_1_updated(); ?>
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <?php apps_header_menu_1(); ?>

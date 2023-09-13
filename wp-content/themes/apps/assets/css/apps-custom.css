@@ -12320,3 +12320,8 @@ padding: 40px 35px 40px 35px !important;
 .job-list-area .row {
     --bs-gutter-y: 30px;
 }
+.case-studies-sec2-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

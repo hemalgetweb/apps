@@ -158,7 +158,7 @@ a:hover{color:#00C7C7}
 #header .container-fluid,.mobileMenu .container-fluid{max-width:1760px}
 }
 @media (min-width:1400px){
-#header .navbar-nav,.mobileMenu .navbar-nav{margin-left:174px}
+#header .navbar-nav,.mobileMenu .navbar-nav{margin-left:189px}
 }
 #header .navbar-nav .nav-item .nav-link,.mobileMenu .navbar-nav .nav-item .nav-link{padding:13px 10px}
 #header .navbar-nav .nav-item .nav-link::after,.mobileMenu .navbar-nav .nav-item .nav-link::after{-webkit-transition:.2s all linear;transition:.2s all linear}

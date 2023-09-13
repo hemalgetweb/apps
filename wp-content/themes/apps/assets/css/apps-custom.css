@@ -12344,11 +12344,11 @@ padding: 40px 35px 40px 35px !important;
         padding-block: 60px 60px;
     }
 }
-@media (min-width: 1199px) and (max-width: 1405px) {
+/* @media (min-width: 1199px) and (max-width: 1405px) {
     .navbar-expand-xl .navbar-nav{
         margin: auto !important;
     }
-}
+} */
 #contact .form-wrapper .form-control {
     border-color: 1px solid #AECBD3 !important;
 }

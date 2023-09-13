@@ -9209,7 +9209,8 @@ div.apps-about-list-box-wrapper-7-114.cb-core-repeater-content .icon img {
     text-align: center;
     background: var(--white, #fff);
     box-shadow: 0 10px 30px 0 rgba(0, 57, 89, .1);
-    padding: 30px 20px
+    padding: 30px 20px;
+    transition: .3s all linear;
 }
 .new-box-shadow-wrapper:hover {
     background: linear-gradient(180deg, #00c7c7 0, #50ff81 100%) !important;

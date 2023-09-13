@@ -277,13 +277,12 @@
         }
     });
     e(".case-project-next-114").click(function () {
-        caseStudy.trigger('owl.next');
+        e(".case-project-next-114").trigger('owl.next');
     });
    
     e(".case-project-prev-114").click(function () {
-        caseStudy.trigger('owl.prev');
+        e(".case-project-next-114").trigger('owl.prev');
     });
-    caseStudy.trigger('owl.play', false);
 	// related-post-slider
     e('.related-post-slider').owlCarousel({
         loop:true,

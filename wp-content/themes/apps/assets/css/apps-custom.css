@@ -12348,7 +12348,9 @@ padding: 40px 35px 40px 35px !important;
 #contact .form-wrapper .form-control {
     border-color: 1px solid #AECBD3 !important;
 }
-
+#header .navbar-brand {
+    margin-right: 0;
+}
 .single-post .related-post-area {
     padding-bottom: 50px !important;
 }

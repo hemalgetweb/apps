@@ -6478,8 +6478,8 @@ ul.dropdown-menus li.menu-item a {
 .apps-brand-grid-item-114 {
     border: 1px solid #d2ecfa;
     padding-bottom: 30px;
-    border-bottom-width: 2px;
-    border-right-width: 2px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 
 .apps-brand-grid-wrapper-114 .apps-brand-grid-item-114:nth-child(1),

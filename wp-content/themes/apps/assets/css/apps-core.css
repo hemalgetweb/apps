@@ -233,9 +233,9 @@ a:hover{color:#00C7C7}
 @media (max-width:550px){
 .client-reviews-slider .review-item{min-height:405px}
 }
-.contact-us-form{padding:45px 47px;background:#fff;-webkit-box-shadow:0 30px 60px rgba(0,60,79,.1);box-shadow:0 30px 60px rgba(0,60,79,.1);border-radius:7.62857px}
+.contact-us-form{padding:40px;background:#fff;-webkit-box-shadow:0 30px 60px rgba(0,60,79,.1);box-shadow:0 30px 60px rgba(0,60,79,.1);border-radius:7.62857px}
 @media (max-width:575px){
-.contact-us-form{padding:30px 20px}
+.contact-us-form{padding:30px}
 }
 #contact{padding:0 15px}
 #contact.contact-extra .contact-wrapper{margin:0!important;padding:0!important}

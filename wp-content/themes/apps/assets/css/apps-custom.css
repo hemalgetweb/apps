@@ -9315,7 +9315,9 @@ h5.apps-project-card-title-114 button {
     box-shadow: none;
     border-color: #003c4f
 }
-
+.btn-wrap p{
+    margin-bottom: 0px !important;
+}
 .accordion-body.apps-faq-accordion-body-wrapper ul.apps-ul-list li {
     margin-bottom: 8px;
     padding-left: 13px;

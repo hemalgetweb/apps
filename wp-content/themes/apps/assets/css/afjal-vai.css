@@ -187,6 +187,7 @@ body::-webkit-scrollbar-thumb:hover{background:#50ff81}
 .apps-comment-114 input:focus,.apps-comment-114 textarea:focus{border:1px solid var(--dark-dark-1,#003959)!important}
 .apps-comment-114 .comments-area .comment-form>p:not(.comment-notes){margin-bottom:20px}
 .accordion-item .accordion-button{text-wrap:balance}
+.faq-page-accordion-wrap .accordion-item .accordion-button{text-wrap:wrap !important;}
 .accordion-item .accordion-button{word-break:break-all}
 @media (max-width:575px){
 .apps-comment-box-single-blog-114{flex-direction:column;text-align:center}

@@ -17,9 +17,9 @@
 <header id="header" class="m-auto  apps-header-style-1 top-0 start-0 end-0 d-xl-block d-none">
     <nav class="navbar navbar-expand-xl py-3">
         <div class="container-fluid align-items-center">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">
+           <!--  <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">
                 <?php apps_header_logo_1(); ?>
-            </a>
+            </a> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <?php apps_header_menu_1(); ?>
                 <div class="navbar-right btn-wrap align-items-center d-flex flex-wrap gap-15">

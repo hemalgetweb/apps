@@ -34,7 +34,7 @@
                 }
             ?>
             <div class="col-xxl-12">
-                <div class="apps-job-list-box-114 mb-20">
+                <div class="apps-job-list-box-114">
                     <div class="apps-job-list-box-title-114">
                         <h5 class="title"><a href="<?php echo get_the_permalink(get_the_ID()); ?>"><?php echo get_the_title(get_the_ID()); ?></a></h5>
                         <div class="apps-job-list-box-meta-114">

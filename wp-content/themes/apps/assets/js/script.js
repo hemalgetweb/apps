@@ -272,11 +272,11 @@
             },
         }
     });
-    e(".case-project-next-114").click(function () {
+    e(".case-project-prev-114").click(function () {
         e(".case-studies-project-slider-active").trigger('next.owl.carousel');
     });
    
-    e(".case-project-prev-114").click(function () {
+    e(".case-project-next-114").click(function () {
         e(".case-studies-project-slider-active").trigger('prev.owl.carousel');
     });
 	// related-post-slider

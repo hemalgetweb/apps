@@ -14,7 +14,7 @@
 ?>
 
 <!-- header -->
-<header id="header" class="m-auto  apps-header-style-1 top-0 start-0 end-0 d-xl-block d-none">
+<header id="header" class="m-auto  apps-header-style-1 top-0 start-0 end-0 d-xl-block d-none header-home-hemal">
     <nav class="navbar navbar-expand-xl py-3">
         <div class="container-fluid align-items-center">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">

@@ -246,41 +246,37 @@
 
 
 	// case-studies-project-slider-active
-			new Swiper(".case-studies-project-slider-active", {
-				slidesPerView: 4,
-				spaceBetween: 30,
-				loop: true,
-				autoplay: {
-					delay: 2500,
-					disableOnInteraction: false,
-				},
-				centeredSlides: true,
-				grabCursor: !0,
-				pagination: {
-					el: ".apps-project-paginate",
-					clickable: !0
-				},
-				navigation: {
-					nextEl: ".case-project-next-114",
-					prevEl: ".case-project-prev-114"
-				},
-				breakpoints: {
-					320: {
-						slidesPerView: 2
-					},
-					767: {
-						slidesPerView: 2
-					},
-					991: {
-						slidesPerView: 3
-					},
-					1200: {
-						slidesPerView: 4
-					}
-				}
-			})
-
-
+    $('.case-studies-project-slider-active').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        items: 4,
+        navText: [
+            "<div class='case-project-prev-114'><i class='fa fa-chevron-left'></i> Previous</div>",
+            "<div class='case-project-next-114'>Next <i class='fa fa-chevron-right'></i></div>"
+        ],
+        navContainerClass: 'apps-project-paginate', // Add the pagination class here
+        responsive: {
+            0: {
+                items: 1
+            },
+            320: {
+                items: 1
+            },
+            575: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            },
+        }
+    });
 	// related-post-slider
     e('.related-post-slider').owlCarousel({
         loop:true,

@@ -458,7 +458,7 @@ to{stroke-dashoffset:100%}
 .pricing .pricing-wrapper .pricing-item .pricing-feature ul li img{margin-top:8px}
 .pricing .pricing-wrapper .pricing-item .pricing-count .price-btn{border:1px solid #aecbd3;border-radius:4px;height:44px;padding:9px 20px;background-color:#fff;-webkit-transition:.2s all linear;transition:.2s all linear}
 .pricing .pricing-wrapper .pricing-item .pricing-count .price-btn svg *{fill:#003c4f;-webkit-transition:.2s all linear;transition:.2s all linear}
-.pricing .pricing-wrapper .pricing-item .pricing-count .price-btn:hover{background-color:#26b5b5;-webkit-transform:translateY(-2px);transform:translateY(-2px);color:#fff}
+.pricing .pricing-wrapper .pricing-item .pricing-count .price-btn:hover{background-color:#00C7C7;-webkit-transform:translateY(-2px);transform:translateY(-2px);color:#fff}
 .pricing .pricing-wrapper .pricing-item .pricing-count .price-btn:hover svg *{fill:#fff}
 .pricing .pricing-wrapper .pricing-item .price-feature-title{border-bottom:1px solid #e8f1f3;padding-bottom:10px;padding-top:40px;margin-bottom:20px}
 .ed-process-item-wrapper .ed-process-item{min-height:160px}

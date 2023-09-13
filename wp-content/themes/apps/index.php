@@ -42,6 +42,30 @@ $categories = get_categories(
 
 ?>
 <!-- blog-pots -->
+<div class="apps-hero-area-114 apps-hero-for-blog-archive-114">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-6">
+                <div class="apps-hero-content-wrapper-114 mb-50 mb-lg-0">
+                    <span class="subtitle"><img
+                            src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png"
+                            alt="subtitle image"> Blog</span>
+                    <h2 class="title">Stay Updated with the Latest Trends & Happenings in the Digital Marketing Industry</h2>
+                    <p class="content">Disruptive innovations and exciting news on marketing, technology, software, and business</p>
+
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 text-center">
+                <div class="apps-hero-svg-114">
+                    <img decoding="async"
+                        src="http://uiexpertz.com/wp-content/uploads/2023/09/banner-blog.svg"
+                        title="case-studies-page-banner-img" alt="case-studies-page-banner-img">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <section class="blog-pots section-padding pt-218">
 	<div class="apps-blog-page-topbar-ajax-search-114">
 		<div class="container">

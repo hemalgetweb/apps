@@ -250,10 +250,6 @@
         loop: true,
         margin: 30,
         nav: true,
-        navText: [
-            "<button type='button'>Prev</button>",
-            "<button type='button'>Next</button>"
-        ],
         navContainerClass: 'apps-project-paginate', // Add the pagination class here
         responsive: {
             0: {

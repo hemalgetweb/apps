@@ -287,7 +287,7 @@ $process_gallery_images = function_exists("get_field") ? get_field("process_gall
             <?php endforeach; ?>
         </div>
         <!-- swiper-control -->
-        <div class="swiper-control">
+        <div class="swiper-controls">
           <div class="swiper-pagination113 d-none"></div>
           <div class="related-post-arrow">
             <button type="button" class="case-project-next-114 border-0">

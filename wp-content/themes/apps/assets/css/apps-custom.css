@@ -12349,7 +12349,7 @@ padding: 40px 35px 40px 35px !important;
     border-color: 1px solid #AECBD3 !important;
 }
 
-@media (min-width: 1199px) and (max-width: 1405px) {
+@media (min-width: 1199px) and (max-width: 1500px) {
     .navbar-expand-xl .navbar-nav{
         margin: auto !important;
     }

@@ -289,3 +289,31 @@ section.related-post-area.section-padding.bg-clr-dark8.mt-93{margin-top:30px}
 .new-box-shadow-inner .apps-service-box-title-114 span:hover {
 	color: #003959;
 }
+
+.apps-blog-details-social-share-links-114 a {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 43px;
+    border: 1px solid #AECBD3;
+    border-radius: 50%;
+    margin-left: 16px;
+  }
+  .apps-blog-details-social-share-links-114 a:hover {
+    background: #00C7C7;
+    border-color: transparent;
+  }
+  .apps-blog-details-social-share-links-114 a:hover path {
+    fill: #fff;
+  }
+  .apps-blog-details-social-share-links-114 a path {
+    transition: all .3s;
+  }
+  @media (max-width: 767px) {
+    .apps-blog-details-social-share-links-114 a {
+      margin: 0 5px;
+      margin-bottom: 5px;
+    }
+  }

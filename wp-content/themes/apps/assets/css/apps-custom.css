@@ -12329,6 +12329,26 @@ padding: 40px 35px 40px 35px !important;
     background: #003959;
     padding-block: 150px 150px;
 }
+@media (max-width: 1399px) {
+    .apps-hero-for-blog-archive-114 {
+        padding-block: 150px 100px;
+    }
+}
+@media (max-width: 1199px) {
+    .apps-hero-for-blog-archive-114 {
+        padding-block: 100px 100px;
+    }
+}
+@media (max-width: 991px) {
+    .apps-hero-for-blog-archive-114 {
+        padding-block: 60px 60px;
+    }
+}
+@media (min-width: 1199px) and (max-width: 1405px) {
+    .menu-main-menu-1{
+        margin: auto !important;
+    }
+}
 #contact .form-wrapper .form-control {
     border-color: 1px solid #AECBD3 !important;
 }

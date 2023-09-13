@@ -250,7 +250,6 @@
         loop: true,
         margin: 30,
         nav: true,
-        items: 4,
         navContainerClass: 'apps-project-paginate', // Add the pagination class here
         responsive: {
             0: {

@@ -35,7 +35,7 @@ $current_post_categories = wp_get_post_categories($current_post_id);
 $related_posts_args = array(
 	'category__in' => $current_post_categories,
 	'post__not_in' => array($current_post_id),
-	'posts_per_page' => -1, // You can adjust the number of related posts to display
+	'posts_per_page' => 3, // You can adjust the number of related posts to display
 	'orderby' => 'rand',   // You can change the order of related posts
 );
 
@@ -162,12 +162,12 @@ $related_posts_query = new WP_Query($related_posts_args);
             </h2>
         </div>
         <div class="related-post-wrapper-114 p-rel">
-            <div class="related-post-slider owl-carousel owl-theme">
+            <div class="row">
 					<?php while ($related_posts_query->have_posts()) :
 					$related_posts_query->the_post();
 					$author_name = get_the_author();
 					?>
-                    <div class="blog-single-slide">
+                    <div class="col-md-4">
                         <!-- related-blog-single -->
                         <div class="single-blog single-blog-card-wrap bg-white p-2 radius-6 box-shadow2">
                             <div class="blog-img mb-2 rounded-top overflow-hidden">

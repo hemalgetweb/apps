@@ -12364,6 +12364,6 @@ padding: 40px 35px 40px 35px !important;
 .feature-list-area  .apps-feature-list-box-3-114 {
     padding: 30px !important;
 }
-.commentform p:last-child {
+#commentform p:last-child {
     margin-bottom: 0px !important;
 }

@@ -54,7 +54,7 @@
                                     <?php foreach ($settings['slides_2'] as $slide): ?>
                                         <?php if (!empty($slide['list_title'])): ?>
                                             <li class="expect-point d-flex align-items-center gap-2">
-                                                <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/08/bullet-icon.svg"
+                                                <img src="https://wadialbadaitsolutions.ae/wp-content/uploads/2023/09/check-mark-icon-22.svg"
                                                     class="img-fluid " alt="check icon">
                                                 <p class="text-clr-dark2 fs-6 mb-0">
                                                     <?php echo esc_html($slide['list_title']); ?>

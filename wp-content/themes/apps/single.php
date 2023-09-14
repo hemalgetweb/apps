@@ -112,7 +112,7 @@ $related_posts_query = new WP_Query($related_posts_args);
                                 <?php the_content(); ?>
                             </div>
                             <div class="blog-bottom">
-                                <div class="blog-bottom-box d-flex flex-wrap gap-4 justify-content-center justify-content-xl-between align-items-center radius-12 p-4 mb-4">
+                                <div class="blog-bottom-box d-flex flex-wrap gap-4 justify-content-center justify-content-xl-between align-items-center radius-12 p-4">
                                     <h4 class="fs-5 fw-bold text-clr-dark1 mb-0">
                                         <?php echo esc_html__('Share with the world', 'apps'); ?>
                                     </h4>

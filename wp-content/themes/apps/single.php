@@ -162,7 +162,7 @@ $related_posts_query = new WP_Query($related_posts_args);
             </h2>
         </div>
         <div class="related-post-wrapper-114 p-rel">
-            <div class="related-post-slider owl-carousel owl-theme">
+            <div class="related-post-slider">
 					<?php while ($related_posts_query->have_posts()) :
 					$related_posts_query->the_post();
 					$author_name = get_the_author();

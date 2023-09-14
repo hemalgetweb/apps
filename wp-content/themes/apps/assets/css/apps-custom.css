@@ -10508,15 +10508,15 @@ a.apps-errror-btn-114 i {
     border-top: 1px solid #ced4da
 }
 
-#home-filtered-blog-post-114 .single-blog .blog-info {
+.single-blog .blog-info {
     padding: 20px 30px 30px 30px
 }
 
-#home-filtered-blog-post-114 .single-blog .section-tag {
+.single-blog .section-tag {
     color: #316785
 }
 
-#home-filtered-blog-post-114 .single-blog .blog-title a {
+.single-blog .blog-title a {
     color: #003959;
     font-size: 24px;
     overflow: hidden;

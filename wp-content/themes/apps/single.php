@@ -162,12 +162,12 @@ $related_posts_query = new WP_Query($related_posts_args);
             </h2>
         </div>
         <div class="related-post-wrapper-114 p-rel">
-            <div class="related-post-slider">
+            <div class="row ">
 					<?php while ($related_posts_query->have_posts()) :
 					$related_posts_query->the_post();
 					$author_name = get_the_author();
 					?>
-                    <div class="blog-single-slide">
+                    <div class="blog-single-slide col-md-4 col-sm-6 col-12">
                         <!-- related-blog-single -->
                         <div class="single-blog single-blog-card-wrap bg-white p-2 radius-6 box-shadow2">
                             <div class="blog-img mb-2 rounded-top overflow-hidden">

@@ -12367,3 +12367,16 @@ padding: 40px 35px 40px 35px !important;
 .apps-comment-114 .comments-area .comment-form>p:not(.comment-notes).form-submit {
     margin-bottom: 0px !important;
 }
+.blog-bottom {
+    position: relative;
+    padding-block: 50px;
+}
+.blog-bottom::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: url(data:image/svg+xml,<svg width="730" height="5" viewBox="0 0 730 5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="730" height="1" fill="%23BADDF0"/><rect y="4" width="730" height="1" fill="%23BADDF0"/></svg>);
+}

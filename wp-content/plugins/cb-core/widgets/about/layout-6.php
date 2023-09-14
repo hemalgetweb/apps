@@ -6,7 +6,7 @@
                     <div class="section-header">
                         <?php if(!empty($settings['about_subtitle'])) : ?>
                         <div class="title-hints d-flex align-items-center gap-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/title-process-icon.svg" class="img-fluid" alt="icon">
+                            <img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/service-spinner.png" class="img-fluid" alt="icon">
                             <h6 class="fs-12 fw-bold ls-1 text-clr-primary text-uppercase m-0"><?php echo wp_kses_post($settings['about_subtitle']); ?></h6>
                          </div>
                         <?php endif; ?>

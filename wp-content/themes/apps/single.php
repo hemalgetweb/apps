@@ -162,33 +162,34 @@ $related_posts_query = new WP_Query($related_posts_args);
             </h2>
         </div>
         <div class="related-post-wrapper-114 p-rel">
-            <div class="row">
+            <div class="related-post-slider row">
 					<?php while ($related_posts_query->have_posts()) :
 					$related_posts_query->the_post();
 					$author_name = get_the_author();
 					?>
                     <div class="col-md-4">
+                        <div class="blog-single-slide">
                         <!-- related-blog-single -->
                         <div class="single-blog single-blog-card-wrap bg-white p-2 radius-6 box-shadow2">
                             <div class="blog-img mb-2 rounded-top overflow-hidden">
                                 <a href="<?php the_permalink(get_the_ID()); ?>">
-									<img src="<?php echo get_the_post_thumbnail_url( get_The_ID(), 'full' ); ?>" alt="Blog Image">
+                                    <img src="<?php echo get_the_post_thumbnail_url( get_The_ID(), 'full' ); ?>" alt="Blog Image">
                                 </a>
                             </div>
                             <div class="blog-info ">
                                 <div class="feature-top">
-									<?php
-										$categories = get_the_category(); // Get the categories for the current post
-										if (!empty($categories)) {
-											$first_category = $categories[0]; // Get the first category
-											$category_name = $first_category->name;
-											$category_link = esc_url(get_category_link($first_category->term_id));
-											echo '<a href="' . $category_link . '">';
-											echo '<span class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">';
-											echo '<img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/rect.svg" alt="icon" class="img-fluid">';
-											echo $category_name . '</span></a>';
-										}
-									?>
+                                    <?php
+                                        $categories = get_the_category(); // Get the categories for the current post
+                                        if (!empty($categories)) {
+                                            $first_category = $categories[0]; // Get the first category
+                                            $category_name = $first_category->name;
+                                            $category_link = esc_url(get_category_link($first_category->term_id));
+                                            echo '<a href="' . $category_link . '">';
+                                            echo '<span class="section-tag fs-12 fw-bold text-uppercase text-clr-dark4 d-inline-flex gap-2 align-items-center mb-2">';
+                                            echo '<img src="https://wadialbadaitsolutions.ae/wp-content/themes/apps/assets/img/rect.svg" alt="icon" class="img-fluid">';
+                                            echo $category_name . '</span></a>';
+                                        }
+                                    ?>
                                     <h3 class="blog-title fs-18 lh-base fw-medium">
                                         <a href="<?php the_permalink(get_the_ID()); ?>"
                                             class="text-decoration-none text-clr-dark1">
@@ -207,8 +208,8 @@ $related_posts_query = new WP_Query($related_posts_args);
                                                 fill="#316785"></path>
                                         </svg>
                                         <span><?php
-										echo $author_name;
-										?></span>
+                                        echo $author_name;
+                                        ?></span>
                                     </span>
                                     <span class="date"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -230,6 +231,7 @@ $related_posts_query = new WP_Query($related_posts_args);
                             </div>
                         </div>
                         <!--/ related-blog-single -->
+                    </div>
                     </div>
 					<?php endwhile;wp_reset_postdata(); ?>
             </div>

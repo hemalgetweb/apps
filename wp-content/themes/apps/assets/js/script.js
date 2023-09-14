@@ -280,7 +280,7 @@
         e(".case-studies-project-slider-active").trigger('prev.owl.carousel');
     });
 	// related-post-slider
-    e('.related-post-slider').owlCarousel({
+    e('.related-post-slider-update-for-delete').owlCarousel({
         loop:true,
         margin:30,
         nav:true,

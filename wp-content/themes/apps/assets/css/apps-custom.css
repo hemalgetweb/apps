@@ -12130,7 +12130,8 @@ section.dynamic-service-area .swiper-wrapper {
 .wb-app-feature-123-box:hover {
     box-shadow: 0 30px 20px 0 rgba(0, 57, 89, .2) !important;
     background: linear-gradient(180deg, #00c7c7 0, #50ff81 100%) !important;
-    transform: translateY(-6px)
+    transform: translateY(-6px);
+    cursor: context-menu;
 }
 
 .banner .banner-wrapper .section-intro {

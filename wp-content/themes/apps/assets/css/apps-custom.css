@@ -7106,7 +7106,10 @@ footer.footer.bg-clr-deepDark {
     font-size: 16px;
     line-height: 26px;
     color: #1f516d;
-    margin-bottom: 8px
+    margin-bottom: 12px;
+}
+.apps-feature-list-box-3-114 ul li:last-child {
+    margin-bottom: 0px;
 }
 
 .apps-timeline-item-right-content-114 .apps-count {

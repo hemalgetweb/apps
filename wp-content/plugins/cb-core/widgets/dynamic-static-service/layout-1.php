@@ -21,7 +21,7 @@ if($settings['card_height']) {
                                     <div class="dynamic-service-box-img-114">
                                         <?php echo wp_get_attachment_image( $slide['service_image']['id'], 'full' ); ?>
                                     </div>
-                                    <div class="dynamic-service-box-content-114  dynamic-service-box-content-129">
+                                    <div class="dynamic-service-box-content-114">
                                         <?php if(!empty($slide['service_title'])) : ?>
                                             <h5 class="title"><?php echo wp_kses_post($slide['service_title']); ?></h5>
                                         <?php endif; ?>

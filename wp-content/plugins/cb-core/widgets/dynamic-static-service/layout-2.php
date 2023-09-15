@@ -19,18 +19,22 @@ if($settings['card_height']) {
                             <div class="dynamic-service-box-img-114">
                                 <?php echo wp_get_attachment_image( $slide['service_image']['id'], 'full' ); ?>
                             </div>
-                            <div class="dynamic-service-box-content-114">
-                                <?php if(!empty($slide['service_title'])) : ?>
-                                    <h5 class="title"><?php echo wp_kses_post($slide['service_title']); ?></h5>
-                                <?php endif; ?>
-                                <?php if(!empty($slide['service_excerpt'])) : ?>
-                                    <p><?php echo wp_kses_post($slide['service_excerpt']); ?></p>
-                                <?php endif; ?>
-                                <?php if(!empty($slide['service_title_link']['url'])) : ?>
-                                    <span class="dynamic-service-read-more-btn-114">Read more 
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#00C7C7"/></svg>
-                                </span>
-                                <?php endif; ?>
+                            <div class="dynamic-service-box-content-114 dynamic-service-box-content-129">
+                                <div>
+                                    <?php if(!empty($slide['service_title'])) : ?>
+                                        <h5 class="title"><?php echo wp_kses_post($slide['service_title']); ?></h5>
+                                    <?php endif; ?>
+                                    <?php if(!empty($slide['service_excerpt'])) : ?>
+                                        <p><?php echo wp_kses_post($slide['service_excerpt']); ?></p>
+                                    <?php endif; ?>
+                                </div>
+                                <div>
+                                    <?php if(!empty($slide['service_title_link']['url'])) : ?>
+                                        <span class="dynamic-service-read-more-btn-114">Read more 
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#00C7C7"/></svg>
+                                    </span>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </div>
                     </div>

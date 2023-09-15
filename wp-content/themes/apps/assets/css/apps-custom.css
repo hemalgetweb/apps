@@ -10629,16 +10629,6 @@ body::-webkit-scrollbar {
     font-size: 48px !important
 }
 
-.uiux-style .our-strategy .strategy-item::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 10px;
-    height: 60px;
-    background-image: url(http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/line-shapen.svg);
-    background-repeat: no-repeat;
-    top: 55px
-}
 
 .pricing .pricing-wrapper .pricing-item:hover,
 .pricing.active .pricing-wrapper .pricing-item {

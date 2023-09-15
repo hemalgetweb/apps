@@ -1823,7 +1823,6 @@ body::-webkit-scrollbar {width: 6px;}
 .uiux-style .our-strategy .strategy-item {box-shadow: none !important;background-color: transparent !important;position: relative;}
 .uiux-style .our-strategy .strategy-item .icon {background: transparent !important;}
 .uiux-style .our-strategy .strategy-item .number .counter {font-weight: 700 !important;font-size: 48px !important;}
-.uiux-style .our-strategy .strategy-item::before {content: "";position: absolute;right: 0;width: 10px;height: 60px;background-image: url("http://wadialbadaitsolutions.ae/wp-content/uploads/2023/07/line-shapen.svg");background-repeat: no-repeat;top: 55px;}
 .pricing.active .pricing-wrapper .pricing-item, .pricing .pricing-wrapper .pricing-item:hover {border-color: #00c7c7 !important;}
 section.pricing.active .single-price .pricing-item {border-color: #00c7c7 !important;}
 .maintenance-style ul li {list-style: none !important;display: flex;gap: 20px;}

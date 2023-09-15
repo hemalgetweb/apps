@@ -12396,3 +12396,10 @@ padding: 40px 35px 40px 35px !important;
 .countdown-number-wrap {
     text-align: center;
 }
+.countdown-number-wrap p {
+    color: #316785 !important;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 1.5em !important;
+}

@@ -24,12 +24,16 @@ if($settings['card_height']) {
                                     <?php the_post_thumbnail(get_the_ID(), 'full'); ?>
                                 </div>
                                 <?php endif; ?>
-                                <div class="dynamic-service-box-content-114">
-                                    <h5 class="title"><?php echo get_the_title(get_the_ID()); ?></h5>
-                                    <p><?php echo get_the_excerpt(); ?></p>
-                                    <span class="dynamic-service-read-more-btn-114"><?php echo esc_html__('Read more', 'cb-core'); ?>
-                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#00C7C7"/></svg>
-                                    </span>
+                                <div class="dynamic-service-box-content-114 dynamic-service-box-content-129">
+                                    <div class="">
+                                        <h5 class="title"><?php echo get_the_title(get_the_ID()); ?></h5>
+                                        <p><?php echo get_the_excerpt(); ?></p>
+                                    </div>
+                                    <div class="">
+                                        <span class="dynamic-service-read-more-btn-114"><?php echo esc_html__('Read more', 'cb-core'); ?>
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10L4.115 9.115L7.60417 5.625H0V4.375H7.60417L4.115 0.885L5 0L10 5L5 10Z" fill="#00C7C7"/></svg>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </a>

@@ -10044,14 +10044,6 @@ h5.apps-project-card-title-114 button:hover {
     }
 }
 
-/* .apps-service-box-content-2-114 .title {
-    min-height: 69px
-}
-
-.dynamic-service-box-114 .dynamic-service-box-content-114 .title {
-    min-height: 64px
-} */
-
 .dynamic-service-box-129 {
     display: flex;
     flex-direction: column;
@@ -10861,7 +10853,7 @@ i {
 
 #home-filtered-blog-post-114 .single-blog .blog-title a:hover,
 #home-filtered-blog-post-114 .single-blog .section-tag:hover {
-    color: #1ae3e3
+    color: #00c7c7;
 }
 
 .menu-item:hover img.hovered-image {

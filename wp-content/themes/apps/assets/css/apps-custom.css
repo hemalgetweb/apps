@@ -12393,9 +12393,11 @@ padding: 40px 35px 40px 35px !important;
 .related-post-area .apps-service-section-wrapper-114  {
     padding-bottom: 30px;
 }
-.our-creative-services-sec .dynamic-service-box-content-114 .title {
+.our-creative-services-sec .dynamic-service-box-content-114 .title,
+.blog-title a {
     transition: all 300ms linear;
 }
-.our-creative-services-sec .dynamic-service-box-content-114 .title:hover {
+.our-creative-services-sec .dynamic-service-box-content-114 .title:hover,
+.blog-title a:hover {
     color: #00c7c7;
 }

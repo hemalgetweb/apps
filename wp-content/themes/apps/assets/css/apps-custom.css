@@ -10052,6 +10052,12 @@ h5.apps-project-card-title-114 button:hover {
     min-height: 64px
 } */
 
+.dynamic-service-box-129 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 div#modal_for_project.apps-portfolio-modal {
     background: #000000d9
 }

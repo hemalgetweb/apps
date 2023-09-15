@@ -5,11 +5,9 @@
         <div class="our-strategy row">
             <?php foreach($settings['slides'] as $slide) : ?>
             <div class="col-xl-4 col-sm-6 mb-4 mb-xl-0">
-                <div class="strategy-item d-flex gap-4 align-items-center bg-white">
-                    <div class="icon text-center rounded-pill bg-white">
-                        <?php  echo wp_get_attachment_image( $slide['countdown_icon_img']['id'], 'thumbnail' ); ?>
-                    </div>
-                    <div class="">
+                <div class="strategy-item bg-white">
+                    
+                    <div class="countdown-number-wrap">
                         <?php if(!empty($slide['coutdown_number'])) : ?>
                             <h4 class="number"> <span class="counter"><?php echo esc_html($slide['coutdown_number']); ?></span></h4>
                         <?php endif; ?>

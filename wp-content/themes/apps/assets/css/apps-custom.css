@@ -10625,8 +10625,10 @@ body::-webkit-scrollbar {
 }
 
 .uiux-style .our-strategy .strategy-item .number .counter {
-    font-weight: 700 !important;
-    font-size: 48px !important
+    font-weight: 300 !important;
+    font-size: 80px !important;
+    line-height: 1.12em !important;
+    color: #003959 !important;
 }
 
 
@@ -12390,4 +12392,7 @@ padding: 40px 35px 40px 35px !important;
 .our-creative-services-sec .dynamic-service-box-content-114 .title:hover,
 .blog-title a:hover {
     color: #00c7c7;
+}
+.countdown-number-wrap {
+    text-align: center;
 }

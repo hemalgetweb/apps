@@ -423,4 +423,19 @@
             },
         });
     });
+    e('a[href^="#"]').on('click', function(event) {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Get the target section's ID from the href attribute
+        var targetId = e(this).attr('href');
+  
+        // Calculate the offset (150px from the top)
+        var offset = e(targetId).offset().top - 100;
+  
+        // Scroll to the target section with the offset
+        e('html, body').animate({
+          scrollTop: offset
+        }, 1000); // You can adjust the duration (1000ms = 1 second) as needed
+      });
 })(jQuery);

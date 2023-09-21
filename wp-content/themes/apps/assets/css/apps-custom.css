@@ -7756,8 +7756,8 @@ img {
     line-height: 26px;
     margin-bottom: 12px;
     color: #a8e0ff;
-    width: 50%;
-    float: left
+    width: 100%;
+    float: none;
 }
 
 .apps-project-card-title-114 a {

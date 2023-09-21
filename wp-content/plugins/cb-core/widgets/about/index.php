@@ -540,7 +540,7 @@ class CB_Core_About extends Widget_Base
               'url' => \Elementor\Utils::get_placeholder_image_src(),
           ],
           'condition' => [
-                'field_condition' => ['style-1']
+                'field_condition_2' => ['style-1']
             ]
         ]
     );

@@ -81,3 +81,4 @@ $cbtoolkit_error_page_second_btn_link = get_theme_mod('cbtoolkit_error_page_seco
 </section>
 <!-- error area end -->
 
+<?php get_footer(); ?>

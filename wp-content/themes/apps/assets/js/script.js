@@ -436,6 +436,6 @@
         // Scroll to the target section with the offset
         e('html, body').animate({
           scrollTop: offset
-        }, 1000); // You can adjust the duration (1000ms = 1 second) as needed
+        }, 500); // You can adjust the duration (1000ms = 1 second) as needed
       });
 })(jQuery);

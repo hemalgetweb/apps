@@ -531,6 +531,19 @@ class CB_Core_About extends Widget_Base
           'default' => 'style-3',
         ]
        );
+       $repeater->add_control(
+        'list_item_image_2',
+        [
+        'label'   => esc_html__( 'List Item Image', 'cb-core' ),
+        'type'    => \Elementor\Controls_Manager::MEDIA,
+        'default' => [
+              'url' => \Elementor\Utils::get_placeholder_image_src(),
+          ],
+          'condition' => [
+                'field_condition' => ['style-1']
+            ]
+        ]
+    );
         $repeater->add_control(
         'list_title',
           [
@@ -539,7 +552,7 @@ class CB_Core_About extends Widget_Base
             'default'     => esc_html__( 'Default-value', 'cb-core' ),
             'label_block' => true,
             'condition' => [
-                'field_condition_2' => ['style-3', 'style-6']
+                'field_condition_2' => ['style-3', 'style-6', 'style-1']
             ]
           ]
         );

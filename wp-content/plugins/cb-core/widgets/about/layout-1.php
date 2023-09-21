@@ -19,23 +19,46 @@
                         <?php if(!empty($settings['about_desc'])) : ?>
                         <p><?php echo wp_kses_post($settings['about_desc']); ?></p>
                         <?php endif; ?>
-                        <?php if(!empty($settings['slides'])) : ?>
-                        <ul class="apps-about-section-114-list-wrap">
-                            <?php foreach($settings['slides'] as $slide) :
-                                $this->add_render_attribute( 'list_item_image', 'src', $slide['list_item_image']['url'] );
-                                $this->add_render_attribute( 'list_item_image', 'alt', \Elementor\Control_Media::get_image_alt( $slide['list_item_image'] ) );
-                                $this->add_render_attribute( 'list_item_image', 'title', \Elementor\Control_Media::get_image_title( $slide['list_item_image'] ) );
-                                ?>
-                                <?php if(!empty($slide['list_item_text'])) : ?>
-                                    <li>
-                                        <?php if(!empty($slide['list_item_image']['url'])) : ?>
-                                            <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $slide, 'thumbnail', 'list_item_image' ); ?>
-                                        <?php  endif;?>
-                                         <span><?php echo wp_kses_post($slide['list_item_text']); ?></span></li>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <?php if(!empty($settings['slides'])) : ?>
+                                    <ul class="apps-about-section-114-list-wrap">
+                                        <?php foreach($settings['slides'] as $slide) :
+                                            $this->add_render_attribute( 'list_item_image', 'src', $slide['list_item_image']['url'] );
+                                            $this->add_render_attribute( 'list_item_image', 'alt', \Elementor\Control_Media::get_image_alt( $slide['list_item_image'] ) );
+                                            $this->add_render_attribute( 'list_item_image', 'title', \Elementor\Control_Media::get_image_title( $slide['list_item_image'] ) );
+                                            ?>
+                                            <?php if(!empty($slide['list_item_text'])) : ?>
+                                                <li>
+                                                    <?php if(!empty($slide['list_item_image']['url'])) : ?>
+                                                        <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $slide, 'thumbnail', 'list_item_image' ); ?>
+                                                    <?php  endif;?>
+                                                    <span><?php echo wp_kses_post($slide['list_item_text']); ?></span></li>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </ul>
                                 <?php endif; ?>
-                            <?php endforeach; ?>
-                        </ul>
-                        <?php endif; ?>
+                            </div>
+                            <div class="col-xl-6">
+                                <?php if(!empty($settings['slides_2'])) : ?>
+                                    <ul class="apps-about-section-114-list-wrap">
+                                        <?php foreach($settings['slides_2'] as $slide) :
+                                            $this->add_render_attribute( 'list_item_image_2', 'src', $slide['list_item_image_2']['url'] );
+                                            $this->add_render_attribute( 'list_item_image_2', 'alt', \Elementor\Control_Media::get_image_alt( $slide['list_item_image_2'] ) );
+                                            $this->add_render_attribute( 'list_item_image_2', 'title', \Elementor\Control_Media::get_image_title( $slide['list_item_image_2'] ) );
+                                            ?>
+                                            <?php if(!empty($slide['list_title'])) : ?>
+                                                <li>
+                                                    <?php if(!empty($slide['list_item_image_2']['url'])) : ?>
+                                                        <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $slide, 'thumbnail', 'list_item_image_2' ); ?>
+                                                    <?php  endif;?>
+                                                    <span><?php echo wp_kses_post($slide['list_title']); ?></span></li>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                <?php endif; ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

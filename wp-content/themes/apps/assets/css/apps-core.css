@@ -204,7 +204,7 @@ a:hover{color:#00C7C7}
 #header .navbar-toggler,.mobileMenu .navbar-toggler{-webkit-box-shadow:none;box-shadow:none;outline:0}
 #header.fixed-header,.mobileMenu.fixed-header{position:fixed}
 #header.fixed-header nav,.mobileMenu.fixed-header nav{padding:8px 0 8px 0!important}
-#header.fixed-header .navbar-brand img,.mobileMenu.fixed-header .navbar-brand img{-webkit-transform:scale(.9);transform:scale(.9)}
+
 .banner-wrapper{padding-top:180px;min-height:840px}
 @media (max-width:550px){
 .banner-wrapper{padding-top:80px}

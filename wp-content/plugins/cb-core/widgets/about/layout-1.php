@@ -20,7 +20,7 @@
                         <p><?php echo wp_kses_post($settings['about_desc']); ?></p>
                         <?php endif; ?>
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-sm-6">
                                 <?php if(!empty($settings['slides'])) : ?>
                                     <ul class="apps-about-section-114-list-wrap">
                                         <?php foreach($settings['slides'] as $slide) :
@@ -39,7 +39,7 @@
                                     </ul>
                                 <?php endif; ?>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-sm-6">
                                 <?php if(!empty($settings['slides_2'])) : ?>
                                     <ul class="apps-about-section-114-list-wrap">
                                         <?php foreach($settings['slides_2'] as $slide) :
